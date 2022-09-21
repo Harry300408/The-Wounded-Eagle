@@ -1,4 +1,4 @@
-version="0.1 Dev Version"
+version="0.1 Dev Early Alpha Version"
 replace_path="history/countries"
 replace_path="history/units"
 replace_path="history/states"
