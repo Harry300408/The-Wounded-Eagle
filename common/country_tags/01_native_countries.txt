@@ -1,0 +1,6 @@
+# TWE Native Countries #
+
+NBW = "countries/United Kingdom.txt"
+GLF = "countries/Natives.txt"
+LAC = "countries/Natives.txt"
+NEN = "countries/USA.txt"

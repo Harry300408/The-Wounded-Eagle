@@ -1,0 +1,3 @@
+# TWE Base Nations #
+
+TXS	= "countries/USA.txt"

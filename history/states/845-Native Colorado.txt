@@ -1,0 +1,19 @@
+
+state = {
+	id = 845
+	name = "STATE_845"
+	manpower = 1900
+
+	state_category = rural
+
+	history = {
+		owner = LAC
+		add_core_of = LAC
+	}
+
+	provinces = {
+		12570 11772 12642 7780 10588 1809 3869 6887 10535 1827
+	}
+
+	local_supplies = 6.0
+}

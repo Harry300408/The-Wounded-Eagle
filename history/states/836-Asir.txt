@@ -1,0 +1,19 @@
+
+state = {
+	id = 836
+	name = "STATE_836"
+	manpower = 7800
+
+	state_category = rural
+
+	history = {
+		owner = YEM
+		add_core_of = YEM
+	}
+
+	provinces = {
+		5006 8073
+	}
+
+	local_supplies = 6.0
+}
