@@ -1,10 +1,11 @@
-version="0.1 Dev Early Alpha Version"
+version="0.1 Beta"
 replace_path="history/countries"
 replace_path="history/units"
 replace_path="history/states"
 replace_path="common/countries"
 replace_path="common/country_tags"
 replace_path="map"
+replace_path="events"
 tags={
 	"Alternative History"
 	"Map"

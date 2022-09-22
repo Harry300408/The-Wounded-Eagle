@@ -1,0 +1,19 @@
+
+state = {
+	id = 839
+	name = "STATE_839"
+	manpower = 1500
+
+	state_category = rural
+
+	history = {
+		owner = IRQ
+		add_core_of = IRQ
+	}
+
+	provinces = {
+		10383
+	}
+
+	local_supplies = 6.0
+}

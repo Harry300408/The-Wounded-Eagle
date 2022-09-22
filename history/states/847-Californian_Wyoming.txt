@@ -1,0 +1,19 @@
+
+state = {
+	id = 847
+	name = "STATE_847"
+	manpower = 1900
+
+	state_category = rural
+
+	history = {
+		owner = USA
+		add_core_of = USA
+	}
+
+	provinces = {
+		7888
+	}
+
+	local_supplies = 6.0
+}

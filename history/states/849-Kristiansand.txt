@@ -1,0 +1,36 @@
+state={
+	id=849
+	name="STATE_849"
+	provinces={
+		14 53 137 3049 6151 6176 9096 9174 9196 9296 11176 11367 
+	}
+	history={
+		owner = DEN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			9296 = {
+				naval_base = 3
+				coastal_bunker = 1
+
+			}
+			53 = {
+				naval_base = 1
+				coastal_bunker = 1
+
+			}
+		}
+		victory_points = {
+			9296 1 
+		}
+		victory_points = {
+			53 1 
+		}
+		add_core_of = NOR
+
+	}
+	manpower=145300
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,19 @@
+spriteTypes = {
+	
+	spriteType = {
+        name = GFX_nap_iv
+        texturefile = gfx/leaders/FRA/napoleon_iv.dds
+    }
+
+    spriteType = {
+        name = GFX_armand_f_p
+        texturefile = gfx/leaders/FRA/armand_fallieres.dds
+    }
+
+    spriteType = {
+        name = GFX_jean_jaures
+        texturefile = gfx/leaders/FRA/jean_jaures.dds
+    }
+
+
+}

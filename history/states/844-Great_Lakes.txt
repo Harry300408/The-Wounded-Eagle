@@ -1,0 +1,19 @@
+
+state = {
+	id = 844
+	name = "STATE_844"
+	manpower = 1900
+
+	state_category = rural
+
+	history = {
+		owner = GLF
+		add_core_of = GLF
+	}
+
+	provinces = {
+		1719 6827 12550 1734 7896 6767 12588
+	}
+
+	local_supplies = 6.0
+}

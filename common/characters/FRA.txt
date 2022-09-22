@@ -1,0 +1,44 @@
+characters = {
+
+    FRA_victor_b = {
+        name = victor_b_FRA
+        portraits = {
+            civilian = {
+                large = "GFX_nap_iv"
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            traits = { legitimate_heir great_architect anti_communist }
+            desc = FRA_nap_iv_desc
+        }
+    }
+    
+    FRA_armand_f = {
+        name = FRA_armand_f
+        portraits = {
+            civilian = {
+                large = "GFX_armand_f_p"
+            }
+        }
+        country_leader = {
+            ideology = conservatism
+            traits = { conservative_grandee anti_communist }
+            desc = FRA_armand_f_p_desc
+        }
+    }  
+
+    FRA_jean_j = {
+        name = FRA_jean_j
+        portraits = {
+            civilian = {
+                large = "GFX_jean_jaures"
+            }
+        }
+        country_leader = {
+            ideology = marxism
+            traits = { revolutionary_general triumphant_revolutionary }
+            desc = FRA_jean_j_desc
+        }
+    } 
+}

@@ -2046,7 +2046,7 @@
 2045;9;147;75;land;false;hills;6
 2046;9;147;180;land;false;desert;5
 2047;9;150;95;land;false;mountain;6
-2048;9;150;145;land;true;desert;7
+2048;9;150;145;land;false;desert;7
 2049;9;153;5;land;false;desert;5
 2050;9;153;60;land;true;jungle;5
 2051;9;153;210;land;true;forest;2
