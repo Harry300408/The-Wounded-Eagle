@@ -129,9 +129,11 @@ if = {
 	limit = { NOT = { has_dlc = "Together for Victory" } }
 	set_cosmetic_tag = CAN_ALY
 }
-if = {
-	limit = { has_dlc = "Together for Victory" }
-	add_ideas = CAN_great_depression_1
+
+	add_ideas = CAN_british_sphere_idea
+	add_ideas = CAN_unionism_idea
+	add_ideas = CAN_outdated_military_idea
+	add_ideas = CAN_failure_economy_idea
 	add_ideas = CAN_conscription_crisis
 	set_cosmetic_tag = CAN_UK
 
