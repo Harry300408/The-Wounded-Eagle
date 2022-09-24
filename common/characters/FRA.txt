@@ -9,7 +9,7 @@ characters = {
         }
         country_leader = {
             ideology = despotism
-            traits = { legitimate_heir great_architect anti_communist }
+            traits = { legitimate_heir great_architect anti_communist autocratic_imperialist }
             desc = FRA_nap_iv_desc
         }
     }
@@ -40,5 +40,19 @@ characters = {
             traits = { revolutionary_general triumphant_revolutionary }
             desc = FRA_jean_j_desc
         }
-    } 
+    }
+
+    FRA_rocque = {
+        name = FRA_rocque
+        portraits = {
+            civilian = {
+                large = "GFX_rocque"
+            }
+        }
+        country_leader = {
+            ideology = rexism
+            traits = { dictator cabinet_crisis  }
+            desc = FRA_rocque_desc
+        }
+    }  
 }

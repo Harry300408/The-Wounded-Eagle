@@ -15,5 +15,10 @@ spriteTypes = {
         texturefile = gfx/leaders/FRA/jean_jaures.dds
     }
 
+    spriteType = {
+        name = GFX_rocque
+        texturefile = gfx/leaders/FRA/francois_de_la_rocque.dds
+    }
+
 
 }

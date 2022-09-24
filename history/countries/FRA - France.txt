@@ -131,7 +131,6 @@ if = {
 		mtg_transport = 1
 		cruiser_submarines = 1
 	}
-	add_ideas = MTG_naval_treaty_adherent
 }
 if = {
 	limit = {
@@ -301,13 +300,14 @@ set_popularities = {
 	neutrality = 100
 }
 add_ideas = {
-
+	not_quite_defeated
 }
 
 
 recruit_character = FRA_victor_b
 recruit_character = FRA_armand_f
 recruit_character = FRA_jean_j
+recruit_character = FRA_rocque
 
 
 if = {

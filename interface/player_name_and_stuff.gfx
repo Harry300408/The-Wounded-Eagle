@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_player_name_strip"
+		texturefile = "gfx//interface//TWE_gui//player_country//background.dds"
+	}
+
+	spriteType = {
+		name = "GFX_player_name_strip_overlay"
+		texturefile = "gfx//interface//TWE_gui//player_country//bg_overlay.dds"
+	}
+	
+}
