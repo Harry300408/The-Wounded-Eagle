@@ -157,7 +157,7 @@ ideas = {
 			picture = can_send_in_the_zombies
 
 			modifier = {
-			recruitable_population_factor = 0.05
+			recruitable_population_factor = 0.1
 
 			}
 		}
