@@ -282,8 +282,6 @@ if = {
 			improved_secondary_battery = 1
 			improved_ship_torpedo_launcher = 1
 		}
-		remove_ideas = MTG_naval_treaty_adherent
-		add_ideas = MTG_naval_treaty_adherent_reduced
 	}
 }
 
@@ -292,7 +290,7 @@ set_convoys = 300
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1932.5.1"
+	last_election = "1820.5.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -303,12 +301,18 @@ add_ideas = {
 	not_quite_defeated
 }
 
-
+## Country Leaders
 recruit_character = FRA_victor_b
 recruit_character = FRA_armand_f
 recruit_character = FRA_jean_j
 recruit_character = FRA_rocque
 
+##Unit High Command
+recruit_character = FRA_alphonse
+
+##Unit Leaders
+recruit_character = FRA_alphonse_j
+recruit_character = FRA_antoine_besson
 
 if = {
 	limit = { has_dlc = "La Resistance" }

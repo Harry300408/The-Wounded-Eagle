@@ -1,5 +1,4 @@
 
-
 focus_tree = {
 	id = usa_focus
 	
@@ -119,7 +118,7 @@ focus = {
 }
 focus = {
 		id = america6
-		icon = GFX_generic_support_democracy 
+		icon = GFX_focus_chi_reach_out_to_france
 		prerequisite = { focus = america5 }
 		x = 6
 		y = 4
@@ -129,31 +128,10 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = yes
 
-available = {
-NOT = {
-has_idea = american_strike
-}
-}
 		completion_reward = {
-			remove_ideas= dream_lost
+			add_political_power = 5
 }
-}
-focus = {
-		id = america7
-		icon = GFX_goal_generic_positive_trade_relations
-		prerequisite = { focus = america6 }
-		x = 6
-		y = 5
-		#relative_position_id = army_effort
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = export_focus
 }
 }
 }
 
-}
