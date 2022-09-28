@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  USA_war_lost:0 "Morale Crushed"
   USA_war_lost_desc:0 "After the loss of the war of 1812 against Britain, our soldiers have began hope. Their morale is crushed and our army is still recovering. The people want a change in our nation"
   
@@ -18,8 +18,6 @@ l_english:
     usa.1.t:0 "The United States"
         usa.1.d:0 "After the british victory in the war of 1812 it prevented the United states from expansion and really hurt the nation. It was a total embarrasment to the nation and the people wanted a change. After then the treaty of miami was signed after the slave problem became severe. After some agreements the division beetween the two sides was resolved and order was shortly restored. Third parties begin rising in popularity throughout the years causing tensions beetween the people in the nation."
         usa.1.a:0 "God Save America"
-                usa.2.t:0 "The southern strike"
-                 usa.2.d:0 "A group of people have begun protesting down in florida and alabama, the protests quickly escalated to violence creating occupied zones. We must establish order in the provinces before it becomes to out of hand."
     
          america2:0 "Anti british Crusade!"
          america2_desc:0 ""
@@ -29,10 +27,3 @@ l_english:
          america5_desc:0 "To revive the spirit of our army we shall begin anti british campaigns around the nation reviving the morale of our soldiers and making them want to fight for us"
          american_pride:0 "The Pride of America!"
          america3:0 "The Past is the Past"
-         america3_desc:0 ""
-america7:0 "Open our economy"
-america7_desc:0 "After years of Neutrality and a closed economy we are finally deciding to revoke the security measures as we do not need to put our efforts in to this act anymore"
-         america6:0 "A New Dream"
-                  america6_desc:0 "We have finally found our new dream, we shall fail no more towards the english and we shall conquer without anything stopping the path of liberty"
-                                    american_strike:0 "The Southern strike" 
-                                    america8:0 "Global relations"
