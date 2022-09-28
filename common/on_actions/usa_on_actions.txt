@@ -2,6 +2,6 @@ on_actions = {
 
 On_startup = {
 USA = { country event = usa.1 }
-USA = { add_opinion_modifier = { target = CAN modifier = anti_british } }
+USA = { country event = usa.2 }days = 10 }
 
 }
