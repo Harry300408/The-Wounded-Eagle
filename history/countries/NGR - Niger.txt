@@ -7,6 +7,8 @@ set_technology = {
 
 set_convoys = 0
 
+set_cosmetic_tag = NGR_proc
+
 recruit_character = NGR_pot
 recruit_character = NGR_mt
 recruit_character = NGR_awt

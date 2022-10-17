@@ -103,9 +103,9 @@ focus = {
 focus = {
 		id = america4
 		icon = GFX_focus_chi_reach_out_to_france
-		prerequisite = { focus = america8 }
+		prerequisite = { focus = america2 }
 		x = 5
-		y = 7
+		y = 3
 		#relative_position_id = army_effort
 		cost = 5
 
@@ -118,7 +118,7 @@ focus = {
 }
 focus = {
 		id = america6
-		icon = GFX_generic_support_democracy 
+		icon = GFX_focus_chi_reach_out_to_france
 		prerequisite = { focus = america5 }
 		x = 6
 		y = 4
@@ -128,66 +128,10 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = yes
 
-available = {
-NOT = {
-has_idea = american_strike
-}
-}
 		completion_reward = {
-			remove_ideas= dream_lost
+			add_political_power = 5
 }
 }
-focus = {
-		id = america7
-		icon = GFX_goal_generic_positive_trade_relations
-		prerequisite = { focus = america6 }
-		x = 6
-		y = 5
-		#relative_position_id = army_effort
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = export_focus
-}
-}
-focus = {
-		id = america6
-		icon = GFX_generic_support_democracy 
-		prerequisite = { focus = america5 }
-		x = 6
-		y = 4
-		#relative_position_id = army_effort
-		cost = 5
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		available_if_capitulated = yes
-
-available = {
-NOT = {
-has_idea = Agriculture_failing
-}
-}
-		completion_reward = {
-			remove_ideas= dream_lost
-}
-}
-focus = {
-		id = america8
-		icon = GFX_focus_chi_mission_to_the_us
-		prerequisite = { focus = america7 }
-		x = 5
-		y = 6
-		#relative_position_id = army_effort
-		cost = 3
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		available_if_capitulated = yes
-
-		completion_reward = {
 }
 }
 
-}

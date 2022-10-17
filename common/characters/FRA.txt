@@ -107,7 +107,7 @@ characters = {
 		    }
         }
 		
-        field_marshal={
+        corps_commander={
 			traits={  }
 			skill=3
 			attack_skill=2

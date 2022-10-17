@@ -1,7 +1,107 @@
 ﻿capital = 4
 
-oob = "AUS_1936"
 
+# German Confederation
+set_autonomy = {
+	target = PRE
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = MEK
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = MEK
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = SHL
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = DBS
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = SAX
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = THU
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = BAY
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = HAN
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = OLD
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = WSF
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = WUR
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = BAD
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = ULM
+	autonomous_state = autonomy_AUS_fed
+}
+
+# Austrian Empire
+set_autonomy = {
+	target = CZE
+	autonomous_state = autonomy_personal_union
+}
+
+
+
+
+create_faction = "German Confederation"
+add_to_faction = AUS
+
+oob = "AUS_1936"
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "AUS_1936_air_bba"
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+		}
+	else = {
+		set_air_oob = "AUS_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+
+		}
+	}
+}
 set_research_slots = 3
 
 set_technology = {
@@ -11,7 +111,6 @@ set_technology = {
 	tech_engineers = 1
 	tech_support = 1
 	tech_mountaineers = 1
-	early_fighter = 1
 	basic_train = 1
 }
 

@@ -10,12 +10,12 @@ state={
 	state_category = town
 
 	history={
-		owner = USA
+		owner = TXS
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = USA
+		add_core_of = TXS
 		victory_points = {
 			1827 5 
 		}
@@ -23,7 +23,7 @@ state={
 	}
 
 	provinces={
-		868 1658 1738 7684 7999 9792 12627 
+		868 1658 1738 7684 7999 9792 12627 7764 7818
 	}
 
 	local_supplies=8.0 

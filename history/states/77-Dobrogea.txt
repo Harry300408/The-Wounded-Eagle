@@ -15,12 +15,12 @@ state={
 			infrastructure = 3
 			industrial_complex = 2
 		}
-		add_core_of = TUR
-		add_core_of = ROM
+		add_core_of = BUL
+		add_claim_by = ROM
 	}
 
 	provinces={
-		9614 11597 
+		9614 11597 687 3076 9635 657 
 	}
 
 	local_supplies=1.0 

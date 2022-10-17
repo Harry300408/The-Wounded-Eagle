@@ -14,8 +14,8 @@ state={
 			infrastructure = 3
 		}
 		add_core_of = HUN
-		add_core_of = SLO
-
+		add_claim_by = SLO
+		add_claim_by = UKR
 	}
 
 	provinces={

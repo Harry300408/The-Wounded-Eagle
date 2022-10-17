@@ -14,14 +14,34 @@ set_technology = {
 	motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
-	
-	early_fighter = 1
-	fighter1 = 1
-	early_bomber = 1
-	strategic_bomber1 = 1
-	naval_bomber1 = 1
 	mass_assault = 1
 	fleet_in_being = 1
+}
+
+#LoN Guarentees for Danzig - so Prussia doesn't gobbel them up strait away 
+AUS ={
+	give_guarantee = DNZ
+}
+
+SOV ={
+	give_guarantee = DNZ
+}
+
+FRA ={
+	give_guarantee = DNZ
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+		fighter1 = 1
+		early_bomber = 1
+		strategic_bomber1 = 1
+		naval_bomber1 = 1
+	}
 }
 if = {
 	limit = {
@@ -81,17 +101,14 @@ if = {
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = democratic
 	last_election = "1935.4.7"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
-set_popularities = { #popularities based on 1933 election statistics.
-	democratic = 22
-	fascism = 62
-	communism = 6
-	neutrality = 10
+set_popularities = { 
+	democratic = 100
 }
 
 create_country_leader = {
@@ -119,7 +136,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Anton Plenikowski"
 	desc = ""
-	picture = GFX_portrait_Anton_Plenikowski #TODO
+	picture = GFX_portrait_Anton_Plenikowski #TODO 
 	expire = "1953.3.1"
 	ideology = stalinism
 	traits = {

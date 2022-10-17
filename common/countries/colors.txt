@@ -1,5 +1,75 @@
 #reload countrycolors
-#TWE Nations 
+#TWE Nations
+ALK = {
+	color = rgb { 169 177 78 }
+	color_ui = rgb { 169 177 78 }
+}
+
+NER = {
+	color = rgb { 104 221 135 }
+	color_ui = rgb { 104 221 135 }
+}
+
+FEX = {
+	color = rgb { 44 103 221 }
+	color_ui = rgb { 44 103 221 }
+}
+
+CLU = {
+	color = rgb { 72 128 45 }
+	color_ui = rgb { 72 128 45 }
+}
+
+DES = {
+	color = rgb { 148 174 229 }
+	color_ui = rgb { 148 174 229 }
+}
+
+CAL = {
+	color = rgb { 253 125 0 }
+	color_ui = rgb { 253 125 0 }
+}
+
+WSF = {
+	color = rgb { 99 147 204 }
+	color_ui = rgb { 99 147 204 }
+}
+
+BAD = {
+	color = rgb { 127 0 0 }
+	color_ui = rgb { 127 0 0 }
+}
+
+ULM = {
+	color = rgb { 255 255 255 }
+	color_ui = rgb { 255 255 255 }
+}
+
+THU = {
+	color = rgb { 127 51 0 }
+	color_ui = rgb { 127 51 0 }
+}
+
+OLD = {
+	color = rgb { 107 98 105 }
+	color_ui = rgb { 107 98 105 }
+}
+
+DBS = {
+	color = rgb { 255 193 16 }
+	color_ui = rgb { 255 193 16 }
+}
+
+UNC = {
+	color = rgb { 195 196 145 }
+	color_ui = rgb { 195 196 145 }
+}
+
+BNT = {
+	color = rgb { 255 0 0 }
+	color_ui = rgb { 255 0 0 }
+}
+
 NBW = {
 	color = rgb { 68 93 133 }
 	color_ui = rgb { 68 93 133 }
@@ -37,8 +107,8 @@ ENG = {
 	color_ui = rgb { 255 73 121 }
 }
 SOV = {
-	color = rgb { 125 13 24 }
-	color_ui = rgb { 163 17 31 }
+	color = rgb { 0 127 14 }
+	color_ui = rgb { 0 127 14 }
 }
 SWE = {
 	color = rgb { 36 132 247 }
@@ -58,8 +128,8 @@ BEL = { color 	 = rgb { 193 171 8  }
 HOL = {	color = rgb { 203 138 74 }
 		color_ui = rgb { 255 179 96 }
 }
-CZE = {	color = rgb { 54 167 156 }
-		color_ui = rgb { 70 217 203 }
+CZE = {	color = rgb { 219 182 0 }
+		color_ui = rgb { 219 182 0 }
 }
 POL = {
 	color = rgb { 214 102 139 }
@@ -102,8 +172,8 @@ SWI = {
 	color_ui = rgb { 193 81 81 }
 }
 TUR = {
-	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 0 119 11 }
+	color_ui = rgb { 0 119 11 }
 }
 GRE = {
 	color = rgb { 93 181 227 }
@@ -704,8 +774,8 @@ D50 = {
 	color_ui = rgb { 255 138 61 }
 }
 BAY = {
-	color = rgb { 233  231  246 }
-	color_ui = rgb { 233  231  246 }
+	color = rgb { 49 216 216 }
+	color_ui = rgb { 49 216 216 }
 }
 MEK = {
 	color = rgb { 186 245 86 }
@@ -794,10 +864,6 @@ TAY = {
 OVO = {
 	color = rgb { 0 153 51 }
 	color_ui = rgb { 0 102 34 }
-}
-NEN = {
-	color = rgb { 204 255 204 }
-	color_ui = rgb { 102 255 102 }
 }
 KOM = {
 	color = rgb { 0 230 184 }

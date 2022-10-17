@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = GER
+		owner = MEK
 		victory_points = {
 			321 5
 		}
@@ -23,11 +23,11 @@ state={
 			}
 			air_base = 3
 		}
-		add_core_of = GER
+		add_core_of = MEK
 	}
 
 	provinces={
-		268 293 321 9294 11276 11305 
+		268 293 321 9294 11276 11305 3258 11219 375 3367
 	}
 
 	local_supplies=3.0 

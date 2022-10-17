@@ -13,18 +13,18 @@ state={
 	}
 
 	history={
-		owner = USA
+		owner = CLU
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = USA
+		add_core_of = CLU
 		victory_points = {
 			9616 1
 		}
 	}
 
 	provinces={
-		1789 1832 3781 4778 7845 9616 9695 10556 10602 10672 12124 12535 12607 
+		1789 1832 3781 4778 7845 9616 10556 10602 10672 12124 4838 12676
 	}
 	
 

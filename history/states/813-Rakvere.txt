@@ -5,6 +5,7 @@ state={
 
 	history={
 		owner = SOV
+		add_core_of = SOV
 		victory_points = {
 			4640 1 #Narva
 		}
@@ -19,7 +20,7 @@ state={
 			}
 
 		}
-		add_core_of = SOV
+		add_core_of = EST
 
 	}
 

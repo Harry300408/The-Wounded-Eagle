@@ -12,7 +12,7 @@ state= {
 		victory_points = {
 			9347 20
 		}
-		owner = GER
+		owner = SHL
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
@@ -22,11 +22,11 @@ state= {
 				naval_base = 8
 			}
 		}
-		add_core_of = GER
+		add_core_of = SHL
 	}
 
 	provinces= {
-		317 3231 3368 6257 6389 9320 9347 11331 11366
+		3231 3368 6257 6389 9320 9347 11331 
  	}
 
 	local_supplies=0.0 
