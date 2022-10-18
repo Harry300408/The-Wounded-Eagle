@@ -1,0 +1,233 @@
+
+focus_tree = {
+	id = prussia_focus
+	
+    ## NOTE - PLEASE DO NOT TOUTCH UNLESS EXPERIENCED MODDER AS THIS FOCUS WILL LINK WITH DESICTIONS (and maybe BoP soon)
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PRE
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+	focus = {
+		id = ernst_princibles
+		x = 5
+		y = 0
+		icon = GFX_focus_prussian_princables
+	
+		cost = 2
+	
+		completion_reward = {
+			country_event = pre.1
+		}
+	}
+
+	focus = {
+		id = PRE_unity
+		x = 5
+		y = 1
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = ernst_princibles}
+	
+		cost = 1
+	
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+	}
+
+	focus = {
+		id = PRE_militarism
+		x = 1
+		y = 1
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = ernst_princibles}
+	
+		cost = 1
+	
+		completion_reward = {
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = PRE_industry
+		x = 9
+		y = 1
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = ernst_princibles}
+	
+		cost = 1
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PRE_shock_troopers
+		x = 1
+		y = 2
+		icon = GFX_focus_prc_infiltration
+		prerequisite = { focus = PRE_militarism}
+	
+		cost = 3
+	
+		completion_reward = {
+			division_template = {
+				name = "Schocktruppen"
+				is_locked = yes
+				division_cap = 5 
+				division_names_group = GER_INF_01
+				priority = 0
+				template_counter = 33
+				regiments = {
+					motorized = { x = 0 y = 0 }
+					motorized = { x = 0 y = 1 }
+					motorized = { x = 0 y = 2 }
+					motorized = { x = 0 y = 3 }
+					
+					light_armor = { x = 1 y = 0 }
+					light_armor = { x = 1 y = 1 }
+					light_armor = { x = 1 y = 2 }
+					light_armor = { x = 1 y = 3 }
+				}
+				support = {
+					field_hospital = { x = 0 y = 0 }
+					logistics_company = { x = 0 y = 1 }
+					engineer = { x = 0 y = 2 }
+				}
+			}
+
+		}
+	}
+
+	focus = {
+		id = PRE_deploy_1
+		x = -1
+		y = 3
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = PRE_shock_troopers}
+	
+		cost = 2
+	
+		completion_reward = {
+			914 ={
+			    create_unit = { 
+					division = "name = \"1.Schocktruppen\" division_template = \"Schocktruppen\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+				    owner = PRE 
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRE_deploy_2
+		x = 1
+		y = 3
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = PRE_shock_troopers}
+	
+		cost = 2
+	
+		completion_reward = {
+			63 = {
+			    create_unit = { 
+					division = "name = \"2.Schocktruppen\" division_template = \"Schocktruppen\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+				    owner = PRE 
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRE_deploy_3
+		x = 3
+		y = 3
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = PRE_shock_troopers}
+	
+		cost = 2
+	
+		completion_reward = {
+			68 ={
+			    create_unit = { 
+					division = "name = \"3.Schocktruppen\" division_template = \"Schocktruppen\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+				    owner = PRE 
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRE_deploy_4
+		x = 0
+		y = 4
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = PRE_shock_troopers}
+	
+		cost = 2
+	
+		completion_reward = {
+			86 ={
+			    create_unit = { 
+					division = "name = \"4.Schocktruppen\" division_template = \"Schocktruppen\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+				    owner = PRE 
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRE_deploy_5
+		x = 2
+		y = 4
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = PRE_shock_troopers}
+	
+		cost = 2
+	
+		completion_reward = {
+			807 = {
+			    create_unit = { 
+					division = "name = \"5.Schocktruppen\" division_template = \"Schocktruppen\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+				    owner = PRE 
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRE_shock_better_plans
+		x = 1
+		y = 5
+		icon = GFX_focus_SOV_mobilization_plan
+		prerequisite = { focus = PRE_deploy_1 }
+		prerequisite = { focus = PRE_deploy_2 }
+		prerequisite = { focus = PRE_deploy_3 }
+		prerequisite = { focus = PRE_deploy_4 }
+		prerequisite = { focus = PRE_deploy_5 }
+	
+		cost = 3
+	
+		completion_reward = {
+			set_division_template_lock = {
+				division_template = "Schocktruppen"
+				is_locked = no
+			}
+		}
+	}
+
+
+
+}
+
+
