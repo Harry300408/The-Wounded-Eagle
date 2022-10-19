@@ -1,0 +1,1077 @@
+on_actions = {
+
+	#Im really sorry for using so many "on_daily" and so many variables ...
+
+	#add election-idea to countries
+	on_startup = {
+	
+		effect = {
+			
+			set_global_flag = mod_elections_reworked_enabled
+			every_country = {
+				
+				if = {
+					limit = {
+						has_government = democratic
+						
+						NOT = {
+							AND = {
+								TAG = USA
+								date < 1949.1.1
+							}
+						}
+						OR = {
+							NOT = {
+								AND = {
+									original_tag = SPR
+									date < 1937.1.1
+								}
+							}
+						}
+					}
+					add_ideas = elections_enabled
+					if = {
+						limit = {
+							check_variable = { ROOT.elections_days = 0 }
+						}
+						random_list = {
+							25 = { set_variable = { var = ROOT.elections_days value = 365 } }
+							25 = { set_variable = { var = ROOT.elections_days value = 730 } }
+							25 = { set_variable = { var = ROOT.elections_days value = 1095 } }
+							25 = { set_variable = { var = ROOT.elections_days value = 1460 } }
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							has_government = neutrality
+							has_government = communism
+							has_government = fascism
+						}
+					}
+					add_ideas = elections_banned
+				}
+				#if = {
+				#	limit = {
+				#		is_ai = no
+				#	}
+				#	country_event = { id = erevents.7 }
+				#}
+				set_global_flag = mod_local
+				
+				set_variable = { ROOT.party_power = 0 }
+				
+				set_variable = { ROOT.Dem_inf = 0 }
+				set_variable = { ROOT.Com_inf = 0 }
+				set_variable = { ROOT.Fas_inf = 0 }
+				set_variable = { ROOT.Neu_inf = 0 }
+				
+				set_variable = { ROOT.Dem_a = 0.00 }
+				set_variable = { ROOT.Com_a = 0.00 }
+				set_variable = { ROOT.Fas_a = 0.00 }
+				set_variable = { ROOT.Neu_a = 0.00 }
+				
+				set_variable = { ROOT.d_a = 0.00 }
+				set_variable = { ROOT.c_a = 0.00 }
+				set_variable = { ROOT.f_a = 0.00 }
+				set_variable = { ROOT.n_a = 0.00 }
+		
+			}
+		
+		}
+	
+	}
+	#Adds the ideas to all countries.
+	on_daily = {
+	
+		effect = {
+			
+			if = {
+				limit = {
+					OR = {
+						is_ai = no
+						AND = {
+							is_ai = yes
+							has_global_flag = mod_global
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { ROOT.elections_days = 0 }
+					}
+					random_list = {
+						25 = { set_variable = { var = ROOT.elections_days value = 365 } }
+						25 = { set_variable = { var = ROOT.elections_days value = 730 } }
+						25 = { set_variable = { var = ROOT.elections_days value = 1095 } }
+						25 = { set_variable = { var = ROOT.elections_days value = 1460 } }
+					}
+				}
+				
+				if = {
+					limit = {
+						AND = {
+							NOT = {
+								has_idea = low_democratic_influence
+								has_idea = medium_democratic_influence
+								has_idea = high_democratic_influence
+							}
+							NOT = {
+								has_idea = low_communist_influence
+								has_idea = medium_communist_influence
+								has_idea = high_communist_influence
+							}
+							NOT = {
+								has_idea = low_fascism_influence
+								has_idea = medium_fascism_influence
+								has_idea = high_fascism_influence
+							}
+							NOT = {
+								has_idea = low_neutrality_influence
+								has_idea = medium_neutrality_influence
+								has_idea = high_neutrality_influence
+							}
+						}
+					}
+					add_ideas = low_democratic_influence
+					add_ideas = low_communist_influence
+					add_ideas = low_fascism_influence
+					add_ideas = low_neutrality_influence
+				}
+				
+				add_to_variable = { ROOT.party_power = political_power_daily }
+				if = {
+					limit = {
+						check_variable = { ROOT.party_power > 100 }
+					}
+					set_variable = { ROOT.party_power = 100 }
+				}
+				
+				if = {
+					limit = {
+						has_government = democratic
+						NOT = {
+							has_idea = spirit_of_democracy
+						}
+					}
+					add_ideas = spirit_of_democracy
+					if = {
+						limit = {
+							NOT = {
+								AND = {
+									TAG = USA
+									date < 1949.1.1
+								}
+							}
+							OR = {
+								NOT = {
+									AND = {
+										original_tag = SPR
+										date < 1937.1.1
+									}
+								}
+							}
+						}
+						set_politics = { ruling_party = democratic elections_allowed = no }
+					}
+				}
+				if = {
+					limit = {
+						has_government = communism
+						NOT = {
+							has_idea = communism_empowered
+						}
+					}
+					add_ideas = communism_empowered
+					if = {
+						limit = {
+							NOT = {
+								AND = {
+									TAG = USA
+									date < 1949.1.1
+								}
+							}
+							OR = {
+								NOT = {
+									AND = {
+										original_tag = SPR
+										date < 1937.1.1
+									}
+								}
+							}
+						}
+						set_politics = { ruling_party = communism elections_allowed = no }
+					}
+				}
+				if = {
+					limit = {
+						has_government = fascism
+						NOT = {
+							has_idea = fascism_will
+						}
+					}
+					add_ideas = fascism_will
+					if = {
+						limit = {
+							NOT = {
+								AND = {
+									TAG = USA
+									date < 1949.1.1
+								}
+							}
+							OR = {
+								NOT = {
+									AND = {
+										original_tag = SPR
+										date < 1937.1.1
+									}
+								}
+							}
+						}
+						set_politics = { ruling_party = fascism elections_allowed = no }
+					}
+				}
+				if = {
+					limit = {
+						has_government = neutrality
+						NOT = {
+							has_idea = authoritarian_spirit
+						}
+					}
+					add_ideas = authoritarian_spirit
+					if = {
+						limit = {
+							NOT = {
+								AND = {
+									TAG = USA
+									date < 1949.1.1
+								}
+							}
+							OR = {
+								NOT = {
+									AND = {
+										original_tag = SPR
+										date < 1937.1.1
+									}
+								}
+							}
+						}
+						set_politics = { ruling_party = neutrality elections_allowed = no }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+					has_global_flag = mod_local
+				}
+				remove_ideas = elections_enabled
+				remove_ideas = elections_banned
+			}
+		
+		}
+	
+	}
+	
+	#setup new system
+	on_daily = {
+	
+		effect = {
+			
+			if = {
+				limit = {
+					OR = {
+						is_ai = no
+						AND = {
+							is_ai = yes
+							has_global_flag = mod_global
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+							NOT = {
+								has_idea = elections_banned
+								has_idea = elections_enabled
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_government = democratic
+						}
+						add_ideas = elections_enabled
+					}
+					if = {
+						limit = {
+							has_government = communism
+						}
+						add_ideas = elections_banned
+					}
+					if = {
+						limit = {
+							has_government = fascism
+						}
+						add_ideas = elections_banned
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						add_ideas = elections_banned
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+							check_variable = { ROOT.Dem_inf = 0 }
+							check_variable = { ROOT.Com_inf = 0 }
+							check_variable = { ROOT.Fas_inf = 0 }
+							check_variable = { ROOT.Neu_inf = 0 }
+							
+							check_variable = { ROOT.Dem_inf < 0.1 }
+							check_variable = { ROOT.Com_inf < 0.1 }
+							check_variable = { ROOT.Fas_inf < 0.1 }
+							check_variable = { ROOT.Neu_inf < 0.1 }
+						}
+						NOT = {
+							OR = {
+								check_variable = { ROOT.Dem_inf > 0 }
+								check_variable = { ROOT.Com_inf > 0 }
+								check_variable = { ROOT.Fas_inf > 0 }
+								check_variable = { ROOT.Neu_inf > 0 }
+							}
+						}
+					}
+					set_variable = { ROOT.Dem_pop = ROOT.party_popularity@democratic }
+					set_variable = { ROOT.Com_pop = ROOT.party_popularity@communism }
+					set_variable = { ROOT.Fas_pop = ROOT.party_popularity@fascism }
+					set_variable = { ROOT.Neu_pop = ROOT.party_popularity@neutrality }
+					
+					multiply_variable = { ROOT.Dem_pop = 100 }
+					multiply_variable = { ROOT.Com_pop = 100 }
+					multiply_variable = { ROOT.Fas_pop = 100 }
+					multiply_variable = { ROOT.Neu_pop = 100 }
+					
+					divide_variable = { ROOT.Dem_pop = 2 }
+					divide_variable = { ROOT.Com_pop = 2 }
+					divide_variable = { ROOT.Fas_pop = 2 }
+					divide_variable = { ROOT.Neu_pop = 2 }
+					
+					add_to_variable = { ROOT.Dem_inf = ROOT.Dem_pop }
+					add_to_variable = { ROOT.Com_inf = ROOT.Com_pop }
+					add_to_variable = { ROOT.Fas_inf = ROOT.Fas_pop }
+					add_to_variable = { ROOT.Neu_inf = ROOT.Neu_pop }
+				}
+				
+				add_to_variable = { ROOT.Dem_inf = ROOT.Dem_a }
+				add_to_variable = { ROOT.Com_inf = ROOT.Com_a }
+				add_to_variable = { ROOT.Fas_inf = ROOT.Fas_a }
+				add_to_variable = { ROOT.Neu_inf = ROOT.Neu_a }
+				
+				#########################################################################
+				
+				if = {
+					limit = {
+						check_variable = {
+							var = ROOT.Dem_inf
+							value = 33
+							compare = less_than_or_equals
+						}
+						NOT = {
+							check_variable = {
+								var = ROOT.Dem_inf
+								value = 33
+								compare = greater_than
+							}
+						}
+					}
+					add_ideas = low_democratic_influence
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = ROOT.Dem_inf
+							value = 66
+							compare = less_than_or_equals
+						}
+						NOT = {
+							check_variable = {
+								var = ROOT.Dem_inf
+								value = 33
+								compare = less_than_or_equals
+							}
+						}
+					}
+					add_ideas = medium_democratic_influence
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = ROOT.Dem_inf
+							value = 66
+							compare = greater_than
+						}
+						NOT = {
+							check_variable = {
+								var = ROOT.Dem_inf
+								value = 66
+								compare = less_than_or_equals
+							}
+						}
+					}
+					add_ideas = high_democratic_influence
+				}
+				
+				if = {
+					limit = {
+						check_variable = {
+							var = ROOT.Com_inf
+							value = 33
+							compare = less_than_or_equals
+						}
+						NOT = {
+							check_variable = {
+								var = ROOT.Com_inf
+								value = 33
+								compare = greater_than
+							}
+						}
+					}
+					add_ideas = low_communist_influence
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = ROOT.Com_inf
+							value = 66
+							compare = less_than_or_equals
+						}
+						NOT = {
+							check_variable = {
+								var = ROOT.Com_inf
+								value = 33
+								compare = less_than_or_equals
+							}
+						}
+					}
+					add_ideas = medium_communist_influence
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = ROOT.Com_inf
+							value = 66
+							compare = greater_than
+						}
+						NOT = {
+							check_variable = {
+								var = ROOT.Com_inf
+								value = 66
+								compare = less_than_or_equals
+							}
+						}
+					}
+					add_ideas = high_communist_influence
+				}
+				
+				if = {
+					limit = {
+						check_variable = {
+							var = ROOT.Fas_inf
+							value = 33
+							compare = less_than_or_equals
+						}
+						NOT = {
+							check_variable = {
+								var = ROOT.Fas_inf
+								value = 33
+								compare = greater_than
+							}
+						}
+					}
+					add_ideas = low_fascism_influence
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = ROOT.Fas_inf
+							value = 66
+							compare = less_than_or_equals
+						}
+						NOT = {
+							check_variable = {
+								var = ROOT.Fas_inf
+								value = 33
+								compare = less_than_or_equals
+							}
+						}
+					}
+					add_ideas = medium_fascism_influence
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = ROOT.Fas_inf
+							value = 66
+							compare = greater_than
+						}
+						NOT = {
+							check_variable = {
+								var = ROOT.Fas_inf
+								value = 66
+								compare = less_than_or_equals
+							}
+						}
+					}
+					add_ideas = high_fascism_influence
+				}
+				
+				if = {
+					limit = {
+						check_variable = {
+							var = ROOT.Neu_inf
+							value = 33
+							compare = less_than_or_equals
+						}
+						NOT = {
+							check_variable = {
+								var = ROOT.Neu_inf
+								value = 33
+								compare = greater_than
+							}
+						}
+					}
+					add_ideas = low_neutrality_influence
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = ROOT.Neu_inf
+							value = 66
+							compare = less_than_or_equals
+						}
+						NOT = {
+							check_variable = {
+								var = ROOT.Neu_inf
+								value = 33
+								compare = less_than_or_equals
+							}
+						}
+					}
+					add_ideas = medium_neutrality_influence
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = ROOT.Neu_inf
+							value = 66
+							compare = greater_than
+						}
+						NOT = {
+							check_variable = {
+								var = ROOT.Neu_inf
+								value = 66
+								compare = less_than_or_equals
+							}
+						}
+					}
+					add_ideas = high_neutrality_influence
+				}
+				#########################################################################
+				if = {
+					limit = {
+						check_variable = { ROOT.Dem_inf > 100 }
+					}
+					set_variable = { ROOT.Dem_inf = 100 }
+				}
+				if = {
+					limit = {
+						check_variable = { ROOT.Com_inf > 100 }
+					}
+					set_variable = { ROOT.Com_inf = 100 }
+				}
+				if = {
+					limit = {
+						check_variable = { ROOT.Fas_inf > 100 }
+					}
+					set_variable = { ROOT.Fas_inf = 100 }
+				}
+				if = {
+					limit = {
+						check_variable = { ROOT.Neu_inf > 100 }
+					}
+					set_variable = { ROOT.Neu_inf = 100 }
+				}
+			}
+		
+		}
+	
+	}
+	
+	on_daily = {
+	
+		effect = {
+			
+			if = {
+				limit = {
+					OR = {
+						is_ai = no
+						AND = {
+							is_ai = yes
+							has_global_flag = mod_global
+						}
+					}
+				}
+				
+				if = {
+					limit = {
+						has_country_flag = has_democratic_banned
+					}
+					add_to_variable = { ROOT.Dem_inf = -0.15 }
+				}
+				if = {
+					limit = {
+						has_country_flag = has_communism_banned
+					}
+					add_to_variable = { ROOT.Com_inf = -0.15 }
+				}
+				if = {
+					limit = {
+						has_country_flag = has_fascism_banned
+					}
+					add_to_variable = { ROOT.Fas_inf = -0.15 }
+				}
+				if = {
+					limit = {
+						has_country_flag = has_neutrality_banned
+					}
+					add_to_variable = { ROOT.Neu_inf = -0.15 }
+				}
+				
+				if = {
+					limit = {
+						check_variable = { ROOT.Dem_inf < 0 }
+					}
+					set_variable = { ROOT.Dem_inf = 0 }
+				}
+				if = {
+					limit = {
+						check_variable = { ROOT.Com_inf < 0 }
+					}
+					set_variable = { ROOT.Com_inf = 0 }
+				}
+				if = {
+					limit = {
+						check_variable = { ROOT.Fas_inf < 0 }
+					}
+					set_variable = { ROOT.Fas_inf = 0 }
+				}
+				if = {
+					limit = {
+						check_variable = { ROOT.Neu_inf < 0 }
+					}
+					set_variable = { ROOT.Neu_inf = 0 }
+				}
+				
+				if = {
+					limit = {
+						has_idea = low_democratic_influence
+					}
+					set_variable = { ROOT.Dem_a = 0.08 }
+				}
+				if = {
+					limit = {
+						has_idea = medium_democratic_influence
+					}
+					set_variable = { ROOT.Dem_a = 0.04 }
+				}
+				if = {
+					limit = {
+						has_idea = high_democratic_influence
+					}
+					set_variable = { ROOT.Dem_a = 0.02 }
+				}
+				
+				if = {
+					limit = {
+						has_idea = low_communist_influence
+					}
+					set_variable = { ROOT.Com_a = 0.08 }
+				}
+				if = {
+					limit = {
+						has_idea = medium_communist_influence
+					}
+					set_variable = { ROOT.Com_a = 0.04 }
+				}
+				if = {
+					limit = {
+						has_idea = high_communist_influence
+					}
+					set_variable = { ROOT.Com_a = 0.02 }
+				}
+				
+				if = {
+					limit = {
+						has_idea = low_fascism_influence
+					}
+					set_variable = { ROOT.Fas_a = 0.08 }
+				}
+				if = {
+					limit = {
+						has_idea = medium_fascism_influence
+					}
+					set_variable = { ROOT.Fas_a = 0.04 }
+				}
+				if = {
+					limit = {
+						has_idea = high_fascism_influence
+					}
+					set_variable = { ROOT.Fas_a = 0.02 }
+				}
+				
+				if = {
+					limit = {
+						has_idea = low_neutrality_influence
+					}
+					set_variable = { ROOT.Neu_a = 0.08 }
+				}
+				if = {
+					limit = {
+						has_idea = medium_neutrality_influence
+					}
+					set_variable = { ROOT.Neu_a = 0.04 }
+				}
+				if = {
+					limit = {
+						has_idea = high_neutrality_influence
+					}
+					set_variable = { ROOT.Neu_a = 0.02 }
+				}
+			}
+		
+		}
+	
+	}
+	
+	#set the influence rules (add passive buffs)
+	on_daily = {
+	
+		effect = {
+			
+			if = {
+				limit = {
+					OR = {
+						is_ai = no
+						AND = {
+							is_ai = yes
+							has_global_flag = mod_global
+						}
+					}
+				}
+				set_variable = { ROOT.d_a = 0.1 }
+				set_variable = { ROOT.c_a = 0.1 }
+				set_variable = { ROOT.f_a = 0.1 }
+				set_variable = { ROOT.n_a = 0.1 }
+					
+				divide_variable = { ROOT.d_a = 100 }
+				divide_variable = { ROOT.c_a = 100 }
+				divide_variable = { ROOT.f_a = 100 }
+				divide_variable = { ROOT.n_a = 100 }
+				
+				add_popularity = {
+					ideology = democratic
+					popularity = d_a
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = c_a
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = f_a
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = n_a
+				}
+			}
+		
+		}
+	
+	}
+	
+	#Check influence level
+	on_weekly = {
+	
+		effect = {
+			
+			if = {
+				limit = {
+					OR = {
+						is_ai = no
+						AND = {
+							is_ai = yes
+							has_global_flag = mod_global
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = ROOT.on_going_elections
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								AND = {
+									check_variable = { ROOT.Dem_inf < ROOT.Com_inf }
+									check_variable = { ROOT.Dem_inf < ROOT.Fas_inf }
+									check_variable = { ROOT.Dem_inf < ROOT.Neu_inf }
+									has_government = democratic
+								}
+								AND = {
+									check_variable = { ROOT.Dem_inf < 20 }
+									check_variable = { ROOT.Neu_inf > 20 }
+									check_variable = { ROOT.Com_inf > 20 }
+									check_variable = { ROOT.Fas_inf > 20 }
+									has_government = democratic
+								}
+							}
+						}
+						country_event = { id = partiesinfluence.11 }
+					}
+					if = {
+						limit = {
+							OR = {
+								AND = {
+									check_variable = { ROOT.Com_inf < ROOT.Dem_inf }
+									check_variable = { ROOT.Com_inf < ROOT.Fas_inf }
+									check_variable = { ROOT.Com_inf < ROOT.Neu_inf }
+									has_government = communism
+								}
+								AND = {
+									check_variable = { ROOT.Com_inf < 20 }
+									check_variable = { ROOT.Dem_inf > 20 }
+									check_variable = { ROOT.Neu_inf > 20 }
+									check_variable = { ROOT.Fas_inf > 20 }
+									has_government = communism
+								}
+							}
+						}
+						country_event = { id = partiesinfluence.11 }
+					}
+					if = {
+						limit = {
+							OR = {
+								AND = {
+									check_variable = { ROOT.Fas_inf < ROOT.Dem_inf }
+									check_variable = { ROOT.Fas_inf < ROOT.Com_inf }
+									check_variable = { ROOT.Fas_inf < ROOT.Neu_inf }
+									has_government = fascism
+								}
+								AND = {
+									check_variable = { ROOT.Fas_inf < 20 }
+									check_variable = { ROOT.Dem_inf > 20 }
+									check_variable = { ROOT.Com_inf > 20 }
+									check_variable = { ROOT.Neu_inf > 20 }
+									has_government = fascism
+								}
+							}
+						}
+						country_event = { id = partiesinfluence.11 }
+					}
+					if = {
+						limit = {
+							OR = {
+								AND = {
+									check_variable = { ROOT.Neu_inf < ROOT.Dem_inf }
+									check_variable = { ROOT.Neu_inf < ROOT.Com_inf }
+									check_variable = { ROOT.Neu_inf < ROOT.Fas_inf }
+									has_government = neutrality
+								}
+								AND = {
+									check_variable = { ROOT.Neu_inf < 20 }
+									check_variable = { ROOT.Dem_inf > 20 }
+									check_variable = { ROOT.Com_inf > 20 }
+									check_variable = { ROOT.Fas_inf > 20 }
+									has_government = neutrality
+								}
+							}
+						}
+						country_event = { id = partiesinfluence.11 }
+					}
+				}
+			}
+		
+		}
+	
+	}
+	
+	
+	#random event of ruling party being routed
+	on_monthly = {
+	
+		effect = {
+			
+			if = {
+				limit = {
+					OR = {
+						is_ai = no
+						AND = {
+							is_ai = yes
+							has_global_flag = mod_global
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_government = democratic
+						check_variable = { ROOT.Dem_inf > 15 }
+					}
+					
+					if = {
+						limit = {
+							OR = {
+								check_variable = { ROOT.Dem_inf < ROOT.Com_inf }
+								check_variable = { ROOT.Dem_inf < ROOT.Fas_inf }
+								check_variable = { ROOT.Dem_inf < ROOT.Neu_inf }
+							}
+						}
+						random_list = {
+							50 = { }
+							35 = { country_event = { id = partiesinfluence.9 } }
+							15 = { country_event = { id = partiesinfluence.10 } }
+						}
+					}
+					if = {
+						limit = {
+							AND = {
+								check_variable = { ROOT.Dem_inf > ROOT.Com_inf }
+								check_variable = { ROOT.Dem_inf > ROOT.Fas_inf }
+								check_variable = { ROOT.Dem_inf > ROOT.Neu_inf }
+							}
+						}
+						random_list = {
+							60 = { }
+							10 = { country_event = { id = partiesinfluence.9 } }
+							30 = { country_event = { id = partiesinfluence.10 } }
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_government = communism
+						check_variable = { ROOT.Com_inf > 15 }
+					}
+					
+					if = {
+						limit = {
+							OR = {
+								check_variable = { ROOT.Com_inf < ROOT.Dem_inf }
+								check_variable = { ROOT.Com_inf < ROOT.Fas_inf }
+								check_variable = { ROOT.Com_inf < ROOT.Neu_inf }
+							}
+						}
+						random_list = {
+							50 = { }
+							35 = { country_event = { id = partiesinfluence.9 } }
+							15 = { country_event = { id = partiesinfluence.10 } }
+						}
+					}
+					if = {
+						limit = {
+							AND = {
+								check_variable = { ROOT.Com_inf > ROOT.Dem_inf }
+								check_variable = { ROOT.Com_inf > ROOT.Fas_inf }
+								check_variable = { ROOT.Com_inf > ROOT.Neu_inf }
+							}
+						}
+						random_list = {
+							60 = { }
+							10 = { country_event = { id = partiesinfluence.9 } }
+							30 = { country_event = { id = partiesinfluence.10 } }
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_government = fascism
+						check_variable = { ROOT.Fas_inf > 15 }
+					}
+					
+					if = {
+						limit = {
+							OR = {
+								check_variable = { ROOT.Fas_inf < ROOT.Dem_inf }
+								check_variable = { ROOT.Fas_inf < ROOT.Com_inf }
+								check_variable = { ROOT.Fas_inf < ROOT.Neu_inf }
+							}
+						}
+						random_list = {
+							50 = { }
+							35 = { country_event = { id = partiesinfluence.9 } }
+							15 = { country_event = { id = partiesinfluence.10 } }
+						}
+					}
+					if = {
+						limit = {
+							AND = {
+								check_variable = { ROOT.Fas_inf > ROOT.Com_inf }
+								check_variable = { ROOT.Fas_inf > ROOT.Dem_inf }
+								check_variable = { ROOT.Fas_inf > ROOT.Neu_inf }
+							}
+						}
+						random_list = {
+							60 = { }
+							10 = { country_event = { id = partiesinfluence.9 } }
+							30 = { country_event = { id = partiesinfluence.10 } }
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_government = neutrality
+						check_variable = { ROOT.Neu_inf > 15 }
+					}
+					
+					if = {
+						limit = {
+							OR = {
+								check_variable = { ROOT.Neu_inf < ROOT.Dem_inf }
+								check_variable = { ROOT.Neu_inf < ROOT.Com_inf }
+								check_variable = { ROOT.Neu_inf < ROOT.Fas_inf }
+							}
+						}
+						random_list = {
+							50 = { }
+							35 = { country_event = { id = partiesinfluence.9 } }
+							15 = { country_event = { id = partiesinfluence.10 } }
+						}
+					}
+					if = {
+						limit = {
+							AND = {
+								check_variable = { ROOT.Neu_inf > ROOT.Com_inf }
+								check_variable = { ROOT.Neu_inf > ROOT.Dem_inf }
+								check_variable = { ROOT.Neu_inf > ROOT.Fas_inf }
+							}
+						}
+						random_list = {
+							60 = { }
+							10 = { country_event = { id = partiesinfluence.9 } }
+							30 = { country_event = { id = partiesinfluence.10 } }
+						}
+					}
+				}
+			}
+		
+		}
+	
+	}
+	
+}
