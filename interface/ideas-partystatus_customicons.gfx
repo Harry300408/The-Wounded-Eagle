@@ -1,0 +1,21 @@
+spriteTypes = { 
+	##Icon For: Low Democratic Influence
+	SpriteType = { 
+		name = "GFX_idea_low_democratic_influence-1792"
+		texturefile = "gfx/interface/ideas/partystatus-ideas/low_democratic_influence-1792.dds"
+	}
+
+	##Icon For: Medium Democratic Influence
+	SpriteType = { 
+		name = "GFX_idea_medium_democratic_influence-1793"
+		texturefile = "gfx/interface/ideas/partystatus-ideas/medium_democratic_influence-1793.dds"
+	}
+
+	##Icon For: High Democratic Influence
+	SpriteType = { 
+		name = "GFX_idea_high_democratic_influence-1794"
+		texturefile = "gfx/interface/ideas/partystatus-ideas/high_democratic_influence-1794.dds"
+	}
+
+ 
+ }

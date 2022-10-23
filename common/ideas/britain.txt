@@ -1,0 +1,140 @@
+ideas = {
+
+	country = {
+		IRA_defeated = {
+			
+			allowed = {
+			  original_tag = ENG
+			}
+
+			allowed_civil_war = {
+			 always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_build_infrastructure
+			
+			modifier = {
+			
+			}
+		}
+	        attack_forward = {
+			
+			allowed = {
+			  original_tag = ENG
+			}
+
+			allowed_civil_war = {
+			 always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_build_infrastructure
+			
+			modifier = {
+			 army_attack_factor = 0.1
+			}
+		}
+		IRA_victory = {
+			
+			allowed = {
+			  original_tag = ENG
+			}
+
+			allowed_civil_war = {
+			 always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_build_infrastructure
+			
+			modifier = {
+			
+			}
+		}
+			UNION_govern = {
+			
+			allowed = {
+			  original_tag = ENG
+			}
+
+			allowed_civil_war = {
+			 always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+			communism_drift = 0.05
+			
+			}
+		}
+			ROYAL_george_vii = {
+			
+			allowed = {
+			  original_tag = ENG
+			}
+
+			allowed_civil_war = {
+			 always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = george_v
+			
+			modifier = {
+			 stability_factor = 0.05
+			}
+		}
+			ENG_red_army = {
+		
+			picture = MEX_revolutionary_army
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				OR = {
+					has_government = communism
+					has_government = neutrality
+				}
+			}
+			
+			modifier = { 
+				max_command_power = 20
+				communism_drift = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		ENG_grand_victory = {
+		
+			picture = MEX_revolutionary_army
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {
+             fascism_drift = 0.1
+             war_support_weekly = 0.001
+             stability_weekly = 0.001			 
+			}
+		}
+      }
+}

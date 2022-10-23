@@ -1,0 +1,1086 @@
+add_namespace = partiesinfluence
+
+#Rout against Democratic Party - Successful
+country_event = {
+	id = partiesinfluence.1
+	title = partiesinfluence.1.t
+	desc = partiesinfluence.1.desc
+
+	picture = routagainstdemocraticpartysuccessful-710
+	is_triggered_only = yes
+	option = {
+		name = partiesinfluence.1.a
+		trigger = {
+			
+		}
+		ai_chance = { add = 1 }
+		
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+		}
+		
+		hidden_effect = {
+			add_to_variable = { ROOT.Dem_inf = -10.00 }
+		}
+	}
+}
+
+#Rout against Democratic Party - Failed
+country_event = {
+	id = partiesinfluence.2
+	title = partiesinfluence.2.t
+	desc = partiesinfluence.2.desc
+
+	picture = routagainstdemocraticpartyfailed-886
+	is_triggered_only = yes
+	option = {
+		name = partiesinfluence.2.a
+		trigger = {
+			
+		}
+		ai_chance = {
+			base = 1
+			#check party popularity
+			modifier = {
+				party_popularity@ruling_party > 0.5
+				add = 1
+			}
+			#check stability
+			modifier = {
+				has_stability < 0.5
+				add = -1
+			}
+		}
+		
+		add_stability = -0.05
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+		}
+		if = {
+			limit = {
+				has_government = communism
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+		}
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_to_variable = { ROOT.Fas_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Com_inf = 5.00 }
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_to_variable = { ROOT.Com_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Fas_inf = 5.00 }
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_to_variable = { ROOT.Neu_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Com_inf = 5.00 }
+				add_to_variable = { ROOT.Fas_inf = 5.00 }
+			}
+		}
+	}
+	option = {
+		name = partiesinfluence.2.b
+		trigger = {
+			
+		}
+		ai_chance = {
+			base = 1
+			#check polit power
+			modifier = {
+				has_political_power > 30
+				add = 1
+			}
+			#check stability
+			modifier = {
+				has_stability > 0.5
+				add = 1
+			}
+		}
+		
+		add_stability = -0.05
+		add_political_power = -25
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_to_variable = { ROOT.Fas_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Com_inf = 5.00 }
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_to_variable = { ROOT.Com_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Fas_inf = 5.00 }
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_to_variable = { ROOT.Neu_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Com_inf = 5.00 }
+				add_to_variable = { ROOT.Fas_inf = 5.00 }
+			}
+		}
+	}
+}
+
+#Rout against Communist Party - Successful
+country_event = {
+	id = partiesinfluence.3
+	title = partiesinfluence.3.t
+	desc = partiesinfluence.3.desc
+
+	picture = routagainstdemocraticpartysuccessful-710
+	is_triggered_only = yes
+	option = {
+		name = partiesinfluence.3.a
+		trigger = {
+			
+		}
+		ai_chance = { add = 1 }
+		
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+		
+		hidden_effect = {
+			add_to_variable = { ROOT.Com_inf = -10.00 }
+		}
+	}
+}
+
+#Rout against Communist Party - Failed
+country_event = {
+	id = partiesinfluence.4
+	title = partiesinfluence.4.t
+	desc = partiesinfluence.4.desc
+
+	picture = routagainstdemocraticpartyfailed-886
+	is_triggered_only = yes
+	option = {
+		name = partiesinfluence.4.a
+		trigger = {
+			
+		}
+		ai_chance = {
+			base = 1
+			#check party popularity
+			modifier = {
+				party_popularity@ruling_party > 0.5
+				add = 1
+			}
+			#check stability
+			modifier = {
+				has_stability < 0.5
+				add = -1
+			}
+		}
+		
+		add_stability = -0.05
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+		}
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+		}
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_to_variable = { ROOT.Fas_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Com_inf = 5.00 }
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_to_variable = { ROOT.Dem_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Neu_inf = 5.00 }
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_to_variable = { ROOT.Neu_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Dem_inf = 5.00 }
+				add_to_variable = { ROOT.Fas_inf = 5.00 }
+			}
+		}
+	}
+	option = {
+		name = partiesinfluence.4.b
+		trigger = {
+			
+		}
+		ai_chance = {
+			base = 1
+			#check polit power
+			modifier = {
+				has_political_power > 30
+				add = 1
+			}
+			#check stability
+			modifier = {
+				has_stability > 0.5
+				add = 1
+			}
+		}
+		
+		add_stability = -0.05
+		add_political_power = -25
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_to_variable = { ROOT.Fas_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Com_inf = 5.00 }
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_to_variable = { ROOT.Dem_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Neu_inf = 5.00 }
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_to_variable = { ROOT.Neu_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Dem_inf = 5.00 }
+				add_to_variable = { ROOT.Fas_inf = 5.00 }
+			}
+		}
+	}
+}
+
+#Rout against Fascist Party - Successful
+country_event = {
+	id = partiesinfluence.5
+	title = partiesinfluence.5.t
+	desc = partiesinfluence.5.desc
+
+	picture = routagainstdemocraticpartysuccessful-710
+	is_triggered_only = yes
+	option = {
+		name = partiesinfluence.5.a
+		trigger = {
+			
+		}
+		ai_chance = { add = 1 }
+		
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		
+		hidden_effect = {
+			add_to_variable = { ROOT.Fas_inf = -10.00 }
+		}
+	}
+}
+
+#Rout against Fascist Party - Failed
+country_event = {
+	id = partiesinfluence.6
+	title = partiesinfluence.6.t
+	desc = partiesinfluence.6.desc
+
+	picture = routagainstdemocraticpartyfailed-886
+	is_triggered_only = yes
+	option = {
+		name = partiesinfluence.6.a
+		trigger = {
+			
+		}
+		ai_chance = {
+			base = 1
+			#check party popularity
+			modifier = {
+				party_popularity@ruling_party > 0.5
+				add = 1
+			}
+			#check stability
+			modifier = {
+				has_stability < 0.5
+				add = -1
+			}
+		}
+		
+		add_stability = -0.05
+		if = {
+			limit = {
+				has_government = communism
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+		}
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+		}
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_to_variable = { ROOT.Com_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Fas_inf = 5.00 }
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_to_variable = { ROOT.Dem_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Neu_inf = 5.00 }
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_to_variable = { ROOT.Neu_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Dem_inf = 5.00 }
+				add_to_variable = { ROOT.Com_inf = 5.00 }
+			}
+		}
+	}
+	option = {
+		name = partiesinfluence.6.b
+		trigger = {
+			
+		}
+		ai_chance = {
+			base = 1
+			#check polit power
+			modifier = {
+				has_political_power > 30
+				add = 1
+			}
+			#check stability
+			modifier = {
+				has_stability > 0.5
+				add = 1
+			}
+		}
+		
+		add_stability = -0.05
+		add_political_power = -25
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_to_variable = { ROOT.Com_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Fas_inf = 5.00 }
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_to_variable = { ROOT.Dem_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Neu_inf = 5.00 }
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_to_variable = { ROOT.Neu_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Dem_inf = 5.00 }
+				add_to_variable = { ROOT.Com_inf = 5.00 }
+			}
+		}
+	}
+}
+
+#Rout against Neutrality Party - Successful
+country_event = {
+	id = partiesinfluence.7
+	title = partiesinfluence.7.t
+	desc = partiesinfluence.7.desc
+
+	picture = routagainstdemocraticpartysuccessful-710
+	is_triggered_only = yes
+	option = {
+		name = partiesinfluence.7.a
+		trigger = {
+			
+		}
+		ai_chance = { add = 1 }
+		
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.05
+		}
+		
+		hidden_effect = {
+			add_to_variable = { ROOT.Neu_inf = -10.00 }
+		}
+	}
+}
+
+#Rout against Neutrality Party - Failed
+country_event = {
+	id = partiesinfluence.8
+	title = partiesinfluence.8.t
+	desc = partiesinfluence.8.desc
+
+	picture = routagainstdemocraticpartyfailed-886
+	is_triggered_only = yes
+	option = {
+		name = partiesinfluence.8.a
+		trigger = {
+			
+		}
+		ai_chance = {
+			base = 1
+			#check party popularity
+			modifier = {
+				party_popularity@ruling_party > 0.5
+				add = 1
+			}
+			#check stability
+			modifier = {
+				has_stability < 0.5
+				add = -1
+			}
+		}
+		
+		add_stability = -0.05
+		if = {
+			limit = {
+				has_government = communism
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+		}
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+		}
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_to_variable = { ROOT.Com_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Fas_inf = 5.00 }
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_to_variable = { ROOT.Dem_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Neu_inf = 5.00 }
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_to_variable = { ROOT.Fas_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Dem_inf = 5.00 }
+				add_to_variable = { ROOT.Com_inf = 5.00 }
+			}
+		}
+	}
+	option = {
+		name = partiesinfluence.8.b
+		trigger = {
+			
+		}
+		ai_chance = {
+			base = 1
+			#check polit power
+			modifier = {
+				has_political_power > 30
+				add = 1
+			}
+			#check stability
+			modifier = {
+				has_stability > 0.5
+				add = 1
+			}
+		}
+		
+		add_stability = -0.05
+		add_political_power = -25
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_to_variable = { ROOT.Com_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Fas_inf = 5.00 }
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_to_variable = { ROOT.Dem_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Neu_inf = 5.00 }
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_to_variable = { ROOT.Fas_inf = -5.00 }
+				
+				add_to_variable = { ROOT.Dem_inf = 5.00 }
+				add_to_variable = { ROOT.Com_inf = 5.00 }
+			}
+		}
+	}
+}
+
+#Rout against our party - Successful!
+country_event = {
+	id = partiesinfluence.9
+	title = partiesinfluence.9.t
+	desc = partiesinfluence.9.desc
+
+	picture = routagainstourpartysuccessful-736
+	is_triggered_only = yes
+	option = {
+		name = partiesinfluence.9.a
+		trigger = {
+			
+		}
+		ai_chance = { add = 1 }
+		
+		add_stability = -0.01
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+			add_to_variable = { ROOT.Dem_inf = -10.00 }
+		}
+		if = {
+			limit = {
+				has_government = communism
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+			add_to_variable = { ROOT.Com_inf = -10.00 }
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+			add_to_variable = { ROOT.Fas_inf = -10.00 }
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+			add_to_variable = { ROOT.Neu_inf = -10.00 }
+		}
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+
+#Rout against our party - Failed!
+country_event = {
+	id = partiesinfluence.10
+	title = partiesinfluence.10.t
+	desc = partiesinfluence.10.desc
+
+	picture = routagainstourpartyfailed-672
+	is_triggered_only = yes
+	option = {
+		name = partiesinfluence.10.a
+		trigger = {
+		
+		}
+		ai_chance = { add = 1 }
+		
+		add_stability = 0.01
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+		if = {
+			limit = {
+				has_government = communism
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+
+#Very Small Influence!
+country_event = {
+	id = partiesinfluence.11
+	title = partiesinfluence.11.t
+	desc = partiesinfluence.11.desc
+
+	picture = very_small_influence-751
+	is_triggered_only = yes
+	option = {
+		name = partiesinfluence.11.a
+		trigger = {
+		
+		}
+		ai_chance = {
+			base = 0
+			#check party
+			modifier = {
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+				add = 1
+			}
+			#check stability
+			modifier = {
+				has_stability < 0.5
+				add = -1
+			}
+			#check party popularity
+			modifier = {
+				party_popularity@ruling_party > 0.55
+				add = 1
+			}
+			#check if minor
+			modifier = {
+				is_major = no
+				add = -1
+			}
+		}
+		
+		add_stability = -0.1
+		if = {
+			limit = {
+				AND = {
+					check_variable = { ROOT.Dem_inf > ROOT.Com_inf }
+					check_variable = { ROOT.Dem_inf > ROOT.Fas_inf }
+					check_variable = { ROOT.Dem_inf > ROOT.Neu_inf }
+				}
+				NOT = { has_government = democratic }
+			}
+			random_list = {
+				50 = {
+					start_civil_war = {
+						ruling_party = ROOT.has_government
+						ideology = democratic
+						size = 0.5
+					}
+					country_event = { id = partiesinfluence.13 }
+				}
+				50 = {
+					set_politics = {
+						ruling_party = democratic
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.2
+					}
+					country_event = { id = partiesinfluence.12 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = { ROOT.Com_inf > ROOT.Dem_inf }
+					check_variable = { ROOT.Com_inf > ROOT.Fas_inf }
+					check_variable = { ROOT.Com_inf > ROOT.Neu_inf }
+				}
+				NOT = { has_government = communism }
+			}
+			random_list = {
+				50 = {
+					start_civil_war = {
+						ruling_party = ROOT.has_government
+						ideology = communism
+						size = 0.5
+					}
+					country_event = { id = partiesinfluence.13 }
+				}
+				50 = {
+					set_politics = {
+						ruling_party = communism
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.2
+					}
+					country_event = { id = partiesinfluence.12 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = { ROOT.Fas_inf > ROOT.Dem_inf }
+					check_variable = { ROOT.Fas_inf > ROOT.Com_inf }
+					check_variable = { ROOT.Fas_inf > ROOT.Neu_inf }
+				}
+				NOT = { has_government = fascism }
+			}
+			random_list = {
+				50 = {
+					start_civil_war = {
+						ruling_party = ROOT.has_government
+						ideology = fascism
+						size = 0.5
+					}
+					country_event = { id = partiesinfluence.13 }
+				}
+				50 = {
+					set_politics = {
+						ruling_party = fascism
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.2
+					}
+					country_event = { id = partiesinfluence.12 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = { ROOT.Neu_inf > ROOT.Dem_inf }
+					check_variable = { ROOT.Neu_inf > ROOT.Com_inf }
+					check_variable = { ROOT.Neu_inf > ROOT.Fas_inf }
+				}
+				NOT = { has_government = neutrality }
+			}
+			random_list = {
+				50 = {
+					start_civil_war = {
+						ruling_party = ROOT.has_government
+						ideology = neutrality
+						size = 0.5
+					}
+					country_event = { id = partiesinfluence.13 }
+				}
+				50 = {
+					set_politics = {
+						ruling_party = neutrality
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.2
+					}
+					country_event = { id = partiesinfluence.12 }
+				}
+			}
+		}
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = partiesinfluence.11.b
+		trigger = {
+		
+		}
+		ai_chance = {
+			base = 0
+			#check party
+			modifier = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+				add = 1
+			}
+			#check stability
+			modifier = {
+				has_stability < 0.5
+				add = 1
+			}
+			#check if minor
+			modifier = {
+				is_major = no
+				add = 1
+			}
+		}
+		
+		add_stability = -0.05
+		if = {
+			limit = {
+				AND = {
+					check_variable = { ROOT.Dem_inf > ROOT.Com_inf }
+					check_variable = { ROOT.Dem_inf > ROOT.Fas_inf }
+					check_variable = { ROOT.Dem_inf > ROOT.Neu_inf }
+				}
+				NOT = { has_government = democratic }
+			}
+			set_politics = {
+				ruling_party = democratic
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = { ROOT.Com_inf > ROOT.Dem_inf }
+					check_variable = { ROOT.Com_inf > ROOT.Fas_inf }
+					check_variable = { ROOT.Com_inf > ROOT.Neu_inf }
+				}
+				NOT = { has_government = communism }
+			}
+			set_politics = {
+				ruling_party = communism
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = { ROOT.Fas_inf > ROOT.Dem_inf }
+					check_variable = { ROOT.Fas_inf > ROOT.Com_inf }
+					check_variable = { ROOT.Fas_inf > ROOT.Neu_inf }
+				}
+				NOT = { has_government = fascism }
+			}
+			set_politics = {
+				ruling_party = fascism
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = { ROOT.Neu_inf > ROOT.Dem_inf }
+					check_variable = { ROOT.Neu_inf > ROOT.Com_inf }
+					check_variable = { ROOT.Neu_inf > ROOT.Fas_inf }
+				}
+				NOT = { has_government = neutrality }
+			}
+			set_politics = {
+				ruling_party = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+
+#The Overthrow - Previous Administration moved out
+country_event = {
+	id = partiesinfluence.12
+	title = partiesinfluence.12.t
+	desc = partiesinfluence.12.desc
+
+	picture = theoverthrowpreviousadministrationmovedout-699
+	is_triggered_only = yes
+	option = {
+		name = partiesinfluence.12.a
+		trigger = {
+		
+		}
+		ai_chance = { add = 1 }
+		
+		
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+
+#The Overthrow - Civil War
+country_event = {
+	id = partiesinfluence.13
+	title = partiesinfluence.13.t
+	desc = partiesinfluence.13.desc
+
+	picture = theoverthrowcivilwar-805
+	is_triggered_only = yes
+	option = {
+		name = partiesinfluence.13.a
+		trigger = {
+		
+		}
+		ai_chance = { add = 1 }
+		
+		add_stability = -0.1
+		
+		hidden_effect = {
+		
+		}
+	}
+}
