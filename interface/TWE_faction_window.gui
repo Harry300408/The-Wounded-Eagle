@@ -144,8 +144,8 @@ guiTypes = {
 
 		ButtonType = {
 			name ="faction_window_exit"
-			spriteType = "GFX_closebutton_small"
-			position = { x= 509 y = 5 }
+			spriteType = "GFX_closebutton"
+			position = { x= 506 y = 2 }
 			Orientation = "UPPER_LEFT""
 		}
 	}
