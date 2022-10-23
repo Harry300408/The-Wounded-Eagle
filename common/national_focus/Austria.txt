@@ -1,0 +1,1943 @@
+focus_tree = {
+	id = AUS
+	country = { 
+		base = 0
+		modifier = {
+			tag = AUS
+			is_debug = yes
+			add = 100
+		}
+	}
+	continuous_focus_position = {
+		x = 1770
+		y = 1350
+	}
+	########################
+	#  F O C U S  T R E E  #
+	########################
+
+	################################
+	# M I L I T A R Y  B R A N C H #
+	################################
+	focus = {
+		id = AUS_spirit_of_victory
+		icon = GFX_
+		cost = 10
+		x = 20
+		y = 0
+		mutually_exclusive = {
+			focus = AUS_spirit_of_peace
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_spirit_of_peace
+		icon = GFX_
+		cost = 10
+		x = 6
+		y = 0
+		relative_position_id = AUS_spirit_of_victory
+		mutually_exclusive = {
+			focus = AUS_spirit_of_victory
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_army_reforms
+		icon = GFX_
+		cost = 10
+		x = 3
+		y = 1
+		relative_position_id = AUS_spirit_of_victory
+		prerequisite = {
+			focus = AUS_spirit_of_victory
+			focus = AUS_spirit_of_peace
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_infantry_equipment_improvement
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = AUS_army_reforms
+		prerequisite = {
+			focus = AUS_army_reforms
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_infantry_vehicle_improvement
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 3
+		relative_position_id = AUS_army_reforms
+		prerequisite = {
+			focus = AUS_infantry_equipment_improvement
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_mobile_warfare
+		icon = GFX_
+		cost = 10
+		x = -2
+		y = 4
+		relative_position_id = AUS_army_reforms
+		prerequisite = {
+			focus = AUS_offense_spendings
+			focus = AUS_defense_spendings
+		}
+		mutually_exclusive = {
+			focus = AUS_infantry_warfare
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_infantry_warfare
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 4
+		relative_position_id = AUS_army_reforms
+		prerequisite = {
+			focus = AUS_offense_spendings
+			focus = AUS_defense_spendings
+		}
+		mutually_exclusive = {
+			focus = AUS_mobile_warfare
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_infantry_improvement
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 5
+		relative_position_id = AUS_army_reforms
+		prerequisite = {
+			focus = AUS_infantry_warfare
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_panzer_improvement
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 5
+		relative_position_id = AUS_army_reforms
+		prerequisite = {
+			focus = AUS_mobile_warfare
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_special_forces
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 6
+		relative_position_id = AUS_army_reforms
+		prerequisite = {
+			focus = AUS_panzer_improvement
+			focus = AUS_infantry_improvement
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_defensive_doctrine
+		icon = GFX_
+		cost = 10
+		x = 6
+		y = 2
+		relative_position_id = AUS_spirit_of_victory
+		prerequisite = {
+			focus = AUS_spirit_of_peace
+		}
+		prerequisite = {
+			focus = AUS_army_reforms
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_equipment_improvement
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_defensive_doctrine
+		prerequisite = {
+			focus = AUS_defensive_doctrine
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_defense_tactics
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = AUS_defensive_doctrine
+		prerequisite = {
+			focus = AUS_defensive_doctrine
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_defense_spendings
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_defensive_doctrine
+		prerequisite = {
+			focus = AUS_defense_tactics
+		}
+		prerequisite = {
+			focus = AUS_equipment_improvement
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_offensive_doctrine
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_spirit_of_victory
+		prerequisite = {
+			focus = AUS_spirit_of_victory
+		}
+		prerequisite = {
+			focus = AUS_army_reforms
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_offense_tactics
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_offensive_doctrine
+		prerequisite = {
+			focus = AUS_offensive_doctrine
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_artillery_improvement
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = AUS_offensive_doctrine
+		prerequisite = {
+			focus = AUS_offensive_doctrine
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_offense_spendings
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_offensive_doctrine
+		prerequisite = {
+			focus = AUS_artillery_improvement
+		}
+		prerequisite = {
+			focus = AUS_offense_tactics
+		}
+		completion_reward = { 
+			
+		}
+	}
+	################################
+	# I N D U S T R Y  B R A N C H #
+	################################
+	focus = {
+		id = AUS_industrial_plan
+		icon = GFX_
+		cost = 10
+		x = 3
+		y = 2
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_infrastructure_buildup
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_industrial_plan
+		prerequisite = {
+			focus = AUS_civilian_development
+		}
+		prerequisite = {
+			focus = AUS_military_development
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_civilian_development
+		icon = GFX_
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = AUS_industrial_plan
+		prerequisite = {
+			focus = AUS_industrial_plan
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_civ_industry_buildup
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = AUS_civilian_development
+		prerequisite = {
+			focus = AUS_civilian_development
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_civilian_spending
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_civilian_development
+		prerequisite = {
+			focus = AUS_civ_industry_buildup
+		}
+		prerequisite = {
+			focus = AUS_infrastructure_buildup
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_military_development
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = AUS_industrial_plan
+		prerequisite = {
+			focus = AUS_industrial_plan
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_mil_industry_buildup
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_military_development
+		prerequisite = {
+			focus = AUS_military_development
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_military_spending
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_military_development
+		prerequisite = {
+			focus = AUS_mil_industry_buildup
+		}
+		prerequisite = {
+			focus = AUS_infrastructure_buildup
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_RaD_expansion
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 4
+		relative_position_id = AUS_industrial_plan
+		prerequisite = {
+			focus = AUS_civilian_spending
+			focus = AUS_military_spending
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_airforces_expansion
+		icon = GFX_
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = AUS_RaD_expansion
+		prerequisite = {
+			focus = AUS_RaD_expansion
+		}
+		prerequisite = {
+			focus = AUS_civilian_spending
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_airfield_buildup
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = AUS_airforces_expansion
+		prerequisite = {
+			focus = AUS_airforces_expansion
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_air_doctrine
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_airforces_expansion
+		prerequisite = {
+			focus = AUS_airforces_expansion
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_airframe_research
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_airforces_expansion
+		prerequisite = {
+			focus = AUS_airfield_buildup
+		}
+		prerequisite = {
+			focus = AUS_air_doctrine
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_fallschirmjager
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 3
+		relative_position_id = AUS_airforces_expansion
+		prerequisite = {
+			focus = AUS_airframe_research
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_navy_expansion
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = AUS_RaD_expansion
+		prerequisite = {
+			focus = AUS_RaD_expansion
+		}
+		prerequisite = {
+			focus = AUS_military_spending
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_docks_buildup
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_navy_expansion
+		prerequisite = {
+			focus = AUS_navy_expansion
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_naval_doctrine
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = AUS_navy_expansion
+		prerequisite = {
+			focus = AUS_navy_expansion
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_ships_research
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_navy_expansion
+		prerequisite = {
+			focus = AUS_naval_doctrine
+		}
+		prerequisite = {
+			focus = AUS_docks_buildup
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_marines
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 3
+		relative_position_id = AUS_navy_expansion
+		prerequisite = {
+			focus = AUS_ships_research
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_our_both_seas
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 5
+		relative_position_id = AUS_RaD_expansion
+		prerequisite = {
+			focus = AUS_marines
+		}
+		prerequisite = {
+			focus = AUS_fallschirmjager
+		}
+		completion_reward = { 
+			
+		}
+	}
+	########################
+	# B A S E  B R A N C H #
+	########################
+	focus = {
+		id = AUS_political_plan
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 0
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_abandon_monarchie
+		icon = GFX_
+		cost = 10
+		x = -11
+		y = 1
+		relative_position_id = AUS_political_plan
+		prerequisite = {
+			focus = AUS_political_plan
+		}
+		mutually_exclusive = {
+			focus = AUS_continue_monarchism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_continue_monarchism
+		icon = GFX_
+		cost = 10
+		x = 12
+		y = 1
+		relative_position_id = AUS_political_plan
+		prerequisite = {
+			focus = AUS_political_plan
+		}
+		mutually_exclusive = {
+			focus = AUS_abandon_monarchie
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_peaceful_development
+		icon = GFX_
+		cost = 10
+		x = 4
+		y = 1
+		relative_position_id = AUS_abandon_monarchie
+		prerequisite = {
+			focus = AUS_abandon_monarchie
+		}
+		mutually_exclusive = {
+			focus = AUS_prepare_sabotage
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_prepare_sabotage
+		icon = GFX_
+		cost = 10
+		x = -4
+		y = 1
+		relative_position_id = AUS_abandon_monarchie
+		prerequisite = {
+			focus = AUS_abandon_monarchie
+		}
+		mutually_exclusive = {
+			focus = AUS_peaceful_development
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_agitation_program
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_prepare_sabotage
+		prerequisite = {
+			focus = AUS_march_of_red_torches
+			focus = AUS_vaterlandische_front
+		}
+		completion_reward = { 
+
+		}
+	}
+	##################################
+	#  M O N A R C H I S M  P A T H  #
+	##################################
+	focus = {
+		id = AUS_strengthen_imperial_sentiments
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_continue_monarchism
+		prerequisite = {
+			focus = AUS_continue_monarchism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_prepare_for_changes
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = AUS_strengthen_imperial_sentiments
+		prerequisite = {
+			focus = AUS_strengthen_imperial_sentiments
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_one_direction
+		icon = GFX_
+		cost = 10
+		x = -3
+		y = 1
+		relative_position_id = AUS_prepare_for_changes
+		prerequisite = {
+			focus = AUS_prepare_for_changes
+		}
+		mutually_exclusive = {
+			focus = AUS_multiple_directions
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_western_allies
+		icon = GFX_
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = AUS_one_direction
+		prerequisite = {
+			focus = AUS_one_direction
+		}
+		mutually_exclusive = {
+			focus = AUS_eastern_allies
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_eastern_allies
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = AUS_one_direction
+		prerequisite = {
+			focus = AUS_one_direction
+		}
+		mutually_exclusive = {
+			focus = AUS_western_allies
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_regensburg_conference
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_one_direction
+		prerequisite = {
+			focus = AUS_eastern_allies
+			focus = AUS_western_allies
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_multiple_directions
+		icon = GFX_
+		cost = 10
+		x = 3
+		y = 1
+		relative_position_id = AUS_prepare_for_changes
+		prerequisite = {
+			focus = AUS_prepare_for_changes
+		}
+		mutually_exclusive = {
+			focus = AUS_one_direction
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_on_our_own
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_multiple_directions
+		prerequisite = {
+			focus = AUS_multiple_directions
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_first_viena_conference
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_multiple_directions
+		prerequisite = {
+			focus = AUS_on_our_own
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_empower_habsburgs
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 4
+		relative_position_id = AUS_prepare_for_changes
+		prerequisite = {
+			focus = AUS_regensburg_conference
+			focus = AUS_first_viena_conference
+		}
+		mutually_exclusive = {
+			focus = AUS_prussian_assistance
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_hungarian_obedience
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = AUS_empower_habsburgs
+		prerequisite = {
+			focus = AUS_empower_habsburgs
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_restore_fallen_empire
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = AUS_hungarian_obedience
+		prerequisite = {
+			focus = AUS_hungarian_obedience
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_integrate_slovakia
+		icon = GFX_
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = AUS_restore_fallen_empire
+		prerequisite = {
+			focus = AUS_restore_fallen_empire
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_annex_czechia
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = AUS_restore_fallen_empire
+		prerequisite = {
+			focus = AUS_restore_fallen_empire
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_demand_polish_galicia
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 2
+		relative_position_id = AUS_restore_fallen_empire
+		prerequisite = {
+			focus = AUS_integrate_slovakia
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_pressure_romania
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 2
+		relative_position_id = AUS_restore_fallen_empire
+		prerequisite = {
+			focus = AUS_annex_czechia
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_end_italian_occupation
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 3
+		relative_position_id = AUS_restore_fallen_empire
+		prerequisite = {
+			focus = AUS_pressure_romania
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_return_schlesien
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 3
+		relative_position_id = AUS_restore_fallen_empire
+		prerequisite = {
+			focus = AUS_demand_polish_galicia
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_austro_hungarian_empire
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 4
+		relative_position_id = AUS_restore_fallen_empire
+		prerequisite = {
+			focus = AUS_return_schlesien
+		}
+		prerequisite = {
+			focus = AUS_end_italian_occupation
+		}
+		completion_reward = { 
+
+		}
+	}
+	#################################
+	#  H I D D E N  H R E  P A T H  #
+	#################################
+	focus = {
+		id = AUS_prussian_assistance
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = AUS_first_viena_conference
+		prerequisite = {
+			focus = AUS_first_viena_conference
+		}
+		mutually_exclusive = {
+			focus = AUS_empower_habsburgs
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_new_development
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_prussian_assistance
+		prerequisite = {
+			focus = AUS_prussian_assistance
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_invite_victoria_iii
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = AUS_new_development
+		prerequisite = {
+			focus = AUS_new_development
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_holy_imperial_order
+		icon = GFX_
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = AUS_invite_victoria_iii
+		prerequisite = {
+			focus = AUS_invite_victoria_iii
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_kaiserins_army
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = AUS_invite_victoria_iii
+		prerequisite = {
+			focus = AUS_invite_victoria_iii
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_confederation_unification
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = AUS_invite_victoria_iii
+		prerequisite = {
+			focus = AUS_invite_victoria_iii
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_proclaim_second_hre
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_invite_victoria_iii
+		prerequisite = {
+			focus = AUS_confederation_unification
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_seek_uk_support
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 3
+		relative_position_id = AUS_invite_victoria_iii
+		prerequisite = {
+			focus = AUS_proclaim_second_hre
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_claims_in_italy
+		icon = GFX_
+		cost = 10
+		x = -2
+		y = 3
+		relative_position_id = AUS_invite_victoria_iii
+		prerequisite = {
+			focus = AUS_proclaim_second_hre
+		}
+		prerequisite = {
+			focus = AUS_holy_imperial_order
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_crush_italian_unity
+		icon = GFX_
+		cost = 10
+		x = -3
+		y = 4
+		relative_position_id = AUS_invite_victoria_iii
+		prerequisite = {
+			focus = AUS_claims_in_italy
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_western_claims
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 3
+		relative_position_id = AUS_invite_victoria_iii
+		prerequisite = {
+			focus = AUS_proclaim_second_hre
+		}
+		prerequisite = {
+			focus = AUS_kaiserins_army
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_swiss_ultimatum
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 4
+		relative_position_id = AUS_invite_victoria_iii
+		prerequisite = {
+			focus = AUS_western_claims
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_subjugate_france
+		icon = GFX_
+		cost = 10
+		x = 3
+		y = 4
+		relative_position_id = AUS_invite_victoria_iii
+		prerequisite = {
+			focus = AUS_western_claims
+		}
+		completion_reward = { 
+
+		}
+	}
+	################################
+	#  C O M M U N I S M  P A T H  #
+	################################
+	focus = {
+		id = AUS_march_of_red_torches
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_abandon_monarchie
+		prerequisite = {
+			focus = AUS_prepare_sabotage
+			focus = AUS_peaceful_development
+		}
+		mutually_exclusive = {
+			focus = AUS_est_liebe_die_republik
+			focus = AUS_vaterlandische_front
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_empower_kpo
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_march_of_red_torches
+		prerequisite = {
+			focus = AUS_march_of_red_torches
+		}
+		prerequisite = {
+			focus = AUS_agitation_program
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_arbeiter_republik
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = AUS_empower_kpo
+		prerequisite = {
+			focus = AUS_empower_kpo
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_communist_reforms
+		icon = GFX_
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = AUS_arbeiter_republik
+		prerequisite = {
+			focus = AUS_arbeiter_republik
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_under_lenin_rule
+		icon = GFX_
+		cost = 10
+		x = -3
+		y = 2
+		relative_position_id = AUS_arbeiter_republik
+		prerequisite = {
+			focus = AUS_communist_reforms
+		}
+		mutually_exclusive = {
+			focus = AUS_german_communism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_common_purpose_union
+		icon = GFX_
+		cost = 10
+		x = -4
+		y = 3
+		relative_position_id = AUS_arbeiter_republik
+		prerequisite = {
+			focus = AUS_under_lenin_rule
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_volksrepublik
+		icon = GFX_
+		cost = 10
+		x = -2
+		y = 3
+		relative_position_id = AUS_arbeiter_republik
+		prerequisite = {
+			focus = AUS_under_lenin_rule
+			focus = AUS_german_communism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_spirit_of_leninism
+		icon = GFX_
+		cost = 10
+		x = -3
+		y = 5
+		relative_position_id = AUS_arbeiter_republik
+		prerequisite = {
+			focus = AUS_under_lenin_rule
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_german_communism
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 2
+		relative_position_id = AUS_arbeiter_republik
+		prerequisite = {
+			focus = AUS_communist_reforms
+		}
+		mutually_exclusive = {
+			focus = AUS_under_lenin_rule
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_union_in_unity
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 3
+		relative_position_id = AUS_arbeiter_republik
+		prerequisite = {
+			focus = AUS_german_communism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_peoples_spirit
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 5
+		relative_position_id = AUS_arbeiter_republik
+		prerequisite = {
+			focus = AUS_german_communism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_borderless_communism
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = AUS_arbeiter_republik
+		prerequisite = {
+			focus = AUS_arbeiter_republik
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_spread_italy
+		icon = GFX_
+		cost = 10
+		x = 3
+		y = 2
+		relative_position_id = AUS_arbeiter_republik
+		prerequisite = {
+			focus = AUS_borderless_communism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_spread_hungary
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 2
+		relative_position_id = AUS_arbeiter_republik
+		prerequisite = {
+			focus = AUS_borderless_communism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_spread_germany
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 3
+		relative_position_id = AUS_arbeiter_republik
+		prerequisite = {
+			focus = AUS_borderless_communism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_spread_czechia
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 4
+		relative_position_id = AUS_arbeiter_republik
+		prerequisite = {
+			focus = AUS_spread_hungary
+		}
+		prerequisite = {
+			focus = AUS_spread_germany
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_spread_france
+		icon = GFX_
+		cost = 10
+		x = 3
+		y = 4
+		relative_position_id = AUS_arbeiter_republik
+		prerequisite = {
+			focus = AUS_spread_italy
+		}
+		prerequisite = {
+			focus = AUS_spread_germany
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_european_communist_union
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 5
+		relative_position_id = AUS_arbeiter_republik
+		prerequisite = {
+			focus = AUS_spread_france
+		}
+		prerequisite = {
+			focus = AUS_spread_czechia
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_imperialist_threat
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 6
+		relative_position_id = AUS_arbeiter_republik
+		prerequisite = {
+			focus = AUS_european_communist_union
+		}
+		prerequisite = {
+			focus = AUS_spirit_of_leninism
+			focus = AUS_peoples_spirit
+		}
+		completion_reward = { 
+
+		}
+	}
+	############################
+	#  F A S C I S M  P A T H  #
+	############################
+	focus = {
+		id = AUS_vaterlandische_front
+		icon = GFX_
+		cost = 10
+		x = -5
+		y = 1
+		relative_position_id = AUS_prepare_sabotage
+		prerequisite = {
+			focus = AUS_prepare_sabotage
+		}
+		mutually_exclusive = {
+			focus = AUS_est_liebe_die_republik
+			focus = AUS_march_of_red_torches
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_empower_right_wing
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_vaterlandische_front
+		prerequisite = {
+			focus = AUS_vaterlandische_front
+		}
+		prerequisite = {
+			focus = AUS_agitation_program
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_revanchism
+		icon = GFX_
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = AUS_empower_right_wing
+		prerequisite = {
+			focus = AUS_empower_right_wing
+		}
+		mutually_exclusive = {
+			focus = AUS_will_of_victory
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_claim_serbia
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = AUS_revanchism
+		prerequisite = {
+			focus = AUS_revanchism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_strike_hungary
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_revanchism
+		prerequisite = {
+			focus = AUS_revanchism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_end_italian_supremacy
+		icon = GFX_
+		cost = 10
+		x = -2
+		y = 2
+		relative_position_id = AUS_revanchism
+		prerequisite = {
+			focus = AUS_claim_serbia
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_integrate_czechia
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 3
+		relative_position_id = AUS_revanchism
+		prerequisite = {
+			focus = AUS_end_italian_supremacy
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_claims_in_romania
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 3
+		relative_position_id = AUS_revanchism
+		prerequisite = {
+			focus = AUS_strike_hungary
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_doubt_russians
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 4
+		relative_position_id = AUS_revanchism
+		prerequisite = {
+			focus = AUS_claims_in_romania
+		}
+		prerequisite = {
+			focus = AUS_integrate_czechia
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_will_of_victory
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = AUS_empower_right_wing
+		prerequisite = {
+			focus = AUS_empower_right_wing
+		}
+		mutually_exclusive = {
+			focus = AUS_revanchism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_confederation_reforms
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = AUS_will_of_victory
+		prerequisite = {
+			focus = AUS_will_of_victory
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_strengthen_power
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 2
+		relative_position_id = AUS_will_of_victory
+		prerequisite = {
+			focus = AUS_confederation_reforms
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_integrate_bayern
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 2
+		relative_position_id = AUS_will_of_victory
+		prerequisite = {
+			focus = AUS_confederation_reforms
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_national_order
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 3
+		relative_position_id = AUS_will_of_victory
+		prerequisite = {
+			focus = AUS_strengthen_power
+		}
+		prerequisite = {
+			focus = AUS_integrate_bayern
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_demand_swiss_annex
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 4
+		relative_position_id = AUS_will_of_victory
+		prerequisite = {
+			focus = AUS_national_order
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_south_italy_or_war
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 4
+		relative_position_id = AUS_will_of_victory
+		prerequisite = {
+			focus = AUS_national_order
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_targeting_france
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 5
+		relative_position_id = AUS_will_of_victory
+		prerequisite = {
+			focus = AUS_demand_swiss_annex
+		}
+		prerequisite = {
+			focus = AUS_south_italy_or_war
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_alphine_national_union
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 6
+		relative_position_id = AUS_will_of_victory
+		prerequisite = {
+			focus = AUS_targeting_france
+		}
+		completion_reward = { 
+
+		}
+	}
+	################################
+	#  D E M O C R A C Y  P A T H  #
+	################################
+	focus = {
+		id = AUS_est_liebe_die_republik
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = AUS_peaceful_development
+		prerequisite = {
+			focus = AUS_peaceful_development
+		}
+		mutually_exclusive = {
+			focus = AUS_march_of_red_torches
+			focus = AUS_vaterlandische_front
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_conference_of_july
+		icon = GFX_
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = AUS_est_liebe_die_republik
+		prerequisite = {
+			focus = AUS_est_liebe_die_republik
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_article_nine_a
+		icon = GFX_
+		cost = 10
+		x = -2
+		y = 2
+		relative_position_id = AUS_est_liebe_die_republik
+		prerequisite = {
+			focus = AUS_conference_of_july
+		}
+		mutually_exclusive = {
+			focus = AUS_fate_of_czechia
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_guardind_of_democracy
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 3
+		relative_position_id = AUS_est_liebe_die_republik
+		prerequisite = {
+			focus = AUS_article_nine_a
+			focus = AUS_fate_of_czechia
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_federal_republic
+		icon = GFX_
+		cost = 10
+		x = -2
+		y = 4
+		relative_position_id = AUS_est_liebe_die_republik
+		prerequisite = {
+			focus = AUS_guardind_of_democracy
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_graz_conference
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = AUS_est_liebe_die_republik
+		prerequisite = {
+			focus = AUS_est_liebe_die_republik
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_fate_of_the_confederation
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 2
+		relative_position_id = AUS_est_liebe_die_republik
+		prerequisite = {
+			focus = AUS_graz_conference
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_fate_of_czechia
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_est_liebe_die_republik
+		prerequisite = {
+			focus = AUS_graz_conference
+		}
+		prerequisite = {
+			focus = AUS_conference_of_july
+		}
+		mutually_exclusive = {
+			focus = AUS_article_nine_a
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_ally_hungary
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 3
+		relative_position_id = AUS_est_liebe_die_republik
+		prerequisite = {
+			focus = AUS_fate_of_the_confederation
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_ally_italy
+		icon = GFX_
+		cost = 10
+		x = 3
+		y = 3
+		relative_position_id = AUS_est_liebe_die_republik
+		prerequisite = {
+			focus = AUS_fate_of_the_confederation
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_a_new_begining
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 4
+		relative_position_id = AUS_est_liebe_die_republik
+		prerequisite = {
+			focus = AUS_ally_hungary
+		}
+		prerequisite = {
+			focus = AUS_ally_italy
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_federation
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 5
+		relative_position_id = AUS_est_liebe_die_republik
+		prerequisite = {
+			focus = AUS_a_new_begining
+		}
+		prerequisite = {
+			focus = AUS_federal_republic
+		}
+		completion_reward = { 
+
+		}
+	}
+}
