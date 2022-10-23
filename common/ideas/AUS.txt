@@ -44,6 +44,19 @@ ideas = {
 				political_power_factor = -0.1
 			}
 		}
+		AUS_inner_turmoil_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_weekly_factor = -0.001
+				political_power_factor = -0.15
+			}
+		}
 		AUS_est_liebe_die_republik_idea = {
 			picture = GFX_
 			allowed = {
@@ -133,6 +146,116 @@ ideas = {
 				drift_defence_factor = 0.2
 				democratic_drift = 0.05
 				recruitable_population_factor = 0.05
+			}
+		}
+		AUS_march_of_red_torches_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				democratic_drift = -0.02
+				communism_drift = 0.04
+				neutrality_drift = -0.02
+				political_power_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		AUS_arbieter_republik_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				recruitable_population_factor = -0.05
+			}
+		}
+		AUS_home_of_revolution_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				drift_defence_factor = 0.5
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		#common_purpose_union
+		AUS_union_idea_0 = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				army_core_defence_factor = 0.1
+				army_attack_factor = 0.1
+			}
+		}
+		#union_in_unity
+		AUS_union_idea_1 = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_attack_factor = 0.05
+				recruitable_population_factor = 0.1
+			}
+		}
+		#spirit_of_leninism
+		AUS_union_idea_2 = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				army_core_defence_factor = 0.12
+				army_attack_factor = 0.12
+				recruitable_population_factor = 0.05
+				political_power_gain = -0.1
+			}
+		}
+		#peoples_spirit
+		AUS_union_idea_3 = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				army_core_defence_factor = 0.08
+				army_attack_factor = 0.08
+				recruitable_population_factor = 0.12
+				political_power_gain = -0.05
 			}
 		}
 

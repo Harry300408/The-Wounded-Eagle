@@ -705,6 +705,11 @@ focus_tree = {
 			focus = AUS_peaceful_development
 		}
 		completion_reward = { 
+			add_war_support = -0.1
+			add_timed_idea = {
+				idea = AUS_inner_turmoil_idea
+				days = 180
+			}
 			swap_ideas = {
 				remove_idea = AUS_monarchism_abandoned_idea_0
 				add_idea = AUS_monarchism_abandoned_idea_2
@@ -726,7 +731,7 @@ focus_tree = {
 	focus = {
 		id = AUS_agitation_program
 		icon = GFX_focus_AUS_agitation_program
-		cost = 10
+		cost = 5
 		x = 0
 		y = 2
 		relative_position_id = AUS_prepare_sabotage
@@ -754,6 +759,8 @@ focus_tree = {
 					popularity = 0.05
 				}
 			}
+			# TODO
+			# Agitation Program Decisions
 		}
 	}
 	##################################
@@ -791,7 +798,7 @@ focus_tree = {
 		id = AUS_one_direction
 		icon = GFX_
 		cost = 10
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = AUS_prepare_for_changes
 		prerequisite = {
@@ -857,7 +864,7 @@ focus_tree = {
 		id = AUS_multiple_directions
 		icon = GFX_
 		cost = 10
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = AUS_prepare_for_changes
 		prerequisite = {
@@ -1054,6 +1061,16 @@ focus_tree = {
 		cost = 10
 		x = 0
 		y = 1
+		allow_branch = {
+			#if = {
+			#	limit = {
+			#		NOT = {
+			#			has_country_flag = DELTA_THREE
+			#		}
+			#	}
+			#	always = no
+			#}
+		}
 		relative_position_id = AUS_first_viena_conference
 		prerequisite = {
 			focus = AUS_first_viena_conference
@@ -1083,7 +1100,7 @@ focus_tree = {
 		id = AUS_invite_victoria_iii
 		icon = GFX_
 		cost = 10
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = AUS_new_development
 		prerequisite = {
@@ -1244,8 +1261,8 @@ focus_tree = {
 	################################
 	focus = {
 		id = AUS_march_of_red_torches
-		icon = GFX_
-		cost = 10
+		icon = GFX_focus_AUS_red_torches_march
+		cost = 5
 		x = 0
 		y = 2
 		relative_position_id = AUS_abandon_monarchie
@@ -1258,13 +1275,16 @@ focus_tree = {
 			focus = AUS_vaterlandische_front
 		}
 		completion_reward = { 
-
+			swap_ideas = {
+				remove_idea = AUS_monarchism_abandoned_idea_1
+				add_idea = AUS_march_of_red_torches_idea
+			}
 		}
 	}
 	focus = {
 		id = AUS_empower_kpo
-		icon = GFX_
-		cost = 10
+		icon = GFX_focus_AUS_empower_kpo
+		cost = 5
 		x = 0
 		y = 2
 		relative_position_id = AUS_march_of_red_torches
@@ -1274,13 +1294,18 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_agitation_program
 		}
+		available = {
+			communism > 0.45
+		}
 		completion_reward = { 
-
+			set_politics = {
+				ruling_party = communism
+			}
 		}
 	}
 	focus = {
 		id = AUS_arbeiter_republik
-		icon = GFX_
+		icon = GFX_focus_AUS_arbeiter_republik
 		cost = 10
 		x = 0
 		y = 1
@@ -1289,12 +1314,12 @@ focus_tree = {
 			focus = AUS_empower_kpo
 		}
 		completion_reward = { 
-
+			add_ideas = AUS_arbieter_republik_idea
 		}
 	}
 	focus = {
 		id = AUS_communist_reforms
-		icon = GFX_
+		icon = GFX_focus_AUS_unionist_reforms
 		cost = 10
 		x = -2
 		y = 1
@@ -1303,12 +1328,13 @@ focus_tree = {
 			focus = AUS_arbeiter_republik
 		}
 		completion_reward = { 
-
+			add_political_power = 25
+			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = AUS_under_lenin_rule
-		icon = GFX_
+		icon = GFX_focus_AUS_lenin_rule
 		cost = 10
 		x = -3
 		y = 2
@@ -1320,12 +1346,14 @@ focus_tree = {
 			focus = AUS_german_communism
 		}
 		completion_reward = { 
-
+			# TODO
+			# Make Lenin Leader
+			add_ideas = AUS_home_of_revolution_idea
 		}
 	}
 	focus = {
 		id = AUS_common_purpose_union
-		icon = GFX_
+		icon = GFX_focus_AUS_common_purpose
 		cost = 10
 		x = -4
 		y = 3
@@ -1334,27 +1362,28 @@ focus_tree = {
 			focus = AUS_under_lenin_rule
 		}
 		completion_reward = { 
-
+			add_ideas = AUS_union_idea_0
 		}
 	}
 	focus = {
 		id = AUS_volksrepublik
-		icon = GFX_
+		icon = GFX_focus_AUS_volksrepublik
 		cost = 10
 		x = -2
 		y = 3
 		relative_position_id = AUS_arbeiter_republik
 		prerequisite = {
-			focus = AUS_under_lenin_rule
 			focus = AUS_german_communism
+			focus = AUS_under_lenin_rule
 		}
 		completion_reward = { 
-
+			add_stability = 0.1
+			add_war_support = 0.05
 		}
 	}
 	focus = {
 		id = AUS_spirit_of_leninism
-		icon = GFX_
+		icon = GFX_focus_AUS_leninism_spirit
 		cost = 10
 		x = -3
 		y = 5
@@ -1363,12 +1392,15 @@ focus_tree = {
 			focus = AUS_under_lenin_rule
 		}
 		completion_reward = { 
-
+			swap_ideas = {
+				remove_idea = AUS_union_idea_0
+				add_idea = AUS_union_idea_2
+			}
 		}
 	}
 	focus = {
 		id = AUS_german_communism
-		icon = GFX_
+		icon = GFX_focus_AUS_unionism_autriche
 		cost = 10
 		x = -1
 		y = 2
@@ -1385,7 +1417,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_union_in_unity
-		icon = GFX_
+		icon = GFX_focus_AUS_union_unity
 		cost = 10
 		x = 0
 		y = 3
@@ -1394,12 +1426,12 @@ focus_tree = {
 			focus = AUS_german_communism
 		}
 		completion_reward = { 
-
+			add_ideas = AUS_union_idea_1
 		}
 	}
 	focus = {
 		id = AUS_peoples_spirit
-		icon = GFX_
+		icon = GFX_focus_AUS_peoples_spirit
 		cost = 10
 		x = -1
 		y = 5
@@ -1408,12 +1440,15 @@ focus_tree = {
 			focus = AUS_german_communism
 		}
 		completion_reward = { 
-
+			swap_ideas = {
+				remove_idea = AUS_union_idea_1
+				add_idea = AUS_union_idea_3
+			}
 		}
 	}
 	focus = {
 		id = AUS_borderless_communism
-		icon = GFX_
+		icon = GFX_goal_support_communism
 		cost = 10
 		x = 2
 		y = 1
@@ -1422,12 +1457,13 @@ focus_tree = {
 			focus = AUS_arbeiter_republik
 		}
 		completion_reward = { 
-
+			# TODO
+			# activate Unionist Influence Decisions
 		}
 	}
 	focus = {
 		id = AUS_spread_italy
-		icon = GFX_
+		icon = GFX_goal_support_communism
 		cost = 10
 		x = 3
 		y = 2
@@ -1436,12 +1472,13 @@ focus_tree = {
 			focus = AUS_borderless_communism
 		}
 		completion_reward = { 
-
+			# TODO
+			# Unionist Influence + timed idea
 		}
 	}
 	focus = {
 		id = AUS_spread_hungary
-		icon = GFX_
+		icon = GFX_goal_support_communism
 		cost = 10
 		x = 1
 		y = 2
@@ -1450,12 +1487,13 @@ focus_tree = {
 			focus = AUS_borderless_communism
 		}
 		completion_reward = { 
-
+			# TODO
+			# Unionist Influence + timed idea
 		}
 	}
 	focus = {
 		id = AUS_spread_germany
-		icon = GFX_
+		icon = GFX_goal_support_communism
 		cost = 10
 		x = 2
 		y = 3
@@ -1464,12 +1502,13 @@ focus_tree = {
 			focus = AUS_borderless_communism
 		}
 		completion_reward = { 
-
+			# TODO
+			# Unionist Influence + timed idea
 		}
 	}
 	focus = {
 		id = AUS_spread_czechia
-		icon = GFX_
+		icon = GFX_goal_support_communism
 		cost = 10
 		x = 1
 		y = 4
@@ -1481,12 +1520,13 @@ focus_tree = {
 			focus = AUS_spread_germany
 		}
 		completion_reward = { 
-
+			# TODO
+			# Unionist Influence + timed idea
 		}
 	}
 	focus = {
 		id = AUS_spread_france
-		icon = GFX_
+		icon = GFX_goal_support_communism
 		cost = 10
 		x = 3
 		y = 4
@@ -1498,12 +1538,13 @@ focus_tree = {
 			focus = AUS_spread_germany
 		}
 		completion_reward = { 
-
+			# TODO
+			# Unionist Influence + timed idea
 		}
 	}
 	focus = {
 		id = AUS_european_communist_union
-		icon = GFX_
+		icon = GFX_goal_support_communism
 		cost = 10
 		x = 2
 		y = 5
@@ -1515,12 +1556,13 @@ focus_tree = {
 			focus = AUS_spread_czechia
 		}
 		completion_reward = { 
-
+			# TODO
+			# Coup Under Unionist influence Countries and puppet them
 		}
 	}
 	focus = {
 		id = AUS_imperialist_threat
-		icon = GFX_
+		icon = GFX_focus_AUS_imperialist_threat
 		cost = 10
 		x = 0
 		y = 6
@@ -1533,7 +1575,45 @@ focus_tree = {
 			focus = AUS_peoples_spirit
 		}
 		completion_reward = { 
-
+			if = {
+				limit = {
+					ENG = {
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				create_wargoal = {
+					target = ENG
+					type = topple_government
+				}
+			}
+			if = {
+				limit = {
+					TUR = {
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				create_wargoal = {
+					target = TUR
+					type = topple_government
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				create_wargoal = {
+					target = SOV
+					type = topple_government
+				}
+			}
 		}
 	}
 	############################
@@ -1542,7 +1622,7 @@ focus_tree = {
 	focus = {
 		id = AUS_vaterlandische_front
 		icon = GFX_
-		cost = 10
+		cost = 5
 		x = -5
 		y = 1
 		relative_position_id = AUS_prepare_sabotage
@@ -1560,7 +1640,7 @@ focus_tree = {
 	focus = {
 		id = AUS_empower_right_wing
 		icon = GFX_
-		cost = 10
+		cost = 5
 		x = 0
 		y = 2
 		relative_position_id = AUS_vaterlandische_front
@@ -2080,8 +2160,7 @@ focus_tree = {
 			focus = AUS_federal_republic
 		}
 		completion_reward = { 
-			# TODO
-			# Faction "Federation"
+			create_faction = "Federation"
 			add_threat = 2
 		}
 	}

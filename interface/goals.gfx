@@ -3879,4 +3879,52 @@ spriteTypes = {
 		name = "GFX_focus_AUS_federation"
 		texturefile = "gfx/interface/goals/AUS/AUS_federation_icon.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_AUS_red_torches_march"
+		texturefile = "gfx/interface/goals/AUS/AUS_red_torches_march_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_empower_kpo"
+		texturefile = "gfx/interface/goals/AUS/AUS_empower_kpo_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_arbeiter_republik"
+		texturefile = "gfx/interface/goals/AUS/AUS_arbeiter_republik_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_unionist_reforms"
+		texturefile = "gfx/interface/goals/AUS/AUS_unionist_reforms_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_lenin_rule"
+		texturefile = "gfx/interface/goals/AUS/AUS_lenin_rule_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_common_purpose"
+		texturefile = "gfx/interface/goals/AUS/AUS_common_purpose_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_volksrepublik"
+		texturefile = "gfx/interface/goals/AUS/AUS_volksrepublik_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_leninism_spirit"
+		texturefile = "gfx/interface/goals/AUS/AUS_leninism_spirit_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_unionism_autriche"
+		texturefile = "gfx/interface/goals/AUS/AUS_unionism_autriche_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_union_unity"
+		texturefile = "gfx/interface/goals/AUS/AUS_union_unity_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_peoples_spirit"
+		texturefile = "gfx/interface/goals/AUS/AUS_peoples_spirit_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_imperialist_threat"
+		texturefile = "gfx/interface/goals/AUS/AUS_imperialist_threat_icon.dds"
+	}
 }
