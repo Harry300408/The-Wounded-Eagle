@@ -2,11 +2,11 @@ state={
 	id=862
 	name="STATE_862"
 	provinces={
-		983 1764 3911 7875 10249 11682 11902 7893
+		983 3911 11682 11902 7893
 	}
 	history = {
-		owner = CAN
-		add_core_of = CAN
+		owner = BOR
+		add_core_of = BOR
 	}
 	manpower=80000
 	state_category = rural

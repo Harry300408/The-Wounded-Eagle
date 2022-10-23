@@ -3,7 +3,7 @@ state={
 	name="STATE_679"
 
 	history={
-		owner = SAU
+		owner = HAS
 		victory_points = {
 			12758 1 
 		}
@@ -13,12 +13,12 @@ state={
 			
 
 		}
-		add_core_of = SAU
+		add_core_of = HAS
 
 	}
 
 	provinces={
-		2033 4981 5099 7934 10748 10835 12758 
+		12758 5099 10748 
 	}
 	manpower=511000
 	buildings_max_level_factor=1.000

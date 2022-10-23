@@ -3,8 +3,8 @@ state = {
 	name = "STATE_930"
 
 	history = {
-		owner = CAN
-		add_core_of = CAN
+		owner = BOR
+		add_core_of = BOR
 
 	}
 

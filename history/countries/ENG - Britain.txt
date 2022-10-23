@@ -179,34 +179,96 @@ add_ideas = {
 set_convoys = 800
 
 # DIPLOMACY
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+
 	set_autonomy = {
 		target = MAL
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_commonwealth_proc
 	}
 	set_autonomy = {
 		target = RAJ
-		autonomous_state = autonomy_colony
+		autonomous_state = autonomy_commonwealth_proc
 	}
 	set_autonomy = {
 		target = CAN
-		autonomous_state = autonomy_dominion
+		autonomous_state = autonomy_commonwealth_proc
 	}
 	set_autonomy = {
 		target = SAF
-		autonomous_state = autonomy_dominion
+		autonomous_state = autonomy_commonwealth_proc
 	}
 	set_autonomy = {
 		target = AST
-		autonomous_state = autonomy_dominion
+		autonomous_state = autonomy_commonwealth_proc
 	}
 	set_autonomy = {
 		target = NZL
-		autonomous_state = autonomy_dominion
+		autonomous_state = autonomy_commonwealth_proc
 	}
 	set_autonomy = {
 		target = EGY
-		autonomous_state = autonomy_dominion
+		autonomous_state = autonomy_commonwealth_proc
 	}
+
+	set_autonomy = {
+		target = GLF
+		autonomous_state = autonomy_commonwealth_proc
+	}
+
+	set_autonomy = {
+		target = LAC
+		autonomous_state = autonomy_commonwealth_proc
+	}
+
+	set_autonomy = {
+		target = CLU
+		autonomous_state = autonomy_commonwealth_proc
+	}
+
+	set_autonomy = {
+		target = BOR
+		autonomous_state = autonomy_commonwealth_proc
+	}
+
+	set_autonomy = {
+		target = NGA
+		autonomous_state = autonomy_commonwealth_proc
+	}
+
+	set_autonomy = {
+		target = NBW
+		autonomous_state = autonomy_commonwealth_proc
+	}
+
+	set_autonomy = {
+		target = IRE
+		autonomous_state = autonomy_commonwealth_proc
+	}
+
+	else = {
+		puppet = MAL
+		puppet = RAJ
+		puppet = CAN
+		puppet = SAF
+		puppet = AST
+		puppet = NZL
+		puppet = EGY
+		puppet = GLF
+		puppet = LAC
+		puppet = CLU
+		puppet = BOR
+		puppet = NGA
+		puppet = NBW
+		puppet = IRE
+
+	}
+}
+
+
 
 
 if = {
@@ -434,7 +496,7 @@ set_popularities = {
 }
 
 
-create_faction = "the Alliance of Brothers"
+create_faction = "Commonwealth"
 add_to_faction = ENG
 
 give_guarantee = HAN

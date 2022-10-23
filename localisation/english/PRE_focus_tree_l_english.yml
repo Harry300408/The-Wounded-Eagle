@@ -14,19 +14,37 @@
  PRE_shock_troopers:0 "Form the Prussian Shock Troopers"
  PRE_shock_troopers_desc:0 "§RThis makes a div template that is used for the focuses below§!"
 
- PRE_deploy_1:0 "Deploy Division 1"
+ PRE_deploy_1:0 "Deploy Ostpreußische Sturmtruppen"
  PRE_deploy_1_desc:0 ""
 
- PRE_deploy_2:0 "Deploy Division 2"
+ PRE_deploy_2:0 "Deploy Brandenburgische Sturmtruppen"
  PRE_deploy_2_desc:0 """
 
- PRE_deploy_3:0 "Deploy Division 3"
+ PRE_deploy_3:0 "Deploy Oberschlesische Sturmtruppen"
  PRE_deploy_3_desc:0 ""
 
- PRE_deploy_4:0 "Deploy Division 4"
+ PRE_deploy_4:0 "Deploy Pommersche Sturmtruppen"
  PRE_deploy_4_desc:0 ""
 
- PRE_deploy_5:0 "Deploy Division 5"
+ PRE_deploy_5:0 "Deploy Südpreußische Sturmtruppen"
  PRE_deploy_5_desc:0 ""
 
  PRE_shock_better_plans:0 "Better Planning and Organisation"
+ PRE_shock_better_plans_desc:0 "Recent plans and better organisation with the shock troopers means we can better manage and organise the divisions"
+
+ PRE_state_of_the_army:0 "State of The Prussian Army"
+ PRE_state_of_the_army_desc:0 ""
+ 
+ PRE_rommel:0 "Rommel's Plan"
+ PRE_rommel_desc:0 ""
+
+ PRE_manstein:0 "Manstein's Plan"
+ PRE_manstein_desc:0 ""
+
+ PRE_MI:0 "Prussian Institute of Military Research"
+ PRE_MI_desc:0 ""
+
+ PRE_TNK:0 "Prussian Tanks"
+ PRE_TNK_desc:0 ""
+
+ PRE_plans:0 "Initiate Plans"

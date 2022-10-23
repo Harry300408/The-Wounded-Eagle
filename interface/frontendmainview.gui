@@ -99,7 +99,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "mainmenu_single_player"
 		position = { x=0 y =0}
-		size = { width = 320 height = 395}
+		size = { width = 320 height = 270}
 		Orientation = CENTER
 		Origo = center	
 				
@@ -111,7 +111,7 @@ guiTypes = {
 		ButtonType = {
 			name = "sp_continue_button"
 			position = { x = 16 y = 18 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			quadTextureSprite ="GFX_TWE_MM_button"	
 			buttonText = "FE_CONTINUE"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
@@ -153,7 +153,7 @@ guiTypes = {
 		ButtonType = {
 			name = "sp_new_button"
 			position = { x = 16 y = 58 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			quadTextureSprite ="GFX_TWE_MM_button"	
 			buttonText = "FE_NEW"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
@@ -163,7 +163,7 @@ guiTypes = {
 		ButtonType = {
 			name = "sp_load_button"
 			position = {  x = 16 y = 98 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			quadTextureSprite ="GFX_TWE_MM_button"	
 			buttonText = "MENU_BAR_LOAD"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
@@ -173,7 +173,7 @@ guiTypes = {
 		ButtonType = {
 			name = "sp_tutorial_button"
 			position = { x = 16 y = 138}
-			quadTextureSprite ="GFX_main_lobby_button"	
+			quadTextureSprite ="GFX_TWE_MM_button"	
 			buttonText = "FE_TUTORIAL"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
@@ -183,7 +183,7 @@ guiTypes = {
 		ButtonType = {
 			name = "sp_back_button"
 			position = { x = 16 y = 218 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			quadTextureSprite ="GFX_TWE_MM_button"	
 			buttonText = "BACK"
 			buttonFont = "hoi_24header"
 			clicksound = click_close
@@ -531,14 +531,14 @@ guiTypes = {
 			}
 		}
 		
-		ButtonType = {
-			name = "homepage_button"
-			position = { x=0 y=100 }
-			quadTextureSprite ="homepage"
-			clicksound = click_default
-			pdx_tooltip = "MENU_HOMEPAGE"
-			web_link = "https://tweofficial.fandom.com/wiki/The_Wounded_Eagle_Official_Wiki"
-		}
+		#ButtonType = {
+		#	name = "homepage_button"
+		#	position = { x=0 y=100 }
+		#	quadTextureSprite ="homepage"
+		#	clicksound = click_default
+		#	pdx_tooltip = "MENU_HOMEPAGE"
+		#	web_link = "https://tweofficial.fandom.com/wiki/The_Wounded_Eagle_Official_Wiki"
+		#}
 		#ButtonType = {
 		#	name = "forum_button"
 		#	position = { x=50 y=100 }
@@ -563,13 +563,13 @@ guiTypes = {
 		#	pdx_tooltip = "MENU_TWITTER"
 		#	web_link = "https://twitter.com/hoi_game"
 		#}
-		ButtonType = {
-			name = "privacy_policy_button"
-			position = { x=200 y=100 }
-			quadTextureSprite ="privacy"
-			#clicksound = click_default
-			pdx_tooltip = "MENU_PRIVACY_POLICY"
-		}
+		#ButtonType = {
+		#	name = "privacy_policy_button"
+		#	position = { x=200 y=100 }
+		#	quadTextureSprite ="privacy"
+		#	#clicksound = click_default
+		#	pdx_tooltip = "MENU_PRIVACY_POLICY"
+		#}
 	}
 
 	## This position needs updated

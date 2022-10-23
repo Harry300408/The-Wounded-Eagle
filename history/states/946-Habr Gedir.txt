@@ -1,0 +1,22 @@
+state = {
+	id = 946
+	name = "STATE_946"
+
+	history = {
+		owner = HAG
+		add_core_of = HAG
+		victory_points = {
+			12991 3 
+		} 
+
+	}
+
+	provinces = {
+		12840 5065 12991 
+	}
+	manpower = 8900
+	 
+	buildings_max_level_factor = 1.000
+	state_category = rural
+	local_supplies = 0.000
+}

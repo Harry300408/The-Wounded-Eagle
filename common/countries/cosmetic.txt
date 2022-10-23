@@ -13,6 +13,11 @@ NGR_proc = {
 }
 
 #UK
+PRI_RAJ = {
+    color = rgb { 183 20 36 }
+    color_ui = rgb { 176 12 62 }
+}
+
 NBW_UK = {
     color = rgb { 176 12 62 }
     color_ui = rgb { 176 12 62 }
@@ -284,21 +289,6 @@ ENG_imperial_federation_unified = {
 ENG_imperial_federation_india_unified = {
 	color = rgb { 180 0 0 }
 	color_ui = rgb { 255 0 0 }
-}
-
-CAN_north_america_dominion = {
-	color = rgb { 160 0 0 }
-	color_ui = rgb { 235 0 0 }
-}
-
-CAN_UK = {
-	color = rgb { 119 48 39 }
-	color_ui = rgb { 155 62 51 }
-}
-
-CAN_FREE = {
-	color = rgb { 233  59  59 }
-	color_ui = rgb { 155 62 51 }
 }
 
 USA_CSA = {

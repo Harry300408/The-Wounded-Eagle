@@ -19,6 +19,76 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+
+	set_autonomy = {
+		target = BOM
+		autonomous_state = autonomy_IND_princely_state
+	}
+
+	set_autonomy = {
+		target = MYS
+		autonomous_state = autonomy_IND_princely_state
+	}
+
+	set_autonomy = {
+		target = MDI
+		autonomous_state = autonomy_IND_princely_state
+	}
+
+	set_autonomy = {
+		target = MDS
+		autonomous_state = autonomy_IND_princely_state
+	}
+
+	set_autonomy = {
+		target = HYD
+		autonomous_state = autonomy_IND_princely_state
+	}
+
+	set_autonomy = {
+		target = ORI
+		autonomous_state = autonomy_IND_princely_state
+	}
+
+	else = {
+		puppet = MYS
+		puppet = BOM
+		puppet = MDI
+		puppet = MDS
+		puppet = HYD
+		puppet = ORI
+	}
+}
+
+BOM = {
+	set_cosmetic_tag = PRI_RAJ
+}
+
+MYS = {
+	set_cosmetic_tag = PRI_RAJ
+}
+
+MDI = {
+	set_cosmetic_tag = PRI_RAJ
+}
+
+MDS = {
+	set_cosmetic_tag = PRI_RAJ
+}
+
+HYD = {
+	set_cosmetic_tag = PRI_RAJ
+}
+
+ORI = {
+	set_cosmetic_tag = PRI_RAJ
+}
+
+
 set_stability = 0.6
 set_war_support = 0.1
 # Starting tech

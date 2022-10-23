@@ -1,5 +1,120 @@
 #reload countrycolors
 #TWE Nations
+ORI = {
+	color = rgb { 211 112 138 }
+	color_ui = rgb { 211 112 138 }
+}
+
+HYD = {
+	color = rgb { 159 183 173 }
+	color_ui = rgb { 159 183 173 }
+}
+
+MDS = {
+	color = rgb { 159 183 173 }
+	color_ui = rgb { 159 183 173 }
+}
+
+MDI = {
+	color = rgb { 183 176 123 }
+	color_ui = rgb { 183 176 123 }
+}
+
+MYS = {
+	color = rgb { 125 183 123 }
+	color_ui = rgb { 125 183 123 }
+}
+
+BOM = {
+	color = rgb { 96 107 255 }
+	color_ui = rgb { 96 107 255 }
+}
+
+IRL = {
+	color = rgb { 255 132 50 }
+	color_ui = rgb { 0 255 255 }
+}
+
+GUJ = {
+	color = rgb { 0 255 255 }
+	color_ui = rgb { 0 255 255 }
+}
+
+RJH = {
+	color = rgb { 142 221 255 }
+	color_ui = rgb { 142 221 255 }
+}
+
+DEL = {
+	color = rgb { 0 255 144 }
+	color_ui = rgb { 0 255 144 }
+}
+
+KAS = {
+	color = rgb { 255 255 255 }
+	color_ui = rgb { 255 255 255 }
+}
+
+SKH = {
+	color = rgb { 0 127 14 }
+	color_ui = rgb { 0 127 14 }
+}
+
+NEJ = {
+	color = rgb { 75 85 66 }
+	color_ui = rgb { 75 85 66 }
+}
+
+HAS = {
+	color = rgb { 100 176 162 }
+	color_ui = rgb { 100 176 162 }
+}
+
+JSR = {
+	color = rgb { 188 151 130 }
+	color_ui = rgb { 188 151 130 }
+}
+
+ALS = {
+	color = rgb { 95 98 79 }
+	color_ui = rgb { 95 98 79 }
+}
+
+MEC = {
+	color = rgb { 133 161 173 }
+	color_ui = rgb { 133 161 173 }
+}
+
+MED = {
+	color = rgb { 106 47 51 }
+	color_ui = rgb { 106 47 51 }
+}
+
+HEL = {
+	color = rgb { 94 119 86 }
+	color_ui = rgb { 94 119 86 }
+}
+
+HAG = {
+	color = rgb { 48 58 47 }
+	color_ui = rgb { 48 58 47 }
+}
+
+MHD = {
+	color = rgb { 70 86 71 }
+	color_ui = rgb { 70 86 71 }
+}
+
+DER = {
+	color = rgb { 57 42 39 }
+	color_ui = rgb { 57 42 39 }
+}
+
+BOR = {
+	color = rgb { 44 94 135 }
+	color_ui = rgb { 44 94 135 }
+}
+
 ALK = {
 	color = rgb { 169 177 78 }
 	color_ui = rgb { 169 177 78 }
@@ -236,8 +351,8 @@ BRA = {
 	color_ui = rgb { 99 189 82 }
 }
 CAN = {
-	color = rgb { 233  59  59 }
-	color_ui = rgb { 155 62 51 }
+	color = rgb { 216 125 82 }
+	color_ui = rgb { 216 125 82 }
 }
 CHI = {
 	color = hsv { 0.18 0.6 0.9 } #255 244 190

@@ -3799,5 +3799,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/prussian_princables.dds"
 	}
 
+	spriteType = {
+		name = "GFX_focus_rommel"
+		texturefile = "gfx/interface/goals/rommel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_manstein"
+		texturefile = "gfx/interface/goals/manstein.dds"
+	}
+
 
 }

@@ -1,0 +1,8 @@
+# TWE Native/Colonial Countries #
+
+#Great Lake Confederation#
+GLF = "countries/Natives.txt"
+#Free Tribes Territory
+LAC = "countries/Natives.txt"
+#New England
+NEN = "countries/USA.txt"

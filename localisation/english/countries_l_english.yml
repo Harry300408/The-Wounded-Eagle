@@ -1,5 +1,97 @@
 ﻿l_english:
  # TWE Base Nations
+ ORI:0 "Orissa"
+ ORI_DEF:0 "Orissa"
+ ORI_ADJ:0 "Indian"
+  
+ HYD:0 "Hyderabad"
+ HYD_DEF:0 "Hyderabad"
+ HYD_ADJ:0 "Indian"
+
+ MDS:0 "Madras"
+ MDS_DEF:0 "Madras"
+ MDS_ADJ:0 "Indian"
+
+ MDI:0 "Madurai"
+ MDI_DEF:0 "Madurai"
+ MDI_ADJ:0 "Indian"
+
+ MYS:0 "Mysore"
+ MYS_DEF:0 "Mysore"
+ MYS_ADJ:0 "Indian"
+
+ BOM:0 "Bombay"
+ BOM_DEF:0 "Bombay"
+ BOM_ADJ:0 "Indian"
+
+ IRL:0 "Indian Reclemation League"
+ IRL_DEF:0 "the Indian Reclemation League"
+ IRL_ADJ:0 "Indian"
+
+ GUJ:0 "Gujarat"
+ GUJ_DEF:0 "Gujarat"
+ GUJ_ADJ:0 "Indian"
+
+ RJH:0 "Rajahsthan"
+ RJH_DEF:0 "Rajahsthan"
+ RJH_ADJ:0 "Indian"
+
+ DEL:0 "Republic of Delhi"
+ DEL_DEF:0 "Republic of Delhi"
+ DEL_ADJ:0 "Indian"
+
+ KAS:0 "Kashmir"
+ KAS_DEF:0 "Kashmir"
+ KAS_ADJ:0 "Indian"
+
+ SKH:0 "Sikh Empire"
+ SKH_DEF:0 "the Sikh Empire"
+ SKH_ADJ:0 "Indian"
+
+ NEJ:0 "United Emirate of Nejd"
+ NEJ_DEF:0 "the United Emirate of Nejd"
+ NEJ_ADJ:0 "Arabian"
+
+ HAS:0 "Hashimid League of Arabs"
+ HAS_DEF:0 "the Hashimid League of Arabs"
+ HAS_ADJ:0 "Arabian"
+
+ JSR:0 "Emirate of Jabal Shammar"
+ JSR_DEF:0 "the Emirate of Jabal Shammar"
+ JSR_ADJ:0 "Arabian"
+
+ ALS:0 "Emirate of Al Shaalan"
+ ALS_DEF:0 "the Emirate of Al Shaalan"
+ ALS_ADJ:0 "Arabian"
+
+ MEC:0 "Mecca"
+ MEC_DEF:0 "Mecca"
+ MEC_ADJ:0 "Arabian"
+
+ MED:0 "Medina"
+ MED_DEF:0 "Medina"
+ MED_ADJ:0 "Arabian"
+ 
+ HEL:0 "Helai"
+ HEL_DEF:0 "Helai"
+ HEL_ADJ:0 "African"
+
+ HAG:0 "Habr Gedir"
+ HAG_DEF:0 "Habr Gedir"
+ HAG_ADJ:0 "African"
+
+ MHD:0 "Mahmud Sultanate"
+ MHD_DEF:0 "the Mahmud Sultanate"
+ MHD_ADJ:0 "African"
+
+ DER:0 "Dervish Tribe"
+ DER_DEF:0 "Dervish Tribe"
+ DER_ADJ:0 "African"
+ 
+ BOR:0 "Borealia"
+ BOR_DEF:0 "Borealia"
+ BOR_ADJ:0 "Canadian"
+
  ALK:0 "Alyaska"
  ALK_DEF:0 "Alyaska"
  ALK_ADJ:0 "Alaskan"
@@ -21,7 +113,7 @@
  DES_ADJ:0 "American"
 
  CAL:0 "Republic of Califonia"
- CAL_DEF:0 "Republic of Califonia"
+ CAL_DEF:0 "the Republic of Califonia"
  CAL_ADJ:0 "Califonian"
 
  WSF:0 "Westphalia" 

@@ -34,6 +34,21 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+
+	set_autonomy = {
+		target = BUL
+		autonomous_state = autonomy_OTT_eya
+	}
+	
+	else = {
+		puppet = BUL
+	}	
+
+}
 ###################
 #### 3D MODELS ####
 ###################

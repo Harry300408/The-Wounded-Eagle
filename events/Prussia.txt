@@ -22,3 +22,26 @@ country_event = {
 		set_country_flag = confederation_PRE
 	}
 }
+
+country_event = {
+	id = pre.2
+	title = pre.2.t
+	desc = pre.2.d
+	picture = GFX_report_event_soldiers_marching
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+		trigger= {
+		}
+
+	option = {
+		name = pre.2.a
+		complete_national_focus = PRE_manstein
+	}
+
+	option = {
+		name = pre.2.b
+		complete_national_focus = PRE_rommel
+	}
+}

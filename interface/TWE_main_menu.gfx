@@ -25,6 +25,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = GFX_flag_overlay_xl
+        texturefile = gfx/interface/main/flag_overlay_large.dds
+    }
+
+    spriteType = {
         name = GFX_TWE_MM_button
         texturefile = gfx/interface/TWE_main_lobby_button.dds
         noOFframes = 3

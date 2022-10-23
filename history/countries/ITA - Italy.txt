@@ -345,7 +345,7 @@ add_equipment_to_stockpile = {
 	add_political_power = 1198
 	add_command_power = 100
 	
-	#white_peace = ETH
+	
 	if = {
 		limit = {
 			has_dlc = "Man the Guns"

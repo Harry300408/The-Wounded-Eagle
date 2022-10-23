@@ -4,13 +4,13 @@ state = {
 
 	history = {
 
-		owner = FRA
-		#add_core_of = FRA
+		owner = ALS
+		add_core_of = ALS
 
 	}
 
 	provinces = {
-		10383
+		10383 1631
 	}
 	manpower = 4500
 	buildings_max_level_factor = 1.000
