@@ -601,17 +601,17 @@ focus_tree = {
 	########################
 	focus = {
 		id = AUS_political_plan
-		icon = GFX_
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 10
 		x = 0
 		y = 0
 		completion_reward = { 
-			
+			add_political_power = 120
 		}
 	}
 	focus = {
 		id = AUS_abandon_monarchie
-		icon = GFX_
+		icon = GFX_focus_AUS_abandon_monarchism
 		cost = 10
 		x = -11
 		y = 1
@@ -623,12 +623,24 @@ focus_tree = {
 			focus = AUS_continue_monarchism
 		}
 		completion_reward = { 
-
+			add_ideas = AUS_monarchism_abandoned_idea_0
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
 		}
 	}
 	focus = {
 		id = AUS_continue_monarchism
-		icon = GFX_
+		icon = GFX_focus_AUS_continue_monarchism
 		cost = 10
 		x = 12
 		y = 1
@@ -640,12 +652,16 @@ focus_tree = {
 			focus = AUS_abandon_monarchie
 		}
 		completion_reward = { 
-
+			add_ideas = AUS_monarchism_continued_idea_0
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
 		}
 	}
 	focus = {
 		id = AUS_peaceful_development
-		icon = GFX_
+		icon = GFX_focus_AUS_peaceful_development
 		cost = 10
 		x = 4
 		y = 1
@@ -657,12 +673,27 @@ focus_tree = {
 			focus = AUS_prepare_sabotage
 		}
 		completion_reward = { 
-
+			swap_ideas = {
+				remove_idea = AUS_monarchism_abandoned_idea_0
+				add_idea = AUS_monarchism_abandoned_idea_1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
 		}
 	}
 	focus = {
 		id = AUS_prepare_sabotage
-		icon = GFX_
+		icon = GFX_focus_AUS_prepare_sabotage
 		cost = 10
 		x = -4
 		y = 1
@@ -674,12 +705,27 @@ focus_tree = {
 			focus = AUS_peaceful_development
 		}
 		completion_reward = { 
-
+			swap_ideas = {
+				remove_idea = AUS_monarchism_abandoned_idea_0
+				add_idea = AUS_monarchism_abandoned_idea_2
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
 		}
 	}
 	focus = {
 		id = AUS_agitation_program
-		icon = GFX_
+		icon = GFX_focus_AUS_agitation_program
 		cost = 10
 		x = 0
 		y = 2
@@ -689,7 +735,25 @@ focus_tree = {
 			focus = AUS_vaterlandische_front
 		}
 		completion_reward = { 
-
+			add_political_power = -25
+			if = {
+				limit = {
+					has_completed_focus = AUS_vaterlandische_front
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = AUS_march_of_red_torches
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+			}
 		}
 	}
 	##################################
@@ -1754,7 +1818,7 @@ focus_tree = {
 	################################
 	focus = {
 		id = AUS_est_liebe_die_republik
-		icon = GFX_
+		icon = GFX_focus_AUS_est_liebe_die_republik
 		cost = 10
 		x = 2
 		y = 1
@@ -1766,13 +1830,22 @@ focus_tree = {
 			focus = AUS_march_of_red_torches
 			focus = AUS_vaterlandische_front
 		}
+		available = {
+			democratic > 0.45
+		}
 		completion_reward = { 
-
+			swap_ideas = {
+				remove_idea = AUS_monarchism_abandoned_idea_1
+				add_idea = AUS_est_liebe_die_republik_idea
+			}
+			set_politics = {
+				ruling_party = democratic
+			}
 		}
 	}
 	focus = {
 		id = AUS_conference_of_july
-		icon = GFX_
+		icon = GFX_focus_AUS_july_conference
 		cost = 10
 		x = -2
 		y = 1
@@ -1781,12 +1854,13 @@ focus_tree = {
 			focus = AUS_est_liebe_die_republik
 		}
 		completion_reward = { 
-
+			# TODO
+			# country event (add political power for democratic reforms)
 		}
 	}
 	focus = {
 		id = AUS_article_nine_a
-		icon = GFX_
+		icon = GFX_focus_AUS_article_9a
 		cost = 10
 		x = -2
 		y = 2
@@ -1798,12 +1872,12 @@ focus_tree = {
 			focus = AUS_fate_of_czechia
 		}
 		completion_reward = { 
-
+			add_ideas = AUS_article_9a_idea_0
 		}
 	}
 	focus = {
 		id = AUS_guardind_of_democracy
-		icon = GFX_
+		icon = GFX_focus_AUS_democracy_guardian
 		cost = 10
 		x = -1
 		y = 3
@@ -1813,12 +1887,40 @@ focus_tree = {
 			focus = AUS_fate_of_czechia
 		}
 		completion_reward = { 
-
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = AUS_article_nine_a
+						has_completed_focus = AUS_fate_of_czechia
+					}
+				}
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = AUS_article_9a_idea_0
+						add_idea = AUS_article_9a_idea_1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = AUS_article_nine_a
+				}
+				swap_ideas = {
+					remove_idea = AUS_article_9a_idea_0
+					add_idea = AUS_article_9a_idea_1
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = AUS_fate_of_czechia
+				}
+				add_ideas = AUS_article_9a_idea_0
+			}
 		}
 	}
 	focus = {
 		id = AUS_federal_republic
-		icon = GFX_
+		icon = GFX_focus_AUS_federal_republic
 		cost = 10
 		x = -2
 		y = 4
@@ -1827,12 +1929,44 @@ focus_tree = {
 			focus = AUS_guardind_of_democracy
 		}
 		completion_reward = { 
-
+			add_political_power = 50
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = AUS_article_nine_a
+						has_completed_focus = AUS_fate_of_czechia
+					}
+				}
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = AUS_article_9a_idea_1
+						add_idea = AUS_article_9a_idea_2
+					}
+				}
+			}
+			if = {
+				limit = { 
+					has_idea = AUS_article_9a_idea_1
+				}
+				swap_ideas = {
+					remove_idea = AUS_article_9a_idea_1
+					add_idea = AUS_article_9a_idea_2
+				}
+			}
+			if = {
+				limit = { 
+					has_idea = AUS_article_9a_idea_0
+				}
+				swap_ideas = {
+					remove_idea = AUS_article_9a_idea_0
+					add_idea = AUS_article_9a_idea_3
+				}
+			}
 		}
 	}
 	focus = {
 		id = AUS_graz_conference
-		icon = GFX_
+		icon = GFX_focus_AUS_graz_conference
 		cost = 10
 		x = 2
 		y = 1
@@ -1841,12 +1975,13 @@ focus_tree = {
 			focus = AUS_est_liebe_die_republik
 		}
 		completion_reward = { 
-
+			# TODO
+			# country event (take political power for confederation reforms)
 		}
 	}
 	focus = {
 		id = AUS_fate_of_the_confederation
-		icon = GFX_
+		icon = GFX_focus_AUS_confederation_fate
 		cost = 10
 		x = 2
 		y = 2
@@ -1855,12 +1990,13 @@ focus_tree = {
 			focus = AUS_graz_conference
 		}
 		completion_reward = { 
-
+			# TODO
+			# country event (fate of condeferation)
 		}
 	}
 	focus = {
 		id = AUS_fate_of_czechia
-		icon = GFX_
+		icon = GFX_focus_AUS_czechia_fate
 		cost = 10
 		x = 0
 		y = 2
@@ -1875,12 +2011,13 @@ focus_tree = {
 			focus = AUS_article_nine_a
 		}
 		completion_reward = { 
-
+			# TODO
+			# country event (fate of Czechia)
 		}
 	}
 	focus = {
 		id = AUS_ally_hungary
-		icon = GFX_
+		icon = GFX_focus_AUS_ally_hungary
 		cost = 10
 		x = 1
 		y = 3
@@ -1889,12 +2026,13 @@ focus_tree = {
 			focus = AUS_fate_of_the_confederation
 		}
 		completion_reward = { 
-
+			# TODO
+			# Hungary add idea (democratic influence)
 		}
 	}
 	focus = {
 		id = AUS_ally_italy
-		icon = GFX_
+		icon = GFX_focus_AUS_ally_italy
 		cost = 10
 		x = 3
 		y = 3
@@ -1903,12 +2041,13 @@ focus_tree = {
 			focus = AUS_fate_of_the_confederation
 		}
 		completion_reward = { 
-
+			# TODO
+			# Italy add idea (democratic influence)
 		}
 	}
 	focus = {
 		id = AUS_a_new_begining
-		icon = GFX_
+		icon = GFX_goal_generic_improve_relations
 		cost = 10
 		x = 2
 		y = 4
@@ -1920,12 +2059,16 @@ focus_tree = {
 			focus = AUS_ally_italy
 		}
 		completion_reward = { 
-
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = AUS_federation
-		icon = GFX_
+		icon = GFX_focus_AUS_federation
 		cost = 10
 		x = 0
 		y = 5
@@ -1937,7 +2080,9 @@ focus_tree = {
 			focus = AUS_federal_republic
 		}
 		completion_reward = { 
-
+			# TODO
+			# Faction "Federation"
+			add_threat = 2
 		}
 	}
 }
