@@ -3810,4 +3810,73 @@ spriteTypes = {
 	}
 
 
+	### GOALS AUS (TWE) ###
+	#spriteType = {
+	#	name = "GFX_focus_AUS_political_plan"
+	#	texturefile = "gfx/interface/goals/AUS/AUS_political_plan_icon.dds"
+	#}
+	spriteType = {
+		name = "GFX_focus_AUS_abandon_monarchism"
+		texturefile = "gfx/interface/goals/AUS/AUS_abandon_monarchism_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_continue_monarchism"
+		texturefile = "gfx/interface/goals/AUS/AUS_continue_monarchism_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_peaceful_development"
+		texturefile = "gfx/interface/goals/AUS/AUS_peaceful_development_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_prepare_sabotage"
+		texturefile = "gfx/interface/goals/AUS/AUS_prepare_sabotage_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_agitation_program"
+		texturefile = "gfx/interface/goals/AUS/AUS_agitation_program_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_est_liebe_die_republik"
+		texturefile = "gfx/interface/goals/AUS/AUS_est_liebe_die_republik_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_july_conference"
+		texturefile = "gfx/interface/goals/AUS/AUS_july_conference_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_article_9a"
+		texturefile = "gfx/interface/goals/AUS/AUS_article_9a_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_democracy_guardian"
+		texturefile = "gfx/interface/goals/AUS/AUS_democracy_guardian_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_federal_republic"
+		texturefile = "gfx/interface/goals/AUS/AUS_federal_republic_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_graz_conference"
+		texturefile = "gfx/interface/goals/AUS/AUS_graz_conference_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_confederation_fate"
+		texturefile = "gfx/interface/goals/AUS/AUS_confederation_fate_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_czechia_fate"
+		texturefile = "gfx/interface/goals/AUS/AUS_czechia_fate_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_ally_hungary"
+		texturefile = "gfx/interface/goals/AUS/AUS_ally_hungary_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_ally_italy"
+		texturefile = "gfx/interface/goals/AUS/AUS_ally_italy_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_federation"
+		texturefile = "gfx/interface/goals/AUS/AUS_federation_icon.dds"
+	}
 }
