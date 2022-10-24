@@ -135,9 +135,31 @@ AUS_western_claims:0 "Western Claims"
 AUS_crush_italian_unity:0 "Crush Italian Unity"
 AUS_swiss_ultimatum:0 "Swiss Ultimatum"
 AUS_subjugate_france:0 "Subjugate France"
+
 ### EVENTS ###
 
 ### IDEAS ###
+AUS_monarchism_abandoned_idea_0:0 "Monarchism Abandoned"
+AUS_monarchism_abandoned_idea_1:0 "Monarchism Abandoned"
+AUS_monarchism_abandoned_idea_2:0 "Monarchism Abandoned"
+AUS_inner_turmoil_idea:0 "Inner Turmoil"
+AUS_est_liebe_die_republik_idea:0 "Est Liebe Die Republik!"
+AUS_monarchism_continued_idea_0:0 "Monarchism Continued"
+AUS_article_9a_idea_0:0 "Article 9A"
+AUS_article_9a_idea_1:0 "Article 9A"
+AUS_article_9a_idea_2:0 "Article 9A"
+AUS_article_9a_idea_3:0 "Article 9A"
+AUS_march_of_red_torches_idea:0 "March of Red Torches"
+AUS_arbieter_republik_idea:0 "Arbeiter Republik"
+AUS_home_of_revolution_idea:0 "Home of Revolution"
+AUS_union_idea_0:0 "Union Idea"
+AUS_union_idea_1:0 "Union Idea"
+AUS_union_idea_2:0 "Union Idea"
+AUS_union_idea_3:0 "Union Idea"
+AUS_vaterlandische_front_idea:0 "Vaterlandische Front"
+AUS_revanchism_idea:0 "Revanchism"
+AUS_will_of_victory_idea:0 "Will of Victory"
+AUS_national_order_idea:0 "National Order"
 
 ### TOOLTIP ###
 

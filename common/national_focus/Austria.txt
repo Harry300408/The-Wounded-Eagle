@@ -655,7 +655,7 @@ focus_tree = {
 			add_ideas = AUS_monarchism_continued_idea_0
 			add_popularity = {
 				ideology = neutrality
-				popularity = -0.1
+				popularity = 0.1
 			}
 		}
 	}
@@ -1275,9 +1275,37 @@ focus_tree = {
 			focus = AUS_vaterlandische_front
 		}
 		completion_reward = { 
-			swap_ideas = {
-				remove_idea = AUS_monarchism_abandoned_idea_1
-				add_idea = AUS_march_of_red_torches_idea
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = AUS_prepare_sabotage
+						has_completed_focus = AUS_peaceful_development
+					}
+				}
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = AUS_monarchism_abandoned_idea_1
+						add_idea = AUS_march_of_red_torches_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = AUS_peaceful_development
+				}
+				swap_ideas = {
+					remove_idea = AUS_monarchism_abandoned_idea_1
+					add_idea = AUS_march_of_red_torches_idea
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = AUS_prepare_sabotage
+				}
+				swap_ideas = {
+					remove_idea = AUS_monarchism_abandoned_idea_2
+					add_idea = AUS_march_of_red_torches_idea
+				}
 			}
 		}
 	}
@@ -1412,7 +1440,8 @@ focus_tree = {
 			focus = AUS_under_lenin_rule
 		}
 		completion_reward = { 
-
+			# TODO
+			# ally Preußen
 		}
 	}
 	focus = {
@@ -1621,7 +1650,7 @@ focus_tree = {
 	############################
 	focus = {
 		id = AUS_vaterlandische_front
-		icon = GFX_
+		icon = GFX_focus_AUS_vaterlandische_front
 		cost = 5
 		x = -5
 		y = 1
@@ -1634,12 +1663,15 @@ focus_tree = {
 			focus = AUS_march_of_red_torches
 		}
 		completion_reward = { 
-
+			swap_ideas = {
+				remove_idea = AUS_monarchism_abandoned_idea_2
+				add_idea = AUS_vaterlandische_front_idea
+			}
 		}
 	}
 	focus = {
 		id = AUS_empower_right_wing
-		icon = GFX_
+		icon = GFX_focus_AUS_right_wing
 		cost = 5
 		x = 0
 		y = 2
@@ -1650,13 +1682,18 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_agitation_program
 		}
+		available = {
+			fascism > 0.45
+		}
 		completion_reward = { 
-
+			set_politics = {
+				ruling_party = fascism
+			}
 		}
 	}
 	focus = {
 		id = AUS_revanchism
-		icon = GFX_
+		icon = GFX_goal_generic_demand_territory
 		cost = 10
 		x = -2
 		y = 1
@@ -1668,12 +1705,15 @@ focus_tree = {
 			focus = AUS_will_of_victory
 		}
 		completion_reward = { 
-
+			add_timed_idea = {
+				idea = AUS_revanchism_idea
+				days = 730
+			}
 		}
 	}
 	focus = {
 		id = AUS_claim_serbia
-		icon = GFX_
+		icon = GFX_focus_AUS_attack_serbia
 		cost = 10
 		x = -1
 		y = 1
@@ -1681,13 +1721,23 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_revanchism
 		}
+		will_lead_to_war_with = YUG
 		completion_reward = { 
-
+			109 = {
+				add_claim_by = AUS
+			}
+			902 = {
+				add_claim_by = AUS
+			}
+			create_wargoal = {
+				target = YUG
+				type = take_state_focus
+			}
 		}
 	}
 	focus = {
 		id = AUS_strike_hungary
-		icon = GFX_
+		icon = GFX_focus_AUS_attack_hungary
 		cost = 10
 		x = 1
 		y = 1
@@ -1695,13 +1745,27 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_revanchism
 		}
+		will_lead_to_war_with = HUN
 		completion_reward = { 
-
+			HUN = {
+				every_core_state = {
+					add_claim_by = AUS
+				}
+			}
+			SLO = {
+				every_core_state = {
+					add_claim_by = AUS
+				}
+			}
+			create_wargoal = {
+				target = HUN
+				type = take_state_focus
+			}
 		}
 	}
 	focus = {
 		id = AUS_end_italian_supremacy
-		icon = GFX_
+		icon = GFX_focus_AUS_attack_italy
 		cost = 10
 		x = -2
 		y = 2
@@ -1709,13 +1773,29 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_claim_serbia
 		}
+		will_lead_to_war_with = ITA
 		completion_reward = { 
-
+			852 = {
+				add_claim_by = AUS
+			}
+			103 = {
+				add_claim_by = AUS
+			}
+			163 = {
+				add_claim_by = AUS
+			}
+			159 = {
+				add_claim_by = AUS
+			}
+			create_wargoal = {
+				target = ITA
+				type = take_state_focus
+			}
 		}
 	}
 	focus = {
 		id = AUS_integrate_czechia
-		icon = GFX_
+		icon = GFX_focus_AUS_attack_czechia
 		cost = 10
 		x = -1
 		y = 3
@@ -1723,13 +1803,15 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_end_italian_supremacy
 		}
+		will_lead_to_war_with = CZE
 		completion_reward = { 
-
+			# TODO
+			# CZE event: AUS request integration
 		}
 	}
 	focus = {
 		id = AUS_claims_in_romania
-		icon = GFX_
+		icon = GFX_focus_AUS_attack_romania
 		cost = 10
 		x = 1
 		y = 3
@@ -1737,13 +1819,26 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_strike_hungary
 		}
+		will_lead_to_war_with = ROM
 		completion_reward = { 
-
+			80 = {
+				add_claim_by = AUS
+			}
+			84 = {
+				add_claim_by = AUS
+			}
+			82 = {
+				add_claim_by = AUS
+			}
+			create_wargoal = {
+				target = ROM
+				type = take_state_focus
+			}
 		}
 	}
 	focus = {
 		id = AUS_doubt_russians
-		icon = GFX_
+		icon = GFX_focus_AUS_attack_russia
 		cost = 10
 		x = 0
 		y = 4
@@ -1754,13 +1849,32 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_integrate_czechia
 		}
+		will_lead_to_war_with = SOV
 		completion_reward = { 
-
+			72 = {
+				add_claim_by = AUS
+			}
+			88 = {
+				add_claim_by = AUS
+			}
+			82 = {
+				add_claim_by = AUS
+			}
+			89 = {
+				add_claim_by = AUS
+			}
+			91 = {
+				add_claim_by = AUS
+			}
+			create_wargoal = {
+				target = SOV
+				type = take_state_focus
+			}
 		}
 	}
 	focus = {
 		id = AUS_will_of_victory
-		icon = GFX_
+		icon = GFX_goal_generic_propaganda
 		cost = 10
 		x = 2
 		y = 1
@@ -1772,12 +1886,12 @@ focus_tree = {
 			focus = AUS_revanchism
 		}
 		completion_reward = { 
-
+			add_ideas = AUS_will_of_victory_idea
 		}
 	}
 	focus = {
 		id = AUS_confederation_reforms
-		icon = GFX_
+		icon = GFX_focus_AUS_reforms_confederation
 		cost = 10
 		x = 0
 		y = 1
@@ -1786,12 +1900,15 @@ focus_tree = {
 			focus = AUS_will_of_victory
 		}
 		completion_reward = { 
-
+			add_political_power = 30
+			add_war_support = 0.1
+			# TODO
+			# Add Confederation Mechanic Decisions
 		}
 	}
 	focus = {
 		id = AUS_strengthen_power
-		icon = GFX_
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 10
 		x = -1
 		y = 2
@@ -1800,12 +1917,15 @@ focus_tree = {
 			focus = AUS_confederation_reforms
 		}
 		completion_reward = { 
-
+			add_stability = 0.1
+			add_political_power = 30
+			# TODO
+			# Confederation Mechanic: higher influence
 		}
 	}
 	focus = {
 		id = AUS_integrate_bayern
-		icon = GFX_
+		icon = GFX_focus_AUS_ally_bayern
 		cost = 10
 		x = 1
 		y = 2
@@ -1814,12 +1934,30 @@ focus_tree = {
 			focus = AUS_confederation_reforms
 		}
 		completion_reward = { 
-
+			BAY = {
+				every_core_state = {
+					limit = {
+						NOT = {
+							state = 54
+						}
+					}
+					add_claim_by = AUS
+				}
+			}
+			54 = {
+				add_claim_by = PRE
+				set_state_owner_to = PRE
+			}
+			annex_country = {
+				target = BAY
+			}
+			# TODO
+			# Preußen opinion modifier ++
 		}
 	}
 	focus = {
 		id = AUS_national_order
-		icon = GFX_
+		icon = GFX_goal_generic_political_pressure
 		cost = 10
 		x = 0
 		y = 3
@@ -1831,12 +1969,12 @@ focus_tree = {
 			focus = AUS_integrate_bayern
 		}
 		completion_reward = { 
-
+			add_ideas = AUS_national_order_idea
 		}
 	}
 	focus = {
 		id = AUS_demand_swiss_annex
-		icon = GFX_
+		icon = GFX_focus_AUS_attack_swiss
 		cost = 10
 		x = -1
 		y = 4
@@ -1844,13 +1982,15 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_national_order
 		}
+		will_lead_to_war_with = SWI
 		completion_reward = { 
-
+			# TODO
+			# SWI event: AUS ask for Annex
 		}
 	}
 	focus = {
 		id = AUS_south_italy_or_war
-		icon = GFX_
+		icon = GFX_focus_AUS_attack_italy
 		cost = 10
 		x = 1
 		y = 4
@@ -1858,13 +1998,21 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_national_order
 		}
+		will_lead_to_war_with = ITA
 		completion_reward = { 
-
+			158 = {
+				add_claim_by = AUS
+			}
+			159 = {
+				add_claim_by = AUS
+			}
+			# TODO
+			# ITA event: AUS ask for South Italy
 		}
 	}
 	focus = {
 		id = AUS_targeting_france
-		icon = GFX_
+		icon = GFX_focus_AUS_attack_france
 		cost = 10
 		x = 0
 		y = 5
@@ -1875,13 +2023,23 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_south_italy_or_war
 		}
+		will_lead_to_war_with = FRA
 		completion_reward = { 
-
+			735 = {
+				add_claim_by = AUS
+			}
+			851 = {
+				add_claim_by = AUS
+			}
+			create_wargoal = {
+				target = FRA
+				type = take_state_focus
+			}
 		}
 	}
 	focus = {
 		id = AUS_alphine_national_union
-		icon = GFX_
+		icon = GFX_goal_generic_propaganda
 		cost = 10
 		x = 0
 		y = 6
@@ -1890,7 +2048,9 @@ focus_tree = {
 			focus = AUS_targeting_france
 		}
 		completion_reward = { 
-
+			# TODO
+			# Change Cosmetic Tag
+			# Available at specific region influence level (all owned and controlled and core or claimed)
 		}
 	}
 	################################

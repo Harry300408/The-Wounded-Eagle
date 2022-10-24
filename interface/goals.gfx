@@ -3927,4 +3927,52 @@ spriteTypes = {
 		name = "GFX_focus_AUS_imperialist_threat"
 		texturefile = "gfx/interface/goals/AUS/AUS_imperialist_threat_icon.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_AUS_vaterlandische_front"
+		texturefile = "gfx/interface/goals/AUS/AUS_veterlandische_front_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_right_wing"
+		texturefile = "gfx/interface/goals/AUS/AUS_right_wing_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_attack_serbia"
+		texturefile = "gfx/interface/goals/AUS/AUS_attack_serbia_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_attack_hungary"
+		texturefile = "gfx/interface/goals/AUS/AUS_attack_hungary_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_attack_italy"
+		texturefile = "gfx/interface/goals/AUS/AUS_attack_italy_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_attack_czechia"
+		texturefile = "gfx/interface/goals/AUS/AUS_attack_czechia_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_attack_romania"
+		texturefile = "gfx/interface/goals/AUS/AUS_attack_romania_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_attack_russia"
+		texturefile = "gfx/interface/goals/AUS/AUS_attack_russia_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_reforms_confederation"
+		texturefile = "gfx/interface/goals/AUS/AUS_reforms_confederation_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_ally_bayern"
+		texturefile = "gfx/interface/goals/AUS/AUS_ally_bayern_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_attack_swiss"
+		texturefile = "gfx/interface/goals/AUS/AUS_attack_swiss_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_attack_france"
+		texturefile = "gfx/interface/goals/AUS/AUS_attack_france_icon.dds"
+	}
 }
