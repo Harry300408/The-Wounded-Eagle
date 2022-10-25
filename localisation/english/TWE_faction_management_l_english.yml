@@ -1,4 +1,0 @@
-﻿l_english:
-  fac_leader:0 "Leader: [?faction_leader.GetName]"
-  fac_name:0 "Faction: [THIS.GetFactionName]"
-  player_name:0 "You Are: [THIS.GetName]"
