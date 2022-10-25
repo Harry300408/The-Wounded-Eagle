@@ -1,6 +1,6 @@
 ﻿capital = 825 #Naryan-Mar
 
-#oob = "" 
+oob = "" 
 
 set_research_slots = 3
 

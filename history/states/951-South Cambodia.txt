@@ -1,0 +1,17 @@
+state={
+	id=951
+	name="STATE_951"
+	history = {
+		add_core_of = CAM
+		owner = VIN
+		add_core_of = VIN	
+	}
+	provinces={
+		12167 4596 1620 7645 4330 12260 12288 10204
+	}
+	manpower=1565000
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

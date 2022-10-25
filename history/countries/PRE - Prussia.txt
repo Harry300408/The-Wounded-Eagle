@@ -1,6 +1,6 @@
 ﻿capital = 64
 
-set_oob = "PRE_TWE"
+set_oob = PRE_TWE
 
 #Variants
 #Tanks

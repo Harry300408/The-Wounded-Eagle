@@ -1,0 +1,24 @@
+state={
+	id=956
+	name="STATE_956"
+	history = {
+		add_core_of = JAW
+		owner = JAW	
+		victory_points = {
+			4608 3 
+		}
+		buildings = {
+			4608 = {
+			    naval_base = 3
+		    }
+	    }
+	}
+	provinces={
+		4306 4608 4390 1413 12293 10491 1209 10479 12472 7654 
+	}
+	manpower=20859100
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

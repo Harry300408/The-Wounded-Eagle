@@ -1,6 +1,6 @@
 ﻿capital = 397 #Syktyvkar
 
-#oob = "KOM_1936"
+oob = "KOM_1936"
 
 set_research_slots = 3
 
@@ -96,6 +96,6 @@ set_popularities = {
 }
 
 
-recruit_character = KOM_pavel_murashev
+#recruit_character = KOM_pavel_murashev
 
 

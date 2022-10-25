@@ -1,6 +1,6 @@
 ﻿capital = 828 #Ordzhonikidze
 
-#oob = "NOA_1936"
+oob = "NOA_1936"
 
 set_research_slots = 3
 
@@ -96,6 +96,6 @@ set_popularities = {
 }
 
 
-recruit_character = NOA_vasily_lemayev
+#recruit_character = NOA_vasily_lemayev
 
 

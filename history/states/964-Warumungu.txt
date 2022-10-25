@@ -1,0 +1,16 @@
+state={
+	id=964
+	name="STATE_964"
+	history = {
+		add_core_of = NTR
+		owner = NTR
+	}
+	provinces={
+		10979 12936 2223 12992 12915
+	}
+	manpower=8000
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

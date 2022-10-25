@@ -1,7 +1,7 @@
 ﻿capital = 464
 
 
-#oob = ""
+oob = ""
 
 set_cosmetic_tag = NBW_UK
 
@@ -92,7 +92,6 @@ if = {
 		basic_medium_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
 	}

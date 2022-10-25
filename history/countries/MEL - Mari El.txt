@@ -1,6 +1,6 @@
 ﻿capital = 833 #Yoshkar-Ola
 
-#oob = "MEL_1936"
+oob = "MEL_1936"
 
 set_research_slots = 3
 
@@ -96,6 +96,6 @@ set_popularities = {
 }
 
 
-recruit_character = MEL_zinovy_zhadinov
+#recruit_character = MEL_zinovy_zhadinov
 
 

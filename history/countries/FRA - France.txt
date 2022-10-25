@@ -6,10 +6,10 @@ starting_train_buffer = 2
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "FRA_1936_naval_mtg"
+		# = "FRA_1936_naval_mtg"
 		set_war_support = 0.1
 	else = {
-		set_naval_oob = "FRA_1936_naval_legacy"
+		# = "FRA_1936_naval_legacy"
 		set_war_support = 0.15
 	}
 }
@@ -46,9 +46,40 @@ set_research_slots = 3
 set_stability = 0.5
 add_command_power = 20
 
-set_autonomy = {
-	target = NGR
-	autonomous_state = autonomy_FRA_proc
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+
+	set_autonomy = {
+		target = NGR
+		autonomous_state = autonomy_FRA_proc
+	}
+
+	set_autonomy = {
+		target = VIN
+		autonomous_state = autonomy_FRA_proc
+	}
+
+	set_autonomy = {
+		target = TAS
+		autonomous_state = autonomy_FRA_proc
+	}
+	
+	
+	else = {
+		puppet = NGR
+		puppet = VIN
+		puppet = TAS
+	}	
+}
+
+NGR = {
+    set_cosmetic_tag = NGR_proc
+}
+
+VIN = {
+	set_cosmetic_tag = VIN_proc
 }
 
 # Starting tech
@@ -226,7 +257,7 @@ if = {
 		nationalities = { FRA }
 	}
 
-	recruit_character = FRA_rene_nicod
+	#recruit_character = FRA_rene_nicod
 }
 
 ### VARIANTS ###

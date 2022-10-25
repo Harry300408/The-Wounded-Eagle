@@ -1,6 +1,6 @@
 ﻿capital = 908
 
-OOB = "AFA_1936"
+oob = "AFA_1936"
 
 # Starting tech
 set_technology = {
@@ -58,7 +58,7 @@ set_convoys = 10
 	}
 }
 
-recruit_character = AFA_sultan_mohamed_yayyo_of_aussa
+#recruit_character = AFA_sultan_mohamed_yayyo_of_aussa
 
 set_politics = {
 	ruling_party = neutrality

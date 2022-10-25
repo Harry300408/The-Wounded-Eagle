@@ -1,6 +1,6 @@
 ﻿capital = 216 #Olonets (Petrozavodsk)
 
-#oob = "KAR_1936"
+oob = "KAR_1936"
 
 set_research_slots = 3
 
@@ -98,9 +98,9 @@ set_popularities = {
 	neutrality = 0
 }
 
-recruit_character = KAR_peteris_irklis
-recruit_character = KAR_grandpa
-recruit_character = KAR_jalmari_takkinen
+#recruit_character = KAR_peteris_irklis
+#recruit_character = KAR_grandpa
+#recruit_character = KAR_jalmari_takkinen
 
 
 

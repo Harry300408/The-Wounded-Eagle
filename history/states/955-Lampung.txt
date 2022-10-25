@@ -1,0 +1,16 @@
+state={
+	id=955
+	name="STATE_955"
+	history = {
+		add_core_of = LAM
+		owner = LAM	
+	}
+	provinces={
+		7368 1533 1373 1345 10194 12415 10294 4364 12268 4381 7440 12138 10150 12296 1401 10322 1274 7308 12209 1313 4276 1246 12165 1342 4361 4320 
+	}
+	manpower=4127450
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

@@ -74,14 +74,12 @@ ideas = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
 				}
 				if = {
 					limit = {
 						original_tag = CAN
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = CAN_commit_to_the_war
 				}
 				if = {
 					limit = {
@@ -102,7 +100,6 @@ ideas = {
 					limit = {
 						original_tag = ENG
 						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
 					}
 					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
 				}
@@ -111,7 +108,6 @@ ideas = {
 						original_tag = SPR
 						has_dlc = "La Resistance"
 					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
 				}
 				if = {
 					limit = {
@@ -177,16 +173,12 @@ ideas = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
-					has_completed_focus = AST_fight_work_or_perish
 				}
 				if = {
 					limit = {
 						original_tag = CAN
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = CAN_commit_to_the_war
-					has_completed_focus = CAN_if_day
 				}
 				if = {
 					limit = {
@@ -207,7 +199,6 @@ ideas = {
 					limit = {
 						original_tag = ENG
 						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
 					}
 					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
 				}
@@ -216,7 +207,6 @@ ideas = {
 						original_tag = SPR
 						has_dlc = "La Resistance"
 					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
 				}
 				if = {
 					limit = {
@@ -321,20 +311,8 @@ ideas = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
-					has_completed_focus = AST_fight_work_or_perish
 				}
 
-				if = {
-					limit = {
-						original_tag = CAN
-						has_dlc = "Together for Victory"
-					}
-					OR = {
-						has_completed_focus = CAN_compromise_with_quebec
-						has_completed_focus = CAN_forced_quebec_conscription
-					}
-				}
 				if = {
 					limit = {
 						original_tag = RAJ
@@ -354,7 +332,6 @@ ideas = {
 					limit = {
 						original_tag = ENG
 						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
 					}
 					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
 				}
@@ -363,7 +340,6 @@ ideas = {
 						original_tag = SPR
 						has_dlc = "La Resistance"
 					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
 				}
 				if = {
 					limit = {
@@ -460,18 +436,12 @@ ideas = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
-					has_completed_focus = AST_fight_work_or_perish
 				}
 
 				if = {
 					limit = {
 						original_tag = CAN
 						has_dlc = "Together for Victory"
-					}
-					OR = {
-						has_completed_focus = CAN_compromise_with_quebec
-						has_completed_focus = CAN_forced_quebec_conscription
 					}
 				}
 				if = {
@@ -493,7 +463,6 @@ ideas = {
 					limit = {
 						original_tag = ENG
 						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
 					}
 					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
 				}
@@ -502,7 +471,6 @@ ideas = {
 						original_tag = SPR
 						has_dlc = "La Resistance"
 					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
 				}
 				if = {
 					limit = {
@@ -589,18 +557,12 @@ ideas = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
-					has_completed_focus = AST_fight_work_or_perish
 				}
 
 				if = {
 					limit = {
 						original_tag = CAN
 						has_dlc = "Together for Victory"
-					}
-					OR = {
-						has_completed_focus = CAN_compromise_with_quebec
-						has_completed_focus = CAN_forced_quebec_conscription
 					}
 				}
 				if = {
@@ -622,7 +584,6 @@ ideas = {
 					limit = {
 						original_tag = ENG
 						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
 					}
 					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
 				}
@@ -631,7 +592,6 @@ ideas = {
 						original_tag = SPR
 						has_dlc = "La Resistance"
 					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
 				}
 				if = {
 					limit = {
@@ -754,12 +714,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			allowed_to_remove = {
-				has_completed_focus = SWI_professionalize_militias
-				has_completed_focus = SWI_join_the_allies
-				has_completed_focus = SWI_join_france
-				has_completed_focus = SWI_jump_into_action
-			}
+			
 			ai_will_do = {
 				factor = 0
 			}
@@ -779,12 +734,6 @@ ideas = {
 
 			allowed = {
 				always = no
-			}
-			allowed_to_remove = {
- 				has_completed_focus = SWI_professionalize_militias
-				has_completed_focus = SWI_join_the_allies
-				has_completed_focus = SWI_join_france
-				has_completed_focus = SWI_jump_into_action
 			}
 			ai_will_do = {
 				factor = 0

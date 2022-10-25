@@ -197,7 +197,7 @@ guiTypes = {
 	### MAIN MENU PANEL (bottom)
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = { x=250 y =0}
+		position = { x=0 y =0}
 		size = { width = 100%% height = 100%% }
 		Orientation = CENTER
 		Origo = center		
@@ -212,11 +212,23 @@ guiTypes = {
 		#	quadTextureSprite ="GFX_main_eagle"
 		#}
 
+		instantTextBoxType = {
+			name ="version_label"
+			position = { x = -355 y = 672 }
+			textureFile = ""
+			font = "hoi_18b"
+			borderSize = {x = 0 y = 0}
+			text = "version_label"	
+			format = center
+			maxWidth = 250
+			maxHeight = 20	
+		}
+
 		##Tweaks (if not seen you're on the wrong update get up to date - unless this is initial release then you're fine)
 
 		iconType = {
 			name = "tweaks_bg"
-			position = { x = -215 y = -470 }
+			position = { x = -385 y = -470 }
 			spriteType = "GFX_tweaks"
 			centerposition = yes
 			orientation = center
@@ -251,7 +263,7 @@ guiTypes = {
 		## Update "log"
 		iconType = {
 			name = "update"
-			position = { x = -215 y = -100 }
+			position = { x = -385 y = -100 }
 			spriteType = "GFX_update"
 			centerposition = yes
 			orientation = center
@@ -313,8 +325,7 @@ guiTypes = {
 
 		iconType = {
 			name = "Eagle_Logo"
-			position = { x = -900 y = -160 }
-			scale = 0.6
+			position = { x = -1200 y = -330 }
 			spriteType = "GFX_main_eagle"
 			centerposition = yes
 			orientation = center
@@ -352,18 +363,6 @@ guiTypes = {
 			maxWidth = 250
 			maxHeight = 20	
 		}
-
-		instantTextBoxType = {
-			name ="version_label"
-			position = { x = -355 y = 672 }
-			textureFile = ""
-			font = "hoi_18b"
-			borderSize = {x = 0 y = 0}
-			text = "version_label"	
-			format = center
-			maxWidth = 250
-			maxHeight = 20	
-		}
 		
 		
 		ButtonType = {
@@ -388,20 +387,22 @@ guiTypes = {
 
 		iconType = {
 			name = "r_under_b"
-			position = { x = -1858 y = 601 }
+			position = { x = -1869 y = 598 }
 			spriteType = "GFX_r_underbracket"
 			centerposition = yes
 			orientation = upper_right
 			alwaysTransparent = yes
+			scale = 0.9
 		}
 
 		iconType = {
 			name = "l_under_b"
-			position = { x = -2445 y = 601 }
+			position = { x = -2432 y = 598 }
 			spriteType = "GFX_l_underbracket"
 			centerposition = yes
 			orientation = upper_right
 			alwaysTransparent = yes
+			scale = 0.88
 		}
 
 		#iconType = {

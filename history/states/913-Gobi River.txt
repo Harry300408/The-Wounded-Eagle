@@ -4,13 +4,13 @@ state = {
 
 	history = {
 
-		owner = SIK
-		add_core_of = SIK
+		owner = CHI
+		add_core_of = CHI
 
 	}
 
 	provinces = {
-		13265
+		13264
 	}
 	manpower = 100
 	buildings_max_level_factor = 1.000

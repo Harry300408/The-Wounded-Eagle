@@ -38,6 +38,7 @@ guiTypes = {
             position = {x = 10 y = 40}
             spriteType = "GFX_NV_btn_close"
             clicksound = click_close
+            tooltip = "br_tooltip"
         }
 		
 		instantTextBoxType = {
@@ -117,7 +118,7 @@ guiTypes = {
 			format = left
 			maxWidth = 4500
 			maxHeight = 30
-#			fixedsize = yes
+			fixedsize = yes
 		}
 
 		instantTextBoxType = {
@@ -128,7 +129,7 @@ guiTypes = {
 			format = left
 			maxWidth = 4500
 			maxHeight = 30
-#			fixedsize = yes
+			fixedsize = yes
 		}
 
 		instantTextBoxType = {
@@ -139,14 +140,14 @@ guiTypes = {
 			format = left
 			maxWidth = 300
 			maxHeight = 30
-#			fixedsize = yes
+			fixedsize = yes
 		}
 
 		ButtonType = {
 			name ="faction_window_exit"
 			spriteType = "GFX_closebutton"
 			position = { x= 506 y = 2 }
-			Orientation = "UPPER_LEFT""
+			Orientation = "UPPER_LEFT"
 		}
 	}
-}
+}		

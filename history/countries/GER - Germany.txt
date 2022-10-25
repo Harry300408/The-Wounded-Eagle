@@ -6,13 +6,13 @@ if = {
 			has_dlc = "No Step Back"
 		}
 	}
-	set_oob = "GER_1936"
+	#set_oob = "GER_1936"
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	set_oob = "GER_1936_nsb"
+	#set_oob = "GER_1936_nsb"
 }
 
 if = {
@@ -110,7 +110,7 @@ if = {
 		early_battlecruiser = 1
 		transport = 1
 	}
-	set_naval_oob = "GER_1936_naval"
+	# = "GER_1936_naval"
 }
 if = {
 	limit = {
@@ -140,7 +140,7 @@ if = {
 		sonar = 1
 		basic_cruiser_armor_scheme = 1
 	}
-	set_naval_oob = "GER_1936_naval_mtg"
+	# = "GER_1936_naval_mtg"
 }
 if = {
 	limit = {
@@ -319,7 +319,7 @@ create_import = {
 		set_technology = {
 			basic_medium_tank = 1 
 		}
-		set_oob = "GER_1939"
+		#set_oob = "GER_1939"
 	}
 	if = {
 		limit = {
@@ -330,7 +330,7 @@ create_import = {
 		set_technology = {
 			basic_medium_tank_chassis = 1 
 		}
-		set_oob = "GER_1939_nsb"
+		#set_oob = "GER_1939_nsb"
 	}
 	if = {
 		limit = {
@@ -346,7 +346,7 @@ create_import = {
 			basic_carrier = 1
 			improved_carrier = 1
 		}
-		set_naval_oob = "GER_1939_naval_legacy"
+		# = "GER_1939_naval_legacy"
 	}
 	if = {
 		limit = {
@@ -360,7 +360,7 @@ create_import = {
 			improved_heavy_battery = 1
 			basic_heavy_armor_scheme = 1
 		}
-		set_naval_oob = "GER_1939_naval_mtg"
+		# = "GER_1939_naval_mtg"
 	}
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
@@ -387,9 +387,6 @@ set_popularities = {
 	communism = 20
 }
 
-create_faction = Axis
-add_to_faction = GER
-
 
 add_ideas = {
 	sour_loser
@@ -402,93 +399,93 @@ add_ideas = GER_mefo_bills_1
 
 activate_mission = GER_mefo_bills_mission
 
-recruit_character = GER_wilhelm_pieck
-recruit_character = GER_konrad_adenauer
-recruit_character = GER_adolf_hitler
-recruit_character = GER_albert_kesselring
-recruit_character = GER_alfred_jodl
-recruit_character = GER_alfred_saalwachter
-recruit_character = GER_erhard_milch
-recruit_character = GER_erich_bey
-recruit_character = GER_erich_raeder
-recruit_character = GER_erich_von_manstein
-recruit_character = GER_ernst_udet
-recruit_character = GER_ernsteberhard_hell
-recruit_character = GER_erwin_rommel
-recruit_character = GER_erwin_von_witzleben
-recruit_character = GER_ewald_von_kleist
-recruit_character = GER_fedor_von_bock
-recruit_character = GER_felix_steiner
-recruit_character = GER_ferdinand_schorner
-recruit_character = GER_franz_halder
-recruit_character = GER_friedrich_paulus
-recruit_character = GER_friedrich_schulz
-recruit_character = GER_georg_von_kuchler
-recruit_character = GER_georghans_reinhardt
-recruit_character = GER_gerd_von_rundstedt
-recruit_character = GER_hermann_goring
-recruit_character = GER_gotthard_heinrici
-recruit_character = GER_gunther_lutjens
-recruit_character = GER_gunther_von_kluge
-recruit_character = GER_hasso_von_manteuffel
-recruit_character = GER_heinz_guderian
-recruit_character = GER_heisenberg
-recruit_character = GER_hermann_boehm
-recruit_character = GER_hermann_hoth
-recruit_character = GER_hugo_sperrle
-recruit_character = GER_johannes_blaskowitz
-recruit_character = GER_karl_donitz
-recruit_character = GER_kurt_student
-recruit_character = GER_ludwig_beck
-recruit_character = GER_maximilian_von_weichs
-recruit_character = GER_otto_ciliax
-recruit_character = GER_paul_hausser
-recruit_character = GER_ritter_von_greim
-recruit_character = GER_sepp_dietrich
-recruit_character = GER_viktor_schutze
-recruit_character = GER_von_braun
-recruit_character = GER_walter_kruger
-recruit_character = GER_walter_model
-recruit_character = GER_walther_von_brauchitsch
-recruit_character = GER_walther_wever
-recruit_character = GER_werner_von_fritsch
-recruit_character = GER_wilhelm_keitel
-recruit_character = GER_wilhelm_list
-recruit_character = GER_wilhelm_marschall
+#recruit_character = GER_wilhelm_pieck
+#recruit_character = GER_konrad_adenauer
+#recruit_character = GER_adolf_hitler
+#recruit_character = GER_albert_kesselring
+#recruit_character = GER_alfred_jodl
+#recruit_character = GER_alfred_saalwachter
+#recruit_character = GER_erhard_milch
+#recruit_character = GER_erich_bey
+#recruit_character = GER_erich_raeder
+#recruit_character = GER_erich_von_manstein
+#recruit_character = GER_ernst_udet
+#recruit_character = GER_ernsteberhard_hell
+#recruit_character = GER_erwin_rommel
+#recruit_character = GER_erwin_von_witzleben
+#recruit_character = GER_ewald_von_kleist
+#recruit_character = GER_fedor_von_bock
+#recruit_character = GER_felix_steiner
+#recruit_character = GER_ferdinand_schorner
+#recruit_character = GER_franz_halder
+#recruit_character = GER_friedrich_paulus
+#recruit_character = GER_friedrich_schulz
+#recruit_character = GER_georg_von_kuchler
+#recruit_character = GER_georghans_reinhardt
+#recruit_character = GER_gerd_von_rundstedt
+#recruit_character = GER_hermann_goring
+#recruit_character = GER_gotthard_heinrici
+#recruit_character = GER_gunther_lutjens
+#recruit_character = GER_gunther_von_kluge
+#recruit_character = GER_hasso_von_manteuffel
+#recruit_character = GER_heinz_guderian
+#recruit_character = GER_heisenberg
+#recruit_character = GER_hermann_boehm
+#recruit_character = GER_hermann_hoth
+#recruit_character = GER_hugo_sperrle
+#recruit_character = GER_johannes_blaskowitz
+#recruit_character = GER_karl_donitz
+#recruit_character = GER_kurt_student
+#recruit_character = GER_ludwig_beck
+#recruit_character = GER_maximilian_von_weichs
+#recruit_character = GER_otto_ciliax
+#recruit_character = GER_paul_hausser
+#recruit_character = GER_ritter_von_greim
+#recruit_character = GER_sepp_dietrich
+#recruit_character = GER_viktor_schutze
+#recruit_character = GER_von_braun
+#recruit_character = GER_walter_kruger
+#recruit_character = GER_walter_model
+#recruit_character = GER_walther_von_brauchitsch
+#recruit_character = GER_walther_wever
+#recruit_character = GER_werner_von_fritsch
+#recruit_character = GER_wilhelm_keitel
+#recruit_character = GER_wilhelm_list
+#recruit_character = GER_wilhelm_marschall
 
-recruit_character = GER_wilhelm_ritter_von_leeb
-recruit_character = GER_wolfram_von_richthofen
+#recruit_character = GER_wilhelm_ritter_von_leeb
+#recruit_character = GER_wolfram_von_richthofen
 
-recruit_character = GER_heinrich_himmler
-recruit_character = GER_walther_funk
-recruit_character = GER_hjalmar_schacht
-recruit_character = GER_julius_leber
-recruit_character = GER_albert_speer
-recruit_character = GER_hans_oster
-recruit_character = GER_theodor_heuss
-recruit_character = GER_fritz_todt
-recruit_character = GER_joachim_von_ribbentrop
-recruit_character = GER_ernst_thalmann
-recruit_character = GER_rudolf_hess
-recruit_character = GER_martin_bormann
-recruit_character = GER_wilhelm_canaris
-recruit_character = GER_joseph_goebbels
-recruit_character = GER_konstantin_von_neurath
-recruit_character = GER_alfred_hugenberg
-recruit_character = GER_kurt_schumacher
-recruit_character = GER_wilhelm_ii
-recruit_character = GER_wilhelm_iii
-recruit_character = GER_victoria
-recruit_character = GER_august_von_mackensen
+#recruit_character = GER_heinrich_himmler
+#recruit_character = GER_walther_funk
+#recruit_character = GER_hjalmar_schacht
+#recruit_character = GER_julius_leber
+#recruit_character = GER_albert_speer
+#recruit_character = GER_hans_oster
+#recruit_character = GER_theodor_heuss
+#recruit_character = GER_fritz_todt
+#recruit_character = GER_joachim_von_ribbentrop
+#recruit_character = GER_ernst_thalmann
+#recruit_character = GER_rudolf_hess
+#recruit_character = GER_martin_bormann
+#recruit_character = GER_wilhelm_canaris
+#recruit_character = GER_joseph_goebbels
+#recruit_character = GER_konstantin_von_neurath
+#recruit_character = GER_alfred_hugenberg
+#recruit_character = GER_kurt_schumacher
+#recruit_character = GER_wilhelm_ii
+#recruit_character = GER_wilhelm_iii
+#recruit_character = GER_victoria
+#recruit_character = GER_august_von_mackensen
 
-recruit_character = GER_alexander_von_falkenhausen #Not visible unless recalled from China
+#recruit_character = GER_alexander_von_falkenhausen #Not visible unless recalled from China
 
 
 if = {
 	limit = {
 		has_dlc = "Waking the Tiger"
 	}
-	recruit_character = GER_carl_friedrich_goerdeler
+	#recruit_character = GER_carl_friedrich_goerdeler
 }
 
 if = {

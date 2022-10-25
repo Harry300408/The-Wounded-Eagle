@@ -1,5 +1,4 @@
 on_actions = {
-
 	# country
 	on_new_term_election = {
 		random_events = {
@@ -602,28 +601,6 @@ on_actions = {
 					}
 				}
 			}
-
-			if = {
-				limit = {
-					FROM = {
-						has_civil_war = yes
-						original_tag = SPR
-					}
-					has_civil_war = yes
-					original_tag = SPR
-
-				}
-				random_country = {
-					limit = {
-						original_tag = FRA
-						OR = {
-							has_completed_focus = FRA_right_wing_rhetoric
-							has_completed_focus = FRA_utilize_the_leagues
-						}
-					}
-					country_event = { id = france.32 }
-				}
-			}
 		}
 	}
 
@@ -717,15 +694,6 @@ on_actions = {
 					ROOT = { tag = CHI }
 				}
 				JAP = { JAP_intervene_in_china_remove = yes }
-			}
-
-			if = {
-				limit = {
-					original_tag = POL
-					has_government = neutrality
-					NOT = { has_completed_focus = POL_fulfil_fifth_of_november }
-				}
-				retire_country_leader = yes
 			}
 			if = {
 				limit = {
@@ -912,24 +880,6 @@ on_actions = {
 						original_tag = SPR
 						has_government = fascism
 					}
-				}
-				if = {
-					limit = {
-						OR = {
-							is_historical_focus_on = no
-							has_completed_focus = SPA_supremacy_of_the_communion
-						}
-					}
-					add_timed_idea = { idea = SPA_recovering_from_civil_war days = 2190 }
-				}
-				if = {
-					limit = {
-						is_historical_focus_on = yes
-						NOT = {
-							has_completed_focus = SPA_supremacy_of_the_communion
-						}
-					}
-					add_ideas = SPA_recovering_from_civil_war #keep the spirit on historical mode, keeping them out of the war
 				}
 			}
 			#End of SCW
@@ -1213,76 +1163,50 @@ on_actions = {
 					}
 					random_list = {
 						35 = {
-							#modifier = { #italy can only be fascist atm, we leave this out
-							#	factor = 0.25
-							#	game_weight_can_add_fascist = no
-							#}
+							modifier = {
+								factor = 0.25
+								game_weight_can_add_fascist = no
+							}
 							ITA = {
 								set_country_flag = ITA_AI_RANDOM_FASCIST_HISTORICAL
 							}
 							set_add_fascist_game_weight_large = yes
 						}
-						15 = { #TODO_Manu: Remove old alt strat plans
-							#modifier = {
-							#	factor = 0.25
-							#	game_weight_can_add_fascist = no
-							#}
-							#ITA = {
-							#	set_country_flag = ITA_AI_RANDOM_FASCIST_ALTERNATE
-							#}
-							#set_add_fascist_game_weight_large = yes
-						}
 						25 = {
-							#modifier = {
-							#	factor = 0.25
-							#	game_weight_can_add_fascist = no
-							#}
+							modifier = {
+								factor = 0.25
+								game_weight_can_add_fascist = no
+							}
 							ITA = {
 								set_country_flag = ITA_AI_RANDOM_FASCIST_BALBO
 							}
 							set_add_fascist_game_weight_large = yes
 						}
 						25 = {
-							#modifier = {
-							#	factor = 0.25
-							#	game_weight_can_add_fascist = no
-							#}
+							modifier = {
+								factor = 0.25
+								game_weight_can_add_fascist = no
+							}
 							ITA = {
 								set_country_flag = ITA_AI_RANDOM_FASCIST_GRANDI
 							}
 						}
 						25 = {
-							#modifier = {
-							#	factor = 0.25
-							#	game_weight_can_add_fascist = no
-							#}
 							ITA = {
 								set_country_flag = ITA_AI_RANDOM_MONARCHIST
 							}
 						}
 						15 = {
-							#modifier = {
-							#	factor = 0.25
-							#	game_weight_can_add_fascist = no
-							#}
 							ITA = {
 								set_country_flag = ITA_AI_RANDOM_CHRISTIAN_DEMOCRACY
 							}
 						}
 						20 = {
-							#modifier = {
-							#	factor = 0.25
-							#	game_weight_can_add_fascist = no
-							#}
 							ITA = {
 								set_country_flag = ITA_AI_RANDOM_COMMUNIST_PLAN
 							}
 						}
 						20 = {
-							#modifier = {
-							#	factor = 0.25
-							#	game_weight_can_add_fascist = no
-							#}
 							ITA = {
 								set_country_flag = ITA_AI_RANDOM_DEMOCRATIC_PLAN
 							}

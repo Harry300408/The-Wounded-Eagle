@@ -1,0 +1,48 @@
+# TWE Base Nations #
+
+#Placeholder
+ZZZ	= "countries/USA.txt"
+#Colonisable Territory
+UNC = "countries/Malta.txt"
+
+
+#Texas
+TXS	= "countries/USA.txt"
+#"Progressive" Banat
+BNT = "countries/Serbia.txt"
+#California
+CAL = "countries/USA.txt"
+#Deseret
+DES = "countries/USA.txt"
+#Oldenburg
+OLD = "countries/Hanover.txt"
+#Westphalia
+WSF = "countries/Hanover.txt"
+#Thuringia
+THU = "countries/Saxony.txt"
+#Dutchy of Braunschweig
+DBS = "countries/Mecklenburg.txt"
+#Ulm
+ULM = "countries/Bavaria.txt"
+#Baden
+BAD = "countries/Bavaria.txt" 
+#Columbia
+CLU = "countries/Canada.txt"
+#French Exiles
+FEX = "countries/France.txt"
+#New Ireland
+NER = "countries/Ireland.txt"
+#Alaska
+ALK = "countries/Soviet Union.txt"
+#New Brunswick
+NBW = "countries/United Kingdom.txt"
+#Borellia
+BOR = "countries/United Kingdom.txt"
+
+#Japan (Shogun - Leader Tokigawa Iesato)
+#Ainu
+AIN = "countries/Japan.txt"
+#Tosa
+TSA = "countries/Japan.txt"
+#Satsuma
+STS = "countries/Japan.txt"

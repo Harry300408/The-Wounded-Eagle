@@ -1,0 +1,17 @@
+state={
+	id=961
+	name="STATE_961"
+	history = {
+		add_core_of = AST
+		add_core_of = SAT
+		owner = SAT
+	}
+	provinces={
+		12906 13131 8206 2205 13172 13171
+	}
+	manpower=15000
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

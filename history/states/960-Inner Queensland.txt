@@ -1,0 +1,17 @@
+state={
+	id=960
+	name="STATE_960"
+	history = {
+		add_core_of = AST
+		add_core_of = QUE
+		owner = QUE
+	}
+	provinces={
+		10336 10936 5206 10955
+	}
+	manpower=15000
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,34 @@
+on_actions={
+	#thanks to LimonenZitrone, Mothem & [Mullerreich] 2k (Sweat BoyX8) on the HOI4 Modding Den who helped me figure this crap out
+	#state fliping while at peace
+	on_weekly = {
+		#Australian desert
+		effect = { 
+		    if = {
+			    limit = {
+					NOT = { owns_state = 965 }	
+			        count_triggers = {
+						#15 provs around the desert
+					    amount = 10
+					    controls_province = 871
+					    controls_province = 10969 
+					    controls_province = 2191
+					    controls_province = 12948
+					    controls_province = 5197
+					    controls_province = 8165 
+					    controls_province = 12906
+					    controls_province = 12992
+					    controls_province = 2223
+					    controls_province = 8237
+					    controls_province = 8155
+					    controls_province = 12904
+					    controls_province = 2177
+					    controls_province = 2186
+					    controls_province = 10473
+			        }
+			    }
+			    transfer_state = 965
+			}	
+		}
+	}
+}

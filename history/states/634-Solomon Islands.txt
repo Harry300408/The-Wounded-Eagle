@@ -3,7 +3,8 @@ state={
 	name="STATE_634"
 
 	history={
-		owner = AST
+		owner = BPA
+		add_core_of = BPA
 		add_core_of = SOL
 		buildings = {
 			infrastructure = 1

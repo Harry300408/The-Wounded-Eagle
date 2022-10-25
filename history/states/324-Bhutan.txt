@@ -8,11 +8,11 @@ state={
 	state_category = town
 	
 	resources={
-		tungsten=2 # was: 2
+		tungsten=2 
 	}
 
 	history={
-		owner = BHU
+		owner = CHI
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -22,6 +22,7 @@ state={
 			8010 3 
 		}
 		add_core_of = BHU
+		add_core_of = CHI
 	}
 
 	provinces={

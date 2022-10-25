@@ -1,6 +1,6 @@
 ﻿capital = 831 #Khiva
 
-#oob = "KHI_1936"
+oob = "KHI_1936"
 
 set_research_slots = 2
 
@@ -97,8 +97,8 @@ set_popularities = {
 	neutrality = 10
 }
 
-recruit_character = KHI_nedirbay_aytakov
-recruit_character = KHI_junaid_khan
+#recruit_character = KHI_nedirbay_aytakov
+#recruit_character = KHI_junaid_khan
 
 
 

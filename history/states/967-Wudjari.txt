@@ -1,0 +1,16 @@
+state={
+	id=967
+	name="STATE_967"
+	history = {
+		add_core_of = TAS
+		owner = TAS
+	}
+	provinces={
+		12990 11011 10997 1526 
+	}
+	manpower=17000
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

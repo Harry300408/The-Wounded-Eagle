@@ -16,8 +16,15 @@
  RAJ_UK_autonomy_dominion:0 "Dominion of India"
  RAJ_UK_autonomy_dominion_DEF:0 "the Dominion of India"
 
- SAF_COM_communist:0 "Cape Commune"
- SAF_COM_communist_DEF:0 "the Cape Commune"
-
  CAN_UK_subject:0 "Province of Canada"
+ CAN_UK_subject_DEF:0 "the Province of Canada"
+ 
+ NGA_ENG_COLONY:0 "British Gold Coast"
+ NGA_ENG_COLONY_DEF:0 "the British Gold Coast"
+
+ NSW_UK:0 "New South Wales"
+ NSW_UK_DEF:0 "New South Wales"
+
+ PAP_COLONY:0 "British Papua"
+ PAP_COLONY_DEF:0 "British Papua"
  

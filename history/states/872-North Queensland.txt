@@ -8,8 +8,9 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		owner = AST
+		owner = QUE
 		add_core_of = AST
+		add_core_of = QUE
 	}
 	manpower=100000
 	state_category = rural

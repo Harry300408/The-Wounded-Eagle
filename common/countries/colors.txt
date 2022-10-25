@@ -1,5 +1,110 @@
 #reload countrycolors
 #TWE Nations
+STS = {
+	color = rgb { 127 51 0 }
+	color_ui = rgb { 127 51 0 }
+}
+
+TSA = {
+	color = rgb { 91 127 0 }
+	color_ui = rgb { 91 127 0 }
+}
+
+AIN = {
+	color = rgb { 255 229 190 }
+	color_ui = rgb { 255 229 190 }
+}
+
+PIN = {
+	color = rgb { 239 189 181 }
+	color_ui = rgb { 239 189 181 }
+}
+
+MRT = {
+	color = rgb { 202 202 216 }
+	color_ui = rgb { 202 202 216 }
+}
+
+TJU = {
+	color = rgb { 216 207 218 }
+	color_ui = rgb { 216 207 218 }
+}
+
+KWR = {
+	color = rgb { 209 117 216 }
+	color_ui = rgb { 209 117 216 }
+}
+
+TAS = {
+	color = rgb { 154 188 137 }
+	color_ui = rgb { 154 188 137 }
+}
+
+NTR = {
+	color = rgb { 172 229 225 }
+	color_ui = rgb { 172 229 225 }
+}
+
+MIR = {
+	color = rgb { 229 231 180 }
+	color_ui = rgb { 229 231 180 }
+}
+
+SAT = {
+	color = rgb { 143 211 174 }
+	color_ui = rgb { 143 211 174 }
+}
+
+QUE = {
+	color = rgb { 100 136 168 }
+	color_ui = rgb { 100 136 168 }
+}
+
+VIT = {
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 194 198 215 }
+}
+
+BPA = {
+	color = rgb { 173 0 0 }
+	color_ui = rgb { 173 0 0 }
+}
+
+PNG = {
+	color = rgb { 149 147 116 }
+	color_ui = rgb { 149 147 116 }
+}
+
+MKO = {
+	color = rgb { 241 102 130 }
+	color_ui = rgb { 241 102 130 }
+}
+
+BNE = {
+	color = rgb { 33 0 127 }
+	color_ui = rgb { 253 198 137 }
+}
+
+JAW = {
+	color = rgb { 253 198 137 }
+	color_ui = rgb { 253 198 137 }
+}
+
+DAR = {
+	color = rgb { 187 216 107 }
+	color_ui = rgb { 187 216 107 }
+}
+
+BIL = {
+	color = rgb { 108 192 113 }
+	color_ui = rgb { 108 192 113 }
+}
+
+LAM = {
+	color = rgb { 0 180 141 }
+	color_ui = rgb { 0 180 141 }
+}
+
 ORI = {
 	color = rgb { 211 112 138 }
 	color_ui = rgb { 211 112 138 }
@@ -677,8 +782,8 @@ DDR = {
     color_ui = rgb { 150 180 120 }
 }
 KOR = {
-	color = rgb { 255  240  195 }
-	color_ui = rgb { 255 248 229 }	
+	color = rgb { 0 19 127 }
+	color_ui = rgb { 0 19 127 }	
 }
 ISR = {
 	color = rgb { 152  130  191 }

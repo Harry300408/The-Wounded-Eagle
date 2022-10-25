@@ -6,13 +6,45 @@ LBA_SEN = {
     color_ui = rgb { 0 0 0 }
 }
 
+#AUS
+CRM_AUS_COLONY = {
+    color = rgb { 119 119 119 }
+    color_ui = rgb { 119 119 119 }
+}
+
+
 #FRA
 NGR_proc = {
     color = rgb { 0 78 221 }
     color_ui = rgb { 0 78 221 }
 }
 
+VIN_proc = {
+    color = rgb { 0 78 221 }
+    color_ui = rgb { 0 78 221 }
+}
+
 #UK
+NGA_ENG_COLONY = {
+    color = rgb { 159 0 18 }
+    color_ui = rgb { 101 0 18 }
+}
+
+NSW_UK = {
+    color = rgb { 165 19 0 }
+    color_ui = rgb { 165 19 0 }
+}
+
+AST_COLONY_UK = {
+    color = rgb { 165 19 0 }
+    color_ui = rgb { 165 19 0 }
+}
+
+PAP_COLONY = {
+    color = rgb { 165 19 0 }
+    color_ui = rgb { 165 19 0 }
+}
+
 PRI_RAJ = {
     color = rgb { 183 20 36 }
     color_ui = rgb { 176 12 62 }

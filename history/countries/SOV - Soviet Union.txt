@@ -49,13 +49,13 @@ set_party_name = {
 }
 
 #COUNTRY LEADERS
-recruit_character = SOV_iosif_stalin
-recruit_character = SOV_supreme_soviet #This is a fake character! Proper country leader role is added via focus
+#recruit_character = SOV_iosif_stalin
+#recruit_character = SOV_supreme_soviet #This is a fake character! Proper country leader role is added via focus
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	recruit_character = SOV_provisional_government # United Exiles
+	#recruit_character = SOV_provisional_government # United Exiles
 	set_country_flag = vlasov_owner_flag
 }
 
@@ -79,19 +79,19 @@ if = {
 			has_dlc = "No Step Back"
 		}
 	}
-	set_oob = "SOV_1936"
+	#set_oob = "SOV_1936"
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	set_oob = "SOV_1936_nsb"
+	#set_oob = "SOV_1936_nsb"
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "SOV_1936_naval_mtg"
+		# = "SOV_1936_naval_mtg"
 	else = {
-		set_naval_oob = "SOV_1936_naval_legacy"
+		# = "SOV_1936_naval_legacy"
 	}
 }
 if = {

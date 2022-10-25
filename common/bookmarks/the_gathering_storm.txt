@@ -17,7 +17,7 @@ bookmarks = {
 		}
 		"ENG" = { 
 			history = "ENG_TWE"
-			ideology = conservatism
+			ideology = neutrality
 			ideas = {
 			}
 			focuses = {
@@ -25,7 +25,7 @@ bookmarks = {
 		}
         "USA" = { #For random country select
 			history = ""
-			ideology = conservatism
+			ideology = neutrality
 			ideas = {
 			}
 			focuses = {
@@ -33,7 +33,7 @@ bookmarks = {
 		}
 		"USA" = { 
 			history = ""
-			ideology = conservatism
+			ideology = neutrality
 			ideas = {
 			}
 			focuses = {

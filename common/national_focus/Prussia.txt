@@ -286,12 +286,11 @@ focus_tree = {
 	## Prussian Army Advancments ##
 
 	focus = {
-		id = CZE_military_research_institute
+		id = PRE_military_research_institute
 		icon = GFX_goal_generic_construct_mil_factory
 		text = "PRE_MI"
 		x = -13
 		y = 0
-		relative_position_id = CZE_strategy_decisions
 
 		cost = 10
 
@@ -317,12 +316,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CZE_mountain_bonus
+		id = PRE_mountain_bonus
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = CZE_military_research_institute }
+		prerequisite = { focus = PRE_military_research_institute }
 		x = -3
 		y = 1
-		relative_position_id = CZE_military_research_institute
 
 		cost = 10
 
@@ -344,7 +342,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = CZE_mountain_bonus
+				name = PRE_mountain_bonus
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
@@ -354,12 +352,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CZE_inf_and_artillery_advancement
+		id = PRE_inf_and_artillery_advancement
 		icon = GFX_goal_rhineland
-		prerequisite = { focus = CZE_military_research_institute }
+		prerequisite = { focus = PRE_military_research_institute }
 		x = -1
 		y = 1
-		relative_position_id = CZE_military_research_institute
 
 		cost = 10
 
@@ -381,7 +378,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = CZE_inf_and_artillery_advancement
+				name = PRE_inf_and_artillery_advancement
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
@@ -391,13 +388,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CZE_support_bonus
+		id = PRE_support_bonus
 		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = CZE_mountain_bonus }
+		prerequisite = { focus = PRE_mountain_bonus }
 		x = -3
 		y = 2
-		relative_position_id = CZE_military_research_institute
-
 		cost = 10
 
 		ai_will_do = {
@@ -418,13 +413,13 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = CZE_support_bonus #@#
+				name = PRE_support_bonus #@#
 				bonus = 1.0
 				uses = 2
 				category = support_tech	
 			}
 			add_tech_bonus = {
-				name = CZE_support_bonus #@#
+				name = PRE_support_bonus #@#
 				bonus = 1.0
 				uses = 1
 				technology = support_weapons2
@@ -434,12 +429,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CZE_inf_and_artillery_advancement_2
+		id = PRE_inf_and_artillery_advancement_2
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = CZE_inf_and_artillery_advancement }
+		prerequisite = { focus = PRE_inf_and_artillery_advancement }
 		x = -1
 		y = 2
-		relative_position_id = CZE_military_research_institute
 
 		cost = 10
 
@@ -461,7 +455,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = CZE_inf_and_artillery_advancement_2 #@#
+				name = PRE_inf_and_artillery_advancement_2 #@#
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
@@ -471,13 +465,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CZE_doctrine_bonus
+		id = PRE_doctrine_bonus
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = CZE_support_bonus }
-		prerequisite = { focus = CZE_inf_and_artillery_advancement_2 }
+		prerequisite = { focus = PRE_support_bonus }
+		prerequisite = { focus = PRE_inf_and_artillery_advancement_2 }
 		x = -2
 		y = 3
-		relative_position_id = CZE_military_research_institute
 
 		cost = 10
 
@@ -507,12 +500,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CZE_motorization_scheme
+		id = PRE_motorization_scheme
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = CZE_military_research_institute }
+		prerequisite = { focus = PRE_military_research_institute }
 		x = 1
 		y = 1
-		relative_position_id = CZE_military_research_institute
 
 		cost = 10
 
@@ -542,13 +534,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CZE_armour_bonus_1
+		id = PRE_armour_bonus_1
 		icon = GFX_goal_generic_army_tanks
 		text = "PRE_TNK"
-		prerequisite = { focus = CZE_military_research_institute }
+		prerequisite = { focus = PRE_military_research_institute }
 		x = 3
 		y = 1
-		relative_position_id = CZE_military_research_institute
 
 		cost = 10
 
@@ -579,12 +570,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CZE_mechanization
+		id = PRE_mechanization
 		icon = GFX_goal_generic_production2
-		prerequisite = { focus = CZE_motorization_scheme }
+		prerequisite = { focus = PRE_motorization_scheme }
 		x = 1
 		y = 2
-		relative_position_id = CZE_military_research_institute
 
 		cost = 10
 
@@ -606,7 +596,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = CZE_mechanization #@#
+				name = PRE_mechanization #@#
 				bonus = 1.0
 				uses = 1
 				category = cat_mechanized_equipment
@@ -615,12 +605,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CZE_armour_bonus_ii
+		id = PRE_armour_bonus_ii
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = CZE_armour_bonus_1 }
+		prerequisite = { focus = PRE_armour_bonus_1 }
 		x = 3
 		y = 2
-		relative_position_id = CZE_military_research_institute
 
 		cost = 10
 
@@ -650,13 +639,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CZE_doctrine_bonus_2
+		id = PRE_doctrine_bonus_2
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = CZE_mechanization }
-		prerequisite = { focus = CZE_armour_bonus_ii }
+		prerequisite = { focus = PRE_mechanization }
+		prerequisite = { focus = PRE_armour_bonus_ii }
 		x = 2
 		y = 3
-		relative_position_id = CZE_military_research_institute
 
 		cost = 10
 
@@ -687,13 +675,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CZE_war_college
+		id = PRE_war_college
 		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = CZE_doctrine_bonus }
-		prerequisite = { focus = CZE_doctrine_bonus_2 }
+		prerequisite = { focus = PRE_doctrine_bonus }
+		prerequisite = { focus = PRE_doctrine_bonus_2 }
 		x = 0
 		y = 4
-		relative_position_id = CZE_military_research_institute
 
 		cost = 10
 

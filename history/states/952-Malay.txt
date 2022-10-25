@@ -1,0 +1,16 @@
+state={
+	id=952
+	name="STATE_952"
+	history = {
+		add_core_of = SIA
+		owner = SIA	
+	}
+	provinces={
+		12215 7342 1291 4310 7329 12199 12144
+	}
+	manpower=1782200
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}
