@@ -1,9 +1,0 @@
-spriteTypes = {
-	
-    ##Leaders
-
-	spriteType = {
-        name = GFX_thalmann
-        texturefile = gfx/leaders/PRE/thalmann.dds
-    }
-}
