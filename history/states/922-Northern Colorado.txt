@@ -1,0 +1,18 @@
+state = {
+	id = 922
+	name = "STATE_922"
+
+	history = {
+		owner = LAC
+		add_core_of = LAC
+
+	}
+
+	provinces = {
+		1756 6887 10535 3869 1827 10588 1809 12570 12642 11772 7780
+	}
+	manpower = 5000 
+	buildings_max_level_factor = 1.000
+	state_category = rural
+	local_supplies = 0.000
+}

@@ -1,0 +1,6 @@
+spriteTypes = {	
+    spriteType = {
+        name = GFX_idea_not_quite_defeated
+        texturefile = gfx/interface/ideas/FRA_not_quite_defeated.dds
+    }
+}

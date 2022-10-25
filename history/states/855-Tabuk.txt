@@ -1,0 +1,15 @@
+state={
+	id=855
+	name="STATE_855"
+	history = {
+		owner = HAS
+		add_core_of = HAS
+	}
+	provinces={
+		12455 7970 5027 
+	}
+	manpower=500000
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

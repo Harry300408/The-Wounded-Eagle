@@ -1,0 +1,6 @@
+spriteTypes = {	
+    spriteType = {
+        name = GFX_portrait_Idris_Senussi_TWE
+        texturefile = gfx/leaders/LBA/Idris_c_leader.dds
+    }
+}

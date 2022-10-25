@@ -1,0 +1,52 @@
+soi_influence_campaign = {
+	icon = decision_category_icon_spheres_of_influence__influence_campaign
+	available = { always = yes }
+	allowed = {
+		OR = {
+			tag = FRA
+			tag = ENG
+			tag = SOV
+			tag = TUR
+			tag = TXS
+			tag = ITA
+			tag = PRE
+			tag = AUS
+		}
+	}
+	visible_when_empty = yes
+	scripted_gui = influence_view_gui 
+}
+soi_under_influence = {
+	icon = decision_category_icon_spheres_of_influence__under_influence
+	available = { always = yes }
+	visible_when_empty = yes
+}
+
+elections_reworked__elections = {
+	icon = decision_category_icon_elections_reworked__elections
+	visible = {
+		always = yes
+		#OR = {
+		#	is_ai = no
+		#	AND = {
+		#		is_ai = yes
+		#		has_global_flag = mod_global
+		#	}
+		#}
+	}
+}
+elections_reworked__parties_influence = {
+	icon = decision_category_icon_elections_reworked__parties_influence
+	picture = decision_category_picture_elections_reworked__parties_influence
+	visible = {
+		always = yes
+		#OR = {
+		#	is_ai = no
+		#	AND = {
+		#		is_ai = yes
+		#		has_global_flag = mod_global
+		#	}
+		#}
+	}
+	visible_when_empty = yes
+}
