@@ -137,6 +137,55 @@ AUS_swiss_ultimatum:0 "Swiss Ultimatum"
 AUS_subjugate_france:0 "Subjugate France"
 
 ### EVENTS ###
+ausevents.1.t:0 "[AUS.GetName] Demand Integration"
+ausevents.1.desc:0 "[AUS.GetNameDef] diplomats reached us with a request of integrating our country into theirs. They promise to respect rights of our people and government."
+ausevents.1.a:0 "We can't do anything about it."
+ausevents.1.b:0 "We are independent state, only losing in a war will change our mind!"
+
+ausevents.2.t:0 "[FROM.GetName] Reject Integration"
+ausevents.2.desc:0 "[FROM.GetNameDef] gave us straight negative answer to our request."
+ausevents.2.a:0 "We can't do anything about it."
+ausevents.2.b:0 "So the war will change their mind?"
+
+ausevents.3.t:0 "[AUS.GetName] Request Transfer of our Southern territories"
+ausevents.3.desc:0 "[AUS.GetNameDef] diplomats reached us with a request of transfering our southern states. They promise to respect rights of our people and regional governors in these regions."
+ausevents.3.a:0 "Give them what they want."
+ausevents.3.b:0 "They want them? Then come get them!"
+
+ausevents.4.t:0 "[FROM.GetName] Reject Request"
+ausevents.4.desc:0 "[FROM.GetNameDef] gave us straight negative answer to our request."
+ausevents.4.a:0 "We can't do anything about it."
+ausevents.4.b:0 "So the war will change their mind?"
+
+ausevents.5.t:0 "Conference of July"
+ausevents.5.desc:0 "Recent Democratic reforms proved to be effective, our popularity and people's support has grown. We are looking forward to continue peaceful existence and taking our time in improving our country."
+ausevents.5.a:0 "Es lebe Österreich!"
+
+ausevents.6.t:0 "Graz Conference"
+ausevents.6.desc:0 "On today's conference we were discussing about Confederation question, some were saying to leave things as they are, others were supporting the end Confederation and let the nations be what they want."
+ausevents.6.a:0 "We'll have to decide its fate later."
+
+ausevents.7.t:0 "Fate of the Confederation"
+ausevents.7.desc:0 "On Second Graz Conference we will finally decide fate of the Confederation."
+ausevents.7.a:0 "Leave everything as it is."
+ausevents.7.b:0 "Put an end to it."
+
+ausevents.8.t:0 "Fate of Czechia"
+ausevents.8.desc:1 "[AUSEventFateOfCzechiaDesc]"
+AUS_fate_of_czechia_desc_case_1:0 "Our recent reforms reached [CZE.GetName], we have to solve their fate."
+AUS_fate_of_czechia_desc_case_2:0 "With the confederation disbaded, we have to solve fate of [CZE.GetName]."
+ausevents.8.a:0 "Reach them with Annexation Proposal."
+ausevents.8.b:0 "Free them."
+
+ausevents.9.t:0 "[AUS.GetName] - Fate of Ours"
+ausevents.9.desc:0 "[AUS.GetNameDef] advisors reached us with a proposal of intagration. They promise to respect rights of our people and the government."
+ausevents.9.a:0 "Deny it."
+ausevents.9.b:0 "We Agree."
+
+ausevents.10.t:0 "[CZE.GetName] Denied our Proposal"
+ausevents.10.desc:0 "[CZE.GetNameDef] denied our proposal of Integration."
+ausevents.10.a:0 "Prepare for War then."
+ausevents.10.b:0 "We will respect their borders then."
 
 ### IDEAS ###
 AUS_monarchism_abandoned_idea_0:0 "Monarchism Abandoned"
@@ -166,6 +215,8 @@ AUS_on_our_own_idea:0 "On Our Own"
 AUS_regensburg_agreement_idea:0 "Regensburg Agreement"
 AUS_habsburg_empowered_idea:0 "Habsburg Empowered"
 AUS_austro_hungarian_empire_idea:0 "Austro-Hangarian Empire Restored"
+AUS_kaiserin_army_idea:0 "Kaiserin's Army"
+AUS_holy_imperial_order_idea:0 "Holy Imperial Order"
 
 ### TOOLTIP ###
 

@@ -1,0 +1,13 @@
+defined_text = { 
+    name = AUSEventFateOfCzechiaDesc
+
+    text = {
+        localization_key = AUS_fate_of_czechia_desc_case_1
+    }
+	text = {
+		trigger = {
+			has_completed_focus = AUS_fate_of_the_confederation
+		}
+        localization_key = AUS_fate_of_czechia_desc_case_2
+    }
+}

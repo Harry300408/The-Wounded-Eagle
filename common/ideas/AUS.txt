@@ -411,6 +411,38 @@ ideas = {
 				recruitable_population_factor = 0.1
 			}
 		}
+		AUS_holy_imperial_order_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				justify_war_goal_time = -0.2
+				consumer_goods_factor = -0.05
+				drift_defence_factor = 0.25
+				stability_factor = 0.05
+				recruitable_population_factor = 0.1
+			}
+		}
+		AUS_kaiserin_army_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				mobilization_speed = 0.2
+				war_support_factor = 0.05
+				recruitable_population_factor = 0.1
+			}
+		}
 
 	}
 }

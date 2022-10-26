@@ -4039,4 +4039,44 @@ spriteTypes = {
 		name = "GFX_focus_AUS_austria_hungary"
 		texturefile = "gfx/interface/goals/AUS/AUS_austria_hungary_icon.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_AUS_preussen_assist"
+		texturefile = "gfx/interface/goals/AUS/AUS_preussen_assist_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_claim_hre"
+		texturefile = "gfx/interface/goals/AUS/AUS_claim_hre_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_unified_confederation"
+		texturefile = "gfx/interface/goals/AUS/AUS_unified_confederation_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_hre_italian_claims"
+		texturefile = "gfx/interface/goals/AUS/AUS_hre_italian_claims_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_hre_west_claims"
+		texturefile = "gfx/interface/goals/AUS/AUS_hre_west_claims_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_crush_italian_unity"
+		texturefile = "gfx/interface/goals/AUS/AUS_crush_italian_unity_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_holy_imperial_order"
+		texturefile = "gfx/interface/goals/AUS/AUS_holy_imperial_order_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_kaiserin_army"
+		texturefile = "gfx/interface/goals/AUS/AUS_kaiserin_army_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_seek_uk_support"
+		texturefile = "gfx/interface/goals/AUS/AUS_seek_uk_support_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_victoria_louise"
+		texturefile = "gfx/interface/goals/AUS/AUS_victoria_louise_icon.dds"
+	}
 }

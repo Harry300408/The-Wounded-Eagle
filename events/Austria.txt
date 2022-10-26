@@ -1,0 +1,244 @@
+add_namespace = ausevents
+
+# AUS Demand Integration
+country_event = {
+	id = ausevents.1
+	title = ausevents.1.t
+	desc = ausevents.1.desc
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.1.a
+		AUS = {
+			annex_country = {
+				target = ROOT
+			}
+		}
+	}
+	option = {
+		name = ausevents.1.b
+		AUS = {
+			country_event = { id = ausevents.2 days = 3 }
+		}
+	}
+}
+# TAG Reject Integration
+country_event = {
+	id = ausevents.2
+	title = ausevents.2.t
+	desc = ausevents.2.desc
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.2.a
+	}
+	option = {
+		name = ausevents.2.b
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+}
+# ITA: AUS Request South Italy
+country_event = {
+	id = ausevents.3
+	title = ausevents.3.t
+	desc = ausevents.3.desc
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.3.a
+		158 = {
+			set_state_owner_to = AUS
+		}
+		159 = {
+			set_state_owner_to = AUS
+		}
+	}
+	option = {
+		name = ausevents.3.b
+		AUS = {
+			create_wargoal = {
+				target = ITA
+				type = take_state_focus
+			}
+			country_event = { id = ausevents.4 days = 3 }
+		}
+	}
+}
+# AUS: ITA Reject Giving up South Italy
+country_event = {
+	id = ausevents.4
+	title = ausevents.4.t
+	desc = ausevents.4.desc
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.4.a
+	}
+	option = {
+		name = ausevents.4.b
+	}
+}
+# AUS: Conference of July
+country_event = {
+	id = ausevents.5
+	title = ausevents.5.t
+	desc = ausevents.5.desc
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.5.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+		}
+		add_political_power = 50
+		add_stability = 0.1
+	}
+}
+# AUS: Graz Conference
+country_event = {
+	id = ausevents.6
+	title = ausevents.6.t
+	desc = ausevents.6.desc
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.6.a
+	}
+}
+# AUS: Fate of Confederation
+country_event = {
+	id = ausevents.7
+	title = ausevents.7.t
+	desc = ausevents.7.desc
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.7.a
+		add_political_power = -25
+	}
+	option = {
+		name = ausevents.7.b
+		leave_faction = yes
+		AUS = {
+			set_autonomy = {
+				target = WSF
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = ULM
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = WUR
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = BAY
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = BAD
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = THU
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = SAX
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = HAN
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = OLD
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = DBS
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = MEK
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = SHL
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = PRE
+				autonomy_state = autonomy_free
+			}
+		}
+	}
+}
+# AUS: Fate of Czechia
+country_event = {
+	id = ausevents.8
+	title = ausevents.8.t
+	desc = ausevents.8.desc
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.8.a
+		CZE = {
+			country_event = { id = ausevents.9 days = 3 }
+		}
+	}
+	option = {
+		name = ausevents.8.b
+		AUS = {
+			set_autonomy = {
+				target = CZE
+				autonomy_state = autonomy_free
+			}
+		}
+	}
+}
+# CZE: Fate of ours
+country_event = {
+	id = ausevents.9
+	title = ausevents.9.t
+	desc = ausevents.9.desc
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.9.a
+		AUS = {
+			country_event = { id = ausevents.10 days = 3 }
+		}
+	}
+	option = {
+		name = ausevents.9.b
+		AUS = {
+			annex_country = {
+				target = CZE
+			}
+		}
+	}
+}
+# AUS: CZE Denied Annex
+country_event = {
+	id = ausevents.10
+	title = ausevents.10.t
+	desc = ausevents.10.desc
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.10.a
+		create_wargoal = {
+			target = CZE
+			type = annex_everything
+		}
+	}
+	option = {
+		name = ausevents.10.b
+	}
+}
