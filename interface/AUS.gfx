@@ -1,0 +1,24 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_AUS_decision_agitation_progress_bar"
+		texturefile = "gfx/interface/decisions/AUS/AUS_agitation_progress_bar_strip.dds"
+		noOfFrames = 22
+	}
+	SpriteType = {
+		name = "GFX_AUS_decision_agitation_partrait_1"
+		texturefile = "gfx/interface/decisions/AUS/AUS_agitation_portrait_ron.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_AUS_decision_agitation_partrait_2"
+		texturefile = "gfx/interface/decisions/AUS/AUS_agitation_portrait_coc.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_AUS_decision_agitation_partrait_3"
+		texturefile = "gfx/interface/decisions/AUS/AUS_agitation_portrait_hby.dds"
+		noOfFrames = 2
+	}
+
+}

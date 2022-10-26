@@ -1,0 +1,37 @@
+spriteTypes = {	
+    
+    spriteType = {
+		name = "GFX_autonomy_FRA_proc_icon"
+		texturefile = "gfx//interface//TWE_autonomy//autonomy_FRA_proc_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_autonomy_HUN_proc_icon"
+		texturefile = "gfx//interface//TWE_autonomy//autonomy_HUN_proc_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_autonomy_AUS_fed_icon"
+		texturefile = "gfx//interface//TWE_autonomy//autonomy_AUS_fed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_autonomy_RUS_imp_proc_icon"
+		texturefile = "gfx//interface//TWE_autonomy//autonomy_RUS_imperial_proc.dds"
+	}
+
+	spriteType = {
+		name = "GFX_autonomy_commonwealth_proc_icon"
+		texturefile = "gfx//interface//TWE_autonomy//autonomy_ENG_commonwealth.dds"
+	}
+
+	spriteType = {
+		name = "GFX_autonomy_IND_princely_state_icon"
+		texturefile = "gfx//interface//TWE_autonomy//autonomy_IND_RAJ_princley_state.dds"
+	}
+
+	spriteType = {
+		name = "GFX_autonomy_OTT_eya_icon"
+		texturefile = "gfx//interface//TWE_autonomy//autonomy_TUR_eya.dds"
+	}
+}

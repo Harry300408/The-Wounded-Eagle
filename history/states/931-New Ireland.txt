@@ -1,0 +1,19 @@
+state = {
+	id = 931
+	name = "STATE_931"
+
+	history = {
+		owner = NER
+		add_core_of = NER
+
+	}
+
+	provinces = {
+		6742 1736 7779 4860 4741
+	}
+	manpower = 750
+	 
+	buildings_max_level_factor = 1.000
+	state_category = rural
+	local_supplies = 0.000
+}

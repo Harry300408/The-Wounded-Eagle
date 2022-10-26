@@ -1,0 +1,27 @@
+state={
+	id=679
+	name="STATE_679"
+
+	history={
+		owner = HAS
+		victory_points = {
+			12758 1 
+		}
+		
+		buildings = {
+			infrastructure = 2
+			
+
+		}
+		add_core_of = HAS
+
+	}
+
+	provinces={
+		12758 5099 10748 
+	}
+	manpower=511000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

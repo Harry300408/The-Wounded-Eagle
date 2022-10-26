@@ -1,0 +1,29 @@
+﻿l_english:
+ USA_war_lost:0 "Morale Crushed"
+  USA_war_lost_desc:0 "After the loss of the war of 1812 against Britain, our soldiers have began hope. Their morale is crushed and our army is still recovering. The people want a change in our nation"
+  
+ Agriculture_failing:0 "Grain Shortage"
+ 
+  Agriculture_failing_desc:0 "Our territory is lacking on grain  and food prices are higher then ever"
+  
+ 
+ Anti_british:0 "Anti-british policy"
+ 
+  Dream_lost:0 "Crushed Dream"
+  Dream_lost_desc:0 "With our Lost war against the british our nation has slowly crumbled. We failed to manifest our destiny and we seek revenge"
+  
+  america1:0 "Follow the path of Liberty"
+    america1_desc:0 "Today is the day where we begin to change. Freedom and liberty will guide us to victory and we will fight against all that try to stop us with it."
+    
+    usa.1.t:0 "The United States"
+        usa.1.d:0 "After the british victory in the war of 1812 it prevented the United states from expansion and really hurt the nation. It was a total embarrasment to the nation and the people wanted a change. After then the treaty of miami was signed after the slave problem became severe. After some agreements the division beetween the two sides was resolved and order was shortly restored. Third parties begin rising in popularity throughout the years causing tensions beetween the people in the nation."
+        usa.1.a:0 "God Save America"
+    
+         america2:0 "Anti british Crusade!"
+         america2_desc:0 ""
+         america4:0 "Renew old alliances"
+         america4_desc:0 ""
+         america5:0 "Patrionize the Army"
+         america5_desc:0 "To revive the spirit of our army we shall begin anti british campaigns around the nation reviving the morale of our soldiers and making them want to fight for us"
+         american_pride:0 "The Pride of America!"
+         america3:0 "The Past is the Past"

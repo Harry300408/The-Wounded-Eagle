@@ -1,0 +1,30 @@
+state={
+	id=682
+	name="STATE_682"
+	
+	state_category = rural
+	
+	resources={
+		steel=8 # was: 12.000
+		aluminium=9 # was: 14.000
+	}
+
+	history={
+		owner = BOR
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
+
+		}
+		add_core_of = BOR
+
+	}
+
+	provinces={
+		1299 1769 1782 4784 4869 4875 7794 9740 10621 11571 12701 13094 13161 
+	}
+	manpower=139059
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

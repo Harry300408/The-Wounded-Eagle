@@ -1,0 +1,88 @@
+AUS_agitation_program_category = {
+
+	AUS_agitation_rules_of_nature = {
+		icon = GFX_
+		days_remove = 14
+		days_re_enable = 3
+		fire_only_once = no
+		cost = 20
+
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+			custom_effect_tooltip = AUS_agitation_add_1_tt
+			hidden_effect = {
+				add_to_variable = {
+					ROOT.agitation_efficiency = 1
+				}
+			}
+		}
+	}
+	AUS_agitation_collective_consciousness = {
+		icon = GFX_
+		days_remove = 21
+		days_re_enable = 6
+		fire_only_once = no
+		cost = 40
+
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+			custom_effect_tooltip = AUS_agitation_add_2_tt
+			hidden_effect = {
+				add_to_variable = {
+					ROOT.agitation_efficiency = 2
+				}
+			}
+		}
+	}
+	AUS_agitation_it_has_to_be_this_way = {
+		icon = GFX_
+		days_remove = 28
+		days_re_enable = 9
+		fire_only_once = no
+		cost = 80
+
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+			custom_effect_tooltip = AUS_agitation_add_3_tt
+			hidden_effect = {
+				add_to_variable = {
+					ROOT.agitation_efficiency = 3
+				}
+			}
+		}
+	}
+
+}
