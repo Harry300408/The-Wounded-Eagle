@@ -444,5 +444,32 @@ ideas = {
 			}
 		}
 
+		AUS_democratic_influence_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				democratic_drift = 0.04
+				democratic_acceptance = 65
+			}
+		}
+		AUS_unionist_influence_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_drift = 0.04
+				communism_acceptance = 75
+			}
+		}
+
 	}
 }
