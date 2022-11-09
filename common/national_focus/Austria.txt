@@ -1233,14 +1233,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		allow_branch = {
-			#if = {
-			#	limit = {
-			#		NOT = {
-			#			has_country_flag = DELTA_THREE
-			#		}
-			#	}
-			#	always = no
-			#}
+			has_country_flag = AUS_prussia_friendly
 		}
 		relative_position_id = AUS_first_viena_conference
 		prerequisite = {
@@ -1250,8 +1243,7 @@ focus_tree = {
 			focus = AUS_empower_habsburgs
 		}
 		completion_reward = { 
-			# TODO
-			# event AUS: Preußen Commune ready to help us
+			country_event = ausevents.15
 		}
 	}
 	focus = {
@@ -1265,8 +1257,7 @@ focus_tree = {
 			focus = AUS_prussian_assistance
 		}
 		completion_reward = { 
-			# TODO
-			# event Second Vienna Conference (Preußen Commune Integration)
+			country_event = ausevents.14
 		}
 	}
 	focus = {
@@ -1322,8 +1313,45 @@ focus_tree = {
 			focus = AUS_invite_victoria_iii
 		}
 		completion_reward = { 
-			# TODO
-			# All confederation states: AUS ask unification
+			custom_effect_tooltip = AUS_confederation_integrate_tt
+			hidden_effect = {
+				BAY = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				WUR = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				ULM = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				BAD = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				THU = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				SAX = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				DBS = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				WSF = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				HAN = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				OLD = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				MEK = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				SHL = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+			}
 			28 = {
 				add_core_of = AUS
 			}
@@ -1621,9 +1649,21 @@ focus_tree = {
 					has_country_flag = AUS_UK_support
 				}
 				custom_effect_tooltip = AUS_TTS_ENG_core_tt
+
+				ENG = {
+					country_event = ausevents.16
+					diplomatic_relation = {
+						country = PAP
+						relation = guarantee
+					}
+				}
 			}
 			else = {
 				custom_effect_tooltip = AUS_TTS_core_tt
+			}
+			diplomatic_relation = {
+				country = PAP
+				relation = guarantee
 			}
 			hidden_effect = {
 				114 = {
@@ -1960,6 +2000,14 @@ focus_tree = {
 					target = AUS
 					modifier = unionist_learning
 				}
+				diplomatic_relation = {
+					country = AUS
+					relation = guarantee
+				}
+			}
+			diplomatic_relation = {
+				country = PRE
+				relation = guarantee
 			}
 		}
 	}
