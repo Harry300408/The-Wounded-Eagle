@@ -11,10 +11,3 @@ defined_text = {
         localization_key = AUS_fate_of_czechia_desc_case_2
     }
 }
-defined_text = { 
-    name = AUSEvent1
-
-    text = {
-        localization_key = ausevents.1.t
-    }
-}

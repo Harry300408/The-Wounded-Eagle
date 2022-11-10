@@ -1,4 +1,4 @@
-### search_filters = {FOCUS_FILTER_POLITICAL}
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -896,10 +896,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 		 RAJ = {
-		 set_state_owner = 425
-		 add_state_core = 425
-		 set_state_owner = 321
-		 add_state_core = 321
+		  annex_country = {
+                  target = MYS
+                  transfer_troops = yes
+                  }
+
 		 }
 
 
@@ -1226,34 +1227,6 @@ focus_tree = {
 
 
 	}
-		focus = {
-		id = ENG_the_political_situation
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-		
-		icon =  GFX_focus_SOV_builder_of_the_red_army
-		x = 45
-		y = 0
-
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-		 add_ideas = attack_forward
-        }
-		
-
-        
-
-
-	}
 }
+
+
