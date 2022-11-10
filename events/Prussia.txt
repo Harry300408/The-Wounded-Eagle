@@ -45,3 +45,21 @@ country_event = {
 		complete_national_focus = PRE_rommel
 	}
 }
+
+country_event = {
+	id = pre.3
+	title = pre.3.t
+	desc = pre.3.d
+	picture = GFX_report_event_por_president_military_inspection
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+		trigger= {
+		}
+
+	option = {
+		name = pre.3.a
+		news_event = preworld.1
+	}
+}

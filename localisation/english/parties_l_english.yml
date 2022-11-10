@@ -1,6 +1,12 @@
 ﻿l_english:
+ ## TWE Stuff
  communism:0 "Unionist"
  communism_noun:0 "Unionism"
+
+ PRE_communism_party:0 "UPD" 
+ PRE_communism_party_long:0 "Unionistische Partei Deutschlands"
+
+ ## HOI4 Stuff 
  democratic:0 "Democratic"
  democratic_noun:0 "Democracy"
  fascism:0 "Fascist"

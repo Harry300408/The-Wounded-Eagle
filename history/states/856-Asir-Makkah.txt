@@ -9,13 +9,6 @@ state={
 		add_core_of	= NEJ
 		buildings = {
 			infrastructure = 1
-			12883 = {
-				naval_base = 5
-
-			}
-		}
-		victory_points = {
-			12883 1 
 		}
 	}
 	manpower=500000

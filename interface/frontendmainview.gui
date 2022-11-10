@@ -216,7 +216,7 @@ guiTypes = {
 
 		iconType = {
 			name = "tweaks_bg"
-			position = { x = -215 y = -470 }
+			position = { x = -390 y = -470 }
 			spriteType = "GFX_tweaks"
 			centerposition = yes
 			orientation = center
@@ -225,7 +225,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="TWE_tweaks"
-			position = { x = 445 y = -30 }
+			position = { x = 250 y = -30 }
 			textureFile = ""
 			font = "hoi_30header"
 			borderSize = {x = 0 y = 0}
@@ -237,7 +237,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="TWE_tweak_changes"
-			position = { x = 447 y = 0 }
+			position = { x = 255 y = 0 }
 			textureFile = ""
 			font = "hoi_26mbs"
 			borderSize = {x = 0 y = 0}
@@ -251,7 +251,7 @@ guiTypes = {
 		## Update "log"
 		iconType = {
 			name = "update"
-			position = { x = -215 y = -100 }
+			position = { x = -390 y = -100 }
 			spriteType = "GFX_update"
 			centerposition = yes
 			orientation = center
@@ -261,7 +261,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="TWE_update"
-			position = { x = 445 y = 210 }
+			position = { x = 250 y = 210 }
 			textureFile = ""
 			font = "hoi_30header"
 			borderSize = {x = 0 y = 0}
@@ -273,7 +273,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="TWE_update_name"
-			position = { x = 450 y = 240 }
+			position = { x = 255 y = 240 }
 			textureFile = ""
 			font = "hoi_26mbs"
 			borderSize = {x = 0 y = 0}
@@ -285,7 +285,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="TWE_update_f"
-			position = { x = 447 y = 275 }
+			position = { x = 255 y = 275 }
 			textureFile = ""
 			font = "hoi_26mbs"
 			borderSize = {x = 0 y = 0}
@@ -298,7 +298,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="TWE_devs"
-			position = { x = 447 y = 470 }
+			position = { x = 255 y = 470 }
 			textureFile = ""
 			font = "hoi_26mbs"
 			borderSize = {x = 0 y = 0}
@@ -312,9 +312,18 @@ guiTypes = {
 		## Main Stuff
 
 		iconType = {
+			name = "collective_logo"
+			position = { x = -390 y = -650 }
+			spriteType = "GFX_collective_letters"
+			centerposition = yes
+			orientation = center
+			scale = 0.9
+			alwaysTransparent = no
+		}
+
+		iconType = {
 			name = "Eagle_Logo"
-			position = { x = -900 y = -160 }
-			scale = 0.6
+			position = { x = -1200 y = -425 }
 			spriteType = "GFX_main_eagle"
 			centerposition = yes
 			orientation = center
@@ -323,7 +332,7 @@ guiTypes = {
 			
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = -375 y = 500 }
+			position = { x = -570 y = 500 }
 			quadTextureSprite ="GFX_TWE_MM_button"
 			font = "hoi_24header"			
 			text = "FE_SINGLE_PLAYER"				
@@ -333,7 +342,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = -375 y = 540 }
+			position = { x = -570 y = 540 }
 			quadTextureSprite ="GFX_TWE_MM_button"
 			font = "hoi_24header"			
 			text = "FE_MULTI_PLAYER"			
@@ -343,7 +352,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="TWE_ver"
-			position = { x = -355 y = 655 }
+			position = { x = 255 y = -85 }
 			textureFile = ""
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
@@ -355,7 +364,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="version_label"
-			position = { x = -355 y = 672 }
+			position = { x = 255 y = -70 }
 			textureFile = ""
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
@@ -368,7 +377,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "settings_button"
-			position = { x = -80 y = 500 }
+			position = { x = -280 y = 500 }
 			quadTextureSprite ="GFX_TWE_MM_button"	
 			buttonText = "OPTIONS"
 			buttonFont = "hoi_24header"
@@ -378,7 +387,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "career_profile_button"
-			position = { x = -670 y = 500 }
+			position = { x = -860 y = 500 }
 			quadTextureSprite ="GFX_TWE_MM_button"
 			buttonText = "MENU_BAR_CAREER_PROFILE"
 			buttonFont = "hoi_24header"
@@ -388,20 +397,22 @@ guiTypes = {
 
 		iconType = {
 			name = "r_under_b"
-			position = { x = -1858 y = 601 }
+			position = { x = -1685 y = 599 }
 			spriteType = "GFX_r_underbracket"
 			centerposition = yes
 			orientation = upper_right
 			alwaysTransparent = yes
+			scale = 0.96
 		}
 
 		iconType = {
 			name = "l_under_b"
-			position = { x = -2445 y = 601 }
+			position = { x = -2258 y = 599 }
 			spriteType = "GFX_l_underbracket"
 			centerposition = yes
 			orientation = upper_right
 			alwaysTransparent = yes
+			scale = 0.96
 		}
 
 		#iconType = {
@@ -414,18 +425,18 @@ guiTypes = {
 		#}
 
 		
-		iconType = {
-			name = "career_profile_button_star"
-			position = { x = -670 y = 155 }
-			spriteType = "GFX_icon_best_in_career"
-			centerposition = yes
-			orientation = upper_right
-			alwaysTransparent = yes
-		}
+		#iconType = {
+		#	name = "career_profile_button_star"
+		#	position = { x = -650 y = 155 }
+		#	spriteType = "GFX_icon_best_in_career"
+		#	centerposition = yes
+		#	orientation = upper_right
+		#	alwaysTransparent = yes
+		#}
 		
 		buttonType = {
 			name = "friends_button"
-			position = { x = -80 y = 540 }
+			position = { x = -280 y = 540 }
 			quadTextureSprite ="GFX_TWE_MM_button"
 			buttonText = "MENU_BAR_FRIENDS"
 			buttonFont = "hoi_24header"
@@ -435,7 +446,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "credits_button"
-			position = {  x = -670 y = 540 }
+			position = {  x = -860 y = 540 }
 			quadTextureSprite ="GFX_TWE_MM_button"	
 			buttonText = "FE_CREDITS"
 			buttonFont = "hoi_24header"
@@ -445,7 +456,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = -375 y = 620 }
+			position = { x = -570 y = 620 }
 			quadTextureSprite ="GFX_TWE_MM_button"	
 			buttonText = "Nudge!"
 			buttonFont = "hoi_24header"
@@ -453,7 +464,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "exit_button"
-			position = { x = -375 y = 580 }
+			position = { x = -570 y = 580 }
 			quadTextureSprite ="GFX_TWE_MM_button"
 			font = "hoi_24header"			
 			text = "FE_EXIT"			
@@ -550,7 +561,7 @@ guiTypes = {
 		#}
 		ButtonType = {
 			name = "discord_inv"
-			position = { x=100 y=100 }
+			position = { x=1025 y=-215 }
 			quadTextureSprite ="facebook"
 			clicksound = click_default
 			pdx_tooltip = "discord_inv"

@@ -1,5 +1,55 @@
 #reload countrycolors
 #TWE Nations
+PAU = {
+	color = rgb { 123 134 170 }
+	color_ui = rgb { 123 134 170 }
+}
+
+ULA = {
+	color = rgb { 173 71 67 }
+	color_ui = rgb { 173 71 67 }
+}
+
+SAC = {
+	color = rgb { 56 158 82 }
+	color_ui = rgb { 56 158 82 }
+}
+
+BRN = {
+	color = rgb { 58 45 158 }
+	color_ui = rgb { 58 45 158 }
+}
+
+MAO = {
+	color = rgb { 154 158 118 }
+	color_ui = rgb { 154 158 118 }
+}
+
+AIN = {
+	color = rgb { 255 254 221 }
+	color_ui = rgb { 255 254 221 }
+}
+
+TSA = {
+	color = rgb { 74 88 145 }
+	color_ui = rgb { 74 88 145 }
+}
+
+SAT = {
+	color = rgb { 142 108 89 }
+	color_ui = rgb { 142 108 89 }
+}
+
+TGT = {
+	color = rgb { 105 91 64 }
+	color_ui = rgb { 105 91 64 }
+}
+
+KMK = {
+	color = rgb { 100 69 67 }
+	color_ui = rgb { 100 69 67 }
+}
+
 ORI = {
 	color = rgb { 211 112 138 }
 	color_ui = rgb { 211 112 138 }
@@ -677,8 +727,8 @@ DDR = {
     color_ui = rgb { 150 180 120 }
 }
 KOR = {
-	color = rgb { 255  240  195 }
-	color_ui = rgb { 255 248 229 }	
+	color = rgb { 33 43 99 }
+	color_ui = rgb { 33 43 99 }	
 }
 ISR = {
 	color = rgb { 152  130  191 }

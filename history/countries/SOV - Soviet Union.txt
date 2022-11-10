@@ -1,35 +1,47 @@
 ﻿### TWE - Stuff
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = POL
+		autonomous_state = autonomy_RUS_imp_proc
+	}
 
-set_autonomy = {
-	target = POL
-	autonomous_state = autonomy_RUS_imp_proc
+	set_autonomy = {
+		target = ALK
+		autonomous_state = autonomy_RUS_imp_proc
+	}
+
+	set_autonomy = {
+		target = FIN
+		autonomous_state = autonomy_RUS_imp_proc
+	}
+
+	set_autonomy = {
+		target = MON
+		autonomous_state = autonomy_RUS_imp_proc
+	}
+
+	set_autonomy = {
+		target = KUR
+		autonomous_state = autonomy_RUS_imp_proc
+	}
+
+	set_autonomy = {
+		target = PER
+		autonomous_state = autonomy_RUS_imp_proc
+	}
+
+	else = {
+		puppet = POL
+		puppet = ALK
+		puppet = FIN
+		puppet = MON
+		puppet = KUR
+		puppet = PER 
+	}
 }
-
-set_autonomy = {
-	target = ALK
-	autonomous_state = autonomy_RUS_imp_proc
-}
-
-set_autonomy = {
-	target = FIN
-	autonomous_state = autonomy_RUS_imp_proc
-}
-
-set_autonomy = {
-	target = MON
-	autonomous_state = autonomy_RUS_imp_proc
-}
-
-set_autonomy = {
-	target = KUR
-	autonomous_state = autonomy_RUS_imp_proc
-}
-
-set_autonomy = {
-	target = PER
-	autonomous_state = autonomy_RUS_imp_proc
-}
-
 
 ####
 #### NO STEP BACK
@@ -49,17 +61,9 @@ set_party_name = {
 }
 
 #COUNTRY LEADERS
-recruit_character = SOV_iosif_stalin
-recruit_character = SOV_supreme_soviet #This is a fake character! Proper country leader role is added via focus
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	recruit_character = SOV_provisional_government # United Exiles
-	set_country_flag = vlasov_owner_flag
-}
 
-add_dynamic_modifier = { modifier = SOV_second_five_year_plan_dynamic_modifier }
+recruit_character = RUS_olga_rom
+
 set_technology = {
 	synth_oil_experiments = 1
 }
@@ -79,13 +83,13 @@ if = {
 			has_dlc = "No Step Back"
 		}
 	}
-	set_oob = "SOV_1936"
+	#set_oob = "SOV_1936"
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	set_oob = "SOV_1936_nsb"
+	#set_oob = "SOV_1936_nsb"
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }

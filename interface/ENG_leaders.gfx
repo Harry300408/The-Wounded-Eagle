@@ -1,0 +1,11 @@
+spriteTypes = {
+	
+    ##Leaders
+
+	spriteType = {
+        name = GFX_attlee
+        texturefile = gfx/leaders/ENG/Labour/attlee.dds
+    }
+
+
+}

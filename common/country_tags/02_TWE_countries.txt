@@ -24,6 +24,10 @@ ULM = "countries/Bavaria.txt"
 BAD = "countries/Bavaria.txt" 
 #Columbia
 CLU = "countries/Canada.txt"
+#New Brunswick
+NBW = "countries/Canada.txt"
+#Borealia 
+BOR = "countries/Canada.txt"
 #French Exiles
 FEX = "countries/France.txt"
 #New Ireland

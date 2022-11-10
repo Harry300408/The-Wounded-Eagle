@@ -1,0 +1,12 @@
+# TWE Native/Colonial Countries #
+
+#Maori Natives 
+MAO = "countries/Natives.txt"
+#Empire of Borneo
+BRN = "countries/Natives.txt"
+#North Sumatran Confederation
+SAC = "countries/Natives.txt"
+#Ulawesi
+ULA = "countries/Natives.txt"
+#Papua - Native
+PAU = "countries/Natives.txt"

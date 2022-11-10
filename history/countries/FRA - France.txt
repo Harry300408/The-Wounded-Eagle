@@ -51,6 +51,19 @@ set_autonomy = {
 	autonomous_state = autonomy_FRA_proc
 }
 
+set_autonomy = {
+	target = VIN
+	autonomous_state = autonomy_FRA_proc
+}
+
+NGR = {
+	set_cosmetic_tag = NGR_proc
+}
+
+VIN ={
+	set_cosmetic_tag = VIN_proc
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -171,17 +184,11 @@ add_ideas = {
 }
 
 #Leaders
-recruit_character = FRA_victor_b
-recruit_character = FRA_armand_f
-recruit_character = FRA_jean_j
-recruit_character = FRA_rocque
+recruit_character = FRA_louis_nap
 
 #Field Commanders
-recruit_character = FRA_alphonse
-recruit_character = FRA_alphonse_j
 
 #Unit Commanders
-recruit_character = FRA_antoine_besson
 
 
 

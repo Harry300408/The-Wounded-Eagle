@@ -1,0 +1,61 @@
+characters = {
+
+    ## Austrian Leaders ##
+    
+    AUS_otto_von_h = {
+        name = AUS_otto_von_h
+        portraits = {
+            civilian = {
+                large = "GFX_otto_hab"
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            traits = { legitimate_heir anti_communist }
+            #desc = 
+        }
+    }
+
+    ## Unit & Field Marshals ##
+    ##Field Marshals
+
+    #FRA_alphonse_j = {
+    #    name = FRA_alphonse_juin
+    #    portraits = {
+    #        army={
+	#		    large=GFX_alphonse_juin
+	#	    }
+    #    }
+	#	
+    #    field_marshal={
+	#		traits={  }
+	#		skill=5
+	#		attack_skill=4
+	#		defense_skill=5
+	#		planning_skill=4
+	#		logistics_skill=4
+	#	}
+    #} 
+
+    ## Unit Leaders
+
+    #FRA_antoine_besson = {
+    #   name = FRA_antoine_besson
+    #    portraits = {
+    #        army={
+	#		    large=GFX_antoine
+	#	    }
+    #    }
+	#	
+    #    corps_commander={
+	#		traits={  }
+	#		skill=3
+	#		attack_skill=2
+	#		defense_skill=3
+	#		planning_skill=4
+	#		logistics_skill=2
+	#	}
+    #} 
+
+
+}

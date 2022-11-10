@@ -1,9 +1,269 @@
 spriteTypes = {
 	
-    ##Leaders
+    # Leaders #
 
 	spriteType = {
         name = GFX_thalmann
-        texturefile = gfx/leaders/PRE/thalmann.dds
+        texturefile = gfx/leaders/PRE/UPD/thalmann.dds
+    }
+    
+    spriteType = {
+        name = GFX_georg_ledebour
+        texturefile = gfx/leaders/PRE/UPD/l_opp_georg_ledebour.dds
+    } 
+
+    spriteType = {
+        name = GFX_georg_ledebour_s
+        texturefile = gfx/leaders/PRE/UPD/l_opp_georg_ledebour_small.dds
+    } 
+
+    spriteType = {
+        name = GFX_donitz
+        texturefile = gfx/leaders/PRE/NSDAP/f_opp_donitz.dds
+    }
+
+    spriteType = {
+        name = GFX_donitz_s
+        texturefile = gfx/leaders/PRE/NSDAP/f_opp_donitz_small.dds
+    }
+
+    # Advisors #
+
+    spriteType = {
+        name = GFX_PRE_karl
+        texturefile = gfx/advisors/PRE/UPD/advisor_karl_liebknecht.dds
+    }
+
+    spriteType = {
+        name = GFX_PRE_karl_s
+        texturefile = gfx/advisors/PRE/UPD/advisor_karl_liebknecht_small.dds
+    }
+
+    spriteType = {
+        name = GFX_PRE_rosa
+        texturefile = gfx/advisors/PRE/UPD/advisor_rosa_luxemburg.dds
+    }
+
+    spriteType = {
+        name = GFX_PRE_rosa_s
+        texturefile = gfx/advisors/PRE/UPD/advisor_rosa_luxemburg_small.dds
+    }
+
+    spriteType = {
+        name = GFX_PRE_levi
+        texturefile = gfx/advisors/PRE/UPD/advisor_paul_levi.dds
+    }
+
+    spriteType = {
+        name = GFX_PRE_levi_s
+        texturefile = gfx/advisors/PRE/UPD/advisor_paul_levi_small.dds
+    }
+
+    spriteType = {
+        name = GFX_PRE_goring
+        texturefile = gfx/advisors/PRE/UPD/advisor_albert_goring.dds
+    }
+
+    spriteType = {
+        name = GFX_PRE_goring_s
+        texturefile = gfx/advisors/PRE/UPD/advisor_albert_goring_small.dds
+    }
+
+    spriteType = {
+        name = GFX_PRE_ruth
+        texturefile = gfx/advisors/PRE/UPD/advisor_ruth_fischer.dds
+    }
+
+    spriteType = {
+        name = GFX_PRE_ruth_s
+        texturefile = gfx/advisors/PRE/UPD/advisor_ruth_fischer_small.dds
+    }
+
+    spriteType = {
+        name = GFX_PRE_werner
+        texturefile = gfx/advisors/PRE/UPD/advisor_werner_scholem.dds
+    }
+
+    spriteType = {
+        name = GFX_PRE_werner_s
+        texturefile = gfx/advisors/PRE/UPD/advisor_werner_scholem_small.dds
+    }
+
+    # Army # 
+
+    #FM's
+
+    #Generals
+
+    spriteType = {
+        name = GFX_general_felix_steiner
+        texturefile = gfx/fm_and_general/PRE/general_felix_steiner.dds
+    }
+
+    spriteType = {
+        name = GFX_general_felix_steiner_s
+        texturefile = gfx/fm_and_general/PRE/general_felix_steiner_small.dds
+    }
+
+    spriteType = {
+        name = GFX_general_friedrich_paulus
+        texturefile = gfx/fm_and_general/PRE/general_friedrich_paulus.dds
+    }
+
+    spriteType = {
+        name = GFX_general_friedrich_paulus_s
+        texturefile = gfx/fm_and_general/PRE/general_friedrich_paulus_small.dds
+    }
+
+    spriteType = {
+        name = GFX_general_hans_beimler
+        texturefile = gfx/fm_and_general/PRE/general_hans_beimler.dds
+    }
+
+    spriteType = {
+        name = GFX_general_hans_beimler_s
+        texturefile = gfx/fm_and_general/PRE/general_hans_beimler_small.dds
+    }
+
+    spriteType = {
+        name = GFX_general_kurt_student
+        texturefile = gfx/fm_and_general/PRE/general_kurt_student.dds
+    }
+
+    spriteType = {
+        name = GFX_general_kurt_student_s
+        texturefile = gfx/fm_and_general/PRE/general_kurt_student_small.dds
+    }
+
+    spriteType = {
+        name = GFX_general_manstein
+        texturefile = gfx/fm_and_general/PRE/general_manstein.dds
+    }
+
+    spriteType = {
+        name = GFX_general_manstein_s
+        texturefile = gfx/fm_and_general/PRE/general_manstein_small.dds
+    }
+
+    spriteType = {
+        name = GFX_general_margit_zinke
+        texturefile = gfx/fm_and_general/PRE/general_margit_zinke.dds
+    }
+
+    spriteType = {
+        name = GFX_general_margit_zinke_s
+        texturefile = gfx/fm_and_general/PRE/general_margit_zinke_small.dds
+    }
+
+    spriteType = {
+        name = GFX_general_maximilian_weichs
+        texturefile = gfx/fm_and_general/PRE/general_maximilian_weichs.dds
+    }
+
+    spriteType = {
+        name = GFX_general_maximilian_weichs_s
+        texturefile = gfx/fm_and_general/PRE/general_maximilian_weichs_small.dds
+    }
+
+    spriteType = {
+        name = GFX_fm_hans_kahle
+        texturefile = gfx/fm_and_general/PRE/fm_hans_kahle.dds
+    }
+
+    spriteType = {
+        name = GFX_fm_hans_kahle_s
+        texturefile = gfx/fm_and_general/PRE/fm_hans_kahle_small.dds
+    }
+
+    spriteType = {
+        name = GFX_fm_ludwig_renn
+        texturefile = gfx/fm_and_general/PRE/fm_ludwig_renn.dds
+    }
+
+    spriteType = {
+        name = GFX_fm_ludwig_renn_s
+        texturefile = gfx/fm_and_general/PRE/fm_ludwig_renn_small.dds
+    }
+
+    spriteType = {
+        name = GFX_fm_rommel
+        texturefile = gfx/fm_and_general/PRE/fm_rommel.dds
+    }
+
+    spriteType = {
+        name = GFX_fm_rommel_s
+        texturefile = gfx/fm_and_general/PRE/fm_rommel_small.dds
+    }
+
+    ## High Command
+
+    spriteType = {
+        name = GFX_hc_albert_raeder
+        texturefile = gfx/high_command/PRE/Navy/hc_albert_raeder.dds
+    }
+
+    spriteType = {
+        name = GFX_hc_albert_raeder_s
+        texturefile = gfx/high_command/PRE/Navy/hc_albert_raeder_small.dds
+    }
+
+    spriteType = {
+        name = GFX_hc_thomas_ludwig
+        texturefile = gfx/high_command/PRE/Army/hc_thomas_ludwig.dds
+    }
+
+    spriteType = {
+        name = GFX_hc_thomas_ludwig_s
+        texturefile = gfx/high_command/PRE/Army/hc_thomas_ludwig_small.dds
+    }
+
+    spriteType = {
+        name = GFX_hc_werner_kreipe
+        texturefile = gfx/high_command/PRE/Air/hc_werner_kreipe.dds
+    }
+
+    spriteType = {
+        name = GFX_hc_werner_kreipe_s
+        texturefile = gfx/high_command/PRE/Air/hc_werner_kreipe_small.dds
+    }
+
+    spriteType = {
+        name = GFX_hc_hugo_sperrle
+        texturefile = gfx/high_command/PRE/Navy/hc_hugo_sperrle.dds
+    }
+
+    spriteType = {
+        name = GFX_hc_hugo_sperrle_s
+        texturefile = gfx/high_command/PRE/Navy/hc_hugo_sperrle_small.dds
+    }
+
+    spriteType = {
+        name = GFX_hc_ferdinand_schorner
+        texturefile = gfx/high_command/PRE/Army/hc_ferdinand_schorner.dds
+    }
+
+    spriteType = {
+        name = GFX_hc_ferdinand_schorner_s
+        texturefile = gfx/high_command/PRE/Army/hc_ferdinand_schorner_small.dds
+    }
+
+    spriteType = {
+        name = GFX_hc_erhard_milch
+        texturefile = gfx/high_command/PRE/Air/hc_erhard_milch.dds
+    }
+
+    spriteType = {
+        name = GFX_hc_erhard_milch_s
+        texturefile = gfx/high_command/PRE/Air/hc_erhard_milch_small.dds
+    }
+
+    spriteType = {
+        name = GFX_t_heinz_neumann
+        texturefile = gfx/high_command/PRE/Theorist/t_heinz_neumann.dds
+    }
+
+    spriteType = {
+        name = GFX_t_heinz_neumann_s
+        texturefile = gfx/high_command/PRE/Theorist/t_heinz_neumann_small.dds
     }
 }

@@ -126,11 +126,83 @@ if = {
 	}
 }
 
+# Theorist # 
+recruit_character = t_heinz_neumann
+activate_advisor = t_heinz_neumann
+
+
+# Leaders #
 recruit_character = PRE_thalmann
+recruit_character = PRE_georg_ledebour
+recruit_character = PRE_donitz
+recruit_character = PRE_karl_liebknecht
+recruit_character = PRE_rosa
+
+
+# Advisor Stuff #
+recruit_character = PRE_levi
+recruit_character = PRE_ruth
+recruit_character = PRE_werner
+
+# Activation - Advisors #
+
+# Opposition
+activate_advisor = PRE_georg_ledebour
+#activate_advisor = PRE_donitz
+
+# Cabinet
+activate_advisor = PRE_levi
+activate_advisor = PRE_werner
+activate_advisor = PRE_ruth
+activate_advisor = PRE_rosa
+activate_advisor = PRE_karl_liebknecht
+
+# Army #
+# High Command
+recruit_character = hc_thomas_ludwig
+activate_advisor = hc_thomas_ludwig
+
+recruit_character = hc_ferdinand_schorner
+activate_advisor = hc_ferdinand_schorner
+
+# FM's
+recruit_character = fm_ludwig_renn
+recruit_character = fm_hans_kahle
+recruit_character = fm_rommel
+
+# Generals
+recruit_character = general_felix_steiner
+recruit_character = general_friedrich_paulus
+recruit_character = general_hans_beimler
+recruit_character = general_kurt_student
+recruit_character = general_manstein
+recruit_character = general_margit_zinke
+recruit_character = general_maximilian_weichs
+
+# Navy # 
+# High Command
+recruit_character = hc_albert_raeder
+activate_advisor = hc_albert_raeder
+
+recruit_character = hc_hugo_sperrle
+activate_advisor = hc_hugo_sperrle
+
+# Navy Commander(s)
+
+# Franz Halder (to do)
+
+# Air # 
+# High Command (the only thing we need XD)
+recruit_character = hc_werner_kreipe
+activate_advisor = hc_werner_kreipe
+
+recruit_character = hc_erhard_milch
+activate_advisor = hc_erhard_milch
+
 
 set_research_slots = 3
-set_convoys = 50
-set_stability = 0.75
+set_convoys = 150
+set_stability = 0.0
 
 set_politics = {
 	ruling_party = communism
@@ -146,31 +218,8 @@ set_popularities = {
 }
 
 add_ideas = {
+	#ideas to come!
 }
 
 
-
-#create_country_leader = {
-#	name = "Dennis Fredauer"
-#	desc = ""
-#	picture = "Portrait_Germany_Konrad_Adenauer.dds"
-#	expire = "1965.1.1"
-#	ideology = conservatism
-#	traits = {
-#	}
-#}
-#
-
-#create_country_leader = {
-#	name = "Otto Wels"
-#	desc = "POLITICS_OTTO_WELS_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1939.1.16"
-#	ideology = socialism
-#	traits = {
-#		exiled
-#		union_man
-#	}
-#}
-#
 

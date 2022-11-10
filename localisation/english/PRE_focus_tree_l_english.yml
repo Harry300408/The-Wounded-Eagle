@@ -48,3 +48,16 @@
  PRE_TNK_desc:0 ""
 
  PRE_plans:0 "Initiate Plans"
+ PRE_plans_desc:0 ""
+
+ PRE_tackle_mil_Inefficiency:0 "Tackle Military Inefficiency"
+ PRE_tackle_mil_Inefficiency_desc:0 "Our military efficiency has not been the best, but these reforms proposed by the Reichstag are supposed to bring glory to the Prussian army. Not seen since the Napoleonic wars."
+
+ PRE_tackle_civ_Inefficiency:0 "Tackle The Civilian Industry's Inefficiency"
+ PRE_tackle_civ_Inefficiency_desc:0 "Prussia's Civilian Idustry has never been amazing but due to ecenomic strgles over the recent years and a change in power the people have grow restless thus leaving us with an inefficient civilian industry" 
+
+ PRE_investigate_mil:0 "A Prussian Militaty Investigation"
+ PRE_investigate_mil_desc:0 "The Prussian military is long overdue an inspection so why not do it now?"
+ 
+ PRE_start_the_proposals:0 "Start The Proposals"
+ PRE_start_the_proposals_desc:0 ""

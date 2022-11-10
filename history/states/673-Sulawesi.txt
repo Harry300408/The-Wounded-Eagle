@@ -10,8 +10,9 @@ state={
 
 
 	history= {
-		owner = INS
-		add_core_of = INS
+		owner = ULA
+		add_core_of = ULA
+		add_claim_by = INS
 		victory_points = {
 			10263 3 
 		}

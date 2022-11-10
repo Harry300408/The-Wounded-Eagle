@@ -20,4 +20,8 @@
  SAF_COM_communist_DEF:0 "the Cape Commune"
 
  CAN_UK_subject:0 "Province of Canada"
+ CAN_UK_subject_DEF:0 "the Province of Canada"
+
+ NGA_proc:0 "British Gold Coast"
+ NGA_proc_DEF:0 "British Gold Coast"
  

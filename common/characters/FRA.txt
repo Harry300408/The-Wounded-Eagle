@@ -2,82 +2,22 @@ characters = {
 
     ## French Leaders ##
     
-    FRA_victor_b = {
-        name = victor_b_FRA
+    FRA_louis_nap = {
+        name = FRA_louis_nap
         portraits = {
             civilian = {
-                large = "GFX_nap_iv"
+                large = "GFX_nap_vi"
             }
         }
         country_leader = {
             ideology = despotism
             traits = { legitimate_heir great_architect anti_communist autocratic_imperialist }
-            desc = FRA_nap_iv_desc
+            #desc = 
         }
     }
-    
-    FRA_armand_f = {
-        name = FRA_armand_f
-        portraits = {
-            civilian = {
-                large = "GFX_armand_f_p"
-            }
-        }
-        country_leader = {
-            ideology = conservatism
-            traits = { conservative_grandee anti_communist }
-            desc = FRA_armand_f_p_desc
-        }
-    }  
-
-    FRA_jean_j = {
-        name = FRA_jean_j
-        portraits = {
-            civilian = {
-                large = "GFX_jean_jaures"
-            }
-        }
-        country_leader = {
-            ideology = marxism
-            traits = { revolutionary_general triumphant_revolutionary }
-            desc = FRA_jean_j_desc
-        }
-    }
-
-    FRA_rocque = {
-        name = FRA_rocque
-        portraits = {
-            civilian = {
-                large = "GFX_rocque"
-            }
-        }
-        country_leader = {
-            ideology = rexism
-            traits = { dictator cabinet_crisis  }
-            desc = FRA_rocque_desc
-        }
-    }  
 
     ## Unit & Field Marshals ##
     ##Field Marshals
-    
-    FRA_alphonse = {
-        name = FRA_alphonse
-        portraits = {
-            army={
-			    large=GFX_alphonse_georges
-		    }
-        }
-		
-        field_marshal={
-			traits={  }
-			skill=5
-			attack_skill=4
-			defense_skill=3
-			planning_skill=5
-			logistics_skill=5
-		}
-    } 
 
     FRA_alphonse_j = {
         name = FRA_alphonse_juin

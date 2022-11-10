@@ -1,0 +1,11 @@
+spriteTypes = {
+	
+    ##Leaders
+
+	spriteType = {
+        name = GFX_otto_hab
+        texturefile = gfx/leaders/AUS/otto_hab.dds
+    }
+
+
+}

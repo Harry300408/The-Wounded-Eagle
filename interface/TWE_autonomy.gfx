@@ -34,4 +34,15 @@ spriteTypes = {
 		name = "GFX_autonomy_OTT_eya_icon"
 		texturefile = "gfx//interface//TWE_autonomy//autonomy_TUR_eya.dds"
 	}
+
+	spriteType = {
+		name = "GFX_autonomy_JAP_shogun_icon"
+		texturefile = "gfx//interface//TWE_autonomy//autonomy_JAP_shogun.dds"
+	}
+
+	spriteType = {
+		name = "GFX_autonomy_ETH_princedom_icon"
+		texturefile = "gfx//interface//TWE_autonomy//autonomy_ETH_princedom.dds"
+	}
+	
 }

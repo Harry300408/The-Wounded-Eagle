@@ -1,0 +1,61 @@
+characters = {
+
+    ## Russian Leaders ##
+    
+    ENG_attlee = {
+        name = ENG_attlee
+        portraits = {
+            civilian = {
+                large = "GFX_attlee"
+            }
+        }
+        country_leader = {
+            ideology = socialism
+            traits = {  }
+            #desc = 
+        }
+    }
+
+    ## Unit & Field Marshals ##
+    ##Field Marshals
+
+    #FRA_alphonse_j = {
+    #    name = FRA_alphonse_juin
+    #    portraits = {
+    #        army={
+	#		    large=GFX_alphonse_juin
+	#	    }
+    #    }
+	#	
+    #    field_marshal={
+	#		traits={  }
+	#		skill=5
+	#		attack_skill=4
+	#		defense_skill=5
+	#		planning_skill=4
+	#		logistics_skill=4
+	#	}
+    #} 
+
+    ## Unit Leaders
+
+    #FRA_antoine_besson = {
+    #   name = FRA_antoine_besson
+    #    portraits = {
+    #        army={
+	#		    large=GFX_antoine
+	#	    }
+    #    }
+	#	
+    #    corps_commander={
+	#		traits={  }
+	#		skill=3
+	#		attack_skill=2
+	#		defense_skill=3
+	#		planning_skill=4
+	#		logistics_skill=2
+	#	}
+    #} 
+
+
+}

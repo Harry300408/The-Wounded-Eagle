@@ -11,14 +11,15 @@ state={
 	}
 
 	history={
-		owner = ARG
+		owner = UNC
 		buildings = {
 			infrastructure = 2
 			10953 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = ARG
+		add_core_of = UNC
+		add_claim_by = ARG
 	}
 
 	provinces={

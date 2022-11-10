@@ -30,6 +30,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = GFX_collective_letters
+        texturefile = "gfx/logo letters.png"
+    }
+
+    spriteType = {
         name = GFX_TWE_MM_button
         texturefile = gfx/interface/TWE_main_lobby_button.dds
         noOFframes = 3

@@ -21,22 +21,4 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	### IDEAS ###
-	SpriteType = {
-		name = "GFX_idea_AUS_monarchie_abandoned"
-		texturefile = "gfx/interface/ideas/AUS/AUS_monarchie_abandoned_idea_icon.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_AUS_inner_turmoil"
-		texturefile = "gfx/interface/ideas/AUS/AUS_inner_turmoil_idea_icon.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_AUS_die_republik"
-		texturefile = "gfx/interface/ideas/AUS/AUS_die_republik_idea_icon.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_AUS_article_ninea"
-		texturefile = "gfx/interface/ideas/AUS/AUS_article_ninea_idea_icon.dds"
-	}
-
 }
