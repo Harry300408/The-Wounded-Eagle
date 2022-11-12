@@ -47,7 +47,7 @@ AUS_marines:0 "Marines"
 AUS_our_both_seas:0 "Our Both Seas"
 
 # Democratic focuses #
-AUS_est_liebe_die_republik:0 "Est Liebe Die Republik!"
+AUS_est_liebe_die_republik:0 "Es Lebe Die Republik!"
 AUS_conference_of_july:0 "Conference of July"
 AUS_graz_conference:0 "Graz Conference"
 AUS_article_nine_a:0 "Article 9A"
@@ -187,6 +187,31 @@ ausevents.10.desc:0 "[CZE.GetNameDef] denied our proposal of Integration."
 ausevents.10.a:0 "Prepare for War then."
 ausevents.10.b:0 "We will respect their borders then."
 
+ausevents.11.t:0 "[AUS.GetName] Seek our Support"
+ausevents.11.desc:0 "[AUS.GetNameDef] advisors reached us seeking support of our country in their expansion, after defeating Italy, they promise to give us [TTS.GetName] overlordship."
+ausevents.11.a:0 "A cup of Tea for our new ally!"
+ausevents.11.b:0 "Let them work alone."
+
+ausevents.12.t:0 "Holy Roman Empire Unification"
+ausevents.12.desc:0 "TODO"
+ausevents.12.a:0 "TODO"
+
+ausevents.13.t:0 "Victoria III Arrival in Vienna"
+ausevents.13.desc:0 "Early in the morning, Victoria Louise III arrived in Vienna and been crowned Kaiserin of Austria and recently integrated Prussia."
+ausevents.13.a:0 "Long Live, Victoria!"
+
+ausevents.14.t:0 "Second Vienna Conference"
+ausevents.14.desc:0 "Recent events returned us to this conference, our strong and very friendly relations with [PRE.GetName] led them to help us these times, however our absolute influence over them also mean we can count as one state and brother states, said Prime Minister of Prussia, they are ready to be integrated as part of something greater."
+ausevents.14.a:0 "Welcome, Preußen Brothers!"
+
+ausevents.15.t:0 "Prussian Assistance"
+ausevents.15.desc:0 "With the death of Otto Von Habsburg and friendly relations with Prussia, they announced that they are ready to support us whenever and with whatever we ask."
+ausevents.15.a:0 "Their help might be the best we can rely on."
+
+ausevents.16.t:0 "Dividing Italy"
+ausevents.16.desc:0 "With the recently gained our support [AUS.GetName], after defeating Italy they are following they promises and giving us [TTS.GetNameDef]."
+ausevents.16.a:0 "Good Deal between two Empires."
+
 ### IDEAS ###
 AUS_monarchism_abandoned_idea_0:0 "Monarchism Abandoned"
 AUS_monarchism_abandoned_idea_1:0 "Monarchism Abandoned"
@@ -217,8 +242,39 @@ AUS_habsburg_empowered_idea:0 "Habsburg Empowered"
 AUS_austro_hungarian_empire_idea:0 "Austro-Hangarian Empire Restored"
 AUS_kaiserin_army_idea:0 "Kaiserin's Army"
 AUS_holy_imperial_order_idea:0 "Holy Imperial Order"
+AUS_democratic_influence_idea:0 "Democratic Influence"
+AUS_unionist_influence_idea:0 "Unionist Influence"
+
+### COSMETIC TAGS ###
+hre_unified_neutrality:0 "Holy Roman Empire"
+hre_unified_neutrality_DEF:0 "the Holy Roman Empire"
+hre_unified_neutrality_ADJ:0 "Holy Roman Empire"
+hre_unified_democratic:0 "Holy Roman Empire"
+hre_unified_democratic_DEF:0 "the Holy Roman Empire"
+hre_unified_democratic_ADJ:0 "Holy Roman Empire"
+hre_unified_communism:0 "Holy Roman Union"
+hre_unified_communism_DEF:0 "the Holy Roman Union"
+hre_unified_communism_ADJ:0 "Holy Roman Union"
+hre_unified_fascism:0 "Holy Roman Empire"
+hre_unified_fascism_DEF:0 "the Holy Roman Empire"
+hre_unified_fascism_ADJ:0 "Holy Roman Empire"
+
+### MODIFIERS ###
+focus_diplo:0 "Diplomacy Focus"
+split_bayern:0 "Split Bayern"
+unionist_learning:0 "Unionist Learning"
+support_accepted:0 "Support Accepted"
+support_rejected:0 "Support Rejected"
 
 ### TOOLTIP ###
+AUS_condeferation_influence_tt:0 "All existing §YConfederation States§! except §Y[PRE.GetName]§! will gain §YUnionist Influence§!."
+AUS_TTS_core_tt:0 "§Y[TTS.GetName]§! becomes §YPuppet§! of §Y[AUS.GetName]§! and owner of its §YCore States§!."
+AUS_TTS_ENG_core_tt:0 "§Y[TTS.GetName]§! becomes §YColony§! of §Y[ENG.GetName]§! and owner of its §YCore States§!."
+AUS_PAP_core_tt:0 "§Y[PAP.GetName]§! becomes §YDominion§! of §Y[AUS.GetName]§! and owner of its remaining §YCore States§!."
+AUS_SPM_core_tt:0 "§Y[SPM.GetName]§! becomes §YPuppet§! of §Y[AUS.GetName]§! and owner of its remaining §YCore States§!."
+AUS_ITA_require_crush_tt:0 "§Y[AUS.GetName]§! controls all §YEuropean States of [ITA.GetName]§!."
+AUS_ITA_require_lands_tt:0 "§YEach European State of [ITA.GetName]§!: Is controlled either by §Y[AUS.GetName]§! or §Y[ITA.GetName]§!."
+AUS_confederation_integrate_tt:0 "§YAll Confederation States§!: Get event '§Y[AUSEvent1]§!'."
 
 # Agitation Program
 AUS_agitation_add_1_tt:0 "Will add §G+1§! to §YAgitation Program efficiency§!."
