@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		
 		AUS_monarchism_abandoned_idea_0 = {
-			picture = GFX_
+			picture = AUS_monarchie_abandoned
 			allowed = {
 				always = yes
 			}
@@ -15,7 +15,7 @@ ideas = {
 			}
 		}
 		AUS_monarchism_abandoned_idea_1 = {
-			picture = GFX_
+			picture = AUS_monarchie_abandoned
 			allowed = {
 				always = yes
 			}
@@ -30,7 +30,7 @@ ideas = {
 			}
 		}
 		AUS_monarchism_abandoned_idea_2 = {
-			picture = GFX_
+			picture = AUS_monarchie_abandoned
 			allowed = {
 				always = yes
 			}
@@ -45,7 +45,7 @@ ideas = {
 			}
 		}
 		AUS_inner_turmoil_idea = {
-			picture = GFX_
+			picture = AUS_inner_turmoil
 			allowed = {
 				always = yes
 			}
@@ -58,7 +58,7 @@ ideas = {
 			}
 		}
 		AUS_est_liebe_die_republik_idea = {
-			picture = GFX_
+			picture = AUS_die_republik
 			allowed = {
 				always = yes
 			}
@@ -73,7 +73,7 @@ ideas = {
 			}
 		}
 		AUS_article_9a_idea_0 = {
-			picture = GFX_
+			picture = AUS_article_ninea
 			allowed = {
 				always = yes
 			}
@@ -87,7 +87,7 @@ ideas = {
 			}
 		}
 		AUS_article_9a_idea_1 = {
-			picture = GFX_
+			picture = AUS_article_ninea
 			allowed = {
 				always = yes
 			}
@@ -102,7 +102,7 @@ ideas = {
 			}
 		}
 		AUS_article_9a_idea_2 = {
-			picture = GFX_
+			picture = AUS_article_ninea
 			allowed = {
 				always = yes
 			}
@@ -119,7 +119,7 @@ ideas = {
 			}
 		}
 		AUS_article_9a_idea_3 = {
-			picture = GFX_
+			picture = AUS_article_ninea
 			allowed = {
 				always = yes
 			}
@@ -409,6 +409,7 @@ ideas = {
 				drift_defence_factor = 0.35
 				stability_factor = 0.15
 				recruitable_population_factor = 0.1
+				required_garrison_factor = -0.1
 			}
 		}
 		AUS_holy_imperial_order_idea = {
@@ -444,5 +445,40 @@ ideas = {
 			}
 		}
 
+		AUS_democratic_influence_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				democratic_drift = 0.04
+				democratic_acceptance = 65
+			}
+		}
+		AUS_unionist_influence_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_drift = 0.04
+				communism_acceptance = 75
+			}
+		}
+		GERMANY_member_of_confederation_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
 	}
 }

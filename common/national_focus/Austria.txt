@@ -9,593 +9,20 @@ focus_tree = {
 		}
 	}
 	continuous_focus_position = {
-		x = 1770
-		y = 1350
+		x = 100
+		y = 0
 	}
 	########################
 	#  F O C U S  T R E E  #
 	########################
-
 	################################
 	# M I L I T A R Y  B R A N C H #
 	################################
-	focus = {
-		id = AUS_spirit_of_victory
-		icon = GFX_
-		cost = 10
-		x = 20
-		y = 0
-		mutually_exclusive = {
-			focus = AUS_spirit_of_peace
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_spirit_of_peace
-		icon = GFX_
-		cost = 10
-		x = 6
-		y = 0
-		relative_position_id = AUS_spirit_of_victory
-		mutually_exclusive = {
-			focus = AUS_spirit_of_victory
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_army_reforms
-		icon = GFX_
-		cost = 10
-		x = 3
-		y = 1
-		relative_position_id = AUS_spirit_of_victory
-		prerequisite = {
-			focus = AUS_spirit_of_victory
-			focus = AUS_spirit_of_peace
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_infantry_equipment_improvement
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 1
-		relative_position_id = AUS_army_reforms
-		prerequisite = {
-			focus = AUS_army_reforms
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_infantry_vehicle_improvement
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 3
-		relative_position_id = AUS_army_reforms
-		prerequisite = {
-			focus = AUS_infantry_equipment_improvement
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_mobile_warfare
-		icon = GFX_
-		cost = 10
-		x = -2
-		y = 4
-		relative_position_id = AUS_army_reforms
-		prerequisite = {
-			focus = AUS_offense_spendings
-			focus = AUS_defense_spendings
-		}
-		mutually_exclusive = {
-			focus = AUS_infantry_warfare
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_infantry_warfare
-		icon = GFX_
-		cost = 10
-		x = 2
-		y = 4
-		relative_position_id = AUS_army_reforms
-		prerequisite = {
-			focus = AUS_offense_spendings
-			focus = AUS_defense_spendings
-		}
-		mutually_exclusive = {
-			focus = AUS_mobile_warfare
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_infantry_improvement
-		icon = GFX_
-		cost = 10
-		x = 1
-		y = 5
-		relative_position_id = AUS_army_reforms
-		prerequisite = {
-			focus = AUS_infantry_warfare
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_panzer_improvement
-		icon = GFX_
-		cost = 10
-		x = -1
-		y = 5
-		relative_position_id = AUS_army_reforms
-		prerequisite = {
-			focus = AUS_mobile_warfare
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_special_forces
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 6
-		relative_position_id = AUS_army_reforms
-		prerequisite = {
-			focus = AUS_panzer_improvement
-			focus = AUS_infantry_improvement
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_defensive_doctrine
-		icon = GFX_
-		cost = 10
-		x = 6
-		y = 2
-		relative_position_id = AUS_spirit_of_victory
-		prerequisite = {
-			focus = AUS_spirit_of_peace
-		}
-		prerequisite = {
-			focus = AUS_army_reforms
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_equipment_improvement
-		icon = GFX_
-		cost = 10
-		x = 1
-		y = 1
-		relative_position_id = AUS_defensive_doctrine
-		prerequisite = {
-			focus = AUS_defensive_doctrine
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_defense_tactics
-		icon = GFX_
-		cost = 10
-		x = -1
-		y = 1
-		relative_position_id = AUS_defensive_doctrine
-		prerequisite = {
-			focus = AUS_defensive_doctrine
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_defense_spendings
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 2
-		relative_position_id = AUS_defensive_doctrine
-		prerequisite = {
-			focus = AUS_defense_tactics
-		}
-		prerequisite = {
-			focus = AUS_equipment_improvement
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_offensive_doctrine
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 2
-		relative_position_id = AUS_spirit_of_victory
-		prerequisite = {
-			focus = AUS_spirit_of_victory
-		}
-		prerequisite = {
-			focus = AUS_army_reforms
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_offense_tactics
-		icon = GFX_
-		cost = 10
-		x = 1
-		y = 1
-		relative_position_id = AUS_offensive_doctrine
-		prerequisite = {
-			focus = AUS_offensive_doctrine
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_artillery_improvement
-		icon = GFX_
-		cost = 10
-		x = -1
-		y = 1
-		relative_position_id = AUS_offensive_doctrine
-		prerequisite = {
-			focus = AUS_offensive_doctrine
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_offense_spendings
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 2
-		relative_position_id = AUS_offensive_doctrine
-		prerequisite = {
-			focus = AUS_artillery_improvement
-		}
-		prerequisite = {
-			focus = AUS_offense_tactics
-		}
-		completion_reward = { 
-			
-		}
-	}
+	
 	################################
 	# I N D U S T R Y  B R A N C H #
 	################################
-	focus = {
-		id = AUS_industrial_plan
-		icon = GFX_
-		cost = 10
-		x = 3
-		y = 2
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_infrastructure_buildup
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 2
-		relative_position_id = AUS_industrial_plan
-		prerequisite = {
-			focus = AUS_civilian_development
-		}
-		prerequisite = {
-			focus = AUS_military_development
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_civilian_development
-		icon = GFX_
-		cost = 10
-		x = -2
-		y = 1
-		relative_position_id = AUS_industrial_plan
-		prerequisite = {
-			focus = AUS_industrial_plan
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_civ_industry_buildup
-		icon = GFX_
-		cost = 10
-		x = -1
-		y = 1
-		relative_position_id = AUS_civilian_development
-		prerequisite = {
-			focus = AUS_civilian_development
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_civilian_spending
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 2
-		relative_position_id = AUS_civilian_development
-		prerequisite = {
-			focus = AUS_civ_industry_buildup
-		}
-		prerequisite = {
-			focus = AUS_infrastructure_buildup
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_military_development
-		icon = GFX_
-		cost = 10
-		x = 2
-		y = 1
-		relative_position_id = AUS_industrial_plan
-		prerequisite = {
-			focus = AUS_industrial_plan
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_mil_industry_buildup
-		icon = GFX_
-		cost = 10
-		x = 1
-		y = 1
-		relative_position_id = AUS_military_development
-		prerequisite = {
-			focus = AUS_military_development
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_military_spending
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 2
-		relative_position_id = AUS_military_development
-		prerequisite = {
-			focus = AUS_mil_industry_buildup
-		}
-		prerequisite = {
-			focus = AUS_infrastructure_buildup
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_RaD_expansion
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 4
-		relative_position_id = AUS_industrial_plan
-		prerequisite = {
-			focus = AUS_civilian_spending
-			focus = AUS_military_spending
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_airforces_expansion
-		icon = GFX_
-		cost = 10
-		x = -2
-		y = 1
-		relative_position_id = AUS_RaD_expansion
-		prerequisite = {
-			focus = AUS_RaD_expansion
-		}
-		prerequisite = {
-			focus = AUS_civilian_spending
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_airfield_buildup
-		icon = GFX_
-		cost = 10
-		x = -1
-		y = 1
-		relative_position_id = AUS_airforces_expansion
-		prerequisite = {
-			focus = AUS_airforces_expansion
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_air_doctrine
-		icon = GFX_
-		cost = 10
-		x = 1
-		y = 1
-		relative_position_id = AUS_airforces_expansion
-		prerequisite = {
-			focus = AUS_airforces_expansion
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_airframe_research
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 2
-		relative_position_id = AUS_airforces_expansion
-		prerequisite = {
-			focus = AUS_airfield_buildup
-		}
-		prerequisite = {
-			focus = AUS_air_doctrine
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_fallschirmjager
-		icon = GFX_
-		cost = 10
-		x = 1
-		y = 3
-		relative_position_id = AUS_airforces_expansion
-		prerequisite = {
-			focus = AUS_airframe_research
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_navy_expansion
-		icon = GFX_
-		cost = 10
-		x = 2
-		y = 1
-		relative_position_id = AUS_RaD_expansion
-		prerequisite = {
-			focus = AUS_RaD_expansion
-		}
-		prerequisite = {
-			focus = AUS_military_spending
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_docks_buildup
-		icon = GFX_
-		cost = 10
-		x = 1
-		y = 1
-		relative_position_id = AUS_navy_expansion
-		prerequisite = {
-			focus = AUS_navy_expansion
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_naval_doctrine
-		icon = GFX_
-		cost = 10
-		x = -1
-		y = 1
-		relative_position_id = AUS_navy_expansion
-		prerequisite = {
-			focus = AUS_navy_expansion
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_ships_research
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 2
-		relative_position_id = AUS_navy_expansion
-		prerequisite = {
-			focus = AUS_naval_doctrine
-		}
-		prerequisite = {
-			focus = AUS_docks_buildup
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_marines
-		icon = GFX_
-		cost = 10
-		x = -1
-		y = 3
-		relative_position_id = AUS_navy_expansion
-		prerequisite = {
-			focus = AUS_ships_research
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_our_both_seas
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 5
-		relative_position_id = AUS_RaD_expansion
-		prerequisite = {
-			focus = AUS_marines
-		}
-		prerequisite = {
-			focus = AUS_fallschirmjager
-		}
-		completion_reward = { 
-			
-		}
-	}
+
 	########################
 	# B A S E  B R A N C H #
 	########################
@@ -615,7 +42,7 @@ focus_tree = {
 		id = AUS_abandon_monarchie
 		icon = GFX_focus_AUS_abandon_monarchism
 		cost = 10
-		x = -11
+		x = -7
 		y = 1
 		relative_position_id = AUS_political_plan
 		prerequisite = {
@@ -644,7 +71,7 @@ focus_tree = {
 		id = AUS_continue_monarchism
 		icon = GFX_focus_AUS_continue_monarchism
 		cost = 10
-		x = 12
+		x = 7
 		y = 1
 		relative_position_id = AUS_political_plan
 		prerequisite = {
@@ -945,7 +372,7 @@ focus_tree = {
 		id = AUS_empower_habsburgs
 		icon = GFX_focus_AUS_imperial_sentiments
 		cost = 10
-		x = -1
+		x = 0
 		y = 4
 		relative_position_id = AUS_prepare_for_changes
 		prerequisite = {
@@ -965,7 +392,7 @@ focus_tree = {
 		id = AUS_hungarian_obedience
 		icon = GFX_focus_AUS_ah_hungary
 		cost = 10
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = AUS_empower_habsburgs
 		prerequisite = {
@@ -1230,7 +657,7 @@ focus_tree = {
 		id = AUS_prussian_assistance
 		icon = GFX_focus_AUS_preussen_assist
 		cost = 10
-		x = 0
+		x = 2
 		y = 1
 		allow_branch = {
 			#if = {
@@ -1258,7 +685,7 @@ focus_tree = {
 		id = AUS_new_development
 		icon = GFX_focus_AUS_conference
 		cost = 10
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = AUS_prussian_assistance
 		prerequisite = {
