@@ -2,8 +2,8 @@ guiTypes = {
 
     containerWindowType = {
 		name = "members_of_faction"
-		position = { x = 7 y = 250}	
-		size = { width = 460 height = 820 }
+		position = { x = -70 y = 250}	
+		size = { width = 450 height = 820 }
 
 		verticalScrollbar = "right_vertical_slider"
 
@@ -14,9 +14,9 @@ guiTypes = {
 		
 		gridboxtype = {
 			name = "country_grid"
-			position = { x = 6 y = -80 }
-			size = { width = 95 height = 140 }
-			slotsize = { width = 55 height = 80 }
+			position = { x = 0 y = 0 }
+			size = { width = 160 height = 0 }
+			slotsize = { width = 0 height = 130 }
 			max_slots_horizontal = 1
 			add_horizontal = no
 		}
@@ -24,8 +24,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "scripted_gui_example_9_country_entry"
-		position = { x = -20 y = 5}	
-		size = { width = 422 height = 80 }
+		position = { x = 0 y = 0}	
+		size = { width = 345 height = 130 }
 		
 		
 		background = {
@@ -34,8 +34,8 @@ guiTypes = {
 		}
 		
         buttonType = {
-            name = "button_remove"
-            position = {x = 10 y = 40}
+            name = "button_dismiss"
+            position = {x = 12 y = 88}
             spriteType = "GFX_NV_btn_close"
             clicksound = click_close
         }
@@ -51,30 +51,140 @@ guiTypes = {
 			fixedsize = yes
 			tooltip = "SCOPE_TEXT"
 		}
-		
-		#buttonType = {
-		#	name = "flag"
-		#	quadTextureSprite = "GFX_shield_medium"
-		#	position = { x = 300 y = 5 }
-		#	Orientation = "UPPER_LEFT"
-		#}
-		#buttonType = {
-		#	name = "flag_2"
-		#	quadTextureSprite = "GFX_shield_small"
-		#	position = { x = 300 y = 60 }
-		#	Orientation = "UPPER_LEFT"
-		#}
-		#buttonType = {
-		#	name = "flag_3"
-		#	quadTextureSprite = "GFX_flag_small"
-		#	position = { x = 330 y = 60 }
-		#	Orientation = "UPPER_LEFT"
-		#}
+
 		buttonType = {
 			name = "flag_4"
 			quadTextureSprite = "GFX_flag_small2"
-			position = { x = 355 y = 13 }
+			position = { x = 290 y = 18 }
 			Orientation = "UPPER_LEFT"
+		}
+
+		## Factories Count 
+		iconType = {
+			name ="header_bg"
+			spriteType = "GFX_faction_window_header"
+			position = { x = 45 y = 35 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "factories_name"
+			position = { x = 53 y = 36 }
+			font = "hoi_18mbs"
+			text = "nooffactories"
+			format = left
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes
+			tooltip = "SCOPE_TEXT"
+		}
+
+		instantTextBoxType = {
+			name = "factories_count"
+			position = { x = 63 y = 56 }
+			font = "hoi_18mbs"
+			text = "[?THIS.num_of_factories]"
+			format = center
+			maxWidth = 40
+			maxHeight = 24
+			fixedsize = yes
+			tooltip = "SCOPE_TEXT"
+		}
+ 		
+ 		## Army Size
+		iconType = {
+			name ="header_bg_2"
+			spriteType = "GFX_faction_window_header"
+			position = { x = 125 y = 35 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "army_size"
+			position = { x = 133 y = 36 }
+			font = "hoi_18mbs"
+			text = "army"
+			format = left
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes
+			tooltip = "SCOPE_TEXT"
+		}
+
+		instantTextBoxType = {
+			name = "army_size_num"
+			position = { x = 145 y = 56 }
+			font = "hoi_18mbs"
+			text = "[?THIS.num_armies]"
+			format = center
+			maxWidth = 40
+			maxHeight = 24
+			fixedsize = yes
+			tooltip = "SCOPE_TEXT"
+		}
+
+		## Air Force
+		iconType = {
+			name ="header_bg_3"
+			spriteType = "GFX_faction_window_header"
+			position = { x = 205 y = 35 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "air_force_size"
+			position = { x = 215 y = 36 }
+			font = "hoi_18mbs"
+			text = "air_size"
+			format = left
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes
+			tooltip = "SCOPE_TEXT"
+		}
+
+		instantTextBoxType = {
+			name = "air_size_num"
+			position = { x = 224 y = 56 }
+			font = "hoi_18mbs"
+			text = "[?THIS.num_deployed_planes]"
+			format = center
+			maxWidth = 40
+			maxHeight = 24
+			fixedsize = yes
+			tooltip = "SCOPE_TEXT"
+		}
+
+		## Navy
+		iconType = {
+			name ="header_bg_4"
+			spriteType = "GFX_faction_window_header"
+			position = { x = 45 y = 82 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "navy_size"
+			position = { x = 53 y = 83 }
+			font = "hoi_18mbs"
+			text = "navy_size"
+			format = left
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes
+			tooltip = "SCOPE_TEXT"
+		}
+
+		instantTextBoxType = {
+			name = "navy_size_num"
+			position = { x = 63 y = 103 }
+			font = "hoi_18mbs"
+			text = "[?THIS.num_ships]"
+			format = center
+			maxWidth = 40
+			maxHeight = 24
+			fixedsize = yes
+			tooltip = "SCOPE_TEXT"
 		}
 	}
 
@@ -147,6 +257,124 @@ guiTypes = {
 			spriteType = "GFX_closebutton"
 			position = { x= 506 y = 2 }
 			Orientation = "UPPER_LEFT"
+		}
+
+		ButtonType = {
+			name ="ger_conf_button"
+			spriteType = "GFX_ger_conf_icon"
+			position = { x= 128 y = -350 }
+			Orientation = "CENTER"
+		}
+	}
+
+	containerWindowType = {
+		name = "ger_conf_window"
+		position = { x=550 y=275 }	
+		size = { width=500 height=550 }
+		moveable = yes
+
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_tiled_window"
+		}
+
+		instantTextBoxType = {
+		    name ="conf_name"
+		    position = { x=110 y=13 }
+			font = "hoi_30header"
+			text = "fac_name_ger_conf"
+			format = left
+			maxWidth = 700
+			maxHeight = 30
+#			fixedsize = yes
+		}
+		iconType = {
+			name ="ger_conf_icon"
+			spriteType = "GFX_ger_conf_icon"
+			position = { x= 52 y = 155 }
+			Orientation = "CENTER"
+		}
+		
+		iconType = {
+			name ="exit_bg"
+			spriteType = "GFX_faction_window_header_bg"
+			position = { x= -236 y = -262 }
+			Orientation = "CENTER"
+		}
+
+		ButtonType = {
+			name ="ger_conf_exit"
+			spriteType = "GFX_faction_window_header"
+			position = { x= -229 y = -259 }
+			Orientation = "CENTER"
+		}
+
+		instantTextBoxType = {
+		    name ="exit_txt"
+		    position = { x=39 y=14 }
+			font = "hoi_24header"
+			text = "exit_txt"
+			format = left
+			maxWidth = 700
+			maxHeight = 30
+#			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+		    name ="history_t"
+		    position = { x=20 y=44 }
+			font = "hoi_30header" 
+			text = "history_t"
+			format = left
+			maxWidth = 700
+			maxHeight = 30
+#			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+		    name ="history_txt"
+		    position = { x=22 y=74 }
+			font = "hoi_18mbs"
+			text = "history_txt_g_conf"
+			format = left
+			maxWidth = 200
+			maxHeight = 420
+#			fixedsize = yes
+			scrollbartype = "standardtext_slider" 
+		}
+
+		instantTextBoxType = {
+		    name ="member_count"
+		    position = { x=20 y=505 }
+			font = "hoi_30header" 
+			text = "faction_member_count"
+			format = left
+			maxWidth = 700
+			maxHeight = 30
+#			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+		    name ="aims_t"
+		    position = { x=260 y=44 }
+			font = "hoi_30header" 
+			text = "aims_t"
+			format = left
+			maxWidth = 700
+			maxHeight = 30
+#			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+		    name ="aims_txt"
+		    position = { x=262 y=74 }
+			font = "hoi_18mbs"
+			text = "aims_txt_g_conf"
+			format = left
+			maxWidth = 200
+			maxHeight = 345
+#			fixedsize = yes
+			scrollbartype = "standardtext_slider" 
 		}
 	}
 }

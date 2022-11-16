@@ -1,0 +1,6 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_ger_conf_icon"
+		texturefile = "gfx/interface/TWE_faction_icons/ger_conf_icon.png"
+	}
+}

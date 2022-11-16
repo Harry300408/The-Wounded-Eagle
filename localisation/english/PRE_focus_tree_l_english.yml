@@ -61,3 +61,6 @@
  
  PRE_start_the_proposals:0 "Start The Proposals"
  PRE_start_the_proposals_desc:0 ""
+
+ PRE_analyse_production:0 "Analyse Production"
+ PRE_analyse_production_desc:0 ""

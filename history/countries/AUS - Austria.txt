@@ -2,13 +2,23 @@
 
 
 # German Confederation
-set_autonomy = {
-	target = PRE
-	autonomous_state = autonomy_AUS_fed
-}
+set_country_flag = ger_conf_member
+PRE = { set_country_flag = ger_conf_member }
+MEK = { set_country_flag = ger_conf_member }
+SHL = { set_country_flag = ger_conf_member }
+DBS = { set_country_flag = ger_conf_member }
+SAX = { set_country_flag = ger_conf_member }
+THU = { set_country_flag = ger_conf_member }
+BAY = { set_country_flag = ger_conf_member }
+HAN = { set_country_flag = ger_conf_member }
+OLD = { set_country_flag = ger_conf_member }
+WSF = { set_country_flag = ger_conf_member }
+WUR = { set_country_flag = ger_conf_member }
+BAD = { set_country_flag = ger_conf_member }
+ULM = { set_country_flag = ger_conf_member }
 
 set_autonomy = {
-	target = MEK
+	target = PRE
 	autonomous_state = autonomy_AUS_fed
 }
 
@@ -78,10 +88,13 @@ set_autonomy = {
 	autonomous_state = autonomy_personal_union
 }
 
+set_autonomy = {
+	target = CMR
+	autonomous_state = autonomy_personal_union
+}
 
 
-
-create_faction = "German Confederation"
+create_faction = "ger_conf"
 add_to_faction = AUS
 
 oob = "AUS_1936"

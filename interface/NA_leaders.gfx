@@ -1,0 +1,11 @@
+spriteTypes = {	
+    spriteType = {
+        name = GFX_trotsky
+        texturefile = gfx/leaders/MEX/Trotsky.dds
+    }
+
+    spriteType = {
+        name = GFX_bladwin
+        texturefile = gfx/leaders/FTT/Baldwin.dds
+    }
+}

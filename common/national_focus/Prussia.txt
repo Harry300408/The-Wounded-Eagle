@@ -735,7 +735,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			country_event = pre.3
+			country_event = pre.2
 		}
 	}
 
@@ -801,7 +801,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PRE_analise_production 
+		id = PRE_analyse_production 
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = PRE_tackle_civ_Inefficiency }
 		x = 0
@@ -823,6 +823,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			country_event = pre.4
 		}
 	}
 

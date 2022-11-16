@@ -306,7 +306,7 @@ if = {
 		ENG_george_vi
 	}
 
-	recruit_character = ENG_neville_chamberlain
+	#recruit_character = ENG_neville_chamberlain
 	promote_character = ENG_neville_chamberlain
 	retire_character = ENG_stanley_baldwin
 	remove_ideas = george_v #Dead XD
@@ -492,19 +492,18 @@ if = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = social_democracy
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = yes ##suspended through duration of war, which is handled via event
 }
 set_popularities = {
-	democratic = 97
-	fascism = 2
-	communism = 1
+	social_democracy = 70
+	democratic = 30
 }
 
 
-create_faction = "Commonwealth"
+create_faction = "commonwealth"
 add_to_faction = ENG
 
 give_guarantee = HAN

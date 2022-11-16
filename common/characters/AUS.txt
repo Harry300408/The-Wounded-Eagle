@@ -10,7 +10,7 @@ characters = {
             }
         }
         country_leader = {
-            ideology = despotism
+            ideology = theocratic_absolutism
             traits = { legitimate_heir anti_communist }
             #desc = 
         }

@@ -1,0 +1,34 @@
+characters = {
+
+    ## Mexico Leaders ##
+    
+    MEX_trotsky = {
+        name = MEX_trotsky
+        portraits = {
+            civilian = {
+                large = "GFX_trotsky"
+            }
+        }
+        country_leader = {
+            ideology = trotskyism
+            traits = { triumphant_revolutionary }
+            #desc = 
+        }
+    }
+
+    # FTT Leaders #
+    FTT_bladwin = {
+        name = FTT_bladwin
+        portraits = {
+            civilian = {
+                large = "GFX_bladwin"
+            }
+        }
+        country_leader = {
+            ideology = liberal_conservatism
+            traits = {  }
+            #desc = 
+        }
+    }
+
+}

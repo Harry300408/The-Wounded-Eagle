@@ -96,6 +96,6 @@ set_popularities = {
 }
 
 
-recruit_character = NOA_vasily_lemayev
+#recruit_character = NOA_vasily_lemayev
 
 

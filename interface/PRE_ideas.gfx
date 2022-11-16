@@ -1,0 +1,23 @@
+spriteTypes = {
+	
+    # Ideas #
+    # Main/Starting
+	spriteType = {
+        name = GFX_idea_PRE_nation_divided
+        texturefile = gfx/interface/ideas/PRE/split_in_2.dds
+    }
+    spriteType = {
+        name = GFX_idea_PRE_terrible_army
+        texturefile = gfx/interface/ideas/PRE/army_bad.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_PRE_lackin_industry
+        texturefile = gfx/interface/ideas/PRE/bad_civ_mil.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_PRE_brink_of_colapse
+        texturefile = gfx/interface/ideas/PRE/almost_dead.dds
+    }
+}

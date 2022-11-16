@@ -95,6 +95,6 @@ set_popularities = {
 }
 
 
-recruit_character = UDM_boris
+#recruit_character = UDM_boris
 
 

@@ -233,7 +233,7 @@ if = {
 		nationalities = { FRA }
 	}
 
-	recruit_character = FRA_rene_nicod
+	#recruit_character = FRA_rene_nicod
 }
 
 ### VARIANTS ###

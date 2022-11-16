@@ -10,7 +10,7 @@ characters = {
             }
         }
         country_leader = {
-            ideology = marxism
+            ideology = legacy_unionism
             traits = { revolutionary_general triumphant_revolutionary tenacious_negotiator man_of_the_nation }
             #desc = 
         }

@@ -2,6 +2,13 @@
 
 set_oob = "PRE_TWE"
 
+add_ideas = {
+	PRE_nation_divided
+	PRE_terrible_army
+	PRE_lackin_industry
+	PRE_brink_of_colapse
+}
+
 #Variants
 #Tanks
 if = {
@@ -205,20 +212,19 @@ set_convoys = 150
 set_stability = 0.0
 
 set_politics = {
-	ruling_party = communism
-	last_election = "1936.1.1"
+	ruling_party = rev_unionism
+	last_election = "1927.2.10"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 
 }
 set_popularities = {
-	democratic = 5
-	fascism = 15
-	communism = 80
-}
-
-add_ideas = {
-	#ideas to come!
+	communism = 15
+	rev_unionism = 60
+	fascism = 11
+	lib_socialism = 10
+	social_democracy = 2
+	neutrality = 2
 }
 
 
