@@ -169,11 +169,20 @@ focus_tree = {
 			focus = AUS_vaterlandische_front
 		}
 		completion_reward = { 
+			hidden_effect = {
+				set_variable = {
+					AUS_agitation_mission_timeout_base_time = 60
+				}
+				set_variable = {
+					AUS_agitation_level = 2
+				}
+			}
 			add_political_power = -25
 			if = {
 				limit = {
 					has_completed_focus = AUS_vaterlandische_front
 				}
+				add_ideas = AUS_agitation_efficiency_fascism_1_idea
 				add_popularity = {
 					ideology = fascism
 					popularity = 0.05
@@ -183,24 +192,14 @@ focus_tree = {
 				limit = {
 					has_completed_focus = AUS_march_of_red_torches
 				}
+				add_ideas = AUS_agitation_efficiency_communism_1_idea
 				add_popularity = {
 					ideology = communism
 					popularity = 0.05
 				}
 			}
-			# TODO
-			# Agitation Program Decisions
-			hidden_effect = {
-				set_variable = {
-					ROOT.agitation_efficiency = 0
-				}
-				set_variable = {
-					ROOT.agitation_level = 0
-				}
-				set_variable = {
-					ROOT.agitation_monthly_decrease = 2
-				}
-			}
+			set_country_flag = AUS_agitation_started_flag
+			activate_mission = AUS_agitation_mission
 		}
 	}
 	##################################
@@ -660,7 +659,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		allow_branch = {
-			has_country_flag = AUS_prussia_friendly
+			has_country_flag = AUS_prussia_friendly_flag
 		}
 		relative_position_id = AUS_first_viena_conference
 		prerequisite = {
@@ -1306,6 +1305,12 @@ focus_tree = {
 		}
 		available = {
 			communism > 0.45
+			custom_trigger_tooltip = {
+				tooltip = AUS_agitation_effective_2_tt
+				check_variable = {
+					var:AUS_agitation_level > 1
+				}
+			}
 		}
 		completion_reward = { 
 			set_politics = {
@@ -1354,6 +1359,13 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = AUS_german_communism
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_agitation_program_ended_leninism_tt
+				has_country_flag = AUS_leninism_revolutionism_available
+				has_completed_focus = AUS_prepare_sabotage
+			}
 		}
 		completion_reward = { 
 			# TODO
@@ -1889,6 +1901,12 @@ focus_tree = {
 		}
 		available = {
 			fascism > 0.45
+			custom_trigger_tooltip = {
+				tooltip = AUS_agitation_effective_2_tt
+				check_variable = {
+					var:AUS_agitation_level > 1
+				}
+			}
 		}
 		completion_reward = { 
 			set_politics = {
@@ -2108,6 +2126,16 @@ focus_tree = {
 		completion_reward = { 
 			add_political_power = 30
 			add_war_support = 0.1
+			every_country = {
+				limit = {
+					NOT = { tag = ROOT }
+					has_idea = GERMANY_member_of_confederation_idea
+				}
+				add_timed_idea = {
+					idea = GERMANY_confederation_fascism_reforms_idea
+					days = 270
+				}
+			}
 			# TODO
 			# Add Confederation Mechanic Decisions
 		}
@@ -2438,6 +2466,12 @@ focus_tree = {
 		relative_position_id = AUS_est_liebe_die_republik
 		prerequisite = {
 			focus = AUS_graz_conference
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_confederation_disbaded_tt
+				has_country_flag = AUS_confederation_disbanded_flag
+			}
 		}
 		completion_reward = { 
 			country_event = ausevents.7

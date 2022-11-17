@@ -18,3 +18,58 @@ defined_text = {
         localization_key = ausevents.1.t
     }
 }
+defined_text = { 
+    name = AUSDecisionBetterIdeals
+
+    text = {
+        localization_key = AUS_better_ideals_decision
+    }
+}
+defined_text = { 
+    name = AUSDecisionBetterIdealsDesc
+
+    text = {
+        localization_key = AUS_better_ideals_desc
+    }
+}
+defined_text = { 
+    name = AUSDecisionOnlyBestWay
+
+    text = {
+        localization_key = AUS_only_best_way_decision
+    }
+}
+defined_text = { 
+    name = AUSDecisionOnlyBestWayDesc
+
+    text = {
+        localization_key = AUS_only_best_way_desc
+    }
+}
+defined_text = { 
+    name = AUSDecisionHasBeThisWay
+
+    text = {
+        localization_key = AUS_it_has_be_that_way_decision
+    }
+}
+defined_text = { 
+    name = AUSDecisionHasBeThisWayDesc
+
+    text = {
+        localization_key = AUS_it_has_be_that_way_desc
+    }
+}
+defined_text = { 
+    name = AUSAgitationEfficiencyCommunism
+
+    text = {
+        trigger = {
+            has_completed_focus = AUS_prepare_sabotage
+        }
+        localization_key = AUS_agitation_efficiency_leninism_revolutionism
+    }
+    text = {
+        localization_key = AUS_agitation_efficiency_leninism
+    }
+}
