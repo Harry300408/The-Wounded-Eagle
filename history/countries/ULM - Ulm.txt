@@ -18,6 +18,3 @@ set_politics = {
 set_popularities = {
 	fascism = 100
 }
-add_ideas = {
-	GERMANY_member_of_confederation_idea
-}

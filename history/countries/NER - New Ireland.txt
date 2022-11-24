@@ -1,0 +1,27 @@
+﻿capital = 384
+
+##oob = ""
+
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 5
+
+recruit_character = NER_aiken
+
+set_politics = {
+	ruling_party = rad_trad
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	rad_trad = 85
+	fascism = 10
+	ultranationalism = 5
+}
+

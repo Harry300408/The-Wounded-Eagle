@@ -1,9 +1,11 @@
 ﻿capital = 464
 
 
-#oob = ""
+##oob = ""
 
 set_cosmetic_tag = NBW_UK
+
+recruit_character = NBW_bennett
 
 set_research_slots = 3
 # Starting tech
@@ -92,7 +94,6 @@ if = {
 		basic_medium_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
 	}
@@ -109,16 +110,18 @@ if = {
 set_convoys = 20
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = liberalism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 20
-	fascism = 40
-	communism = 10
-	neutrality = 30
+	liberalism = 45
+	democratic = 10
+    authoritarian_democracy = 5
+	communism = 2
+	rev_unionism = 3
+	social_democracy = 35
 }
 
 

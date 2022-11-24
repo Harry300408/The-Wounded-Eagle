@@ -1,0 +1,17 @@
+state = {
+	id = 959
+	name = "STATE_959"
+
+	history = {
+		owner = HUN
+		add_core_of = HUN
+	}
+
+	provinces = {
+		11625 6670 6700 679 11646 9656
+	}
+	manpower = 10000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+	local_supplies = 0.000
+}

@@ -119,8 +119,7 @@ if = {
 	add_ideas = {
 		CZE_skoda_works
 		CZE_divided_nation
-		GERMANY_member_of_confederation_idea
-	}
+}
 	give_guarantee = YUG
 	give_guarantee = ROM
 }

@@ -2,6 +2,8 @@
 
 #Texas
 TXS	= "countries/USA.txt"
+#Yucatan
+YUC	= "countries/Mexico.txt"
 #Colonisable Territory
 UNC = "countries/Malta.txt"
 #"Progressive" Banat

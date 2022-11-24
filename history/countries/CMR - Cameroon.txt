@@ -7,6 +7,8 @@ set_technology = {
 
 set_convoys = 20
 
+set_cosmetic_tag = CMR_mittleafrika
+
 #recruit_character = CMR_aa2
 #recruit_character = CMR_democratic_guy
 #recruit_character = CMR_acgs

@@ -78,7 +78,7 @@ if = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "AFG_1939"
+	#oob = "AFG_1939"
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "AFG_1939_air_bba"

@@ -28,7 +28,7 @@ add_ideas = {
 }
 
 ############# MILITIA CAP ###############
-set_variable = { ITA_militias_cap = 12 } #WARNING THIS VALUE NEEDS TOP MATCH THE division_cap value for the blackshirt template in the OOB
+set_variable = { ITA_militias_cap = 12 } #WARNING THIS VALUE NEEDS TOP MATCH THE division_cap value for the blackshirt template in the #oob
 
 
 ############ ATOMIC RESEARCH ############
@@ -432,7 +432,7 @@ add_equipment_to_stockpile = {
 
 	# Effects from Corpo di Truppe Volontarie
 	SPR = { add_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war } }
-	oob = "ITA_aviazione_legionaria"
+	#oob = "ITA_aviazione_legionaria"
 
 	# Effects from Potential Allies in the Balkans
 	YUG = {
@@ -469,7 +469,7 @@ add_equipment_to_stockpile = {
 
 
 
-	oob = "ITA_1939"
+	#oob = "ITA_1939"
 	set_technology = {
 		interwar_artillery = 1
 		interwar_antitank = 1

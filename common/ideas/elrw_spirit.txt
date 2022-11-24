@@ -1,0 +1,113 @@
+ideas = {
+	country = {
+
+		spirit_of_democracy = {
+			picture = spirit_of_democracy-1077
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_government = democratic
+			}
+			cancel = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.1
+			}
+		}
+
+		communism_empowered = {
+			picture = communism_empowered-1076
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_government = communism
+			}
+			cancel = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				political_power_factor = -0.1
+			}
+		}
+
+		fascism_will = {
+			picture = fascism_will-1080
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			cancel = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.1
+			}
+		}
+
+		authoritarian_spirit = {
+			picture = authoritarian_spirit-1089
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_government = neutrality
+			}
+			cancel = {
+				NOT = {
+					has_government = neutrality
+				}
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_daily = 0.2
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+		elections_enabled = {
+			picture = elections_allowed-1068
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+
+		elections_banned = {
+			picture = elections_banned-1061
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+	}
+}

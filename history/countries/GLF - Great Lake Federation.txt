@@ -1,7 +1,7 @@
 ﻿capital = 393
 
 
-#oob = ""
+##oob = ""
 
 set_research_slots = 3
 # Starting tech
@@ -107,16 +107,17 @@ if = {
 set_convoys = 20
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = social_democracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 50
-	communism = 5
-	neutrality = 45
+	social_democracy = 50
+	lib_socialism = 5
+	liberalism = 45
 }
 
+recruit_character = GLF_Comstock
 
 

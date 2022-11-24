@@ -31,7 +31,7 @@ division_template = {
 	}
 }
 
-##### OOB #####
+##### #oob #####
 units = {
 
 	##Infantry

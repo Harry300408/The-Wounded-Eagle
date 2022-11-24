@@ -57,3 +57,26 @@
 
  LAC_democratic_party:0 "§BRGFTT§!" 
  LAC_democratic_party_long:0 "The Royal Government of The Free Tribes Territory"
+
+ SOV_neutrality_party:0 "§0HoR§!" 
+ SOV_neutrality_party_long:0 "House of Romanov"
+ POL_neutrality_party:0 "§0HoR§!"
+ POL_neutrality_party_long:0 "House of Romanov"
+ FIN_neutrality_party:0 "§0HoR§!"
+ FIN_neutrality_party_long:0 "House of Romanov"
+ ALK_neutrality_party:0 "§0HoR§!"
+ ALK_neutrality_party_long:0 "House of Romanov"
+
+ #Austria
+ AUS_communism_party:0 "§tLRP§!" 
+ AUS_communism_party_long:0 "Leninistisch-Revolutionäre Partei"
+ AUS_lib_socialism_party:0 "§tSLOP§!" 
+ AUS_lib_socialism_party_long:0 "Sozialistisch-Libertäre Österreichische Partei"
+ AUS_authoritarian_democracy_party:0 "§gDSPO§!" 
+ AUS_authoritarian_democracy_party_long:0 "Demokratisch-Sozialistische Partei Österreichs"
+ AUS_neutrality_party:0 "§0NIPO§!" 
+ AUS_neutrality_party_long:0 "National-Imperialistische Partei Österreichs"
+ AUS_fascism_party:0 "§LVF§!" 
+ AUS_fascism_party_long:0 "Vaterlandische Front"
+ AUS_rad_trad_party:0 "OTOP" 
+ AUS_rad_trad_party_long:0 "Österreichische Traditionalistische Oberste Partei"

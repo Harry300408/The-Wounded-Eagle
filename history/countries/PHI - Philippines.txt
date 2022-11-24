@@ -1,6 +1,6 @@
 ﻿capital = 327
 
-oob = "PHI_1936"
+#oob = "PHI_1936"
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "PHI_1936_air_bba"
@@ -61,7 +61,7 @@ set_convoys = 5
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "PHI_1939"
+	#oob = "PHI_1939"
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "PHI_1936_air_bba" #no difference between 36 and 39 airforces

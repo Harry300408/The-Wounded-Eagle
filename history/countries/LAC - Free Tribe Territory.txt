@@ -1,6 +1,6 @@
 ﻿capital = 384
 
-#oob = ""
+##oob = ""
 
 set_cosmetic_tag = LAC_UK
 

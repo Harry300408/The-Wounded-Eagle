@@ -1,7 +1,7 @@
 ﻿capital = 48
 
 #TROOPS
-oob = "BUL_1936" #VANILLA & DLC
+#oob = "BUL_1936" #VANILLA & DLC
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "BUL_1936_air_bba"

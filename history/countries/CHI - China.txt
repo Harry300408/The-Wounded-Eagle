@@ -1,6 +1,6 @@
 ﻿capital = 613 # Nanjing
 
-oob = "CHI_1936"
+#oob = "CHI_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "CHI_1936_naval_mtg"
@@ -259,7 +259,7 @@ set_convoys = 40
 	#load_oob = "CHI_united_front"
 	set_global_flag = CHI_unite
 	
-	oob = "CHI_1939"
+	#oob = "CHI_1939"
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "CHI_1939_air_bba"

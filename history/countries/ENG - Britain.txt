@@ -230,11 +230,6 @@ if = {
 	}
 
 	set_autonomy = {
-		target = BOR
-		autonomous_state = autonomy_commonwealth_proc
-	}
-
-	set_autonomy = {
 		target = NGA
 		autonomous_state = autonomy_commonwealth_proc
 	}
@@ -254,7 +249,13 @@ if = {
 		autonomous_state = autonomy_commonwealth_proc
 	}
 
+	set_autonomy = {
+		target = BOR
+		autonomous_state = autonomy_commonwealth_proc
+	}
+
 	else = {
+		puppet = BOR
 		puppet = MAL
 		puppet = RAJ
 		puppet = CAN
@@ -265,7 +266,6 @@ if = {
 		puppet = GLF
 		puppet = LAC
 		puppet = CLU
-		puppet = BOR
 		puppet = NGA
 		puppet = NBW
 		puppet = IRE
@@ -278,11 +278,19 @@ NGA = {
 	set_cosmetic_tag = NGA_proc
 }
 
-
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
-	add_to_tech_sharing_group = commonwealth_research
+BOR = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 50
+		social_democracy = 15
+		liberalism = 20
+		neutrality = 10
+	}
 }
 
 1939.1.1 = {
@@ -689,7 +697,7 @@ if = {
 			tank_nsb_armor_upgrade = 1
 		}
 		icon = "GFX_ENG_basic_light_tank_medium"
-		obsolete = yes #used for oob
+		obsolete = yes #used for #oob
 	}
 	create_equipment_variant = {
 		name = "Light Tank Mk. VI"

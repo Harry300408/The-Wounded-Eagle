@@ -1,9 +1,20 @@
 ﻿l_english:
  # TWE Base Nations
 
- MEX_rev_unionism:0 "Mexican Union of Agrarians"
- MEX_rev_unionism_DEF:0 "the Mexican Union of Agrarians"
- MEX_rev_unionism_ADJ:0 "Mexican"
+ YUC:0 "Yucatan"
+ YUC_DEF:0 "Yucatan"
+ YUC_ADJ:0 "Mexican"
+
+ TXS_social_democracy:0 "Republic of Rio-Grande and Texas"
+ TXS_social_democracy_DEF:0 "the Republic of Rio-Grande and Texas"
+ TXS_social_democracy_ADJ:0 "Texan"
+ TXS:0 "Tri-Star State"
+ TXS_DEF:0 "the Tri-Star State"
+ TXS_ADJ:0 "Texan"
+
+ MEX_communism:0 "Mexican Union of Agrarians"
+ MEX_communism_DEF:0 "the Mexican Union of Agrarians"
+ MEX_communism_ADJ:0 "Mexican"
  MEX:0 "Mexico"
  MEX_DEF:0 "Mexico"
  MEX_ADJ:0 "Mexican"  
@@ -273,6 +284,8 @@
  NEN_DEF:0 "New England"
  NEN_ADJ:0 "American"
 
+ GLF_social_democracy:0 "Great Lakes Protectorate"
+ GLF_social_democracy_DEF:0 "the Great Lakes Protectorate"
  GLF_fascism:0 "Great Lake Empire"
  GLF_fascism_DEF:0 "the Great Lake Empire"
  GLF_democratic:0 "Republic of the Great Lakes"
@@ -285,6 +298,7 @@
  GLF_democratic_ADJ:0 "Native American"
  GLF_neutrality_ADJ:0 "Native American"
  GLF_communism_ADJ:0 "Native American"
+ GLF_social_democracy_ADJ:0 "Native American"
  GLF:0 "Great Lakes"
  GLF_DEF:0 "Great Lakes"
  GLF_ADJ:0 "Native American"
@@ -304,23 +318,6 @@
  LAC:0 "Louisiana"
  LAC_DEF:0 "Louisiana"
  LAC_ADJ:0 "Native American"
-
- TXS_fascism:0 "Tri-Star Empire"
- TXS_fascism_DEF:0 "the Tri-Star Empire"
- TXS_democratic:0 "Tri-Star Republic"
- TXS_democratic_DEF:0 "the Tri-Star Republic"
- TXS_neutrality:1 "Texas Rio-Grande and the Yucatan"
- TXS_neutrality_DEF:1 "Texas Rio-Grande and the Yucatan"
- TXS_communism:0 "Tri-Star Commune"
- TXS_communism_DEF:0 "the Tri-Star Commune"
- TXS_fascism_ADJ:0 "Texan"
- TXS_democratic_ADJ:0 "Texan"
- TXS_neutrality_ADJ:0 "Texan"
- TXS_communism_ADJ:0 "Texan"
- TXS:0 "Texas"
- TXS_DEF:0 "Texas"
- TXS_ADJ:0 "Texan"
-
  
  BNT_communism:0 "Union of Banat's Workers"
  BNT_communism_DEF:0 "the Union of Banat's Workers"
@@ -328,12 +325,9 @@
  BNT_DEF:0 "Banat"
  BNT_ADJ:0 "Banat"
 
-
-
  UNC:0 "Tribal Land"
  UNC_DEF:0 "Tribal Land"
  UNC_ADJ:0 "Tribal Land"
-
 
  #HOI4
  GER_fascism:0 "German Reich"

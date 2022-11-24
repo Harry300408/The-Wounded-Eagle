@@ -1,5 +1,10 @@
 #reload countrycolors
 #TWE Nations
+YUC = {
+	color = rgb { 219 195 166 }
+	color_ui = rgb { 219 195 166 }
+}
+
 PAU = {
 	color = rgb { 123 134 170 }
 	color_ui = rgb { 123 134 170 }

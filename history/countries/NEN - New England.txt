@@ -1,6 +1,6 @@
 ﻿capital = 825 #Naryan-Mar
 
-#oob = "" 
+##oob = "" 
 
 set_research_slots = 3
 
@@ -82,17 +82,21 @@ if = {
 	}
 }
 set_politics = {
-	ruling_party = democratic
+	ruling_party = social_democracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 50
-	fascism = 0
-	communism = 20
-	neutrality = 30
+	social_democracy = 50
+	liberalism = 19
+	democratic = 20
+	fascism = 2
+	communism = 4
+	rev_unionism = 5
 }
+
+recruit_character = NEN_hurley
 
 

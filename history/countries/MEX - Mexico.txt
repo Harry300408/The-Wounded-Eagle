@@ -1,6 +1,6 @@
 ﻿capital = 277
 
-oob = "MEX_1936"
+#oob = "MEX_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "MEX_1936_naval_mtg"
@@ -102,8 +102,8 @@ set_politics = {
 set_popularities = {
 	democratic = 4
 	fascism = 6
-	communism = 20
-	rev_unionism = 70
+	communism = 70
+	rev_unionism = 20
 }
 
 ### VARIANTS ###

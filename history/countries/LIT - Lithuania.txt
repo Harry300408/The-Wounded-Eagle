@@ -1,6 +1,6 @@
 ﻿capital = 11
 
-oob = "LIT_1936"
+#oob = "LIT_1936"
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "LIT_1936_air_bba"
@@ -107,7 +107,7 @@ set_convoys = 10
 	complete_national_focus = BALTIC_original_designs
 	complete_national_focus = BALTIC_natural_resources
 	
-	oob = "LIT_1939"
+	#oob = "LIT_1939"
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "LIT_1939_air_bba"

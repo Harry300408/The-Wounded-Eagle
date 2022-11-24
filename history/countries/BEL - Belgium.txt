@@ -1,6 +1,6 @@
 ﻿capital = 6
 
-oob = "BEL_1936"
+#oob = "BEL_1936"
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "BEL_1936_air_bba"
@@ -72,7 +72,7 @@ set_technology = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 
-	oob = "BEL_1939"
+	#oob = "BEL_1939"
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "BEL_1939_air_bba"

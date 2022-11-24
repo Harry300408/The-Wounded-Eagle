@@ -1,0 +1,38 @@
+spriteTypes = { 
+	##Icon For Category: Elections Reworked - Elections
+	SpriteType = { 
+		name = "decision_category_icon_elections_reworked__elections"
+		texturefile = "gfx/interface/decisions/decision_category_icon_elections_reworked__elections.dds"
+	}
+
+	##Icon For: Allow elections
+	SpriteType = { 
+		name = "decision_icon_allow_elections"
+		texturefile = "gfx/interface/decisions/decision_icon_allow_elections.dds"
+	}
+
+	##Icon For: Ban elections
+	SpriteType = { 
+		name = "decision_icon_ban_elections"
+		texturefile = "gfx/interface/decisions/decision_icon_ban_elections.dds"
+	}
+
+	##Icon For: Elections
+	SpriteType = { 
+		name = "decision_icon_elections"
+		texturefile = "gfx/interface/decisions/decision_icon_elections.dds"
+	}
+
+	##Icon For: Ban Democratic party
+	SpriteType = { 
+		name = "decision_icon_ban_democratic_party"
+		texturefile = "gfx/interface/decisions/decision_icon_ban_democratic_party.dds"
+	}
+
+	##Icon For: Democratic Banned
+	SpriteType = { 
+		name = "decision_icon_democratic_banned"
+		texturefile = "gfx/interface/decisions/decision_icon_democratic_banned.dds"
+	}
+
+}
