@@ -124,6 +124,12 @@ country_event = {
 		name = ausevents.7.b
 		leave_faction = yes
 		set_country_flag = AUS_confederation_disbanded_flag
+		every_country = {
+			limit = {
+				has_idea = GERMANY_member_of_confederation_idea
+			}
+			remove_ideas = GERMANY_member_of_confederation_idea
+		}
 		AUS = {
 			set_autonomy = {
 				target = WSF
