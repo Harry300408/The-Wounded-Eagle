@@ -2,15 +2,10 @@ AUS_agitation_program_category = {
 	icon = GFX_
 	priority = 100
 	visible = {
-		has_completed_focus = AUS_agitation_program
-		NOT = {
-			has_completed_focus = AUS_empower_kpo
-			has_completed_focus = AUS_empower_right_wing
-		}
+		has_country_flag = AUS_agitation_started_flag
 	}
 	allowed = {
 		tag = AUS
 	}
 	visible_when_empty = yes
-	scripted_gui = AUS_agitation_decision_ui
 }

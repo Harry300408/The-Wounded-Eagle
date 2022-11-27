@@ -1,18 +1,2 @@
 scripted_gui = {
-	AUS_agitation_decision_ui = {
-		context_type = decision_category
-		window_name = "AUS_agitation_decision_ui_window"
-
-		properties = {
-			agitation_1 = {
-				frame = AUS_agitation_frame
-			}
-			agitation_2 = {
-				frame = AUS_agitation_frame
-			}
-			agitation_3 = {
-				frame = AUS_agitation_frame
-			}
-		}
-	}
 }
