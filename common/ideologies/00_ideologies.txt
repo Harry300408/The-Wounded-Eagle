@@ -70,6 +70,8 @@ ideologies = {
 
 			maximal = {}
 			
+			sen_thought = {} #IRL
+			
 		}
 
 		dynamic_faction_names = {
@@ -390,7 +392,7 @@ ideologies = {
 
 		types = {
 			
-			personalist_dictatorship = {}
+			dictatorship = {}
 
 			theocracy = {}
 
@@ -553,6 +555,8 @@ ideologies = {
 			clerical_nationalism = {}
 
 			e_nat_volkism = {}
+
+			national_futurism = {}
 		}
 
 		dynamic_faction_names = {

@@ -1,6 +1,12 @@
 ﻿l_english:
  # TWE Base Nations
 
+ #Other Colombia loc is listed below
+ COL_despotism:0 "Gran Colombia"
+ COL_despotism_DEF:0 "Gran Colombia"
+ COL_despotism_ADJ:0 "Colombian"
+
+
  YUC:0 "Yucatan"
  YUC_DEF:0 "Yucatan"
  YUC_ADJ:0 "Mexican"
@@ -1023,8 +1029,8 @@
  COL_fascism_DEF:0 "Nueva Gran Colombia"
  COL_democratic:0 "Colombia"
  COL_democratic_DEF:0 "Colombia"
- COL_neutrality:0 "Nueva Constitución"
- COL_neutrality_DEF:0 "Nueva Constitución"
+ COL_neutrality:0 "Gran Colombia"
+ COL_neutrality_DEF:0 "Gran Colombia"
  COL_communism:0 "Colombian Socialist Republic"
  COL_communism_DEF:0 "the Colombian Socialist Republic"
  COL_fascism_ADJ:0 "Colombian"

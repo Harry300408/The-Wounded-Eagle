@@ -117,4 +117,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/papal_theocracy.png"
 	}
 
+	SpriteType = { 
+		name = "GFX_ideology_sen_thought"
+		texturefile = "gfx/interface/ideologies/sen_thought.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_ideology_national_futurism"
+		texturefile = "gfx/interface/ideologies/national_futurism.png"
+	}
+
 }

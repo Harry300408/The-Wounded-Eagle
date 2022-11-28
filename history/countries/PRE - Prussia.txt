@@ -7,7 +7,6 @@ add_ideas = {
 	PRE_terrible_army
 	PRE_lackin_industry
 	PRE_brink_of_colapse
-	GERMANY_member_of_confederation_idea
 }
 
 #Variants

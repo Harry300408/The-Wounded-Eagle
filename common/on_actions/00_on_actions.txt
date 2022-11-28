@@ -1128,11 +1128,6 @@ on_actions = {
 	#Not run on a specific country.
 	on_startup = {
 		effect = {
-			AUS = {
-				set_variable = {
-					AUS_agitation_mission_timeout_base_time = 60
-				}
-			}
 			GER = { #Axis and Poland just didn't get along
 				add_ai_strategy = {
 				   type = alliance

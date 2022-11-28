@@ -225,4 +225,19 @@ characters = {
         }
     }
 
+    # Costa Rica Leaders #
+    COS_castro = {
+        name = COS_castro
+        portraits = {
+            civilian = {
+                large = "GFX_castro"
+            }
+        }
+        country_leader = {
+            ideology = national_conservatism
+            traits = {  }
+            #desc = 
+        }
+    }
+
 }

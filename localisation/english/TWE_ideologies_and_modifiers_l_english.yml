@@ -31,6 +31,8 @@
     totalist:0 "Totalist Unionism"
     totalist_desc:0 ""
     maximal:0 "Maximal Unionism"
+    sen_thought:0 "Surya Sen Thought"
+    sen_thought_desc:0 ""
 
     rev_unionism_drift:0 "Daily Support for §tRevolutionary Unionism§!"
 
@@ -125,8 +127,8 @@
   #Despotism
   despotism:0 "§gDespotism§!"
   despotism_desc:0 ""
-    personalist_dictatorship:0 "Personalist Dictatorship"  
-    personalist_dictatorship_desc:0 ""
+    dictatorship:0 "Dictatorship"  
+    dictatorship_desc:0 ""
     theocracy:0 "Theocracy"
     theocracy_desc:0 ""
     anocracy:0 "Anocracy"
@@ -184,6 +186,8 @@
     clerical_nationalism_desc:0 ""
     e_nat_volkism:0 "Esoteric National Volkism"
     e_nat_volkism_desc:0 ""
+    national_futurism:0 "National Futurism"
+    national_futurism_desc:0 ""
 
   #Faction Name
   NC_faction_name_1:0 "Axis of Nationalist Powers"
