@@ -1,86 +1,764 @@
 AUS_agitation_program_category = {
 
-	AUS_agitation_rules_of_nature = {
+	AUS_better_ideals_communism_decision = {
 		icon = GFX_
-		days_remove = 14
-		days_re_enable = 3
 		fire_only_once = no
+		priority = 9
+		days_remove = 15
+		days_re_enable = 5
+		cost = 15
+		allowed = {
+			exists = yes
+			tag = AUS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_agitation_not_performing_actions_tt
+				NOT = {
+					has_country_flag = AUS_agitation_performing_actions
+				}
+			}
+			political_power_daily > 0.2
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_completed_focus = AUS_est_liebe_die_republik
+					has_completed_focus = AUS_empower_kpo
+					has_completed_focus = AUS_empower_right_wing
+				}
+			}
+			has_completed_focus = AUS_march_of_red_torches
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = AUS_agitation_performing_actions
+				set_temp_variable = {
+					AUS_add_days_mission_timeout_temp = 15
+				}
+				set_temp_variable = {
+					AUS_check_math_temp = days_mission_timeout@AUS_agitation_mission
+				}
+				add_to_temp_variable = {
+					var:AUS_check_math_temp = var:AUS_add_days_mission_timeout_temp
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var:AUS_check_math_temp > var:AUS_agitation_mission_timeout_base_time
+						}
+					}
+					subtract_from_temp_variable = {
+						var:AUS_check_math_temp = var:AUS_agitation_mission_timeout_base_time
+					}
+					subtract_from_temp_variable = {
+						var:AUS_add_days_mission_timeout_temp = var:AUS_check_math_temp
+					}
+				}
+				
+			}
+			add_days_mission_timeout = {
+				mission = AUS_agitation_mission
+				days = var:AUS_add_days_mission_timeout_temp
+			}
+		}
+		modifier = {
+			communism_drift = 0.02
+			political_power_factor = -0.1
+			consumer_goods_factor = -0.05
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = AUS_agitation_performing_actions
+			}
+		}
+	}
+	AUS_only_best_way_communism_decision = {
+		icon = GFX_
+		fire_only_once = no
+		priority = 9
+		days_remove = 20
+		days_re_enable = 5
 		cost = 20
-
+		allowed = {
+			exists = yes
+			tag = AUS
+		}
 		available = {
-			always = yes
+			custom_trigger_tooltip = {
+				tooltip = AUS_agitation_not_performing_actions_tt
+				NOT = {
+					has_country_flag = AUS_agitation_performing_actions
+				}
+			}
+			political_power_daily > 0.3
 		}
 		visible = {
-			always = yes
+			NOT = {
+				OR = {
+					has_completed_focus = AUS_est_liebe_die_republik
+					has_completed_focus = AUS_empower_kpo
+					has_completed_focus = AUS_empower_right_wing
+				}
+			}
+			has_completed_focus = AUS_march_of_red_torches
 		}
 		complete_effect = {
-
+			hidden_effect = {
+				set_country_flag = AUS_agitation_performing_actions
+				set_temp_variable = {
+					AUS_add_days_mission_timeout_temp = 20
+				}
+				set_temp_variable = {
+					AUS_check_math_temp = days_mission_timeout@AUS_agitation_mission
+				}
+				add_to_temp_variable = {
+					var:AUS_check_math_temp = var:AUS_add_days_mission_timeout_temp
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var:AUS_check_math_temp > var:AUS_agitation_mission_timeout_base_time
+						}
+					}
+					subtract_from_temp_variable = {
+						var:AUS_check_math_temp = var:AUS_agitation_mission_timeout_base_time
+					}
+					subtract_from_temp_variable = {
+						var:AUS_add_days_mission_timeout_temp = var:AUS_check_math_temp
+					}
+				}
+				
+			}
+			add_days_mission_timeout = {
+				mission = AUS_agitation_mission
+				days = var:AUS_add_days_mission_timeout_temp
+			}
 		}
 		modifier = {
-			
+			communism_drift = 0.04
+			political_power_factor = -0.15
+			consumer_goods_factor = -0.05
 		}
 		remove_effect = {
-			custom_effect_tooltip = AUS_agitation_add_1_tt
 			hidden_effect = {
-				add_to_variable = {
-					ROOT.agitation_efficiency = 1
-				}
+				clr_country_flag = AUS_agitation_performing_actions
 			}
 		}
 	}
-	AUS_agitation_collective_consciousness = {
+	AUS_it_has_be_that_way_communism_decision = {
 		icon = GFX_
-		days_remove = 21
-		days_re_enable = 6
 		fire_only_once = no
-		cost = 40
-
+		priority = 9
+		days_remove = 30
+		days_re_enable = 10
+		cost = 30
+		allowed = {
+			exists = yes
+			tag = AUS
+		}
 		available = {
-			always = yes
+			custom_trigger_tooltip = {
+				tooltip = AUS_agitation_not_performing_actions_tt
+				NOT = {
+					has_country_flag = AUS_agitation_performing_actions
+				}
+			}
+			political_power_daily > 0.4
 		}
 		visible = {
-			always = yes
+			NOT = {
+				OR = {
+					has_completed_focus = AUS_est_liebe_die_republik
+					has_completed_focus = AUS_empower_kpo
+					has_completed_focus = AUS_empower_right_wing
+				}
+			}
+			has_completed_focus = AUS_march_of_red_torches
 		}
 		complete_effect = {
-
+			hidden_effect = {
+				set_country_flag = AUS_agitation_performing_actions
+				add_to_temp_variable = {
+					var:AUS_agitation_mission_timeout_base_time = 30
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AUS_agitation_efficiency_communism_0_idea
+				}
+				swap_ideas = {
+					remove_idea = AUS_agitation_efficiency_communism_0_idea
+					add_idea = AUS_agitation_efficiency_communism_1_idea
+				}
+				set_variable = {
+					AUS_agitation_level = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AUS_agitation_efficiency_communism_1_idea
+				}
+				swap_ideas = {
+					remove_idea = AUS_agitation_efficiency_communism_1_idea
+					add_idea = AUS_agitation_efficiency_communism_2_idea
+				}
+				set_variable = {
+					AUS_agitation_level = 2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AUS_agitation_efficiency_communism_2_idea
+				}
+				swap_ideas = {
+					remove_idea = AUS_agitation_efficiency_communism_2_idea
+					add_idea = AUS_agitation_efficiency_communism_3_idea
+				}
+				set_variable = {
+					AUS_agitation_level = 3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AUS_agitation_efficiency_communism_3_idea
+				}
+				swap_ideas = {
+					remove_idea = AUS_agitation_efficiency_communism_3_idea
+					add_idea = AUS_agitation_efficiency_communism_4_idea
+				}
+				set_variable = {
+					AUS_agitation_level = 4
+				}
+			}
+			custom_effect_tooltip = AUS_agitation_base_time_gain_tt
 		}
 		modifier = {
-			
+			communism_drift = 0.03
+			political_power_factor = -0.05
+			consumer_goods_factor = -0.1
+			production_factory_efficiency_gain_factor = 0.1
+			production_speed_buildings_factor = 0.1
 		}
 		remove_effect = {
-			custom_effect_tooltip = AUS_agitation_add_2_tt
 			hidden_effect = {
-				add_to_variable = {
-					ROOT.agitation_efficiency = 2
-				}
+				clr_country_flag = AUS_agitation_performing_actions
 			}
 		}
 	}
-	AUS_agitation_it_has_to_be_this_way = {
+	AUS_better_ideals_fascism_decision = {
 		icon = GFX_
-		days_remove = 28
-		days_re_enable = 9
 		fire_only_once = no
-		cost = 80
-
+		priority = 9
+		days_remove = 15
+		days_re_enable = 5
+		cost = 15
+		allowed = {
+			exists = yes
+			tag = AUS
+		}
 		available = {
-			always = yes
+			custom_trigger_tooltip = {
+				tooltip = AUS_agitation_not_performing_actions_tt
+				NOT = {
+					has_country_flag = AUS_agitation_performing_actions
+				}
+			}
+			political_power_daily > 0.2
 		}
 		visible = {
-			always = yes
+			NOT = {
+				OR = {
+					has_completed_focus = AUS_est_liebe_die_republik
+					has_completed_focus = AUS_empower_kpo
+					has_completed_focus = AUS_empower_right_wing
+				}
+			}
+			has_completed_focus = AUS_vaterlandische_front
 		}
 		complete_effect = {
-
+			hidden_effect = {
+				set_country_flag = AUS_agitation_performing_actions
+				set_temp_variable = {
+					AUS_add_days_mission_timeout_temp = 15
+				}
+				set_temp_variable = {
+					AUS_check_math_temp = days_mission_timeout@AUS_agitation_mission
+				}
+				add_to_temp_variable = {
+					var:AUS_check_math_temp = var:AUS_add_days_mission_timeout_temp
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var:AUS_check_math_temp > var:AUS_agitation_mission_timeout_base_time
+						}
+					}
+					subtract_from_temp_variable = {
+						var:AUS_check_math_temp = var:AUS_agitation_mission_timeout_base_time
+					}
+					subtract_from_temp_variable = {
+						var:AUS_add_days_mission_timeout_temp = var:AUS_check_math_temp
+					}
+				}
+				
+			}
+			add_days_mission_timeout = {
+				mission = AUS_agitation_mission
+				days = var:AUS_add_days_mission_timeout_temp
+			}
 		}
 		modifier = {
-			
+			fascism_drift = 0.02
+			political_power_factor = -0.1
+			weekly_manpower = 5000
 		}
 		remove_effect = {
-			custom_effect_tooltip = AUS_agitation_add_3_tt
 			hidden_effect = {
-				add_to_variable = {
-					ROOT.agitation_efficiency = 3
+				clr_country_flag = AUS_agitation_performing_actions
+			}
+		}
+	}
+	AUS_only_best_way_fascism_decision = {
+		icon = GFX_
+		fire_only_once = no
+		priority = 9
+		days_remove = 20
+		days_re_enable = 5
+		cost = 20
+		allowed = {
+			exists = yes
+			tag = AUS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_agitation_not_performing_actions_tt
+				NOT = {
+					has_country_flag = AUS_agitation_performing_actions
 				}
+			}
+			political_power_daily > 0.3
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_completed_focus = AUS_est_liebe_die_republik
+					has_completed_focus = AUS_empower_kpo
+					has_completed_focus = AUS_empower_right_wing
+				}
+			}
+			has_completed_focus = AUS_vaterlandische_front
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = AUS_agitation_performing_actions
+				set_temp_variable = {
+					AUS_add_days_mission_timeout_temp = 20
+				}
+				set_temp_variable = {
+					AUS_check_math_temp = days_mission_timeout@AUS_agitation_mission
+				}
+				add_to_temp_variable = {
+					var:AUS_check_math_temp = var:AUS_add_days_mission_timeout_temp
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var:AUS_check_math_temp > var:AUS_agitation_mission_timeout_base_time
+						}
+					}
+					subtract_from_temp_variable = {
+						var:AUS_check_math_temp = var:AUS_agitation_mission_timeout_base_time
+					}
+					subtract_from_temp_variable = {
+						var:AUS_add_days_mission_timeout_temp = var:AUS_check_math_temp
+					}
+				}
+				
+			}
+			add_days_mission_timeout = {
+				mission = AUS_agitation_mission
+				days = var:AUS_add_days_mission_timeout_temp
+			}
+		}
+		modifier = {
+			fascism_drift = 0.04
+			political_power_factor = -0.15
+			weekly_manpower = 5000
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = AUS_agitation_performing_actions
+			}
+		}
+	}
+	AUS_it_has_be_that_way_fascism_decision = {
+		icon = GFX_
+		fire_only_once = no
+		priority = 9
+		days_remove = 30
+		days_re_enable = 10
+		cost = 30
+		allowed = {
+			exists = yes
+			tag = AUS
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_agitation_not_performing_actions_tt
+				NOT = {
+					has_country_flag = AUS_agitation_performing_actions
+				}
+			}
+			political_power_daily > 0.4
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_completed_focus = AUS_est_liebe_die_republik
+					has_completed_focus = AUS_empower_kpo
+					has_completed_focus = AUS_empower_right_wing
+				}
+			}
+			has_completed_focus = AUS_vaterlandische_front
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = AUS_agitation_performing_actions
+				add_to_temp_variable = {
+					var:AUS_agitation_mission_timeout_base_time = 30
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AUS_agitation_efficiency_fascism_0_idea
+				}
+				swap_ideas = {
+					remove_idea = AUS_agitation_efficiency_fascism_0_idea
+					add_idea = AUS_agitation_efficiency_fascism_1_idea
+				}
+				set_variable = {
+					AUS_agitation_level = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AUS_agitation_efficiency_fascism_1_idea
+				}
+				swap_ideas = {
+					remove_idea = AUS_agitation_efficiency_fascism_1_idea
+					add_idea = AUS_agitation_efficiency_fascism_2_idea
+				}
+				set_variable = {
+					AUS_agitation_level = 2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AUS_agitation_efficiency_fascism_2_idea
+				}
+				swap_ideas = {
+					remove_idea = AUS_agitation_efficiency_fascism_2_idea
+					add_idea = AUS_agitation_efficiency_fascism_3_idea
+				}
+				set_variable = {
+					AUS_agitation_level = 3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AUS_agitation_efficiency_fascism_3_idea
+				}
+				swap_ideas = {
+					remove_idea = AUS_agitation_efficiency_fascism_3_idea
+					add_idea = AUS_agitation_efficiency_fascism_4_idea
+				}
+				set_variable = {
+					AUS_agitation_level = 4
+				}
+			}
+			custom_effect_tooltip = AUS_agitation_base_time_gain_tt
+		}
+		modifier = {
+			fascism_drift = 0.03
+			political_power_factor = -0.2
+			weekly_manpower = 10000
+			recruitable_population_factor = 0.1
+			training_time_factor = -0.1
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = AUS_agitation_performing_actions
+			}
+		}
+	}
+
+	AUS_agitation_mission = {
+		icon = GFX_
+		fire_only_once = yes
+		is_good = no
+		priority = 10
+		days_mission_timeout = var:AUS_agitation_mission_timeout_base_time
+		selectable_mission = no
+		allowed = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			OR = {
+				has_completed_focus = AUS_empower_right_wing
+				has_completed_focus = AUS_empower_kpo
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				has_government = democratic
+				exists = no
+			}
+		}
+		cancel_effect = {
+			if = {
+				limit = {
+					has_completed_focus = AUS_march_of_red_torches
+				}
+				uncomplete_national_focus = {
+					focus = AUS_march_of_red_torches
+					uncomplete_children = yes
+					refund_political_power = no
+				}
+				complete_national_focus = AUS_est_liebe_die_republik
+			}
+			if = {
+				limit = {
+					has_completed_focus = AUS_vaterlandische_front
+				}
+				uncomplete_national_focus = {
+					focus = AUS_vaterlandische_front
+					uncomplete_children = yes
+					refund_political_power = no
+				}
+				complete_national_focus = AUS_est_liebe_die_republik
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = AUS_vaterlandische_front
+						has_completed_focus = AUS_march_of_red_torches
+					}
+				}
+				effect_tooltip = {
+					uncomplete_national_focus = {
+						focus = AUS_vaterlandische_front
+						uncomplete_children = yes
+						refund_political_power = no
+					}
+					complete_national_focus = AUS_est_liebe_die_republik
+				}
+			}
+			clr_country_flag = AUS_agitation_started_flag
+			set_variable = {
+				AUS_agitation_level = 0
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_completed_focus = AUS_empower_right_wing
+				}
+				if = {
+					limit = {
+						has_idea = AUS_agitation_efficiency_fascism_0_idea
+					}
+					remove_ideas = AUS_agitation_efficiency_fascism_0_idea
+				}
+				if = {
+					limit = {
+						has_idea = AUS_agitation_efficiency_fascism_1_idea
+					}
+					remove_ideas = AUS_agitation_efficiency_fascism_1_idea
+				}
+				if = {
+					limit = {
+						has_idea = AUS_agitation_efficiency_fascism_2_idea
+					}
+					remove_ideas = AUS_agitation_efficiency_fascism_2_idea
+				}
+				if = {
+					limit = {
+						has_idea = AUS_agitation_efficiency_fascism_3_idea
+					}
+					remove_ideas = AUS_agitation_efficiency_fascism_3_idea
+				}
+				if = {
+					limit = {
+						has_idea = AUS_agitation_efficiency_fascism_4_idea
+					}
+					remove_ideas = AUS_agitation_efficiency_fascism_4_idea
+				}
+				add_timed_idea = {
+					idea = AUS_agitation_fascism_win_idea
+					days = 120
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = AUS_empower_kpo
+				}
+				if = {
+					limit = {
+						has_idea = AUS_agitation_efficiency_communism_0_idea
+					}
+					remove_ideas = AUS_agitation_efficiency_communism_0_idea
+				}
+				if = {
+					limit = {
+						has_idea = AUS_agitation_efficiency_communism_1_idea
+					}
+					remove_ideas = AUS_agitation_efficiency_communism_1_idea
+				}
+				if = {
+					limit = {
+						has_idea = AUS_agitation_efficiency_communism_2_idea
+					}
+					remove_ideas = AUS_agitation_efficiency_communism_2_idea
+				}
+				if = {
+					limit = {
+						has_idea = AUS_agitation_efficiency_communism_3_idea
+					}
+					remove_ideas = AUS_agitation_efficiency_communism_3_idea
+				}
+				if = {
+					limit = {
+						has_idea = AUS_agitation_efficiency_communism_4_idea
+					}
+					remove_ideas = AUS_agitation_efficiency_communism_4_idea
+					set_country_flag = AUS_leninism_revolutionism_available
+				}
+				add_timed_idea = {
+					idea = AUS_agitation_communism_win_idea
+					days = 120
+				}
+			}
+			clr_country_flag = AUS_agitation_started_flag
+			set_variable = {
+				AUS_agitation_level = 0
+			}
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					has_idea = AUS_agitation_efficiency_communism_4_idea
+				}
+				swap_ideas = {
+					remove_idea = AUS_agitation_efficiency_communism_4_idea
+					add_idea = AUS_agitation_efficiency_communism_3_idea
+				}
+				set_variable = {
+					AUS_agitation_level = 3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AUS_agitation_efficiency_communism_3_idea
+				}
+				swap_ideas = {
+					remove_idea = AUS_agitation_efficiency_communism_3_idea
+					add_idea = AUS_agitation_efficiency_communism_2_idea
+				}
+				set_variable = {
+					AUS_agitation_level = 2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AUS_agitation_efficiency_communism_2_idea
+				}
+				swap_ideas = {
+					remove_idea = AUS_agitation_efficiency_communism_2_idea
+					add_idea = AUS_agitation_efficiency_communism_1_idea
+				}
+				set_variable = {
+					AUS_agitation_level = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AUS_agitation_efficiency_communism_1_idea
+				}
+				swap_ideas = {
+					remove_idea = AUS_agitation_efficiency_communism_1_idea
+					add_idea = AUS_agitation_efficiency_communism_0_idea
+				}
+				set_variable = {
+					AUS_agitation_level = 0
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AUS_agitation_efficiency_fascism_4_idea
+				}
+				swap_ideas = {
+					remove_idea = AUS_agitation_efficiency_fascism_4_idea
+					add_idea = AUS_agitation_efficiency_fascism_3_idea
+				}
+				set_variable = {
+					AUS_agitation_level = 3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AUS_agitation_efficiency_fascism_3_idea
+				}
+				swap_ideas = {
+					remove_idea = AUS_agitation_efficiency_fascism_3_idea
+					add_idea = AUS_agitation_efficiency_fascism_2_idea
+				}
+				set_variable = {
+					AUS_agitation_level = 2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AUS_agitation_efficiency_fascism_2_idea
+				}
+				swap_ideas = {
+					remove_idea = AUS_agitation_efficiency_fascism_2_idea
+					add_idea = AUS_agitation_efficiency_fascism_1_idea
+				}
+				set_variable = {
+					AUS_agitation_level = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AUS_agitation_efficiency_fascism_1_idea
+				}
+				swap_ideas = {
+					remove_idea = AUS_agitation_efficiency_fascism_1_idea
+					add_idea = AUS_agitation_efficiency_fascism_0_idea
+				}
+				set_variable = {
+					AUS_agitation_level = 0
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = AUS_agitation_efficiency_fascism_0_idea
+						has_idea = AUS_agitation_efficiency_communism_0_idea
+					}
+				}
+				add_political_power = -20
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.05
+				}
+			}
+			hidden_effect = {
+				activate_mission = AUS_agitation_mission
 			}
 		}
 	}

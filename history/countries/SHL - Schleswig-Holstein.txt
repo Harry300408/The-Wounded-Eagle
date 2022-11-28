@@ -162,6 +162,7 @@ set_popularities = {
 }
 
 add_ideas = {
+	GERMANY_member_of_confederation_idea
 }
 
 

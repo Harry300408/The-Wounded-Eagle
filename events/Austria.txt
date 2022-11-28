@@ -123,6 +123,7 @@ country_event = {
 	option = {
 		name = ausevents.7.b
 		leave_faction = yes
+		set_country_flag = AUS_confederation_disbanded_flag
 		AUS = {
 			set_autonomy = {
 				target = WSF
@@ -290,6 +291,7 @@ news_event = {
 	#fire_only_once = yes
 	option = {
 		name = ausevents.12.a
+		set_country_flag = AUS_confederation_disbanded_flag
 	}
 }
 # Victoria III Arrival in Vienna
