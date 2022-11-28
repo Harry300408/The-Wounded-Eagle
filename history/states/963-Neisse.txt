@@ -1,0 +1,30 @@
+state={
+	id=963
+	name="STATE_963"
+	provinces={
+		6512 9457 
+	}
+	resources={
+		steel = 4
+		aluminium = 2
+	}
+
+	history={
+		set_demilitarized_zone = yes
+		owner = PRE
+		victory_points = {
+			6512 1 
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = PRE
+		add_core_of = SIL
+
+	}
+	manpower= 501000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
