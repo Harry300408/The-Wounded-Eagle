@@ -273,6 +273,8 @@ hre_unified_fascism:0 "Holy Roman Empire"
 hre_unified_fascism_DEF:0 "the Holy Roman Empire"
 hre_unified_fascism_ADJ:0 "Holy Roman Empire"
 
+AUS_authoritarian_democracy:0 "Kingdom of Austria"
+
 ### MODIFIERS ###
 focus_diplo:0 "Diplomacy Focus"
 split_bayern:0 "Split Bayern"
@@ -290,6 +292,8 @@ AUS_ITA_require_crush_tt:0 "§Y[AUS.GetName]§! controls all §YEuropean States 
 AUS_ITA_require_lands_tt:0 "§YEach European State of [ITA.GetName]§!: Is controlled either by §Y[AUS.GetName]§! or §Y[ITA.GetName]§!."
 AUS_confederation_integrate_tt:0 "§YAll Confederation States§!: Get event '§Y[AUSEvent1]§!'."
 AUS_confederation_disbaded_tt:0 "The Confederation was disbanded."
+AUS_communism_influence_raise_tt:0 "One of communism ideologies ($communism$§!, $lib_socialism$§! or $rev_unionism$§W) will gain §Y4.0 influence§!."
+AUS_democratic_influence_raise_tt:0 "One of democratic ideologies ($democratic$§!, $social_democracy$§! or $liberalism$§W) will gain §Y4.0 influence§!."
 
 # Agitation Program TT
 AUS_agitation_base_time_gain_tt:0 "§YAgitation Mission§! base time will be increased by §G30§!."

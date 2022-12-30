@@ -128,17 +128,21 @@ set_technology = {
 }
 
 recruit_character = AUS_otto_von_h
+recruit_character = AUS_parliament
 
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = authoritarian_democracy
 	last_election = "1930.11.9"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
-	neutrality = 100
+	neutrality = 30
+	authoritarian_democracy = 48
+	communism = 7
+	fascism = 15
 }
 
 set_stability = 0.50

@@ -14,6 +14,9 @@
     red_futurism:0 "Red Futurism"
     red_futurism_desc:0 ""
 
+  communism_noun:0 "§tVanguard Marxism§!"
+  communism_drift:0 "Daily Support for §tVanguard Marxism§!"
+
   #Faction Name - AI needs this otherwise it freaks out for some reason
   VM_faction_name_1:0 "Marxist Workers’ Revolutionary Front"
 
@@ -34,7 +37,8 @@
     sen_thought:0 "Surya Sen Thought"
     sen_thought_desc:0 ""
 
-    rev_unionism_drift:0 "Daily Support for §tRevolutionary Unionism§!"
+  rev_unionism_drift:0 "Daily Support for §tRevolutionary Unionism§!"
+  rev_unionism_noun:0 "§tRevolutionary Unionism§!"
 
   #Faction Name
   RU_faction_name_1:0 "The Union of Brothers"
@@ -51,6 +55,9 @@
     market_socialism:0 "Market Socialism"
     market_socialism_desc:0 ""
     council_communism:0 "Market Socialism"
+
+  lib_socialism_drift:0 "Daily Support for §tLibertarian Socialism§!"
+  lib_socialism_noun:0 "§tLibertarian Socialism§!"
 
   #Faction Name
   LS_faction_name_1:0 "Peoples Front of Liberation"
@@ -69,6 +76,9 @@
     christian_socialism:0 "Christian Socialism"
     christian_socialism_desc:0 ""
 
+  social_democracy_drift:0 "Daily Support for §3Social Democracy§!"
+  social_democracy_noun:0 "§3Social Democracy§!"
+
   #Faction Name
   SD_faction_name_1:0 "Pact of Liberation"
 
@@ -85,11 +95,14 @@
     libertarianism_desc:0 ""
     an_cap:0 "Anarcho-Capitalism"
 
+  liberalism_drift:0 "Daily Support for §YLiberalism§!"
+  liberalism_noun:0 "§YLiberalism§!"
+
   #Faction Name
   L_faction_name_1:0 "The Liberal Front"
 
   #Conservitism
-    social_conservatism:0 "Social Sonservatism"
+    social_conservatism:0 "Social Conservatism"
     social_conservatism_desc:0 ""
     liberal_conservatism:0 "Liberal Conservatism"
     liberal_conservatism_desc:0 ""
@@ -100,16 +113,19 @@
     rw_pop:0 "Right-Wing Populism"
     rw_pop_desc:0 ""
 
+  democratic_drift:0 "Daily Support for §BConservitism§!"
+  democratic_noun:0 "§BConservitism§!"
+
   #Faction Name
   C_faction_name_1:0 "Entente Cordial"
 
   #Authoritarian Democracy
   authoritarian_democracy:0 "§gAuthoritarian Democracy§!"
   authoritarian_democracy_desc:0 ""
-    con_mon:0 "Constatutional Monarchy"
-    con_mon_desc:0 ""
-    semi_con_mon:0 "Semi-Constatutional Monarchy"
-    semi_con_mon_desc:0 ""
+    con_mon:0 "Constitutional Monarchy"
+    con_mon_desc:0 "A constitutional monarchy, parliamentary monarchy, or democratic monarchy is a form of monarchy in which the monarch exercises their authority in accordance with a constitution and is not alone in decision making. Constitutional monarchies differ from absolute monarchies (in which a monarch is the only decision-maker) in that they are bound to exercise powers and authorities within limits prescribed by an established legal framework."
+    semi_con_mon:0 "Semi-Constitutional Monarchy"
+    semi_con_mon_desc:0 "The concept of semi-constitutional monarch identifies constitutional monarchies where the monarch retains substantial powers, on a par with a president in a presidential or semi-presidential system. As a result, constitutional monarchies where the monarch has a largely ceremonial role may also be referred to as 'parliamentary monarchies' to differentiate them from semi-constitutional monarchies."
     oligarchy:0 "Oligarchy"
     oligarchy_desc:0 ""
     g_democracy:0 "Guided Democracy"
@@ -120,6 +136,9 @@
     corporatocracy_desc:0 ""
     st_democracy:0 "Stratocratic Democracy"
     st_democracy_desc:0 ""
+
+  authoritarian_democracy_drift:0 "Daily Support for §gAuthoritarian Democracy§!"
+  authoritarian_democracy_noun:0 "§gAuthoritarian Democracy§!"
 
   #Faction Name
   AD_faction_name_1:0 "The Monarchal Accords"
@@ -138,6 +157,9 @@
     military_despotism:0 "Military Despotism"
     military_despotism_desc:0 ""
 
+  despotism_drift:0 "Daily Support for §gDespotism§!"
+  despotism_noun:0 "§gDespotism§!"
+
   #Faction Name
   D_faction_name_1:0 "Alliance of Military Juntas"
 
@@ -152,6 +174,9 @@
     bonapartism_desc:0 ""
 		papal_theocracy:0 "Papal Theocracy"
 		papal_theocracy_desc:0 ""
+
+  neutrality_noun:0 "§0Absolute Monarchism§!"
+  neutrality_drift:0 "Daily Support for §0Absolute Monarchism§!"
 
   #Faction Name
   AM_faction_name_1:0 "The Loyal Forces"
@@ -169,6 +194,9 @@
     white_nationalism_desc:0 ""
     black_nationalism:0 "Black Nationalism"
     black_nationalism_desc:0 ""
+
+  ultranationalism_drift:0 "Daily Support for Ultranationalism"
+  ultranationalism_noun:0 "Ultranationalism"
 
   #Faction Name
   U_faction_name_1:0 "Ultranational Guard of Peoples"
@@ -189,6 +217,9 @@
     national_futurism:0 "National Futurism"
     national_futurism_desc:0 ""
 
+  fascism_drift:0 "Daily Support for §LNational Corporatism§!"
+  fascism_noun:0 "§LNational Corporatism§!"
+
   #Faction Name
   NC_faction_name_1:0 "Axis of Nationalist Powers"
 
@@ -205,6 +236,9 @@
     neo_feudalism_desc:0 ""
     eastern_occultism:0 "Eastern Occultism"
     eastern_occultism_desc:0 ""
+
+  rad_trad_drift:0 "Daily Support for Radical Traditionalism"
+  rad_trad_noun:0 "Radical Traditionalism"
 
   #Faction Name
   RT_faction_name_1:0 "Traditionalists"

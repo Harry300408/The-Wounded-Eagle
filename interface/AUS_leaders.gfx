@@ -6,6 +6,10 @@ spriteTypes = {
         name = GFX_otto_hab
         texturefile = gfx/leaders/AUS/otto_hab.dds
     }
+    spriteType = {
+        name = GFX_parliament
+        texturefile = gfx/leaders/AUS/AUS_Parliament_partrait.dds
+    }
 
 
 }
