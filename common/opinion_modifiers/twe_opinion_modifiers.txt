@@ -44,5 +44,10 @@ opinion_modifiers = {
 		value = -15
 
 	}
+	threatening_speech = {
+
+		value = -50
+
+	}
 
 }

@@ -28,6 +28,32 @@ characters = {
             #desc = 
         }
     }
+    AUS_Engelbert_Dollfuss = {
+        name = AUS_Engelbert_Dollfuss
+        portraits = {
+            civilian = {
+                large = "GFX_Engelbert_Dollfuss"
+            }
+        }
+        country_leader = {
+            ideology = nat_volkism
+            traits = {  }
+            #desc = 
+        }
+    }
+    AUS_Ernst_Kaltenbrunner = {
+        name = AUS_Ernst_Kaltenbrunner
+        portraits = {
+            civilian = {
+                large = "GFX_Ernst_Kaltenbrunner"
+            }
+        }
+        country_leader = {
+            ideology = ethnic_nationalism
+            traits = {  }
+            #desc = 
+        }
+    }
 
     ## Unit & Field Marshals ##
     ##Field Marshals

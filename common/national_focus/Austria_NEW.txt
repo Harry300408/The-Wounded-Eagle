@@ -637,7 +637,16 @@ focus_tree = {
 			focus = AUS_empower_right_wing
 		}
 		completion_reward = { 
-			
+			add_stability = 0.05
+			add_ideas = AUS_nationalist_sentiments_idea
+			add_popularity = {
+				ideology = ultranationalism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
 		}
 	}
 	focus = {
@@ -651,7 +660,9 @@ focus_tree = {
 			focus = AUS_empower_right_wing
 		}
 		completion_reward = { 
-			
+			add_political_power = 50
+			add_stability = 0.1
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -666,7 +677,10 @@ focus_tree = {
 			focus = AUS_increase_public_support
 		}
 		completion_reward = { 
-			
+			add_timed_idea = {
+				idea = AUS_national_movements_idea
+				days = 210
+			}
 		}
 	}
 	focus = {
@@ -686,7 +700,12 @@ focus_tree = {
 			focus = AUS_national_movements
 		}
 		completion_reward = { 
-			
+			add_political_power = 75
+			add_war_support = 0.15
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
 		}
 	}
 	focus = {
@@ -706,7 +725,18 @@ focus_tree = {
 			focus = AUS_national_movements
 		}
 		completion_reward = { 
-			
+			add_political_power = -25
+			add_war_support = 0.05
+			add_stability = 0.05
+			add_popularity = {
+				ideology = ultranationalism
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_ideas = AUS_all_fascist_party_idea
 		}
 	}
 	focus = {
@@ -720,12 +750,145 @@ focus_tree = {
 			focus = AUS_local_hegemony
 			focus = AUS_continent_dominance
 		}
+		available = {
+			ultranationalism > 0.30
+		}
 		prerequisite = {
 			focus = AUS_multi_fascist_party
 			focus = AUS_vaterlandische_front_dominance
 		}
 		completion_reward = { 
-			
+			news_event = { id = ausevents.17 hours = 12 }
+			add_popularity = {
+				ideology = ultranationalism
+				popularity = 0.2
+			}
+			DEN = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = threatening_speech
+				}
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = AUS
+					value = 100
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = AUS
+					value = -200
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = AUS
+					value = -200
+				}
+			}
+			HUN = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = threatening_speech
+				}
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = AUS
+					value = 100
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = AUS
+					value = -200
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = AUS
+					value = -200
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = threatening_speech
+				}
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = AUS
+					value = 100
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = AUS
+					value = -200
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = AUS
+					value = -200
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = threatening_speech
+				}
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = AUS
+					value = 100
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = AUS
+					value = -200
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = AUS
+					value = -200
+				}
+			}
+			ITA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = threatening_speech
+				}
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = AUS
+					value = 100
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = AUS
+					value = -200
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = AUS
+					value = -200
+				}
+			}
+			YUG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = threatening_speech
+				}
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = AUS
+					value = 100
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = AUS
+					value = -200
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = AUS
+					value = -200
+				}
+			}
 		}
 	}
 	focus = {
@@ -741,7 +904,9 @@ focus_tree = {
 			focus = AUS_local_hegemony
 		}
 		completion_reward = { 
-			
+			BAY = {
+				country_event = { id = ausevents.18 random_days = 2 }
+			}
 		}
 	}
 	focus = {
@@ -757,7 +922,9 @@ focus_tree = {
 			focus = AUS_local_hegemony
 		}
 		completion_reward = { 
-			
+			CZE = {
+				country_event = { id = ausevents.18 random_days = 2 }
+			}
 		}
 	}
 	focus = {
@@ -771,7 +938,31 @@ focus_tree = {
 			focus = AUS_revanchism
 		}
 		completion_reward = { 
-			
+			custom_effect_tooltip = AUS_if_focus_then_leader_fascism_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_focus = AUS_multi_fascist_party
+					}
+					set_politics = {
+						ruling_party = ultranationalism
+					}
+				}
+				else = {
+					set_politics = {
+						ruling_party = ultranationalism
+					}
+					retire_ideology_leader = ultranationalism
+					create_country_leader = {
+						name = AUS_Engelbert_Dollfuss
+						desc = ""
+						picture = GFX_Engelbert_Dollfuss
+						expire = "1965.1.1"
+						ideology = ethnic_nationalism
+						#traits = {  }
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -1155,20 +1346,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AUS_prepare_great_expansion
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 1
-		relative_position_id = AUS_continent_dominance
-		prerequisite = {
-			focus = AUS_continent_dominance
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
 		id = AUS_call_for_german_nationalists
 		icon = GFX_
 		cost = 10
@@ -1202,20 +1379,6 @@ focus_tree = {
 		icon = GFX_
 		cost = 10
 		x = -1
-		y = 1
-		relative_position_id = AUS_call_for_german_nationalists
-		prerequisite = {
-			focus = AUS_call_for_german_nationalists
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_military_trainings
-		icon = GFX_
-		cost = 10
-		x = 1
 		y = 1
 		relative_position_id = AUS_call_for_german_nationalists
 		prerequisite = {

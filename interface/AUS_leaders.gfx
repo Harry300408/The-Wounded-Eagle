@@ -10,6 +10,14 @@ spriteTypes = {
         name = GFX_parliament
         texturefile = gfx/leaders/AUS/AUS_Parliament_partrait.dds
     }
+    spriteType = {
+        name = GFX_Ernst_Kaltenbrunner
+        texturefile = gfx/leaders/AUS/AUS_Ernst_Kaltenbrunner_portrait.dds
+    }
+    spriteType = {
+        name = GFX_Engelbert_Dollfuss
+        texturefile = gfx/leaders/AUS/AUS_Engelbert_Dollfuss_portrait.dds
+    }
 
 
 }

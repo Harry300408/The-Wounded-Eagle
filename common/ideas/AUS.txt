@@ -151,100 +151,6 @@ ideas = {
 				industrial_capacity_factory = 0.05
 			}
 		}
-		AUS_arbieter_republik_idea = {
-			picture = GFX_
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				industrial_capacity_factory = 0.05
-				production_speed_industrial_complex_factor = 0.1
-				recruitable_population_factor = -0.05
-			}
-		}
-		AUS_home_of_revolution_idea = {
-			picture = GFX_
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				drift_defence_factor = 0.5
-			}
-			rule = {
-				can_create_factions = yes
-			}
-		}
-		#common_purpose_union
-		AUS_union_idea_0 = {
-			picture = GFX_
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				production_speed_buildings_factor = 0.15
-				army_core_defence_factor = 0.1
-				army_attack_factor = 0.1
-			}
-		}
-		#union_in_unity
-		AUS_union_idea_1 = {
-			picture = GFX_
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				production_speed_buildings_factor = 0.05
-				army_core_defence_factor = 0.05
-				army_attack_factor = 0.05
-				recruitable_population_factor = 0.1
-			}
-		}
-		#spirit_of_leninism
-		AUS_union_idea_2 = {
-			picture = GFX_
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				production_speed_buildings_factor = 0.2
-				army_core_defence_factor = 0.12
-				army_attack_factor = 0.12
-				recruitable_population_factor = 0.05
-				political_power_gain = -0.1
-			}
-		}
-		#peoples_spirit
-		AUS_union_idea_3 = {
-			picture = GFX_
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				production_speed_buildings_factor = 0.1
-				army_core_defence_factor = 0.08
-				army_attack_factor = 0.08
-				recruitable_population_factor = 0.12
-				political_power_gain = -0.05
-			}
-		}
 		AUS_vaterlandische_front_idea = {
 			picture = GFX_
 			allowed = {
@@ -259,55 +165,6 @@ ideas = {
 				neutrality_drift = -0.04
 				political_power_factor = 0.05
 				recruitable_population_factor = 0.05
-			}
-		}
-		AUS_revanchism_idea = {
-			picture = GFX_
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				army_attack_factor = 0.15
-				mobilization_speed = 0.25
-				recruitable_population_factor = 0.1
-				industrial_capacity_factory = -0.1
-				army_defence_factor = -0.15
-				political_power_factor = -0.3
-			}
-		}
-		AUS_will_of_victory_idea = {
-			picture = GFX_
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				army_attack_factor = 0.05
-				recruitable_population_factor = 0.05
-				industrial_capacity_factory = 0.1
-				army_defence_factor = 0.1
-				political_power_factor = 0.1
-			}
-		}
-		AUS_national_order_idea = {
-			picture = GFX_
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				industrial_capacity_factory = 0.1
-				mobilization_speed = 0.15
-				army_core_defence_factor = 0.1
-				army_core_attack_factor = 0.1
-				political_power_gain = -0.1
 			}
 		}
 		AUS_monarchism_continued_idea_0 = {
@@ -656,6 +513,54 @@ ideas = {
 				fascism_drift = 0.08
 				war_support_weekly = 0.002
 				autonomy_gain = -0.02
+			}
+		}
+		AUS_nationalist_sentiments_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				fascism_drift = 0.02
+				ultranationalism_drift = 0.02
+				war_support_weekly = 0.001
+				recruitable_population = 0.02
+			}
+		}
+		AUS_national_movements_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_gain = -0.1
+				democratic_drift = -0.03
+				authoritarian_democracy_drift = -0.03
+				neutrality_drift = -0.03
+				communism_drift = -0.03
+				liberalism_drift = -0.03
+				social_democracy_drift = -0.03
+				lib_socialism_drift = -0.03
+				despotism_drift = -0.03
+				rev_unionism_drift = -0.03
+			}
+		}
+		AUS_all_fascist_party_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.05
 			}
 		}
 	}

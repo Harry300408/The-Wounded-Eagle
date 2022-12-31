@@ -306,11 +306,12 @@ country_event = {
 		add_political_power = 25
 		add_stability = 0.05
 		create_country_leader = {
-			name = "Victoria Louise III"
+			name = AUS_Victoria_Louise_III
 			desc = "VICTORIA_LOUISE_III_DESC"
 			picture = "portrait_victoria_louise.dds"
 			expire = "1965.1.1"
-			ideology = despotism
+			ideology = classical_absolutism
+			female = yes
 			traits = { kaiserin_of_the_people victoria_iii }
 		}
 	}
@@ -356,5 +357,68 @@ country_event = {
 	#fire_only_once = yes
 	option = {
 		name = ausevents.16.a
+	}
+}
+# Leader Speech About Revanchism
+news_event = {
+	id = ausevents.17
+	title = ausevents.17.t
+	desc = ausevents.17.desc
+	picture = GFX_
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.17.a
+		trigger = {
+			NOT = {
+				tag = AUS
+			}
+		}
+	}
+	option = {
+		name = ausevents.17.b
+		trigger = {
+			tag = AUS
+		}
+	}
+}
+# AUS demand integration (confederation)
+country_event = {
+	id = ausevents.18
+	title = ausevents.18.t
+	desc = ausevents.18.desc
+	picture = GFX_
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.18.a
+		AUS = {
+			set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_integrated_puppet
+			}
+		}
+	}
+	option = {
+		name = ausevents.18.b
+		AUS = {
+			country_event = { id = ausevents.19 random_days = 2 }
+			create_wargoal = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+	}
+}
+# THIS rejected autonomy (confederation)
+country_event = {
+	id = ausevents.19
+	title = ausevents.19.t
+	desc = ausevents.19.desc
+	picture = GFX_
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.19.a
 	}
 }

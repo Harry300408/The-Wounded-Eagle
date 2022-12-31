@@ -129,6 +129,8 @@ set_technology = {
 
 recruit_character = AUS_otto_von_h
 recruit_character = AUS_parliament
+recruit_character = AUS_Engelbert_Dollfuss
+recruit_character = AUS_Ernst_Kaltenbrunner
 
 
 set_politics = {
@@ -139,10 +141,13 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 30
-	authoritarian_democracy = 48
-	communism = 7
-	fascism = 15
+	neutrality = 27
+	authoritarian_democracy = 45
+	democratic = 4
+	liberalism = 3
+	communism = 6
+	fascism = 12
+	ultranationalism = 3
 }
 
 set_stability = 0.50
