@@ -73,3 +73,20 @@ defined_text = {
         localization_key = AUS_agitation_efficiency_leninism
     }
 }
+defined_text = { 
+    name = ThisIconAvailableDyn
+
+    text = {
+        trigger = {
+            NOT = {
+                AUS = {
+                    has_country_flag = AUS_confederation_disbanded_flag
+                }
+            }
+        }
+        localization_key = TT_icon_available_yes
+    }
+    text = {
+        localization_key = TT_icon_available_not
+    }
+}
