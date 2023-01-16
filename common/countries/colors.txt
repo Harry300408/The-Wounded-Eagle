@@ -1,5 +1,40 @@
 #reload countrycolors
 #TWE Nations
+PAW = {
+	color = rgb { 0 201 33 }
+	color_ui = rgb { 0 201 33 }
+}
+
+MIA = {
+	color = rgb { 255 208 0 }
+	color_ui = rgb { 255 208 0 }
+}
+
+ARA = {
+	color = rgb { 22 120 134 }
+	color_ui = rgb { 22 120 134 }
+}
+
+BLF = {
+	color = rgb { 112 112 112 }
+	color_ui = rgb { 112 112 112 }
+}
+
+PEO = {
+	color = rgb { 97 165 104 }
+	color_ui = rgb { 97 165 104 }
+}
+
+ILC = {
+	color = rgb { 163 174 160 }
+	color_ui = rgb { 163 174 160 }
+}
+
+NOL = {
+	color = rgb { 0 0 219 }
+	color_ui = rgb { 0 0 219 }
+}
+
 YUC = {
 	color = rgb { 219 195 166 }
 	color_ui = rgb { 219 195 166 }
@@ -342,8 +377,8 @@ SWI = {
 	color_ui = rgb { 193 81 81 }
 }
 TUR = {
-	color = rgb { 0 119 11 }
-	color_ui = rgb { 0 119 11 }
+	color = rgb { 167 0 0 }
+	color_ui = rgb { 167 0 0 }
 }
 GRE = {
 	color = rgb { 93 181 227 }

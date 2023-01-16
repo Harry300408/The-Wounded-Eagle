@@ -11,13 +11,13 @@ state={
 	}
 
 	history={
-		owner = LAC
+		owner = ILC
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2
 			air_base = 5
 		}
-		add_core_of = LAC
+		add_core_of = ILC
 		victory_points = {
 			7552 10 
 		}
@@ -25,7 +25,7 @@ state={
 	}
 
 	provinces={
-		1559 4522 4535 7555 7599 12398 
+		1559 4522 7555 7599  
 	}
 
 	local_supplies=0.0 

@@ -32,13 +32,8 @@ AUS_increase_public_support:0 "Increase Public Support"
 AUS_national_movements:0 "National Movements"
 AUS_multi_fascist_party:0 "Multi-Fascist Party"
 AUS_vaterlandische_front_dominance:0 "Vaterlandische Front Dominance"
-AUS_osterkommisariat_bavaria:0 "Österkommisariat Bayern"
-AUS_osterstaadt_bohemia:0 "Österstaadt Bohemia"
 AUS_revanchism:0 "Revanchism"
 AUS_ein_kanzler_ein_reich:0 "Ein Kanzler, Ein Reich"
-AUS_learn_from_past_defeats:0 "Learn From Past Defeats"
-AUS_old_new_empire:0 "Old New Empire"
-AUS_grosses_osterreich:0 "Großes Österriech"
 
 # Monarchist focuses #
 AUS_revive_monarchism:0 "Revive Monarchism"
@@ -152,7 +147,7 @@ ausevents.16.desc:0 "With the recently gained our support [AUS.GetName], after d
 ausevents.16.a:0 "Good Deal between two Empires."
 
 ausevents.17.t:0 "[AUS.GetLeader] Revanchist Speech"
-ausevents.17.desc:0 "Early this day the leader of [AUS.GetNameDef] [AUS.GetLeader] made an agressive revanchist speech about fall of the empire, its causes and those who are reason for that and those causes. He also mentioned the past defeats of Austria in which he took more attention to the defeats in Coalition wars against Napoleon Bonapart. \nEnding the speech with an announcement of establishment of own special path for [AUS.GetName] and calling it the plan for 'Großes Österreich'."
+ausevents.17.desc:0 "Early this day the leader of [AUS.GetNameDef] [AUS.GetLeader] made an agressive revanchist speech about fall of the empire, its causes and those who are reason for that and those causes. He also mentioned the past defeats of Austria in which he took more attention to the defeats in Coalition wars against Napoleon Bonapart. \nEnding the speech with an announcement of establishment of own special path for [AUS.GetName] and calling it the plan for 'Großes Öasterrech'."
 ausevents.17.a:0 "Did they just made a threat?"
 ausevents.17.b:0 "Zum Ruhm Österreichs!"
 
@@ -164,11 +159,6 @@ ausevents.18.b:0 "Let them have our bullets first!"
 ausevents.19.t:0 "[FROM.GetName] Rejected our Proposal"
 ausevents.19.desc:0 "[FROM.GetNameDef] Gave us straight answer to our proposal of semi-integrating them: no."
 ausevents.19.a:0 "So they've chosen death."
-
-ausevents.20.t:0 "The Großes Österriech"
-ausevents.20.desc:0 "[?ROOT.days_after_speech] days passed since Revanchist speech from [AUS.GetLeader], and now they publicly announce start for 'New and Better Austria' - Großes Österriech. Threatened states are preparing for military maneuvers from [AUS.GetName] and/or its declaration of war."
-ausevents.20.a:0 "There will be a war soon..."
-ausevents.20.b:0 "For the glorious future of the Großes Österriech"
 
 ### IDEAS ###
 AUS_monarchism_abandoned_idea_0:0 "Monarchism Abandoned"
@@ -224,17 +214,6 @@ hre_unified_fascism_DEF:0 "the Holy Roman Empire"
 hre_unified_fascism_ADJ:0 "Holy Roman Empire"
 
 AUS_authoritarian_democracy:0 "Kingdom of Austria"
-AUS_gross_osterreich:0 "Großes Österriech"
-
-AUS_ultranationalism:0 "Österreich"
-AUS_ultranationalism_DEF:0 "the Österreich"
-AUS_ultranationalism_ADJ:0 "Österreich"
-
-### ALLIANCES ###
-AUS_federation_faction:0 "Federation"
-AUS_confederation_of_united_european_nations_faction:0 "K.V.E.N"
-AUS_confederation_of_united_european_nations_faction_long:0 "Konföderation der Vereinten Europäischen Nationen (K.V.E.N)"
-GERMANY_member_of_confederation_idea:0 "Member of the Confederation"
 
 ### MODIFIERS ###
 focus_diplo:0 "Diplomacy Focus"
@@ -257,10 +236,6 @@ AUS_confederation_disbaded_tt:0 "The Confederation was disbanded."
 AUS_communism_influence_raise_tt:0 "One of communism ideologies ($communism$§!, $lib_socialism$§! or $rev_unionism$§W) will gain §Y4.0 influence§!."
 AUS_democratic_influence_raise_tt:0 "One of democratic ideologies ($democratic$§!, $social_democracy$§! or $liberalism$§W) will gain §Y4.0 influence§!."
 AUS_if_focus_then_leader_fascism_tt:0 "If has completed focus §Y$AUS_multi_fascist_party$§! then the Ultranationalists under rule of §Y$AUS_Ernst_Kaltenbrunner$§! will take power. \nIf has completed focus §Y$AUS_vaterlandische_front_dominance$§! then §Y$AUS_Engelbert_Dollfuss$§! will take power over Ultranationalists and they will become ruling party."
-GERMANY_member_of_confederation_idea_desc:0 "§WAvailable: $TT_icon_available_chk$ The §YConfederation§! is not disbanded.§!"
-TT_icon_available_chk:1 "[ThisIconAvailableDyn]"
-TT_icon_available_not:0 "£GFX_accept_decline_icon|1"
-TT_icon_available_yes:0 "£GFX_accept_decline_icon|2"
 
 # Agitation Program TT
 AUS_agitation_base_time_gain_tt:0 "§YAgitation Mission§! base time will be increased by §G30§!."

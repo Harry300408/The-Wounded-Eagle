@@ -3,13 +3,13 @@ state = {
 	name = "STATE_922"
 
 	history = {
-		owner = LAC
-		add_core_of = LAC
+		owner = BLF
+		add_core_of = BLF
 
 	}
 
 	provinces = {
-		1756 6887 10535 3869 1827 10588 1809 12570 12642 11772 7780
+		1756 6887 10535 3869 1827 10588 12633 12561
 	}
 	manpower = 5000 
 	buildings_max_level_factor = 1.000

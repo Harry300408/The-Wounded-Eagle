@@ -12,12 +12,12 @@ state={
 
 
 	history={
-		owner = LAC
+		owner = ILC
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 		}
-		add_core_of = LAC
+		add_core_of = ILC
 		victory_points = {
 			12489 1 
 		}

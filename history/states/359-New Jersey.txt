@@ -24,6 +24,10 @@ state={
 		3693 3863 6882 9801 9864 11740 11782 11900 
 	}
 	
+	resources = {
+		fish = 4	
+	}
+	
 
 	local_supplies=15.0 
 }

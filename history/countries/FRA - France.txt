@@ -46,15 +46,33 @@ set_research_slots = 3
 set_stability = 0.5
 add_command_power = 20
 
-set_autonomy = {
-	target = NGR
-	autonomous_state = autonomy_FRA_proc
-}
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
 
-set_autonomy = {
-	target = VIN
-	autonomous_state = autonomy_FRA_proc
-}
+	set_autonomy = {
+		target = NGR
+		autonomous_state = autonomy_FRA_proc
+	}
+
+	set_autonomy = {
+		target = VIN
+		autonomous_state = autonomy_FRA_proc
+	}
+
+	set_autonomy = {
+		target = TUN
+		autonomous_state = autonomy_integrated_puppet
+	}
+
+	else = {
+		puppet = VIN
+		puppet = NGR
+		puppet = TUN
+	}
+
+}	
 
 NGR = {
 	set_cosmetic_tag = NGR_proc

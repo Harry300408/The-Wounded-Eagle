@@ -1,0 +1,10 @@
+﻿l_english:
+  rule_brittania:0 "Rule Britannia?"
+    asia_q:0 "The Asian Question?"
+      SIAM_1:0 "SIAM Stage 1"
+      SIAM_2:0 "SIAM Stage 2"
+      SIAM_3:0 "SIAM Stage 3"
+      SIAM_4:0 "SIAM Stage 4"
+    NA_q:0 "The North American Question?"
+    africa_q:0 "The African Question"
+    

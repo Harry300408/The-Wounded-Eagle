@@ -1,0 +1,21 @@
+state = {
+	id = 976
+	name = "STATE_976"
+	provinces={
+		4760 4830 10606
+	}
+	history = {
+		owner = PAW
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = PAW
+
+	}
+
+	manpower = 20100
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 0.000
+}

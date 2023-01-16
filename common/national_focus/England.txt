@@ -1,0 +1,145 @@
+focus_tree = {
+	id = ENG
+	country = { 
+		base = 0
+		modifier = {
+			tag = ENG
+			add = 100
+		}
+	}
+	continuous_focus_position = {
+		x = 0
+		y = 1000
+	}
+	########################
+	#  F O C U S  T R E E  #
+	########################
+	
+	############################
+	# C O L O N I A L  T R E E # 
+	############################
+
+	focus = {
+		id = rule_brittania
+		x = 0
+		y = 0
+		icon = GFX_focus_rule_brittania
+	
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = NA_q
+		x = 0
+		y = 1
+		icon = GFX_focus_NA_q
+		prerequisite = { focus = rule_brittania}
+	
+		cost = 1
+	
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = africa_q
+		x = 2
+		y = 1
+		icon = GFX_focus_africa_q
+		prerequisite = { focus = rule_brittania}
+	
+		cost = 1
+	
+		completion_reward = {
+	
+		}
+	}
+
+	## ASIAN QUESTION
+
+	focus = {
+		id = asia_q
+		x = -2
+		y = 1
+		icon = GFX_focus_asian_q
+		prerequisite = { focus = rule_brittania}
+	
+		cost = 1
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SIAM_1
+		x = -2
+		y = 2
+		icon = GFX_focus_SIAM_1
+		prerequisite = { focus = asia_q }
+	
+		cost = 1
+	
+		completion_reward = {
+			set_country_flag = can_do_SIAM_1
+		}
+	}
+
+	focus = {
+		id = SIAM_2
+		x = -2
+		y = 3
+		icon = GFX_focus_SIAM_1
+		prerequisite = { focus = SIAM_1 }
+	
+		cost = 1
+	
+		completion_reward = {
+			set_country_flag = can_do_SIAM_2
+		}
+	}
+
+	focus = {
+		id = SIAM_3
+		x = -4
+		y = 3
+		icon = GFX_focus_SIAM_1
+		prerequisite = { focus = SIAM_1 }
+	
+		cost = 1
+	
+		completion_reward = {
+			set_country_flag = can_do_SIAM_3
+		}
+	}
+
+	focus = {
+		id = SIAM_4
+		x = -3
+		y = 4
+		icon = GFX_focus_SIAM_1
+		prerequisite = { focus = SIAM_2 }
+		prerequisite = { focus = SIAM_3 }
+	
+		cost = 1
+	
+		completion_reward = {
+			set_country_flag = can_do_SIAM_4
+		}
+	}
+	
+	################################
+	# M I L I T A R Y  B R A N C H #
+	################################
+	
+	################################
+	# I N D U S T R Y  B R A N C H #
+	################################
+
+	########################
+	# B A S E  B R A N C H #
+	########################
+}

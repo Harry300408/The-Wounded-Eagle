@@ -254,6 +254,11 @@ if = {
 		autonomous_state = autonomy_commonwealth_proc
 	}
 
+	set_autonomy = {
+		target = NOL
+		autonomous_state = autonomy_commonwealth_proc
+	}
+
 	else = {
 		puppet = BOR
 		puppet = MAL
@@ -270,6 +275,7 @@ if = {
 		puppet = NBW
 		puppet = IRE
 		puppet = PNG
+		puppet = NOL
 
 	}
 }

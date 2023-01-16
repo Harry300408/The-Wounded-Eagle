@@ -8,6 +8,9 @@ state={
 		owner = CAN
 		add_core_of = CAN
 	}
+	resources = {
+		fish = 10
+	}
 	manpower=110000
 	state_category = rural
 	buildings_max_level_factor=1.000
