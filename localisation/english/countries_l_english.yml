@@ -1,6 +1,34 @@
 ﻿l_english:
  # TWE Base Nations
 
+ PAW:0 "Pawnee"
+ PAW_DEF:0 "Pawnee"
+ PAW_ADJ:0 "Native American" 
+
+ MIA:0 "Miami"
+ MIA_DEF:0 "Miami"
+ MIA_ADJ:0 "Native American"
+
+ ARA:0 "Arapaho"
+ ARA_DEF:0 "Arapaho"
+ ARA_ADJ:0 "Native American"
+
+ BLF:0 "Black Foot"
+ BLF_DEF:0 "Black Foot"
+ BLF_ADJ:0 "Native American"
+
+ PEO:0 "Peoria"
+ PEO_DEF:0 "Peoria"
+ PEO_ADJ:0 "Native American"
+
+ ILC:0 "Illionis Confederation"
+ ILC_DEF:0 "the Illionis Confederation"
+ ILC_ADJ:0 "Native American"
+ 
+ NOL:0 "New Orleans"
+ NOL_DEF:0 "New Orleans"
+ NOL_ADJ:0 "American"
+
  #Other Colombia loc is listed below
  COL_despotism:0 "Gran Colombia"
  COL_despotism_DEF:0 "Gran Colombia"
@@ -25,8 +53,8 @@
  MEX_DEF:0 "Mexico"
  MEX_ADJ:0 "Mexican"  
  
- ENG_social_democracy:0 "Republic of Britain"
- ENG_social_democracy_DEF:0 "The Republic of Britain"
+ ENG_social_democracy:0 "United Kingdom of Britain"
+ ENG_social_democracy_DEF:0 "The United Kingdom of Britain"
  ENG_social_democracy_ADJ:0 "British"
  ENG:0 "Britain"
  ENG_DEF:0 "Britain"
@@ -2588,12 +2616,12 @@
  MOR_ADJ:0 "Moroccan"
  TUN_fascism:1 "Barbary Tunis"
  TUN_fascism_DEF:1 "Barbary Tunis"
- TUN_democratic:1 "Republic of Tunisia"
- TUN_democratic_DEF:1 "the Republic of Tunisia"
- TUN_neutrality:0 "Tunisia"
- TUN_neutrality_DEF:0 "Tunisia"
- TUN_communism:1 "Communist State of Tunisia"
- TUN_communism_DEF:1 "the Communist State of Tunisia"
+ TUN_democratic:1 "Republic of Tunis"
+ TUN_democratic_DEF:1 "the Republic of Tunis"
+ TUN_neutrality:0 "Tunis"
+ TUN_neutrality_DEF:0 "Tunis"
+ TUN_communism:1 "Communist State of Tunis"
+ TUN_communism_DEF:1 "the Communist State of Tunis"
  TUN_fascism_ADJ:1 "Barbary"
  TUN_democratic_ADJ:0 "Tunisian"
  TUN_neutrality_ADJ:0 "Tunisian"

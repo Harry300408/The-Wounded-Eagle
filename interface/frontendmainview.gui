@@ -292,7 +292,7 @@ guiTypes = {
 			text = "update_ver_f"	
 			format = left
 			maxWidth = 250
-			maxHeight = 150	
+			maxHeight = 190	
 			scrollbartype = "standardtext_slider" 
 		}
 

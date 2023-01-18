@@ -1,0 +1,176 @@
+resources = {
+
+	oil = {
+		icon_frame = 1
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	aluminium = {
+		icon_frame = 2
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	rubber = {
+		icon_frame = 3
+		cic = 0.125
+		convoys = 0.1
+	}
+	
+	tungsten = {
+		icon_frame = 4
+		cic = 0.125
+		convoys = 0.1
+	}
+	
+	steel = {
+		icon_frame = 5
+		cic = 0.125
+		convoys = 0.1
+	}
+	
+	chromium = {
+		icon_frame = 6
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	fish = {
+		icon_frame = 7
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	grain = {
+		icon_frame = 8
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	wood = {
+		icon_frame = 9
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	coffee = {
+		icon_frame = 10
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	fruit = {
+		icon_frame = 11
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	gold = {
+		icon_frame = 12
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	meat = {
+		icon_frame = 13
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	opium = {
+		icon_frame = 14
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	sugar = {
+		icon_frame = 15
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	tobcco = {
+		icon_frame = 16
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	coal = {
+		icon_frame = 17
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	iron = {
+		icon_frame = 18
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	lead = {
+		icon_frame = 19
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	gun_parts = {
+		icon_frame = 20
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	silk = {
+		icon_frame = 21
+		cic = 0.125
+		convoys = 0.1
+	}
+
+	sulfur = {
+		icon_frame = 22
+		cic = 0.125
+		convoys = 0.1
+	}
+	
+	fur = {
+		icon_frame = 23
+		cic = 0.125
+		convoys = 0.1
+	} 
+
+	copper = {
+		icon_frame = 24
+		cic = 0.125
+		convoys = 0.1
+	} 
+
+	spices = {
+		icon_frame = 25
+		cic = 0.125
+		convoys = 0.1
+	}  
+
+	tea = {
+		icon_frame = 26
+		cic = 0.125
+		convoys = 0.1
+	} 
+
+	cocoa = {
+		icon_frame = 27
+		cic = 0.125
+		convoys = 0.1
+	} 
+
+	cotton = {
+		icon_frame = 28
+		cic = 0.125
+		convoys = 0.1
+	} 
+
+	copper = {
+		icon_frame = 29
+		cic = 0.125
+		convoys = 0.1
+	} 
+}

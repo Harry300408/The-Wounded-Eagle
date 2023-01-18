@@ -417,7 +417,7 @@ focus_tree = {
 		id = AUS_prepare_sabotage
 		icon = GFX_focus_AUS_prepare_sabotage
 		cost = 5
-		x = -11
+		x = -9
 		y = 1
 		relative_position_id = AUS_new_osterreich
 		mutually_exclusive = {
@@ -454,7 +454,7 @@ focus_tree = {
 		id = AUS_agitation_program
 		icon = GFX_focus_AUS_agitation_program
 		cost = 5
-		x = 5
+		x = 4
 		y = 2
 		relative_position_id = AUS_prepare_sabotage
 		prerequisite = {
@@ -622,39 +622,6 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = AUS_arrange_unionist_conference
-		icon = GFX_
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = AUS_empower_kpo
-		prerequisite = {
-			focus = AUS_empower_kpo
-		}
-		available = {
-		}
-		completion_reward = { 
-		}
-	}
-	focus = {
-		id = AUS_international_unionist_council
-		icon = GFX_
-		cost = 0
-		x = 0
-		y = 2
-		relative_position_id = AUS_empower_kpo
-		prerequisite = {
-			focus = AUS_arrange_unionist_conference
-		}
-		completion_reward = { 
-			set_politics = {
-				ruling_party = communism
-				election_frequency = 12
-				elections_allowed = yes
-			}
-		}
-	}
 
 	### ----------------------------------- ###
 	### ------- EMPOWER RIGHT WING -------- ###
@@ -791,10 +758,6 @@ focus_tree = {
 			focus = AUS_vaterlandische_front_dominance
 		}
 		completion_reward = { 
-			set_variable = {
-				var = ROOT.days_after_speech
-				value = 0
-			}
 			news_event = { id = ausevents.17 hours = 12 }
 			add_popularity = {
 				ideology = ultranationalism
@@ -937,6 +900,8 @@ focus_tree = {
 		relative_position_id = AUS_revanchism
 		prerequisite = {
 			focus = AUS_revanchism
+			focus = AUS_continent_dominance
+			focus = AUS_local_hegemony
 		}
 		completion_reward = { 
 			BAY = {
@@ -953,6 +918,8 @@ focus_tree = {
 		relative_position_id = AUS_revanchism
 		prerequisite = {
 			focus = AUS_revanchism
+			focus = AUS_continent_dominance
+			focus = AUS_local_hegemony
 		}
 		completion_reward = { 
 			CZE = {
@@ -1009,8 +976,7 @@ focus_tree = {
 			focus = AUS_ein_kanzler_ein_reich
 		}
 		completion_reward = { 
-			add_war_support = 0.05
-			add_ideas = AUS_mind_militarisation_idea
+			
 		}
 	}
 	focus = {
@@ -1024,11 +990,7 @@ focus_tree = {
 			focus = AUS_ein_kanzler_ein_reich
 		}
 		completion_reward = { 
-			add_stability = 0.02
-			add_popularity = {
-				ideology = ultranationalism
-				popularity = 0.05
-			}
+			
 		}
 	}
 	focus = {
@@ -1045,58 +1007,7 @@ focus_tree = {
 			focus = AUS_old_new_empire
 		}
 		completion_reward = { 
-			set_cosmetic_tag = AUS_gross_osterreich
-			add_stability = 0.05
-			set_variable = {
-				var = ROOT.days_after_speech
-				value = -2
-			}
-			news_event = { id = ausevents.20 random_days = 2 }
-			set_country_flag = AUS_confederation_disbanded_flag
-			if = {
-				limit = {
-					ROOT = {
-						is_faction_leader = yes
-					}
-				}
-				every_country = {
-					limit = {
-						is_in_faction_with = ROOT
-						is_puppet = no
-					}
-					add_to_array = {
-						array = AUS.countries_faction_transfer_array
-						value = THIS.id
-					}
-				}
-				dismantle_faction = yes
-			}
-			else = {
-				every_country = {
-					limit = {
-						is_in_faction_with = ROOT
-					}
-					leave_faction = yes
-				}
-			}
-			effect_tooltip = {
-				create_faction = AUS_confederation_of_united_european_nations_faction_long
-			}
-			hidden_effect = {
-				create_faction = AUS_confederation_of_united_european_nations_faction
-			}
-			every_country = {
-				limit = {
-					is_in_array = {
-						array = AUS.countries_faction_transfer_array
-						value = THIS.id
-					}
-				}
-				AUS = {
-					add_to_faction = THIS
-				}
-			}
-			clear_array = AUS.countries_faction_transfer_array
+			
 		}
 	}
 	focus = {
@@ -1110,23 +1021,7 @@ focus_tree = {
 			focus = AUS_grosses_osterreich
 		}
 		completion_reward = { 
-			#This effects will be moved into decision tab so the player
-			#can individually send ultimatums
-			BAY = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			CZE = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			ULM = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			BAD = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			WUR = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
+			
 		}
 	}
 	focus = {
@@ -1140,16 +1035,7 @@ focus_tree = {
 			focus = AUS_grosses_osterreich
 		}
 		completion_reward = { 
-			#This effects will be moved into decision tab so the player
-			#can individually send ultimatums
-			create_wargoal = {
-				target = SWI
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = FRA
-				type = annex_everything
-			}
+			
 		}
 	}
 	focus = {
@@ -1163,16 +1049,7 @@ focus_tree = {
 			focus = AUS_grosses_osterreich
 		}
 		completion_reward = { 
-			#This effects will be moved into decision tab so the player
-			#can individually send ultimatums
-			create_wargoal = {
-				target = YUG
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = ITA
-				type = annex_everything
-			}
+			
 		}
 	}
 	focus = {
@@ -1186,42 +1063,7 @@ focus_tree = {
 			focus = AUS_grosses_osterreich
 		}
 		completion_reward = { 
-			#This effects will be moved into decision tab so the player
-			#can individually send ultimatums
-			create_wargoal = {
-				target = SOV
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = HUN
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = ROM
-				type = annex_everything
-			}
-			if = {
-				limit = {
-					POL = {
-						is_puppet = no
-					}
-				}
-				create_wargoal = {
-					target = POL
-					type = annex_everything
-				}
-			}
-			if = {
-				limit = {
-					SLO = {
-						is_puppet = no
-					}
-				}
-				create_wargoal = {
-					target = SLO
-					type = annex_everything
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -1235,35 +1077,7 @@ focus_tree = {
 			focus = AUS_grosses_osterreich
 		}
 		completion_reward = { 
-			#This effects will be moved into decision tab so the player
-			#can individually send ultimatums
-			WSF = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			THU = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			SAX = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			DBS = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			HAN = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			OLD = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			PRE = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			MEK = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			SHL = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
+			
 		}
 	}
 	focus = {
@@ -1280,47 +1094,7 @@ focus_tree = {
 			focus = AUS_plan_sud_deutschland
 		}
 		completion_reward = { 
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = SHL
-						is_core_of = MEK
-						is_core_of = PRE
-						is_core_of = OLD
-						is_core_of = HAN
-						is_core_of = DBS
-						is_core_of = SAX
-						is_core_of = THU
-						is_core_of = WSF
-						is_core_of = BAY
-						is_core_of = ULM
-						is_core_of = BAD
-						is_core_of = WUR
-						is_core_of = CZE
-					}
-					28 = {
-						is_fully_controlled_by = AUS
-					}
-					962 = {
-						is_fully_controlled_by = AUS
-					}
-					42 = {
-						is_fully_controlled_by = AUS
-					}
-					51 = {
-						is_fully_controlled_by = AUS
-					}
-					969 = {
-						is_fully_controlled_by = AUS
-					}
-					8 = {
-						is_fully_controlled_by = AUS
-					}
-					is_fully_controlled_by = AUS
-				}
-				add_compliance = 0.1
-				add_claim_by = AUS
-			}
+			
 		}
 	}
 	focus = {

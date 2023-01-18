@@ -493,16 +493,9 @@ ideas = {
 			}
 		}
 		GERMANY_member_of_confederation_idea = {
-			picture = member_of_confederation
+			picture = GFX_
 			allowed = {
 				always = yes
-			}
-			available = {
-				NOT = {
-					AUS = {
-						has_country_flag = AUS_confederation_disbanded_flag
-					}
-				}
 			}
 			allowed_civil_war = {
 				always = yes
@@ -568,21 +561,6 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = 0.05
-			}
-		}
-		AUS_mind_militarisation_idea = {
-			picture = GFX_
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				experience_gain_army_factor = 0.05
-				army_org_factor = 0.05
-				army_defence_factor = 0.1
-				army_attack_factor = 0.1
 			}
 		}
 	}

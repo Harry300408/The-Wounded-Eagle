@@ -24,6 +24,20 @@ set_technology = {
 
 if = {
 	limit = {
+		has_dlc = "Together for Victory"
+	}
+
+	set_autonomy = {
+		target = OLD
+		autonomous_state = autonomy_AUS_fed
+	}
+
+	else = {
+		puppet = OLD
+	}
+}
+if = {
+	limit = {
 		NOT = { has_dlc = "By Blood Alone" }
 	}
 	set_technology = {
