@@ -17,106 +17,82 @@ WUR = { set_country_flag = ger_conf_member }
 BAD = { set_country_flag = ger_conf_member }
 ULM = { set_country_flag = ger_conf_member }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-
-
-	set_autonomy = {
-		target = PRE
-		autonomous_state = autonomy_AUS_fed
-	}
-
-	set_autonomy = {
-		target = MEK
-		autonomous_state = autonomy_AUS_fed
-	}
-
-	set_autonomy = {
-		target = SHL
-		autonomous_state = autonomy_AUS_fed
-	}
-
-	set_autonomy = {
-		target = DBS
-		autonomous_state = autonomy_AUS_fed
-	}
-	
-	set_autonomy = {
-		target = SAX
-		autonomous_state = autonomy_AUS_fed
-	}
-	
-	set_autonomy = {
-		target = THU
-		autonomous_state = autonomy_AUS_fed
-	}
-	
-	set_autonomy = {
-		target = BAY
-		autonomous_state = autonomy_AUS_fed
-	}
-	
-	set_autonomy = {
-		target = HAN
-		autonomous_state = autonomy_AUS_fed
-	}
-	
-	set_autonomy = {
-		target = WSF
-		autonomous_state = autonomy_AUS_fed
-	}
-	
-	set_autonomy = {
-		target = WUR
-		autonomous_state = autonomy_AUS_fed
-	}
-	
-	set_autonomy = {
-		target = BAD
-		autonomous_state = autonomy_AUS_fed
-	}
-	
-	set_autonomy = {
-		target = ULM
-		autonomous_state = autonomy_AUS_fed
-	}
-	
-	# Austrian Empire
-	set_autonomy = {
-		target = CZE
-		autonomous_state = autonomy_personal_union
-	}
-	
-	set_autonomy = {
-		target = CMR
-		autonomous_state = autonomy_personal_union
-	}
-
-	else = {
-		puppet = PRE
-		puppet = MEK
-		puppet = SHL
-		puppet = DBS
-		puppet = SAX
-		puppet = THU
-		puppet = BAY
-		puppet = HAN
-		puppet = WSF 
-		puppet = WUR
-		puppet = WUR
-		puppet = BAD
-		puppet = ULM
-
-		#AUS Empire
-		puppet = CZE
-		puppet = CMR 
-	}
-
-
-
+set_autonomy = {
+	target = PRE
+	autonomous_state = autonomy_AUS_fed
 }
+
+set_autonomy = {
+	target = MEK
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = SHL
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = DBS
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = SAX
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = THU
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = BAY
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = HAN
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = OLD
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = WSF
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = WUR
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = BAD
+	autonomous_state = autonomy_AUS_fed
+}
+
+set_autonomy = {
+	target = ULM
+	autonomous_state = autonomy_AUS_fed
+}
+
+# Austrian Empire
+set_autonomy = {
+	target = CZE
+	autonomous_state = autonomy_personal_union
+}
+
+set_autonomy = {
+	target = CMR
+	autonomous_state = autonomy_personal_union
+}
+
 
 create_faction = "ger_conf"
 add_to_faction = AUS
