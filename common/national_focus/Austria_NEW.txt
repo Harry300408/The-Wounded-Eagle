@@ -9,7 +9,7 @@ focus_tree = {
 		}
 	}
 	continuous_focus_position = {
-		x = 3450
+		x = 3550
 		y = 1100
 	}
 
@@ -2881,6 +2881,52 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = AUS_coronation_of_adelheid
+		icon = GFX_
+		cost = 5
+		x = -1
+		y = 4
+		relative_position_id = AUS_restoration_plan
+		prerequisite = {
+			focus = AUS_restore_fallen_empire
+		}
+		prerequisite = {
+			focus = AUS_tragedy_for_austria
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_coronation_of_otto
+		icon = GFX_
+		cost = 5
+		x = -3
+		y = 4
+		relative_position_id = AUS_restoration_plan
+		prerequisite = {
+			focus = AUS_restore_fallen_empire
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_annex_bohemia
+		icon = GFX_
+		cost = 5
+		x = -2
+		y = 5
+		relative_position_id = AUS_restoration_plan
+		prerequisite = {
+			focus = AUS_coronation_of_adelheid
+			focus = AUS_coronation_of_otto
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
 		id = AUS_empower_constitutional_monarchy
 		icon = GFX_
 		cost = 10
@@ -2964,25 +3010,252 @@ focus_tree = {
 		id = AUS_tragedy_for_austria
 		icon = GFX_
 		cost = 1
-		x = 2
+		x = -2
 		y = 1
 		relative_position_id = AUS_flight_to_konigsberg
 		prerequisite = {
 			focus = AUS_flight_to_konigsberg
+			focus = AUS_restore_fallen_empire
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_otto_von_habsburg_died_focus_skip_tt
+				has_country_flag = AUS_otto_died_flag
+			}
 		}
 		completion_reward = { 
 			
 		}
 	}
 	focus = {
-		id = AUS_
+		id = AUS_prussian_volunteer
 		icon = GFX_
-		cost = 5
-		x = 0
+		cost = 1
+		x = 3
 		y = 1
 		relative_position_id = AUS_tragedy_for_austria
 		prerequisite = {
 			focus = AUS_tragedy_for_austria
+		}
+		prerequisite = {
+			focus = AUS_flight_to_konigsberg
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_events_over_focus_skip_tt
+				has_country_flag = AUS_victoria_new_leader_flag
+			}
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_grow_support_royal_administration
+		icon = GFX_
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = AUS_prussian_volunteer
+		prerequisite = {
+			focus = AUS_prussian_volunteer
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_grow_national_support
+		icon = GFX_
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = AUS_prussian_volunteer
+		prerequisite = {
+			focus = AUS_prussian_volunteer
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_coronation_of_the_kaiserin
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_prussian_volunteer
+		prerequisite = {
+			focus = AUS_grow_support_royal_administration
+		}
+		prerequisite = {
+			focus = AUS_grow_national_support
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_austro_prussian_relations
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = AUS_coronation_of_the_kaiserin
+		prerequisite = {
+			focus = AUS_coronation_of_the_kaiserin
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_proclaim_hre_ambitions
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_coronation_of_the_kaiserin
+		prerequisite = {
+			focus = AUS_coronation_of_the_kaiserin
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_austro_prussian_commonwealth
+		icon = GFX_
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = AUS_coronation_of_the_kaiserin
+		prerequisite = {
+			focus = AUS_austro_prussian_relations
+		}
+		prerequisite = {
+			focus = AUS_proclaim_hre_ambitions
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_unification_plans
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = AUS_austro_prussian_commonwealth
+		prerequisite = {
+			focus = AUS_austro_prussian_commonwealth
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_integrate_bohemia
+		icon = GFX_
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = AUS_unification_plans
+		prerequisite = {
+			focus = AUS_unification_plans
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_bavarian_lands
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = AUS_unification_plans
+		prerequisite = {
+			focus = AUS_unification_plans
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_unification_german_nations
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = AUS_unification_plans
+		prerequisite = {
+			focus = AUS_unification_plans
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_claims_in_france_benelux
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 2
+		relative_position_id = AUS_unification_plans
+		prerequisite = {
+			focus = AUS_unification_german_nations
+		}
+		prerequisite = {
+			focus = AUS_bavarian_lands
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_claims_on_switzerland
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 2
+		relative_position_id = AUS_unification_plans
+		prerequisite = {
+			focus = AUS_unification_german_nations
+		}
+		prerequisite = {
+			focus = AUS_integrate_bohemia
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_second_holy_roman_empire
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 3
+		relative_position_id = AUS_unification_plans
+		prerequisite = {
+			focus = AUS_claims_on_switzerland
+		}
+		prerequisite = {
+			focus = AUS_claims_in_france_benelux
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_achieve_gains_in_italy
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = AUS_second_holy_roman_empire
+		prerequisite = {
+			focus = AUS_second_holy_roman_empire
 		}
 		completion_reward = { 
 			
