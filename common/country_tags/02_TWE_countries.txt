@@ -1,5 +1,7 @@
 # TWE Base Nations #
 
+#Carpathian-Ruthenia
+CPR	= "countries/CPR.txt"
 #Texas
 TXS	= "countries/USA.txt"
 #Yucatan
