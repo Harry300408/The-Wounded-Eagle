@@ -585,5 +585,32 @@ ideas = {
 				army_attack_factor = 0.1
 			}
 		}
+		GERMANY_confederation_1_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = 0.1
+			}
+		}
+		AUS_die_habsburger_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				neutrality_drift = 0.01
+				despotism_drift = 0.01
+				stability_weekly = -0.001
+			}
+		}
 	}
 }

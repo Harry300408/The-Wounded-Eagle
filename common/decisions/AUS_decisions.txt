@@ -764,3 +764,8 @@ AUS_agitation_program_category = {
 	}
 
 }
+AUS_monarchist_propaganda_category = {
+
+	
+
+}

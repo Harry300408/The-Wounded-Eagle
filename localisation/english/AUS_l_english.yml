@@ -187,6 +187,19 @@ ausevents.22.desc:0 "Leader of [AUS.GetName] [AUS.GetLeader] early today made a 
 ausevents.22.a:0 "They've got great plans."
 ausevents.22.b:0 "We've got great plans!"
 
+ausevents.23.t:0 "[AUS.GetName] propose help in exchange of loyalty"
+ausevents.23.desc:0 "Diplomats from [AUS.GetName] reached us with a note from [AUS.GetLeader] where their country help us in exchange of loyalty, they precisely mentioned that loyalty will exclude any attempts of invasion and, even help in case of invasion by someone else. After [AUS.GetLeader] recent speech, it might drag us in the future war in case of acceptance, are the benefits worth the risks?"
+ausevents.23.a:0 "Absolutely"
+ausevents.23.b:0 "We are not joining their sphere."
+
+ausevents.24.t:0 "[FROM.GetName] accepted our proposal"
+ausevents.24.desc:0 "[FROM.GetNameDefCap] accepted our proposal of help in exchange of loyalty."
+ausevents.24.a:0 "They will benefit from that deal, good decision."
+
+ausevents.25.t:0 "[FROM.GetName] rejected our proposal"
+ausevents.25.desc:0 "[FROM.GetNameDefCap] rejected our proposal of help in exchange of loyalty."
+ausevents.25.a:0 "Someone decided to be unprotected then."
+
 ### IDEAS ###
 AUS_monarchism_abandoned_idea_0:0 "Monarchism Abandoned"
 AUS_monarchism_abandoned_idea_1:0 "$AUS_monarchism_abandoned_idea_0$"
@@ -225,6 +238,7 @@ AUS_agitation_efficiency_communism_2_idea:0 "$AUS_agitation_efficiency_communism
 AUS_agitation_efficiency_communism_1_idea:0 "$AUS_agitation_efficiency_communism_3_idea$"
 AUS_agitation_efficiency_communism_0_idea:0 "$AUS_agitation_efficiency_communism_3_idea$"
 AUS_all_fascist_party_idea:0 "All Fascist Party"
+GERMANY_confederation_1_idea:0 "$GERMANY_member_of_confederation_idea$"
 
 ### COSMETIC TAGS ###
 hre_unified_neutrality:0 "Holy Roman Empire"

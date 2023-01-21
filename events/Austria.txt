@@ -502,3 +502,100 @@ news_event = {
 		}
 	}
 }
+# AUS propose help in exchange of loyalty
+country_event = {
+	id = ausevents.23
+	title = ausevents.23.t
+	desc = ausevents.23.desc
+	picture = GFX_
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.23.a
+		if = {
+			limit = {
+				has_idea = GERMANY_member_of_confederation_idea
+			}
+			swap_ideas = {
+				remove_idea = GERMANY_member_of_confederation_idea
+				add_idea = GERMANY_confederation_1_idea
+			}
+		}
+		else = {
+			add_ideas = GERMANY_confederation_1_idea
+		}
+		AUS = {
+			country_event = { id = ausevents.24 hours = 6 }
+			add_opinion_modifier = {
+				target = FROM
+				modifier = support_accepted
+			}
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = AUS
+			value = 100
+		}
+		add_ai_strategy = {
+			type = befriend
+			id = AUS
+			value = 100
+		}
+	}
+	option = {
+		name = ausevents.23.b
+		AUS = {
+			country_event = { id = ausevents.25 hours = 6 }
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = support_rejected
+			}
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = AUS
+			value = -50
+		}
+		add_ai_strategy = {
+			type = befriend
+			id = AUS
+			value = -50
+		}
+	}
+}
+# TAG accept help in exchange of loyalty
+country_event = {
+	id = ausevents.24
+	title = ausevents.24.t
+	desc = ausevents.24.desc
+	picture = GFX_
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.24.a
+		add_political_power = 10
+	}
+}
+# TAG reject help in exchange of loyalty
+country_event = {
+	id = ausevents.25
+	title = ausevents.25.t
+	desc = ausevents.25.desc
+	picture = GFX_
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.25.a
+		add_political_power = -10
+		add_ai_strategy = {
+			type = alliance
+			id = FROM
+			value = -50
+		}
+		add_ai_strategy = {
+			type = befriend
+			id = FROM
+			value = -50
+		}
+	}
+}

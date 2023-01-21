@@ -58,7 +58,8 @@ focus_tree = {
 			focus = AUS_revive_political_plan
 		}
 		completion_reward = { 
-
+			add_political_power = 50
+			add_stability = -0.1
 		}
 	}
 	focus = {
@@ -1832,7 +1833,15 @@ focus_tree = {
 			focus = AUS_continent_dominance
 		}
 		completion_reward = { 
-			
+			every_country = {
+				limit = {
+					OR = {
+						has_autonomy_state = autonomy_AUS_fed
+						has_idea = GERMANY_member_of_confederation_idea
+					}
+				}
+				country_event = { id = ausevents.23 hours = 6 }
+			}
 		}
 	}
 	focus = {
@@ -1861,7 +1870,8 @@ focus_tree = {
 			focus = AUS_continent_dominance
 		}
 		completion_reward = { 
-			
+			add_war_support = 0.1
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -2503,7 +2513,10 @@ focus_tree = {
 			focus = AUS_look_in_the_past
 		}
 		completion_reward = { 
-
+			add_timed_idea = {
+				idea = AUS_die_habsburger_idea
+				days = 210
+			}
 		}
 	}
 	focus = {
@@ -2921,6 +2934,250 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_coronation_of_adelheid
 			focus = AUS_coronation_of_otto
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_negotiations_with_hungary
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = AUS_annex_bohemia
+		prerequisite = {
+			focus = AUS_annex_bohemia
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_austro_hungary
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 2
+		relative_position_id = AUS_annex_bohemia
+		prerequisite = {
+			focus = AUS_negotiations_with_hungary
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_restoration_plan_ost
+		icon = GFX_
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = AUS_austro_hungary
+		prerequisite = {
+			focus = AUS_austro_hungary
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_romania_ultimatum
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = AUS_restoration_plan_ost
+		prerequisite = {
+			focus = AUS_restoration_plan_ost
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_march_into_galicia
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_restoration_plan_ost
+		prerequisite = {
+			focus = AUS_restoration_plan_ost
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_osterstaadt_polen
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 5
+		relative_position_id = AUS_restoration_plan_ost
+		prerequisite = {
+			focus = AUS_march_into_galicia
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_restoration_plan_sud
+		icon = GFX_
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = AUS_austro_hungary
+		prerequisite = {
+			focus = AUS_austro_hungary
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_italian_croatia
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = AUS_restoration_plan_sud
+		prerequisite = {
+			focus = AUS_restoration_plan_sud
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_disunite_italy
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 5
+		relative_position_id = AUS_restoration_plan_sud
+		prerequisite = {
+			focus = AUS_italian_croatia
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_deal_with_serbia
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_restoration_plan_sud
+		prerequisite = {
+			focus = AUS_restoration_plan_sud
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_an_empire_restored
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 3
+		relative_position_id = AUS_austro_hungary
+		prerequisite = {
+			focus = AUS_italian_croatia
+			focus = AUS_march_into_galicia
+		}
+		prerequisite = {
+			focus = AUS_deal_with_serbia
+		}
+		prerequisite = {
+			focus = AUS_romania_ultimatum
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_expand_our_lands
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = AUS_an_empire_restored
+		prerequisite = {
+			focus = AUS_an_empire_restored
+		}
+		available = {
+			NOT = {
+				has_completed_focus = AUS_request_bavarian_support
+				has_completed_focus = AUS_request_prussian_support
+			}
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_integrate_bayern
+		icon = GFX_
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = AUS_expand_our_lands
+		prerequisite = {
+			focus = AUS_expand_our_lands
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_silesia_is_ours
+		icon = GFX_
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_expand_our_lands
+		prerequisite = {
+			focus = AUS_expand_our_lands
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_hoch_saone
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_expand_our_lands
+		prerequisite = {
+			focus = AUS_silesia_is_ours
+			focus = AUS_integrate_bayern
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_grosses_osterreichisch_ungarische_monarchie
+		icon = GFX_
+		cost = 10
+		x = 0
+		y = 3
+		relative_position_id = AUS_expand_our_lands
+		prerequisite = {
+			focus = AUS_hoch_saone
+		}
+		prerequisite = {
+			focus = AUS_disunite_italy
+		}
+		prerequisite = {
+			focus = AUS_osterstaadt_polen
 		}
 		completion_reward = { 
 			
