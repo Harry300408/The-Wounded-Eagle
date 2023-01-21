@@ -120,7 +120,7 @@
  STATE_119:0 "Northern Ireland"
  STATE_120:0 "Scottish Highlands"
  STATE_121:0 "Lothian"
- STATE_122:0 "Wales"
+ STATE_122:0 "Aberystwyth"
  STATE_123:1 "South-West England"
  STATE_124:0 "Gotland"
  STATE_125:0 "East Anglia"
@@ -984,4 +984,6 @@
  STATE_981:0 "Ostweser-Ems"
  STATE_982:0 "Ostfriesland"
  STATE_983:0 "North Dalmatia"
+ STATE_984:0 "Northern Wales"
+ STATE_985:0 "Sothern Wales"
  
