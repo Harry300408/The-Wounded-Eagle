@@ -1,0 +1,9 @@
+spriteTypes = {
+	
+    ##Leaders
+
+	spriteType = {
+        name = GFX_nap_vi
+        texturefile = gfx/leaders/FRA/Bonaparte-Party/napoleon_vi.dds
+    }
+}

@@ -1,0 +1,15 @@
+scripted_gui = {
+    ger_conf_window = {
+        window_name = ger_conf_window
+        context_type = player_context
+         
+        visible = {
+            has_country_flag = ger_conf_gui_vis
+        }
+        effects = {
+            ger_conf_exit_click = {
+                clr_country_flag = ger_conf_gui_vis
+            }
+        }
+    } 
+}        

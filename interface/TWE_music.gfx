@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_TWE_album_art"
+		texturefile = "gfx/TWE_album_art.dds"
+	}	
+
+
+}

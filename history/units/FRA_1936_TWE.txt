@@ -1,0 +1,141 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Division d'Infanterie"		
+	division_names_group = FRA_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 2x 155mm battalions
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Division d'alpinistes"		
+	division_names_group = FRA_MNT_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+	}
+	support = {	
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Division des chars"		
+	division_names_group = FRA_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+	}
+	support = {	
+		logistics_company = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Division de cavalerie d'élite"		
+	division_names_group = FRA_CAV_01
+	template_counter = 71
+	division_cap = 8
+	regiments = {
+		french_cav = { x = 0 y = 0 }
+		french_cav = { x = 0 y = 1 }
+		french_cav = { x = 0 y = 2 }
+		french_cav = { x = 0 y = 3 }
+		french_cav = { x = 0 y = 4 }
+		french_cav = { x = 1 y = 0 }
+		french_cav = { x = 1 y = 1 }
+		french_cav = { x = 1 y = 2 }
+		french_cav = { x = 1 y = 3 }
+		french_cav = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0}
+		infantry = { x = 2 y = 1}
+	}
+	support = {	
+		logistics_company = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1}
+	}
+}
+
+division_template = {
+	name = "Division de Cavalerie" 	# Division de Cavalerie
+	division_names_group = FRA_CAV_01
+	# Note: Transformed to DLC, DLM divisions, 1936-39 
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Recon Group consisted of 64 ACs/scout cars
+	}
+}
+
+##### #oob #####
+units = {
+	##Infantry
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11502
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+
+	##Elite Cavalry
+	division= {	 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11720
+		division_template = "Division de cavalerie d'élite" 	# Frontline, best equipment
+		start_experience_factor = 0.45
+	}
+
+	division= {	 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3621
+		division_template = "Division de cavalerie d'élite" 	# Frontline, best equipment
+		start_experience_factor = 0.45
+	}
+
+	division= {	 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11506
+		division_template = "Division de cavalerie d'élite" 	# Frontline, best equipment
+		start_experience_factor = 0.45
+	}
+	
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+
+###################

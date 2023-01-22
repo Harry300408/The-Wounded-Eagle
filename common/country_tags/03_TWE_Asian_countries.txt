@@ -1,0 +1,15 @@
+# TWE Chinese Nations # 
+#Tunganistan
+TGT = "countries/Sinkiang.txt"
+#Aertai
+AER = "countries/Sinkiang.txt"
+#Kashi
+KAH = "countries/Sinkiang.txt"
+#Kumal Khanate
+KMK = "countries/Sinkiang.txt"
+#Ainu
+AIN = "countries/Japan.txt"
+#Tosa
+TSA = "countries/Japan.txt"
+#Satsuma
+SAT = "countries/Japan.txt"

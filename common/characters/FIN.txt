@@ -1,0 +1,22 @@
+characters = {
+
+    ## Russian Leaders ##
+    
+    FIN_maria = {
+        name = FIN_maria
+        portraits = {
+            civilian = {
+                large = "GFX_maria"
+            }
+        }
+        country_leader = {
+            ideology = classical_absolutism
+            traits = { anti_communist }
+            #desc = 
+        } 
+    }
+
+   
+
+
+}

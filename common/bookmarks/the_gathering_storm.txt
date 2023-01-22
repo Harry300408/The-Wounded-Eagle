@@ -1,0 +1,142 @@
+bookmarks = {
+	bookmark = {
+		name = "The Period of Great Peace"
+		desc = "GATHERING_STORM_DESC"
+		date = 1935.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "ENG"
+		default = yes
+		
+		"FRA"={
+			history = "FRA_TWE"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ENG" = { 
+			history = "ENG_TWE"
+			ideology = conservatism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+        "USA" = { #For random country select
+			history = ""
+			ideology = conservatism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"USA" = { 
+			history = ""
+			ideology = conservatism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"SOV"={
+			history = "(Place Holder NO CONTENT) PRE_TWE"
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"AUS"={
+			history = "CAN_TWE"
+			ideology = democratic
+			ideas = {
+			}	
+			focuses = {
+			}		
+		}
+		#Line 1
+		#Buffer
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#France
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#UK
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#Other
+		"USA" = { minor = yes history = "USA_TWE" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#Russia
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#Austria
+		"PRE" = { minor = yes history = "PRE_TWE" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#Buffer
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#line 2
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#UK
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#Other
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#Russia
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#Buffer
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#Russia
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#Austria
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+        #Buffer
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#Line 3
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#UK
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#Other
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#Buffer
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#Austria
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		#Buffer
+		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+
+	}		
+}

@@ -1,0 +1,22 @@
+﻿l_english:
+  #just need to put this here till we expand on the political menu
+  cabinet:0 "The Cabinet"
+
+  #descs
+  history_txt_g_conf:0 "Forged through the aftermath of the Napoleonic Wars, The German Confederation was a force to recon with The Empire of Austria, now mearly a relic of its former glory, lead the Confederation but due to the power hungry Habsburgs the empire colapsed after the Bruderkreig (Brothers War) with it only retaining its ethno german lands excluding Venice, Slovinia & South Tirol. Prussia fell into turmoil after the war and there was a power stuggle between te 4 political views, Monarchism, Unionism, German Nationalism & Democracy. 1st Democracy prevalied with a constitutional monarchy but due to economic stuggles because of not having a good insutry the country began to crumble now giving the too extreme parties a chance for power. Meanwhile the minor german states lived in relative stability and prosperity."
+
+  aims_txt_g_conf:0 "The aims of the German Confederation are to bring peace to the continent either through force or through  diplomacy, this has been achived several times. However like always nations have their own interests, for example Prussia wants to unite the German natrions under one banner from the nationalistic views (not fascism), Austria however wants the confederation to stay how it is and rebuild its empire to its former glory. (this is not fininshed this will be expanded when more German nations get content)"
+
+  #actuall stuff
+  fac_leader:0 "Leader: [?faction_leader.GetName]"
+  fac_name:0 "Faction: [THIS.GetFactionName]"
+  player_name:0 "You Are: [THIS.GetName]"
+  nooffactories:0 "Factories"
+  army:0 "Army Size"
+  air_size:0 "Air Force"
+  navy_size:0 "Navy Size"
+  fac_name_ger_conf:0 "The German Confederation"
+  exit_txt:0 "Exit"
+  history_t:0 "History"
+  aims_t:0 "Aims"
+  faction_member_count:0 "Member States: [?.num_faction_members]"

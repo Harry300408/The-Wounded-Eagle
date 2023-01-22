@@ -1,0 +1,30 @@
+scripted_gui = {
+	ENG_unite_india = {
+	
+		context_type = decision_category
+		
+		window_name = "ENG_unite_india_gui"
+		
+		visible = {
+			TAG = ENG			
+		}
+		
+		effects = {
+		}
+
+	}
+
+	ENG_sepoy_rebellion = {
+	
+		context_type = decision_category
+		
+		window_name = "ENG_sepoy_rebellion_gui"
+		
+		visible = {
+			TAG = ENG			
+		}
+
+	}
+}
+		
+

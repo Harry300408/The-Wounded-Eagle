@@ -1,0 +1,81 @@
+add_namespace = pre
+
+country_event = {
+	id = pre.1
+	title = pre.1.t
+	desc = pre.1.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+		trigger= {
+		}
+
+	option = {
+		name = pre.1.a
+		set_country_flag = reform_PRE
+	}
+
+	option = {
+		name = pre.1.b
+		set_country_flag = confederation_PRE
+	}
+}
+
+country_event = {
+	id = pre.2
+	title = pre.2.t
+	desc = pre.2.d
+	picture = GFX_report_event_soldiers_marching
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+		trigger= {
+		}
+
+	option = {
+		name = pre.2.a
+		complete_national_focus = PRE_manstein
+	}
+
+	option = {
+		name = pre.2.b
+		complete_national_focus = PRE_rommel
+	}
+}
+
+country_event = {
+	id = pre.3
+	title = pre.3.t
+	desc = pre.3.d
+	picture = GFX_report_event_por_president_military_inspection
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+		trigger= {
+		}
+
+	option = {
+		name = pre.3.a
+	}
+}
+
+country_event = {
+	id = pre.4
+	title = pre.4.t
+	desc = pre.4.d
+	picture = GFX_report_event_por_president_military_inspection
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+		trigger= {
+		}
+
+	option = {
+		name = pre.4.a
+	}
+}

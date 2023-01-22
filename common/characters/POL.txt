@@ -1,0 +1,22 @@
+characters = {
+
+    ## Russian Leaders ##
+    
+    POL_anastasia = {
+        name = POL_anastasia
+        portraits = {
+            civilian = {
+                large = "GFX_anastasia"
+            }
+        }
+        country_leader = {
+            ideology = classical_absolutism
+            traits = { anti_communist }
+            #desc = 
+        } 
+    }
+
+   
+
+
+}

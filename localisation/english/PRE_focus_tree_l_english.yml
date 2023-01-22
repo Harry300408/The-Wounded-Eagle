@@ -1,0 +1,66 @@
+﻿l_english:
+ ernst_princibles:0 "Thälmann's Guiding Principles of Prussia"
+ ernst_princibles_desc:0 ""
+  
+ PRE_unity:0 "Prussian Unity"
+ PRE_unity_desc:0 "The people of Prussia stand united and strong under the new Unionist government, they feel more united (hence the name) and could stand up to whatever life or the world throws at them. for mein große Anführer!" 
+
+ PRE_militarism:0 "Prussian Militarism"
+ PRE_militarism_desc:0 "Prussia has a strong military history up until recently after two wars lost to the Austrians (plus other powers) and is still trying to prove itself as a militay power like the French and the Russians."
+
+ PRE_industry:0 "Prussian Industry"
+ PRE_industry_desc:0 "Prussian Industry has never been far behind Austrian and Russian industry, now it is our time to seize this opportunity and become one of the industrial powers of Europe."
+
+ PRE_shock_troopers:0 "Form the Prussian Shock Troopers"
+ PRE_shock_troopers_desc:0 "§RThis makes a div template that is used for the focuses below§!"
+
+ PRE_deploy_1:0 "Deploy Ostpreußische Sturmtruppen"
+ PRE_deploy_1_desc:0 ""
+
+ PRE_deploy_2:0 "Deploy Brandenburgische Sturmtruppen"
+ PRE_deploy_2_desc:0 """
+
+ PRE_deploy_3:0 "Deploy Oberschlesische Sturmtruppen"
+ PRE_deploy_3_desc:0 ""
+
+ PRE_deploy_4:0 "Deploy Pommersche Sturmtruppen"
+ PRE_deploy_4_desc:0 ""
+
+ PRE_deploy_5:0 "Deploy Südpreußische Sturmtruppen"
+ PRE_deploy_5_desc:0 ""
+
+ PRE_shock_better_plans:0 "Better Planning and Organisation"
+ PRE_shock_better_plans_desc:0 "Recent plans and better organisation with the shock troopers means we can better manage and organise the divisions"
+
+ PRE_state_of_the_army:0 "State of The Prussian Army"
+ PRE_state_of_the_army_desc:0 ""
+ 
+ PRE_rommel:0 "Rommel's Plan"
+ PRE_rommel_desc:0 ""
+
+ PRE_manstein:0 "Manstein's Plan"
+ PRE_manstein_desc:0 ""
+
+ PRE_MI:0 "Prussian Institute of Military Research"
+ PRE_MI_desc:0 ""
+
+ PRE_TNK:0 "Prussian Tanks"
+ PRE_TNK_desc:0 ""
+
+ PRE_plans:0 "Initiate Plans"
+ PRE_plans_desc:0 ""
+
+ PRE_tackle_mil_Inefficiency:0 "Tackle Military Inefficiency"
+ PRE_tackle_mil_Inefficiency_desc:0 "Our military efficiency has not been the best, but these reforms proposed by the Reichstag are supposed to bring glory to the Prussian army. Not seen since the Napoleonic wars."
+
+ PRE_tackle_civ_Inefficiency:0 "Tackle The Civilian Industry's Inefficiency"
+ PRE_tackle_civ_Inefficiency_desc:0 "Prussia's Civilian Idustry has never been amazing but due to ecenomic strgles over the recent years and a change in power the people have grow restless thus leaving us with an inefficient civilian industry" 
+
+ PRE_investigate_mil:0 "A Prussian Militaty Investigation"
+ PRE_investigate_mil_desc:0 "The Prussian military is long overdue an inspection so why not do it now?"
+ 
+ PRE_start_the_proposals:0 "Start The Proposals"
+ PRE_start_the_proposals_desc:0 ""
+
+ PRE_analyse_production:0 "Analyse Production"
+ PRE_analyse_production_desc:0 ""

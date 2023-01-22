@@ -1,0 +1,67 @@
+ideas = {
+	country = {
+		
+		PRE_nation_divided = {
+			picture = PRE_nation_divided
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				fascism_drift = 0.05
+				rev_unionism_drift = 0.05
+			}
+		}
+
+		PRE_terrible_army = {
+			picture = PRE_terrible_army
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				supply_factor = -0.05
+				supply_consumption_factor = 0.15
+				army_attack_factor = -0.1
+				army_morale_factor = -0.05
+			}
+		}
+
+		PRE_lackin_industry = {
+			picture = PRE_lackin_industry
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_factory_start_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = -0.03
+				production_factory_efficiency_gain_factor = -0.02
+			}
+		}
+		
+		PRE_brink_of_colapse = {
+			picture = PRE_brink_of_colapse
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				stability_weekly = -0.01
+				surrender_limit = -0.3	
+				political_power_gain = -0.05
+			}
+		}
+
+	}
+}

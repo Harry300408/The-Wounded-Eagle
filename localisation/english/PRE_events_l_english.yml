@@ -1,0 +1,25 @@
+﻿l_english:
+#Event 1 - Thalmann's Principles
+  pre.1.t:0 "Thalmann's Principles"
+  pre.1.a:0 "Thalmann Needs to Reform Prussia Into a Mighty Nation That People Should Fear"
+  pre.1.b:0 "The Current State is Fine How it is, We Are Protected by The Confederaion"
+
+##Description
+  pre.1.d:0 "Ever since the "Revolution of '29" defeating the NSDAP a semi-popular political party -now exiled-, Thalmann took the mantle of "Der große Anführer (The Great Leader)" Prussia has been a great and prosperous state within the Confederation. Some people believe that Prussia should stay in the Confederation and som believe they are better off alone. The only thing is no one can expand their borders within the Confederation otherwise the Austrians will get involved, and are somtimes called -by Prussian represenititives- in the great Deutschen Bundestag a bunch of nosey arseholes"
+
+#Event 2 - State of The Prussian Army (it's in decent shape :| )
+  pre.2.t:0 "The State Army"
+  pre.2.a:0 "Erich von Manstein"
+  pre.2.b:0 "Erwin Rommel"
+
+##Description 
+  pre.2.d:0 "The Prussian Army is not in the best of shape at the moment, Rommel & Manstein - Nationalist Defectors - have both propoesed plans in which they feel they can improve the army. Who will Thalmann chose, Rommel's Speed & Tanks or Manstein's logistics & Motorized?"
+
+#Event 3 - Prusssian Military Inspection
+  pre.3.t:0 "Prussian Military Inspection"
+  pre.3.a:0 "Mein Gott! We must act now to secure our possition on the European Stage"
+
+##Description
+  pre.3.d:0 "After a inspection on the army last Tuesday the Riechstag was suprised to say the least. \n The report: \n - 15 Divisions are underequiped \n - Most men in the army reported that they had very basic training \n - The Airforce is now almost non exsistant \n - The navy is also non exsistant"
+
+#Event 4 - Production Analysis

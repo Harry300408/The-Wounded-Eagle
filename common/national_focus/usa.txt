@@ -1,0 +1,137 @@
+
+focus_tree = {
+	id = usa_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = USA
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = USA
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+
+focus = {
+		id = america1
+		icon = GFX_freedom
+		#prerequisite = { focus = army_effort }
+		x = 8
+		y = 0
+		#relative_position_id = army_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+			}
+		}
+focus = {
+		id = america2
+		icon = GFX_focus_attack_britain
+		prerequisite = { focus = america1 }
+		x = 6
+		y = 1
+		#relative_position_id = army_effort
+mutually_exclusive = { focus = america3}
+
+		cost = 5
+
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			}
+allow_branch = {
+NOT = {
+has_completed_focus = america3
+}
+}
+}
+	focus = {
+		id = america3
+		icon = GFX_focus_befriend_britain
+		prerequisite = { focus = america1 }
+		x = 10
+		y = 1
+		#relative_position_id = army_effort
+		cost = 5
+		mutually_exclusive = { focus = america2}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+allow_branch = {
+NOT = {
+has_completed_focus = america2
+}
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+}
+}
+}
+focus = {
+		id = america5
+		icon = GFX_american
+		prerequisite = { focus = america2 }
+		x = 6
+		y = 2
+		#relative_position_id = army_effort
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = { 
+  remove_idea = USA_war_lost
+  add_idea = american_prides
+}
+}
+}
+focus = {
+		id = america4
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = america2 }
+		x = 5
+		y = 3
+		#relative_position_id = army_effort
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 5
+}
+}
+focus = {
+		id = america6
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = america5 }
+		x = 6
+		y = 4
+		#relative_position_id = army_effort
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 5
+}
+}
+}
+}
+

@@ -1,0 +1,11 @@
+spriteTypes = {
+	
+    ##Leaders
+
+	spriteType = {
+        name = GFX_olga
+        texturefile = gfx/leaders/RUS/Romanov-Imperial-Party/Olga_romnaov.dds
+    }
+
+
+}

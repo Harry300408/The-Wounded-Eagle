@@ -1,0 +1,16 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_main_menu_eagle"
+		texturefile = "gfx/interface/TWEmm/eagle_mm.png"
+	}
+
+	spriteType = {
+		name = "GFX_TWE_main_menu_update_bg"
+		texturefile = "gfx/interface/TWEmm/update.png"
+	}
+	spriteType = {
+		name = "GFX_TWE_tweaks"
+		texturefile = "gfx/interface/TWEmm/tweaks.png"
+	}
+
+}
