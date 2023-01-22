@@ -38,5 +38,7 @@ GBA = "countries/Gambela.txt"
 SID = "countries/Sidamo.txt"
 #Oromia
 ORO = "countries/Oromo.txt"
+#Kongo
+KON = "countries/Oromo.txt"
 
 

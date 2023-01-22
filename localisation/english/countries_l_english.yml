@@ -1,5 +1,8 @@
 ﻿l_english:
  # TWE Base Nations
+ KON:0 "Kongo"
+ KON_DEF:0 "Kongo"
+ KON_ADJ:0 "Kongolese"
 
  PAW:0 "Pawnee"
  PAW_DEF:0 "Pawnee"
