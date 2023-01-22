@@ -1,5 +1,0 @@
-# TWE Base Nations #
-
-#Ss PLace Holder
-ZZZ	= "countries/USA.txt"
-

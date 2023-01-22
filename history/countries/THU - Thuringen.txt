@@ -1,5 +1,0 @@
-capital = 60
-
-add_ideas = {
-	GERMANY_member_of_confederation_idea
-}

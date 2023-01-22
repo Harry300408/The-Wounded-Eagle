@@ -1,7 +1,0 @@
-#all_fascist_party = {
-#	enable = { always = yes }
-#
-#	icon = GFX_
-#	
-#	add_stability = 5
-#}
