@@ -1,0 +1,302 @@
+﻿l_english:
+### FOCUS TREE ###
+AUS_revive_political_plan:0 "Revive Political Plan"
+AUS_new_osterreich:0 "Neu Osterreich"
+AUS_prepare_sabotage:0 "Prepare Resistance"
+AUS_peaceful_development:0 "Peaceful Development"
+AUS_agitation_program:0 "Agitation Program"
+
+# Democratic focuses #
+AUS_est_liebe_die_republik:0 "Es Lebe Die Republik!"
+AUS_conference_of_july:0 "Conference of July"
+AUS_graz_conference:0 "Graz Conference"
+AUS_article_nine_a:0 "Article 9A"
+AUS_fate_of_czechia:0 "Fate of Czechia"
+AUS_fate_of_the_confederation:0 "Fate of the Confederation"
+AUS_guardind_of_democracy:0 "Guradian of Democracy"
+AUS_ally_hungary:0 "Ally Hungary"
+AUS_ally_italy:0 "Ally Italy"
+AUS_a_new_begining:0 "A New Begining"
+AUS_federal_republic:0 "Federal Republic"
+AUS_federation:0 "Federation"
+
+# Communist focuses #
+AUS_march_of_red_torches:0 "March of Red Torches"
+AUS_empower_kpo:0 "Empower KPO"
+
+# Fascist focuses #
+AUS_vaterlandische_front:0 "Vaterlandische Front"
+AUS_empower_right_wing:0 "Empower Right Wing"
+AUS_nationalist_sentiments:0 "Nationalist Sentiments"
+AUS_increase_public_support:0 "Increase Public Support"
+AUS_national_movements:0 "National Movements"
+AUS_multi_fascist_party:0 "Multi-Fascist Party"
+AUS_vaterlandische_front_dominance:0 "Vaterlandische Front Dominance"
+AUS_osterkommisariat_bavaria:0 "Österkommisariat Bayern"
+AUS_osterstaadt_bohemia:0 "Österstaadt Bohemia"
+AUS_revanchism:0 "Revanchism"
+AUS_ein_kanzler_ein_reich:0 "Ein Kanzler, Ein Reich"
+AUS_learn_from_past_defeats:0 "Learn From Past Defeats"
+AUS_old_new_empire:0 "Old New Empire"
+AUS_grosses_osterreich:0 "Großes Österriech"
+AUS_plan_sud_deutschland:0 "Plan Suddeutschland"
+AUS_plan_nord_deutschland:0 "Plan Norddeutschland"
+AUS_plan_west:0 "Plan West"
+AUS_plan_sud:0 "Plan Sud"
+AUS_plan_ost:0 "Plan Ost"
+AUS_osterreichisch_deutscher_bund:0 "Österreichisch Deutscher Bund"
+AUS_victorious_revanchism:0 "Victorious Revanchism"
+
+# Monarchist focuses #
+
+
+### EVENTS ###
+ausevents.1.t:0 "[AUS.GetName] Demand Integration"
+ausevents.1.desc:0 "[AUS.GetNameDef] diplomats reached us with a request of integrating our country into theirs. They promise to respect rights of our people and government."
+ausevents.1.a:0 "We can't do anything about it."
+ausevents.1.b:0 "We are independent state, only losing in a war will change our mind!"
+
+ausevents.2.t:0 "[FROM.GetName] Reject Integration"
+ausevents.2.desc:0 "[FROM.GetNameDef] gave us straight negative answer to our request."
+ausevents.2.a:0 "We can't do anything about it."
+ausevents.2.b:0 "So the war will change their mind?"
+
+ausevents.3.t:0 "[AUS.GetName] Request Transfer of our Southern territories"
+ausevents.3.desc:0 "[AUS.GetNameDef] diplomats reached us with a request of transfering our southern states. They promise to respect rights of our people and regional governors in these regions."
+ausevents.3.a:0 "Give them what they want."
+ausevents.3.b:0 "They want them? Then come get them!"
+
+ausevents.4.t:0 "[FROM.GetName] Reject Request"
+ausevents.4.desc:0 "[FROM.GetNameDef] gave us straight negative answer to our request."
+ausevents.4.a:0 "We can't do anything about it."
+ausevents.4.b:0 "So the war will change their mind?"
+
+ausevents.5.t:0 "Conference of July"
+ausevents.5.desc:0 "Recent Democratic reforms proved to be effective, our popularity and people's support has grown. We are looking forward to continue peaceful existence and taking our time in improving our country."
+ausevents.5.a:0 "Es lebe Österreich!"
+
+ausevents.6.t:0 "Graz Conference"
+ausevents.6.desc:0 "On today's conference we were discussing about Confederation question, some were saying to leave things as they are, others were supporting the end Confederation and let the nations be what they want."
+ausevents.6.a:0 "We'll have to decide its fate later."
+
+ausevents.7.t:0 "Fate of the Confederation"
+ausevents.7.desc:0 "On Second Graz Conference we will finally decide fate of the Confederation."
+ausevents.7.a:0 "Leave everything as it is."
+ausevents.7.b:0 "Put an end to it."
+
+ausevents.8.t:0 "Fate of Czechia"
+ausevents.8.desc:1 "[AUSEventFateOfCzechiaDesc]"
+AUS_fate_of_czechia_desc_case_1:0 "Our recent reforms reached [CZE.GetName], we have to solve their fate."
+AUS_fate_of_czechia_desc_case_2:0 "With the confederation disbaded, we have to solve fate of [CZE.GetName]."
+ausevents.8.a:0 "Reach them with Annexation Proposal."
+ausevents.8.b:0 "Free them."
+
+ausevents.9.t:0 "[AUS.GetName] - Fate of Ours"
+ausevents.9.desc:0 "[AUS.GetNameDef] advisors reached us with a proposal of intagration. They promise to respect rights of our people and the government."
+ausevents.9.a:0 "Deny it."
+ausevents.9.b:0 "We Agree."
+
+ausevents.10.t:0 "[CZE.GetName] Denied our Proposal"
+ausevents.10.desc:0 "[CZE.GetNameDef] denied our proposal of Integration."
+ausevents.10.a:0 "Prepare for War then."
+ausevents.10.b:0 "We will respect their borders then."
+
+ausevents.11.t:0 "[AUS.GetName] Seek our Support"
+ausevents.11.desc:0 "[AUS.GetNameDef] advisors reached us seeking support of our country in their expansion, after defeating Italy, they promise to give us [TTS.GetName] overlordship."
+ausevents.11.a:0 "A cup of Tea for our new ally!"
+ausevents.11.b:0 "Let them work alone."
+
+ausevents.12.t:0 "Holy Roman Empire Unification"
+ausevents.12.desc:0 "TODO"
+ausevents.12.a:0 "TODO"
+
+ausevents.13.t:0 "Victoria III Arrival in Vienna"
+ausevents.13.desc:0 "Early in the morning, Victoria Louise III arrived in Vienna and been crowned Kaiserin of Austria and recently integrated Prussia."
+ausevents.13.a:0 "Long Live, Victoria!"
+
+ausevents.14.t:0 "Second Vienna Conference"
+ausevents.14.desc:0 "Recent events returned us to this conference, our strong and very friendly relations with [PRE.GetName] led them to help us these times, however our absolute influence over them also mean we can count as one state and brother states, said Prime Minister of Prussia, they are ready to be integrated as part of something greater."
+ausevents.14.a:0 "Welcome, Preußen Brothers!"
+
+ausevents.15.t:0 "Prussian Assistance"
+ausevents.15.desc:0 "With the death of Otto Von Habsburg and friendly relations with Prussia, they announced that they are ready to support us whenever and with whatever we ask."
+ausevents.15.a:0 "Their help might be the best we can rely on."
+
+ausevents.16.t:0 "Dividing Italy"
+ausevents.16.desc:0 "With the recently gained our support [AUS.GetName], after defeating Italy they are following they promises and giving us [TTS.GetNameDef]."
+ausevents.16.a:0 "Good Deal between two Empires."
+
+ausevents.17.t:0 "[AUS.GetLeader] Revanchist Speech"
+ausevents.17.desc:0 "Early this day the leader of [AUS.GetNameDef] [AUS.GetLeader] made an agressive revanchist speech about fall of the empire, its causes and those who are reason for that and those causes. He also mentioned the past defeats of Austria in which he took more attention to the defeats in Coalition wars against Napoleon Bonapart. \nEnding the speech with an announcement of establishment of own special path for [AUS.GetName] and calling it the plan for 'Großes Österreich'."
+ausevents.17.a:0 "Did they just made a threat?"
+ausevents.17.b:0 "Zum Ruhm Österreichs!"
+
+ausevents.18.t:0 "[AUS.GetName] Propose Semi-Intergrated Autonomy"
+ausevents.18.desc:0 "[AUS.GetNameDef] diplomats reached us with a proposal of semi-integrated autonomy. They promise to respect rights of our people and regional governors even in case of full integration."
+ausevents.18.a:0 "We can't do anything"
+ausevents.18.b:0 "Let them have our bullets first!"
+
+ausevents.19.t:0 "[FROM.GetName] Rejected our Proposal"
+ausevents.19.desc:0 "[FROM.GetNameDef] Gave us straight answer to our proposal of semi-integrating them: no."
+ausevents.19.a:0 "So they've chosen death."
+
+ausevents.20.t:0 "The Großes Österriech"
+ausevents.20.desc:0 "[?ROOT.days_after_speech] days passed since Revanchist speech from [AUS.GetLeader], and now they publicly announce start for 'New and Better Austria' - Großes Österriech. Threatened states are preparing for military maneuvers from [AUS.GetName] and/or its declaration of war."
+ausevents.20.a:0 "There will be a war soon..."
+ausevents.20.b:0 "For the glorious future of the Großes Österriech"
+
+ausevents.21.t:0 "The German Confederation"
+ausevents.21.desc:0 "[AUS.GetLeader] made an announcement that clarified the way Austrian leadership decided to go, mainly saying that Austria will keep their interests within the borders of their confederation or within German nationalities in Europe."
+ausevents.21.a:0 "No greater plans then?"
+ausevents.21.b:0 "No greater plans."
+
+ausevents.22.t:0 "The Future of Europe"
+ausevents.22.desc:0 "Leader of [AUS.GetName] [AUS.GetLeader] early today made a quite threatening speech about the future of the european nations; they made clear point about establishing total control over the entire continent by themselves or with friendly nations which can be anyone from [DEN.GetName] all the way to [SOV.GetName] or [ENG.GetName]. What would major european nation say about it is unclear, but even the birds are aware that any rejections of [AUS.GetAdjective] proposals will lead to single or multiple wars."
+ausevents.22.a:0 "They've got great plans."
+ausevents.22.b:0 "We've got great plans!"
+
+ausevents.23.t:0 "[AUS.GetName] propose help in exchange of loyalty"
+ausevents.23.desc:0 "Diplomats from [AUS.GetName] reached us with a note from [AUS.GetLeader] where their country help us in exchange of loyalty, they precisely mentioned that loyalty will exclude any attempts of invasion and, even help in case of invasion by someone else. After [AUS.GetLeader] recent speech, it might drag us in the future war in case of acceptance, are the benefits worth the risks?"
+ausevents.23.a:0 "Absolutely"
+ausevents.23.b:0 "We are not joining their sphere."
+
+ausevents.24.t:0 "[FROM.GetName] accepted our proposal"
+ausevents.24.desc:0 "[FROM.GetNameDefCap] accepted our proposal of help in exchange of loyalty."
+ausevents.24.a:0 "They will benefit from that deal, good decision."
+
+ausevents.25.t:0 "[FROM.GetName] rejected our proposal"
+ausevents.25.desc:0 "[FROM.GetNameDefCap] rejected our proposal of help in exchange of loyalty."
+ausevents.25.a:0 "Someone decided to be unprotected then."
+
+ausevents.26.t:0 "Organise military trainings in our country?"
+ausevents.26.desc:0 "[AUS.GetName] recently started their military trainings and are ready to provide everything needed for that in other countries that accepted their help. Shall we organise it?"
+ausevents.26.a:0 "Sure!"
+ausevents.26.b:0 "We are good."
+
+### IDEAS ###
+AUS_monarchism_abandoned_idea_0:0 "Monarchism Abandoned"
+AUS_monarchism_abandoned_idea_1:0 "$AUS_monarchism_abandoned_idea_0$"
+AUS_monarchism_abandoned_idea_2:0 "$AUS_monarchism_abandoned_idea_0$"
+AUS_inner_turmoil_idea:0 "Inner Turmoil"
+AUS_est_liebe_die_republik_idea:0 "Est Liebe Die Republik!"
+AUS_monarchism_continued_idea_0:0 "Monarchism Continued"
+AUS_article_9a_idea_0:0 "Article 9A"
+AUS_article_9a_idea_1:0 "$AUS_article_9a_idea_0$"
+AUS_article_9a_idea_2:0 "$AUS_article_9a_idea_0$"
+AUS_article_9a_idea_3:0 "$AUS_article_9a_idea_0$"
+AUS_march_of_red_torches_idea:0 "March of Red Torches"
+AUS_vaterlandische_front_idea:0 "Vaterlandische Front"
+AUS_monarchism_continued_idea_1:0 "Monarchism Continued"
+AUS_monarchism_continued_idea_2:0 "$AUS_monarchism_continued_idea_1$"
+AUS_on_our_own_idea:0 "On Our Own"
+AUS_regensburg_agreement_idea:0 "Regensburg Agreement"
+AUS_habsburg_empowered_idea:0 "Habsburg Empowered"
+AUS_austro_hungarian_empire_idea:0 "Austro-Hangarian Empire Restored"
+AUS_kaiserin_army_idea:0 "Kaiserin's Army"
+AUS_holy_imperial_order_idea:0 "Holy Imperial Order"
+AUS_democratic_influence_idea:0 "Democratic Influence"
+AUS_unionist_influence_idea:0 "Unionist Influence"
+AUS_agitation_fascism_win_idea:0 "Fascism Successful"
+AUS_agitation_efficiency_fascism_4_idea:0 "Fascism Agitation Efficiency"
+AUS_agitation_efficiency_fascism_3_idea:0 "$AUS_agitation_efficiency_fascism_4_idea$"
+AUS_agitation_efficiency_fascism_2_idea:0 "$AUS_agitation_efficiency_fascism_4_idea$"
+AUS_agitation_efficiency_fascism_1_idea:0 "$AUS_agitation_efficiency_fascism_4_idea$"
+AUS_agitation_efficiency_fascism_0_idea:0 "$AUS_agitation_efficiency_fascism_4_idea$"
+AUS_agitation_communism_win_idea:0 "Communism Successful"
+AUS_agitation_efficiency_leninism_revolutionism:0 "Leninism-Revolutionism"
+AUS_agitation_efficiency_leninism:0 "Leninism"
+AUS_agitation_efficiency_communism_4_idea:0 "[AUSAgitationEfficiencyCommunism] Agitation Efficiency"
+AUS_agitation_efficiency_communism_3_idea:0 "Communism Agitation Efficiency"
+AUS_agitation_efficiency_communism_2_idea:0 "$AUS_agitation_efficiency_communism_3_idea$"
+AUS_agitation_efficiency_communism_1_idea:0 "$AUS_agitation_efficiency_communism_3_idea$"
+AUS_agitation_efficiency_communism_0_idea:0 "$AUS_agitation_efficiency_communism_3_idea$"
+AUS_all_fascist_party_idea:0 "All Fascist Party"
+GERMANY_confederation_1_idea:0 "$GERMANY_member_of_confederation_idea$"
+GERMANY_confederation_2_idea:0 "$GERMANY_member_of_confederation_idea$"
+
+### COSMETIC TAGS ###
+hre_unified_neutrality:0 "Holy Roman Empire"
+hre_unified_neutrality_DEF:0 "the Holy Roman Empire"
+hre_unified_neutrality_ADJ:0 "Holy Roman Empire"
+hre_unified_democratic:0 "Republic of Holy Roman"
+hre_unified_democratic_DEF:0 "the Republic of Holy Roman"
+hre_unified_democratic_ADJ:0 "Republic of Holy Roman"
+hre_unified_communism:0 "Holy Roman Union"
+hre_unified_communism_DEF:0 "the Holy Roman Union"
+hre_unified_communism_ADJ:0 "Holy Roman Union"
+hre_unified_fascism:0 "Holy Roman Empire"
+hre_unified_fascism_DEF:0 "the Holy Roman Empire"
+hre_unified_fascism_ADJ:0 "Holy Roman Empire"
+
+AUS_authoritarian_democracy:0 "Kingdom of Austria"
+AUS_gross_osterreich:0 "Großes Österriech"
+
+AUS_ultranationalism:0 "Österreich"
+AUS_ultranationalism_DEF:0 "the Österreich"
+AUS_ultranationalism_ADJ:0 "Österreich"
+
+### ALLIANCES ###
+AUS_federation_faction:0 "Federation"
+AUS_confederation_of_united_european_nations_faction:0 "K.V.E.N"
+AUS_confederation_of_united_european_nations_faction_long:0 "Konföderation der Vereinten Europäischen Nationen (K.V.E.N)"
+GERMANY_member_of_confederation_idea:0 "Member of the Confederation"
+
+### MODIFIERS ###
+focus_diplo:0 "Diplomacy Focus"
+split_bayern:0 "Split Bayern"
+unionist_learning:0 "Unionist Learning"
+support_accepted:0 "Support Accepted"
+support_rejected:0 "Support Rejected"
+threatening_speech:0 "Threatening Speech"
+
+### TOOLTIP ###
+AUS_condeferation_influence_tt:0 "All existing §YConfederation States§! except §Y[PRE.GetName]§! will gain §YUnionist Influence§!."
+AUS_TTS_core_tt:0 "§Y[TTS.GetName]§! becomes §YPuppet§! of §Y[AUS.GetName]§! and owner of its §YCore States§!."
+AUS_TTS_ENG_core_tt:0 "§Y[TTS.GetName]§! becomes §YColony§! of §Y[ENG.GetName]§! and owner of its §YCore States§!."
+AUS_PAP_core_tt:0 "§Y[PAP.GetName]§! becomes §YDominion§! of §Y[AUS.GetName]§! and owner of its remaining §YCore States§!."
+AUS_SPM_core_tt:0 "§Y[SPM.GetName]§! becomes §YPuppet§! of §Y[AUS.GetName]§! and owner of its remaining §YCore States§!."
+AUS_ITA_require_crush_tt:0 "§Y[AUS.GetName]§! controls all §YEuropean States of [ITA.GetName]§!."
+AUS_ITA_require_lands_tt:0 "§YEach European State of [ITA.GetName]§!: Is controlled either by §Y[AUS.GetName]§! or §Y[ITA.GetName]§!."
+AUS_confederation_integrate_tt:0 "§YAll Confederation States§!: Get event '§Y[AUSEvent1]§!'."
+AUS_confederation_disbaded_tt:0 "The Confederation was disbanded."
+AUS_communism_influence_raise_tt:0 "One of communism ideologies ($communism$§!, $lib_socialism$§! or $rev_unionism$§W) will gain §Y4.0 influence§!."
+AUS_democratic_influence_raise_tt:0 "One of democratic ideologies ($democratic$§!, $social_democracy$§! or $liberalism$§W) will gain §Y4.0 influence§!."
+AUS_if_focus_then_leader_fascism_tt:0 "If has completed focus §Y$AUS_multi_fascist_party$§! then the Ultranationalists under rule of §Y$AUS_Ernst_Kaltenbrunner$§! will take power. \nIf has completed focus §Y$AUS_vaterlandische_front_dominance$§! then §Y$AUS_Engelbert_Dollfuss$§! will take power over Ultranationalists and they will become ruling party."
+GERMANY_member_of_confederation_idea_desc:0 "§WRemains Until: $TT_icon_available_chk$ The §YConfederation§! is not disbanded or §Y[ROOT.GetName]§! hasn't left.§!"
+TT_icon_available_chk:1 "[ThisIconAvailableDyn]"
+TT_icon_available_not:0 "£GFX_accept_decline_icon|1"
+TT_icon_available_yes:0 "£GFX_accept_decline_icon|2"
+
+# Agitation Program TT
+AUS_agitation_base_time_gain_tt:0 "§YAgitation Mission§! base time will be increased by §G30§!."
+AUS_agitation_not_performing_actions_tt:0 "Not performing actions."
+AUS_agitation_program_ended_leninism_tt:0 "§YAgitation Program§! ended up with §YLeninism-Revolutionism Spirit§!."
+AUS_agitation_effective_2_tt:0 "§YAgitation Efficiency§! is at least §Y2§!."
+
+### DECISIONS ###
+AUS_agitation_mission:0 "Agitation Mission"
+
+AUS_better_ideals_decision:0 "Better Ideals of ours"
+AUS_better_ideals_desc:0 "Our ideals are the best we can offer, better than our opponents."
+AUS_only_best_way_decision:0 "Only Best Way"
+AUS_only_best_way_desc:0 "Our way is the only best way!"
+AUS_it_has_be_that_way_decision:0 "It Has To Be This Way"
+AUS_it_has_be_that_way_desc:0 "We are going our own way, we have own future and own path."
+
+AUS_better_ideals_communism_decision:0 "[AUSDecisionBetterIdeals]"
+AUS_better_ideals_fascism_decision:0 "[AUSDecisionBetterIdeals]"
+AUS_better_ideals_communism_decision_desc:0 "[AUSDecisionBetterIdealsDesc]"
+AUS_better_ideals_fascism_decision_desc:0 "[AUSDecisionBetterIdealsDesc]"
+
+AUS_only_best_way_fascism_decision:0 "[AUSDecisionOnlyBestWay]"
+AUS_only_best_way_fascism_decision_desc:0 "[AUSDecisionOnlyBestWayDesc]"
+AUS_only_best_way_communism_decision:0 "[AUSDecisionOnlyBestWay]"
+AUS_only_best_way_communism_decision_desc:0 "[AUSDecisionOnlyBestWayDesc]"
+
+AUS_it_has_be_that_way_fascism_decision:0 "[AUSDecisionHasBeThisWay]"
+AUS_it_has_be_that_way_fascism_decision_desc:0 "[AUSDecisionHasBeThisWayDesc]"
+AUS_it_has_be_that_way_communism_decision:0 "[AUSDecisionHasBeThisWay]"
+AUS_it_has_be_that_way_communism_decision_desc:0 "[AUSDecisionHasBeThisWayDesc]"
+# Categories
+AUS_agitation_program_category:0 "Agitation Programm"
+AUS_agitation_program_category_desc:0 "Such dramatic changes in our political plan require our people to be agitated to make sure they wish to follow our plan. \n§YAgitation Efficiency§! is §Y[?AUS_agitation_level]§!"

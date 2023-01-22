@@ -1,0 +1,31 @@
+
+state={
+	id=482
+	name="STATE_482"
+	manpower = 520751
+	
+	state_category = rural
+
+	history={
+		owner = TXS
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = TXS
+		add_claim_by = MEX
+
+		victory_points = {
+			8097 10
+		}
+		victory_points = {
+			10830 10
+		}
+	}
+
+	provinces={
+		4898 7935 10916 12850 4977 8033
+	}
+	
+
+	local_supplies=0.0 
+}

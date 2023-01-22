@@ -1,0 +1,38 @@
+on_actions={
+	#country leaving nations, these are scripted (does not include nations that are triggered through flags/events)
+	on_startup ={
+		effect ={
+		    FRA ={
+		        country_event = {
+			        id = fra.1
+					days = 150 
+					random_days = 150
+		        }
+		    }
+			AUS = {
+				set_variable = {
+					var = ROOT.days_after_speech
+					value = -1
+				}
+			}
+		}	
+	}
+
+	on_daily_AUS = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = ROOT.days_after_speech
+						value = -1
+						compare = greater_than
+					}
+				}
+				add_to_variable = {
+					var = ROOT.days_after_speech
+					value = 1
+				}
+			}
+		}
+	}
+}

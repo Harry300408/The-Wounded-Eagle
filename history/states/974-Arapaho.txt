@@ -1,0 +1,21 @@
+state = {
+	id = 974
+	name = "STATE_974"
+	provinces={
+		1809 12570 12642
+	}
+	history = {
+		owner = ARA
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = ARA
+
+	}
+
+	manpower = 20100
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 0.000
+}

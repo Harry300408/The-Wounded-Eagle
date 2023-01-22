@@ -1,0 +1,21 @@
+state = {
+	id = 972
+	name = "STATE_972"
+	provinces={
+		12586 10676 3708 12513 4757
+	}
+	history = {
+		owner = PEO
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = PEO
+
+	}
+
+	manpower = 20100
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 0.000
+}

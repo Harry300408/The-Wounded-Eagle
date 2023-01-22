@@ -1,0 +1,24 @@
+state={
+	id=675
+	name="STATE_675"
+	manpower = 122093
+
+	state_category = wasteland
+
+	history={
+		owner = JSR
+		victory_points = {
+			12413 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = JSR
+	}
+
+	provinces={
+		4951 12879 12316
+	}
+
+	local_supplies=0.0
+}

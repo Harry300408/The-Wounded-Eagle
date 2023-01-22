@@ -1,0 +1,61 @@
+
+defined_text = { 
+    name = br
+
+    text = {
+        localization_key = "NEWLINE"
+    }
+}
+
+
+defined_text = { 
+    name = scope_text
+
+    text = {
+        localization_key = "this: [?this.GetName] from: [?from.GetName] root: [?root.GetName]"
+    }
+}
+
+
+defined_text = { 
+    name = scope_text_with_array
+    
+    text = {
+        localization_key = "cur: [?this.GetName] i:[?i] v:[?v] from: [?from.GetName] root: [?root.GetName]"
+    }
+}
+
+#used in example 9
+
+defined_text = { 
+    name = scripted_gui_example_8_state_entry_loc
+    
+    text = {
+		trigger = {
+			or = {
+				check_variable = {  building_level@arms_factory > 0 }
+				check_variable = { building_level@industrial_complex > 0 }
+			}
+		}
+        localization_key = "scripted_gui_example_8_state_entry"
+    }
+	
+    text = {
+        localization_key = ""
+    }
+}
+
+defined_text = { 
+    name = last_taken_state_text
+    
+    text = {
+		trigger = {
+			check_variable = { root.last_taken_state = 0 }
+		}
+        localization_key = "---"
+    }
+	
+    text = {
+        localization_key = "Took [?root.last_taken_state.GetName] from [?root.last_taken_country.GetName]"
+    }
+}

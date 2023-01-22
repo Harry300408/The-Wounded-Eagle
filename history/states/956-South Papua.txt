@@ -1,0 +1,17 @@
+state = {
+	id = 956
+	name = "STATE_956"
+
+	history = {
+		owner = PAU
+		add_core_of = PAU
+	}
+
+	provinces = {
+		1283 12484 1310 1602 1617 7627 10505 1629 12457 
+	}
+	manpower = 19500
+	buildings_max_level_factor = 1.000
+	state_category = rural
+	local_supplies = 0.000
+}

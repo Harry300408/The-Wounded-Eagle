@@ -1,0 +1,18 @@
+state={
+	id=982
+	name="STATE_982"
+	provinces={
+		3512 6622 11346 
+	}
+	history = {
+		buildings = {
+			infrastructure = 2
+		}
+		owner = WSF
+		add_core_of = WSF
+	}
+	manpower= 51090
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

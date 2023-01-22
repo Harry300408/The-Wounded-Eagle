@@ -1,0 +1,23 @@
+state={
+	id=983
+	name="STATE_983"
+	provinces={
+		591 3601 6611 11901 13252 
+	}
+	history={
+		owner = ITA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_claim_by = SER
+		add_core_of = ITA
+		add_core_of = CRO
+
+	}
+	manpower= 286340
+	state_category= town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

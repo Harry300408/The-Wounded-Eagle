@@ -1,0 +1,252 @@
+﻿l_english:
+  
+  #Vanguard Marxism
+    marxism:0 "Marxism"
+    marxism_desc:0 ""
+    leninism:0 "Leninism"
+    leninism_desc:0 ""
+    stalinism:0 "Stalinism"
+    stalinism_desc:0 ""
+    trotskyism:0 "Trotskyism"
+    trotskyism_desc:0 ""
+    national_bolshevism:0 "National Bolshevism"
+    national_bolshevism:0 ""
+    red_futurism:0 "Red Futurism"
+    red_futurism_desc:0 ""
+
+  communism_noun:0 "§tVanguard Marxism§!"
+  communism_drift:0 "Daily Support for §tVanguard Marxism§!"
+
+  #Faction Name - AI needs this otherwise it freaks out for some reason
+  VM_faction_name_1:0 "Marxist Workers’ Revolutionary Front"
+
+  #Revolutionary Unionism
+  rev_unionism:0 "§tRevolutionary Unionism§!"
+  rev_unionism_desc:0 ""
+    legacy_unionism:0 "Legacy Unionism"
+    legacy_unionism_desc:0 ""
+    agrarian:0 "Agrarian Unionism"
+    agrarian_desc:0 ""
+    syndical:0 "Syndical Unionism"
+    syndical_desc:0 ""
+    extreme:0 "Extreme Unionism"
+    extreme_desc:0 ""
+    totalist:0 "Totalist Unionism"
+    totalist_desc:0 ""
+    maximal:0 "Maximal Unionism"
+    sen_thought:0 "Surya Sen Thought"
+    sen_thought_desc:0 ""
+
+  rev_unionism_drift:0 "Daily Support for §tRevolutionary Unionism§!"
+  rev_unionism_noun:0 "§tRevolutionary Unionism§!"
+
+  #Faction Name
+  RU_faction_name_1:0 "The Union of Brothers"
+
+  #Libertarian Socialism
+  lib_socialism:0 "§tLibertarian Socialism"
+  lib_socialism_desc:0 ""
+    anarcho_communism:0 "Anarcho-Communism"
+    anarcho_communism_desc:0 ""
+    anarchist_syndicalist:0 "Anarcho-Syndicalism"
+    anarchist_syndicalist_desc:0 ""
+    agrarian_soc:0 "Agrarian Socialism"
+    agrarian_soc_desc:0 "" 
+    market_socialism:0 "Market Socialism"
+    market_socialism_desc:0 ""
+    council_communism:0 "Market Socialism"
+
+  lib_socialism_drift:0 "Daily Support for §tLibertarian Socialism§!"
+  lib_socialism_noun:0 "§tLibertarian Socialism§!"
+
+  #Faction Name
+  LS_faction_name_1:0 "Peoples Front of Liberation"
+
+  #Social Democracy
+  social_democracy:0 "§3Social Democracy§!"
+  social_democracy_desc:0 ""
+    democratic_socialism:0 "Democratic Socialism"
+    democratic_socialism_desc:0 ""
+    welfarism:0 "Welfarism"
+    welfarism_desc:0 ""
+    social_progressivism:0 "Social Progressivism"
+    social_progressivism_desc:0 ""
+    lw_populism:0 "Left Wing Populism"
+    lw_populism_desc:0 ""
+    christian_socialism:0 "Christian Socialism"
+    christian_socialism_desc:0 ""
+
+  social_democracy_drift:0 "Daily Support for §3Social Democracy§!"
+  social_democracy_noun:0 "§3Social Democracy§!"
+
+  #Faction Name
+  SD_faction_name_1:0 "Pact of Liberation"
+
+  #liberalism
+  liberalism:0 "§YLiberalism§!"
+  liberalism_desc:0 ""
+    social_liberalism:0 "Social Liberalism"
+    social_liberalism_desc:0 ""
+    market_liberalism:0 "Market Liberals"
+    market_liberalism_desc:0 ""
+    national_liberalism:0 "National Liberals"
+    national_liberalism_desc:0 ""
+    libertarianism:0 "Libertarianism"
+    libertarianism_desc:0 ""
+    an_cap:0 "Anarcho-Capitalism"
+
+  liberalism_drift:0 "Daily Support for §YLiberalism§!"
+  liberalism_noun:0 "§YLiberalism§!"
+
+  #Faction Name
+  L_faction_name_1:0 "The Liberal Front"
+
+  #Conservitism
+    social_conservatism:0 "Social Conservatism"
+    social_conservatism_desc:0 ""
+    liberal_conservatism:0 "Liberal Conservatism"
+    liberal_conservatism_desc:0 ""
+    national_conservatism:0 "National Conservatism"
+    national_conservatism_desc:0 ""
+    clerical_democracy:0 "Clerical Democracy"
+    clerical_democracy_desc:0 ""
+    rw_pop:0 "Right-Wing Populism"
+    rw_pop_desc:0 ""
+
+  democratic_drift:0 "Daily Support for §BConservitism§!"
+  democratic_noun:0 "§BConservitism§!"
+
+  #Faction Name
+  C_faction_name_1:0 "Entente Cordial"
+
+  #Authoritarian Democracy
+  authoritarian_democracy:0 "§gAuthoritarian Democracy§!"
+  authoritarian_democracy_desc:0 ""
+    con_mon:0 "Constitutional Monarchy"
+    con_mon_desc:0 "A constitutional monarchy, parliamentary monarchy, or democratic monarchy is a form of monarchy in which the monarch exercises their authority in accordance with a constitution and is not alone in decision making. Constitutional monarchies differ from absolute monarchies (in which a monarch is the only decision-maker) in that they are bound to exercise powers and authorities within limits prescribed by an established legal framework."
+    semi_con_mon:0 "Semi-Constitutional Monarchy"
+    semi_con_mon_desc:0 "The concept of semi-constitutional monarch identifies constitutional monarchies where the monarch retains substantial powers, on a par with a president in a presidential or semi-presidential system. As a result, constitutional monarchies where the monarch has a largely ceremonial role may also be referred to as 'parliamentary monarchies' to differentiate them from semi-constitutional monarchies."
+    oligarchy:0 "Oligarchy"
+    oligarchy_desc:0 ""
+    g_democracy:0 "Guided Democracy"
+    g_democracy_desc:0 ""
+    kleptocracy:0 "Kleptocracy"
+    kleptocracy_desc:0 ""
+    corporatocracy:0 "Corporatocracy"
+    corporatocracy_desc:0 ""
+    st_democracy:0 "Stratocratic Democracy"
+    st_democracy_desc:0 ""
+
+  authoritarian_democracy_drift:0 "Daily Support for §gAuthoritarian Democracy§!"
+  authoritarian_democracy_noun:0 "§gAuthoritarian Democracy§!"
+
+  #Faction Name
+  AD_faction_name_1:0 "The Monarchal Accords"
+
+  #Despotism
+  despotism:0 "§gDespotism§!"
+  despotism_desc:0 ""
+    dictatorship:0 "Dictatorship"  
+    dictatorship_desc:0 ""
+    theocracy:0 "Theocracy"
+    theocracy_desc:0 ""
+    anocracy:0 "Anocracy"
+    anocracy_desc:0 ""
+    constitutional_dictatorship:0 "Constitutional Dictatorship"
+    constitutional_dictatorship_desc:0 ""
+    military_despotism:0 "Military Despotism"
+    military_despotism_desc:0 ""
+
+  despotism_drift:0 "Daily Support for §gDespotism§!"
+  despotism_noun:0 "§gDespotism§!"
+
+  #Faction Name
+  D_faction_name_1:0 "Alliance of Military Juntas"
+
+  #Absolute Monarchism
+    classical_absolutism:0 "Classical Absolutism"
+    classical_absolutism_desc:0 ""
+    theocratic_absolutism:0 "Theocratic Absolutism"
+    theocratic_absolutism_desc:0 ""  
+    enlightened_absolutism:0 "Enlightened Absolutism"
+    enlightened_absolutism_desc:0 ""
+    bonapartism:0 "Bonapartism"
+    bonapartism_desc:0 ""
+		papal_theocracy:0 "Papal Theocracy"
+		papal_theocracy_desc:0 ""
+
+  neutrality_noun:0 "§0Absolute Monarchism§!"
+  neutrality_drift:0 "Daily Support for §0Absolute Monarchism§!"
+
+  #Faction Name
+  AM_faction_name_1:0 "The Loyal Forces"
+
+  #Ultranationalism
+  ultranationalism:0 "Ultranationalism"
+  ultranationalism_desc:0 ""
+    ethnic_nationalism:0 "Ethnic Nationalism"
+    ethnic_nationalism_desc:0 ""
+    national_syndicalism:0 "National Syndicalism"
+    national_syndicalism_desc:0 ""
+    national_anarchism:0 "National Anarchism"
+    national_anarchism_desc:0 ""
+    white_nationalism:0 "White Nationalism"
+    white_nationalism_desc:0 ""
+    black_nationalism:0 "Black Nationalism"
+    black_nationalism_desc:0 ""
+
+  ultranationalism_drift:0 "Daily Support for Ultranationalism"
+  ultranationalism_noun:0 "Ultranationalism"
+
+  #Faction Name
+  U_faction_name_1:0 "Ultranational Guard of Peoples"
+
+  #National Corporatism
+    nat_volkism:0 "National Volkism"
+    nat_volkism_desc:0 ""
+    classical_nat:0 "Classical Fascism"
+    classical_nat_desc:0 ""
+    falangism:0 "Falangism"
+    falangism_desc:0 ""
+    mon_nat:0 "Monarcho-Fascism"
+    mon_nat_desc:0 ""
+    clerical_nationalism:0 "Clerical Nationalism"
+    clerical_nationalism_desc:0 ""
+    e_nat_volkism:0 "Esoteric National Volkism"
+    e_nat_volkism_desc:0 ""
+    national_futurism:0 "National Futurism"
+    national_futurism_desc:0 ""
+
+  fascism_drift:0 "Daily Support for §LNational Corporatism§!"
+  fascism_noun:0 "§LNational Corporatism§!"
+
+  #Faction Name
+  NC_faction_name_1:0 "Axis of Nationalist Powers"
+
+  #Radical Traditionalism
+  rad_trad:0 "Radical Traditionalism"
+  rad_trad_desc:0 ""
+    esoteric_traditionalism:0 "Esoteric Traditionalism"
+    esoteric_traditionalism_desc:0 ""
+    martial_neo_paganism:0 "Martial Neo-Paganism"
+    martial_neo_paganism_desc:0 ""
+    fundamentalism:0 "Fundamentalism"
+    fundamentalism_desc:0 ""
+    neo_feudalism:0 "Neo-Feudalism"
+    neo_feudalism_desc:0 ""
+    eastern_occultism:0 "Eastern Occultism"
+    eastern_occultism_desc:0 ""
+
+  rad_trad_drift:0 "Daily Support for Radical Traditionalism"
+  rad_trad_noun:0 "Radical Traditionalism"
+
+  #Faction Name
+  RT_faction_name_1:0 "Traditionalists"
+
+
+
+
+
+
+  
+  

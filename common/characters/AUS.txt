@@ -1,0 +1,100 @@
+characters = {
+
+    ## Austrian Leaders ##
+    
+    AUS_otto_von_h = {
+        name = AUS_otto_von_h
+        portraits = {
+            civilian = {
+                large = "GFX_otto_hab"
+            }
+        }
+        country_leader = {
+            ideology = theocratic_absolutism
+            traits = { legitimate_heir anti_communist }
+            #desc = 
+        }
+    }
+    AUS_parliament = {
+        name = AUS_parliament
+        portraits = {
+            civilian = {
+                large = "GFX_parliament"
+            }
+        }
+        country_leader = {
+            ideology = semi_con_mon
+            traits = { twe_distributed_power }
+            #desc = 
+        }
+    }
+    AUS_Engelbert_Dollfuss = {
+        name = AUS_Engelbert_Dollfuss
+        portraits = {
+            civilian = {
+                large = "GFX_Engelbert_Dollfuss"
+            }
+        }
+        country_leader = {
+            ideology = nat_volkism
+            traits = {  }
+            #desc = 
+        }
+    }
+    AUS_Ernst_Kaltenbrunner = {
+        name = AUS_Ernst_Kaltenbrunner
+        portraits = {
+            civilian = {
+                large = "GFX_Ernst_Kaltenbrunner"
+            }
+        }
+        country_leader = {
+            ideology = ethnic_nationalism
+            traits = {  }
+            #desc = 
+        }
+    }
+
+    ## Unit & Field Marshals ##
+    ##Field Marshals
+
+    #FRA_alphonse_j = {
+    #    name = FRA_alphonse_juin
+    #    portraits = {
+    #        army={
+	#		    large=GFX_alphonse_juin
+	#	    }
+    #    }
+	#	
+    #    field_marshal={
+	#		traits={  }
+	#		skill=5
+	#		attack_skill=4
+	#		defense_skill=5
+	#		planning_skill=4
+	#		logistics_skill=4
+	#	}
+    #} 
+
+    ## Unit Leaders
+
+    #FRA_antoine_besson = {
+    #   name = FRA_antoine_besson
+    #    portraits = {
+    #        army={
+	#		    large=GFX_antoine
+	#	    }
+    #    }
+	#	
+    #    corps_commander={
+	#		traits={  }
+	#		skill=3
+	#		attack_skill=2
+	#		defense_skill=3
+	#		planning_skill=4
+	#		logistics_skill=2
+	#	}
+    #} 
+
+
+}

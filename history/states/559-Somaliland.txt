@@ -1,0 +1,26 @@
+state=
+{
+	id = 559
+	name = "STATE_559"
+	manpower = 347831
+	resources = {
+		steel = 1
+	}
+	
+	state_category = rural
+	
+	history={
+		owner = HEL
+		add_core_of = HEL
+		add_core_of = SOM
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
+	}
+	provinces = {
+		2063 8164 10928 	
+	}
+
+	local_supplies=0.0 
+}
