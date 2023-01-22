@@ -1,0 +1,23 @@
+state={
+	id=987
+	name="STATE_987"
+	provinces={
+		521 11516 
+	}
+	history = {
+		owner = FRA
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = FRA
+		victory_points = {
+			11516 5
+		}
+	}
+	manpower= 743300
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
