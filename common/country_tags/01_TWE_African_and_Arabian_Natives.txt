@@ -45,5 +45,5 @@ AYR = "countries/Niger.txt"
 #Bamana
 BAM = "countries/Mali.txt"
 #Banda
-BAN = "countries/Mali.txt"
+BND = "countries/Mali.txt"
 
