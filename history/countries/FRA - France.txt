@@ -62,6 +62,21 @@ if = {
 	}
 
 	set_autonomy = {
+		target = WAD
+		autonomous_state = autonomy_FRA_proc
+	}
+
+	set_autonomy = {
+		target = AYR
+		autonomous_state = autonomy_FRA_proc
+	}
+
+	set_autonomy = {
+		target = BAM
+		autonomous_state = autonomy_FRA_proc
+	}
+
+	set_autonomy = {
 		target = TUN
 		autonomous_state = autonomy_integrated_puppet
 	}
@@ -70,6 +85,9 @@ if = {
 		puppet = VIN
 		puppet = NGR
 		puppet = TUN
+		puppet = WAD
+		puppet = AYR
+		puppet = BAM
 	}
 
 }	
@@ -80,6 +98,18 @@ NGR = {
 
 VIN ={
 	set_cosmetic_tag = VIN_proc
+}
+
+WAD = {
+	set_cosmetic_tag = FRA_proc
+}
+
+AYR = {
+	set_cosmetic_tag = FRA_proc
+}
+
+BAM = {
+	set_cosmetic_tag = FRA_proc
 }
 
 # Starting tech

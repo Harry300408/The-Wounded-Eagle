@@ -38,5 +38,12 @@ GBA = "countries/Gambela.txt"
 SID = "countries/Sidamo.txt"
 #Oromia
 ORO = "countries/Oromo.txt"
-
+#Wadai
+WAD = "countries/Chad.txt"
+#Ayr
+AYR = "countries/Niger.txt"
+#Bamana
+BAM = "countries/Mali.txt"
+#Banda
+BAN = "countries/Mali.txt"
 

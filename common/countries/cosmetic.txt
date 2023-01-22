@@ -19,6 +19,11 @@ LBA_SEN = {
 }
 
 #FRA
+FRA_proc = {
+    color = rgb { 0 78 221 }
+    color_ui = rgb { 0 78 221 }
+}
+
 NGR_proc = {
     color = rgb { 0 78 221 }
     color_ui = rgb { 0 78 221 }

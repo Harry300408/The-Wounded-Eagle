@@ -1,5 +1,16 @@
 ﻿l_english:
  # TWE Base Nations
+ BAM:0 "Bamana"
+ BAM_DEF:0 "Bamana"
+ BAM_ADJ:0 "Bambara"
+
+ WAD:0 "Wadai" 
+ WAD_DEF:0 "Wadai"
+ WAD_ADJ:0 "Maba"
+
+ AYR:0 "Ayr"
+ AYR_DEF:0 "Ayr"
+ AYR_ADJ:0 "Tuareg"
 
  PAW:0 "Pawnee"
  PAW_DEF:0 "Pawnee"

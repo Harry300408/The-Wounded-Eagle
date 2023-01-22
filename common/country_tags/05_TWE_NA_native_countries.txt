@@ -21,3 +21,4 @@ ARA = "countries/Natives.txt"
 MIA = "countries/Natives.txt"
 #Pawnee
 PAW = "countries/Natives.txt"
+

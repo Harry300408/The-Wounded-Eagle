@@ -9,7 +9,7 @@ focus_tree = {
 		}
 	}
 	continuous_focus_position = {
-		x = 3550
+		x = 3450
 		y = 1100
 	}
 
@@ -33,7 +33,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AUS_revive_political_plan
 		mutually_exclusive = {
-			focus = AUS_look_in_the_past
+			focus = AUS_revive_monarchism
 			focus = AUS_new_osterreich
 		}
 		prerequisite = {
@@ -44,8 +44,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AUS_look_in_the_past
-		icon = GFX_
+		id = AUS_revive_monarchism
+		icon = GFX_focus_AUS_continue_monarchism
 		cost = 5
 		x = 8
 		y = 1
@@ -58,8 +58,7 @@ focus_tree = {
 			focus = AUS_revive_political_plan
 		}
 		completion_reward = { 
-			add_political_power = 50
-			add_stability = -0.1
+
 		}
 	}
 	focus = {
@@ -71,7 +70,7 @@ focus_tree = {
 		relative_position_id = AUS_revive_political_plan
 		mutually_exclusive = {
 			focus = AUS_keep_neutrality
-			focus = AUS_look_in_the_past
+			focus = AUS_revive_monarchism
 		}
 		prerequisite = {
 			focus = AUS_revive_political_plan
@@ -418,7 +417,7 @@ focus_tree = {
 		id = AUS_prepare_sabotage
 		icon = GFX_focus_AUS_prepare_sabotage
 		cost = 5
-		x = -11
+		x = -9
 		y = 1
 		relative_position_id = AUS_new_osterreich
 		mutually_exclusive = {
@@ -455,7 +454,7 @@ focus_tree = {
 		id = AUS_agitation_program
 		icon = GFX_focus_AUS_agitation_program
 		cost = 5
-		x = 5
+		x = 4
 		y = 2
 		relative_position_id = AUS_prepare_sabotage
 		prerequisite = {
@@ -623,39 +622,6 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = AUS_arrange_unionist_conference
-		icon = GFX_
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = AUS_empower_kpo
-		prerequisite = {
-			focus = AUS_empower_kpo
-		}
-		available = {
-		}
-		completion_reward = { 
-		}
-	}
-	focus = {
-		id = AUS_international_unionist_council
-		icon = GFX_
-		cost = 0
-		x = 0
-		y = 2
-		relative_position_id = AUS_empower_kpo
-		prerequisite = {
-			focus = AUS_arrange_unionist_conference
-		}
-		completion_reward = { 
-			set_politics = {
-				ruling_party = communism
-				election_frequency = 12
-				elections_allowed = yes
-			}
-		}
-	}
 
 	### ----------------------------------- ###
 	### ------- EMPOWER RIGHT WING -------- ###
@@ -792,10 +758,6 @@ focus_tree = {
 			focus = AUS_vaterlandische_front_dominance
 		}
 		completion_reward = { 
-			set_variable = {
-				var = ROOT.days_after_speech
-				value = 0
-			}
 			news_event = { id = ausevents.17 hours = 12 }
 			add_popularity = {
 				ideology = ultranationalism
@@ -938,6 +900,8 @@ focus_tree = {
 		relative_position_id = AUS_revanchism
 		prerequisite = {
 			focus = AUS_revanchism
+			focus = AUS_continent_dominance
+			focus = AUS_local_hegemony
 		}
 		completion_reward = { 
 			BAY = {
@@ -954,6 +918,8 @@ focus_tree = {
 		relative_position_id = AUS_revanchism
 		prerequisite = {
 			focus = AUS_revanchism
+			focus = AUS_continent_dominance
+			focus = AUS_local_hegemony
 		}
 		completion_reward = { 
 			CZE = {
@@ -1010,8 +976,7 @@ focus_tree = {
 			focus = AUS_ein_kanzler_ein_reich
 		}
 		completion_reward = { 
-			add_war_support = 0.05
-			add_ideas = AUS_mind_militarisation_idea
+			
 		}
 	}
 	focus = {
@@ -1025,11 +990,7 @@ focus_tree = {
 			focus = AUS_ein_kanzler_ein_reich
 		}
 		completion_reward = { 
-			add_stability = 0.02
-			add_popularity = {
-				ideology = ultranationalism
-				popularity = 0.05
-			}
+			
 		}
 	}
 	focus = {
@@ -1046,58 +1007,7 @@ focus_tree = {
 			focus = AUS_old_new_empire
 		}
 		completion_reward = { 
-			set_cosmetic_tag = AUS_gross_osterreich
-			add_stability = 0.05
-			set_variable = {
-				var = ROOT.days_after_speech
-				value = -2
-			}
-			news_event = { id = ausevents.20 random_days = 2 }
-			set_country_flag = AUS_confederation_disbanded_flag
-			if = {
-				limit = {
-					ROOT = {
-						is_faction_leader = yes
-					}
-				}
-				every_country = {
-					limit = {
-						is_in_faction_with = ROOT
-						is_puppet = no
-					}
-					add_to_array = {
-						array = AUS.countries_faction_transfer_array
-						value = THIS.id
-					}
-				}
-				dismantle_faction = yes
-			}
-			else = {
-				every_country = {
-					limit = {
-						is_in_faction_with = ROOT
-					}
-					leave_faction = yes
-				}
-			}
-			effect_tooltip = {
-				create_faction = AUS_confederation_of_united_european_nations_faction_long
-			}
-			hidden_effect = {
-				create_faction = AUS_confederation_of_united_european_nations_faction
-			}
-			every_country = {
-				limit = {
-					is_in_array = {
-						array = AUS.countries_faction_transfer_array
-						value = THIS.id
-					}
-				}
-				AUS = {
-					add_to_faction = THIS
-				}
-			}
-			clear_array = AUS.countries_faction_transfer_array
+			
 		}
 	}
 	focus = {
@@ -1111,23 +1021,7 @@ focus_tree = {
 			focus = AUS_grosses_osterreich
 		}
 		completion_reward = { 
-			#This effects will be moved into decision tab so the player
-			#can individually send ultimatums
-			BAY = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			CZE = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			ULM = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			BAD = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			WUR = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
+			
 		}
 	}
 	focus = {
@@ -1141,16 +1035,7 @@ focus_tree = {
 			focus = AUS_grosses_osterreich
 		}
 		completion_reward = { 
-			#This effects will be moved into decision tab so the player
-			#can individually send ultimatums
-			create_wargoal = {
-				target = SWI
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = FRA
-				type = annex_everything
-			}
+			
 		}
 	}
 	focus = {
@@ -1164,16 +1049,7 @@ focus_tree = {
 			focus = AUS_grosses_osterreich
 		}
 		completion_reward = { 
-			#This effects will be moved into decision tab so the player
-			#can individually send ultimatums
-			create_wargoal = {
-				target = YUG
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = ITA
-				type = annex_everything
-			}
+			
 		}
 	}
 	focus = {
@@ -1187,42 +1063,7 @@ focus_tree = {
 			focus = AUS_grosses_osterreich
 		}
 		completion_reward = { 
-			#This effects will be moved into decision tab so the player
-			#can individually send ultimatums
-			create_wargoal = {
-				target = SOV
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = HUN
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = ROM
-				type = annex_everything
-			}
-			if = {
-				limit = {
-					POL = {
-						is_puppet = no
-					}
-				}
-				create_wargoal = {
-					target = POL
-					type = annex_everything
-				}
-			}
-			if = {
-				limit = {
-					SLO = {
-						is_puppet = no
-					}
-				}
-				create_wargoal = {
-					target = SLO
-					type = annex_everything
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -1236,35 +1077,7 @@ focus_tree = {
 			focus = AUS_grosses_osterreich
 		}
 		completion_reward = { 
-			#This effects will be moved into decision tab so the player
-			#can individually send ultimatums
-			WSF = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			THU = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			SAX = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			DBS = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			HAN = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			OLD = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			PRE = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			MEK = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			SHL = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
+			
 		}
 	}
 	focus = {
@@ -1281,47 +1094,7 @@ focus_tree = {
 			focus = AUS_plan_sud_deutschland
 		}
 		completion_reward = { 
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = SHL
-						is_core_of = MEK
-						is_core_of = PRE
-						is_core_of = OLD
-						is_core_of = HAN
-						is_core_of = DBS
-						is_core_of = SAX
-						is_core_of = THU
-						is_core_of = WSF
-						is_core_of = BAY
-						is_core_of = ULM
-						is_core_of = BAD
-						is_core_of = WUR
-						is_core_of = CZE
-					}
-					28 = {
-						is_fully_controlled_by = AUS
-					}
-					962 = {
-						is_fully_controlled_by = AUS
-					}
-					42 = {
-						is_fully_controlled_by = AUS
-					}
-					51 = {
-						is_fully_controlled_by = AUS
-					}
-					969 = {
-						is_fully_controlled_by = AUS
-					}
-					8 = {
-						is_fully_controlled_by = AUS
-					}
-					is_fully_controlled_by = AUS
-				}
-				add_compliance = 0.1
-				add_claim_by = AUS
-			}
+			
 		}
 	}
 	focus = {
@@ -1341,7 +1114,7 @@ focus_tree = {
 			focus = AUS_plan_west
 		}
 		completion_reward = { 
-			#DELTA
+			
 		}
 	}
 	focus = {
@@ -1358,18 +1131,8 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_multi_fascist_party
 		}
-		available = {
-			fascism < 0.4
-		}
 		completion_reward = { 
-			set_politics = {
-				ruling_party = ultranationalism
-			}
-			news_event = { id = ausevents.21 hours = 12 }
-			add_popularity = {
-				ideology = ultranationalism
-				popularity = 0.2
-			}
+			
 		}
 	}
 	focus = {
@@ -1383,7 +1146,7 @@ focus_tree = {
 			focus = AUS_local_hegemony
 		}
 		completion_reward = { 
-			#DELTA: decisions
+			
 		}
 	}
 	focus = {
@@ -1397,105 +1160,7 @@ focus_tree = {
 			focus = AUS_local_hegemony
 		}
 		completion_reward = { 
-			add_political_power = 100
-			WSF = {
-				add_ai_strategy = {
-					type = befriend
-					id = AUS
-					value = 25
-				}
-			}
-			THU = {
-				add_ai_strategy = {
-					type = befriend
-					id = AUS
-					value = 25
-				}
-			}
-			SAX = {
-				add_ai_strategy = {
-					type = befriend
-					id = AUS
-					value = 25
-				}
-			}
-			DBS = {
-				add_ai_strategy = {
-					type = befriend
-					id = AUS
-					value = 25
-				}
-			}
-			HAN = {
-				add_ai_strategy = {
-					type = befriend
-					id = AUS
-					value = 25
-				}
-			}
-			OLD = {
-				add_ai_strategy = {
-					type = befriend
-					id = AUS
-					value = 25
-				}
-			}
-			PRE = {
-				add_ai_strategy = {
-					type = befriend
-					id = AUS
-					value = 25
-				}
-			}
-			MEK = {
-				add_ai_strategy = {
-					type = befriend
-					id = AUS
-					value = 25
-				}
-			}
-			SHL = {
-				add_ai_strategy = {
-					type = befriend
-					id = AUS
-					value = 25
-				}
-			}
-			BAY = {
-				add_ai_strategy = {
-					type = befriend
-					id = AUS
-					value = 25
-				}
-			}
-			CZE = {
-				add_ai_strategy = {
-					type = befriend
-					id = AUS
-					value = 25
-				}
-			}
-			ULM = {
-				add_ai_strategy = {
-					type = befriend
-					id = AUS
-					value = 25
-				}
-			}
-			BAD = {
-				add_ai_strategy = {
-					type = befriend
-					id = AUS
-					value = 25
-				}
-			}
-			WUR = {
-				add_ai_strategy = {
-					type = befriend
-					id = AUS
-					value = 25
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -1509,17 +1174,7 @@ focus_tree = {
 			focus = AUS_plan_deutschland
 		}
 		completion_reward = { 
-			CZE = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -1536,128 +1191,7 @@ focus_tree = {
 			focus = AUS_plan_deutschland
 		}
 		completion_reward = { 
-			#DELTA: decisions
-			WSF = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			THU = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			SAX = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			DBS = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			HAN = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			OLD = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			MEK = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			SHL = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			ULM = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			BAD = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			WUR = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -1671,18 +1205,7 @@ focus_tree = {
 			focus = AUS_review_act_of_august_fifteenth
 		}
 		completion_reward = { 
-			#DELTA: move to event (BAY: AUS invite)
-			BAY = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -1696,7 +1219,7 @@ focus_tree = {
 			focus = AUS_invite_bavaria
 		}
 		completion_reward = { 
-			#DELTA: AUS/BAY add treaty idea
+			
 		}
 	}
 	focus = {
@@ -1713,18 +1236,7 @@ focus_tree = {
 			focus = AUS_agreement_with_bohemia
 		}
 		completion_reward = { 
-			#DELTA: move to event (PRE: AUS invite)
-			PRE = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -1738,7 +1250,7 @@ focus_tree = {
 			focus = AUS_invite_prussia
 		}
 		completion_reward = { 
-			#DELTA: AUS/PRE add treaty idea
+			
 		}
 	}
 	focus = {
@@ -1753,7 +1265,7 @@ focus_tree = {
 			focus = AUS_invite_prussia
 		}
 		completion_reward = { 
-			#DELTA: PRAGUE CONFERENCE event
+			
 		}
 	}
 	focus = {
@@ -1767,7 +1279,7 @@ focus_tree = {
 			focus = AUS_prague_conference
 		}
 		completion_reward = { 
-			#DELTA: decisions
+			
 		}
 	}
 	focus = {
@@ -1781,7 +1293,7 @@ focus_tree = {
 			focus = AUS_prague_conference
 		}
 		completion_reward = { 
-			#DELTA: decisions
+			
 		}
 	}
 	focus = {
@@ -1798,7 +1310,7 @@ focus_tree = {
 			focus = AUS_west_deutschland_plan
 		}
 		completion_reward = { 
-			#DELTA: DEN event (AUS invite)
+			
 		}
 	}
 	focus = {
@@ -1816,10 +1328,7 @@ focus_tree = {
 			focus = AUS_vaterlandische_front_dominance
 		}
 		completion_reward = { 
-			add_political_power = 100
-			add_stability = -0.1
-			add_war_support = -0.1
-			news_event = { id = ausevents.22 hours = 12 }
+			
 		}
 	}
 	focus = {
@@ -1833,15 +1342,7 @@ focus_tree = {
 			focus = AUS_continent_dominance
 		}
 		completion_reward = { 
-			every_country = {
-				limit = {
-					OR = {
-						has_autonomy_state = autonomy_AUS_fed
-						has_idea = GERMANY_member_of_confederation_idea
-					}
-				}
-				country_event = { id = ausevents.23 hours = 6 }
-			}
+			
 		}
 	}
 	focus = {
@@ -1870,8 +1371,7 @@ focus_tree = {
 			focus = AUS_continent_dominance
 		}
 		completion_reward = { 
-			add_war_support = 0.1
-			add_stability = 0.1
+			
 		}
 	}
 	focus = {
@@ -2079,15 +1579,12 @@ focus_tree = {
 		id = AUS_assume_continental_hegemony
 		icon = GFX_
 		cost = 10
-		x = -4
+		x = 0
 		y = 2
 		relative_position_id = AUS_continent_secured
 		prerequisite = {
 			focus = AUS_war_with_the_isle
 			focus = AUS_treaty_vienna_london
-		}
-		prerequisite = {
-			focus = AUS_strike_the_ottomans
 		}
 		completion_reward = { 
 			
@@ -2189,7 +1686,7 @@ focus_tree = {
 		icon = GFX_
 		cost = 10
 		x = -4
-		y = 2
+		y = 1
 		relative_position_id = AUS_dominance_in_europe
 		prerequisite = {
 			focus = AUS_dominance_in_europe
@@ -2323,7 +1820,7 @@ focus_tree = {
 		icon = GFX_
 		cost = 10
 		x = 0
-		y = 5
+		y = 4
 		relative_position_id = AUS_look_on_balkans
 		prerequisite = {
 			focus = AUS_march_by_the_shore
@@ -2503,1048 +2000,1035 @@ focus_tree = {
 	### -------- REVIVE MONARCHISM -------- ###
 
 	focus = {
-		id = AUS_die_habsburger
-		icon = GFX_
+		id = AUS_strengthen_imperial_sentiments
+		icon = GFX_focus_AUS_imperial_sentiments
 		cost = 10
 		x = 0
 		y = 1
-		relative_position_id = AUS_look_in_the_past
+		relative_position_id = AUS_revive_monarchism
 		prerequisite = {
-			focus = AUS_look_in_the_past
+			focus = AUS_revive_monarchism
 		}
 		completion_reward = { 
-			add_timed_idea = {
-				idea = AUS_die_habsburger_idea
-				days = 210
+			add_political_power = 25
+			swap_ideas = {
+				remove_idea = AUS_monarchism_continued_idea_0
+				add_idea = AUS_monarchism_continued_idea_1
 			}
 		}
 	}
 	focus = {
-		id = AUS_propaganda_coordination
-		icon = GFX_
-		cost = 15
-		x = 0
-		y = 1
-		relative_position_id = AUS_die_habsburger
-		prerequisite = {
-			focus = AUS_die_habsburger
-		}
-		completion_reward = { 
-
-		}
-	}
-	focus = {
-		id = AUS_prepare_for_inevitable
-		icon = GFX_
+		id = AUS_prepare_for_changes
+		icon = GFX_focus_AUS_prepare_changes
 		cost = 10
 		x = 0
 		y = 1
-		relative_position_id = AUS_propaganda_coordination
+		relative_position_id = AUS_strengthen_imperial_sentiments
 		prerequisite = {
-			focus = AUS_propaganda_coordination
+			focus = AUS_strengthen_imperial_sentiments
 		}
 		completion_reward = { 
-
+			swap_ideas = {
+				remove_idea = AUS_monarchism_continued_idea_1
+				add_idea = AUS_monarchism_continued_idea_2
+			}
 		}
 	}
 	focus = {
-		id = AUS_request_bavarian_support
-		icon = GFX_
-		cost = 5
-		x = -1
-		y = 1
-		relative_position_id = AUS_prepare_for_inevitable
-		mutually_exclusive = {
-			focus = AUS_request_prussian_support
-		}
-		prerequisite = {
-			focus = AUS_prepare_for_inevitable
-		}
-		completion_reward = { 
-
-		}
-	}
-	focus = {
-		id = AUS_territorial_question
-		icon = GFX_
-		cost = 5
-		x = -3
-		y = 1
-		relative_position_id = AUS_request_bavarian_support
-		prerequisite = {
-			focus = AUS_request_bavarian_support
-		}
-		completion_reward = { 
-
-		}
-	}
-	focus = {
-		id = AUS_pakt_bayern_osterreich
-		icon = GFX_
-		cost = 5
-		x = -3
-		y = 5
-		relative_position_id = AUS_request_bavarian_support
-		prerequisite = {
-			focus = AUS_territorial_question
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_request_prussian_support
-		icon = GFX_
-		cost = 5
-		x = 1
-		y = 1
-		relative_position_id = AUS_prepare_for_inevitable
-		mutually_exclusive = {
-			focus = AUS_request_bavarian_support
-		}
-		prerequisite = {
-			focus = AUS_prepare_for_inevitable
-		}
-		completion_reward = { 
-
-		}
-	}
-	focus = {
-		id = AUS_silesian_question
-		icon = GFX_
-		cost = 5
-		x = 3
-		y = 1
-		relative_position_id = AUS_request_prussian_support
-		prerequisite = {
-			focus = AUS_request_prussian_support
-		}
-		completion_reward = { 
-
-		}
-	}
-	focus = {
-		id = AUS_strengthen_economical_relationship
-		icon = GFX_
-		cost = 5
-		x = 3
-		y = 5
-		relative_position_id = AUS_request_prussian_support
-		prerequisite = {
-			focus = AUS_silesian_question
-		}
-		completion_reward = { 
-
-		}
-	}
-	focus = {
-		id = AUS_analise_mountain_warfare
-		icon = GFX_
-		cost = 5
+		id = AUS_one_direction
+		icon = GFX_focus_AUS_one_direction
+		cost = 10
 		x = -2
-		y = 2
-		relative_position_id = AUS_prepare_for_inevitable
-		prerequisite = {
-			focus = AUS_request_prussian_support
-			focus = AUS_request_bavarian_support
-		}
-		available = {
-			has_civil_war = yes
-		}
-		continue_if_invalid = yes
-		completion_reward = { 
-
-		}
-	}
-	focus = {
-		id = AUS_support_alpenjager_divisions
-		icon = GFX_
-		cost = 5
-		x = -1
 		y = 1
-		relative_position_id = AUS_analise_mountain_warfare
+		relative_position_id = AUS_prepare_for_changes
 		prerequisite = {
-			focus = AUS_analise_mountain_warfare
+			focus = AUS_prepare_for_changes
 		}
-		available = {
-			has_civil_war = yes
+		mutually_exclusive = {
+			focus = AUS_multiple_directions
 		}
-		continue_if_invalid = yes
 		completion_reward = { 
-
+			add_political_power = 25
+			# TODO
+			# External Policy Decisions
+			# Event We are quite weak
 		}
 	}
 	focus = {
-		id = AUS_learn_from_current_war
-		icon = GFX_
-		cost = 5
-		x = 1
-		y = 1
-		relative_position_id = AUS_analise_mountain_warfare
-		prerequisite = {
-			focus = AUS_analise_mountain_warfare
-		}
-		available = {
-			has_civil_war = yes
-		}
-		continue_if_invalid = yes
-		completion_reward = { 
-
-		}
-	}
-	focus = {
-		id = AUS_not_a_single_bomb_on_vienna
-		icon = GFX_
+		id = AUS_western_allies
+		icon = GFX_focus_AUS_west_allies
 		cost = 10
-		x = 0
-		y = 2
-		relative_position_id = AUS_analise_mountain_warfare
+		x = -2
+		y = 1
+		relative_position_id = AUS_one_direction
 		prerequisite = {
-			focus = AUS_learn_from_current_war
+			focus = AUS_one_direction
 		}
-		prerequisite = {
-			focus = AUS_support_alpenjager_divisions
-		}
-		available = {
-			NOT = {
-				has_full_control_of_state = 4
-			}
-			has_civil_war = yes
-		}
-		bypass = {
-			has_full_control_of_state = 4
+		mutually_exclusive = {
+			focus = AUS_eastern_allies
 		}
 		completion_reward = { 
-
+			# TODO
+			# External Policy Decisions: Allied West
 		}
 	}
 	focus = {
-		id = AUS_strengthen_monarchist_support
-		icon = GFX_
-		cost = 5
+		id = AUS_eastern_allies
+		icon = GFX_focus_AUS_east_allies
+		cost = 10
 		x = 2
-		y = 2
-		relative_position_id = AUS_prepare_for_inevitable
+		y = 1
+		relative_position_id = AUS_one_direction
 		prerequisite = {
-			focus = AUS_request_prussian_support
-			focus = AUS_request_bavarian_support
+			focus = AUS_one_direction
+		}
+		mutually_exclusive = {
+			focus = AUS_western_allies
 		}
 		completion_reward = { 
-
+			# TODO
+			# External Policy Decisions: Allied East
 		}
 	}
 	focus = {
-		id = AUS_announce_our_ambitions
-		icon = GFX_
+		id = AUS_regensburg_conference
+		icon = GFX_focus_AUS_conference
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = AUS_one_direction
+		prerequisite = {
+			focus = AUS_eastern_allies
+			focus = AUS_western_allies
+		}
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = AUS_monarchism_continued_idea_2
+				add_idea = AUS_regensburg_agreement_idea
+			}
+			# TODO
+			# Event Regensburg Conference
+		}
+	}
+	focus = {
+		id = AUS_multiple_directions
+		icon = GFX_focus_AUS_multiple_directions
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = AUS_prepare_for_changes
+		prerequisite = {
+			focus = AUS_prepare_for_changes
+		}
+		mutually_exclusive = {
+			focus = AUS_one_direction
+		}
+		completion_reward = { 
+			add_political_power = 50
+			# TODO
+			# Event We are strong to go alone
+		}
+	}
+	focus = {
+		id = AUS_on_our_own
+		icon = GFX_focus_AUS_on_our_own
 		cost = 10
 		x = 1
 		y = 1
-		relative_position_id = AUS_strengthen_monarchist_support
+		relative_position_id = AUS_multiple_directions
 		prerequisite = {
-			focus = AUS_strengthen_monarchist_support
+			focus = AUS_multiple_directions
 		}
 		completion_reward = { 
-
+			swap_ideas = {
+				remove_idea = AUS_monarchism_continued_idea_2
+				add_idea = AUS_on_our_own_idea
+			}
 		}
 	}
 	focus = {
-		id = AUS_promises_to_the_opposition
-		icon = GFX_
-		cost = 10
-		x = -1
-		y = 1
-		relative_position_id = AUS_strengthen_monarchist_support
-		prerequisite = {
-			focus = AUS_strengthen_monarchist_support
-		}
-		completion_reward = { 
-
-		}
-	}
-	focus = {
-		id = AUS_victorious_spirit
-		icon = GFX_
+		id = AUS_first_viena_conference
+		icon = GFX_focus_AUS_conference
 		cost = 10
 		x = 0
 		y = 2
-		relative_position_id = AUS_strengthen_monarchist_support
+		relative_position_id = AUS_multiple_directions
 		prerequisite = {
-			focus = AUS_announce_our_ambitions
-		}
-		prerequisite = {
-			focus = AUS_promises_to_the_opposition
+			focus = AUS_on_our_own
 		}
 		completion_reward = { 
-
+			# TODO
+			# Event (Habsburg Empowered/Died)
 		}
 	}
 	focus = {
-		id = AUS_rebuild_our_homeland
-		icon = GFX_
+		id = AUS_empower_habsburgs
+		icon = GFX_focus_AUS_imperial_sentiments
 		cost = 10
-		x = -3
-		y = 3
-		relative_position_id = AUS_strengthen_monarchist_support
-		prerequisite = {
-			focus = AUS_not_a_single_bomb_on_vienna
-		}
-		mutually_exclusive = {
-			focus = AUS_rebuild_our_country
-		}
-		completion_reward = { 
-
-		}
-	}
-	focus = {
-		id = AUS_rebuild_our_country
-		icon = GFX_
-		cost = 10
-		x = -1
-		y = 3
-		relative_position_id = AUS_strengthen_monarchist_support
-		prerequisite = {
-			focus = AUS_victorious_spirit
-		}
-		mutually_exclusive = {
-			focus = AUS_rebuild_our_homeland
-		}
-		completion_reward = { 
-
-		}
-	}
-	focus = {
-		id = AUS_parade_for_austria
-		icon = GFX_
-		cost = 10
-		x = -2
+		x = 0
 		y = 4
-		relative_position_id = AUS_strengthen_monarchist_support
+		relative_position_id = AUS_prepare_for_changes
 		prerequisite = {
-			focus = AUS_rebuild_our_country
-			focus = AUS_rebuild_our_homeland
-		}
-		completion_reward = { 
-			#Monarchists take power
-		}
-	}
-	focus = {
-		id = AUS_retire_old_administration
-		icon = GFX_
-		cost = 10
-		x = -1
-		y = 1
-		relative_position_id = AUS_parade_for_austria
-		prerequisite = {
-			focus = AUS_parade_for_austria
+			focus = AUS_regensburg_conference
+			focus = AUS_first_viena_conference
 		}
 		mutually_exclusive = {
-			focus = AUS_empower_constitutional_monarchy
+			focus = AUS_prussian_assistance
 		}
 		completion_reward = { 
-			
+			add_ideas = AUS_habsburg_empowered_idea
+			# TODO
+			# Event (Habsburg came to power)
 		}
 	}
 	focus = {
-		id = AUS_bavarian_ideological_peace
-		icon = GFX_
+		id = AUS_hungarian_obedience
+		icon = GFX_focus_AUS_ah_hungary
 		cost = 10
-		x = -1
-		y = 1
-		relative_position_id = AUS_retire_old_administration
-		prerequisite = {
-			focus = AUS_retire_old_administration
-		}
-		prerequisite = {
-			focus = AUS_pakt_bayern_osterreich
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_restoration_plan
-		icon = GFX_
-		cost = 5
 		x = 0
-		y = 2
-		relative_position_id = AUS_retire_old_administration
+		y = 1
+		relative_position_id = AUS_empower_habsburgs
 		prerequisite = {
-			focus = AUS_increase_administration_support
-		}
-		prerequisite = {
-			focus = AUS_retire_old_administration
-			focus = AUS_bavarian_ideological_peace
+			focus = AUS_empower_habsburgs
 		}
 		completion_reward = { 
-			
+			# TODO
+			# HUN: AUS request obedience
+			# some scripting
 		}
 	}
 	focus = {
 		id = AUS_restore_fallen_empire
-		icon = GFX_
-		cost = 5
-		x = -1
-		y = 2
-		relative_position_id = AUS_restoration_plan
-		prerequisite = {
-			focus = AUS_restoration_plan
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_coronation_of_adelheid
-		icon = GFX_
-		cost = 5
-		x = -1
-		y = 4
-		relative_position_id = AUS_restoration_plan
-		prerequisite = {
-			focus = AUS_restore_fallen_empire
-		}
-		prerequisite = {
-			focus = AUS_tragedy_for_austria
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_coronation_of_otto
-		icon = GFX_
-		cost = 5
-		x = -3
-		y = 4
-		relative_position_id = AUS_restoration_plan
-		prerequisite = {
-			focus = AUS_restore_fallen_empire
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_annex_bohemia
-		icon = GFX_
-		cost = 5
-		x = -2
-		y = 5
-		relative_position_id = AUS_restoration_plan
-		prerequisite = {
-			focus = AUS_coronation_of_adelheid
-			focus = AUS_coronation_of_otto
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_negotiations_with_hungary
-		icon = GFX_
+		icon = GFX_focus_POL_habsburg
 		cost = 10
 		x = -1
 		y = 1
-		relative_position_id = AUS_annex_bohemia
+		relative_position_id = AUS_hungarian_obedience
 		prerequisite = {
-			focus = AUS_annex_bohemia
+			focus = AUS_hungarian_obedience
 		}
 		completion_reward = { 
-			
+			# TODO
+			# Event (A-H Retoration)
+			# Set cosmetic tag (A-H)
 		}
 	}
 	focus = {
-		id = AUS_austro_hungary
-		icon = GFX_
-		cost = 10
-		x = -1
-		y = 2
-		relative_position_id = AUS_annex_bohemia
-		prerequisite = {
-			focus = AUS_negotiations_with_hungary
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_restoration_plan_ost
-		icon = GFX_
-		cost = 10
-		x = 2
-		y = 1
-		relative_position_id = AUS_austro_hungary
-		prerequisite = {
-			focus = AUS_austro_hungary
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_romania_ultimatum
-		icon = GFX_
-		cost = 10
-		x = -1
-		y = 1
-		relative_position_id = AUS_restoration_plan_ost
-		prerequisite = {
-			focus = AUS_restoration_plan_ost
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_march_into_galicia
-		icon = GFX_
-		cost = 10
-		x = 1
-		y = 1
-		relative_position_id = AUS_restoration_plan_ost
-		prerequisite = {
-			focus = AUS_restoration_plan_ost
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_osterstaadt_polen
-		icon = GFX_
-		cost = 10
-		x = 1
-		y = 5
-		relative_position_id = AUS_restoration_plan_ost
-		prerequisite = {
-			focus = AUS_march_into_galicia
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_restoration_plan_sud
-		icon = GFX_
+		id = AUS_integrate_slovakia
+		icon = GFX_focus_AUS_ah_slovakia
 		cost = 10
 		x = -2
 		y = 1
-		relative_position_id = AUS_austro_hungary
+		relative_position_id = AUS_restore_fallen_empire
 		prerequisite = {
-			focus = AUS_austro_hungary
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_italian_croatia
-		icon = GFX_
-		cost = 10
-		x = -1
-		y = 1
-		relative_position_id = AUS_restoration_plan_sud
-		prerequisite = {
-			focus = AUS_restoration_plan_sud
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_disunite_italy
-		icon = GFX_
-		cost = 10
-		x = -1
-		y = 5
-		relative_position_id = AUS_restoration_plan_sud
-		prerequisite = {
-			focus = AUS_italian_croatia
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_deal_with_serbia
-		icon = GFX_
-		cost = 10
-		x = 1
-		y = 1
-		relative_position_id = AUS_restoration_plan_sud
-		prerequisite = {
-			focus = AUS_restoration_plan_sud
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_an_empire_restored
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 3
-		relative_position_id = AUS_austro_hungary
-		prerequisite = {
-			focus = AUS_italian_croatia
-			focus = AUS_march_into_galicia
-		}
-		prerequisite = {
-			focus = AUS_deal_with_serbia
-		}
-		prerequisite = {
-			focus = AUS_romania_ultimatum
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_expand_our_lands
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 1
-		relative_position_id = AUS_an_empire_restored
-		prerequisite = {
-			focus = AUS_an_empire_restored
+			focus = AUS_restore_fallen_empire
 		}
 		available = {
-			NOT = {
-				has_completed_focus = AUS_request_bavarian_support
-				has_completed_focus = AUS_request_prussian_support
+			OR = {
+				SLO = {
+					exists = yes
+					is_puppet_of = AUS
+				}
+				SLO = {
+					exists = no
+					70 = {
+						is_owned_and_controlled_by = AUS
+					}
+					71 = {
+						is_owned_and_controlled_by = AUS
+					}
+				}
 			}
 		}
 		completion_reward = { 
-			
+			add_threat = 1
+			if = {
+				limit = {
+					SLO = {
+						exists = no
+						70 = {
+							is_owned_and_controlled_by = AUS
+						}
+						71 = {
+							is_owned_and_controlled_by = AUS
+						}
+					}
+				}
+				70 = {
+					add_core_of = AUS
+				}
+				71 = {
+					add_core_of = AUS
+				}
+			}
+			if = {
+				limit = {
+					SLO = {
+						exists = yes
+						NOT = {
+							is_puppet_of = AUS
+						}
+					}
+				}
+				annex_country = {
+					target = SLO
+				}
+			}
+			else = {
+				70 = {
+					add_core_of = AUS
+				}
+				71 = {
+					add_core_of = AUS
+				}
+				annex_country = {
+					target = SLO
+				}
+			}
 		}
 	}
 	focus = {
-		id = AUS_integrate_bayern
-		icon = GFX_
+		id = AUS_annex_czechia
+		icon = GFX_focus_AUS_ah_czechia
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = AUS_restore_fallen_empire
+		prerequisite = {
+			focus = AUS_restore_fallen_empire
+		}
+		completion_reward = { 
+			69 = {
+				add_claim_by = AUS
+			}
+			9 = {
+				add_claim_by = AUS
+			}
+			74 = {
+				add_claim_by = AUS
+			}
+			75 = {
+				add_claim_by = AUS
+			}
+			CZE = {
+				country_event = { id = ausevents.1 days = 3 }
+			}
+		}
+	}
+	focus = {
+		id = AUS_demand_polish_galicia
+		icon = GFX_focus_AUS_ah_poland
 		cost = 10
 		x = -1
-		y = 1
-		relative_position_id = AUS_expand_our_lands
-		prerequisite = {
-			focus = AUS_expand_our_lands
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_silesia_is_ours
-		icon = GFX_
-		cost = 10
-		x = 1
-		y = 1
-		relative_position_id = AUS_expand_our_lands
-		prerequisite = {
-			focus = AUS_expand_our_lands
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_hoch_saone
-		icon = GFX_
-		cost = 10
-		x = 0
 		y = 2
-		relative_position_id = AUS_expand_our_lands
+		relative_position_id = AUS_restore_fallen_empire
 		prerequisite = {
-			focus = AUS_silesia_is_ours
-			focus = AUS_integrate_bayern
+			focus = AUS_integrate_slovakia
 		}
 		completion_reward = { 
-			
+			72 = {
+				add_claim_by = AUS
+			}
+			762 = {
+				add_claim_by = AUS
+			}
+			88 = {
+				add_claim_by = AUS
+			}
+			89 = {
+				add_claim_by = AUS
+			}
+			91 = {
+				add_claim_by = AUS
+			}
+			# TODO
+			# POL: AUS request transfer of Galicia
 		}
 	}
 	focus = {
-		id = AUS_grosses_osterreichisch_ungarische_monarchie
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 3
-		relative_position_id = AUS_expand_our_lands
-		prerequisite = {
-			focus = AUS_hoch_saone
-		}
-		prerequisite = {
-			focus = AUS_disunite_italy
-		}
-		prerequisite = {
-			focus = AUS_osterstaadt_polen
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_empower_constitutional_monarchy
-		icon = GFX_
+		id = AUS_pressure_romania
+		icon = GFX_focus_AUS_ah_romania
 		cost = 10
 		x = 1
-		y = 1
-		relative_position_id = AUS_parade_for_austria
+		y = 2
+		relative_position_id = AUS_restore_fallen_empire
 		prerequisite = {
-			focus = AUS_parade_for_austria
+			focus = AUS_annex_czechia
+		}
+		completion_reward = { 
+			80 = {
+				add_claim_by = AUS
+			}
+			84 = {
+				add_claim_by = AUS
+			}
+			82 = {
+				add_claim_by = AUS
+			}
+			# TODO
+			# ROM: AUS request full control of Transilvania
+		}
+	}
+	focus = {
+		id = AUS_end_italian_occupation
+		icon = GFX_focus_AUS_ah_croatia
+		cost = 10
+		x = 1
+		y = 3
+		relative_position_id = AUS_restore_fallen_empire
+		prerequisite = {
+			focus = AUS_pressure_romania
+		}
+		completion_reward = { 
+			852 = {
+				add_claim_by = AUS
+			}
+			163 = {
+				add_claim_by = AUS
+			}
+			103 = {
+				add_claim_by = AUS
+			}
+			109 = {
+				add_claim_by = AUS
+			}
+			912 = {
+				add_claim_by = AUS
+			}
+			# TODO
+			# ITA,YUG: AUS request Croatia
+		}
+	}
+	focus = {
+		id = AUS_return_schlesien
+		icon = GFX_focus_AUS_ah_preussen
+		cost = 10
+		x = -1
+		y = 3
+		relative_position_id = AUS_restore_fallen_empire
+		prerequisite = {
+			focus = AUS_demand_polish_galicia
+		}
+		completion_reward = { 
+			66 = {
+				add_claim_by = AUS
+			}
+			67 = {
+				add_claim_by = AUS
+			}
+			create_wargoal = {
+				target = PRE
+				type = take_state_focus
+			}
+		}
+	}
+	focus = {
+		id = AUS_austro_hungarian_empire
+		icon = GFX_focus_AUS_austria_hungary
+		cost = 10
+		x = 0
+		y = 4
+		relative_position_id = AUS_restore_fallen_empire
+		prerequisite = {
+			focus = AUS_return_schlesien
+		}
+		prerequisite = {
+			focus = AUS_end_italian_occupation
+		}
+		completion_reward = { 
+			add_political_power = 100
+			swap_ideas = {
+				remove_idea = AUS_habsburg_empowered_idea
+				add_idea = AUS_austro_hungarian_empire_idea
+			}
+		}
+	}
+	#################################
+	#  H I D D E N  H R E  P A T H  #
+	#################################
+	focus = {
+		id = AUS_prussian_assistance
+		icon = GFX_focus_AUS_preussen_assist
+		cost = 10
+		x = 2
+		y = 1
+		allow_branch = {
+			has_country_flag = AUS_prussia_friendly_flag
+		}
+		relative_position_id = AUS_first_viena_conference
+		prerequisite = {
+			focus = AUS_first_viena_conference
 		}
 		mutually_exclusive = {
-			focus = AUS_retire_old_administration
+			focus = AUS_empower_habsburgs
 		}
 		completion_reward = { 
-			
+			country_event = ausevents.15
 		}
 	}
 	focus = {
-		id = AUS_first_vienna_conference
-		icon = GFX_
+		id = AUS_new_development
+		icon = GFX_focus_AUS_conference
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = AUS_prussian_assistance
+		prerequisite = {
+			focus = AUS_prussian_assistance
+		}
+		completion_reward = { 
+			country_event = ausevents.14
+		}
+	}
+	focus = {
+		id = AUS_invite_victoria_iii
+		icon = GFX_focus_AUS_victoria_louise
 		cost = 10
 		x = 1
 		y = 1
-		relative_position_id = AUS_empower_constitutional_monarchy
+		relative_position_id = AUS_new_development
 		prerequisite = {
-			focus = AUS_empower_constitutional_monarchy
+			focus = AUS_new_development
 		}
 		completion_reward = { 
-			
+			country_event = ausevents.13
 		}
 	}
 	focus = {
-		id = AUS_negotiations_with_prussia
-		icon = GFX_
-		cost = 5
-		x = 1
-		y = 2
-		relative_position_id = AUS_empower_constitutional_monarchy
+		id = AUS_holy_imperial_order
+		icon = GFX_focus_AUS_holy_imperial_order
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = AUS_invite_victoria_iii
 		prerequisite = {
-			focus = AUS_first_vienna_conference
-		}
-		prerequisite = {
-			focus = AUS_increase_administration_support
+			focus = AUS_invite_victoria_iii
 		}
 		completion_reward = { 
-			
+			add_ideas = AUS_holy_imperial_order_idea
 		}
 	}
 	focus = {
-		id = AUS_second_vienna_conference
-		icon = GFX_
+		id = AUS_kaiserins_army
+		icon = GFX_focus_AUS_kaiserin_army
 		cost = 10
 		x = 2
-		y = 3
-		relative_position_id = AUS_empower_constitutional_monarchy
+		y = 1
+		relative_position_id = AUS_invite_victoria_iii
 		prerequisite = {
-			focus = AUS_negotiations_with_prussia
-		}
-		prerequisite = {
-			focus = AUS_strengthen_economical_relationship
+			focus = AUS_invite_victoria_iii
 		}
 		completion_reward = { 
-			
+			add_ideas = AUS_kaiserin_army_idea
 		}
 	}
 	focus = {
-		id = AUS_flight_to_konigsberg
-		icon = GFX_
+		id = AUS_confederation_unification
+		icon = GFX_focus_AUS_unified_confederation
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = AUS_invite_victoria_iii
+		prerequisite = {
+			focus = AUS_invite_victoria_iii
+		}
+		completion_reward = { 
+			custom_effect_tooltip = AUS_confederation_integrate_tt
+			hidden_effect = {
+				BAY = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				WUR = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				ULM = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				BAD = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				THU = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				SAX = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				DBS = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				WSF = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				HAN = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				OLD = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				MEK = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+				SHL = {
+					country_event = { id = ausevents.1 days = 2 }
+				}
+			}
+			28 = {
+				add_core_of = AUS
+			}
+			42 = {
+				add_core_of = AUS
+			}
+			51 = {
+				add_core_of = AUS
+			}
+		}
+	}
+	focus = {
+		id = AUS_proclaim_second_hre
+		icon = GFX_focus_AUS_claim_hre
 		cost = 10
 		x = 0
 		y = 2
-		relative_position_id = AUS_negotiations_with_prussia
+		relative_position_id = AUS_invite_victoria_iii
 		prerequisite = {
-			focus = AUS_second_vienna_conference
-			focus = AUS_diplomatic_mission_to_prussia
+			focus = AUS_confederation_unification
 		}
 		completion_reward = { 
-			
+			news_event = ausevents.12
+			set_cosmetic_tag = hre_unified
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = WUR
+						is_core_of = PRE
+						is_core_of = CZE
+						is_core_of = ULM
+						is_core_of = BAD
+						is_core_of = BAY
+						is_core_of = WSF
+						is_core_of = THU
+						is_core_of = SAX
+						is_core_of = DBS
+						is_core_of = HAN
+						is_core_of = OLD
+						is_core_of = MEK
+						is_core_of = SHL
+					}
+				}
+				add_core_of = AUS
+			}
 		}
 	}
 	focus = {
-		id = AUS_tragedy_for_austria
-		icon = GFX_
-		cost = 1
-		x = -2
-		y = 1
-		relative_position_id = AUS_flight_to_konigsberg
+		id = AUS_seek_uk_support
+		icon = GFX_focus_AUS_seek_uk_support
+		cost = 10
+		x = 0
+		y = 3
+		relative_position_id = AUS_invite_victoria_iii
 		prerequisite = {
-			focus = AUS_flight_to_konigsberg
-			focus = AUS_restore_fallen_empire
+			focus = AUS_proclaim_second_hre
+		}
+		completion_reward = { 
+			ENG = {
+				country_event = { id = ausevents.11 days = 2 }
+			}
+		}
+	}
+	focus = {
+		id = AUS_claims_in_italy
+		icon = GFX_focus_AUS_hre_italian_claims
+		cost = 10
+		x = -2
+		y = 3
+		relative_position_id = AUS_invite_victoria_iii
+		prerequisite = {
+			focus = AUS_proclaim_second_hre
+		}
+		prerequisite = {
+			focus = AUS_holy_imperial_order
+		}
+		completion_reward = { 
+			158 = {
+				add_claim_by = AUS
+			}
+			159 = {
+				add_claim_by = AUS
+			}
+			161 = {
+				add_claim_by = AUS
+			}
+			162 = {
+				add_claim_by = AUS
+			}
+			create_wargoal = {
+				target = ITA
+				type = take_state_focus
+			}
+		}
+	}
+	focus = {
+		id = AUS_crush_italian_unity
+		icon = GFX_focus_AUS_crush_italian_unity
+		cost = 10
+		x = -3
+		y = 4
+		relative_position_id = AUS_invite_victoria_iii
+		prerequisite = {
+			focus = AUS_claims_in_italy
 		}
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = AUS_otto_von_habsburg_died_focus_skip_tt
-				has_country_flag = AUS_otto_died_flag
+			AUS = {
+				is_puppet = no
+			}
+			OR = {
+				AND = {
+					ITA = {
+						is_puppet_of = AUS
+					}
+					custom_trigger_tooltip = {
+						tooltip = AUS_ITA_require_lands_tt
+		
+						OR = {
+							ITA = {
+								controls_state = 736
+							}
+							AUS = {
+								controls_state = 736
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 160
+							}
+							AUS = {
+								controls_state = 160
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 39
+							}
+							AUS = {
+								controls_state = 39
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 850
+							}
+							AUS = {
+								controls_state = 850
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 852
+							}
+							AUS = {
+								controls_state = 852
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 103
+							}
+							AUS = {
+								controls_state = 103
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 163
+							}
+							AUS = {
+								controls_state = 163
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 159
+							}
+							AUS = {
+								controls_state = 159
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 158
+							}
+							AUS = {
+								controls_state = 158
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 161
+							}
+							AUS = {
+								controls_state = 161
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 162
+							}
+							AUS = {
+								controls_state = 162
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 157
+							}
+							AUS = {
+								controls_state = 157
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 2
+							}
+							AUS = {
+								controls_state = 2
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 849
+							}
+							AUS = {
+								controls_state = 849
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 117
+							}
+							AUS = {
+								controls_state = 117
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 156
+							}
+							AUS = {
+								controls_state = 156
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 115
+							}
+							AUS = {
+								controls_state = 115
+							}
+						}
+						OR = {
+							ITA = {
+								controls_state = 114
+							}
+							AUS = {
+								controls_state = 114
+							}
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = AUS_ITA_require_crush_tt
+	
+					AUS = {
+						controls_state = 736
+						controls_state = 160
+						controls_state = 39
+						controls_state = 850
+						controls_state = 852
+						controls_state = 103
+						controls_state = 163
+						controls_state = 159
+						controls_state = 158
+						controls_state = 161
+						controls_state = 162
+						controls_state = 157
+						controls_state = 2
+						controls_state = 849
+						controls_state = 117
+						controls_state = 156
+						controls_state = 115
+						controls_state = 114
+					}
+				}
 			}
 		}
 		completion_reward = { 
-			
+			custom_effect_tooltip = AUS_SPM_core_tt
+			custom_effect_tooltip = AUS_PAP_core_tt
+			if = {
+				limit = {
+					has_country_flag = AUS_UK_support
+				}
+				custom_effect_tooltip = AUS_TTS_ENG_core_tt
+
+				ENG = {
+					country_event = ausevents.16
+					diplomatic_relation = {
+						country = PAP
+						relation = guarantee
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = AUS_TTS_core_tt
+			}
+			diplomatic_relation = {
+				country = PAP
+				relation = guarantee
+			}
+			hidden_effect = {
+				114 = {
+					set_state_owner_to = SPM
+				}
+				set_autonomy = {
+					target = SPM
+					autonomy_state = autonomy_puppet
+				}
+				157 = {
+					set_state_owner_to = PAP
+				}
+				2 = {
+					set_state_owner_to = PAP
+				}
+				set_autonomy = {
+					target = PAP
+					autonomy_state = autonomy_dominion
+				}
+				115 = {
+					set_state_owner_to = TTS
+				}
+				156 = {
+					set_state_owner_to = TTS
+				}
+				117 = {
+					set_state_owner_to = TTS
+				}
+				849 = {
+					set_state_owner_to = TTS
+				}
+				if = {
+					limit = {
+						has_country_flag = AUS_UK_support
+					}
+					ENG = {
+						set_autonomy = {
+							target = TTS
+							autonomy_state = autonomy_colony
+						}
+					}
+				}
+				else = {
+					set_autonomy = {
+						target = TTS
+						autonomy_state = autonomy_puppet
+					}
+				}
+			}
 		}
 	}
 	focus = {
-		id = AUS_prussian_volunteer
-		icon = GFX_
-		cost = 1
+		id = AUS_western_claims
+		icon = GFX_focus_AUS_hre_west_claims
+		cost = 10
+		x = 2
+		y = 3
+		relative_position_id = AUS_invite_victoria_iii
+		prerequisite = {
+			focus = AUS_proclaim_second_hre
+		}
+		prerequisite = {
+			focus = AUS_kaiserins_army
+		}
+		completion_reward = { 
+			36 = {
+				add_claim_by = AUS
+			}
+			7 = {
+				add_claim_by = AUS
+			}
+			create_wargoal = {
+				target = HOL
+				type = take_state_focus
+			}
+			35 = {
+				add_claim_by = AUS
+			}
+			34 = {
+				add_claim_by = AUS
+			}
+			6 = {
+				add_claim_by = AUS
+			}
+			8 = {
+				add_claim_by = AUS
+			}
+			17 = {
+				add_claim_by = AUS
+			}
+			735 = {
+				add_claim_by = AUS
+			}
+			851 = {
+				add_claim_by = AUS
+			}
+			845 = {
+				add_claim_by = AUS
+			}
+			3 = {
+				add_claim_by = AUS
+			}
+			847 = {
+				add_claim_by = AUS
+			}
+			151 = {
+				add_claim_by = AUS
+			}
+			846 = {
+				add_claim_by = AUS
+			}
+		}
+	}
+	focus = {
+		id = AUS_swiss_ultimatum
+		icon = GFX_focus_AUS_attack_swiss
+		cost = 10
+		x = 1
+		y = 4
+		relative_position_id = AUS_invite_victoria_iii
+		prerequisite = {
+			focus = AUS_western_claims
+		}
+		will_lead_to_war_with = SWI
+		completion_reward = { 
+			SWI = {
+				country_event = { id = ausevents.1 days = 2 }
+			}
+		}
+	}
+	focus = {
+		id = AUS_subjugate_france
+		icon = GFX_focus_AUS_attack_france
+		cost = 10
 		x = 3
-		y = 1
-		relative_position_id = AUS_tragedy_for_austria
+		y = 4
+		relative_position_id = AUS_invite_victoria_iii
 		prerequisite = {
-			focus = AUS_tragedy_for_austria
+			focus = AUS_western_claims
 		}
-		prerequisite = {
-			focus = AUS_flight_to_konigsberg
-		}
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = AUS_events_over_focus_skip_tt
-				has_country_flag = AUS_victoria_new_leader_flag
+		completion_reward = { 
+			create_wargoal = {
+				target = FRA
+				type = take_state_focus
 			}
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_grow_support_royal_administration
-		icon = GFX_
-		cost = 5
-		x = 1
-		y = 1
-		relative_position_id = AUS_prussian_volunteer
-		prerequisite = {
-			focus = AUS_prussian_volunteer
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_grow_national_support
-		icon = GFX_
-		cost = 5
-		x = -1
-		y = 1
-		relative_position_id = AUS_prussian_volunteer
-		prerequisite = {
-			focus = AUS_prussian_volunteer
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_coronation_of_the_kaiserin
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 2
-		relative_position_id = AUS_prussian_volunteer
-		prerequisite = {
-			focus = AUS_grow_support_royal_administration
-		}
-		prerequisite = {
-			focus = AUS_grow_national_support
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_austro_prussian_relations
-		icon = GFX_
-		cost = 10
-		x = -1
-		y = 1
-		relative_position_id = AUS_coronation_of_the_kaiserin
-		prerequisite = {
-			focus = AUS_coronation_of_the_kaiserin
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_proclaim_hre_ambitions
-		icon = GFX_
-		cost = 10
-		x = 1
-		y = 1
-		relative_position_id = AUS_coronation_of_the_kaiserin
-		prerequisite = {
-			focus = AUS_coronation_of_the_kaiserin
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_austro_prussian_commonwealth
-		icon = GFX_
-		cost = 5
-		x = 0
-		y = 2
-		relative_position_id = AUS_coronation_of_the_kaiserin
-		prerequisite = {
-			focus = AUS_austro_prussian_relations
-		}
-		prerequisite = {
-			focus = AUS_proclaim_hre_ambitions
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_unification_plans
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 1
-		relative_position_id = AUS_austro_prussian_commonwealth
-		prerequisite = {
-			focus = AUS_austro_prussian_commonwealth
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_integrate_bohemia
-		icon = GFX_
-		cost = 10
-		x = -2
-		y = 1
-		relative_position_id = AUS_unification_plans
-		prerequisite = {
-			focus = AUS_unification_plans
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_bavarian_lands
-		icon = GFX_
-		cost = 10
-		x = 2
-		y = 1
-		relative_position_id = AUS_unification_plans
-		prerequisite = {
-			focus = AUS_unification_plans
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_unification_german_nations
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 1
-		relative_position_id = AUS_unification_plans
-		prerequisite = {
-			focus = AUS_unification_plans
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_claims_in_france_benelux
-		icon = GFX_
-		cost = 10
-		x = 1
-		y = 2
-		relative_position_id = AUS_unification_plans
-		prerequisite = {
-			focus = AUS_unification_german_nations
-		}
-		prerequisite = {
-			focus = AUS_bavarian_lands
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_claims_on_switzerland
-		icon = GFX_
-		cost = 10
-		x = -1
-		y = 2
-		relative_position_id = AUS_unification_plans
-		prerequisite = {
-			focus = AUS_unification_german_nations
-		}
-		prerequisite = {
-			focus = AUS_integrate_bohemia
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_second_holy_roman_empire
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 3
-		relative_position_id = AUS_unification_plans
-		prerequisite = {
-			focus = AUS_claims_on_switzerland
-		}
-		prerequisite = {
-			focus = AUS_claims_in_france_benelux
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_achieve_gains_in_italy
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 1
-		relative_position_id = AUS_second_holy_roman_empire
-		prerequisite = {
-			focus = AUS_second_holy_roman_empire
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_increase_administration_support
-		icon = GFX_
-		cost = 10
-		x = 0
-		y = 2
-		relative_position_id = AUS_parade_for_austria
-		prerequisite = {
-			focus = AUS_empower_constitutional_monarchy
-			focus = AUS_retire_old_administration
-		}
-		completion_reward = { 
-			
-		}
-	}
-	focus = {
-		id = AUS_diplomatic_mission_to_prussia
-		icon = GFX_
-		cost = 10
-		x = 1
-		y = 2
-		relative_position_id = AUS_increase_administration_support
-		prerequisite = {
-			focus = AUS_increase_administration_support
-		}
-		completion_reward = { 
-			
 		}
 	}
 

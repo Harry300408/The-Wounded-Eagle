@@ -21,6 +21,12 @@ focus_tree = {
 		x = 0
 		y = 0
 		icon = GFX_focus_rule_brittania
+
+		allow_branch = {
+			NOT = {
+				has_country_flag = ENG_civil_war_2
+			}
+		}
 	
 		cost = 2
 	
@@ -54,7 +60,7 @@ focus_tree = {
 		id = ENG_the_left
 		x = 1
 		y = 1
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_radical_left
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = rule_brittania
@@ -70,7 +76,7 @@ focus_tree = {
 		id = ENG_radical_republicans
 		x = 3
 		y = 1
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_rad_republicans
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = rule_brittania
@@ -86,7 +92,7 @@ focus_tree = {
 		id = ENG_growing_anti_semitism
 		x = 5
 		y = 1
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_anti_semiteism
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = rule_brittania
@@ -102,7 +108,7 @@ focus_tree = {
 		id = ENG_parlimetary_corruption
 		x = 7
 		y = 1
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_parlimentary_corruption
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = rule_brittania
@@ -119,7 +125,7 @@ focus_tree = {
 		id = ENG_assassination_malcolm
 		x = 0
 		y = 2
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_malcolm_dead
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_rampant_crime
@@ -135,6 +141,10 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = ENG_parlimetary_corruption
+		}
+
+		available = {
+			always = no
 		}
 	
 		cost = 2
@@ -147,7 +157,7 @@ focus_tree = {
 		id = ENG_regent_street_riots
 		x = 3
 		y = 2
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_regent_riots
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_rampant_crime
@@ -163,6 +173,10 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = ENG_parlimetary_corruption
+		}
+
+		available = {
+			always = no
 		}
 	
 		cost = 2
@@ -175,7 +189,7 @@ focus_tree = {
 		id = ENG_arrest_orwell
 		x = 6
 		y = 2
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_orwell_arrest
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_rampant_crime
@@ -191,6 +205,10 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = ENG_parlimetary_corruption
+		}
+
+		available = {
+			always = no
 		}
 	
 		cost = 2
@@ -205,7 +223,7 @@ focus_tree = {
 		id = ENG_bombing_of_westminster_abbey
 		x = 1
 		y = 3
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_bomb_westminster
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_assassination_malcolm
@@ -227,7 +245,7 @@ focus_tree = {
 		id = ENG_martial_law
 		x = 5
 		y = 3
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_martial_law
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_assassination_malcolm
@@ -239,7 +257,7 @@ focus_tree = {
 			focus = ENG_arrest_orwell
 		}
 	
-		cost = 2
+		cost = 4
 	
 		completion_reward = {
 		}
@@ -251,7 +269,7 @@ focus_tree = {
 		id = ENG_churchill_takes_charge
 		x = 3
 		y = 4
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_churchill_takes_charge
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_bombing_of_westminster_abbey
@@ -260,7 +278,7 @@ focus_tree = {
 			focus = ENG_martial_law
 		}
 	
-		cost = 2
+		cost = 6
 	
 		completion_reward = {
 		}
@@ -272,7 +290,7 @@ focus_tree = {
 		id = ENG_snap_elections
 		x = 3
 		y = 5
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_snap_elections
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_churchill_takes_charge
@@ -294,7 +312,7 @@ focus_tree = {
 		id = ENG_disolve_parliment
 		x = 8
 		y = 5
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_bye_parliment
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_churchill_takes_charge
@@ -316,7 +334,7 @@ focus_tree = {
 		id = ENG_blood_stains_in_london
 		x = -2
 		y = 5
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_blood_in_london
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_churchill_takes_charge
@@ -334,7 +352,79 @@ focus_tree = {
 		}
 	}
 
+	###########################
+	# W I N D S O R   P A T H #
+	###########################
+
+	focus = {
+		id = ENG_drastic_measures
+		x = 0
+		y = 1
+		icon = GFX_focus_drastic_measures
+		relative_position_id = ENG_disolve_parliment
+		prerequisite = {
+			focus = ENG_disolve_parliment
+		}
+
+		#allow_branch = {
+		#	has_country_flag = ENG_Windsor_selected
+		#}
+
+		cost = 2
 	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_god_save_the_king_TWE
+		x = -2
+		y = 2
+		icon = GFX_focus_king_corranated
+		relative_position_id = ENG_disolve_parliment
+		prerequisite = {
+			focus = ENG_drastic_measures
+		}
+
+		mutually_exclusive = {
+			focus = ENG_tragedy_of_a_lifetime
+		}
+
+		available = {
+			always = no
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_tragedy_of_a_lifetime
+		x = 2
+		y = 2
+		icon = GFX_focus_ENG_tradedgy
+		relative_position_id = ENG_disolve_parliment
+		prerequisite = {
+			focus = ENG_drastic_measures
+		}
+
+		mutually_exclusive = {
+			focus = ENG_god_save_the_king_TWE
+		}
+
+		available = {
+			always = no
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+
 
 
 
