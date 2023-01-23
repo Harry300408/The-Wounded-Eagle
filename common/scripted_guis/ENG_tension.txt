@@ -1,0 +1,11 @@
+scripted_gui = {
+    country_name = {
+        window_name = ENG_tension
+        context_type = player_context
+        parent_window_token = top_bar
+         
+        visible = {
+            tag = ENG
+        }
+    }
+}        

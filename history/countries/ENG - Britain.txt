@@ -17,6 +17,10 @@ if = {
 
 starting_train_buffer = 4
 
+set_variable = {
+	ENG_tension = 100
+}
+
 if = {
 	limit = {
 		has_dlc = "Man the Guns"

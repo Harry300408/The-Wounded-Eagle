@@ -13,4 +13,9 @@ spriteTypes = {
         name = GFX_faction_window_header_bg
         texturefile = gfx/interface/TWE_gui/faction_window/button_bg_fac_widow.dds
     }
+
+    spriteType = {
+        name = GFX_ENG_tension_icon
+        texturefile = gfx/interface/TWE_gui/ENG_tension/tension_icon.dds
+    }
 }

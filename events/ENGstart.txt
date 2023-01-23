@@ -11,5 +11,8 @@ country_event = {
 
 	option = {
 		name = ENGstart.1.a
+ 
+		complete_national_focus = rule_brittania 
+
 	}
 }
