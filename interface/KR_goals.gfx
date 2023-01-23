@@ -31,4 +31,71 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ENG/rampant_crime.png"			
 	}	
 
+	SpriteType = {
+		name = "GFX_focus_rad_left"
+		texturefile = "gfx/interface/goals/ENG/rad_left.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_rad_republicanism"
+		texturefile = "gfx/interface/goals/ENG/rad_republicanism.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_as_rise"
+		texturefile = "gfx/interface/goals/ENG/as_rise.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_parl_corrup"
+		texturefile = "gfx/interface/goals/ENG/parl_corrup.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_dead_malcolm"
+		texturefile = "gfx/interface/goals/ENG/dead_malcolm.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_regent_riots"
+		texturefile = "gfx/interface/goals/ENG/regent_riots.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_bye_orwell"
+		texturefile = "gfx/interface/goals/ENG/bye_orwell.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_westminster_gone"
+		texturefile = "gfx/interface/goals/ENG/westminster_gone.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_martial_law"
+		texturefile = "gfx/interface/goals/ENG/martial_law.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_churchil_in_charge"
+		texturefile = "gfx/interface/goals/ENG/churchil_in_charge.png"			
+	}	
+
+ 	SpriteType = {
+		name = "GFX_focus_snap_elecions"
+		texturefile = "gfx/interface/goals/ENG/snap_elecions.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_disolve_parliment"
+		texturefile = "gfx/interface/goals/ENG/disolve_parliment.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_blood_in_london"
+		texturefile = "gfx/interface/goals/ENG/blood_in_london.png"			
+	}	
+
+
+
 }

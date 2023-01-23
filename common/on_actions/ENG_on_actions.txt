@@ -1,0 +1,11 @@
+on_actions = {
+	On_startup = {
+		effect = {
+			ENG = {
+				country_event = {
+					id = ENGstart.1
+				}
+			}
+		}
+	}
+}

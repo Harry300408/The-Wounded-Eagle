@@ -21,6 +21,20 @@ focus_tree = {
 		x = 0
 		y = 0
 		icon = GFX_focus_rule_brittania
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag = ENG_civil_war
+					has_country_flag = snap_elections_begun
+					has_country_flag = no_more_parliment
+				}	
+			}
+		}
+
+		available = {
+			always = no
+		}
 	
 		cost = 2
 	
@@ -36,7 +50,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_rampant_crime
-		x = -1
+		x = -4
 		y = 1
 		icon = GFX_focus_rampant_crime
 		relative_position_id = rule_brittania
@@ -52,9 +66,9 @@ focus_tree = {
 
 	focus = {
 		id = ENG_the_left
-		x = 1
+		x = -2
 		y = 1
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_rad_left
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = rule_brittania
@@ -68,9 +82,9 @@ focus_tree = {
 
 	focus = {
 		id = ENG_radical_republicans
-		x = 3
+		x = 0
 		y = 1
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_rad_republicanism
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = rule_brittania
@@ -84,9 +98,9 @@ focus_tree = {
 
 	focus = {
 		id = ENG_growing_anti_semitism
-		x = 5
+		x = 2
 		y = 1
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_as_rise
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = rule_brittania
@@ -100,9 +114,9 @@ focus_tree = {
 
 	focus = {
 		id = ENG_parlimetary_corruption
-		x = 7
+		x = 4
 		y = 1
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_parl_corrup
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = rule_brittania
@@ -117,9 +131,9 @@ focus_tree = {
 	## "Layer 2" ## 
 	focus = {
 		id = ENG_assassination_malcolm
-		x = 0
+		x = -3
 		y = 2
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_dead_malcolm
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_rampant_crime
@@ -135,6 +149,10 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = ENG_parlimetary_corruption
+		}
+
+		available = {
+			always = no
 		}
 	
 		cost = 2
@@ -145,9 +163,9 @@ focus_tree = {
 
 	focus = {
 		id = ENG_regent_street_riots
-		x = 3
+		x = 0
 		y = 2
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_regent_riots
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_rampant_crime
@@ -164,7 +182,11 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_parlimetary_corruption
 		}
-	
+
+		available = {
+			always = no
+		}
+
 		cost = 2
 	
 		completion_reward = {
@@ -173,9 +195,9 @@ focus_tree = {
 
 	focus = {
 		id = ENG_arrest_orwell
-		x = 6
+		x = 3
 		y = 2
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_bye_orwell
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_rampant_crime
@@ -191,6 +213,10 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = ENG_parlimetary_corruption
+		}
+
+		available = {
+			always = no
 		}
 	
 		cost = 2
@@ -203,9 +229,9 @@ focus_tree = {
 
 	focus = {
 		id = ENG_bombing_of_westminster_abbey
-		x = 1
+		x = -2
 		y = 3
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_westminster_gone
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_assassination_malcolm
@@ -216,6 +242,10 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_arrest_orwell
 		}
+
+		available = {
+			always = no
+		}	
 	
 		cost = 2
 	
@@ -225,9 +255,9 @@ focus_tree = {
 
 	focus = {
 		id = ENG_martial_law
-		x = 5
+		x = 2
 		y = 3
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_martial_law
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_assassination_malcolm
@@ -249,9 +279,9 @@ focus_tree = {
 
 	focus = {
 		id = ENG_churchill_takes_charge
-		x = 3
+		x = 0
 		y = 4
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_churchil_in_charge
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_bombing_of_westminster_abbey
@@ -270,9 +300,9 @@ focus_tree = {
 
 	focus = {
 		id = ENG_snap_elections
-		x = 3
+		x = 0
 		y = 5
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_snap_elecions
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_churchill_takes_charge
@@ -292,9 +322,9 @@ focus_tree = {
 
 	focus = {
 		id = ENG_disolve_parliment
-		x = 8
+		x = 5
 		y = 5
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_disolve_parliment
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_churchill_takes_charge
@@ -314,9 +344,9 @@ focus_tree = {
 
 	focus = {
 		id = ENG_blood_stains_in_london
-		x = -2
+		x = -5
 		y = 5
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_blood_in_london
 		relative_position_id = rule_brittania
 		prerequisite = {
 			focus = ENG_churchill_takes_charge
@@ -343,112 +373,6 @@ focus_tree = {
 	# C O L O N I A L  T R E E # 
 	############################
 
-	focus = {
-		id = NA_q
-		x = -6
-		y = 1
-		icon = GFX_focus_NA_q
-		prerequisite = { focus = rule_brittania}
-		relative_position_id = rule_brittania
-	
-		cost = 1
-	
-		completion_reward = {
-	
-		}
-	}
-
-	focus = {
-		id = africa_q
-		x = -4
-		y = 1
-		icon = GFX_focus_africa_q
-		prerequisite = { focus = rule_brittania}
-		relative_position_id = rule_brittania
-	
-		cost = 1
-	
-		completion_reward = {
-	
-		}
-	}
-
-	## ASIAN QUESTION
-
-	focus = {
-		id = asia_q
-		x = -8
-		y = 1
-		icon = GFX_focus_asian_q
-		prerequisite = { focus = rule_brittania}
-	
-		cost = 1
-	
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = SIAM_1
-		x = 0
-		y = 1
-		icon = GFX_focus_SIAM_1
-		prerequisite = { focus = asia_q }
-		relative_position_id = asia_q
-
-		cost = 1
-		
-		completion_reward = {
-			set_country_flag = can_do_SIAM_1
-		}
-	}
-
-	focus = {
-		id = SIAM_2
-		x = 0
-		y = 1
-		icon = GFX_focus_SIAM_1
-		prerequisite = { focus = SIAM_1 }
-		relative_position_id = SIAM_1
-	
-		cost = 1
-	
-		completion_reward = {
-			set_country_flag = can_do_SIAM_2
-		}
-	}
-
-	focus = {
-		id = SIAM_3
-		x = -2
-		y = 1
-		icon = GFX_focus_SIAM_1
-		prerequisite = { focus = SIAM_1 }
-		relative_position_id = SIAM_1
-	
-		cost = 1
-	
-		completion_reward = {
-			set_country_flag = can_do_SIAM_3
-		}
-	}
-
-	focus = {
-		id = SIAM_4
-		x = -1
-		y = 2
-		icon = GFX_focus_SIAM_1
-		prerequisite = { focus = SIAM_2 }
-		prerequisite = { focus = SIAM_3 }
-		relative_position_id = SIAM_1
-	
-		cost = 1
-	
-		completion_reward = {
-			set_country_flag = can_do_SIAM_4
-		}
-	}
-	
 	################################
 	# M I L I T A R Y  B R A N C H #
 	################################
