@@ -1,0 +1,42 @@
+state={
+	id=988
+	name="STATE_988"
+	provinces={
+		3772 6788 11891 
+	}
+	resources={
+		chromium=2.000
+		tungsten=1.000
+	}
+
+	history={
+		owner = ITA
+		victory_points = {
+			6788 10 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
+			dockyard = 2
+			6788 = {
+				naval_base = 8
+			}
+			
+		}
+		add_core_of = ITA
+		add_core_of = SPM
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 3
+				industrial_complex = 3
+				dockyard = 4
+			}
+
+		}
+	}
+	manpower= 1429643
+	state_category= large_city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
