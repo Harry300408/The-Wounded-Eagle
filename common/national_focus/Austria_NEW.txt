@@ -1933,8 +1933,10 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_claim_our_ambitions
 		}
-		completion_reward = { 
-			
+		completion_reward = {
+			add_war_support = 0.05
+			set_faction_name = AUS_pakt_deutschland_faction
+			army_experience = 5
 		}
 	}
 	focus = {

@@ -213,6 +213,7 @@ AUS_agitation_efficiency_communism_0_idea:0 "$AUS_agitation_efficiency_communism
 AUS_all_fascist_party_idea:0 "All Fascist Party"
 GERMANY_confederation_1_idea:0 "$GERMANY_member_of_confederation_idea$"
 GERMANY_confederation_2_idea:0 "$GERMANY_member_of_confederation_idea$"
+GERMANY_member_of_confederation_idea:0 "Member of the Confederation"
 
 ### COSMETIC TAGS ###
 hre_unified_neutrality:0 "Holy Roman Empire"
@@ -239,7 +240,7 @@ AUS_ultranationalism_ADJ:0 "Österreich"
 AUS_federation_faction:0 "Federation"
 AUS_confederation_of_united_european_nations_faction:0 "K.V.E.N"
 AUS_confederation_of_united_european_nations_faction_long:0 "Konföderation der Vereinten Europäischen Nationen (K.V.E.N)"
-GERMANY_member_of_confederation_idea:0 "Member of the Confederation"
+AUS_pakt_deutschland_faction:0 "Pakt Deutschland"
 
 ### MODIFIERS ###
 focus_diplo:0 "Diplomacy Focus"
