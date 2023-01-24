@@ -18,7 +18,7 @@ if = {
 starting_train_buffer = 4
 
 set_variable = {
-	ENG_tension = 100
+	ENG_tension = 21.3
 }
 
 if = {

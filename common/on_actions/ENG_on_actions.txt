@@ -5,6 +5,10 @@ on_actions = {
 				country_event = {
 					id = ENGstart.1
 				}
+
+				country_event = {
+					id = ENGstart.2
+				}
 			}
 		}
 	}
