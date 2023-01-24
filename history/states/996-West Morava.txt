@@ -1,0 +1,21 @@
+state={
+	id=996
+	name="STATE_996"
+	provinces={
+		3939 6953 6970 6998 9906 
+	}
+	history = {
+		owner = YUG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = SER
+		add_core_of = YUG
+	}
+	manpower= 201495
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

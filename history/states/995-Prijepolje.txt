@@ -1,23 +1,19 @@
 state={
-	id=989
-	name="STATE_989"
+	id=995
+	name="STATE_995"
 	provinces={
-		3868 6889 
+		3922 
 	}
 	history = {
 		owner = YUG
-		victory_points = {
-			6889 3 
-		}
 		buildings = {
 			infrastructure = 2
+			arms_factory = 1
 		}
+		add_core_of = SER
 		add_core_of = YUG
-		add_core_of = BOS
-		add_core_of = HRZ
-		add_core_of = CRO
 	}
-	manpower= 171804
+	manpower= 35350
 	state_category = pastoral
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
