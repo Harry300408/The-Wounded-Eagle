@@ -19,8 +19,11 @@ bookmarks = {
 			history = "ENG_TWE"
 			ideology = conservatism
 			ideas = {
+				bitter_defeat
+				general_strikes
 			}
 			focuses = {
+				rule_brittania
 			}
 		}
         "USA" = { #For random country select

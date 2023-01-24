@@ -1,0 +1,59 @@
+ideas = {
+
+	country = {
+		bitter_defeat = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+                always = no
+			}
+			
+			removal_cost = -1
+			
+            modifier = {
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_speed_factor = -0.2
+				army_morale_factor = -0.3
+				max_dig_in_factor = -0.1
+				recruitable_population_factor = -0.2
+				experience_gain_army_factor = -0.15
+				experience_gain_air_factor = -0.15
+				experience_gain_navy_factor = -0.15
+			}
+
+			rule = {
+				can_create_factions = yes
+			}
+		}
+
+		general_strikes = {
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.15
+				war_support_weekly = -0.05
+				rev_unionism_drift = 0.01
+			}
+
+			rule = {
+				can_not_declare_war = yes
+			}
+		
+		}
+
+    }
+}        

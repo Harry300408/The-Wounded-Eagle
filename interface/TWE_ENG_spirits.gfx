@@ -1,0 +1,13 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_bitter_defeat"
+		texturefile = "gfx/interface/ideas/ENG/idea_bitter_defeat.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_idea_general_strikes"
+		texturefile = "gfx/interface/ideas/ENG/idea_general_strikes.dds"			
+	}	
+
+}

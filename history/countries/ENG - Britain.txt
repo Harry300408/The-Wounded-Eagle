@@ -15,6 +15,12 @@ if = {
 	#set_oob = "ENG_1936_nsb"
 }
 
+
+add_ideas = {
+	bitter_defeat
+	general_strikes
+}
+
 starting_train_buffer = 4
 
 set_variable = {
@@ -157,9 +163,6 @@ if = {
 		basic_fire_control_system = 1
 		basic_dp_light_battery = 1
 	}
-	add_ideas = MTG_naval_treaty_adherent
-	set_global_flag = MTG_second_london_conference
-	set_global_flag = { flag = MTG_naval_treaty_signatories value = 5 }
 }
 
 if = {
@@ -172,12 +175,6 @@ if = {
 }
 
 set_variable = { var = eng_gateway_to_europe_influence value = 0 }
-
-add_ideas = {
-	stiff_upper_lip
-	ENG_the_war_to_end_all_wars
-	george_v
-}
 	
 
 set_convoys = 800
