@@ -5,7 +5,7 @@
     ENG_radical_republicans:0 "Republican Radicalism"
     ENG_growing_anti_semitism:0 "Anti-Semitism On The Rise"
     ENG_parlimetary_corruption:0 "Corruption In Parliament"
-      ENG_assassination_malcolm:0 "Malcolm Mcdonald's Assassination"
+      ENG_assassination_malcolm:0 "Malcolm Macdonald's Assassination"
       ENG_regent_street_riots:0 "Riots In Regent Street"
       ENG_arrest_orwell:0 "Orwell's Arrest"
         ENG_bombing_of_westminster_abbey:0 "Bombing of Westimster Abbey"
@@ -31,3 +31,6 @@
   ENGstart.2.d:0 "Do you want wacky mode or not? simple really (unlocks wacky paths that are very strange!)"
   ENGstart.2.a:0 "Of Course"
   ENGstart.2.b:0 "Fuck No"
+
+  ENGstart.3.t:0 "Malcolm's Assasination"
+  ENGstart.3.d:0 "Today at 15:24, Malcolm Macdonald, Son of former PM Ramsay Macdonald. Was assassinated during his speech in Nairobi, Kenya. Many people are seding their thoughts and prayers to the family, Some belive this is a victory for socailists & non-democratic factions."

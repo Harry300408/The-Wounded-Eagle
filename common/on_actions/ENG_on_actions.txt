@@ -12,4 +12,24 @@ on_actions = {
 			}
 		}
 	}
+
+	on_monthly = {
+		effect = {
+			ENG = {
+				if = {
+					has_completed_focus = ENG_rampant_crime
+					has_completed_focus = ENG_the_left
+					has_completed_focus = ENG_radical_republicans
+					has_completed_focus = ENG_growing_anti_semitism
+					has_completed_focus = ENG_parlimetary_corruption
+				}
+
+				country_event = {
+					random_days = 20
+					id = ENGstart.3
+				}
+			}
+		}
+	}
+
 }
