@@ -6,9 +6,6 @@ state={
 	history={
 		owner = ITA
 		victory_points = {
-			6889 3 
-		}
-		victory_points = {
 			3924 3 
 		}
 		buildings = {
@@ -32,9 +29,9 @@ state={
 	}
 
 	provinces={
-		984 3868 3924 3974 6889 11816 
+		984 3924 3974 11816 
 	}
-	manpower= 1145360
+	manpower= 973556
 	buildings_max_level_factor=1.000
 	state_category=large_town
 	local_supplies=4.000

@@ -1,0 +1,26 @@
+state={
+	id=992
+	name="STATE_992"
+	provinces={
+		6619 6983 9588 9591 
+	}
+	history = {
+		owner = YUG
+		victory_points = {
+			6983 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = BOS
+		add_core_of = SER
+		add_core_of = YUG
+	}
+	manpower= 308497
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
