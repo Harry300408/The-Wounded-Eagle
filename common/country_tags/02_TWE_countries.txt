@@ -1,5 +1,9 @@
 # TWE Base Nations #
 
+#Nisava-Morava
+MRV = "countries.MRV.txt"
+#Una-Sana
+UNS = "countries/UNS.txt"
 #Carpathian-Ruthenia
 CPR	= "countries/CPR.txt"
 #Texas

@@ -13,6 +13,7 @@ state={
 		}
 		add_core_of = SER
 		add_core_of = YUG
+		add_core_of = MRV
 	}
 	manpower= 201495
 	state_category = rural
