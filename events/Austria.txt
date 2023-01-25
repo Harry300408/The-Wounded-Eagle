@@ -621,3 +621,27 @@ country_event = {
 		name = ausevents.26.b
 	}
 }
+# AUS Invite into faction
+country_event = {
+	id = ausevents.27
+	title = ausevents.27.t
+	desc = ausevents.27.desc
+	picture = GFX_
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.27.a
+		ROOT = {
+			add_to_faction = AUS
+		}
+	}
+	option = {
+		name = ausevents.27.b
+		AUS = {
+			create_wargoal = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+	}
+}
