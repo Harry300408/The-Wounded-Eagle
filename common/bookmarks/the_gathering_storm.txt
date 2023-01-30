@@ -23,10 +23,12 @@ bookmarks = {
 				general_strikes
 			}
 			focuses = {
-				rule_brittania
+				ENG_snap_elections
+				ENG_disolve_parliment
+				ENG_blood_stains_in_london
 			}
 		}
-        "USA" = { #For random country select
+        "USA" = { 
 			history = ""
 			ideology = conservatism
 			ideas = {

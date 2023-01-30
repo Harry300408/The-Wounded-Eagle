@@ -61,6 +61,10 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			country_event = { 
+				days = 1
+				id = ENGstart.9
+			}	
 		}
 	}
 
@@ -77,6 +81,10 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			country_event = {
+				days = 1
+				id = ENGstart.10
+			}
 		}
 	}
 
@@ -93,6 +101,10 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			country_event = {
+				days = 1
+				id = ENGstart.11
+			}
 		}
 	}
 
@@ -109,6 +121,10 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			country_event = {
+				days = 1
+				id = ENGstart.12
+			}
 		}
 	}
 
@@ -125,6 +141,10 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			country_event = {
+				days = 1
+				id = ENGstart.13
+			}
 		}
 	}
 
@@ -313,6 +333,10 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ENG_blood_stains_in_london
 		}
+
+		available = {
+			has_country_flag = cracked_down_on_riots
+		}
 	
 		cost = 2
 	
@@ -335,6 +359,10 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ENG_blood_stains_in_london
 		}
+
+		available = {
+			has_country_flag = cracked_down_on_riots
+		}
 	
 		cost = 2
 	
@@ -356,6 +384,10 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = ENG_disolve_parliment
+		}
+
+		available = {
+			has_country_flag = riots_continue
 		}
 	
 		cost = 2

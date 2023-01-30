@@ -6,6 +6,7 @@ scripted_gui = {
          
         visible = {
             tag = ENG
+            has_country_flag = ENG_tension_enabled
         }
     }
 }        

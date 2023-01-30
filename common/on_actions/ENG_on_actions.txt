@@ -13,20 +13,61 @@ on_actions = {
 		}
 	}
 
+	on_weekly = {
+		effect = {
+			ENG = {
+				add_to_variable = {
+					ENG_tension = 0.1
+				}
+			}
+			ENG = {
+				if = {
+					limit = {
+						ENG_tension > 100
+					}
+					set_variable = {
+						ENG_tension = 100
+					}
+				}
+			}
+		}
+	}
+
 	on_monthly = {
 		effect = {
 			ENG = {
 				if = {
-					has_completed_focus = ENG_rampant_crime
-					has_completed_focus = ENG_the_left
-					has_completed_focus = ENG_radical_republicans
-					has_completed_focus = ENG_growing_anti_semitism
-					has_completed_focus = ENG_parlimetary_corruption
+					limit = {
+						has_completed_focus = ENG_rampant_crime
+						has_completed_focus = ENG_the_left
+						has_completed_focus = ENG_radical_republicans
+						has_completed_focus = ENG_growing_anti_semitism
+						has_completed_focus = ENG_parlimetary_corruption
+					}
+					country_event = {
+						random_days = 20
+						id = ENGstart.3
+					}
+	
+					country_event = {
+						random_days = 40
+						id = ENGstart.4
+					}	
 				}
+			}
+		}
 
-				country_event = {
-					random_days = 20
-					id = ENGstart.3
+		effect = {
+			ENG = {
+				65 = {
+					country_event = {
+
+					}
+				}
+				35 = {
+					country_event = {
+						
+					}
 				}
 			}
 		}

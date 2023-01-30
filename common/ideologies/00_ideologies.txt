@@ -450,6 +450,8 @@ ideologies = {
 
 			enlightened_absolutism = {}
 
+			tribal_thought = {}
+
 			bonapartism = {} # FRA & Subjects
 
 			papal_theocracy = {} # ITA (PAP)

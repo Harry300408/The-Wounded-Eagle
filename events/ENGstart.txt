@@ -27,13 +27,15 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
+		name = ENGstart.2.b
+	}
+
+	option = {
 		name = ENGstart.2.a
 		set_country_flag = wacky_mode
 	}
 
-	option = {
-		name = ENGstart.2.b
-	}
+	
 }
 
 country_event = {
@@ -48,5 +50,244 @@ country_event = {
 	option = {
 		name = ENGstart.3.a
 		complete_national_focus = ENG_assassination_malcolm
+		custom_effect_tooltip = add_tension
+		add_to_variable = {
+			ENG_tension = 10.7
+		}
+	}
+}
+
+
+
+country_event = {
+	id = ENGstart.4
+	title = ENGstart.4.t
+	desc = ENGstart.4.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.4.a
+		complete_national_focus = ENG_arrest_orwell
+		custom_effect_tooltip = add_tension_small
+		add_to_variable = {
+			ENG_tension = 7
+		}
+
+		hidden_effect = {
+			country_event = {
+				days = 15
+				id = ENG_start.5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ENGstart.5
+	title = ENGstart.5.t
+	desc = ENGstart.5.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.5.a
+		complete_national_focus = ENG_regent_street_riots
+		custom_effect_tooltip = add_tension
+		custom_effect_tooltip = crack_down_on_riots
+		add_to_variable = {
+			ENG_tension = 15
+		}
+		create_country_flag = cracked_down_on_riots
+		news_event = {
+			id = ENGstart.6
+		}
+		hidden_effect = {
+			country_event = {
+				days = 10
+				id = ENGstart.7
+			}
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+	}
+
+	option = {
+		name = ENGstart.5.b
+		complete_national_focus = ENG_regent_street_riots
+		custom_effect_tooltip = add_tension_small
+		custom_effect_tooltip = let_riots_continue
+		add_to_variable = {
+			ENG_tension = 6
+		}
+		create_country_flag = riots_continue
+		news_event = {
+			id = ENGstart.6
+		}
+
+		hidden_effect = {
+			country_event = {
+				days = 30
+				id = ENGstart.7
+			}
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	
+
+	
+}
+
+news_event = {
+	id = ENGstart.6
+	title = ENGstart.6.t
+	desc = ENGstart.6.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.6.a
+	}
+}
+
+country_event = {
+	id = ENGstart.7
+	title = ENGstart.7.t
+	desc = ENGstart.7.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.7.a
+		complete_national_focus = ENG_bombing_of_westminster_abbey
+		custom_effect_tooltip = add_tension
+		add_to_variable = {
+			ENG_tension = 10
+		}
+		news_event = {
+			id = ENGstart.8
+		}
+	}
+
+}
+
+news_event = {
+	id = ENGstart.8
+	title = ENGstart.8.t
+	desc = ENGstart.8.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.8.a
+	}
+}
+
+
+## TOP 5 FOCUSES  
+
+country_event = {
+	id = ENGstart.9
+	title = ENGstart.9.t
+	desc = ENGstart.9.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.9.a
+		custom_effect_tooltip = add_tension_small
+		add_to_variable = {
+			ENG_tension = 3
+		}
+	}
+}
+
+country_event = {
+	id = ENGstart.10
+	title = ENGstart.10.t
+	desc = ENGstart.10.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.10.a
+		custom_effect_tooltip = add_tension_small
+		add_to_variable = {
+			ENG_tension = 2.1
+		}
+	}
+}
+
+country_event = {
+	id = ENGstart.11
+	title = ENGstart.11.t
+	desc = ENGstart.11.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.11.a
+		custom_effect_tooltip = add_tension_small
+		add_to_variable = {
+			ENG_tension = 1.5
+		}
+	}
+}
+
+country_event = {
+	id = ENGstart.12
+	title = ENGstart.12.t
+	desc = ENGstart.12.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.12.a
+		custom_effect_tooltip = add_tension_small
+		add_to_variable = {
+			ENG_tension = 4.5
+		}
+	}
+}
+
+country_event = {
+	id = ENGstart.13
+	title = ENGstart.13.t
+	desc = ENGstart.13.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.13.a
+		custom_effect_tooltip = add_tension_small
+		add_to_variable = {
+			ENG_tension = 2.7
+		}
 	}
 }

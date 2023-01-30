@@ -1,0 +1,133 @@
+﻿l_english:
+  rule_brittania:0 "Rule Britannia?"
+    ENG_rampant_crime:0 "Crime Running Rampant"
+    ENG_the_left:0 "Radical Leftists"
+    ENG_radical_republicans:0 "Republican Radicalism"
+    ENG_growing_anti_semitism:0 "Anti-Semitism On The Rise"
+    ENG_parlimetary_corruption:0 "Corruption In Parliament"
+      ENG_assassination_malcolm:0 "Malcolm Macdonald's Assassination"
+      ENG_regent_street_riots:0 "Riots In Regent Street"
+      ENG_arrest_orwell:0 "Orwell's Arrest"
+        ENG_bombing_of_westminster_abbey:0 "Bombing of Westimster Abbey"
+        ENG_martial_law:0 "Declare Martial Law"
+          ENG_churchill_takes_charge:0 "Churchill Takes Charge"
+            ENG_snap_elections:0 "Demand Snap Elections"
+            ENG_disolve_parliment:0 "Disolve Parliament"
+            ENG_blood_stains_in_london:0 "Blood Stains In London"
+
+  ## PARTIES ##
+  ENG_communism_party:0 "CP"
+  ENG_communism_party_long:0 "the Communist Party of Great Britian"
+  ENG_rev_unionism_party:0 "NUP"
+  ENG_rev_unionism_party_long:0 "National Unionist Party"
+
+  ENG_despotism_party:0 "RA"
+  ENG_despotism_party_long:0 "the Royal Armed Forces"
+
+  ENG_ultranationalism_party:0 "NP"
+  ENG_ultranationalism_party_long:0 "the National Party"
+
+  ENG_rad_trad_party:0 "FPB"
+  ENG_rad_trad_party_long:0 "Free People of Britain"
+
+  ## BOOKMARK LOC ##
+
+  ENG_TWE:0 "After the Great War the Kingdom of Great Britian went into termoil, politically and ruraly. This lead to an economic recesion futher worsoning the situation. This lead to labour being elected in the next General Election, they refomed the country and stabalised the economy. but people are still not happy. There is low moral in the army, navy & air along with General strikes that are a almost day to day occurance. \n\nWhat will you do to make this nation great again?"
+
+
+  ## TENSION LOC ##
+  add_tension_small:0 "§YPolitical Tension Gains§!"
+  add_tension:0 "§RPolitical Tension Gains§!"
+
+  crack_down_on_riots:0 "If You Crack Down On Riots, You May Be Able To Rebuild"
+
+  let_riots_continue:0 "If You Let The Riots Continue, There May Be No Rebuilding The Country"
+
+  ## EVENT STUFF ##
+
+  ## World News Events ##
+  ENGstart.6.t:0 "Riots In Regent Street!"
+  ENGstart.6.d:0 "Today at 3:45, an organised strike quicky turned into a riot after a policeman attacked one of the protesters. This has caused thousands of pounds in damage and may even leave some shops bankrupt when trying to fund the repairs. People around the world have been awe-struck at these sights."
+
+  ENGstart.6.a:0 "What's Going To Happen?"
+
+
+  ## Starting Tree / Events ##
+  ENGstart.1.t:0 "Welcome to The United Kingdom of Britain!"
+
+  ENGstart.1.d:0 "Welcome to Britain! \nThere is a thing I need to say 1st, I believe in none of these ideologies, and they should not be practised in real-world situations! \nOn to some fewer cliché things. The United Kingdom of Britain (which will be shortened to KoGB aka Kingdom of Great Britain) obviously partook in WW1. However, this wasn't the normal Entente Vs Central Powers. The reason why well we (KoGB) won the war of 1812! This resulted in many ripples which will be explained by all other nations with content with more of the story revealing itself. \nThe side the KoGB joined was "The Liberation Front", Along with the Preußische Arbeiterrepublik, The Kingdom of Italy & Qing. Unfortunately, Italy & Qing peaced out due to humiliation in Italy and the Qing collapsed. But at this time the Ottomans wanted in. They had an excuse too, they claimed that Russia moved troops into Eastern Anatolia, which they had (into the Trebizond area). And thus joined the war. This however didn't affect anything, as "The Imperial Powers" were pushing on all fronts and very effectively! this resulted in The Liberation Front suing for peace and ending the war. \nObviously people were outraged and protests went up everywhere across the losing nations. However, this did not affect anything politically mostly they were put out by increasing the minimum wage, and it calmed down the people. But in Britain there was still bitterness. This led to an Irish revolt which ended in Ireland becoming a Dominion instead of being directly controlled."
+
+  ENGstart.1.a:0 "For Britannia and The Commonwealth!"
+
+
+
+  ENGstart.2.t:0 "Wacky Mode?"
+  ENGstart.2.d:0 "Do you want wacky mode or not? simple really (unlocks wacky paths that are very strange!)"
+
+  ENGstart.2.a:0 "Of Course"
+  ENGstart.2.b:0 "Fuck No"
+
+
+  ENGstart.3.t:0 "Malcolm's Assasination"
+  ENGstart.3.d:0 "Today at 15:24, Malcolm Macdonald, Son of former PM Ramsay Macdonald. Was assassinated during his speech in Nairobi, Kenya. Many people are seding their thoughts and prayers to the family, Some belive this is a victory for socailists & non-democratic factions."
+
+  ENGstart.3.a:0 "What A Tradegy!"
+
+
+  ENGstart.4.t:0 "Orwell's Arrest"
+  ENGstart.4.d:0 "Today at 12:30pm police stormed Owell's place of residency due to "politcal extemities" in his literature & political views."
+
+  ENGstart.4.a:0 "This Is Going to Fustrate Some People"
+
+
+  ENGstart.5.t:0 "Riot!"
+  ENGstart.5.d:0 "Today at 3:45pm, an organised strike quicky turned into a riot after a policeman attacked one of the protesters. This has caused thousands of pounds in damage and may even leave some shops bankrupt when trying to fund the repairs. What should we do about this?"
+
+  ENGstart.5.a:0 "Crack Down On The Rioters, Make Sure Everyone Is Prossecuted!"
+  ENGstart.5.b:0 "Do Nothing, Let It Continue. It's Not Like Anything Will Happen. Right?"
+
+
+  ENGstart.7.t:0 "Westminster Abbey Bombed!"
+  ENGstart.7.d:0 "Today at 6:45pm, Westminster went up in flames after a terrorist attack on the abbey. This has caused chaos across the country seen as it is the 'Headquaters' of the Anglican Church. Due to most of the country being Protestant (Anglican) this has been seen as an omen from god by many."
+
+  ENGstart.7.a:0 "Things Just Can't Get Any Worse Can They"
+
+
+  ENGstart.8.t:0 "Westminster Abbey Bombed!"
+  ENGstart.8.d:0 "Today at 6:45pm, Westminster went up in flames after a terrorist attack on the abbey. This has caused chaos across the country seen as it is the 'Headquaters' of the Anglican Church. Due to most of the country being Protestant (Anglican) this has been seen as an omen from god by many."
+
+  ENGstart.8.a:0 "Will They Ever Get A Break?"
+
+
+  ENGstart.9.t:0 "Rampant Crime"
+  ENGstart.9.d:0 "Ever sincee the war the KoGB has experienced a rapid increase in crime rates. This has affected many buisinesses and people are mad."
+
+  ENGstart.9.a:0 "What Do We Do?"
+
+
+  ENGstart.10.t:0 "The Left"
+  ENGstart.10.d:0 "The "Left" has always been a large problem since its inception when Karl Marx wrote his book. People took to the idea as it was appealing and now we, the government, have to face its consequences."
+
+  ENGstart.10.a:0 "Damm Those Commies!"
+
+
+  ENGstart.11.t:0 "Radical Republicans"
+  ENGstart.11.d:0 "The Republican movement in the UK has always been a problem, these "Republicans" want a more American style Government as the Constitution is "too opressive" and "goes against the right of the people". As republicans belive in rights for all. Even women and non-white (such as Asian & Black races) people."
+
+  ENGstart.11.a:0 "Outragous!"
+
+
+  ENGstart.12.t:0 "Anti-Semitism"
+  ENGstart.12.d:0 "People don't like outsiders and that's a fact. Ever since the 1st Jews steped into the UK, they were already hated. But due to the loss in WW1 people needed someone to blame so they blamed the Jews! They were blamed to have "infected the government"."
+
+  ENGstart.12.a:0 "If Only We Could Do Something"
+
+
+  ENGstart.13.t:0 "Corruption in Parliment"
+  ENGstart.13.d:0 "Wealthy companies and buisiness men have been able to bribe MPs into making certain decisions, weather that be for the benfit for them or for the benifit of their businesse. Making sure that the people get nothing."
+
+  ENGstart.13.a:0 "How The Missery"
+
+  
+
+  

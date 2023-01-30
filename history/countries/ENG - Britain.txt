@@ -23,6 +23,8 @@ add_ideas = {
 
 starting_train_buffer = 4
 
+set_country_flag = ENG_tension_enabled
+
 set_variable = {
 	ENG_tension = 21.3
 }
