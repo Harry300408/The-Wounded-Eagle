@@ -1,0 +1,20 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_SOV_medal_alexander_nevskiy"
+		textureFile = "gfx/interface/medals/SOV_medal_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_medal_icon_sov_empire"
+		texturefile = "gfx/interface/medals/sov_empire_medal_strip.dds"
+		noOfFrames = 5
+    }
+	
+	spriteType = {
+		name = "GFX_medal_icon_sov_empire_large"
+		texturefile = "gfx/interface/medals/sov_empire_medal_strip_large.dds"
+		noOfFrames = 5
+    }
+
+}
