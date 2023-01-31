@@ -9,8 +9,8 @@ focus_tree = {
 		}
 	}
 	continuous_focus_position = {
-		x = 3550
-		y = 1100
+		x = 2350
+		y = 1200
 	}
 
 	### ----------- FOCUS TREE ------------ ###
@@ -66,7 +66,7 @@ focus_tree = {
 		id = AUS_new_osterreich
 		icon = GFX_
 		cost = 5
-		x = -16
+		x = -12
 		y = 1
 		relative_position_id = AUS_revive_political_plan
 		mutually_exclusive = {
@@ -100,7 +100,7 @@ focus_tree = {
 		id = AUS_peaceful_development
 		icon = GFX_focus_AUS_peaceful_development
 		cost = 5
-		x = 8
+		x = 3
 		y = 1
 		relative_position_id = AUS_new_osterreich
 		mutually_exclusive = {
@@ -139,7 +139,7 @@ focus_tree = {
 			focus = AUS_peaceful_development
 		}
 		mutually_exclusive = {
-			focus = AUS_march_of_red_torches
+			#focus = AUS_march_of_red_torches
 			focus = AUS_vaterlandische_front
 		}
 		available = {
@@ -418,7 +418,7 @@ focus_tree = {
 		id = AUS_prepare_sabotage
 		icon = GFX_focus_AUS_prepare_sabotage
 		cost = 5
-		x = -11
+		x = -3
 		y = 1
 		relative_position_id = AUS_new_osterreich
 		mutually_exclusive = {
@@ -455,11 +455,11 @@ focus_tree = {
 		id = AUS_agitation_program
 		icon = GFX_focus_AUS_agitation_program
 		cost = 5
-		x = 5
+		x = 1
 		y = 2
 		relative_position_id = AUS_prepare_sabotage
 		prerequisite = {
-			focus = AUS_march_of_red_torches
+			#focus = AUS_march_of_red_torches
 			focus = AUS_vaterlandische_front
 		}
 		completion_reward = { 
@@ -482,16 +482,16 @@ focus_tree = {
 					popularity = 0.05
 				}
 			}
-			if = {
-				limit = {
-					has_completed_focus = AUS_march_of_red_torches
-				}
-				add_ideas = AUS_agitation_efficiency_communism_1_idea
-				add_popularity = {
-					ideology = communism
-					popularity = 0.05
-				}
-			}
+			#if = {
+			#	limit = {
+			#		has_completed_focus = AUS_march_of_red_torches
+			#	}
+			#	add_ideas = AUS_agitation_efficiency_communism_1_idea
+			#	add_popularity = {
+			#		ideology = communism
+			#		popularity = 0.05
+			#	}
+			#}
 			set_country_flag = AUS_agitation_started_flag
 			activate_mission = AUS_agitation_mission
 		}
@@ -508,7 +508,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = AUS_est_liebe_die_republik
-			focus = AUS_march_of_red_torches
+			#focus = AUS_march_of_red_torches
 		}
 		completion_reward = { 
 			swap_ideas = {
@@ -545,117 +545,117 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = AUS_march_of_red_torches
-		icon = GFX_
-		cost = 5
-		x = 0
-		y = 2
-		relative_position_id = AUS_new_osterreich
-		prerequisite = {
-			focus = AUS_prepare_sabotage
-			focus = AUS_peaceful_development
-		}
-		mutually_exclusive = {
-			focus = AUS_est_liebe_die_republik
-			focus = AUS_vaterlandische_front
-		}
-		completion_reward = { 
-			if = {
-				limit = {
-					NOT = {
-						has_completed_focus = AUS_prepare_sabotage
-						has_completed_focus = AUS_peaceful_development
-					}
-				}
-				effect_tooltip = {
-					swap_ideas = {
-						remove_idea = AUS_monarchism_abandoned_idea_1
-						add_idea = AUS_march_of_red_torches_idea
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = AUS_peaceful_development
-				}
-				swap_ideas = {
-					remove_idea = AUS_monarchism_abandoned_idea_1
-					add_idea = AUS_march_of_red_torches_idea
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = AUS_prepare_sabotage
-				}
-				swap_ideas = {
-					remove_idea = AUS_monarchism_abandoned_idea_2
-					add_idea = AUS_march_of_red_torches_idea
-				}
-			}
-		}
-	}
-	focus = {
-		id = AUS_empower_kpo
-		icon = GFX_focus_AUS_empower_kpo
-		cost = 5
-		x = 0
-		y = 2
-		relative_position_id = AUS_march_of_red_torches
-		prerequisite = {
-			focus = AUS_march_of_red_torches
-		}
-		prerequisite = {
-			focus = AUS_agitation_program
-		}
-		available = {
-			communism > 0.45
-			custom_trigger_tooltip = {
-				tooltip = AUS_agitation_effective_2_tt
-				check_variable = {
-					var:AUS_agitation_level > 1
-				}
-			}
-		}
-		completion_reward = { 
-			set_politics = {
-				ruling_party = communism
-			}
-		}
-	}
-	focus = {
-		id = AUS_arrange_unionist_conference
-		icon = GFX_
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = AUS_empower_kpo
-		prerequisite = {
-			focus = AUS_empower_kpo
-		}
-		available = {
-		}
-		completion_reward = { 
-		}
-	}
-	focus = {
-		id = AUS_international_unionist_council
-		icon = GFX_
-		cost = 0
-		x = 0
-		y = 2
-		relative_position_id = AUS_empower_kpo
-		prerequisite = {
-			focus = AUS_arrange_unionist_conference
-		}
-		completion_reward = { 
-			set_politics = {
-				ruling_party = communism
-				election_frequency = 12
-				elections_allowed = yes
-			}
-		}
-	}
+	#focus = {
+	#	id = AUS_march_of_red_torches
+	#	icon = GFX_
+	#	cost = 5
+	#	x = 0
+	#	y = 2
+	#	relative_position_id = AUS_new_osterreich
+	#	prerequisite = {
+	#		focus = AUS_prepare_sabotage
+	#		focus = AUS_peaceful_development
+	#	}
+	#	mutually_exclusive = {
+	#		focus = AUS_est_liebe_die_republik
+	#		focus = AUS_vaterlandische_front
+	#	}
+	#	completion_reward = { 
+	#		if = {
+	#			limit = {
+	#				NOT = {
+	#					has_completed_focus = AUS_prepare_sabotage
+	#					has_completed_focus = AUS_peaceful_development
+	#				}
+	#			}
+	#			effect_tooltip = {
+	#				swap_ideas = {
+	#					remove_idea = AUS_monarchism_abandoned_idea_1
+	#					add_idea = AUS_march_of_red_torches_idea
+	#				}
+	#			}
+	#		}
+	#		if = {
+	#			limit = {
+	#				has_completed_focus = AUS_peaceful_development
+	#			}
+	#			swap_ideas = {
+	#				remove_idea = AUS_monarchism_abandoned_idea_1
+	#				add_idea = AUS_march_of_red_torches_idea
+	#			}
+	#		}
+	#		if = {
+	#			limit = {
+	#				has_completed_focus = AUS_prepare_sabotage
+	#			}
+	#			swap_ideas = {
+	#				remove_idea = AUS_monarchism_abandoned_idea_2
+	#				add_idea = AUS_march_of_red_torches_idea
+	#			}
+	#		}
+	#	}
+	#}
+	#focus = {
+	#	id = AUS_empower_kpo
+	#	icon = GFX_focus_AUS_empower_kpo
+	#	cost = 5
+	#	x = 0
+	#	y = 2
+	#	relative_position_id = AUS_march_of_red_torches
+	#	prerequisite = {
+	#		focus = AUS_march_of_red_torches
+	#	}
+	#	prerequisite = {
+	#		focus = AUS_agitation_program
+	#	}
+	#	available = {
+	#		communism > 0.45
+	#		custom_trigger_tooltip = {
+	#			tooltip = AUS_agitation_effective_2_tt
+	#			check_variable = {
+	#				var:AUS_agitation_level > 1
+	#			}
+	#		}
+	#	}
+	#	completion_reward = { 
+	#		set_politics = {
+	#			ruling_party = communism
+	#		}
+	#	}
+	#}
+	#focus = {
+	#	id = AUS_arrange_unionist_conference
+	#	icon = GFX_
+	#	cost = 5
+	#	x = 0
+	#	y = 1
+	#	relative_position_id = AUS_empower_kpo
+	#	prerequisite = {
+	#		focus = AUS_empower_kpo
+	#	}
+	#	available = {
+	#	}
+	#	completion_reward = { 
+	#	}
+	#}
+	#focus = {
+	#	id = AUS_international_unionist_council
+	#	icon = GFX_
+	#	cost = 0
+	#	x = 0
+	#	y = 2
+	#	relative_position_id = AUS_empower_kpo
+	#	prerequisite = {
+	#		focus = AUS_arrange_unionist_conference
+	#	}
+	#	completion_reward = { 
+	#		set_politics = {
+	#			ruling_party = communism
+	#			election_frequency = 12
+	#			elections_allowed = yes
+	#		}
+	#	}
+	#}
 
 	### ----------------------------------- ###
 	### ------- EMPOWER RIGHT WING -------- ###
