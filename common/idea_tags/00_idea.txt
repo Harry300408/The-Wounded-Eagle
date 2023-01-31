@@ -25,6 +25,8 @@ idea_categories = {
 	
 	government = {
 		slot = mobilization_laws
+		slot = power_distro
+		slot = prince_gov
 		slot = trade_laws
 		slot = economy
 		

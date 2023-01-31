@@ -16,10 +16,18 @@
             ENG_blood_stains_in_london:0 "Blood Stains In London"
 
   ## PARTIES ##
-  ENG_communism_party:0 "CP"
-  ENG_communism_party_long:0 "the Communist Party of Great Britian"
-  ENG_rev_unionism_party:0 "NUP"
-  ENG_rev_unionism_party_long:0 "National Unionist Party"
+  ENG_communism_party:0 "§tCP"
+  ENG_communism_party_long:0 "§tthe Communist Party of Great Britian"
+  ENG_rev_unionism_party:0 "§tNUP"
+  ENG_rev_unionism_party_long:0 "§tNational Unionist Party"
+  ENG_lib_socialism_party:0 ""
+  ENG_lib_socialism_party_long:0 ""
+  ENG_social_democracy_party:0 "§3BLP"
+  ENG_social_democracy_party_long:0 "§3British Labour Party"
+  ENG_liberalism_party:0 "§YLP"
+  ENG_liberalism_party_long:0 "§Ythe Liberal Party"
+  ENG_democratic_party:0 "§BConP"
+  ENG_democratic_party:0 "§Bthe Conservitave Party"
 
   ENG_despotism_party:0 "RA"
   ENG_despotism_party_long:0 "the Royal Armed Forces"
