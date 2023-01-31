@@ -288,6 +288,7 @@ unionist_learning:0 "Unionist Learning"
 support_accepted:0 "Support Accepted"
 support_rejected:0 "Support Rejected"
 threatening_speech:0 "Threatening Speech"
+influenced:0 "Influenced"
 
 ### TOOLTIP ###
 AUS_condeferation_influence_tt:0 "All existing §YConfederation States§! except §Y[PRE.GetName]§! will gain §YUnionist Influence§!."
@@ -306,6 +307,7 @@ GERMANY_member_of_confederation_idea_desc:0 "§WRemains Until: $TT_icon_availabl
 TT_icon_available_chk:1 "[ThisIconAvailableDyn]"
 TT_icon_available_not:0 "£GFX_accept_decline_icon|1"
 TT_icon_available_yes:0 "£GFX_accept_decline_icon|2"
+AUS_enable_conf_influence_tt:0 "Will allow to §YInfluence the Confederation memebers§!."
 
 # Agitation Program TT
 AUS_agitation_base_time_gain_tt:0 "§YAgitation Mission§! base time will be increased by §G30§!."
