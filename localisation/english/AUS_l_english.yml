@@ -173,6 +173,11 @@ ausevents.26.desc:0 "[AUS.GetName] recently started their military trainings and
 ausevents.26.a:0 "Sure!"
 ausevents.26.b:0 "We are good."
 
+ausevents.27.t:0 "[AUS.GetName] invite us into [AUS.GetFactionName]"
+ausevents.27.desc:0 "[AUS.GetAdjective] advisors reached us with official invitation into [AUS.GetFactionName]."
+ausevents.27.a:0 "Sure!"
+ausevents.27.b:0 "We have own plans."
+
 ### IDEAS ###
 AUS_monarchism_abandoned_idea_0:0 "Monarchism Abandoned"
 AUS_monarchism_abandoned_idea_1:0 "$AUS_monarchism_abandoned_idea_0$"

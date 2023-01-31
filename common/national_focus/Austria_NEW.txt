@@ -1989,7 +1989,7 @@ focus_tree = {
 		completion_reward = { 
 			create_wargoal = {
 				target = FRA
-				type = annex_everything
+				type = expand_influence_focus
 			}
 		}
 	}
@@ -2006,7 +2006,7 @@ focus_tree = {
 		completion_reward = { 
 			create_wargoal = {
 				target = HOL
-				type = puppet_wargoal_focus
+				type = expand_influence_focus
 			}
 		}
 	}
@@ -2026,7 +2026,7 @@ focus_tree = {
 		completion_reward = { 
 			create_wargoal = {
 				target = DEN
-				type = annex_everything
+				type = expand_influence_focus
 			}
 		}
 	}
@@ -2044,7 +2044,23 @@ focus_tree = {
 			focus = AUS_osterreichisch_niederlande
 		}
 		completion_reward = { 
-			
+			add_ai_strategy = {
+				type = befriend
+				id = DEN
+				value = 20
+			}
+			DEN = {
+				add_ai_strategy = {
+					type = befriend
+					id = AUS
+					value = 20
+				}
+				add_opinion_modifier = {
+					target = AUS
+					modifier = focus_diplo
+				}
+				country_event = { id = ausevents.27 hours = 6 }
+			}
 		}
 	}
 	focus = {
@@ -2061,15 +2077,27 @@ focus_tree = {
 		completion_reward = { 
 			create_wargoal = {
 				target = SWE
-				type = annex_everything
+				type = expand_influence_focus
 			}
 			create_wargoal = {
 				target = NOR
-				type = annex_everything
+				type = expand_influence_focus
 			}
-			create_wargoal = {
-				target = FIN
-				type = annex_everything
+			if = {
+				limit = {
+					FIN = {
+						OR = {
+							is_puppet = no
+							NOT = {
+								is_puppet_of = SOV
+							}
+						}
+					}
+				}
+				create_wargoal = {
+					target = FIN
+					type = expand_influence_focus
+				}
 			}
 		}
 	}
@@ -2126,7 +2154,7 @@ focus_tree = {
 		completion_reward = { 
 			create_wargoal = {
 				target = ENG
-				type = annex_everything
+				type = expand_influence_focus
 			}
 		}
 	}
@@ -2174,7 +2202,7 @@ focus_tree = {
 		completion_reward = { 
 			create_wargoal = {
 				target = SWI
-				type = annex_everything
+				type = expand_influence_focus
 			}
 		}
 	}
@@ -2191,7 +2219,7 @@ focus_tree = {
 		completion_reward = { 
 			create_wargoal = {
 				target = SPR
-				type = annex_everything
+				type = expand_influence_focus
 			}
 		}
 	}
@@ -2208,7 +2236,7 @@ focus_tree = {
 		completion_reward = { 
 			create_wargoal = {
 				target = POR
-				type = annex_everything
+				type = expand_influence_focus
 			}
 		}
 	}
@@ -2226,7 +2254,23 @@ focus_tree = {
 			focus = AUS_dominance_in_europe
 		}
 		completion_reward = { 
-			
+			if = {
+				limit = {
+					CZE = {
+						is_puppet_of = AUS
+						is_ai = yes
+					}
+				}
+				annex_country = {
+					target = CZE
+					transfer_troops = yes
+				}
+			}
+			else = {
+				CZE = {
+					country_event = { id = ausevents.1 hours = 6 }
+				}
+			}
 		}
 	}
 	focus = {
@@ -2243,7 +2287,11 @@ focus_tree = {
 			focus = AUS_dominance_in_europe
 		}
 		completion_reward = { 
-			
+			add_political_power = 25
+			set_autonomy = {
+				target = CZE
+				autonomy_state = autonomy_puppet
+			}
 		}
 	}
 	focus = {
@@ -2258,13 +2306,32 @@ focus_tree = {
 			focus = AUS_bohemia_limited_autonomy
 		}
 		completion_reward = { 
-			
+			create_wargoal = {
+				target = SOV
+				type = expand_influence_focus
+			}
+			if = {
+				limit = {
+					POL = {
+						OR = {
+							is_puppet = no
+							NOT = {
+								is_puppet_of = SOV
+							}
+						}
+					}
+				}
+				create_wargoal = {
+					target = POL
+					type = expand_influence_focus
+				}
+			}
 		}
 	}
 	focus = {
 		id = AUS_look_on_balkans
 		icon = GFX_
-		cost = 10
+		cost = 5
 		x = -4
 		y = 2
 		relative_position_id = AUS_dominance_in_europe
@@ -2272,7 +2339,8 @@ focus_tree = {
 			focus = AUS_dominance_in_europe
 		}
 		completion_reward = { 
-			
+			add_political_power = 50
+			#DELTA
 		}
 	}
 	focus = {
@@ -2289,7 +2357,10 @@ focus_tree = {
 			focus = AUS_look_on_balkans
 		}
 		completion_reward = { 
-			
+			create_wargoal = {
+				target = HUN
+				type = expand_influence_focus
+			}
 		}
 	}
 	focus = {
@@ -2306,7 +2377,23 @@ focus_tree = {
 			focus = AUS_look_on_balkans
 		}
 		completion_reward = { 
-			
+			add_ai_strategy = {
+				type = befriend
+				id = HUN
+				value = 20
+			}
+			HUN = {
+				add_ai_strategy = {
+					type = befriend
+					id = AUS
+					value = 20
+				}
+				add_opinion_modifier = {
+					target = AUS
+					modifier = focus_diplo
+				}
+				country_event = { id = ausevents.27 hours = 6 }
+			}
 		}
 	}
 	focus = {
@@ -2321,7 +2408,7 @@ focus_tree = {
 			focus = AUS_befriend_hungary
 		}
 		completion_reward = { 
-			
+			#DELTA
 		}
 	}
 	focus = {
@@ -2335,7 +2422,10 @@ focus_tree = {
 			focus = AUS_to_the_black_sea
 		}
 		completion_reward = { 
-			
+			create_wargoal = {
+				target = ROM
+				type = expand_influence_focus
+			}
 		}
 	}
 	focus = {
@@ -2348,8 +2438,16 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_to_the_black_sea
 		}
+		bypass = {
+			BUL = {
+				is_puppet_of = TUR
+			}
+		}
 		completion_reward = { 
-			
+			create_wargoal = {
+				target = BUL
+				type = expand_influence_focus
+			}
 		}
 	}
 	focus = {
@@ -2364,7 +2462,7 @@ focus_tree = {
 			focus = AUS_befriend_hungary
 		}
 		completion_reward = { 
-			
+			#DELTA
 		}
 	}
 	focus = {
@@ -2378,7 +2476,10 @@ focus_tree = {
 			focus = AUS_expand_into_adriatic
 		}
 		completion_reward = { 
-			
+			create_wargoal = {
+				target = ITA
+				type = expand_influence_focus
+			}
 		}
 	}
 	focus = {
@@ -2391,8 +2492,14 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_expand_into_adriatic
 		}
+		bypass = {
+			has_global_flag = greater_serbia_collapsed_flag
+		}
 		completion_reward = { 
-			
+			create_wargoal = {
+				target = YUG
+				type = expand_influence_focus
+			}
 		}
 	}
 	focus = {
@@ -2411,7 +2518,10 @@ focus_tree = {
 			focus = AUS_move_to_romania
 		}
 		completion_reward = { 
-			
+			create_wargoal = {
+				target = TUR
+				type = expand_influence_focus
+			}
 		}
 	}
 

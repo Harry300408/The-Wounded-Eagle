@@ -637,11 +637,11 @@ country_event = {
 	}
 	option = {
 		name = ausevents.27.b
-		AUS = {
-			create_wargoal = {
-				target = ROOT
-				type = annex_everything
-			}
-		}
+		#AUS = {
+		#	create_wargoal = {
+		#		target = ROOT
+		#		type = annex_everything
+		#	}
+		#}
 	}
 }
