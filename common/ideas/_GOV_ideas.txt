@@ -1,0 +1,200 @@
+ideas = {
+
+	power_distro = {
+		law = yes
+		use_list_view = yes
+
+		autocratic = {
+		
+		
+			available = {
+				
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = -2
+				stability_factor = 0.1
+				consumer_goods_factor = -0.1
+				trade_opinion_factor = 0.15
+				generate_wargoal_tension = -0.2
+			}
+
+			on_add = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		oligarchy_idea = {
+		
+		
+			available = {
+				
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				generate_wargoal_tension = -0.1
+				consumer_goods_factor = 0.1
+				stability_factor = -0.05
+			}
+
+			on_add = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		landed_votes = {
+		
+		
+			available = {
+				
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				social_democracy_drift = 0.01
+				democratic_drift = 0.01
+				liberalism_drift = 0.01
+				army_morale_factor = 0.05
+				stability_factor = 0.1
+			}
+			
+			rules
+
+			on_add = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		wealth_votes = {
+		
+		
+			available = {
+				
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				social_democracy_drift = 0.02
+				democratic_drift = 0.02
+				liberalism_drift = 0.02
+				army_morale_factor = 0.05
+				stability_factor = 0.15
+			}
+
+			on_add = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		census_votes = {
+		
+		
+			available = {
+				
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				social_democracy_drift = 0.03
+				democratic_drift = 0.03
+				liberalism_drift = 0.03
+				army_morale_factor = 0.05
+				stability_factor = 0.2
+			}
+
+			on_add = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		any_man_may_vote = {
+		
+		
+			available = {
+				
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				social_democracy_drift = 0.05
+				democratic_drift = 0.05
+				liberalism_drift = 0.05
+				army_morale_factor = 0.05
+				stability_factor = 0.2
+			}
+
+			on_add = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		anarchy = {
+		
+		
+			available = {
+				
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 5
+				stability_factor = -0.4
+				consumer_goods_factor = 0.7
+				trade_opinion_factor = -1
+				army_org = -5
+				offence = -0.1
+				defence = -0.1
+				conscription_factor = 0.20
+			}
+
+			on_add = {
+			}
+
+			cancel_if_invalid = no
+		}
+
+		tribal_council = {
+		
+		
+			available = {
+				
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				surrender_limit = 0.99
+				neutrality_drift = 0.1
+			}
+
+			on_add = {
+			}
+
+			cancel_if_invalid = no
+		}
+	}
+}

@@ -14,7 +14,10 @@ if = {
 	}
 	#set_oob = "ENG_1936_nsb"
 }
-
+#GOV Ideas
+add_ideas = {
+	any_man_may_vote
+}
 
 add_ideas = {
 	bitter_defeat

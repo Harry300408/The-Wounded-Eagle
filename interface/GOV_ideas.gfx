@@ -1,23 +1,48 @@
 spriteTypes = {
-	
-    ##Leaders
 
-	spriteType = {
-        name = GFX_otto_hab
-        texturefile = gfx/leaders/AUS/otto_hab.dds
-    }
     spriteType = {
-        name = GFX_parliament
-        texturefile = gfx/leaders/AUS/AUS_Parliament_partrait.dds
+        name = GFX_idea_slot_power_distro
+        texturefile = gfx/interface/ideas/Gov/idea_slot_pwr_distro.dds
     }
+    
     spriteType = {
-        name = GFX_Ernst_Kaltenbrunner
-        texturefile = gfx/leaders/AUS/AUS_Ernst_Kaltenbrunner_portrait.dds
-    }
-    spriteType = {
-        name = GFX_Engelbert_Dollfuss
-        texturefile = gfx/leaders/AUS/AUS_Engelbert_Dollfuss_portrait.dds
+        name = GFX_idea_autocratic
+        texturefile = gfx/interface/ideas/Gov/idea_autocratic.dds
     }
 
+    spriteType = {
+        name = GFX_idea_oligarchy_idea
+        texturefile = gfx/interface/ideas/Gov/idea_oligarchy.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_landed_votes
+        texturefile = gfx/interface/ideas/Gov/idea_landed_votes.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_wealth_votes
+        texturefile = gfx/interface/ideas/Gov/idea_wealth_votes.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_census_votes
+        texturefile = gfx/interface/ideas/Gov/idea_census_votes.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_any_man_may_vote
+        texturefile = gfx/interface/ideas/Gov/idea_any_man_may_vote.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_anarchy
+        texturefile = gfx/interface/ideas/Gov/idea_anarchy.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_tribal_council
+        texturefile = gfx/interface/ideas/Gov/idea_tribal_council.dds
+    }
 
 }

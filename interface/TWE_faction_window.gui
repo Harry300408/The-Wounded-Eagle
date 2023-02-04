@@ -236,7 +236,7 @@ guiTypes = {
 			font = "hoi_24header"
 			text = "player_name"
 			format = left
-			maxWidth = 4500
+			maxWidth = 5000
 			maxHeight = 30
 #			fixedsize = yes
 		}
@@ -247,7 +247,7 @@ guiTypes = {
 			font = "hoi_24header"
 			text = "fac_leader"
 			format = left
-			maxWidth = 300
+			maxWidth = 5000
 			maxHeight = 30
 #			fixedsize = yes
 		}

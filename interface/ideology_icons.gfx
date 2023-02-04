@@ -46,6 +46,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/rad_trad.png"
 	}
 
+	SpriteType = { 
+		name = "GFX_ideology_tribalism_group"
+		texturefile = "gfx/interface/ideologies/tribalism.png"
+	}
+
 	#Sub Ideologies
 	SpriteType = { 
 		name = "GFX_ideology_legacy_unionism"
