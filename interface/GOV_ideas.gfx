@@ -1,5 +1,6 @@
 spriteTypes = {
 
+    #Power Distrobution
     spriteType = {
         name = GFX_idea_slot_power_distro
         texturefile = gfx/interface/ideas/Gov/idea_slot_pwr_distro.dds
@@ -43,6 +44,57 @@ spriteTypes = {
     spriteType = {
         name = GFX_idea_tribal_council
         texturefile = gfx/interface/ideas/Gov/idea_tribal_council.dds
+    }
+
+    #Principles of Governance
+    spriteType = {
+        name = GFX_idea_slot_prince_gov
+        texturefile = gfx/interface/ideas/Gov/idea_slot_prince_gov.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_monarchy
+        texturefile = gfx/interface/ideas/Gov/idea_monarchy.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_presidential_rep
+        texturefile = gfx/interface/ideas/Gov/idea_presidential_rep.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_parliamentary_rep
+        texturefile = gfx/interface/ideas/Gov/idea_parliamentary_rep.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_theocracy
+        texturefile = gfx/interface/ideas/Gov/idea_theocracy.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_totalitarianism
+        texturefile = gfx/interface/ideas/Gov/idea_totalitarianism.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_council_rep
+        texturefile = gfx/interface/ideas/Gov/idea_council_rep.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_military_dictatorship_idea
+        texturefile = gfx/interface/ideas/Gov/idea_military_dictatorship.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_chiefdom
+        texturefile = gfx/interface/ideas/Gov/idea_chiefdom.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_anarchy_idea
+        texturefile = gfx/interface/ideas/Gov/idea_anarchy_idea.dds
     }
 
 }

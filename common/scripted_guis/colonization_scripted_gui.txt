@@ -8,15 +8,16 @@ scripted_gui = {
 		visible = {
 			ROOT  ={
 				OR ={
-					tag = ENG
-					tag = FRA
-					tag = AUS
-					tag = HOL
-					tag = GER
-					tag = ITA
-					tag = USA
-					tag = POR
-					tag = TXS
+					#tag = ENG
+					#tag = FRA
+					#tag = AUS
+					#tag = HOL
+					#tag = GER
+					#tag = ITA
+					#tag = USA
+					#tag = POR
+					#tag = TXS
+					tag = UNC
 				}
 			}
 			AND = {

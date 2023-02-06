@@ -243,6 +243,10 @@
   #Faction Name
   RT_faction_name_1:0 "Traditionalists"
 
+  #Tribalism
+  tribalism:0 "§GTribalism§!"
+  tribalism_drift:0 "Daily Support for §GTribalism§!"
+
 
 
 

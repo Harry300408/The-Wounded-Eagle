@@ -401,6 +401,8 @@ ideologies = {
 			constitutional_dictatorship = {} # apperently this is a thing, idk ask @TheUndyingSoldier#6191 (the person who came up with these with me)
 
 			military_despotism = {} #Amry Coups XD
+
+			technocracy = {}
 		}
 
 		dynamic_faction_names = {

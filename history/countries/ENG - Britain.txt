@@ -17,6 +17,7 @@ if = {
 #GOV Ideas
 add_ideas = {
 	any_man_may_vote
+	monarchy
 }
 
 add_ideas = {

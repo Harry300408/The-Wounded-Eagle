@@ -29,6 +29,7 @@ idea_categories = {
 		slot = prince_gov
 		slot = trade_laws
 		slot = economy
+		slot = diplo_status
 		
 		ledger = civilian
 		
