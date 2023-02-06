@@ -599,6 +599,8 @@ ideologies = {
 		types = {
 			
 			esoteric_traditionalism = {}
+			
+			evolaism = {}
 
 			martial_neo_paganism = {}
 
@@ -645,7 +647,9 @@ ideologies = {
 
 		types = {
 			
-			tribalism = {}
+			tribalism_type = {}
+			
+			anarcho_primitivism = {}
 
 		}
 
