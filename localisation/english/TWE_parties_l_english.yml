@@ -80,3 +80,7 @@
  AUS_fascism_party_long:0 "Vaterlandische Front"
  AUS_rad_trad_party:0 "OTOP" 
  AUS_rad_trad_party_long:0 "Österreichische Traditionalistische Oberste Partei"
+ 
+ #Bavaria
+ BAV_fascism_party:0 "§tNVDAP§!" 
+ BAV_fascism_party_long:0 "§tNationalvölkische Deutsche Arbeiterpartei§!" 
