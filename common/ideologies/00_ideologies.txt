@@ -27,7 +27,7 @@ ideologies = {
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
 
-		ai_communist = yes # uses the commie AI behaviour
+		ai_neutral = yes #
 		ai_ideology_wanted_units_factor = 1.20
 
 		rules = {
@@ -83,7 +83,7 @@ ideologies = {
 		war_impact_on_world_tension = 0.80		#Unionist more agressive (due to wanting "union of the peoples" mainly Germany but there are some others like Mexico and a Italian nation after the Austrians win the 2nd Italio-Austrian War)
 		faction_impact_on_world_tension = 0.5
 
-		ai_communist = yes # uses the commie AI behaviour
+		ai_neutral = yes #
 		ai_ideology_wanted_units_factor = 1.20
 
 		rules = {
@@ -134,7 +134,7 @@ ideologies = {
 		war_impact_on_world_tension = 0.40		#Commie less threatening
 		faction_impact_on_world_tension = 0.45
 
-		ai_communist = yes # uses the commie AI behaviour
+		ai_neutral = yes #
 		ai_ideology_wanted_units_factor = 1.20
 
 		rules = {
@@ -214,7 +214,7 @@ ideologies = {
 		faction_modifiers = {
 			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
 		}
-		ai_communist = yes # uses the commie AI behaviour
+		ai_neutral = yes #
 		ai_ideology_wanted_units_factor = 1.0 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
 	}
 
@@ -271,7 +271,7 @@ ideologies = {
 		faction_modifiers = {
 			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
 		}
-		ai_democratic = yes # uses the democratic AI behaviour
+		ai_neutral = yes #
 		ai_ideology_wanted_units_factor = 1.0 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
 	}
 
@@ -329,7 +329,7 @@ ideologies = {
 		faction_modifiers = {
 			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
 		}
-		ai_democratic = yes # uses the democratic AI behaviour
+		ai_neutral = yes #
 		ai_ideology_wanted_units_factor = 1.0 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
 	}
 
@@ -384,7 +384,7 @@ ideologies = {
 		faction_modifiers = {
 		}
 
-		ai_democratic = yes #
+		ai_neutral = yes #
 		ai_ideology_wanted_units_factor = 1.15
 	}
 
@@ -540,7 +540,7 @@ ideologies = {
 			embargo_cost_factor = 1
 		}
 
-		ai_fascist = yes # uses the fascist AI behaviour
+		ai_neutral = yes #
 		ai_ideology_wanted_units_factor = 1.65
 	}
 
@@ -590,7 +590,7 @@ ideologies = {
 			embargo_cost_factor = 1
 		}
 
-		ai_fascist = yes # uses the fascist AI behaviour
+		ai_neutral = yes #
 		ai_ideology_wanted_units_factor = 1.65
 	}
 
@@ -639,7 +639,7 @@ ideologies = {
 			embargo_cost_factor = 1
 		}
 
-		ai_fascist = yes # uses the fascist AI behaviour
+		ai_neutral = yes #
 		ai_ideology_wanted_units_factor = 1.65
 	}
 
