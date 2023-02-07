@@ -203,14 +203,14 @@
 
   #National Corporatism
     nat_volkism:0 "National Volkism"
-    nat_volkism_desc:0 ""
+    nat_volkism_desc:0 "National Volkism refers to a variant of National Corporatism created by Adolf Hitler in the 1920's that holds disdain for liberal democracy, capitalism, and the parliamentary system, but also incorporates fervent antisemitism, anti-communism, scientific racism, Social Darwinism, and eugenics into its creed, along with technocratic elements.  It aims to overcome social divisions and create a homogeneous society based on racial purity which represented a people's community (Volksgemeinschaft). A key aspect of this ideology is the Führerprinzip, which states that the Führer's word is above all written law and that governmental policies, decisions, and offices ought to work toward the realization of this end.It is considered by most National Corporatist movements as being very extreme, mainly due to its adherence to antisemitism."
     classical_nat:0 "Classical Fascism"
     classical_nat_desc:0 ""
     falangism:0 "Falangism"
     falangism_desc:0 ""
     mon_nat:0 "Monarcho-Fascism"
     mon_nat_desc:0 ""
-    clerical_nationalism:0 "Clerical Nationalism"
+    clerical_nationalism:0 "Clerical Fascism"
     clerical_nationalism_desc:0 ""
     e_nat_volkism:0 "Esoteric National Volkism"
     e_nat_volkism_desc:0 ""
