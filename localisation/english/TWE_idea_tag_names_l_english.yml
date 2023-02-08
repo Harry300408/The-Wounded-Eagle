@@ -19,3 +19,7 @@
     military_dictatorship_idea:0 "Military Dictatorship"
     chiefdom:0 "Chiefdom"
     anarchy_idea:0 "Anarchy"
+
+  diplo_status:0 "Diplomatic Status"
+    free_city:0 "Free City"
+    

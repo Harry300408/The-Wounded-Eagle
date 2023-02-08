@@ -1,6 +1,6 @@
 characters = {
 
-    ## Russian Leaders ##
+    ## English Leaders ##
     
     ENG_attlee = {
         name = ENG_attlee
@@ -11,6 +11,50 @@ characters = {
         }
         country_leader = {
             ideology = democratic_socialism
+            traits = {  }
+            #desc = 
+        }
+    }
+
+    ENG_af = {
+        name = ENG_af
+        portraits = {
+            civilian = {
+                large = "GFX_AF"
+            }
+        }
+        country_leader = {
+            ideology = constitutional_dictatorship
+            traits = {  }
+            #desc = 
+        }
+    }
+
+    ENG_churchill = {
+        name = ENG_churchill
+        portraits = {
+            civilian = {
+                large = "GFX_churchill"
+            }
+        }
+        country_leader = {
+            ideology = con_mon
+            traits = {  }
+            #desc = 
+        }
+    }
+
+    ## FOR THE RAJ
+
+    RAJ_churchill = {
+        name = ENG_churchill
+        portraits = {
+            civilian = {
+                large = "GFX_churchill"
+            }
+        }
+        country_leader = {
+            ideology = con_mon
             traits = {  }
             #desc = 
         }

@@ -7,5 +7,15 @@ spriteTypes = {
         texturefile = gfx/leaders/ENG/Labour/attlee.dds
     }
 
+    spriteType = {
+        name = GFX_AF
+        texturefile = gfx/leaders/ENG/Army/RA.dds
+    }
+
+    spriteType = {
+        name = GFX_churchill
+        texturefile = gfx/leaders/RAJ/churchill.dds
+    }
+
 
 }

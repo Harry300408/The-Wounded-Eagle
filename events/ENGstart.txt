@@ -291,3 +291,67 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = ENGstart.14
+	title = ENGstart.14.t
+	desc = ENGstart.14.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.14.a
+		add_popularity = {
+			ideology = despotism
+			popularity = 1
+		}
+
+		custom_effect_tooltip = add_tension
+		add_to_variable = {
+			ENG_tension = 15
+		}
+
+		set_politics = {
+			ruling_party = despotism
+			elections_allowed = no
+		}
+
+		ENG = {
+			swap_ideas = {
+				remove_idea = any_man_may_vote
+				add_idea = autocratic
+			}
+		}	
+		
+	}
+}
+
+country_event = {
+	id = ENGstart.15
+	title = ENGstart.15.t
+	desc = ENGstart.15.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.15.a
+		add_popularity = {
+			ideology = authoritarian_democracy
+			popularity = 1
+		}
+
+		custom_effect_tooltip = add_tension
+		add_to_variable = {
+			ENG_tension = 10
+		}
+
+		set_politics = {
+			ruling_party = authoritarian_democracy
+			elections_allowed = no
+		}
+	}
+}

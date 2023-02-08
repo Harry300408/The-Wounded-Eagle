@@ -29,11 +29,11 @@
   ENG_democratic_party:0 "§BConP"
   ENG_democratic_party_long:0 "§Bthe Conservitave Party"
   ENG_authoritarian_democracy_party:0 "§gT-HoW"
-  ENG_authoritarian_democracy_party_long:0 "The Tory-House of Windsor Government"
+  ENG_authoritarian_democracy_party_long:0 "§gThe Tory-House of Windsor Government"
   ENG_despotism_party:0 "§gR-AF"
-  ENG_despotism_party_long:0 "the Royal Armed Forces"
+  ENG_despotism_party_long:0 "§gthe Royal Armed Forces"
   ENG_neutrality_party:0 "§0HoW"
-  ENG_neutrality_party_long:0 "House of Windsor"
+  ENG_neutrality_party_long:0 "§0House of Windsor"
   ENG_ultranationalism_party:0 "NP"
   ENG_ultranationalism_party_long:0 "the National Party"
   ENG_fascism_party:0 "§LBS"
@@ -53,6 +53,9 @@
   crack_down_on_riots:0 "If You Crack Down On Riots, You May Be Able To Rebuild"
 
   let_riots_continue:0 "If You Let The Riots Continue, There May Be No Rebuilding The Country"
+
+  cracked_down_on_riots:0 "Has Cracked Down On Riots"
+  riots_continue:0 "Has Not Cracked Down On Riots"
 
   ## EVENT STUFF ##
 
@@ -139,6 +142,19 @@
 
   ENGstart.13.a:0 "How The Missery"
 
-  
+
+  ENGstart.14.t:0 "Martial Law Declaired"
+  ENGstart.14.d:0 "Today the Royal Armed Forces marched into parliment and declaired martial law before a emergency council leader is chosen."
+
+  ENGstart.14.a:0 "Who Will Lead Us In This Dire Time of Need?"
+
+
+  ENGstart.15.t:0 "Churchill For The Nation!"
+  ENGstart.15.d:0 "Churchill took charge today to hopefuly lead this nation to stability and peace once again. In his speach yesterday he said "I am here to provide and care for the people of Britain, I am for the nation!" suggesting that he will do what's nessasery to keep Britain and her empire together."
+
+  ENGstart.15.a:0 "For a Better and More British Future!"
+
+
+
 
   

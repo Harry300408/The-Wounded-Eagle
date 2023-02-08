@@ -532,6 +532,8 @@ give_guarantee = OLD
 
 # Order matters
 recruit_character = ENG_attlee
+recruit_character = ENG_af
+recruit_character = ENG_churchill
 
 if = {
 	limit = {
