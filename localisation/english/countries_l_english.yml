@@ -1,5 +1,21 @@
 ﻿l_english:
  # TWE Base Nations
+ JAC:0 "Jacobite Restorationists"
+ JAC_DEF:0 "the Jacobite Restorationists"
+ JAC_ADJ:0 "English"
+
+ RBR:0 "Revolutionary British Republic"
+ RBR_DEF:0 "the Revolutionary British Republic"
+ RBR_ADJ:0 "English"
+
+ GBN:0 "National League of Britain"
+ GBN_DEF:0 "the National League of Britain"
+ GBN_ADJ:0 "English"
+
+ IBR:0 "British Alliance of Tradition"
+ IBR_DEF:0 "British Alliance of Tradition"
+ IBR_ADJ:0 "English"
+
  KON:0 "Kongo"
  KON_DEF:0 "Kongo"
  KON_ADJ:0 "Kongolese"

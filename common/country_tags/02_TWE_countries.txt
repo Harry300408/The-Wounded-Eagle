@@ -42,3 +42,15 @@ FEX = "countries/France.txt"
 NER = "countries/Ireland.txt"
 #Alaska
 ALK = "countries/Soviet Union.txt"
+
+
+#ENGLISH CIVIL WAR STUFF
+
+#Jacobite Kingdom of Britain
+JAC = "countries/United Kingdom.txt"
+#Revolutionary British Republic
+RBR = "countries/United Kingdom.txt"
+#National League of Britain
+GBN = "countries/United Kingdom.txt"
+#British Alliance of Tradition
+IBR = "countries/United Kingdom.txt"

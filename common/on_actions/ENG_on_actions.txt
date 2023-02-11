@@ -15,25 +15,111 @@ on_actions = {
 
 	on_weekly = {
 		effect = {
-			ENG = {
-				add_to_variable = {
-					ENG_tension = 0.1
+			if = {
+				limit = {
+					tag = ENG 
+					has_war = no
+					has_country_flag = JAC_defeated
+					has_country_flag = IBR_defeated
+					has_country_flag = GBN_defeated
+					has_country_flag = RBR_defeated
+				}
+				country_event = {
+					id = ENGstart.31
 				}
 			}
-			ENG = {
-				if = {
-					limit = {
-						ENG_tension > 100
-					}
-					set_variable = {
-						ENG_tension = 100
-					}
+
+			if = {
+				limit = {
+					tag = JAC 
+					has_war = no
+					owns_state = 131
+					owns_state = 130
+					owns_state = 132
+					owns_state = 129
+					owns_state = 128
+					owns_state = 125
+					owns_state = 126
+					owns_state = 338
+					owns_state = 127
+					owns_state = 123
+				}
+				country_event = {
+					id = ENGstart.39
+				}
+			}
+
+			if = {
+				limit = {
+					tag = GBN 
+					has_war = no
+					owns_state = 131
+					owns_state = 130
+					owns_state = 132
+					owns_state = 129
+					owns_state = 128
+					owns_state = 125
+					owns_state = 126
+					owns_state = 338
+					owns_state = 127
+					owns_state = 123
+				}
+				country_event = {
+					id = ENGstart.32
+				}
+			}
+
+			if = {
+				limit = {
+					tag = IBR 
+					has_war = no
+					owns_state = 131
+					owns_state = 130
+					owns_state = 132
+					owns_state = 129
+					owns_state = 128
+					owns_state = 125
+					owns_state = 126
+					owns_state = 338
+					owns_state = 127
+					owns_state = 123
+				}
+				country_event = {
+					id = ENGstart.33
+				}
+			}
+
+			if = {
+				limit = {
+					tag = RBR 
+					has_war = no
+					owns_state = 131
+					owns_state = 130
+					owns_state = 132
+					owns_state = 129
+					owns_state = 128
+					owns_state = 125
+					owns_state = 126
+					owns_state = 338
+					owns_state = 127
+					owns_state = 123
+				}
+				country_event = {
+					id = ENGstart.34
 				}
 			}
 		}
 	}
 
 	on_monthly = {
+		effect = {
+			ENG = {
+				add_to_variable = {
+					ENG_tension = 0.01
+				}
+			}
+		}
+		
 		effect = {
 			ENG = {
 				if = {
@@ -45,26 +131,31 @@ on_actions = {
 						has_completed_focus = ENG_parlimetary_corruption
 					}
 					country_event = {
-						random_days = 20
+						random_days = 19
 						id = ENGstart.3
 					}
 	
 					country_event = {
-						random_days = 40
+						days = 9 
 						id = ENGstart.4
-					}	
+					}
+					
+					country_event = {
+						days = 28
+						id = ENGstart.5
+					}
 				}
 			}
 		}
 
 		effect = {
 			ENG = {
-				65 = {
+				75 = {
 					country_event = {
 
 					}
 				}
-				35 = {
+				25 = {
 					country_event = {
 						
 					}

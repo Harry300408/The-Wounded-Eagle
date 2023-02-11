@@ -102,7 +102,7 @@ country_event = {
 		add_to_variable = {
 			ENG_tension = 15
 		}
-		create_country_flag = cracked_down_on_riots
+		set_country_flag = cracked_down_on_riots
 		news_event = {
 			id = ENGstart.6
 		}
@@ -126,7 +126,7 @@ country_event = {
 		add_to_variable = {
 			ENG_tension = 6
 		}
-		create_country_flag = riots_continue
+		set_country_flag = riots_continue
 		news_event = {
 			id = ENGstart.6
 		}
@@ -352,6 +352,1298 @@ country_event = {
 		set_politics = {
 			ruling_party = authoritarian_democracy
 			elections_allowed = no
+		}
+	}
+}
+
+country_event = {
+	id = ENGstart.16
+	title = ENGstart.16.t
+	desc = ENGstart.16.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.16.a
+		126 = {
+			set_demilitarized_zone = yes
+		}
+
+		127 = {
+			set_demilitarized_zone = yes
+		}
+
+		338 = {
+			set_demilitarized_zone = yes
+		}
+
+		123 = {
+			set_demilitarized_zone = yes
+		}
+
+		985 = {
+			set_demilitarized_zone = yes
+		}
+
+		country_event = {
+			days = 6
+			id = ENGstart.17
+		}
+		
+	}
+}
+
+country_event = {
+	id = ENGstart.17
+	title = ENGstart.17.t
+	desc = ENGstart.17.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.17.a
+
+		SCO = {
+			transfer_state = 120
+			transfer_state = 136 
+		}
+
+		country_event = {
+			days = 4
+			id = ENGstart.18
+		}
+		
+	}
+
+	option = {
+		name = ENGstart.17.b
+
+		SCO = {
+			transfer_state = 120
+			transfer_state = 136 
+		}
+
+		country_event = {
+			days = 4
+			id = ENGstart.18
+		}
+		
+		SCO = { change_tag_from = ENG }
+	}
+}
+
+country_event = {
+	id = ENGstart.18
+	title = ENGstart.18.t
+	desc = ENGstart.18.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.18.a
+		
+		129 = {
+			set_demilitarized_zone = yes
+		}
+
+		125 = {
+			set_demilitarized_zone = yes
+		}
+
+		country_event = {
+			days = 10
+			id = ENGstart.19
+		}
+
+	}
+}
+
+country_event = {
+	id = ENGstart.19
+	title = ENGstart.19.t
+	desc = ENGstart.19.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.19.a
+		
+		985 = {
+			set_demilitarized_zone = no
+		}
+
+		WLS = {
+			transfer_state = 984
+			transfer_state = 122
+			transfer_state = 985 
+		}
+
+		country_event = {
+			days = 4
+			id = ENGstart.21
+		}
+
+	}
+
+	option = {
+		name = ENGstart.19.b
+		
+		985 = {
+			set_demilitarized_zone = no
+		}
+
+		WLS = {
+			transfer_state = 984
+			transfer_state = 122
+			transfer_state = 985 
+		}
+
+		country_event = {
+			days = 4
+			id = ENGstart.21
+		}
+
+		WLS = { change_tag_from = ENG }
+
+	}
+}
+
+country_event = {
+	id = ENGstart.20
+	title = ENGstart.20.t
+	desc = ENGstart.20.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.20.a
+		
+		country_event = {
+			days = 2
+			id = ENGstart.16
+		}
+
+	}
+}
+
+country_event = {
+	id = ENGstart.21
+	title = ENGstart.21.t
+	desc = ENGstart.21.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.21.a
+
+		SCO = {
+			transfer_state = 121
+			transfer_state = 133
+		}
+		
+		131 = {
+			set_demilitarized_zone = yes
+		}
+
+		130 = {
+			set_demilitarized_zone = yes
+		}
+
+		set_cosmetic_tag = ENG_loayalists
+
+		country_event = {
+			days = 3
+			id = ENGstart.22
+		}
+
+		SCO = {
+			country_event = {
+				id = ENGstart.30
+			}
+		}
+
+	}
+}
+
+country_event = {
+	id = ENGstart.22
+	title = ENGstart.22.t
+	desc = ENGstart.22.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.22.a
+		
+		132 = {
+			set_demilitarized_zone = yes
+		}
+
+		128 = {
+			set_demilitarized_zone = yes
+		}
+
+		set_cosmetic_tag = ENG_loayalists
+
+		country_event = {
+			days = 5
+			id = ENGstart.23
+		}
+
+	}
+}
+
+country_event = {
+	id = ENGstart.23
+	title = ENGstart.23.t
+	desc = ENGstart.23.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.23.a
+		
+		JAC = {
+			transfer_state = 131
+			transfer_state = 130
+			inherit_technology = ENG
+		}
+
+		country_event = {
+			days = 2 
+			id = ENGstart.24
+		}
+
+	}
+
+	option = {
+		name = ENGstart.23.b
+		
+		JAC = {
+			transfer_state = 131
+			transfer_state = 130
+			inherit_technology = ENG
+		}
+
+		country_event = {
+			days = 2 
+			id = ENGstart.24
+		}
+
+		JAC = { change_tag_from = ENG }
+
+	}
+}
+
+country_event = {
+	id = ENGstart.24
+	title = ENGstart.24.t
+	desc = ENGstart.24.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.24.a
+		
+		IBR = {
+			transfer_state = 123
+			transfer_state = 338
+			inherit_technology = ENG
+		}
+
+		country_event = {
+			days = 2
+			id = ENGstart.25
+		}
+
+	}
+
+	option = {
+		name = ENGstart.24.b
+		
+		IBR = {
+			transfer_state = 123
+			transfer_state = 338
+			inherit_technology = ENG
+		}
+
+		country_event = {
+			days = 2
+			id = ENGstart.25
+		}
+
+		IBR = { change_tag_from = ENG }
+
+	}
+}
+
+country_event = {
+	id = ENGstart.25
+	title = ENGstart.25.t
+	desc = ENGstart.25.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.25.a
+		
+		GBN = {
+			transfer_state = 132
+			transfer_state = 128
+			inherit_technology = ENG
+		}
+
+		country_event = {
+			days = 6
+			id = ENGstart.26
+		}
+
+	}
+
+	option = {
+		name = ENGstart.25.b
+		
+		GBN = {
+			transfer_state = 132
+			transfer_state = 128
+			inherit_technology = ENG
+		}
+
+		country_event = {
+			days = 6
+			id = ENGstart.26
+		}
+
+		GBN = { change_tag_from = ENG }
+
+	}
+}
+
+country_event = {
+	id = ENGstart.26
+	title = ENGstart.26.t
+	desc = ENGstart.26.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.26.a
+		
+		RBR = {
+			transfer_state = 129
+			transfer_state = 125
+			inherit_technology = ENG
+		}
+
+		country_event = {
+			days = 1
+			id = ENGstart.27
+		}
+
+	}
+
+	option = {
+		name = ENGstart.26.b
+		
+		RBR = {
+			transfer_state = 129
+			transfer_state = 125
+			inherit_technology = ENG
+		}
+
+		country_event = {
+			days = 1
+			id = ENGstart.27
+		}
+
+		RBR = { change_tag_from = ENG }
+
+	}
+}
+
+country_event = {
+	id = ENGstart.27
+	title = ENGstart.27.t
+	desc = ENGstart.27.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.27.a
+	
+		set_autonomy = {
+			target = BOR
+			autonomy_state = autonomy_free
+		}
+
+		set_autonomy = {
+			target = MAL
+			autonomy_state = autonomy_free
+		}
+
+		set_autonomy = {
+			target = RAJ
+			autonomy_state = autonomy_free
+		}
+		
+		set_autonomy = {
+			target = CAN
+			autonomy_state = autonomy_free
+		}
+
+		set_autonomy = {
+			target = SAF
+			autonomy_state = autonomy_free
+		}
+
+		set_autonomy = {
+			target = AST
+			autonomy_state = autonomy_free
+		}
+
+		set_autonomy = {
+			target = NZL
+			autonomy_state = autonomy_free
+		}
+
+		set_autonomy = {
+			target = EGY
+			autonomy_state = autonomy_free
+		}
+
+		set_autonomy = {
+			target = GLF
+			autonomy_state = autonomy_free
+		}
+
+		set_autonomy = {
+			target = LAC
+			autonomy_state = autonomy_free
+		}
+
+		set_autonomy = {
+			target = CLU
+			autonomy_state = autonomy_free
+		}
+
+		set_autonomy = {
+			target = NGA
+			autonomy_state = autonomy_free
+		}
+
+		set_autonomy = {
+			target = NBW
+			autonomy_state = autonomy_free
+		}
+
+		set_autonomy = {
+			target = IRE
+			autonomy_state = autonomy_free
+		}
+
+		set_autonomy = {
+			target = PNG
+			autonomy_state = autonomy_free
+		}
+
+		set_autonomy = {
+			target = NOL
+			autonomy_state = autonomy_free
+		}
+
+		dismantle_faction = yes
+	
+		country_event = {
+			days = 5
+			id = ENGstart.28
+		}
+
+		remove_ideas = {
+			general_strikes
+			bitter_defeat
+		}
+
+	}
+}
+
+country_event = {
+	id = ENGstart.28
+	title = ENGstart.28.t
+	desc = ENGstart.28.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.28.a
+
+		ENG = {
+			set_country_flag = ENG_civil_war
+		}
+
+		JAC = {
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = IBR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = GBN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = RBR
+				type = annex_everything
+			}
+		}
+
+		IBR = {
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = JAC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = GBN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = RBR
+				type = annex_everything
+			}
+		}
+
+		GBN = {
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = JAC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = IBR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = RBR
+				type = annex_everything
+			}
+		}
+
+		RBR = {
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = JAC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = IBR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = GBN
+				type = annex_everything
+			}
+		}
+
+		ENG = {
+			declare_war_on = {
+				target = RBR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = JAC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = IBR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = GBN
+				type = annex_everything
+			}
+		}
+		
+		131 = {
+			set_demilitarized_zone = no
+		}
+
+		130 = {
+			set_demilitarized_zone = no
+		}
+
+		132 = {
+			set_demilitarized_zone = no
+		}
+
+		129 = {
+			set_demilitarized_zone = no
+		}
+
+		128 = {
+			set_demilitarized_zone = no
+		}
+
+		125 = {
+			set_demilitarized_zone = no
+		}
+
+		338 = {
+			set_demilitarized_zone = no
+		}
+
+		126 = {
+			set_demilitarized_zone = no
+		}
+
+		127 = {
+			set_demilitarized_zone = no
+		}
+
+		123 = {
+			set_demilitarized_zone = no
+		}
+
+		ENG = {
+			swap_ideas = {
+				remove_idea = volunteer_only
+				add_idea = extensive_conscription
+			}
+		}
+
+		JAC = {
+			swap_ideas = {
+				remove_idea = volunteer_only
+				add_idea = extensive_conscription
+			}
+		}
+
+		IBR = {
+			swap_ideas = {
+				remove_idea = volunteer_only
+				add_idea = extensive_conscription
+			}
+		}
+
+		GBN = {
+			swap_ideas = {
+				remove_idea = volunteer_only
+				add_idea = extensive_conscription
+			}
+		}
+
+		RBR = {
+			swap_ideas = {
+				remove_idea = volunteer_only
+				add_idea = extensive_conscription
+			}
+		}
+
+		clr_country_flag = ENG_tension_enabled
+
+		ENG = {
+			division_template = {
+				name = "Militia Division"		
+				division_names_group = ENG_Arm_01
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+				}
+				support = {
+				}
+			}  
+
+			delete_unit_template_and_units = {
+				division_template = "Tank Division"
+			}
+			delete_unit_template_and_units = {
+				division_template = "Infantry-Division"
+			}
+			delete_unit_template_and_units = {
+				division_template = "Cavalry Brigade"
+			}
+
+			1 = {
+			create_unit = { 
+				division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+				owner = ENG 
+				prioritize_location = 11374
+			}
+			create_unit = { 
+				division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+				owner = ENG 
+				prioritize_location = 11374
+			}
+			create_unit = { 
+				division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+				owner = ENG 
+				prioritize_location = 6103
+			}
+			create_unit = { 
+				division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+				owner = ENG 
+				prioritize_location = 6103
+			}
+			create_unit = { 
+				division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+				owner = ENG 
+				prioritize_location = 9239
+			}
+			create_unit = { 
+				division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+				owner = ENG 
+				prioritize_location = 507
+			}
+			create_unit = { 
+				division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+				owner = ENG 
+				prioritize_location = 9458
+			}
+			create_unit = { 
+				division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+				owner = ENG 
+				prioritize_location = 9239
+			}
+			create_unit = { 
+				division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+				owner = ENG 
+				prioritize_location = 507
+			}
+			}
+
+		}
+		
+		JAC = {
+			division_template = {
+				name = "Militia Division"		
+				division_names_group = ENG_Arm_01
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+				}
+				support = {
+				}
+			}
+
+			1 = {
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = JAC 
+					prioritize_location = 11297
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = JAC 
+					prioritize_location = 11297
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = JAC 
+					prioritize_location = 9269
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = JAC 
+					prioritize_location = 11382
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = JAC 
+					prioritize_location = 9315
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = JAC 
+					prioritize_location = 9315
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = JAC 
+					prioritize_location = 9379
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = JAC 
+					prioritize_location = 9379
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = JAC 
+					prioritize_location = 6268
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = JAC 
+					prioritize_location = 9397
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = JAC 
+					prioritize_location = 6399
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = JAC 
+					prioritize_location = 351
+				}
+			}
+		}
+
+		IBR = {
+			division_template = {
+				name = "Militia Division"		
+				division_names_group = ENG_Arm_01
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+				}
+				support = {
+				}
+			}
+
+			1 = {
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = IBR 
+					prioritize_location = 6378
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = IBR 
+					prioritize_location = 3369
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = IBR 
+					prioritize_location = 3369
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = IBR 
+					prioritize_location = 6221
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = IBR 
+					prioritize_location = 11471
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = IBR 
+					prioritize_location = 11471
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = IBR 
+					prioritize_location = 6351
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = IBR 
+					prioritize_location = 3422
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = IBR 
+					prioritize_location = 3422
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = IBR 
+					prioritize_location = 540
+				}
+			}
+			
+		}
+
+		GBN = {
+			division_template = {
+				name = "Militia Division"		
+				division_names_group = ENG_Arm_01
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+				}
+				support = {
+				}
+			}
+
+			1 = {
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = GBN 
+					prioritize_location = 3241
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = GBN 
+					prioritize_location = 7239
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = GBN 
+					prioritize_location = 6270
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = GBN 
+					prioritize_location = 9279
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = GBN 
+					prioritize_location = 9279
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = GBN 
+					prioritize_location = 11345
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = GBN 
+					prioritize_location = 6318
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = GBN 
+					prioritize_location = 6318
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = GBN 
+					prioritize_location = 6335
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = GBN 
+					prioritize_location = 6384
+				}
+			}
+			
+		}
+
+		RBR = {
+			division_template = {
+				name = "Militia Division"		
+				division_names_group = ENG_Arm_01
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+				}
+				support = {
+				}
+			}
+
+			1 = {
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = RBR 
+					prioritize_location = 221
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = RBR 
+					prioritize_location = 11253
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = RBR 
+					prioritize_location = 11221
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = RBR 
+					prioritize_location = 269
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = RBR 
+					prioritize_location = 9268
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = RBR 
+					prioritize_location = 11279
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = RBR 
+					prioritize_location = 11279
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = RBR 
+					prioritize_location = 6237
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = RBR 
+					prioritize_location = 9250
+				}
+				create_unit = { 
+					division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = RBR 
+					prioritize_location = 271
+				}
+			}
+			
+		}
+
+	
+		
+
+	}
+}
+
+news_event = {
+	id = ENGstart.29
+	title = ENGstart.29.t
+	desc = ENGstart.29.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.29.a
+	}
+}
+
+country_event = {
+	id = ENGstart.30
+	title = ENGstart.30.t
+	desc = ENGstart.30.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.30.a
+	}
+}
+
+country_event = {
+	id = ENGstart.31
+	title = ENGstart.31.t
+	desc = ENGstart.31.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.31.a
+		news_event = {
+			id = ENGstart.35
+		}
+	}
+}
+
+country_event = {
+	id = ENGstart.32
+	title = ENGstart.32.t
+	desc = ENGstart.32.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.32.a
+		news_event = {
+			id = ENGstart.36
+		}
+	}
+}
+
+country_event = {
+	id = ENGstart.33
+	title = ENGstart.33.t
+	desc = ENGstart.33.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.33.a
+		news_event = {
+			id = ENGstart.37
+		}
+	}
+}
+
+country_event = {
+	id = ENGstart.34
+	title = ENGstart.34.t
+	desc = ENGstart.34.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.34.a
+		news_event = {
+			id = ENGstart.38
+		}
+	}
+}
+
+news_event = {
+	id = ENGstart.35
+	title = ENGstart.35.t
+	desc = ENGstart.35.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.35.a
+		every_country = {
+			set_country_flag = ENG_victory
+		}
+	}
+}
+
+news_event = {
+	id = ENGstart.36
+	title = ENGstart.36.t
+	desc = ENGstart.36.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.36.a
+		every_country = {
+			set_country_flag = GBN_victory
+		}	
+	}
+}
+
+news_event = {
+	id = ENGstart.37
+	title = ENGstart.37.t
+	desc = ENGstart.37.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.37.a
+		every_country = {
+			set_country_flag = IBR_victory
+		}
+	}
+}
+
+
+news_event = {
+	id = ENGstart.38
+	title = ENGstart.38.t
+	desc = ENGstart.38.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.38.a
+		every_country = {
+			set_country_flag = RBR_victory
+		}
+	}
+}
+
+country_event = {
+	id = ENGstart.39
+	title = ENGstart.39.t
+	desc = ENGstart.39.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.39.a
+		news_event = {
+			id = ENGstart.40
+		}
+	}
+}
+
+
+country_event = {
+	id = ENGstart.40
+	title = ENGstart.40.t
+	desc = ENGstart.40.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGstart.40.a
+		every_country = {
+			set_country_flag = JAC_victory
 		}
 	}
 }

@@ -219,6 +219,9 @@ focus_tree = {
 		y = 2
 		icon = GFX_focus_bye_orwell
 		relative_position_id = rule_brittania
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = ENG_rampant_crime
 		}
@@ -236,7 +239,6 @@ focus_tree = {
 		}
 
 		available = {
-			always = no
 		}
 	
 		cost = 2
@@ -401,6 +403,10 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			country_event = {
+				days = 1
+				id = ENGstart.20
+			}
 		}
 	}
 
@@ -411,7 +417,7 @@ focus_tree = {
 	
 	############################
 	# C O L O N I A L  T R E E # 
-	############################
+	##########################
 
 	################################
 	# M I L I T A R Y  B R A N C H #

@@ -1,19 +1,7 @@
 ﻿capital = 126
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	#set_oob = "ENG_1936"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	#set_oob = "ENG_1936_nsb"
-}
+load_oob = ENG_TWE
+
 #GOV Ideas
 add_ideas = {
 	any_man_may_vote
@@ -70,8 +58,6 @@ if = {
 		}
 	}
 }
-
-load_oob = "ENG_Motorized"
 
 set_research_slots = 4
 

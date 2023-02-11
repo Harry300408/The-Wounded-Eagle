@@ -1,5 +1,31 @@
 #reload countrycolors
 #TWE Nations
+JAC = {
+	color = rgb { 157 25 71 }
+	color_ui = rgb { 157 25 71 }
+}
+
+GBN = {
+	color = rgb { 10 30 95 }
+	color_ui = rgb { 10 30 95 }
+}
+
+RBR = {
+	color = rgb { 225 1 1 }
+	color_ui = rgb { 225 1 1 }
+}
+
+IBR = {
+	color = rgb { 127 18 18 }
+	color_ui = rgb { 127 18 18 }
+}
+
+SCO = {
+	color = rgb { 15 114 207 }
+	color_ui = rgb { 15 114 207 }
+}
+
+
 MRV = {
 	color = rgb { 188 255 173 }
 	color_ui = rgb { 188 255 173 }

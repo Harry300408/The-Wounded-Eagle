@@ -5,8 +5,10 @@ scripted_gui = {
         parent_window_token = top_bar
          
         visible = {
-            tag = ENG
-            has_country_flag = ENG_tension_enabled
+            AND = {
+                tag = ENG
+                has_country_flag = ENG_tension_enabled
+            }    
         }
     }
 }        

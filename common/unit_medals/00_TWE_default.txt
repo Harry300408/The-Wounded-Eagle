@@ -28,7 +28,7 @@
 
 unit_medals = {
 
-	### SOV (Monarchie)
+	### SOV (Monarchy)
 
 	order_saint_alexander_nevskiy = {
 		

@@ -21,6 +21,10 @@ state= {
 
 		}
 		add_core_of = ENG
+add_core_of = JAC
+add_core_of = IBR
+add_core_of = GBN
+add_core_of = RBR
 	}
 
 	provinces= {

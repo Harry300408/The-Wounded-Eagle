@@ -27,7 +27,7 @@ NGR_proc = {
 VIN_proc = {
     color = rgb { 0 78 221 }
     color_ui = rgb { 0 78 221 }
-}
+} 
 
 #UK
 NGA_proc = {
