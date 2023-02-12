@@ -31,6 +31,65 @@ on_actions = {
 
 			if = {
 				limit = {
+					tag = ENG 
+					has_country_flag = ENG_civil_war
+					NOT = {
+						has_war_with = JAC
+					}
+				}
+				set_country_flag = JAC_defeated
+			}
+
+			if = {
+				limit = {
+					tag = ENG 
+					has_country_flag = ENG_civil_war
+					NOT = {
+						has_war_with = IBR
+					}
+				}
+				set_country_flag = IBR_defeated
+			}
+
+			if = {
+				limit = {
+					tag = ENG 
+					has_country_flag = ENG_civil_war
+					NOT = {
+						has_war_with = GBN
+					}
+				}
+				set_country_flag = GBN_defeated
+			}
+
+			if = {
+				limit = {
+					tag = ENG 
+					has_country_flag = ENG_civil_war
+					NOT = {
+						has_war_with = RBR
+					}
+				}
+				set_country_flag = GBN_defeated
+			}
+
+
+			if = {
+				limit = {
+					tag = ENG 
+					has_country_flag = ENG_civil_war
+					has_war = no
+				}
+				IRE = {
+					any_owned_state = {
+						set_owner = UKI
+					}
+				}
+			}
+
+
+			if = {
+				limit = {
 					tag = JAC 
 					has_war = no
 					owns_state = 131

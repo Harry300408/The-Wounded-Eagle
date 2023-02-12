@@ -160,7 +160,74 @@
 
   ENGstart.16.a:0 "Let's Hope This Doesn't Escalate"
 
+  ENGstart.17.t:0 "Scotish Nationalists Occupy the Highlands"
+  ENGstart.17.d:0 "Earlier today, a local strike turned into a independence movement. They managed to occupy the highlands before being stopped in the mountains by British forces. If this sutuation escalates it's the end of an empire."
 
+  ENGstart.17.a:0 "Move Along, Nothing To See Here!"
+  ENGstart.17.b:0 "SCOTLAND FOREVER!!! §R(HAS NO TREE, WAIT TILL 0.2)§!"
+
+
+  ENGstart.18.t:0 "The Eastern Riots"
+  ENGstart.18.d:0 "Today, [GetDateText], people of East Anglia & Nottinghamshire rioted which caused many disruptions in the area. Again the army was ordered not to go into these areas over fear of a potential leftist uprising."
+
+  ENGstart.18.a:0 "Who Is In Charge Here? The People or The Government?"
+
+  
+  ENGstart.19.t:0 "The Welsh Break Free!"
+  ENGstart.19.d:0 "Today, [GetDateText], The Regional Government in Wales declared independence from the UK. This in turn lead to them forming a Syndicalist 'Constittional' Congress as they still recgonise the King even though it goes against Syndical values. The Government has yet to take action and is afraid to do so."
+
+  ENGstart.19.a:0 "“Memory slips, letters remain.” - Welsh Proverb"
+  ENGstart.19.b:0 "Crymu Is Free!"
+
+
+  ENGstart.20:0 "Blood In London"
+  ENGstart.20.t:0 ""
+
+  ENGstart.20.a:0 "Lets Hope This Doesn't Ruin Us"
+
+  
+  ENGstart.21.t:0 "The Northen Occupation"
+  ENGstart.21.d:0 "After the Scotish Nationalists took control of the Highlands the Scottish Government took this as a opportunity to suceed from the Union and usurp power from the British (now English) Governance who have been supressing the Scots for too long. Once their declaration of independece was announce/sent the Nationalist 'malitias' and Government troops occupied Glasgow & Edinburgh, the North of England went into turmoil with Jacobite sympathisers taking to the streets. Yet again the army was told to do nothing."
+
+  ENGstart.21.a:0 "Is This The End Or A New Beggining?"
+
+
+  ENGstart.22.t:0 "The West Goes Into Turmoil"
+  ENGstart.22.d:0 "With the west being declared 'in turmoil' the British government have not been compatent enough to take control of the situation. This has lead to the army not being able to do anything. People of course took advantage of this, even people inside of parliment took this as an advantage to take controll of ceratin parts of the country."
+
+  ENGstart.22.a:0 "What A Sight For Sore Eyes"
+
+
+  ENGstart.23.t:0 "The Jacobites Break Away!"
+  ENGstart.23.d:0 "The Jacobite forces lead by Fitz-James Stuart y Falcó, often reffered to as James-Stuart XVII (17) of Alba, have taken control of the Northern most countys of England and one of the most prepared for war because of being supplied by the Scots in the north."
+
+  ENGstart.23.a:0 "The Past Has Come Back To Haunt Us"
+  ENGstart.23.b:0 "For King And Country! (Play as the Jacobites)"
+
+
+  ENGstart.24.t:0 "The Traditionalists Break Away"
+  ENGstart.24.d:0 "The Traditionalist Farmers of the south have risen up against the Government and have taken control of the Wessex-Cornwall-Gloucester area and are outnumbered massivly. But due to their control over Bristol, it puts them in a good spot."
+
+  ENGstart.24.a:0 "Those Damm Farmers"
+  ENGstart.24.b:0 "Farmers Rise Up! (Play as the British Alliance of Tradition)"
+
+
+  ENGstart.25.t:0 "The Nationalist Take To The West!"
+  ENGstart.25.d:0 "After some grusome battles with the Police the Nationalists have taken control over the Western most industrious places of England this include, Liverpool & Manchester to name a couple. This Surly gives them an advantage due to thr industry, and numbers. But only if they have good command."
+
+  ENGstart.25.a:0 "Those Damm Nationalists"
+  ENGstart.25.b:0 "For A Greater More National UK! (Play as the National League of Britain)"
+
+
+  ENGstart.26.t:0 "The Leftists Occupy The East"
+  ENGstart.26.d:0 "With every major faction of British politics taking a slice of England it was only a matter of time before the Leftists rose up against the government. Although they were only able to secure the more rural areas of England they have the most support behind them. This poses a major threat toward the loaylist movement as they have been cornered into the South East."
+
+  ENGstart.26.a:0 "Damm The Left!"
+  ENGstart.26.b:0 "For The People, For The Revolution! (Play as the Revolutionary British Republic)"
+
+
+  ENGstart.27.t:0 "The Domminions Break From The Crown!"
+  ENGstart.27.d:0 "Today, The domminions, lead by Canada, broke off from the crown and are now their own soverign states. We cannot do anything about this "
 
 
 

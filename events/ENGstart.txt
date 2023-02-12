@@ -597,7 +597,7 @@ country_event = {
 			set_demilitarized_zone = yes
 		}
 
-		set_cosmetic_tag = ENG_loayalists
+		set_cosmetic_tag = ENG_loyalists
 
 		country_event = {
 			days = 5
