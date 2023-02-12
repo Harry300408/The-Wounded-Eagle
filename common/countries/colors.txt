@@ -346,6 +346,10 @@ TXS = {
 	color_ui = rgb { 212 175 55 }
 }
 
+UKI = {
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 255 73 121 }
+}
 
 #Hoi4 Base Nations
 

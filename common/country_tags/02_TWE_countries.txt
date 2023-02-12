@@ -8,6 +8,8 @@ UNS = "countries/UNS.txt"
 CPR	= "countries/CPR.txt"
 #Texas
 TXS	= "countries/USA.txt"
+#British Ireland
+UKI = "countries/British Ireland.txt"
 #Yucatan
 YUC	= "countries/Mexico.txt"
 #Colonisable Territory
