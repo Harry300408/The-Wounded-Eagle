@@ -1,0 +1,169 @@
+focus_tree = {
+	id = british-ireland
+	continuous_focus_position = { x = -40 y = 790 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UKI
+		}
+	}
+	#Trouble in Ireland
+	focus = {
+		id = UKI_trouble_in_ireland
+		icon = GFX_IRE_trouble_in_ireland-398513
+		x = 18
+		y = 0
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Suppress the Catholic Rebels
+	focus = {
+		id = UKI_suppress_the_catholic_rebels
+		icon = GFX_IRE_suppress_the_catholic_rebels-398527
+		x = 18
+		y = 1
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = UKI_trouble_in_ireland  }
+	}
+
+	#French Interference
+	focus = {
+		id = UKI_french_interference
+		icon = GFX_UKI_french_interference-398534
+		x = 20
+		y = 1
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = IRE_trouble_in_ireland  }
+	}
+
+	#The Colonial Police State
+	focus = {
+		id = UKI_the_colonial_police_state
+		icon = GFX_IRE_the_colonial_police_state-398542
+		x = 16
+		y = 1
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = UKI_trouble_in_ireland  }
+	}
+
+	#Armed Demonstrations of Power
+	focus = {
+		id = UKI_armed_demonstrations_of_power
+		icon = GFX_IRE_armed_demonstrations_of_power-398548
+		x = 17
+		y = 2
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = UKI_suppress_the_catholic_rebels  } prerequisite = { focus = UKI_french_interference  } prerequisite = { focus = UKI_the_colonial_police_state  }
+	}
+
+	#A Purge in the Military
+	focus = {
+		id = UKI_a_purge_in_the_military
+		icon = GFX_IRE_a_purge_in_the_military-398555
+		x = 19
+		y = 2
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = UKI_suppress_the_catholic_rebels  } prerequisite = { focus = UKI_french_interference  } prerequisite = { focus = UKI_the_colonial_police_state  }
+	}
+
+	#The Ulster Crisis
+	focus = {
+		id = UKI_the_ulster_crisis
+		icon = GFX_IRE_the_ulster_crisis-398557
+		x = 17
+		y = 3
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = UKI_armed_demonstrations_of_power  }
+	}
+
+	#Growing Workers' Unrest
+	focus = {
+		id = UKI_growingworkersunrest
+		icon = GFX_IRE_growingworkersunrest-398562
+		x = 19
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = UKI_a_purge_in_the_military  }
+	}
+
+	#The Dublin Shootings
+	focus = {
+		id = UKI_the_dublin_shootings
+		icon = GFX_IRE_the_dublin_shootings-398564
+		x = 18
+		y = 4
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = UKI_growingworkersunrest  } prerequisite = { focus = IRE_the_ulster_crisis  }
+	}
+
+	#We Stand with Britain
+	focus = {
+		id = UKI_we_stand_with_britain
+		icon = GFX_IRE_we_stand_with_britain-398581
+		x = 14
+		y = 5
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = UKI_the_dublin_shootings  }
+		mutually_exclusive = { focus = UKI_the_fight_for_independence  } mutually_exclusive = { focus = UKI_a_french_king_for_ireland  }
+	}
+
+	#The Fight for Independence
+	focus = {
+		id = UKI_the_fight_for_independence
+		icon = GFX_IRE_the_fight_for_independence-398589
+		x = 18
+		y = 5
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = UKI_the_dublin_shootings  }
+		mutually_exclusive = { focus = UKI_we_stand_with_britain  }
+	}
+
+	#A French King for Ireland
+	focus = {
+		id = UKI_a_french_king_for_ireland
+		icon = GFX_IRE_a_french_king_for_ireland-398591
+		x = 22
+		y = 5
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = UKI_the_dublin_shootings  }
+		mutually_exclusive = { focus = UKI_we_stand_with_britain  } mutually_exclusive = { focus = UKI_the_fight_for_independence  }
+	}
+
+}
