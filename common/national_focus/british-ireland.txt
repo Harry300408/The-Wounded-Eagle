@@ -43,7 +43,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = IRE_trouble_in_ireland  }
+		prerequisite = { focus = UKI_trouble_in_ireland  }
 	}
 
 	#The Colonial Police State
