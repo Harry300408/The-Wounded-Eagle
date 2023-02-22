@@ -315,6 +315,10 @@ AUS_agitation_not_performing_actions_tt:0 "Not performing actions."
 AUS_agitation_program_ended_leninism_tt:0 "§YAgitation Program§! ended up with §YLeninism-Revolutionism Spirit§!."
 AUS_agitation_effective_2_tt:0 "§YAgitation Efficiency§! is at least §Y2§!."
 
+# FLAGS
+AUS_performing_actions_flag:0 "Performing Actions"
+AUS_can_be_influenced_flag:0 "Can be Influenced"
+
 ### DECISIONS ###
 AUS_agitation_mission:0 "Agitation Mission"
 
@@ -339,6 +343,13 @@ AUS_it_has_be_that_way_fascism_decision:0 "[AUSDecisionHasBeThisWay]"
 AUS_it_has_be_that_way_fascism_decision_desc:0 "[AUSDecisionHasBeThisWayDesc]"
 AUS_it_has_be_that_way_communism_decision:0 "[AUSDecisionHasBeThisWay]"
 AUS_it_has_be_that_way_communism_decision_desc:0 "[AUSDecisionHasBeThisWayDesc]"
+
+AUS_delta_influence_decision_1:0 "Open [FROM.GetName] Influence"
+AUS_delta_influence_administration_decision:0 "Influence Administration"
+AUS_delta_influence_administration_2_decision:0 "Establish pro-[ROOT.GetAdjective] administration"
+AUS_delta_influence_return_tab_decision:0 "Return to Country Selection"
 # Categories
 AUS_agitation_program_category:0 "Agitation Programm"
 AUS_agitation_program_category_desc:0 "Such dramatic changes in our political plan require our people to be agitated to make sure they wish to follow our plan. \n§YAgitation Efficiency§! is §Y[?AUS_agitation_level]§!"
+AUS_local_hegemony_category:0 "Local Influence"
+AUS_local_hegemony_category_desc:0 "To keep ourselves in power over the confederation, we have to keep influencing members of the confederation. \nCountry Influence: §G[?ROOT.delta_influence]§!"

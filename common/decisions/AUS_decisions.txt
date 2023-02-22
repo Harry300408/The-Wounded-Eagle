@@ -805,38 +805,10 @@ AUS_local_hegemony_category = {
 			FROM = {
 				set_country_flag = AUS_tabbed_flag
 			}
-		}
-		remove_effect = {
-		}
-
-	}
-	# COUNTRY INFLUENCE
-	AUS_delta_influence_this_decision = {
-
-		icon = GFX_
-		fire_only_once = no
-		priority = 100
-		days_remove = 0
-		days_re_enable = 0
-		cost = 0
-		target_trigger = {
-			FROM = {
-				has_country_flag = AUS_tabbed_flag
+			set_variable = {
+				var = ROOT.delta_influence
+				value = FROM.influence_by_@ROOT
 			}
-		}
-		allowed = {
-			tag = AUS
-			exists = yes
-		}
-		available = {
-			always = no
-		}
-		visible = {
-			has_country_flag = AUS_new_tab_lh_flag
-		}
-		complete_effect = {
-		}
-		modifier = {
 		}
 		remove_effect = {
 		}
@@ -847,10 +819,10 @@ AUS_local_hegemony_category = {
 
 		icon = GFX_
 		fire_only_once = no
-		priority = 0
+		priority = 100
 		days_remove = 14
 		days_re_enable = 3
-		cost = 10
+		cost = 20
 		target_trigger = {
 			FROM = {
 				has_country_flag = AUS_tabbed_flag
@@ -897,10 +869,10 @@ AUS_local_hegemony_category = {
 
 		icon = GFX_
 		fire_only_once = no
-		priority = 0
+		priority = 99
 		days_remove = 21
 		days_re_enable = 6
-		cost = 15
+		cost = 50
 		target_trigger = {
 			FROM = {
 				has_country_flag = AUS_tabbed_flag
@@ -913,6 +885,9 @@ AUS_local_hegemony_category = {
 		available = {
 			NOT = {
 				has_country_flag = AUS_performing_actions_flag
+			}
+			FROM = {
+				has_country_flag = AUS_can_be_influenced_flag
 			}
 		}
 		visible = {
@@ -970,6 +945,10 @@ AUS_local_hegemony_category = {
 			clr_country_flag = AUS_tab_@FROM
 			FROM = {
 				clr_country_flag = AUS_tabbed_flag
+			}
+			set_variable = {
+				var = ROOT.delta_influence
+				value = 0
 			}
 		}
 		remove_effect = {

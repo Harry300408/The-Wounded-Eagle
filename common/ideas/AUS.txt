@@ -1,6 +1,32 @@
 ideas = {
 	country = {
 		
+		AUS_political_dead_end = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_gain = -0.25
+				stability_factor = -0.1
+				political_advisor_cost_factor = 0.3
+			}
+		}
+		AUS_bad_monarchism_memories = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				neutrality_drift = -0.03
+			}
+		}
 		AUS_monarchism_abandoned_idea_0 = {
 			picture = AUS_monarchie_abandoned
 			allowed = {

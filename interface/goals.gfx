@@ -4079,4 +4079,580 @@ spriteTypes = {
 		name = "GFX_focus_AUS_victoria_louise"
 		texturefile = "gfx/interface/goals/AUS/AUS_victoria_louise_icon.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_AUS_revive_political_plan"
+		texturefile = "gfx/interface/goals/AUS/AUS_revive_political_plan_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_new_osterreich"
+		texturefile = "gfx/interface/goals/AUS/AUS_new_osterreich_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_total_neutrality"
+		texturefile = "gfx/interface/goals/AUS/AUS_total_neutrality_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_schuschnigg_plan"
+		texturefile = "gfx/interface/goals/AUS/AUS_schuschnigg_plan_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_dollfuss_plan"
+		texturefile = "gfx/interface/goals/AUS/AUS_dollfuss_plan_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_alpine_bastion_neutrality"
+		texturefile = "gfx/interface/goals/AUS/AUS_alpine_bastion_neutrality_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_partial_inteference"
+		texturefile = "gfx/interface/goals/AUS/AUS_partial_inteference_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_foreign_policy_plan"
+		texturefile = "gfx/interface/goals/AUS/AUS_foreign_policy_plan_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_osterkonigsreich"
+		texturefile = "gfx/interface/goals/AUS/AUS_osterkonigsreich_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_colonial_affairs"
+		texturefile = "gfx/interface/goals/AUS/AUS_colonial_affairs_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_confederation_autonomy_gain"
+		texturefile = "gfx/interface/goals/AUS/AUS_confederation_autonomy_gain_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_decolonisation"
+		texturefile = "gfx/interface/goals/AUS/AUS_decolonisation_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_keep_neutrality"
+		texturefile = "gfx/interface/goals/AUS/AUS_keep_neutrality_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_treaty_of_regensburg"
+		texturefile = "gfx/interface/goals/AUS/AUS_treaty_of_regensburg_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_osterkommisariat_bayern"
+		texturefile = "gfx/interface/goals/AUS/AUS_osterkommisariat_bayern_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_victorious_revanchism"
+		texturefile = "gfx/interface/goals/AUS/AUS_victorious_revanchism_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_vaterlandische_front_dominance"
+		texturefile = "gfx/interface/goals/AUS/AUS_vaterlandische_front_dominance_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_march_to_atlantic"
+		texturefile = "gfx/interface/goals/AUS/AUS_march_to_atlantic_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_to_the_black_sea"
+		texturefile = "gfx/interface/goals/AUS/AUS_to_the_black_sea_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_this_is_for_vienna"
+		texturefile = "gfx/interface/goals/AUS/AUS_this_is_for_vienna_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_nordic_campaign"
+		texturefile = "gfx/interface/goals/AUS/AUS_nordic_campaign_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_end_for_serbia"
+		texturefile = "gfx/interface/goals/AUS/AUS_end_for_serbia_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_subjugate_hungary"
+		texturefile = "gfx/interface/goals/AUS/AUS_subjugate_hungary_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_revanchism"
+		texturefile = "gfx/interface/goals/AUS/AUS_revanchism_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_prove_french_weakness"
+		texturefile = "gfx/interface/goals/AUS/AUS_prove_french_weakness_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_pan_german_nationalism"
+		texturefile = "gfx/interface/goals/AUS/AUS_pan_german_nationalism_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_prepare_great_expansion"
+		texturefile = "gfx/interface/goals/AUS/AUS_prepare_great_expansion_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_from_lisabon_to_vienna"
+		texturefile = "gfx/interface/goals/AUS/AUS_from_lisabon_to_vienna_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_plan_west"
+		texturefile = "gfx/interface/goals/AUS/AUS_plan_west_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_plan_suddeutschland"
+		texturefile = "gfx/interface/goals/AUS/AUS_plan_suddeutschland_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_plan_sud"
+		texturefile = "gfx/interface/goals/AUS/AUS_plan_sud_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_plan_ost"
+		texturefile = "gfx/interface/goals/AUS/AUS_plan_ost_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_plan_norddeutschland"
+		texturefile = "gfx/interface/goals/AUS/AUS_plan_norddeutschland_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_pakt_deutschland"
+		texturefile = "gfx/interface/goals/AUS/AUS_pakt_deutschland_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_claim_our_ambitions"
+		texturefile = "gfx/interface/goals/AUS/AUS_claim_our_ambitions_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_osterreichische_deutsches_bund"
+		texturefile = "gfx/interface/goals/AUS/AUS_osterreichische_deutsches_bund_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_osterreichisch_niederlande"
+		texturefile = "gfx/interface/goals/AUS/AUS_osterreichisch_niederlande_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_old_new_empire"
+		texturefile = "gfx/interface/goals/AUS/AUS_old_new_empire_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_nationalist_sentiments"
+		texturefile = "gfx/interface/goals/AUS/AUS_nationalist_sentiments_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_multi_fascist_party"
+		texturefile = "gfx/interface/goals/AUS/AUS_multi_fascist_party_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_military_trainings"
+		texturefile = "gfx/interface/goals/AUS/AUS_military_trainings_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_march_to_urals"
+		texturefile = "gfx/interface/goals/AUS/AUS_march_to_urals_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_local_hegemony"
+		texturefile = "gfx/interface/goals/AUS/AUS_local_hegemony_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_bohemia_limited_autonomy"
+		texturefile = "gfx/interface/goals/AUS/AUS_bohemia_limited_autonomy_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_learn_from_past_defeats"
+		texturefile = "gfx/interface/goals/AUS/AUS_learn_from_past_defeats_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_look_in_balkans"
+		texturefile = "gfx/interface/goals/AUS/AUS_look_in_balkans_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_increase_public_support"
+		texturefile = "gfx/interface/goals/AUS/AUS_increase_public_support_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_grosses_osterreich"
+		texturefile = "gfx/interface/goals/AUS/AUS_grosses_osterreich_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_from_madrid_to_vienna"
+		texturefile = "gfx/interface/goals/AUS/AUS_from_madrid_to_vienna_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_expand_into_adriatic"
+		texturefile = "gfx/interface/goals/AUS/AUS_expand_into_adriatic_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_end_swiss_neutrality"
+		texturefile = "gfx/interface/goals/AUS/AUS_end_swiss_neutrality_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_ein_kanzler_ein_reich"
+		texturefile = "gfx/interface/goals/AUS/AUS_ein_kanzler_ein_reich_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_dominance_in_europe"
+		texturefile = "gfx/interface/goals/AUS/AUS_dominance_in_europe_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_confederation_direction"
+		texturefile = "gfx/interface/goals/AUS/AUS_confederation_direction_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_danish_obedience"
+		texturefile = "gfx/interface/goals/AUS/AUS_danish_obedience_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_continental_dominance"
+		texturefile = "gfx/interface/goals/AUS/AUS_continental_dominance_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_national_movements"
+		texturefile = "gfx/interface/goals/AUS/AUS_national_movements_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_ally_denmark"
+		texturefile = "gfx/interface/goals/AUS/AUS_ally_denmark_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_assume_continental_hegemony"
+		texturefile = "gfx/interface/goals/AUS/AUS_assume_continental_hegemony_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_osterstaadt_bohemia"
+		texturefile = "gfx/interface/goals/AUS/AUS_osterstaadt_bohemia_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_plan_west_deutschland"
+		texturefile = "gfx/interface/goals/AUS/AUS_plan_west_deutschland_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_war_with_isles"
+		texturefile = "gfx/interface/goals/AUS/AUS_war_with_isles_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_treaty_vienna_london"
+		texturefile = "gfx/interface/goals/AUS/AUS_treaty_vienna_london_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_prague_conference"
+		texturefile = "gfx/interface/goals/AUS/AUS_prague_conference_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_plan_deutschland"
+		texturefile = "gfx/interface/goals/AUS/AUS_plan_deutschland_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_plan_ost_deutschland"
+		texturefile = "gfx/interface/goals/AUS/AUS_plan_ost_deutschland_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_move_to_romania"
+		texturefile = "gfx/interface/goals/AUS/AUS_move_to_romania_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_move_to_bulgaria"
+		texturefile = "gfx/interface/goals/AUS/AUS_move_to_bulgaria_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_austro_prussian_treaty"
+		texturefile = "gfx/interface/goals/AUS/AUS_austro_prussian_treaty_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_invite_prussia"
+		texturefile = "gfx/interface/goals/AUS/AUS_invite_prussia_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_invite_denmark"
+		texturefile = "gfx/interface/goals/AUS/AUS_invite_denmark_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_invite_bayern"
+		texturefile = "gfx/interface/goals/AUS/AUS_invite_bayern_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_ideological_unity"
+		texturefile = "gfx/interface/goals/AUS/AUS_ideological_unity_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_europe_secured"
+		texturefile = "gfx/interface/goals/AUS/AUS_europe_secured_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_establish_influence"
+		texturefile = "gfx/interface/goals/AUS/AUS_establish_influence_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_befriend_hungary"
+		texturefile = "gfx/interface/goals/AUS/AUS_befriend_hungary_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_march_by_shore"
+		texturefile = "gfx/interface/goals/AUS/AUS_march_by_shore_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_agreement_with_bohemia"
+		texturefile = "gfx/interface/goals/AUS/AUS_agreement_with_bohemia_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_review_act_of_august_fifteenth"
+		texturefile = "gfx/interface/goals/AUS/AUS_review_act_of_august_fifteenth_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_victorious_spirit"
+		texturefile = "gfx/interface/goals/AUS/AUS_victorious_spirit_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_tragedy_for_austria"
+		texturefile = "gfx/interface/goals/AUS/AUS_tragedy_for_austria_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_silesian_question"
+		texturefile = "gfx/interface/goals/AUS/AUS_silesian_question_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_coronation_otto"
+		texturefile = "gfx/interface/goals/AUS/AUS_coronation_otto_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_coronation_adelheid"
+		texturefile = "gfx/interface/goals/AUS/AUS_coronation_adelheid_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_pakt_bayern_osterreich"
+		texturefile = "gfx/interface/goals/AUS/AUS_pakt_bayern_osterreich_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_territorial_question"
+		texturefile = "gfx/interface/goals/AUS/AUS_territorial_question_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_support_alpenjagers"
+		texturefile = "gfx/interface/goals/AUS/AUS_support_alpenjagers_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_strengthen_economical_relations"
+		texturefile = "gfx/interface/goals/AUS/AUS_strengthen_economical_relations_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_monarchist_support"
+		texturefile = "gfx/interface/goals/AUS/AUS_monarchist_support_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_second_vienna_conference"
+		texturefile = "gfx/interface/goals/AUS/AUS_second_vienna_conference_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_retire_old_administration"
+		texturefile = "gfx/interface/goals/AUS/AUS_retire_old_administration_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_restore_fallen_empire"
+		texturefile = "gfx/interface/goals/AUS/AUS_restore_fallen_empire_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_request_prussian_support"
+		texturefile = "gfx/interface/goals/AUS/AUS_request_prussian_support_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_request_bavarian_support"
+		texturefile = "gfx/interface/goals/AUS/AUS_request_bavarian_support_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_rebuild_homeland"
+		texturefile = "gfx/interface/goals/AUS/AUS_rebuild_homeland_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_prussian_volunteer"
+		texturefile = "gfx/interface/goals/AUS/AUS_prussian_volunteer_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_propaganda_coordination"
+		texturefile = "gfx/interface/goals/AUS/AUS_propaganda_coordination_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_promises_to_opposition"
+		texturefile = "gfx/interface/goals/AUS/AUS_promises_to_opposition_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_prepare_for_inevitable"
+		texturefile = "gfx/interface/goals/AUS/AUS_prepare_for_inevitable_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_restoration_plan"
+		texturefile = "gfx/interface/goals/AUS/AUS_restoration_plan_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_parade_for_austria"
+		texturefile = "gfx/interface/goals/AUS/AUS_parade_for_austria_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_negotiations_with_hungary"
+		texturefile = "gfx/interface/goals/AUS/AUS_negotiations_with_hungary_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_negotiations_with_prussia"
+		texturefile = "gfx/interface/goals/AUS/AUS_negotiations_with_prussia_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_learn_from_current_war"
+		texturefile = "gfx/interface/goals/AUS/AUS_learn_from_current_war_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_no_bombs_on_vienna"
+		texturefile = "gfx/interface/goals/AUS/AUS_no_bombs_on_vienna_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_integrate_bohemia"
+		texturefile = "gfx/interface/goals/AUS/AUS_integrate_bohemia_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_increase_administration_support"
+		texturefile = "gfx/interface/goals/AUS/AUS_increase_administration_support_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_flight_to_konigsberg"
+		texturefile = "gfx/interface/goals/AUS/AUS_flight_to_konigsberg_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_first_vienna_conference"
+		texturefile = "gfx/interface/goals/AUS/AUS_first_vienna_conference_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_empower_constitutional_monarchy"
+		texturefile = "gfx/interface/goals/AUS/AUS_empower_constitutional_monarchy_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_diplomatic_mission_to_prussia"
+		texturefile = "gfx/interface/goals/AUS/AUS_diplomatic_mission_to_prussia_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_die_habsburger"
+		texturefile = "gfx/interface/goals/AUS/AUS_die_habsburger_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_bavarian_ideological_peace"
+		texturefile = "gfx/interface/goals/AUS/AUS_bavarian_ideological_peace_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_announce_our_ambitions"
+		texturefile = "gfx/interface/goals/AUS/AUS_announce_our_ambitions_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_analise_mountain_warfare"
+		texturefile = "gfx/interface/goals/AUS/AUS_analise_mountain_warfare_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_look_in_the_past"
+		texturefile = "gfx/interface/goals/AUS/AUS_look_in_the_past_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_unification_german_lands"
+		texturefile = "gfx/interface/goals/AUS/AUS_unification_german_lands_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_unification_plans"
+		texturefile = "gfx/interface/goals/AUS/AUS_unification_plans_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_romania_ultimatum"
+		texturefile = "gfx/interface/goals/AUS/AUS_romania_ultimatum_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_grosses_osterreichisch_ungarische_monarchie"
+		texturefile = "gfx/interface/goals/AUS/AUS_grosses_osterreichisch_ungarische_monarchie_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_silesia_is_ours"
+		texturefile = "gfx/interface/goals/AUS/AUS_silesia_is_ours_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_second_hre"
+		texturefile = "gfx/interface/goals/AUS/AUS_second_hre_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_restoration_plan_sud"
+		texturefile = "gfx/interface/goals/AUS/AUS_restoration_plan_sud_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_restoration_plan_ost"
+		texturefile = "gfx/interface/goals/AUS/AUS_restoration_plan_ost_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_proclaim_hre_ambitions"
+		texturefile = "gfx/interface/goals/AUS/AUS_proclaim_hre_ambitions_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_osterstaadt_polen"
+		texturefile = "gfx/interface/goals/AUS/AUS_osterstaadt_polen_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_march_into_galicia"
+		texturefile = "gfx/interface/goals/AUS/AUS_march_into_galicia_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_italian_croatia"
+		texturefile = "gfx/interface/goals/AUS/AUS_italian_croatia_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_integrate_bayern"
+		texturefile = "gfx/interface/goals/AUS/AUS_integrate_bayern_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_grow_national_support"
+		texturefile = "gfx/interface/goals/AUS/AUS_grow_national_support_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_austria_hungary"
+		texturefile = "gfx/interface/goals/AUS/AUS_austria_hungary_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_expand_our_lands"
+		texturefile = "gfx/interface/goals/AUS/AUS_expand_our_lands_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_deal_with_serbia"
+		texturefile = "gfx/interface/goals/AUS/AUS_deal_with_serbia_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_claim_french_benelux"
+		texturefile = "gfx/interface/goals/AUS/AUS_claim_french_benelux_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_claim_switzerland"
+		texturefile = "gfx/interface/goals/AUS/AUS_claim_switzerland_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_claims_in_italy"
+		texturefile = "gfx/interface/goals/AUS/AUS_claims_in_italy_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_bavarian_lands"
+		texturefile = "gfx/interface/goals/AUS/AUS_bavarian_lands_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_austro_prussian_relations"
+		texturefile = "gfx/interface/goals/AUS/AUS_austro_prussian_relations_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_austro_prussian_commonwealth"
+		texturefile = "gfx/interface/goals/AUS/AUS_austro_prussian_commonwealth_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_empire_restored"
+		texturefile = "gfx/interface/goals/AUS/AUS_empire_restored_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_hoch_saone"
+		texturefile = "gfx/interface/goals/AUS/AUS_hoch_saone_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_support_royal_administration"
+		texturefile = "gfx/interface/goals/AUS/AUS_support_royal_administration_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_integration_of_czechia"
+		texturefile = "gfx/interface/goals/AUS/AUS_integration_of_czechia_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_coronation_of_victoria"
+		texturefile = "gfx/interface/goals/AUS/AUS_coronation_of_victoria_icon.dds"
+	}
 }

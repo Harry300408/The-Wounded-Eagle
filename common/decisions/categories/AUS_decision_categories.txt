@@ -24,7 +24,15 @@ AUS_local_hegemony_category = {
 	icon = GFX_
 	priority = 100
 	visible = {
-		has_completed_focus = AUS_establish_influence_department
+		if = {
+			limit = {
+				is_debug = yes
+			}
+			always = yes
+		}
+		else = {
+			has_completed_focus = AUS_establish_influence_department
+		}
 	}
 	allowed = {
 		tag = AUS
