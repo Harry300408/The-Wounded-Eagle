@@ -8,8 +8,7 @@ state= {
 		chromium=3 # was: 4
 	}
 
-	history=
-	{
+	history= {
 		owner = GRE
 		add_core_of = GRE
 		add_core_of = CYP
