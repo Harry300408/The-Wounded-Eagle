@@ -17,5 +17,63 @@ spriteTypes = {
         texturefile = gfx/leaders/RAJ/churchill.dds
     }
 
+    spriteType = {
+        name = GFX_ENG_edward_viii
+        texturefile = gfx/leaders/ENG/Monarchy/small/edward_viii.dds
+    }
+    spriteType = {
+        name = GFX_ENG_edward_viii_small
+        texturefile = gfx/leaders/ENG/Monarchy/small/edward_viii_small.dds
+    }
 
+    #Advisors
+    spriteType = {
+        name = GFX_ENG_lawson
+        texturefile = gfx/leaders/ENG/advisors/lawson.dds
+    }
+    spriteType = {
+        name = GFX_ENG_lawson_small
+        texturefile = gfx/leaders/ENG/advisors/lawson_small.dds
+    }
+
+    spriteType = {
+        name = GFX_ENG_morrison
+        texturefile = gfx/leaders/ENG/advisors/morrison.dds
+    }
+    spriteType = {
+        name = GFX_ENG_morrison_small
+        texturefile = gfx/leaders/ENG/advisors/morrison_small.dds
+    }
+
+    spriteType = {
+        name = GFX_ENG_greenwood
+        texturefile = gfx/leaders/ENG/advisors/greenwood.dds
+    }
+    spriteType = {
+        name = GFX_ENG_greenwood_small
+        texturefile = gfx/leaders/ENG/advisors/greenwood_small.dds
+    }
+
+    spriteType = {
+        name = GFX_ENG_edward_viii
+        texturefile = gfx/leaders/ENG/Monarchy/edward_viii.dds
+    }
+    spriteType = {
+        name = GFX_ENG_edward_viii_small
+        texturefile = gfx/leaders/ENG/Monarchy/small/edward_viii_small.dds
+    }
+
+    spriteType = {
+        name = GFX_ENG_albert_windsor
+        texturefile = gfx/leaders/ENG/Monarchy/albert_windsor.dds
+    }
+    spriteType = {
+        name = GFX_ENG_albert_windsor_small
+        texturefile = gfx/leaders/ENG/Monarchy/small/albert_windsor_small.dds
+    }
+
+    spriteType = {
+        name = GFX_ENG_empty_throne
+        texturefile = gfx/leaders/ENG/Monarchy/ENG_empty_throne.dds
+    }
 }

@@ -6,7 +6,7 @@ state=
 	state_category = large_city
 	history=
 	{
-		owner = TSA
+		owner = JAP
 		add_core_of = TSA
 		add_core_of = JAP
 		buildings = {

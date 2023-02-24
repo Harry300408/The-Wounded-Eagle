@@ -1,0 +1,59 @@
+add_namespace = ENGmon
+
+country_event = {
+	id = ENGmon.1
+	title = ENGmon.1.t
+	desc = ENGmon.1.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGmon.1.a
+ 
+		complete_national_focus = ENG_god_save_the_king
+	}
+
+	option = {
+		name = ENGmon.1.b
+ 
+		complete_national_focus = ENG_alberts_approach
+		retire_ideology_leader = neutrality
+		deactivate_advisor = ENG_edward_viii
+		activate_advisor = ENG_albert_windsor
+
+	}
+
+	option = {
+		name = ENGmon.1.c
+ 
+		complete_national_focus = ENG_the_king_is_dead
+		kill_ideology_leader = neutrality
+		deactivate_advisor = ENG_edward_viii
+		retire_ideology_leader = neutrality
+	}
+}
+
+country_event = {
+	id = ENGmon.2
+	title = ENGmon.2.t
+	desc = ENGmon.2.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGmon.2.a
+
+		add_stability = -0.01
+	}
+
+	option = {
+		name = ENGmon.2.b
+
+		add_stability = 0.01
+		add_manpower = -5
+	}
+}

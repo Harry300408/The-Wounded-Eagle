@@ -5,17 +5,22 @@ YUC_TXS = {
 	color_ui = rgb { 212 175 55 }
 }
 
-#JAP
-JAP_shogun = {
-    color = rgb { 70 85 91 }
-    color_ui = rgb { 70 85 91 }
-}
-
-
 #LBA
 LBA_SEN = {
     color = rgb { 0 0 0 }
     color_ui = rgb { 0 0 0 }
+}
+
+#Anglo Egyptian Sudan
+SUD_anglo_egyptian = {
+	color = { 201 56 93 }
+	color_ui = { 255 73 121 }
+}
+
+# Tripolitania
+LBA_TRP = {
+    color = rgb { 137 0 0 }
+    color_ui = rgb { 137 0 0 }
 }
 
 #FRA

@@ -9,7 +9,7 @@ CPR	= "countries/CPR.txt"
 #Texas
 TXS	= "countries/USA.txt"
 #British Ireland
-UKI = "countries/British Ireland.txt"
+UKI = "countries/United Kingdom.txt"
 #Yucatan
 YUC	= "countries/Mexico.txt"
 #Colonisable Territory
@@ -56,3 +56,5 @@ RBR = "countries/United Kingdom.txt"
 GBN = "countries/United Kingdom.txt"
 #British Alliance of Tradition
 IBR = "countries/United Kingdom.txt"
+#English Republican Army
+ERA = "countries/United Kingdom.txt"

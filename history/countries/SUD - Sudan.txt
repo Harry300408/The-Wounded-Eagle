@@ -28,6 +28,8 @@ set_convoys = 20
 #recruit_character = SUD_nccr
 #recruit_character = SUD_aco2
 
+set_cosmetic_tag = SUD_anglo_egyptian
+
 1939.1.1 = {
 	
 	#generic focuses

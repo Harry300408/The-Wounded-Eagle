@@ -44,6 +44,64 @@ characters = {
         }
     }
 
+    ENG_edward_viii = {
+		name=ENG_edward_viii
+		portraits={
+			civilian={
+				large = GFX_ENG_edward_viii
+				small = GFX_ENG_edward_viii_small
+			}
+		}
+        country_leader = {
+            ideology = british_monarchism 
+            traits = {  }
+            #desc = 
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_edward_viii
+			traits  = {
+				
+			}
+		}
+	}
+
+    ENG_albert_windsor = {
+		name=ENG_albert_windsor
+		portraits={
+			civilian={
+				large = GFX_ENG_albert_windsor
+				small = GFX_ENG_albert_windsor_small
+			}
+		}
+        country_leader = {
+            ideology = british_monarchism 
+            traits = {  }
+            #desc = 
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_albert_windsor
+			traits  = {
+				
+			}
+		}
+	}
+
+    ENG_empty_throne = {
+		name=ENG_empty_throne
+		portraits={
+			civilian={
+				large = GFX_ENG_empty_throne
+			}
+		}
+        country_leader = {
+            ideology = british_monarchism 
+            traits = {  }
+            #desc = 
+        }
+	}
+
     ## FOR THE RAJ
 
     RAJ_churchill = {
@@ -59,6 +117,58 @@ characters = {
             #desc = 
         }
     }
+
+    ## Cabinet Members ##
+    ENG_lawson = {
+		name=ENG_lawson
+		portraits={
+			civilian={
+				large = GFX_ENG_lawson
+				small = GFX_ENG_lawson_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_lawson
+			traits  = {
+				
+			}
+		}
+	}
+
+    ENG_morrison = {
+		name=ENG_morrison
+		portraits={
+			civilian={
+				large = GFX_ENG_morrison
+				small = GFX_ENG_morrison_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_morrison
+			traits  = {
+				
+			}
+		}
+	}
+
+    ENG_greenwood = {
+		name=ENG_greenwood
+		portraits={
+			civilian={
+				large = GFX_ENG_greenwood
+				small = GFX_ENG_greenwood_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_greenwood
+			traits  = {
+				
+			}
+		}
+	}
 
     ## Unit & Field Marshals ##
     ##Field Marshals

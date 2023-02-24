@@ -64,13 +64,13 @@ bookmarks = {
 		#Buffer
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		#France
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "FRA_WAF_TWE" }
+		"ZZZ" = { minor = yes history = "FRA_IDC_TWE" }
+		"ZZZ" = { minor = yes history = "FRA_AUS_TWE" }
 		#UK
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "UK_CAN_TWE" }
+		"ZZZ" = { minor = yes history = "UK_FTT_TWE" }
+		"ZZZ" = { minor = yes history = "UK_EGY_TWE" }
 		#Other
 		"USA" = { minor = yes history = "USA_TWE" }
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
@@ -79,13 +79,13 @@ bookmarks = {
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		#Russia
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "RUS_POL_TWE" }
+		"ZZZ" = { minor = yes history = "RUS_FIN_TWE" }
+		"ZZZ" = { minor = yes history = "RUS_PER_TWE" }
 		#Austria
 		"PRE" = { minor = yes history = "PRE_TWE" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "AUS_BAY_TWE" }
+		"ZZZ" = { minor = yes history = "AUS_HAN_TWE" }
 		#Buffer
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		#line 2
@@ -94,9 +94,9 @@ bookmarks = {
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		#UK
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "UK_SAF_TWE" }
+		"ZZZ" = { minor = yes history = "UK_RAJ_TWE" }
+		"ZZZ" = { minor = yes history = "UK_IRE_TWE" }
 		#Other
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
@@ -105,15 +105,15 @@ bookmarks = {
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		#Russia
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "RUS_KUR_TWE" }
 		#Buffer
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		#Russia
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "RUS_MON_TWE" }
 		#Austria
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "AUS_BOH_TWE" }
+		"ZZZ" = { minor = yes history = "AUS_WSP_TWE" }
+		"ZZZ" = { minor = yes history = "AUS_SAX_TWE" }
         #Buffer
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		#Line 3
@@ -122,9 +122,9 @@ bookmarks = {
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		#UK
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "UK_MAL_TWE" }
+		"ZZZ" = { minor = yes history = "UK_NBW_TWE" }
+		"ZZZ" = { minor = yes history = "UK_COL_TWE" }
 		#Other
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
@@ -137,9 +137,9 @@ bookmarks = {
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		#Austria
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ZZZ" = { minor = yes history = "AUS_BAD_TWE" }
+		"ZZZ" = { minor = yes history = "AUS_OLD_TWE" }
+		"ZZZ" = { minor = yes history = "AUS_ULM_TWE" }
 		#Buffer
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 

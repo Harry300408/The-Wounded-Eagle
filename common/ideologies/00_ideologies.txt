@@ -445,6 +445,8 @@ ideologies = {
 	neutrality = {
 
 		types = {
+
+			british_monarchism = {}
 			
 			classical_absolutism = {}
 

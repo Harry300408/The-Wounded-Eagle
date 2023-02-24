@@ -5,15 +5,15 @@ state={
 		833 867 
 	}
 	history = {
-		owner = TUR
+		owner = ALB
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = TUR
+		add_core_of = ALB
 		add_core_of = YUG
 		add_core_of = MAC
-		add_claim_by = ALB
+		add_claim_by = BUL
 	}
 	manpower= 274840
 	state_category = rural

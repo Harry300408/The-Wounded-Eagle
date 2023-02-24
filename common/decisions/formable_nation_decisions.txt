@@ -3609,7 +3609,7 @@ form_roman_empire_category = {
 
 		available = {
 			
-			controls_state = 127 #Sussex
+			controls_state = 127 #Kent
 			controls_state = 123 #South-West England
 			controls_state = 338 #Gloucestershire
 			controls_state = 126 #Greater London Area
@@ -3632,7 +3632,7 @@ form_roman_empire_category = {
 		complete_effect = { 
  
 
-			# Sussex
+			# Kent
 			127 = { add_core_of = ROOT }
 
 			# South-West England

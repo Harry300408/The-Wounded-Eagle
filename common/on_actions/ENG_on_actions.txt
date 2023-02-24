@@ -87,7 +87,6 @@ on_actions = {
 				}
 			}
 
-
 			if = {
 				limit = {
 					tag = JAC 

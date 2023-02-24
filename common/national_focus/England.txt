@@ -3,7 +3,13 @@ focus_tree = {
 	country = { 
 		base = 0
 		modifier = {
-			tag = ENG
+			OR = {
+				tag = ENG
+				tag = JAC
+				tag = RBR
+				tag = GBN
+				tag = IBR
+			}	
 			add = 100
 		}
 	}
@@ -21,16 +27,6 @@ focus_tree = {
 		x = 0
 		y = 0
 		icon = GFX_focus_rule_brittania
-
-		allow_branch = {
-			NOT = {
-				OR = {
-					has_country_flag = ENG_civil_war
-					has_country_flag = snap_elections_begun
-					has_country_flag = no_more_parliment
-				}	
-			}
-		}
 
 		available = {
 			always = no
@@ -356,7 +352,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_disolve_parliment
-		x = 5
+		x = 2
 		y = 5
 		icon = GFX_focus_disolve_parliment
 		relative_position_id = rule_brittania
@@ -382,7 +378,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_blood_stains_in_london
-		x = -5
+		x = -2
 		y = 5
 		icon = GFX_focus_blood_in_london
 		relative_position_id = rule_brittania
@@ -413,11 +409,4813 @@ focus_tree = {
 	
 
 
+	################################
+	# M O N A R C H Y  B R A N C H #
+	################################
+	focus = {
+		id = ENG_monarchy_back_in_business
+		x = 30
+		y = 0
+		icon = GFX_ENG_mon_back_in_business
+
+		available = {
+			AND = {
+				has_government = neutrality
+				NOT = {
+					has_global_flag = ENG_civil_war_start
+				}
+				NOT = {
+					tag = JAC
+				}
+			}
+
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	###############################
+	# W I N D S O R   B R A N C H #
+	###############################
+	focus = {
+		id = ENG_drastic_measures
+		x = 0
+		y = 1
+		icon = GFX_ENG_drastic_measures
+		relative_position_id = ENG_monarchy_back_in_business
+
+		prerequisite = {
+			focus = ENG_monarchy_back_in_business
+		}
+
+		available = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+			country_event = {
+				days = 0.5
+				id = ENGmon.1
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_god_save_the_king
+		x = -0
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_monarchy_back_in_business
+
+		prerequisite = {
+			focus = ENG_drastic_measures
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+			remove_ideas = {
+				bitter_defeat
+			}
+		}
+
+		mutually_exclusive = {
+			focus = ENG_the_king_is_dead 
+			focus = ENG_alberts_approach
+		}
+	}
+
+	focus = {
+		id = ENG_the_king_is_dead
+		x = 15
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_monarchy_back_in_business
+
+		prerequisite = {
+			focus = ENG_drastic_measures
+		}
+
+		mutually_exclusive = {
+			focus = ENG_god_save_the_king 
+			focus = ENG_alberts_approach
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+			remove_ideas = {
+				general_strikes
+				bitter_defeat
+			}
+		}
+	}
+
+	##################################
+	# G O D  S A V E  T H E  K I N G #
+	##################################
+
+	focus = {
+		id = ENG_reading_thomas_hobbes
+		x = -4
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_god_save_the_king
+
+		prerequisite = {
+			focus = ENG_god_save_the_king
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_appeal_to_nationalists
+		x = -2
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_god_save_the_king
+
+		prerequisite = {
+			focus = ENG_god_save_the_king
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_root_out_treasoners
+		x = 0
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_god_save_the_king
+
+		prerequisite = {
+			focus = ENG_god_save_the_king
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_a_matter_of_trust
+		x = 2
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_god_save_the_king
+
+		prerequisite = {
+			focus = ENG_god_save_the_king
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_the_aristocrats
+		x = 4
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_god_save_the_king
+
+		prerequisite = {
+			focus = ENG_god_save_the_king
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = ENG_state_capitalism
+		x = -8
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_god_save_the_king
+
+		prerequisite = {
+			focus = ENG_reading_thomas_hobbes
+		}
+
+		prerequisite ={
+			focus = ENG_appeal_to_nationalists
+		}
+
+		prerequisite = {
+			focus = ENG_root_out_treasoners
+		}
+
+		prerequisite = {
+			focus = ENG_a_matter_of_trust
+		}
+
+		prerequisite = {
+			focus = ENG_the_aristocrats
+		}
+
+		mutually_exclusive = {
+			focus = ENG_economic_liberalism
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_economic_liberalism
+		x = -6
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_god_save_the_king
+
+		prerequisite = {
+			focus = ENG_reading_thomas_hobbes
+		}
+
+		prerequisite ={
+			focus = ENG_appeal_to_nationalists
+		}
+
+		prerequisite = {
+			focus = ENG_root_out_treasoners
+		}
+
+		prerequisite = {
+			focus = ENG_a_matter_of_trust
+		}
+
+		prerequisite = {
+			focus = ENG_the_aristocrats
+		}
+
+		mutually_exclusive = {
+			focus = ENG_state_capitalism
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_the_kings_party_TWE
+		x = 0
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_god_save_the_king
+
+		prerequisite = {
+			focus = ENG_reading_thomas_hobbes
+		}
+
+		prerequisite ={
+			focus = ENG_appeal_to_nationalists
+		}
+
+		prerequisite = {
+			focus = ENG_root_out_treasoners
+		}
+
+		prerequisite = {
+			focus = ENG_a_matter_of_trust
+		}
+
+		prerequisite = {
+			focus = ENG_the_aristocrats
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = ENG_workers_strikes
+		x = -4
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_kings_party_TWE
+
+		prerequisite = {
+			focus = ENG_the_kings_party_TWE
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_our_heritage
+		x = -2
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_kings_party_TWE
+
+		prerequisite = {
+			focus = ENG_the_kings_party_TWE
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_expand_the_privy_council
+		x = 2
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_kings_party_TWE
+
+		prerequisite = {
+			focus = ENG_the_kings_party_TWE
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_hunt_down_the_far_right
+		x = 4
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_kings_party_TWE
+
+		prerequisite = {
+			focus = ENG_the_kings_party_TWE
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = ENG_revive_our_industrial_might
+		x = -2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_kings_party_TWE
+
+		prerequisite = {
+			focus = ENG_workers_strikes
+		}
+		prerequisite = {
+			focus = ENG_our_heritage
+		}
+		prerequisite = {
+			focus = ENG_expand_the_privy_council
+		}
+		prerequisite = {
+			focus = ENG_hunt_down_the_far_right
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_support_the_technocrats
+		x = 0
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_kings_party_TWE
+
+		prerequisite = {
+			focus = ENG_workers_strikes
+		}
+		prerequisite = {
+			focus = ENG_our_heritage
+		}
+		prerequisite = {
+			focus = ENG_expand_the_privy_council
+		}
+		prerequisite = {
+			focus = ENG_hunt_down_the_far_right
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_a_militarized_britain
+		x = 2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_kings_party_TWE
+
+		prerequisite = {
+			focus = ENG_workers_strikes
+		}
+		prerequisite = {
+			focus = ENG_our_heritage
+		}
+		prerequisite = {
+			focus = ENG_expand_the_privy_council
+		}
+		prerequisite = {
+			focus = ENG_hunt_down_the_far_right
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_your_country_needs_you
+		x = -2
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_kings_party_TWE
+
+		prerequisite = {
+			focus = ENG_revive_our_industrial_might
+		}
+		prerequisite = {
+			focus = ENG_support_the_technocrats
+		}
+		prerequisite = {
+			focus = ENG_a_militarized_britain
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_ally_the_rothschilds
+		x = 0
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_kings_party_TWE
+
+		prerequisite = {
+			focus = ENG_revive_our_industrial_might
+		}
+		prerequisite = {
+			focus = ENG_support_the_technocrats
+		}
+		prerequisite = {
+			focus = ENG_a_militarized_britain
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_imperial_women_workers
+		x = 2
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_kings_party_TWE
+
+		prerequisite = {
+			focus = ENG_revive_our_industrial_might
+		}
+		prerequisite = {
+			focus = ENG_support_the_technocrats
+		}
+		prerequisite = {
+			focus = ENG_a_militarized_britain
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_issue_mass_conscription
+		x = -1
+		y = 4
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_kings_party_TWE
+
+		prerequisite = {
+			focus = ENG_your_country_needs_you
+		}
+		prerequisite = {
+			focus = ENG_ally_the_rothschilds
+		}
+		prerequisite = {
+			focus = ENG_imperial_women_workers
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_fund_the_royal_society
+		x = 1
+		y = 4
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_kings_party_TWE
+
+		prerequisite = {
+			focus = ENG_your_country_needs_you
+		}
+		prerequisite = {
+			focus = ENG_ally_the_rothschilds
+		}
+		prerequisite = {
+			focus = ENG_imperial_women_workers
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_rally_around_thy_king
+		x = 0
+		y = 6
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_kings_party_TWE
+
+		prerequisite = {
+			focus = ENG_fund_the_royal_society
+		}
+		prerequisite = {
+			focus = ENG_issue_mass_conscription
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_concerning_domestic_issues
+		x = -7
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_kings_party_TWE
+
+		prerequisite = {
+			focus = ENG_workers_strikes
+		}
+		prerequisite = {
+			focus = ENG_our_heritage
+		}
+		prerequisite = {
+			focus = ENG_expand_the_privy_council
+		}
+		prerequisite = {
+			focus = ENG_hunt_down_the_far_right
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_harden_papist_restrictions
+		x = 1
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_concerning_domestic_issues
+
+		prerequisite = {
+			focus = ENG_concerning_domestic_issues
+		}
+		mutually_exclusive = {
+			focus = ENG_lessen_catholic_burdens
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_lessen_catholic_burdens
+		x = -1
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_concerning_domestic_issues
+
+		prerequisite = {
+			focus = ENG_concerning_domestic_issues
+		}
+		mutually_exclusive = {
+			focus = ENG_harden_papist_restrictions
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_royal_trade_unions
+		x = -1
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_concerning_domestic_issues
+
+		prerequisite = {
+			focus = ENG_lessen_catholic_burdens
+			focus = ENG_harden_papist_restrictions
+		}
+		mutually_exclusive = {
+			focus = ENG_ban_all_unions
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_ban_all_unions
+		x = 1
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_concerning_domestic_issues
+
+		prerequisite = {
+			focus = ENG_lessen_catholic_burdens
+			focus = ENG_harden_papist_restrictions
+		}
+		mutually_exclusive = {
+			focus = ENG_hardeENG_royal_trade_unionsn_papist_restrictions
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_secular_education
+		x = 1
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_concerning_domestic_issues
+
+		prerequisite = {
+			focus = ENG_royal_trade_unions
+			focus = ENG_ban_all_unions
+		}
+		mutually_exclusive = {
+			focus = ENG_religous_schools
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_religous_schools
+		x = -1
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_concerning_domestic_issues
+
+		prerequisite = {
+			focus = ENG_royal_trade_unions
+			focus = ENG_ban_all_unions
+		}
+		mutually_exclusive = {
+			focus = ENG_secular_education
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_the_welfare_issue
+		x = 0
+		y = 4
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_concerning_domestic_issues
+
+		prerequisite = {
+			focus = ENG_religous_schools
+		}
+		prerequisite = {
+			focus = ENG_secular_education
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_the_road_we_must_take
+		x = 3
+		y = 5
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_concerning_domestic_issues
+
+		prerequisite = {
+			focus = ENG_the_welfare_issue
+		}
+		prerequisite = {
+			focus = ENG_rally_around_thy_king
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
 
 	
+	
+	## ALT MONARCHY/AUTOCRATIC PATHS (JAC, Militarisy, Capitalist or Religious/Theocratic)
+	
+	focus = {
+		id = ENG_convene_regency_council
+		x = 0
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_king_is_dead
+
+		prerequisite = {
+			focus = ENG_the_king_is_dead           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_militarist_primacy
+		x = -6
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_king_is_dead
+
+		prerequisite = {
+			focus = ENG_convene_regency_council           
+		}
+
+		allow_branch = {
+		}
+
+		mutually_exclusive = {
+			focus = ENG_religous_primacy
+			focus = ENG_capitalist_primacy
+			focus = ENG_outsource_a_new_king
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_capitalist_primacy
+		x = 0
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_king_is_dead
+
+		prerequisite = {
+			focus = ENG_convene_regency_council           
+		}
+
+		allow_branch = {
+		}
+
+		mutually_exclusive = {
+			focus = ENG_religous_primacy
+			focus = ENG_militarist_primacy
+			focus = ENG_outsource_a_new_king
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_religous_primacy
+		x = 6
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_king_is_dead
+
+		prerequisite = {
+			focus = ENG_convene_regency_council           
+		}
+
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = ENG_capitalist_primacy
+			focus = ENG_militarist_primacy
+			focus = ENG_outsource_a_new_king
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	## MILITARIST PRIMACY ##
+	focus = {
+		id = ENG_empower_the_mashal
+		x = 0
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_militarist_primacy
+
+		prerequisite = {
+			focus = ENG_militarist_primacy           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_the_marshals_agents
+		x = 0
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_militarist_primacy
+
+		prerequisite = {
+			focus = ENG_empower_the_mashal           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_militarization_of_britain
+		x = -2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_militarist_primacy
+
+		prerequisite = {
+			focus = ENG_empower_the_mashal           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_you_rebel_scum
+		x = 2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_militarist_primacy
+
+		prerequisite = {
+			focus = ENG_empower_the_mashal           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_a_mere_accident
+		x = -1
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_militarist_primacy
+
+		prerequisite = {
+			focus = ENG_militarization_of_britain           
+		}
+		prerequisite = {
+			focus = ENG_the_marshals_agents
+		}
+		prerequisite = {
+			focus = ENG_you_rebel_scum
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_ending_orwell
+		x = 1
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_militarist_primacy
+
+		prerequisite = {
+			focus = ENG_militarization_of_britain           
+		}
+		prerequisite = {
+			focus = ENG_the_marshals_agents
+		}
+		prerequisite = {
+			focus = ENG_you_rebel_scum
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_restrained_no_more
+		x = 0
+		y = 7
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_militarist_primacy
+
+		prerequisite = {
+			focus = ENG_ending_orwell           
+		}
+		prerequisite = {
+			focus = ENG_a_mere_accident
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	## CAPITALIST UK ##
+	focus = {
+		id = ENG_child_labour
+		x = -2
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_capitalist_primacy
+
+		prerequisite = {
+			focus = ENG_capitalist_primacy           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_privitise_the_military
+		x = 0
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_capitalist_primacy
+
+		prerequisite = {
+			focus = ENG_capitalist_primacy           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_corpratised_youth
+		x = 2
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_capitalist_primacy
+
+		prerequisite = {
+			focus = ENG_capitalist_primacy           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_exploit_colonial_labour
+		x = -2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_capitalist_primacy
+
+		prerequisite = {
+			focus = ENG_child_labour           
+		}
+		prerequisite = {
+			focus = ENG_privitise_the_military           
+		}
+		prerequisite = {
+			focus = ENG_corpratised_youth           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_making_extra_money
+		x = 0
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_capitalist_primacy
+
+		prerequisite = {
+			focus = ENG_child_labour           
+		}
+		prerequisite = {
+			focus = ENG_privitise_the_military           
+		}
+		prerequisite = {
+			focus = ENG_corpratised_youth           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_revitalize_our_great_country
+		x = 2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_capitalist_primacy
+
+		prerequisite = {
+			focus = ENG_child_labour           
+		}
+		prerequisite = {
+			focus = ENG_privitise_the_military           
+		}
+		prerequisite = {
+			focus = ENG_corpratised_youth           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_here_comes_the_money
+		x = 0
+		y = 7
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_capitalist_primacy
+
+		prerequisite = {
+			focus = ENG_exploit_colonial_labour           
+		}
+		prerequisite = {
+			focus = ENG_making_extra_money           
+		}
+		prerequisite = {
+			focus = ENG_revitalize_our_great_country           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	## THEOCRATIC UK ##
+	focus = {
+		id = ENG_religous_education_for_britain
+		x = 0
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_religous_primacy
+
+		prerequisite = {
+			focus = ENG_religous_primacy           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_embrace_gods_gift
+		x = -2
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_religous_primacy
+
+		prerequisite = {
+			focus = ENG_religous_primacy           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_fiery_preaching
+		x = 2
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_religous_primacy
+
+		prerequisite = {
+			focus = ENG_religous_primacy           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_expel_catholics
+		x = -1
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_religous_primacy
+
+		prerequisite = {
+			focus = ENG_embrace_gods_gift           
+		}
+		prerequisite = {
+			focus = ENG_religous_education_for_britain          
+		}
+		prerequisite = {
+			focus = ENG_fiery_preaching           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_against_the_devil
+		x = 1
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_religous_primacy
+
+		prerequisite = {
+			focus = ENG_embrace_gods_gift           
+		}
+		prerequisite = {
+			focus = ENG_religous_education_for_britain          
+		}
+		prerequisite = {
+			focus = ENG_fiery_preaching           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ENG_a_blessed_day
+		x = 0
+		y = 7
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_religous_primacy
+
+		prerequisite = {
+			focus = ENG_expel_catholics           
+		}
+		prerequisite = {
+			focus = ENG_against_the_devil          
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_alberts_approach
+		x = -15
+		y = 1
+		icon = GFX_ENG_alberts_approach
+		relative_position_id = ENG_drastic_measures
+
+		prerequisite = {
+			focus = ENG_drastic_measures           
+		}
+
+		mutually_exclusive = {
+			focus = ENG_god_save_the_king
+			focus = ENG_the_king_is_dead	
+		} 
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_better_welfare
+		x = -2
+		y = 1
+		icon = GFX_ENG_better_welfare
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_alberts_approach           
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_buy_british
+		x = 0
+		y = 1
+		icon = GFX_ENG_buy_british 
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_alberts_approach           
+		}
+
+		cost = 2
+	
+		completion_reward = {
+			add_ideas = {
+				buy_british
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_family_relief
+		x = 2
+		y = 1
+		icon = GFX_ENG_family_relief
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_alberts_approach           
+		}
+
+		bypass = {
+			NOT = {
+				has_idea = general_strikes
+			}
+		}
+
+		cost = 3
+	
+		completion_reward = {
+			remove_ideas = {
+				general_strikes
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_healing_our_wounds
+		x = -1
+		y = 2
+		icon = GFX_ENG_healing_our_wounds
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_better_welfare           
+		}
+
+		prerequisite = {
+			focus = ENG_buy_british
+		}
+
+		prerequisite = {
+			focus = ENG_family_relief
+		}
+
+		cost = 3
+
+		bypass = {
+			NOT = {
+				has_idea = bitter_defeat
+			}
+		}
+	
+		completion_reward = {
+			remove_ideas = {
+				bitter_defeat
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_traitors_on_trial
+		x = 1
+		y = 2
+		icon = GFX_ENG_traitors_on_trial
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_better_welfare           
+		}
+
+		prerequisite = {
+			focus = ENG_buy_british
+		}
+
+		prerequisite = {
+			focus = ENG_family_relief
+		}
+
+		cost = 2
+	
+		completion_reward = {
+			country_event = {
+				days = 1
+				id = ENGmon.2
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_the_marconi_reforms
+		x = -1
+		y = 3
+		icon = GFX_ENG_the_marconi_reforms
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_healing_our_wounds           
+		}
+
+		prerequisite = {
+			focus = ENG_traitors_on_trial
+		}
+
+		cost = 4
+	
+		completion_reward = {
+			add_ideas = {
+				marconi_reforms
+			}
+		}
+	}
+	
+	focus = {
+		id = ENG_free_market_policies
+		x = 1
+		y = 3
+		icon = GFX_ENG_free_market_policies
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_healing_our_wounds           
+		}
+
+		prerequisite = {
+			focus = ENG_traitors_on_trial
+		}
+
+		cost = 2
+	
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = export_focus
+				}
+				swap_ideas = {
+					remove_idea = export_focus
+					add_idea = free_trade
+				}
+			}
+
+			if = {
+				limit = {
+					has_idea = limited_exports
+				}
+				swap_ideas = {
+					remove_idea = limited_exports
+					add_idea = free_trade
+				}
+			}
+
+			if = {
+				limit = {
+					has_idea = closed_economy
+				}
+				swap_ideas = {
+					remove_idea = closed_economy
+					add_idea = free_trade
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_gain_workers_trust
+		x = -4
+		y = 4
+		icon = GFX_ENG_gain_workers_trust
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_the_marconi_reforms           
+		}
+
+		prerequisite = {
+			focus = ENG_free_market_policies
+		}
+
+		prerequisite = {
+			focus = ENG_racial_deserigation
+		}
+
+		cost = 1
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_london_temperance_legislation
+		x = -2
+		y = 4
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_the_marconi_reforms           
+		}
+
+		prerequisite = {
+			focus = ENG_free_market_policies
+		}
+
+		prerequisite = {
+			focus = ENG_racial_deserigation
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_better_irish_treatment
+		x = 2
+		y = 4
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_the_marconi_reforms           
+		}
+
+		prerequisite = {
+			focus = ENG_free_market_policies
+		}
+
+		prerequisite = {
+			focus = ENG_racial_deserigation
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_british_femminism
+		x = 4
+		y = 4
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_the_marconi_reforms           
+		}
+
+		prerequisite = {
+			focus = ENG_free_market_policies
+		}
+
+		prerequisite = {
+			focus = ENG_racial_deserigation
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_daddy_knows_best
+		x = 0
+		y = 9
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_gain_workers_trust           
+		}
+
+		prerequisite = {
+			focus = ENG_london_temperance_legislation
+		}
+
+		prerequisite = {
+			focus = ENG_better_irish_treatment
+		}
+
+		prerequisite = {
+			focus = ENG_british_femminism
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_fate_of_the_domminions
+		x = -7
+		y = 1
+		icon = GFX_ENG_fate_of_the_domminions
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_alberts_approach           
+		}
+
+		cost = 3
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_bon_voyage
+		x = -10
+		y = 2
+		icon = GFX_ENG_bon_voyage
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_fate_of_the_domminions           
+		}
+
+		mutually_exclusive = {
+			focus = ENG_strengthen_our_grip
+			focus = ENG_imperial_federation_TWE
+		}
+
+		cost = 6
+	
+		completion_reward = {
+			set_autonomy = {
+				target = RAJ
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = NZL
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = MAL
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = EGY
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = SAF
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = BOR
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = NBW
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = CAN
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = GLF
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = LAC
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = NOL
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = CLU
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = NGA
+				autonomy_state = autonomy_free
+			}
+
+			release = SUD
+			release = CAR
+			release = UGA
+			release = KEN
+			release = RWA
+			release = BRD
+			release = TZN
+			release = GYA
+			release = JOR
+			release = CYP
+			release = UAE
+			release = QAT
+			release = SRL
+
+			
+			KON = {
+				set_state_owner = 718
+			}
+
+			KEN = {
+				set_state_owner = 844
+			}
+
+			JOR = {
+				set_state_owner = 454
+				set_state_owner = 554
+				set_state_owner = 553
+			}
+
+			YEM = {
+				set_state_owner = 659
+			}
+
+
+
+		}
+	}
+
+	focus = {
+		id = ENG_imperial_federation_TWE
+		x = -7
+		y = 2
+		icon = GFX_ENG_imperial_federation_TWE
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_fate_of_the_domminions           
+		}
+
+		mutually_exclusive = {
+			focus = ENG_strengthen_our_grip
+			focus = ENG_bon_voyage
+		}
+
+		cost = 3
+	
+		completion_reward = {
+			every_owned_state = {
+				add_core_of = ENG
+			}
+			custom_effect_tooltip = ENG_imp_fed_decs
+
+			set_cosmetic_tag = ENG_imperial_federation_unified
+
+		}
+	}
+
+	focus = {
+		id = ENG_strengthen_our_grip
+		x = -4
+		y = 2
+		icon = GFX_ENG_strngthen_our_grip
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_fate_of_the_domminions           
+		}
+
+		mutually_exclusive = {
+			focus = ENG_imperial_federation_TWE
+			focus = ENG_bon_voyage
+		}
+
+		cost = 6
+	
+		completion_reward = {
+			set_autonomy = {
+				target = RAJ
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = NZL
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = MAL
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = EGY
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = SAF
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = BOR
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = NBW
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = CAN
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = GLF
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = LAC
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = NOL
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = CLU
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = NGA
+				autonomy_state = autonomy_integrated_puppet
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_racial_deserigation
+		x = -7
+		y = 3
+		icon = GFX_ENG_racial_deserigation
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_strengthen_our_grip           
+		}
+
+		prerequisite = {
+			focus = ENG_imperial_federation_TWE
+		}
+
+		prerequisite = {
+			focus = ENG_bon_voyage
+		}
+
+		cost = 5
+	
+		completion_reward = {
+			add_ideas = {
+				racial_deserigation
+			}
+		}
+	}
+
+	## END OF HoW ##
+	## NORTH AMERICAN PATH ##
+	focus = {
+		id = ENG_conquest_of_paridise
+		x = -2
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_road_we_must_take
+
+		prerequisite = {
+			focus = ENG_the_road_we_must_take
+			focus = ENG_restrained_no_more
+			focus = ENG_here_comes_the_money
+			focus = ENG_a_blessed_day
+			focus = ENG_daddy_knows_best           
+		}
+
+		mutually_exclusive = {
+			focus = ENG_defend_the_status_quo
+			focus = ENG_avengin_dreams
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_prepare_for_the_american_war
+		x = -3
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_conquest_of_paridise
+
+		prerequisite = {
+			focus = ENG_conquest_of_paridise         
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_birth_of_the_north_american_domminion
+		x = -1
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_conquest_of_paridise
+
+		prerequisite = {
+			focus = ENG_conquest_of_paridise         
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_setting_aside_our_diferences
+		x = 1
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_conquest_of_paridise
+
+		prerequisite = {
+			focus = ENG_conquest_of_paridise         
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_demonizing_americans
+		x = 3
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_conquest_of_paridise
+
+		prerequisite = {
+			focus = ENG_conquest_of_paridise         
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_march_westward
+		x = -2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_conquest_of_paridise
+
+		prerequisite = {
+			focus = ENG_prepare_for_the_american_war         
+		}	
+		prerequisite = {
+			focus = ENG_birth_of_the_north_american_domminion 
+		}
+		prerequisite = {
+			focus = ENG_setting_aside_our_diferences
+		}
+		prerequisite = {
+			focus = ENG_demonizing_americans 
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_seize_cuba
+		x = 0
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_conquest_of_paridise
+
+		prerequisite = {
+			focus = ENG_prepare_for_the_american_war         
+		}	
+		prerequisite = {
+			focus = ENG_birth_of_the_north_american_domminion 
+		}
+		prerequisite = {
+			focus = ENG_setting_aside_our_diferences
+		}
+		prerequisite = {
+			focus = ENG_demonizing_americans 
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_death_to_the_tri_star_state
+		x = 2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_conquest_of_paridise
+
+		prerequisite = {
+			focus = ENG_prepare_for_the_american_war         
+		}	
+		prerequisite = {
+			focus = ENG_birth_of_the_north_american_domminion 
+		}
+		prerequisite = {
+			focus = ENG_setting_aside_our_diferences
+		}
+		prerequisite = {
+			focus = ENG_demonizing_americans 
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_operation_excalibur
+		x = -1
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_conquest_of_paridise
+
+		prerequisite = {
+			focus = ENG_march_westward         
+		}	
+		prerequisite = {
+			focus = ENG_seize_cuba 
+		}
+		prerequisite = {
+			focus = ENG_death_to_the_tri_star_state
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_stomp_out_american_commies
+		x = 1
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_conquest_of_paridise
+
+		prerequisite = {
+			focus = ENG_march_westward         
+		}	
+		prerequisite = {
+			focus = ENG_seize_cuba 
+		}
+		prerequisite = {
+			focus = ENG_death_to_the_tri_star_state
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_war_for_alaska
+		x = 0
+		y = 5
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_conquest_of_paridise
+
+		prerequisite = {
+			focus = ENG_operation_excalibur         
+		}	
+		prerequisite = {
+			focus = ENG_stomp_out_american_commies
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_defend_the_status_quo
+		x = 5
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_road_we_must_take
+
+		prerequisite = {
+			focus = ENG_the_road_we_must_take
+			focus = ENG_restrained_no_more
+			focus = ENG_here_comes_the_money
+			focus = ENG_a_blessed_day     
+			focus = ENG_daddy_knows_best      
+		}
+		
+		mutually_exclusive = {
+			focus = ENG_conquest_of_paridise
+			focus = ENG_avengin_dreams
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_a_meeting_between_monarchs
+		x = 0
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_defend_the_status_quo
+
+		prerequisite = {
+			focus = ENG_defend_the_status_quo
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_invite_italy
+		x = -2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_defend_the_status_quo
+
+		prerequisite = {
+			focus = ENG_a_meeting_between_monarchs
+		}
+
+		mutually_exclusive = {
+			focus = ENG_invite_austria
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_invite_austria
+		x = 2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_defend_the_status_quo
+
+		prerequisite = {
+			focus = ENG_a_meeting_between_monarchs
+		}
+
+		mutually_exclusive = {
+			focus = ENG_invite_italy
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_invite_the_ottomans
+		x = -2
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_defend_the_status_quo
+
+		prerequisite = {
+			focus = ENG_invite_austria
+			focus = ENG_invite_italy
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_invite_greece
+		x = 0
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_defend_the_status_quo
+
+		prerequisite = {
+			focus = ENG_invite_austria
+			focus = ENG_invite_italy
+		}
+
+		mutually_exclusive = {
+			focus = ENG_invite_bulgaria
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_invite_bulgaria
+		x = 2
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_defend_the_status_quo
+
+		prerequisite = {
+			focus = ENG_invite_austria
+			focus = ENG_invite_italy
+		}
+
+		mutually_exclusive = {
+			focus = ENG_invite_greece
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_invite_ottomans
+		x = -2
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_defend_the_status_quo
+
+		prerequisite = {
+			focus = ENG_invite_austria
+			focus = ENG_invite_italy
+		}
+
+		mutually_exclusive = {
+			focus = ENG_invite_greece
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_invite_portugal
+		x = 1
+		y = 4
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_defend_the_status_quo
+
+		prerequisite = {
+			focus = ENG_invite_greece
+			focus = ENG_invite_bulgaria
+			focus = ENG_invite_the_ottomans
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_invite_spain
+		x = -1
+		y = 4
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_defend_the_status_quo
+
+		prerequisite = {
+			focus = ENG_invite_greece
+			focus = ENG_invite_bulgaria
+			focus = ENG_invite_the_ottomans
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_towards_world_peace
+		x = 0
+		y = 5
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_defend_the_status_quo
+
+		prerequisite = {
+			focus = ENG_invite_portugal
+		}
+		prerequisite = {
+			focus = ENG_invite_spain
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_avengin_dreams
+		x = 12
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_the_road_we_must_take
+
+		prerequisite = {
+			focus = ENG_the_road_we_must_take
+			focus = ENG_restrained_no_more
+			focus = ENG_here_comes_the_money
+			focus = ENG_a_blessed_day   
+			focus = ENG_daddy_knows_best        
+		}
+
+		mutually_exclusive = {
+			focus = ENG_defend_the_status_quo
+			focus = ENG_conquest_of_paridise
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_closer_ties_with_russia
+		x = -3
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_avengin_dreams
+
+		prerequisite = {
+			focus = ENG_avengin_dreams          
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_anglo_bonapartist_propaganda
+		x = -1
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_avengin_dreams
+
+		prerequisite = {
+			focus = ENG_avengin_dreams          
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_fund_french_terrorists
+		x = 1
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_avengin_dreams
+
+		prerequisite = {
+			focus = ENG_avengin_dreams          
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_vengence_for_catalonia
+		x = 3
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_avengin_dreams
+
+		prerequisite = {
+			focus = ENG_avengin_dreams          
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_military_buildup_in_the_channel
+		x = -2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_avengin_dreams
+
+		prerequisite = {
+			focus = ENG_closer_ties_with_russia          
+		}
+		prerequisite = {
+			focus = ENG_anglo_bonapartist_propaganda
+		}
+		prerequisite = {
+			focus = ENG_fund_french_terrorists
+		}
+		prerequisite = {
+			focus = ENG_vengence_for_catalonia  
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_persuade_the_liberians
+		x = 2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_avengin_dreams
+
+		prerequisite = {
+			focus = ENG_closer_ties_with_russia          
+		}
+		prerequisite = {
+			focus = ENG_anglo_bonapartist_propaganda
+		}
+		prerequisite = {
+			focus = ENG_fund_french_terrorists
+		}
+		prerequisite = {
+			focus = ENG_vengence_for_catalonia  
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_strike_france
+		x = 0
+		y = 5
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_avengin_dreams
+
+		prerequisite = {
+			focus = ENG_military_buildup_in_the_channel          
+		}
+		prerequisite = {
+			focus = ENG_persuade_the_liberians
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_brittania_rules_the_waves
+		x = -7
+		y = 7
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_avengin_dreams
+
+		prerequisite = {
+			focus = ENG_war_for_alaska
+			focus = ENG_towards_world_peace
+			focus = ENG_strike_france          
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+
+	## 'OTHER' DYNASTIES ##
+	focus = {
+		id = ENG_outsource_a_new_king
+		x = 12
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_convene_regency_council
+
+		prerequisite = {
+			focus = ENG_convene_regency_council           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+
+		mutually_exclusive = {
+			focus = ENG_religous_primacy
+			focus = ENG_capitalist_primacy
+			focus = ENG_militarist_primacy
+		}
+	
+		completion_reward = {
+		}
+	}
+
+	## von Hanover ##
+	focus = {
+		id = ENG_a_german_king
+		x = 1
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_outsource_a_new_king
+
+		prerequisite = {
+			focus = ENG_outsource_a_new_king           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_promote_prussian_militarism
+		x = -3
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_a_german_king           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_traditional_gender_roles
+		x = -1
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_a_german_king           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_anti_left_rhetoric
+		x = 1
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_a_german_king           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_endorse_anglo_german_capitalism
+		x = 3
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_a_german_king           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_stability_through_hierachy
+		x = -2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_promote_prussian_militarism           
+		}
+		prerequisite = {
+			focus = ENG_traditional_gender_roles
+		}
+		prerequisite = {
+			focus = ENG_anti_left_rhetoric
+		}
+		prerequisite = {
+			focus = ENG_endorse_anglo_german_capitalism
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_aristocratic_support
+		x = 0
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_promote_prussian_militarism           
+		}
+		prerequisite = {
+			focus = ENG_traditional_gender_roles
+		}
+		prerequisite = {
+			focus = ENG_anti_left_rhetoric
+		}
+		prerequisite = {
+			focus = ENG_endorse_anglo_german_capitalism
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_uniting_the_realms
+		x = 2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_promote_prussian_militarism           
+		}
+		prerequisite = {
+			focus = ENG_traditional_gender_roles
+		}
+		prerequisite = {
+			focus = ENG_anti_left_rhetoric
+		}
+		prerequisite = {
+			focus = ENG_endorse_anglo_german_capitalism
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_english_unification_of_germany
+		x = -2
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_stability_through_hierachy           
+		}
+		prerequisite = {
+			focus = ENG_aristocratic_support
+		}
+		prerequisite = {
+			focus = ENG_uniting_the_realms
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_enshrine_jewish_rights
+		x = 0
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_stability_through_hierachy           
+		}
+		prerequisite = {
+			focus = ENG_aristocratic_support
+		}
+		prerequisite = {
+			focus = ENG_uniting_the_realms
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_subdue_austria
+		x = 2
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_stability_through_hierachy           
+		}
+		prerequisite = {
+			focus = ENG_aristocratic_support
+		}
+		prerequisite = {
+			focus = ENG_uniting_the_realms
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_proclaim_the_domminion_of_germany
+		x = 0
+		y = 4
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_english_unification_of_germany           
+		}
+		prerequisite = {
+			focus = ENG_enshrine_jewish_rights
+		}
+		prerequisite = {
+			focus = ENG_subdue_austria
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_anglo_dutch_unity
+		x = -3
+		y = 5
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_proclaim_the_domminion_of_germany           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_satanic_blood_in_france
+		x = -1
+		y = 5
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_proclaim_the_domminion_of_germany           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_unification_of_india
+		x = 1
+		y = 5
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_proclaim_the_domminion_of_germany           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_unification_of_india
+		x = 1
+		y = 5
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_proclaim_the_domminion_of_germany           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_conquest_of_japan
+		x = 3
+		y = 5
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_proclaim_the_domminion_of_germany           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_multi_enthic_superpower
+		x = -2
+		y = 6
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_anglo_dutch_unity           
+		}
+		prerequisite = {
+			focus = ENG_satanic_blood_in_france           
+		}
+		prerequisite = {
+			focus = ENG_unification_of_india           
+		}
+		prerequisite = {
+			focus = ENG_conquest_of_japan           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_harsh_sentences_for_extremeists
+		x = 2
+		y = 6
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_anglo_dutch_unity           
+		}
+		prerequisite = {
+			focus = ENG_satanic_blood_in_france           
+		}
+		prerequisite = {
+			focus = ENG_unification_of_india           
+		}
+		prerequisite = {
+			focus = ENG_conquest_of_japan           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_ghost_of_george_iii
+		x = -1
+		y = 7
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_multi_enthic_superpower           
+		}
+		prerequisite = {
+			focus = ENG_harsh_sentences_for_extremeists           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_in_defence_of_christians
+		x = 1
+		y = 7
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_multi_enthic_superpower           
+		}
+		prerequisite = {
+			focus = ENG_harsh_sentences_for_extremeists           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_glory_to_the_hanovers
+		x = 0
+		y = 9
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_german_king
+
+		prerequisite = {
+			focus = ENG_ghost_of_george_iii           
+		}
+		prerequisite = {
+			focus = ENG_in_defence_of_christians           
+		}
+
+		allow_branch = {
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	## JACOBITE BRANCH ##
+	focus = {
+		id = ENG_victory_at_last
+		x = 80
+		y = 0
+		icon = GFX_ENG_mon_back_in_business
+		#relative_position_id = 
+
+		#prerequisite = {
+		#	focus = ENG_monarchy_back_in_business           
+		#}
+
+		available = {
+			AND = {
+				tag = JAC
+				has_government = neutrality
+				NOT = {
+					has_global_flag = ENG_civil_war_start
+				}
+			}	
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_prepare_the_coronation
+		x = 80
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		#relative_position_id = ENG_victory_at_last
+
+		prerequisite = {
+			focus = ENG_victory_at_last           
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_appoint_tolkien
+		x = 0
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_prepare_the_coronation
+
+		prerequisite = {
+			focus = ENG_prepare_the_coronation
+		}
+		available = {	
+		}	
+		
+		mutually_exclusive = {
+			focus = ENG_a_bonapart
+			focus = ENG_long_live_the_jacobites_again
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_a_bonapart
+		x = 10
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_prepare_the_coronation
+
+		prerequisite = {
+			focus = ENG_prepare_the_coronation
+		}
+		available = {	
+		}
+		
+		mutually_exclusive = {
+			focus = ENG_appoint_tolkien
+			focus = ENG_long_live_the_jacobites_again
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	
+	focus = {
+		id = ENG_long_live_the_jacobites_again
+		x = -10
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_prepare_the_coronation
+
+		prerequisite = {
+			focus = ENG_prepare_the_coronation
+		}
+		available = {	
+		}
+		
+		mutually_exclusive = {
+			focus = ENG_appoint_tolkien
+			focus = ENG_a_bonapart
+		}
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_promote_distributism
+		x = -6
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_long_live_the_jacobites_again
+
+		prerequisite = {
+			focus = ENG_long_live_the_jacobites_again           
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_eliminate_socialism
+		x = 0
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_long_live_the_jacobites_again
+
+		prerequisite = {
+			focus = ENG_long_live_the_jacobites_again           
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_weaken_the_protestants
+		x = -2
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_long_live_the_jacobites_again
+
+		prerequisite = {
+			focus = ENG_long_live_the_jacobites_again           
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_punish_the_greedy
+		x = 2
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_long_live_the_jacobites_again
+
+		prerequisite = {
+			focus = ENG_long_live_the_jacobites_again           
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_tension_between_worlds
+		x = 6
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_long_live_the_jacobites_again
+
+		prerequisite = {
+			focus = ENG_long_live_the_jacobites_again           
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_restore_the_old_guilds
+		x = -1
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_promote_distributism
+
+		prerequisite = {
+			focus = ENG_promote_distributism         
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_anti_trust_legislation
+		x = 1
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_promote_distributism
+
+		prerequisite = {
+			focus = ENG_promote_distributism         
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ENG_class_colaboration
+		x = 0
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_promote_distributism
+
+		prerequisite = {
+			focus = ENG_restore_the_old_guilds         
+		}
+
+		prerequisite = {
+			focus = ENG_anti_trust_legislation
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_side_with_the_industrialists
+		x = -1
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_tension_between_worlds
+
+		prerequisite = {
+			focus = ENG_tension_between_worlds
+		}
+
+		mutually_exclusive = {
+			focus = ENG_side_with_the_rural_folk
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_side_with_the_rural_folk
+		x = 1
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_tension_between_worlds
+
+		prerequisite = {
+			focus = ENG_tension_between_worlds
+		}
+
+		mutually_exclusive = {
+			focus = ENG_side_with_the_industrialists
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_peace_for_now
+		x = 0
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_tension_between_worlds
+
+		prerequisite = {
+			focus = ENG_side_with_the_industrialists
+		}
+
+		prerequisite = {
+			focus = ENG_side_with_the_rural_folk
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_contact_his_holiness
+		x = -3
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_long_live_the_jacobites_again
+
+		prerequisite = {
+			focus = ENG_weaken_the_protestants
+		}
+
+		prerequisite = {
+			focus = ENG_eliminate_socialism
+		}
+
+		prerequisite = {
+			focus = ENG_punish_the_greedy
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_returning_to_catholism
+		x = -1
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_long_live_the_jacobites_again
+
+		prerequisite = {
+			focus = ENG_weaken_the_protestants
+		}
+
+		prerequisite = {
+			focus = ENG_eliminate_socialism
+		}
+
+		prerequisite = {
+			focus = ENG_punish_the_greedy
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_endorse_catholic_education
+		x = 1
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_long_live_the_jacobites_again
+
+		prerequisite = {
+			focus = ENG_weaken_the_protestants
+		}
+
+		prerequisite = {
+			focus = ENG_eliminate_socialism
+		}
+
+		prerequisite = {
+			focus = ENG_punish_the_greedy
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_healing_the_sick_and_wounded
+		x = 3
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_long_live_the_jacobites_again
+
+		prerequisite = {
+			focus = ENG_weaken_the_protestants
+		}
+
+		prerequisite = {
+			focus = ENG_eliminate_socialism
+		}
+
+		prerequisite = {
+			focus = ENG_punish_the_greedy
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_a_catholic_kingdom
+		x = 0
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_long_live_the_jacobites_again
+
+		prerequisite = {
+			focus = ENG_contact_his_holiness
+		}
+
+		prerequisite = {
+			focus = ENG_returning_to_catholism
+		}
+
+		prerequisite = {
+			focus = ENG_endorse_catholic_education
+		}
+
+		prerequisite = {
+			focus = ENG_healing_the_sick_and_wounded
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_the_organic_state
+		x = 0
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_catholic_kingdom
+
+		prerequisite = {
+			focus = ENG_a_catholic_kingdom
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_blessed_are_the_meek
+		x = 2
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_catholic_kingdom
+
+		prerequisite = {
+			focus = ENG_a_catholic_kingdom
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_aristocratic_support_jac
+		x = -2
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_catholic_kingdom
+
+		prerequisite = {
+			focus = ENG_a_catholic_kingdom
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_a_modern_camelot
+		x = -2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_catholic_kingdom
+
+		prerequisite = {
+			focus = ENG_aristocratic_support_jac
+		}
+		prerequisite = {
+			focus = ENG_the_organic_state
+		}
+		prerequisite = {
+			focus = ENG_blessed_are_the_meek
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_our_anglo_saxon_heritage
+		x = 0
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_catholic_kingdom
+
+		prerequisite = {
+			focus = ENG_aristocratic_support_jac
+		}
+		prerequisite = {
+			focus = ENG_the_organic_state
+		}
+		prerequisite = {
+			focus = ENG_blessed_are_the_meek
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_subsidise_farmers
+		x = 2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_catholic_kingdom
+
+		prerequisite = {
+			focus = ENG_aristocratic_support_jac
+		}
+		prerequisite = {
+			focus = ENG_the_organic_state
+		}
+		prerequisite = {
+			focus = ENG_blessed_are_the_meek
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_central_government
+		x = -1
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_catholic_kingdom
+
+		prerequisite = {
+			focus = ENG_a_modern_camelot
+		}
+		prerequisite = {
+			focus = ENG_our_anglo_saxon_heritage
+		}
+		prerequisite = {
+			focus = ENG_subsidise_farmers
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_incorparate_ireland
+		x = 1
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_catholic_kingdom
+
+		prerequisite = {
+			focus = ENG_a_modern_camelot
+		}
+		prerequisite = {
+			focus = ENG_our_anglo_saxon_heritage
+		}
+		prerequisite = {
+			focus = ENG_subsidise_farmers
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_the_final_reforms
+		x = 0
+		y = 4
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_catholic_kingdom
+
+		prerequisite = {
+			focus = ENG_incorparate_ireland
+		}
+		prerequisite = {
+			focus = ENG_central_government
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_the_final_reforms
+		x = 0
+		y = 4
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_catholic_kingdom
+
+		prerequisite = {
+			focus = ENG_incorparate_ireland
+		}
+		prerequisite = {
+			focus = ENG_central_government
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_theistic_darwinism
+		x = -2
+		y = 5
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_catholic_kingdom
+
+		prerequisite = {
+			focus = ENG_the_final_reforms
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_science_as_prayer
+		x = 0
+		y = 5
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_catholic_kingdom
+
+		prerequisite = {
+			focus = ENG_the_final_reforms
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_america_delenda_est
+		x = 2
+		y = 5
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_catholic_kingdom
+
+		prerequisite = {
+			focus = ENG_the_final_reforms
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_protestant_preversion_undone
+		x = 0
+		y = 7
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_catholic_kingdom
+
+		prerequisite = {
+			focus = ENG_theistic_darwinism
+		}
+
+		prerequisite = {
+			focus = ENG_science_as_prayer
+		}
+
+		prerequisite = {
+			focus = ENG_america_delenda_est
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_restore_a_kingdom
+		x = -1
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_appoint_tolkien
+
+		prerequisite = {
+			focus = ENG_appoint_tolkien
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_the_knights_of_old
+		x = 1
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_appoint_tolkien
+
+		prerequisite = {
+			focus = ENG_appoint_tolkien
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_christian_distributism
+		x = 3
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_appoint_tolkien
+
+		prerequisite = {
+			focus = ENG_appoint_tolkien
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_pro_agrarian_bias
+		x = 5
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_appoint_tolkien
+
+		prerequisite = {
+			focus = ENG_appoint_tolkien
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_the_devil_in_communism
+		x = 0
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_appoint_tolkien
+
+		prerequisite = {
+			focus = ENG_restore_a_kingdom
+		}
+
+		prerequisite = {
+			focus = ENG_the_knights_of_old
+		}
+
+		prerequisite = {
+			focus = ENG_christian_distributism
+		}
+
+		prerequisite = {
+			focus = ENG_pro_agrarian_bias 
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_death_penalty_for_traitors
+		x = 2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_appoint_tolkien
+
+		prerequisite = {
+			focus = ENG_restore_a_kingdom
+		}
+
+		prerequisite = {
+			focus = ENG_the_knights_of_old
+		}
+
+		prerequisite = {
+			focus = ENG_christian_distributism
+		}
+
+		prerequisite = {
+			focus = ENG_pro_agrarian_bias 
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ENG_medieval_romanticism
+		x = 4
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_appoint_tolkien
+
+		prerequisite = {
+			focus = ENG_restore_a_kingdom
+		}
+
+		prerequisite = {
+			focus = ENG_the_knights_of_old
+		}
+
+		prerequisite = {
+			focus = ENG_christian_distributism
+		}
+
+		prerequisite = {
+			focus = ENG_pro_agrarian_bias 
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_racial_equality_under_god
+		x = 1
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_appoint_tolkien
+
+		prerequisite = {
+			focus = ENG_the_devil_in_communism
+		}
+
+		prerequisite = {
+			focus = ENG_death_penalty_for_traitors	
+		}
+
+		prerequisite = {
+			focus = ENG_medieval_romanticism
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_dreams_of_merry_england
+		x = 3
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_appoint_tolkien
+
+		prerequisite = {
+			focus = ENG_the_devil_in_communism
+		}
+
+		prerequisite = {
+			focus = ENG_death_penalty_for_traitors	
+		}
+
+		prerequisite = {
+			focus = ENG_medieval_romanticism
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_just_war_theory
+		x = 3
+		y = 4
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_appoint_tolkien
+
+		prerequisite = {
+			focus = ENG_racial_equality_under_god
+		}
+
+		prerequisite = {
+			focus = ENG_dreams_of_merry_england	
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_decentalized_government
+		x = 1
+		y = 4
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_appoint_tolkien
+
+		prerequisite = {
+			focus = ENG_racial_equality_under_god
+		}
+
+		prerequisite = {
+			focus = ENG_dreams_of_merry_england	
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_tolkiens_legacy
+		x = 2
+		y = 6
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_appoint_tolkien
+
+		prerequisite = {
+			focus = ENG_decentalized_government
+		}
+
+		prerequisite = {
+			focus = ENG_just_war_theory	
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_the_irish_question
+		x = -2
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_bonapart
+
+		prerequisite = {
+			focus = ENG_a_bonapart
+		}		
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_subjugate_the_irish
+		x = -2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_bonapart
+
+		prerequisite = {
+			focus = ENG_the_irish_question
+		}		
+
+		mutually_exclusive = {
+			focus = ENG_recognise_rohan_chabots_claim
+			focus = ENG_recogonise_irish_independence	
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_recogonise_irish_independence
+		x = -4
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_bonapart
+
+		prerequisite = {
+			focus = ENG_the_irish_question
+		}		
+
+		mutually_exclusive = {
+			focus = ENG_recognise_rohan_chabots_claim
+			focus = ENG_subjugate_the_irish	
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_recognise_rohan_chabots_claim
+		x = 0
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_bonapart
+
+		prerequisite = {
+			focus = ENG_the_irish_question
+		}		
+
+		mutually_exclusive = {
+			focus = ENG_recogonise_irish_independence
+			focus = ENG_subjugate_the_irish	
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_irish_auxiliary_units
+		x = -2
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_bonapart
+
+		prerequisite = {
+			focus = ENG_recogonise_irish_independence
+			focus = ENG_subjugate_the_irish
+			focus = ENG_recognise_rohan_chabots_claim
+		}		
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_britain_under_the_emperor
+		x = 4
+		y = 1
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_bonapart
+
+		prerequisite = {
+			focus = ENG_a_bonapart
+		}		
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_french_military_occupation
+		x = 2
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_bonapart
+
+		prerequisite = {
+			focus = ENG_britain_under_the_emperor
+		}		
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_pro_french_media
+		x = 4
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_bonapart
+
+		prerequisite = {
+			focus = ENG_britain_under_the_emperor
+		}		
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_commence_the_purge
+		x = 6
+		y = 2
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_bonapart
+
+		prerequisite = {
+			focus = ENG_britain_under_the_emperor
+		}		
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_root_out_traitors
+		x = 5
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_bonapart
+
+		prerequisite = {
+			focus = ENG_french_military_occupation
+		}	
+		
+		prerequisite = {
+			focus = ENG_pro_french_media
+		}
+
+		prerequisite = {
+			focus = ENG_commence_the_purge
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_joan_of_arc_avenged
+		x = 3
+		y = 3
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_bonapart
+
+		prerequisite = {
+			focus = ENG_french_military_occupation
+		}	
+		
+		prerequisite = {
+			focus = ENG_pro_french_media
+		}
+
+		prerequisite = {
+			focus = ENG_commence_the_purge
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_war_production_in_britain
+		x = 3
+		y = 4
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_bonapart
+
+		prerequisite = {
+			focus = ENG_irish_auxiliary_units
+		}	
+		
+		prerequisite = {
+			focus = ENG_joan_of_arc_avenged
+		}
+
+		prerequisite = {
+			focus = ENG_root_out_traitors
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_taittingers_ruthlessness
+		x = 5
+		y = 4
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_bonapart
+
+		prerequisite = {
+			focus = ENG_irish_auxiliary_units
+		}	
+		
+		prerequisite = {
+			focus = ENG_joan_of_arc_avenged
+		}
+
+		prerequisite = {
+			focus = ENG_root_out_traitors
+		}
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_the_triumph_of_roman_catholism
+		x = 3
+		y = 5
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_bonapart
+
+		prerequisite = {
+			focus = ENG_war_production_in_britain
+		}	
+		
+		prerequisite = {
+			focus = ENG_taittingers_ruthlessness
+		}
+
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_rehabilitate_montgomery
+		x = 5
+		y = 5
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_bonapart
+
+		prerequisite = {
+			focus = ENG_war_production_in_britain
+		}	
+		
+		prerequisite = {
+			focus = ENG_taittingers_ruthlessness
+		}
+
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_williams_wet_dream
+		x = 4
+		y = 7
+		icon = GFX_ENG_mon_back_in_business
+		relative_position_id = ENG_a_bonapart
+
+		prerequisite = {
+			focus = ENG_war_production_in_britain
+		}	
+		
+		prerequisite = {
+			focus = ENG_taittingers_ruthlessness
+		}
+
+
+		available = {
+		}			
+
+		cost = 2
+	
+		completion_reward = {
+		}
+	}
+
+	
+
+	
+
 	############################
 	# C O L O N I A L  T R E E # 
-	##########################
+	############################
 
 	################################
 	# M I L I T A R Y  B R A N C H #

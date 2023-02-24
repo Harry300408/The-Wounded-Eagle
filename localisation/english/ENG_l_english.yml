@@ -15,6 +15,25 @@
             ENG_disolve_parliment:0 "Dissolve Parliament"
             ENG_blood_stains_in_london:0 "Blood Stains In London"
 
+  ENG_monarchy_back_in_business:0 "Monarchy is Back in Business"
+    ENG_drastic_measures:0 "Drastic Measures"
+      ENG_alberts_approach:0 "Albert's Approach"
+      
+      ENG_fate_of_the_domminions:0 "Fate of The Domminions"
+      ENG_imperial_federation_TWE:0 "Towards an Imperial Federation"
+      ENG_bon_voyage:0 "Bon Voyage"
+      ENG_strengthen_our_grip:0 "Strengthen Our Grip"
+      ENG_racial_deserigation:0 "Racial Desegrigation"
+
+      ENG_better_welfare:0 "Better Welfare"
+      ENG_buy_british:0 "Buy British"
+      ENG_family_relief:0 "Family Relief"
+      ENG_healing_our_wounds:0 "Healing Our Wounds"
+      ENG_traitors_on_trial:0 "Traitors Put On Trial"
+      ENG_the_marconi_reforms:0 "The Marconi Reforms"
+      ENG_free_market_policies:0 "Free Market Policies"
+      ENG_gain_workers_trust:0 "Gain The Workers Trust"
+
   ## PARTIES ##
   ENG_communism_party:0 "§tCP"
   ENG_communism_party_long:0 "§tthe Communist Party of Great Britian"
@@ -41,6 +60,9 @@
   ENG_rad_trad_party:0 "FPB"
   ENG_rad_trad_party_long:0 "Free People of Britain"
 
+  ## COUNTRY FLAGS ##
+  ENG_civil_war_start:0 " In the English Civil War"
+
   ## BOOKMARK LOC ##
 
   ENG_TWE:0 "After the Great War the Kingdom of Great Britian went into termoil, politically and ruraly. This lead to an economic recesion futher worsoning the situation. This lead to labour being elected in the next General Election, they refomed the country and stabalised the economy. but people are still not happy. There is low moral in the army, navy & air along with General strikes that are a almost day to day occurance. \n\nWhat will you do to make this nation great again?"
@@ -56,6 +78,22 @@
 
   cracked_down_on_riots:0 "Has Cracked Down On Riots"
   riots_continue:0 "Has Not Cracked Down On Riots"
+
+  ## DECISIONS ##
+  ENG_imp_fed_decs:0 "Unlocks Decisions to Create The Imperial Federation"
+
+  march_towards_winnipeg:0 "Towards Winnipeg [BOR.GetFlag]"
+  march_on_ottawa:0 "March on Ottawa [CAN.GetFlag]"
+  onto_halifax:0 "Onto Halifax [NBW.GetFlag]"
+  retake_our_name:0 "Retake Our Name [NEN.GetFlag]"
+  free_no_more:0 "Free No More [LAC.GetFlag]"
+  protected_no_more:0 "Protected No More [GLF.GetFlag]"
+  direct_administration:0 "Direct Administration [NOL.GetFlag]"
+  a_true_british_columbia:0 "A True British Columbia [CLU.GetFlag]"
+  the_king_is_the_pharaoh:0 "The King Is The New Pharaoh [EGY.GetFlag]"
+  end_the_apartheid:0 "End The Apartheid [SAF.GetFlag]"
+  under_new_management:0 "Under New management [MAL.GetFlag]"
+  what_is_a_kiwi:0 "What Is A Kiwi? [NZL.GetFlag]"
 
   ## EVENT STUFF ##
 
@@ -180,10 +218,10 @@
   ENGstart.19.b:0 "Crymu Is Free!"
 
 
-  ENGstart.20:0 "Blood In London"
-  ENGstart.20.t:0 ""
+  ENGstart.20.t:0 "Blood In London"
+  ENGstart.20.d:0 "The streets in London have been running red with the blood of slain politicians and their supporters, brought about by a terrorist attack that saw the deaths of Philip Snowden, Clement Attlee, and a thousand other individuals. His royal majesty, King Edward VIII, was shot on his left leg, but has fortunately survived the attack. He personally informed reporters that the bullet was, in his own words, “little more than a scratch.” However, that is the least of our concerns, especially since political tensions have been on the rise since 1929, when the London Stock Market Crash gave way to a host of extremist movements with the intent of bringing our nation into the gates of hell.\n\n Leftists led by Oswald Moseley, George Orwell, and Harry Pollit have taken over Nottingham, forming a formidable coalition of Unionists, Anarchists, and Communists with the intent of overthrowing the Westminster government and the Royal Family. In Plymouth, Freda Du Flur and other reactionaries have begun their move by seizing control of southwest England with the aim of promoting what they refer to as the “traditionalist worldview” in defiance against what they see as “modernist degeneracy.” In Newcastle, reports of Catholic activity have led to the confirmation of a Neo-Jacobite League, seeking to install Jacobo Fitz-James Stuart, 17th Duke of Alba as the “true king of Britain” under the christened name of James II, has taken over part of Northern England. However, there are also reports of a republican movement made up of English separatists on the one hand and Neo-Jacobites on the other, the latter taking inspiration from the French and American revolutions. Nationalist forces such as the Anglo-Saxon League, British Fascists, National Volkists, and National Syndicalists have seized control of Birmingham, declaring both the monarchy and Westminster as “too weak and unstable” to rule effectively while also attacking members of the Jewish community. \n\n No one knows who was responsible for the attack that has brought our already crippled nation into this point."
 
-  ENGstart.20.a:0 "Lets Hope This Doesn't Ruin Us"
+  ENGstart.20.a:0 " May God have mercy on us all."
 
   
   ENGstart.21.t:0 "The Northen Occupation"
@@ -229,6 +267,66 @@
   ENGstart.27.t:0 "The Domminions Break From The Crown!"
   ENGstart.27.d:0 "Today, The domminions, lead by Canada, broke off from the crown and are now their own soverign states. We cannot do anything about this "
 
+  ENGstart.27.a:0 "Farewell..."
 
 
-  
+  ENGstart.28.t:0 "THE ENGLISH CIVIL WAR!"
+  ENGstart.28.d:0 "Yesterday at 15:21 all factions of the English Political Crisis formaly declared war on each other with the Nationalists taking the 1st move and attaking Manchester a Jacobite controlled City. Is this an end to England or will it be a new beggining?"
+
+  ENGstart.28.a:0 "For King And Country!"
+
+
+  ENGstart.29.t:0 "THE ENGLISH CIVIL WAR!"
+  ENGstart.29.d:0 "Yesterday at 15:21 all factions of the English Political Crisis formaly declared war on each other with the Nationalists taking the 1st move and attaking Manchester a Jacobite controlled City. Is this an end to England or will it be a new beggining?"
+
+  ENGstart.29.a:0 "What A Mess!"
+
+
+  ENGstart.30.t:0 "The South Rejoins Us!"
+  ENGstart.30.d:0 "The Lowlands have been liberated! Our forces have been able to deter English forces and more importantly stir up trouble in the north of England."
+
+  ENGstart.30.a:0 "Scotland Is United Once More!"
+
+
+  ENGstart.31.t:0 "Victory!"
+  ENGstart.31.d:0 "We have secured victory over all other factions in England, with the nation destabalised we will need to rebuild & restabalise."
+
+  ENGstart.31.a:0 "For King and Country!"
+
+
+  ENGstart.32.t:0 "Victory!"
+  ENGstart.32.d:0 "We have secured victory over all other factions in England, with the nation destabalised we will need to rebuild & restabalise."
+
+  ENGstart.32.a:0 "For A More Nationalist Future!"
+
+
+  ENGstart.33.t:0 "Victory!"
+  ENGstart.33.d:0 "We have secured victory over all other factions in England, with the nation destabalised we will need to rebuild & restabalise."
+
+  ENGstart.33.a:0 "A Great Victory for Farmers!"
+
+
+  ENGstart.34.t:0 "Victory!"
+  ENGstart.34.d:0 "We have secured victory over all other factions in England, with the nation destabalised we will need to rebuild & restabalise."
+
+  ENGstart.34.a:0 "For The Revolution!" 
+
+
+  ENGstart.39.t:0 "Victory!"
+  ENGstart.39.d:0 "We have secured victory over all other factions in England, with the nation destabalised we will need to rebuild & restabalise."
+
+  ENGstart.39.a:0 "For The True King and Country!"
+
+
+  ENGstart.35.t:0 "A Loyalist Victory"
+  ENGstart.35.d:0 "After the formal victory was anounced today by the English Government, King Edward and the Tory party was able to comfortably sit back and relax after a tense civil war. But they can't relax too much as they have to restore order in the country and setup a multi-party government again"
+
+  ENGstart.35.a:0 ""Dieu et Mon Droit""
+
+
+  ENGmon.1.t:0 "Drastic Measures"
+  ENGmon.1.d:0 "Four days have passed since the King’s decision to arrest the demonstrators, and still the nation was yet to recover from the upheaval that was going on. Inside a dark, dull room stood a middle-aged man from Dublin who lost everything to the accursed British oppressors. His wife, his family, his house, all of that was gone. He worked hard at his job in the automobile industry only to be paid little by his boss. One day, when he got too tired and exhausted, he got fired. And because of that, he struggled and suffered as years went on. His troubles only got worse when the stock market crashed around 1929, driving him into poverty. He had nothing to lose now. He didn’t join the Orwellites just so he could just wallow in his sad, pathetic existence. No, he wanted to give all the rich snobs a lesson they would never forget.\n He counted the amount of bullets he had at his disposal before putting them inside his M1911. He put his hat on before leaving from the building at Oxford Street, hiding with a cheering crowd who were welcoming the man in the backseat of the car who dissolved Parliament. The same man who represented everything the poor fellow resented most: King Edward VIII. \n At last, he was present, all was going according to plan. The Orwellites have been planning for quite some time to give a message to the world that no one was ever truly untouchable, not even a king. George Orwell himself bever wanted the king dead, just deposed, but his most fanatical followers thought otherwise. The Irish man resented King Edward and his family, blaming the both for his suffering, the suffering of his fellow common folk, and the centuries of his ancestral homeland suffering from English rule. All his life, he was looked down upon by people outside of his blood, even by the Scottish. To them, he was just a “drunk paddie” fit only for servitude, a lower stage of human evolution, an inferior. He was fed up with all that cruel treatment. But he knew better than to put the blame entirely on people outside of his own. There some good souls among he encountered, most of them being fellow Orwellites. They too have suffered under the unbearable weight of statism and capitalism. \n The vehicle was coming closer to him now, his target along with it. His hand placed on the gun concealed in his coat, he walked towards the approaching automobile, seizing the moment. The shot was made."
+
+  ENGmon.1.a:0 "The bullet misses its target and the 'assasin' is arrested"
+  ENGmon.1.b:0 "The bullet misses its target, but the King soon announced his abdication over fear of his safty"
+  ENGmon.1.c:0 "The bullet hits into the King’s head, killing him instantly."

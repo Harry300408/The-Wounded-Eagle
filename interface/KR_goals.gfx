@@ -94,7 +94,87 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_blood_in_london"
 		texturefile = "gfx/interface/goals/ENG/blood_in_london.png"			
-	}	
+	}
+	
+	SpriteType = {
+		name = "GFX_ENG_mon_back_in_business"
+		texturefile = "gfx/interface/goals/ENG/mon_back_in_business.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_drastic_measures"
+		texturefile = "gfx/interface/goals/ENG/drastic_measures.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_alberts_approach"
+		texturefile = "gfx/interface/goals/ENG/alberts_approach.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_fate_of_the_domminions"
+		texturefile = "gfx/interface/goals/ENG/fate_of_the_domminionss.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_imperial_federation_TWE"
+		texturefile = "gfx/interface/goals/ENG/imperial_federation_TWE.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_bon_voyage"
+		texturefile = "gfx/interface/goals/ENG/bon_voyage.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_strngthen_our_grip"
+		texturefile = "gfx/interface/goals/ENG/strngthen_our_grip.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_racial_deserigation"
+		texturefile = "gfx/interface/goals/ENG/racial_deserigation.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_better_welfare"
+		texturefile = "gfx/interface/goals/ENG/better_welfare.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_buy_british"
+		texturefile = "gfx/interface/goals/ENG/buy_british.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_family_relief"
+		texturefile = "gfx/interface/goals/ENG/family_relief.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_healing_our_wounds"
+		texturefile = "gfx/interface/goals/ENG/healing_our_wounds.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_traitors_on_trial"
+		texturefile = "gfx/interface/goals/ENG/traitors_on_trial.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_the_marconi_reforms"
+		texturefile = "gfx/interface/goals/ENG/the_marconi_reforms.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_free_market_policies"
+		texturefile = "gfx/interface/goals/ENG/free_market_policies.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_gain_workers_trust"
+		texturefile = "gfx/interface/goals/ENG/gain_workers_trust.png"			
+	}
 
 
 

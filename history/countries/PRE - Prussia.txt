@@ -10,6 +10,16 @@ add_ideas = {
 	GERMANY_member_of_confederation_idea
 }
 
+add_ideas = {
+	parliamentary_rep
+	census_votes
+}
+
+create_faction = "PRE_VF"
+add_to_faction = PRE
+add_to_faction = MEX
+add_to_faction = NOR
+
 #Variants
 #Tanks
 if = {

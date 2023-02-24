@@ -55,5 +55,59 @@ ideas = {
 		
 		}
 
+		racial_deserigation = {
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				recruitable_population_factor = 0.05
+				consumer_goods_factor = -0.01
+				war_support_weekly = 0.01
+			}
+		
+		}
+
+		marconi_reforms = {
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		
+		}
+
+		buy_british = {
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		
+		}
+
     }
 }        

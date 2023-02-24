@@ -34,6 +34,9 @@ if = {
 	}
 }
 
+create_faction = "OTT_EMP"
+add_to_faction = TUR
+
 if = {
 	limit = {
 		has_dlc = "Together for Victory"
@@ -43,9 +46,21 @@ if = {
 		target = BUL
 		autonomous_state = autonomy_OTT_eya
 	}
+
+	set_autonomy = {
+		target = LBA
+		autonomous_state = autonomy_OTT_eya
+	}
+
+	set_autonomy = {
+		target = MED
+		autonomous_state = autonomy_OTT_eya
+	}
 	
 	else = {
 		puppet = BUL
+		puppet = LBA
+		puppet = MED
 	}	
 
 }

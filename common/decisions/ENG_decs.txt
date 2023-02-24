@@ -1,0 +1,596 @@
+ENG_imperial_federation_TWE = {
+
+	march_towards_winnipeg = {
+		allowed = {  
+		}
+
+		is_good = yes
+		fire_only_once = yes
+		cost = 100
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			BOR = {
+				every_owned_state = {
+					add_core_of = ENG
+				} 
+			}
+
+			if = {
+				limit = {
+					BOR = {
+						OVERLORD = ENG
+					}
+				}
+				set_autonomy = {
+					target = BOR
+					autonomy_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+				remove_from_faction = BOR
+			}
+			create_wargoal = { 
+				type = annex_everything 
+				target = BOR 
+			}
+		}
+
+		ai_will_do = {
+
+		}
+	}
+
+	march_on_ottawa = {
+		allowed = {  
+		}
+
+		is_good = yes
+		fire_only_once = yes
+		cost = 100
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			CAN = {
+				every_owned_state = {
+					add_core_of = ENG
+				} 
+			}
+
+			if = {
+				limit = {
+					CAN = {
+						OVERLORD = ENG
+					}
+				}
+				set_autonomy = {
+					target = CAN
+					autonomy_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+				remove_from_faction = CAN
+			}
+			create_wargoal = { 
+				type = annex_everything 
+				target = CAN 
+			}
+			
+		}
+
+		ai_will_do = {
+
+		}
+	}
+
+	onto_halifax = {
+		allowed = {  
+		}
+
+		is_good = yes
+		fire_only_once = yes
+		cost = 100
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			NBW = {
+				every_owned_state = {
+					add_core_of = ENG
+				} 
+			}
+
+			if = {
+				limit = {
+					NBW = {
+						OVERLORD = ENG
+					}
+				}
+				set_autonomy = {
+					target = NBW
+					autonomy_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+				remove_from_faction = NBW
+			}
+			create_wargoal = { 
+				type = annex_everything 
+				target = NBW 
+			}
+			
+		}
+
+		ai_will_do = {
+
+		}
+	}
+
+	retake_our_name = {
+		allowed = {  
+		}
+
+		is_good = yes
+		fire_only_once = yes
+		cost = 100
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			NEN = {
+				every_owned_state = {
+					add_core_of = ENG
+				} 
+			}
+
+			if = {
+				limit = {
+					NEN = {
+						OVERLORD = ENG
+					}
+				}
+				set_autonomy = {
+					target = NEN
+					autonomy_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+				remove_from_faction = NEN
+			}
+			create_wargoal = { 
+				type = annex_everything 
+				target = NEN 
+			}
+
+			
+			
+		}
+
+		ai_will_do = {
+
+		}
+	}
+
+	free_no_more = {
+		allowed = {  
+		}
+
+		is_good = yes
+		fire_only_once = yes
+		cost = 100
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			LAC = {
+				every_owned_state = {
+					add_core_of = ENG
+				} 
+			}
+
+			if = {
+				limit = {
+					LAC = {
+						OVERLORD = ENG
+					}
+				}
+				set_autonomy = {
+					target = LAC
+					autonomy_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+				remove_from_faction = LAC
+			}
+			create_wargoal = { 
+				type = annex_everything 
+				target = LAC 
+			}
+			
+		}
+
+		ai_will_do = {
+
+		}
+	}
+
+	protected_no_more = {
+		allowed = {  
+		}
+
+		is_good = yes
+		fire_only_once = yes
+		cost = 100
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			GLF = {
+				every_owned_state = {
+					add_core_of = ENG
+				} 
+			}
+
+			if = {
+				limit = {
+					GLF = {
+						OVERLORD = ENG
+					}
+				}
+				set_autonomy = {
+					target = GLF
+					autonomy_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+				remove_from_faction = GLF
+			}
+			create_wargoal = { 
+				type = annex_everything 
+				target = GLF 
+			}
+			
+		}
+
+		ai_will_do = {
+
+		}
+	}
+
+	a_true_british_columbia = {
+		allowed = {  
+		}
+
+		is_good = yes
+		fire_only_once = yes
+		cost = 100
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			CLU = {
+				every_owned_state = {
+					add_core_of = ENG
+				} 
+			}
+
+			if = {
+				limit = {
+					CLU = {
+						OVERLORD = ENG
+					}
+				}
+				set_autonomy = {
+					target = CLU
+					autonomy_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+				remove_from_faction = CLU
+			}
+			
+			create_wargoal = { 
+				type = annex_everything 
+				target = CLU 
+			}
+			
+		}
+
+		ai_will_do = {
+
+		}
+	}
+
+	direct_administration = {
+		allowed = {  
+		}
+
+		is_good = yes
+		fire_only_once = yes
+		cost = 100
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			NOL = {
+				every_owned_state = {
+					add_core_of = ENG
+				} 
+			}
+
+			if = {
+				limit = {
+					NOL = {
+						OVERLORD = ENG
+					}
+				}
+				set_autonomy = {
+					target = NOL
+					autonomy_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+				remove_from_faction = NOL
+			}
+			
+			create_wargoal = { 
+				type = annex_everything 
+				target = NOL 
+			}
+			
+		}
+
+		ai_will_do = {
+
+		}
+	}
+
+	direct_administration = {
+		allowed = {  
+		}
+
+		is_good = yes
+		fire_only_once = yes
+		cost = 100
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			NOL = {
+				every_owned_state = {
+					add_core_of = ENG
+				} 
+			}
+
+			if = {
+				limit = {
+					NOL = {
+						OVERLORD = ENG
+					}
+				}
+				set_autonomy = {
+					target = NOL
+					autonomy_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+				remove_from_faction = NOL
+			}
+			
+			create_wargoal = { 
+				type = annex_everything 
+				target = NOL 
+			}
+			
+		}
+
+		ai_will_do = {
+
+		}
+	}
+
+	the_king_is_the_pharaoh = {
+		allowed = {  
+		}
+
+		is_good = yes
+		fire_only_once = yes
+		cost = 100
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			EGY = {
+				every_owned_state = {
+					add_core_of = ENG
+				} 
+			}
+
+			if = {
+				limit = {
+					EGY = {
+						OVERLORD = ENG
+					}
+				}
+				set_autonomy = {
+					target = EGY
+					autonomy_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+				remove_from_faction = EGY
+			}
+			
+			create_wargoal = { 
+				type = annex_everything 
+				target = EGY 
+			}
+			
+		}
+
+		ai_will_do = {
+
+		}
+	}
+
+	end_the_apartheid = {
+		allowed = {  
+		}
+
+		is_good = yes
+		fire_only_once = yes
+		cost = 100
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			SAF = {
+				every_owned_state = {
+					add_core_of = ENG
+				} 
+			}
+
+			if = {
+				limit = {
+					SAF = {
+						OVERLORD = ENG
+					}
+				}
+				set_autonomy = {
+					target = SAF
+					autonomy_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+				remove_from_faction = SAF
+			}
+			
+			create_wargoal = { 
+				type = annex_everything 
+				target = SAF 
+			}
+			
+		}
+
+		ai_will_do = {
+
+		}
+	}
+
+	under_new_management = {
+		allowed = {  
+		}
+
+		is_good = yes
+		fire_only_once = yes
+		cost = 100
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			MAL = {
+				every_owned_state = {
+					add_core_of = ENG
+				} 
+			}
+
+			if = {
+				limit = {
+					MAL = {
+						OVERLORD = ENG
+					}
+				}
+				set_autonomy = {
+					target = MAL
+					autonomy_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+				remove_from_faction = MAL
+			}
+			
+			create_wargoal = { 
+				type = annex_everything 
+				target = MAL 
+			}
+			
+		}
+
+		ai_will_do = {
+
+		}
+	}
+
+	what_is_a_kiwi = {
+		allowed = {  
+		}
+
+		is_good = yes
+		fire_only_once = yes
+		cost = 100
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			NZL = {
+				every_owned_state = {
+					add_core_of = ENG
+				} 
+			}
+
+			if = {
+				limit = {
+					NZL = {
+						OVERLORD = ENG
+					}
+				}
+				set_autonomy = {
+					target = NZL
+					autonomy_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+				remove_from_faction = NZL
+			}
+			
+			create_wargoal = { 
+				type = annex_everything 
+				target = NZl 
+			}
+			
+		}
+
+		ai_will_do = {
+
+		}
+	}
+
+}

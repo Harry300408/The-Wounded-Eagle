@@ -10,4 +10,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ENG/idea_general_strikes.dds"			
 	}	
 
+	SpriteType = {
+		name = "GFX_idea_marconi_reforms"
+		texturefile = "gfx/interface/ideas/ENG/idea_marconi_reforms.dds"			
+	}	
+
 }

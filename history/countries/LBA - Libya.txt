@@ -1,4 +1,4 @@
-﻿capital = 448
+﻿capital = 450
 
 # Starting tech
 set_technology = {
@@ -14,7 +14,7 @@ if = {
 	}
 }
 
-set_cosmetic_tag = LBA_SEN
+set_cosmetic_tag = LBA_TRP
 
 set_convoys = 20
 

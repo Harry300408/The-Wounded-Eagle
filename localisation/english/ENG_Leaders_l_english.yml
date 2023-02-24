@@ -2,3 +2,19 @@
  ENG_attlee:0 "Clement Attlee"
  ENG_af:0 "The Royal-Armed-Forces"
  ENG_churchill:0 "Winston Churchill"
+ ENG_albert_windsor:0 "Albert (George) Windsor"
+ ENG_empty_throne:0 "Empty Throne"
+
+ # Cabinet #
+ ENG_lawson:0 "Jack J. Lawson"
+ ENG_lawson_desc:0 "1st Baron Lawson \nDeputy of The labour Party \nMister of War \nFinancial Secretary to the War Office"
+
+ ENG_morrison:0 "Herbert S. Morrison"
+ ENG_morrison_desc:0 "Baron Morrison of Lambeth \nForeign Secretary \nLord President of the Council \nMinister of Transport \nMinister of Supply"
+
+ ENG_greenwood:0 "Arthur Greenwood"
+ ENG_greenwood_desc:0 "Paymaster General \nLord Keeper of the Privy Seal \nMinister without Portfolio \nMinister of Health"
+
+ ENG_edward_viii:0 "HRM King Edward Windsor VIII"
+ ENG_edward_viii_desc:0 "HRM, King of United Kingdom of Great Britian, Lord Protector of Ireland & India, Overseerer of The Colony of New South Wales & Victoria"
+ 

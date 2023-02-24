@@ -26,4 +26,12 @@
  NGA_proc_DEF:0 "British Gold Coast"
 
  ENG_loyalists:0 "British National Emergency Government"
- 
+ ENG_loyalists_DEF:0 "the British National Emergency Government"
+ ENG_loyalists_ADJ:0 "English"
+
+ ENG_imperial_federation_unified:0 "Imperial Federation"
+ ENG_imperial_federation_unified_DEF:0 "the Imperial Federation"
+ ENG_imperial_federation_unified_ADJ:0 "British" 
+
+ SUD_anglo_egyptian:0 "Anglo-Egyptian Sudan"
+ SUD_anglo_egyptian_DEF:0 "Anglo-Egyptian Sudan"

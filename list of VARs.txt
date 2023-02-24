@@ -1,0 +1,321 @@
+Global-scoped game variables:
+ #(Layout)
+ #Variable	Target	Description/Notes
+
+year	None.	The current year, such as 1936.
+
+date	None.	The ID of the current date. This can be localised in a multitude of different ways, using the localisation functions beginning with GetDateString.
+
+num_days	None.	The amount of days passed since the start date. Start date is considered the NDefines.NGame.START_DATE define.
+
+difficulty	None.	The current difficulty value on the scale from 0 (For Civilian) to 4 (For Elite).
+
+threat	None.	The current world tension value on the scale from 0 to 1.
+
+Country-scoped general game variables:
+
+Variable	Target	Description/Notes
+
+modifier	Modifier's name, such as @political_power_gain.	The total value of the current modifier as the country has in total. Targeted modifiers have separate definitions.
+
+id	None.	The internal ID of the country. Equivalent to not specifying anything, like set_temp_variable = { temp = TAG }.
+
+max_manpower	None.	Total population of the country. Deprecated, recommended to use max_manpower_k instead as to avoid overflows.
+
+max_manpower_k	None.	Total population of the country in thousands.
+
+party_popularity	Ideology group or ruling_party, such as @ruling_party.	The popularity of the specified political party in the range from 0 to 1.
+
+party_popularity_100	Ideology group or ruling_party, such as @neutrality.	The popularity of the specified political party in the range from 0 to 100.
+
+highest_party_ideology	exclude_ruling_party or nothing.	The ideology group that has the highest party popularity within the country, optionally excluding the ruling party.
+
+highest_party_popularity	exclude_ruling_party or nothing.	The popularity of the ideology group that has the highest party popularity within the country, optionally excluding the ruling party. The popularity is on the scale from 0 to 1.
+
+current_party_ideology_group	None.	Ideology group that the country currently has.
+
+original_tag	None.	The tag from which the current country originates. Same as the regular tag for non-dynamic countries.
+
+opinion	Country.	The opinion of the current country towards the specified one.
+
+days_decision_timeout	Decision, such as @my_decision.	The remaining amount of days for a completed decision before it gets removed.
+
+days_mission_timeout	Mission.	The remaining amount of days for an ongoing mission before it times out.
+
+political_power	None.	Total current political power of the country. has_political_power can be used in the same way.
+
+political_power_daily	None.	Current amount of daily gain of political power, equivalent to political_power_growth.
+
+stability	None.	Current stability of the country on the scale from 0 to 1.
+
+has_war_support	None.	Current war support of the country on the scale from 0 to 1.
+
+power_balance_value	None.	The current power balance value.
+
+power_balance_daily	None.	The current daily change in power balance.
+
+power_balance_weekly	None.	The current weekly change in power balance.
+
+capital	None.	The capital state of the country.
+
+autonomy_ratio	None.	How close the country is to taking the next autonomy level. 0 if can be downgraded, 1 if can be upgraded, -1 if independent.
+
+overlord	None.	The country that the current country is a subject of.
+
+num_subjects	None.	The number of subjects that the country has as an overlord.
+
+core_compliance	Country.	Average compliance within cores of the target country occupied by the current country.
+
+core_resistance	Country.	Average resistance within cores of the target country occupied by the current country.
+
+has_collaboration	Country.	The collaboration of the target country with the current country within target's cores currently occupied by the current country.
+
+faction_leader	None.	The leader of the faction the current country is in. Returns nothing if not in a faction.
+
+num_faction_members	None.	The number of members in the faction with the current country.
+
+fuel_k	None.	Current fuel of country in thousands.
+
+max_fuel_k	None.	Maximum fuel of country in thousands.
+
+fuel_ratio	None.	Ratio of the current fuel compared to the maximum amount, from 0 to 1.
+
+host	None.	The host of the current country. Returns nothing if not exiled.
+
+legitimacy	None.	The legitimacy of the currently-exiled country. Returns -1 if not exiled.
+
+num_controlled_states	None.	The amount of states that are controlled but not necessarily owned by the current country.
+
+num_core_states	None.	The amount of states that are national territory of the current country.
+
+num_owned_controlled_states	None.	The amount of states that are owned and controlled by the current country.
+
+num_owned_states	None.	The amount of states that are owned but not necessarily controlled by the current country.
+
+num_occupied_states	None.	The number of states occupied by the country.
+
+resource	Resource, such as @steel.	The amount of surplus resource of the specified type, which isn't exported or used in production.
+
+resource_consumed	Resource, such as @aluminium.	The amount of resource of the specified type currently used for equipment production.
+
+resource_exported	Resource, such as @oil.	The amount of resource of the specified type currently set to be exported with the min_export modifier.
+
+resource_imported	Resource, such as @tungsten.	The amount of resource of the specified type currently set to be imported from trade with other countries.
+
+resource_produced	Resource, such as @rubber.	The amount of resource of the specified type produced from the country's controlled states, buildings on them, and resource rights.
+
+alliance_strength_ratio	Country.	The ratio of land strength between the current country's faction and the target's faction.
+
+alliance_naval_strength_ratio	Country.	The ratio of naval strength between the current country's faction and the target's faction.
+
+enemies_naval_strength_ratio	None.	The estimated navy strength between the current country and all its enemies.
+
+enemies_strength_ratio	None.	The estimated army strength between the current country and all its enemies.
+
+amount_research_slots	None.	The current amount of research slots the country has.
+
+original_research_slots	None.	The amount of research slots that the country had in the beginning of the game, as set in the history file.
+
+any_war_score	None.	The highest war score that the country has among wars it's in, on the scale from 0 to 100.
+
+casualties	None.	The amount of casualties a country has suffered in all of its wars.
+
+casualties_k	None.	The amount of casualties a country has suffered in all of its wars in thousands.
+
+days_since_capitulated	None.	The amount of days since the country has capitulated. Not intended to be used if the country has never capitulated, returning an 'extremely large' value[6].
+
+convoy_threat	None.	Returns, in the range from 0 to 1, the current danger that enemy convoys pose to the current country. Uses NDefines.NNavy.NAVAL_CONVOY_DANGER_RATIOS as the baseline.
+
+mine_threat	None.	Returns, in the range from 0 to 1, the current danger that enemy mines pose to the current country. Uses NDefines.NNavy.NAVAL_MINE_DANGER_RATIOS as the baseline.
+
+foreign_manpower	None.	The amount of foreign garrison manpower that the country has.
+
+garrison_manpower_need	None.	The amount of manpower needed by garrisons.
+
+has_added_tension_amount	None.	The amount of world tension currently added by the country.
+
+manpower_per_military_factory	None.	The amount of manpower that the country has for each military factory.
+
+num_of_available_civilian_factories	None.	Amount of available civilian factories.
+
+num_of_available_military_factories	None.	Amount of available military factories.
+
+num_of_available_naval_factories	None.	Amount of available naval factories.
+
+num_of_civilian_factories	None.	Amount of civilian factories.
+
+num_of_civilian_factories_available_for_projects	None.	Amount of civilian factories available for a new project to use.
+
+total_constructed_civilian_factory	None.	Amount of civilian factories that have been constructed after the game's start by the country.
+
+num_of_factories	None.	Amount of total factories.
+
+num_of_military_factories	None.	Amount of military factories.
+
+num_of_naval_factories	None.	Amount of naval factories.
+
+num_of_controlled_factories	None.	Amount of factories within controlled states.
+
+num_of_owned_factories	None.	Amount of factories within owned states.
+
+num_of_nukes	None.	Amount of nukes.
+
+num_researched_technologies	Number of technologies a tag has researched.
+
+num_tech_sharing_groups	None.	How many tech sharing groups a nation is a member of.
+
+surrender_progress	None.	How close the country is to surrendering on the scale from 0 to 1.
+
+
+
+Country-scoped intelligence-related game variables:
+
+
+army_intel	Country.	Army intel against the target country.
+
+navy_intel	Country.	Navy intel against the target country.
+
+air_intel	Country.	Air intel against the target country.
+
+civilian_intel	Country.	Civilian intel against the target country.
+
+encryption_strength	None.	Total encryption strength of the country. Only without the  La Résistance DLC.
+
+decryption_speed	None.	Total decryption speed of the country. Only without the  La Résistance DLC.
+
+cryptology_defense_level	None.	cryptology defense level of the country.
+
+agency_upgrade_number	None.	The number of upgrade done in the intelligence agency.
+
+decryption_progress	Country.	Decryption progress against the target country.
+
+network_national_coverage	Country.	Network national coverage the current country has over the target country.
+
+num_fake_intel_divisions	None.	The amount of fake intel division that the country has.
+
+num_free_operative_slots	None.	The amount of operative slots that are currently empty and an operative can be recruited in.
+
+num_of_operatives	None.	The number of operatives the country controls.
+
+num_operative_slots	None.	The number of available operative slots a country has. If this differs from the number of operative, this does not mean the country can recruit an operative, but that it will eventually be able to.
+
+
+
+Country-scoped military-related game variables:
+
+
+manpower	None.	Manpower that the country has, both in the army and reserved. Deprecated, recommended to use manpower_k instead as to avoid overflows.
+
+manpower_k	None.	Manpower that the country has, both in the army and reserved, in thousands.
+
+max_available_manpower	None.	Manpower that the country has, both in the army and reserved, taking into account those that are in the process of being drafted as the result of a recent conscription amount change. Deprecated, recommended to use max_available_manpower_k instead as to avoid overflows.
+
+max_available_manpower_k	None.	Manpower that the country has, both in the army and reserved, taking into account those that are in the process of being drafted as the result of a recent conscription amount change, in thousands.
+
+target_conscription_amount	None.	The target conscription amount of the country.
+
+amount_manpower_in_deployment_queue	None.	Amount of manpower currently in the deployment view.
+
+conscription_ratio	None.	Conscription ratio of the country compared to target conscription ratio.
+
+current_conscription_amount	None.	The current conscription amount of the country.
+
+command_power	None.	The current command power of country.
+
+command_power_daily	None.	The current daily gain of command power by country.
+
+army_experience	None.	Army experience that the country has.
+
+navy_experience	None.	Naval experience that the country has.
+
+air_experience	None.	Air experience that the country has.
+
+num_armies	None.	Amount of land divisions.
+
+num_armies_in_state	State such as @123.	Amount of land divisions within the target state.
+
+num_armies_with_type	Subunit type such as @light_armor.	Amount of land divisions that are majority of the same subunit type.
+
+num_battalions	None.	Amount of battalions within land divisions the country has.
+
+num_battalions_with_type	Subunit type such as @cavalry.	Amount of battalions within land divisions the country has that have the specified subunit type.
+
+num_deployed_planes	None.	Amount of deployed planes.
+
+num_deployed_planes_with_type	Subunit type such as @fighter.	Amount of deployed planes with equipment type.
+
+num_divisions	None.	Amount of land and naval divisions.
+
+num_equipment	Equipment type or archetype such as @infantry_equipment.	Amount of equipment within the country's stockpile.
+
+num_equipment_in_armies	Equipment type or archetype such as @artillery_equipment.	Amount of equipment in country that are used in armies. If there's a large amount of equipment possible, use num_equipment_in_armies_k.
+
+num_equipment_in_armies_k	Equipment type or archetype such as @support_equipment.	Amount of equipment in country that are used in armies, in thousands.
+
+num_target_equipment_in_armies	Equipment type or archetype such as @motorized_equipment_1.	Amount of equipment in country that are wanted in armies. If there's a large amount of equipment possible, use num_target_equipment_in_armies_k.
+
+num_target_equipment_in_armies_k	Equipment type or archetype such as @anti_air_equipment_1.	Amount of equipment in country that are wanted in armies, in thousands.
+
+num_ships	None.	Amount of ships.
+
+num_ships_with_type	Subunit type such as @carrier.	Amount of ships with the specified subunit type.
+
+land_doctrine_level	None.	The currently-researched land doctrine level.
+
+
+## ARRAYS ##
+
+Global-scoped game arrays:
+#Array	Description/Notes
+
+countries	Every single country, regardless if they exist or not, including the 50 dynamic countries even if they do not have an original tag defined.
+
+majors	Every country that is currently major.
+
+states	Every state that exists in the game.
+
+ideology_groups	Every ideology group that exists in the game.
+
+operations	Every operation that exists in the game.
+
+province_controllers	An array of controller countries for each province. In this case, the province ID serves as the index: the controller of province 1234 is province_controllers^1234.
+
+Country-scoped game arrays:
+
+Array	Description/Notes
+
+allies	Countries that are considered an ally, including fellow faction members, subjects, and the overlord.
+
+army_leaders	Army leaders recruited by the country.
+
+enemies	Countries that the current country is at war with.
+
+enemies_of_allies	Countries that are considered an ally of any country that is at war with the current country.
+
+faction_members	Countries that are in the same faction as this one.
+
+occupied_countries	Countries that are currently occupied by this one.
+
+subjects	Countries that are subject to this one.
+
+owned_controlled_states	States that are owned and controlled by the current country.
+
+owned_states	States that are owned, but not necessarily controlled, by the current country.
+
+potential_and_current_enemies	Countries that are considered enemies and that 'may' become enemies (due to being an ally of an enemy or by having a wargoal)
+
+controlled_states	States that are controlled, but not necessarily owned, by the current country.
+
+core_states	States that are considered national territory of the current country.
+
+neighbors	Countries that are considered neighbours to the current country, having at least one border within controlled provinces.
+
+neighbors_owned	Countries that are considered neighbours to the current country, having at least one owned state that borders any state that the current country owns.
+
+researched_techs	Technologies that were researched by the current country.
+
+navy_leaders	Navy leaders recruited by the country.
+
+operatives	Operatives recruited by the country.
+
+exiles	The exiled governments that the current country is hosting.
