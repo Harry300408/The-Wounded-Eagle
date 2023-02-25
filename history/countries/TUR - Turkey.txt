@@ -56,11 +56,17 @@ if = {
 		target = MED
 		autonomous_state = autonomy_OTT_eya
 	}
+
+	set_autonomy = {
+		target = MEC
+		autonomous_state = autonomy_OTT_eya
+	}
 	
 	else = {
 		puppet = BUL
 		puppet = LBA
 		puppet = MED
+		puppet = MEC
 	}	
 
 }

@@ -8,9 +8,8 @@ state=
 
 	history= {
 		owner = SUD
-		add_core_of = ENG
 		add_claim_by = LBA
-		add_claim_by = SUD
+		add_core_of = SUD
 		buildings = {
 			infrastructure = 0
 		}

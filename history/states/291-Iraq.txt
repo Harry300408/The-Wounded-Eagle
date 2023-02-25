@@ -36,6 +36,8 @@ state={
 		add_core_of = IRQ
 		add_core_of = TUR
 		add_claim_by = KUR
+
+		set_demilitarized_zone = yes
 	}
 
 	provinces={

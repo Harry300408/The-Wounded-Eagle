@@ -2057,6 +2057,7 @@ focus_tree = {
 		cost = 1
 	
 		completion_reward = {
+			custom_effect_tooltip = ENG_unlock_worker_decs	
 		}
 	}
 
@@ -2064,7 +2065,7 @@ focus_tree = {
 		id = ENG_london_temperance_legislation
 		x = -2
 		y = 4
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_london_temperance_legislation
 		relative_position_id = ENG_alberts_approach
 
 		prerequisite = {
@@ -2079,9 +2080,12 @@ focus_tree = {
 			focus = ENG_racial_deserigation
 		}
 
-		cost = 2
+		cost = 3
 	
 		completion_reward = {
+			add_ideas = {
+				temperance_legislation
+			}
 		}
 	}
 
@@ -2089,7 +2093,7 @@ focus_tree = {
 		id = ENG_better_irish_treatment
 		x = 2
 		y = 4
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_better_irish_treatment
 		relative_position_id = ENG_alberts_approach
 
 		prerequisite = {
@@ -2104,17 +2108,144 @@ focus_tree = {
 			focus = ENG_racial_deserigation
 		}
 
-		cost = 2
+		cost = 1
 	
 		completion_reward = {
 		}
 	}
 
 	focus = {
-		id = ENG_british_femminism
+		id = ENG_support_irish_independence
+		x = 1
+		y = 5
+		icon = GFX_ENG_support_irish_independence
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_better_irish_treatment           
+		}
+
+		mutually_exclusive = {
+			focus = ENG_defend_irish_catholic_rights
+		}
+
+		cost = 4
+	
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {	
+						IRE = {
+							OVERLORD = {
+								tag = ENG
+							}
+						}
+
+						UKI = {
+							exists = no
+						}
+					}	
+				}
+
+				set_autonomy = {
+					target = IRE
+					autonomy_state = autonomy_free
+				}
+
+				give_guarantee = IRE
+			}
+
+			if = {
+				limit = {
+					UKI = {
+						exists = yes 
+						owns_state = 113
+						owns_state = 134
+						owns_state = 135
+
+						OVERLORD = {
+							tag = ENG
+						}
+					}
+				}
+
+				set_autonomy = {
+					target = UKI
+					autonomy_state = autonomy_free
+				}
+
+				give_guarantee = UKI
+			}
+
+			if = {
+				limit = {
+					UKI = {
+						exists = yes 
+						owns_state = 113
+						owns_state = 134
+						owns_state = 135
+					}
+				}
+
+				give_guarantee = UKI
+			}
+
+		}
+	}
+
+	focus = {
+		id = ENG_defend_irish_catholic_rights
+		x = 3
+		y = 5
+		icon = GFX_ENG_defend_irish_catholic_rights
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_better_irish_treatment           
+		}
+
+		mutually_exclusive = {
+			focus = ENG_support_irish_independence
+		}
+
+		cost = 2
+	
+		completion_reward = {
+			IRE = {
+				add_ideas = {
+					catholic_rights_preserved
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_solidify_anglo_irish_friendship
+		x = 2
+		y = 6
+		icon = GFX_ENG_solidify_anglo_irish_friendship
+		relative_position_id = ENG_alberts_approach
+
+		prerequisite = {
+			focus = ENG_defend_irish_catholic_rights
+			focus = ENG_support_irish_independence          
+		}
+
+		cost = 2
+	
+		completion_reward = {
+			add_opinion_modifier = {
+				target = IRE
+				modifier = solidify_anglo_irish_friendship
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_british_feminism
 		x = 4
 		y = 4
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_british_feminism
 		relative_position_id = ENG_alberts_approach
 
 		prerequisite = {
@@ -2132,6 +2263,9 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			add_ideas = {
+				british_feminism
+			}
 		}
 	}
 
@@ -2139,7 +2273,7 @@ focus_tree = {
 		id = ENG_daddy_knows_best
 		x = 0
 		y = 9
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_daddy_knows_best
 		relative_position_id = ENG_alberts_approach
 
 		prerequisite = {
@@ -2155,12 +2289,15 @@ focus_tree = {
 		}
 
 		prerequisite = {
-			focus = ENG_british_femminism
+			focus = ENG_british_feminism
 		}
 
 		cost = 2
 	
 		completion_reward = {
+			add_ideas = {
+				daddy_knows_best
+			}
 		}
 	}
 
@@ -2190,6 +2327,25 @@ focus_tree = {
 
 		prerequisite = {
 			focus = ENG_fate_of_the_domminions           
+		}
+
+		available = {
+			if = {
+				ENG = {
+					OR = {
+						owns_state = 126
+						owns_state = 127
+						owns_state = 338
+						owns_state = 123
+						owns_state = 128
+						owns_state = 129
+						owns_state = 125
+						owns_state = 130
+						owns_state = 132
+						owns_state = 131
+					}	
+				}
+			}
 		}
 
 		mutually_exclusive = {
@@ -2252,8 +2408,11 @@ focus_tree = {
 				target = NGA
 				autonomy_state = autonomy_free
 			}
+			set_autonomy = {
+				target = SUD
+				autonomy_state = autonomy_free
+			}
 
-			release = SUD
 			release = CAR
 			release = UGA
 			release = KEN
@@ -2269,6 +2428,7 @@ focus_tree = {
 
 			
 			KON = {
+				set_state_owner = 890
 				set_state_owner = 718
 			}
 
@@ -2284,6 +2444,10 @@ focus_tree = {
 
 			YEM = {
 				set_state_owner = 659
+			}
+
+			CAR = {
+				set_state_owner = 939
 			}
 
 

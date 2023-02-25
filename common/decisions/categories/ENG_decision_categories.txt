@@ -9,3 +9,15 @@ ENG_imperial_federation_TWE = {
 	}
 	visible_when_empty = no
 }
+
+ENG_workers_trust_decs = {
+	icon = GFX_
+	priority = 100
+	visible = {
+		has_completed_focus = ENG_gain_workers_trust
+	}
+	allowed = {
+		tag = ENG
+	}
+	visible_when_empty = no
+}

@@ -176,6 +176,41 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ENG/gain_workers_trust.png"			
 	}
 
+	SpriteType = {
+		name = "GFX_ENG_london_temperance_legislation"
+		texturefile = "gfx/interface/goals/ENG/london_temperance_legislation.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_british_feminism"
+		texturefile = "gfx/interface/goals/ENG/british_feminism_mon.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_better_irish_treatment"
+		texturefile = "gfx/interface/goals/ENG/better_irish_treatment.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_support_irish_independence"
+		texturefile = "gfx/interface/goals/ENG/support_irish_independence.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_defend_irish_catholic_rights"
+		texturefile = "gfx/interface/goals/ENG/defend_irish_catholic_rights.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_solidify_anglo_irish_friendship"
+		texturefile = "gfx/interface/goals/ENG/solidify_anglo_irish_friendship.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_daddy_knows_best"
+		texturefile = "gfx/interface/goals/ENG/daddy_knows_best.png"			
+	}
+
 
 
 }

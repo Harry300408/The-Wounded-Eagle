@@ -1,0 +1,16 @@
+state={
+	id=1000
+	name="STATE_1000"
+	provinces={
+		1060 11951 10785 1140 10104 1057 4191
+	}
+	history = {
+		owner = EGY
+		add_core_of = EGY
+		add_claim_by = LBA
+	}
+	manpower= 882956
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

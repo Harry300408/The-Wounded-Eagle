@@ -17,6 +17,8 @@
 
   ENG_monarchy_back_in_business:0 "Monarchy is Back in Business"
     ENG_drastic_measures:0 "Drastic Measures"
+
+      ## ALBERT WINDSOR
       ENG_alberts_approach:0 "Albert's Approach"
       
       ENG_fate_of_the_domminions:0 "Fate of The Domminions"
@@ -33,6 +35,14 @@
       ENG_the_marconi_reforms:0 "The Marconi Reforms"
       ENG_free_market_policies:0 "Free Market Policies"
       ENG_gain_workers_trust:0 "Gain The Workers Trust"
+      ENG_london_temperance_legislation:0 "The London Temperance Legislation"
+      ENG_british_feminism:0 "British Feminism"
+      ENG_daddy_knows_best:0 "Daddy Knows Best"
+      
+      ENG_better_irish_treatment:0 "Better Treatment for The Irish"
+      ENG_support_irish_independence:0 "Support Irish Independence"
+      ENG_defend_irish_catholic_rights:0 "Defend Catholic Rights In Ireland"
+      ENG_solidify_anglo_irish_friendship:0 "Solidify Anglo-Irish Relations"
 
   ## PARTIES ##
   ENG_communism_party:0 "§tCP"
@@ -63,6 +73,12 @@
   ## COUNTRY FLAGS ##
   ENG_civil_war_start:0 " In the English Civil War"
 
+  ## OPs MODIFIERS ##
+  solidify_anglo_irish_friendship:0 "Solidify Anglo-Irish Friendship"
+
+  ## TOOLTIPS ##
+  ENG_unlock_worker_decs:0 "Unlocks Decisions: §YGain Workers Trust"
+  ENG_imp_fed_decs:0 "Unlocks Decisions to §YCreate The Imperial Federation"
   ## BOOKMARK LOC ##
 
   ENG_TWE:0 "After the Great War the Kingdom of Great Britian went into termoil, politically and ruraly. This lead to an economic recesion futher worsoning the situation. This lead to labour being elected in the next General Election, they refomed the country and stabalised the economy. but people are still not happy. There is low moral in the army, navy & air along with General strikes that are a almost day to day occurance. \n\nWhat will you do to make this nation great again?"
@@ -80,8 +96,6 @@
   riots_continue:0 "Has Not Cracked Down On Riots"
 
   ## DECISIONS ##
-  ENG_imp_fed_decs:0 "Unlocks Decisions to Create The Imperial Federation"
-
   march_towards_winnipeg:0 "Towards Winnipeg [BOR.GetFlag]"
   march_on_ottawa:0 "March on Ottawa [CAN.GetFlag]"
   onto_halifax:0 "Onto Halifax [NBW.GetFlag]"

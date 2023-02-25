@@ -66,4 +66,10 @@ opinion_modifiers = {
 	
 	}
 
+	solidify_anglo_irish_friendship = {
+	
+		value = 25
+	
+	}
+
 }
