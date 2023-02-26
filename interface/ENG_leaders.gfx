@@ -76,4 +76,14 @@ spriteTypes = {
         name = GFX_ENG_empty_throne
         texturefile = gfx/leaders/ENG/Monarchy/ENG_empty_throne.dds
     }
+
+    spriteType = {
+        name = GFX_ENG_stanley_baldwin
+        texturefile = gfx/leaders/ENG/Tory/stanley_baldwin.dds
+    }
+
+    spriteType = {
+        name = GFX_ENG_stanley_baldwin_small
+        texturefile = gfx/leaders/ENG/Tory/small/stanley_baldwin.dds
+    }
 }

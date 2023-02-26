@@ -468,7 +468,7 @@ focus_tree = {
 		id = ENG_god_save_the_king
 		x = -0
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_god_save_the_king
 		relative_position_id = ENG_monarchy_back_in_business
 
 		prerequisite = {
@@ -529,7 +529,7 @@ focus_tree = {
 		id = ENG_reading_thomas_hobbes
 		x = -4
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_reading_thomas_hobbes
 		relative_position_id = ENG_god_save_the_king
 
 		prerequisite = {
@@ -542,13 +542,17 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			country_event = {
+				days = 1
+				id = ENGmon.3
+			}
 		}
 	}
 	focus = {
 		id = ENG_appeal_to_nationalists
 		x = -2
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_appeal_to_nationalists
 		relative_position_id = ENG_god_save_the_king
 
 		prerequisite = {
@@ -561,13 +565,16 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			add_ideas = {
+				nationalistic_sympathies_ENG
+			}
 		}
 	}
 	focus = {
 		id = ENG_root_out_treasoners
 		x = 0
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_root_out_treasoners
 		relative_position_id = ENG_god_save_the_king
 
 		prerequisite = {
@@ -580,13 +587,16 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			add_ideas = {
+				root_out_treasoners
+			}
 		}
 	}
 	focus = {
 		id = ENG_a_matter_of_trust
 		x = 2
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_a_matter_of_trust
 		relative_position_id = ENG_god_save_the_king
 
 		prerequisite = {
@@ -599,13 +609,14 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			custom_effect_tooltip = ENG_unlock_worker_decs	
 		}
 	}
 	focus = {
 		id = ENG_the_aristocrats
 		x = 4
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_the_aristocrats
 		relative_position_id = ENG_god_save_the_king
 
 		prerequisite = {
@@ -618,6 +629,10 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			country_event = {
+				days = 0.5
+				id = ENGmon.4
+			}
 		}
 	}
 
@@ -626,7 +641,7 @@ focus_tree = {
 		id = ENG_state_capitalism
 		x = -8
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_state_capitalism
 		relative_position_id = ENG_god_save_the_king
 
 		prerequisite = {
@@ -656,16 +671,19 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 3
 	
 		completion_reward = {
+			add_ideas = {
+				state_capitalism_ENG
+			}
 		}
 	}
 	focus = {
 		id = ENG_economic_liberalism
 		x = -6
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_economic_liberalism
 		relative_position_id = ENG_god_save_the_king
 
 		prerequisite = {
@@ -695,9 +713,12 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 3
 	
 		completion_reward = {
+			add_ideas = {
+				economic_liberalism_ENG
+			}
 		}
 	}
 
@@ -705,7 +726,7 @@ focus_tree = {
 		id = ENG_the_kings_party_TWE
 		x = 0
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_the_kings_party_TWE
 		relative_position_id = ENG_god_save_the_king
 
 		prerequisite = {
@@ -734,6 +755,47 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			set_party_name = {
+				ideology = neutrality
+				long_name = ENG_HoW_Kings_party_long
+				name = ENG_HoW_Kings_party
+			}
+
+			if = {
+				limit = {
+					ENG_lawson = {
+						is_advisor = yes
+					}
+				}
+
+				retire_character = ENG_lawson
+			}
+
+			if = {
+				limit = {
+					ENG_morrison = {
+						is_advisor = yes
+					}
+				}
+
+				retire_character = ENG_morrison
+			}
+
+			if = {
+				limit = {
+					ENG_greenwood = {
+						is_advisor = yes
+					}
+				}
+
+				retire_character = ENG_greenwood
+			}
+
+			activate_advisor = ENG_albert_windsor
+			activate_advisor = ENG_robert_anthony_eden
+			activate_advisor = ENG_stanley_baldwin
+			activate_advisor = ENG_henry_hugh_tudor
+			activate_advisor = ENG_thomas_stearns_eliot
 		}
 	}
 
@@ -742,7 +804,7 @@ focus_tree = {
 		id = ENG_workers_strikes
 		x = -4
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_workers_strikes
 		relative_position_id = ENG_the_kings_party_TWE
 
 		prerequisite = {
@@ -752,9 +814,12 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 5
 	
 		completion_reward = {
+			remove_ideas = {
+				general_strikes
+			}
 		}
 	}
 
@@ -762,7 +827,7 @@ focus_tree = {
 		id = ENG_our_heritage
 		x = -2
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_our_heritage
 		relative_position_id = ENG_the_kings_party_TWE
 
 		prerequisite = {
@@ -772,9 +837,12 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 3
 	
 		completion_reward = {
+			add_ideas = {
+				ENG_religous_heritage
+			}
 		}
 	}
 
@@ -782,7 +850,7 @@ focus_tree = {
 		id = ENG_expand_the_privy_council
 		x = 2
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_expand_the_privy_council
 		relative_position_id = ENG_the_kings_party_TWE
 
 		prerequisite = {
@@ -795,13 +863,14 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			custom_effect_tooltip = ENG_privy_council_decs
 		}
 	}
 	focus = {
 		id = ENG_hunt_down_the_far_right
 		x = 4
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_hunt_down_the_far_right
 		relative_position_id = ENG_the_kings_party_TWE
 
 		prerequisite = {
@@ -811,9 +880,22 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 4
 	
 		completion_reward = {
+			remove_ideas = {
+				nationalistic_sympathies_ENG
+			}
+			add_timed_idea = {
+				idea = hunt_down_the_far_right
+				days = 365
+			}
+			hidden_effect = {
+				country_event = {
+					days = 365 
+					id = ENGmon.5
+				}
+			}
 		}
 	}
 
@@ -822,7 +904,7 @@ focus_tree = {
 		id = ENG_revive_our_industrial_might
 		x = -2
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_revive_our_industrial_might
 		relative_position_id = ENG_the_kings_party_TWE
 
 		prerequisite = {
@@ -841,16 +923,20 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 3
 	
 		completion_reward = {
+			add_timed_idea = {
+				idea = revive_our_industrial_might
+				days = 547.5
+			}
 		}
 	}
 	focus = {
 		id = ENG_support_the_technocrats
 		x = 0
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_support_the_technocrats
 		relative_position_id = ENG_the_kings_party_TWE
 
 		prerequisite = {
@@ -869,16 +955,19 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 4
 	
 		completion_reward = {
+			add_ideas = {
+				supporting_technocrats
+			}
 		}
 	}
 	focus = {
 		id = ENG_a_militarized_britain
 		x = 2
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_a_militarized_britain
 		relative_position_id = ENG_the_kings_party_TWE
 
 		prerequisite = {
@@ -897,16 +986,37 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 5
 	
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = civilian_economy
+				}
+
+				swap_ideas = {
+					remove_idea = civilian_economy
+					add_idea = partial_economic_mobilisation
+				}
+			}
+
+			if = {
+				limit = {
+					has_idea = low_economic_mobilisation
+				}
+
+				swap_ideas = {
+					remove_idea = low_economic_mobilisation
+					add_idea = partial_economic_mobilisation
+				}
+			}
 		}
 	}
 	focus = {
 		id = ENG_your_country_needs_you
 		x = -2
 		y = 3
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_your_country_needs_you
 		relative_position_id = ENG_the_kings_party_TWE
 
 		prerequisite = {
@@ -925,6 +1035,9 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			add_ideas = {
+				your_country_needs_you
+			}
 		}
 	}
 	focus = {
@@ -2234,9 +2347,51 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
-			add_opinion_modifier = {
-				target = IRE
-				modifier = solidify_anglo_irish_friendship
+
+			if = {
+				limit = {
+					UKI = {
+						exists = yes
+						owns_state = 113
+						owns_state = 134
+						owns_state = 135
+					}
+				}
+
+				add_opinion_modifier = {
+					target = UKI
+					modifier = solidify_anglo_irish_friendship
+				}
+	
+				UKI = {
+					add_opinion_modifier = {
+						target = ENG
+						modifier = solidify_anglo_irish_friendship
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					IRE = {
+						exists = yes
+						owns_state = 113
+						owns_state = 134
+						owns_state = 135
+					}
+				}
+
+				add_opinion_modifier = {
+					target = IRE
+					modifier = solidify_anglo_irish_friendship
+				}
+	
+				IRE = {
+					add_opinion_modifier = {
+						target = ENG
+						modifier = solidify_anglo_irish_friendship
+					}
+				}
 			}
 		}
 	}
@@ -2292,7 +2447,7 @@ focus_tree = {
 			focus = ENG_british_feminism
 		}
 
-		cost = 2
+		cost = 5
 	
 		completion_reward = {
 			add_ideas = {
@@ -3889,6 +4044,10 @@ focus_tree = {
 		#prerequisite = {
 		#	focus = ENG_monarchy_back_in_business           
 		#}
+
+		allow_branch = {
+			tag = JAC
+		}
 
 		available = {
 			AND = {

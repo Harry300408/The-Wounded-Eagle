@@ -321,6 +321,7 @@ add_to_faction = ENG
 recruit_character = ENG_attlee
 recruit_character = ENG_af
 recruit_character = ENG_churchill
+recruit_character = ENG_stanley_baldwin
 
 #Advisors (Order Matters)
 recruit_character = ENG_edward_viii
@@ -336,6 +337,10 @@ activate_advisor = ENG_morrison
 
 recruit_character = ENG_greenwood
 activate_advisor = ENG_greenwood
+
+recruit_character = ENG_robert_anthony_eden
+recruit_character = ENG_henry_hugh_tudor
+recruit_character = ENG_thomas_stearns_eliot
 
 if = {
 	limit = {

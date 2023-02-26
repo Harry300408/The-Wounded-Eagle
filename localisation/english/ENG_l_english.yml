@@ -44,6 +44,27 @@
       ENG_defend_irish_catholic_rights:0 "Defend Catholic Rights In Ireland"
       ENG_solidify_anglo_irish_friendship:0 "Solidify Anglo-Irish Relations"
 
+
+      ## EDWARD WINDSOR 
+      ENG_reading_thomas_hobbes:0 "Reading Thomas Hobbes"
+      ENG_appeal_to_nationalists:0 "Appeal To Nationalists"
+      ENG_root_out_treasoners:0 "Root Out Traitors"
+      ENG_a_matter_of_trust:0 "A Matter of Trust"
+      ENG_the_aristocrats:0 "What To Do With The Aristocracy?"
+
+      ENG_state_capitalism:0 "State Capitalism"
+      ENG_economic_liberalism:0 "Economic Liberalism"
+
+      ENG_the_kings_party_TWE:0 "Form The King's Party"
+      ENG_workers_strikes:0 "Crack Down on Worker Strikes"
+      ENG_our_heritage:0 "Our Heritage"
+      ENG_expand_the_privy_council:0 "Expand The Privy Council"
+      ENG_hunt_down_the_far_right:0 "Hunt Down The Far Right"
+      ENG_revive_our_industrial_might:0 "Revive Our Industrial Might"
+      ENG_support_the_technocrats:0 "Support The Technocrats"
+      ENG_a_militarized_britain:0 "A Militarized Britain"
+      ENG_your_country_needs_you:0 "Your Country Needs You"
+
   ## PARTIES ##
   ENG_communism_party:0 "§tCP"
   ENG_communism_party_long:0 "§tthe Communist Party of Great Britian"
@@ -70,6 +91,10 @@
   ENG_rad_trad_party:0 "FPB"
   ENG_rad_trad_party_long:0 "Free People of Britain"
 
+  ## KING'S PARTY
+  ENG_HoW_Kings_party:0 "§0KP"
+  ENG_HoW_Kings_party_long:0 "§0the King's Party"
+
   ## COUNTRY FLAGS ##
   ENG_civil_war_start:0 " In the English Civil War"
 
@@ -79,6 +104,8 @@
   ## TOOLTIPS ##
   ENG_unlock_worker_decs:0 "Unlocks Decisions: §YGain Workers Trust"
   ENG_imp_fed_decs:0 "Unlocks Decisions to §YCreate The Imperial Federation"
+  ENG_privy_council_decs:0 "Unlocks Decisions: §YExpand The Privy Council"
+
   ## BOOKMARK LOC ##
 
   ENG_TWE:0 "After the Great War the Kingdom of Great Britian went into termoil, politically and ruraly. This lead to an economic recesion futher worsoning the situation. This lead to labour being elected in the next General Election, they refomed the country and stabalised the economy. but people are still not happy. There is low moral in the army, navy & air along with General strikes that are a almost day to day occurance. \n\nWhat will you do to make this nation great again?"

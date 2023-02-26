@@ -211,6 +211,91 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ENG/daddy_knows_best.png"			
 	}
 
+	SpriteType = {
+		name = "GFX_ENG_god_save_the_king"
+		texturefile = "gfx/interface/goals/ENG/god_save_the_king.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_reading_thomas_hobbes"
+		texturefile = "gfx/interface/goals/ENG/reading_thomas_hobbes.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_appeal_to_nationalists"
+		texturefile = "gfx/interface/goals/ENG/appeal_to_nationalists.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_root_out_treasoners"
+		texturefile = "gfx/interface/goals/ENG/root_out_treasoners.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_a_matter_of_trust"
+		texturefile = "gfx/interface/goals/ENG/a_matter_of_trust.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_the_aristocrats"
+		texturefile = "gfx/interface/goals/ENG/the_aristocrats.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_state_capitalism"
+		texturefile = "gfx/interface/goals/ENG/state_capitalism.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_economic_liberalism"
+		texturefile = "gfx/interface/goals/ENG/economic_liberalism.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_the_kings_party_TWE"
+		texturefile = "gfx/interface/goals/ENG/the_kings_party_TWE.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_workers_strikes"
+		texturefile = "gfx/interface/goals/ENG/workers_strikes.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_our_heritage"
+		texturefile = "gfx/interface/goals/ENG/our_heritage.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_expand_the_privy_council"
+		texturefile = "gfx/interface/goals/ENG/expand_the_privy_council.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_hunt_down_the_far_right"
+		texturefile = "gfx/interface/goals/ENG/hunt_down_the_far_right.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_revive_our_industrial_might"
+		texturefile = "gfx/interface/goals/ENG/revive_our_industrial_might.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_support_the_technocrats"
+		texturefile = "gfx/interface/goals/ENG/support_the_technocrats.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_a_militarized_britain"
+		texturefile = "gfx/interface/goals/ENG/a_militarized_britain.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_your_country_needs_you"
+		texturefile = "gfx/interface/goals/ENG/your_country_needs_you.png"			
+	}
+
 
 
 }

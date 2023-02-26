@@ -14,7 +14,22 @@ ENG_workers_trust_decs = {
 	icon = GFX_
 	priority = 100
 	visible = {
-		has_completed_focus = ENG_gain_workers_trust
+		OR = {
+			has_completed_focus = ENG_gain_workers_trust
+			has_completed_focus = ENG_a_matter_of_trust
+		}	
+	}
+	allowed = {
+		tag = ENG
+	}
+	visible_when_empty = no
+}
+
+ENG_expand_privy_council = {
+	icon = GFX_
+	priority = 100
+	visible = {
+		has_completed_focus = ENG_expand_the_privy_council
 	}
 	allowed = {
 		tag = ENG

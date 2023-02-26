@@ -14,6 +14,7 @@ characters = {
             traits = {  }
             #desc = 
         }
+		can_be_fired = no
     }
 
     ENG_af = {
@@ -28,6 +29,7 @@ characters = {
             traits = {  }
             #desc = 
         }
+		can_be_fired = no
     }
 
     ENG_churchill = {
@@ -42,6 +44,7 @@ characters = {
             traits = {  }
             #desc = 
         }
+		can_be_fired = no
     }
 
     ENG_edward_viii = {
@@ -64,6 +67,7 @@ characters = {
 				
 			}
 		}
+		can_be_fired = no
 	}
 
     ENG_albert_windsor = {
@@ -86,6 +90,7 @@ characters = {
 				
 			}
 		}
+		can_be_fired = no
 	}
 
     ENG_empty_throne = {
@@ -102,6 +107,29 @@ characters = {
         }
 	}
 
+	ENG_stanley_baldwin = {
+		name=ENG_stanley_baldwin
+		portraits={
+			civilian={
+				large = GFX_ENG_stanley_baldwin
+				small = GFX_ENG_stanley_baldwin_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_stanley_baldwin
+			traits  = {
+				
+			}
+		}
+		country_leader = {
+            ideology = social_conservatism 
+            traits = {  }
+            #desc = 
+        }
+		can_be_fired = no
+	}
+
     ## FOR THE RAJ
 
     RAJ_churchill = {
@@ -116,9 +144,10 @@ characters = {
             traits = {  }
             #desc = 
         }
+		can_be_fired = no
     }
 
-    ## Cabinet Members ##
+    ## CABINET MEMBERS ##
     ENG_lawson = {
 		name=ENG_lawson
 		portraits={
@@ -134,6 +163,7 @@ characters = {
 				
 			}
 		}
+		can_be_fired = no
 	}
 
     ENG_morrison = {
@@ -151,6 +181,7 @@ characters = {
 				
 			}
 		}
+		can_be_fired = no
 	}
 
     ENG_greenwood = {
@@ -168,6 +199,81 @@ characters = {
 				
 			}
 		}
+		can_be_fired = no
+	}
+
+
+	## OTHER ADVISORS ##
+	ENG_robert_anthony_eden = {
+		name=ENG_robert_anthony_eden
+		portraits={
+			civilian={
+				large = GFX_ENG_robert_anthony_eden
+				small = GFX_ENG_robert_anthony_eden_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_robert_anthony_eden
+			traits  = {
+				
+			}
+		}
+		can_be_fired = no
+	}
+
+	ENG_robert_anthony_eden = {
+		name=ENG_robert_anthony_eden
+		portraits={
+			civilian={
+				large = GFX_ENG_robert_anthony_eden
+				small = GFX_ENG_robert_anthony_eden_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_robert_anthony_eden
+			traits  = {
+				
+			}
+		}
+		can_be_fired = no
+	}
+
+	ENG_henry_hugh_tudor = {
+		name=ENG_henry_hugh_tudor
+		portraits={
+			civilian={
+				large = GFX_ENG_henry_hugh_tudor
+				small = GFX_ENG_henry_hugh_tudor_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_henry_hugh_tudor
+			traits  = {
+				
+			}
+		}
+		can_be_fired = no
+	}
+
+	ENG_thomas_stearns_eliot = {
+		name=ENG_thomas_stearns_eliot
+		portraits={
+			civilian={
+				large = GFX_ENG_thomas_stearns_eliot
+				small = GFX_ENG_thomas_stearns_eliot_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_thomas_stearns_eliot
+			traits  = {
+				
+			}
+		}
+		can_be_fired = no
 	}
 
     ## Unit & Field Marshals ##
