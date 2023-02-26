@@ -181,7 +181,7 @@ ideologies = {
 			"SD_faction_name_1"
 		}
 
-		color = { 0 174 255 }
+		color = { 255 130 130 }
 
 		rules = {
 			can_create_collaboration_government = no
@@ -355,7 +355,7 @@ ideologies = {
 			"AD_faction_name_1"
 		}
 
-		color = { 111 143 168 }
+		color = { 171 171 171 }
 
 
 		war_impact_on_world_tension = 0.25		#no major danger
@@ -618,7 +618,7 @@ ideologies = {
 			"RT_faction_name_1"
 		}
 
-		color = { 68 52 37 }
+		color = { 73 27 27 }
 
 		war_impact_on_world_tension = 1.0			#evil!
 		faction_impact_on_world_tension = 1.0
