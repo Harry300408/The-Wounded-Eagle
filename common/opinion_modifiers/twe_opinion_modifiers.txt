@@ -72,4 +72,16 @@ opinion_modifiers = {
 	
 	}
 
+	harden_papist_restrictions = {
+	
+		value = -15
+	
+	}
+
+	catholic_burdens_lessend = {
+	
+		value = 10
+	
+	}
+
 }

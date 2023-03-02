@@ -82,7 +82,7 @@ on_actions = {
 				}
 				IRE = {
 					any_owned_state = {
-						set_owner = UKI
+						set_owner = IRE
 					}
 				}
 			}

@@ -1044,7 +1044,7 @@ focus_tree = {
 		id = ENG_ally_the_rothschilds
 		x = 0
 		y = 3
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_ally_the_rothschilds
 		relative_position_id = ENG_the_kings_party_TWE
 
 		prerequisite = {
@@ -1060,16 +1060,20 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 5
 	
 		completion_reward = {
+			country_event = {
+				days = 1
+				id = ENGmon.6
+			}
 		}
 	}
 	focus = {
 		id = ENG_imperial_women_workers
 		x = 2
 		y = 3
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_imperial_women_workers
 		relative_position_id = ENG_the_kings_party_TWE
 
 		prerequisite = {
@@ -1088,13 +1092,16 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			add_ideas = {
+				imperial_women_workers
+			}
 		}
 	}
 	focus = {
 		id = ENG_issue_mass_conscription
 		x = -1
 		y = 4
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_issue_mass_conscription
 		relative_position_id = ENG_the_kings_party_TWE
 
 		prerequisite = {
@@ -1110,16 +1117,48 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 4
 	
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = disarmed_nation
+				}
+
+				swap_ideas = {
+					remove_idea = disarmed_nation
+					add_idea = extensive_conscription
+				}
+			}
+
+			if = {
+				limit = {
+					has_idea = volunteer_only
+				}
+
+				swap_ideas = {
+					remove_idea = volunteer_only
+					add_idea = extensive_conscription
+				}
+			}
+
+			if = {
+				limit = {
+					has_idea = limited_conscription
+				}
+
+				swap_ideas = {
+					remove_idea = limited_conscription
+					add_idea = extensive_conscription
+				}
+			}
 		}
 	}
 	focus = {
 		id = ENG_fund_the_royal_society
 		x = 1
 		y = 4
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_fund_the_royal_society
 		relative_position_id = ENG_the_kings_party_TWE
 
 		prerequisite = {
@@ -1138,13 +1177,17 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = supporting_technocrats
+				add_idea = supporting_technocrats_2
+			}
 		}
 	}
 	focus = {
 		id = ENG_rally_around_thy_king
 		x = 0
 		y = 6
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_rally_around_thy_king
 		relative_position_id = ENG_the_kings_party_TWE
 
 		prerequisite = {
@@ -1160,6 +1203,9 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			add_ideas ={
+				for_king_and_country
+			}
 		}
 	}
 
@@ -1167,7 +1213,7 @@ focus_tree = {
 		id = ENG_concerning_domestic_issues
 		x = -7
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_concerning_domestic_issues
 		relative_position_id = ENG_the_kings_party_TWE
 
 		prerequisite = {
@@ -1186,7 +1232,7 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 1
 	
 		completion_reward = {
 		}
@@ -1196,7 +1242,7 @@ focus_tree = {
 		id = ENG_harden_papist_restrictions
 		x = 1
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_harden_papist_restrictions
 		relative_position_id = ENG_concerning_domestic_issues
 
 		prerequisite = {
@@ -1212,6 +1258,33 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			FRA = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = harden_papist_restrictions
+				}
+			}
+
+			SPA = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = harden_papist_restrictions
+				}
+			}
+
+			ITA = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = harden_papist_restrictions
+				}
+			}
+
+			AUS = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = harden_papist_restrictions
+				}
+			}
 		}
 	}
 	focus = {
@@ -1234,6 +1307,33 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			FRA = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = catholic_burdens_lessend
+				}
+			}
+
+			SPA = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = catholic_burdens_lessend
+				}
+			}
+
+			ITA = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = catholic_burdens_lessend
+				}
+			}
+
+			AUS = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = catholic_burdens_lessend
+				}
+			}
 		}
 	}
 	focus = {
@@ -2721,15 +2821,9 @@ focus_tree = {
 		relative_position_id = ENG_alberts_approach
 
 		prerequisite = {
-			focus = ENG_strengthen_our_grip           
-		}
-
-		prerequisite = {
+			focus = ENG_strengthen_our_grip
 			focus = ENG_imperial_federation_TWE
-		}
-
-		prerequisite = {
-			focus = ENG_bon_voyage
+			focus = ENG_bon_voyage           
 		}
 
 		cost = 5

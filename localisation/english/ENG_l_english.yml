@@ -64,6 +64,16 @@
       ENG_support_the_technocrats:0 "Support The Technocrats"
       ENG_a_militarized_britain:0 "A Militarized Britain"
       ENG_your_country_needs_you:0 "Your Country Needs You"
+      ENG_ally_the_rothschilds:0 "Ally The Rothschilds"
+      ENG_imperial_women_workers:0 "Imperial Women Workers"
+      ENG_issue_mass_conscription:0 "Issue Mass Conscription"
+      ENG_fund_the_royal_society:0 "Fund The Royal Society"
+      ENG_rally_around_thy_king:0 "Rally Around Thy King"
+
+      ENG_concerning_domestic_issues:0 "Concerning Domsetic Issues"
+      ENG_harden_papist_restrictions:0 "Harden Papist Restrictions"
+      ENG_lessen_catholic_burdens:0 "Lessen Catholic Burdens"
+      
 
   ## PARTIES ##
   ENG_communism_party:0 "§tCP"
@@ -100,6 +110,9 @@
 
   ## OPs MODIFIERS ##
   solidify_anglo_irish_friendship:0 "Solidify Anglo-Irish Friendship"
+
+  harden_papist_restrictions:0 "Harden Papist Restrictions"
+  catholic_burdens_lessend:0 "Lessend Catholic Burdens"
 
   ## TOOLTIPS ##
   ENG_unlock_worker_decs:0 "Unlocks Decisions: §YGain Workers Trust"

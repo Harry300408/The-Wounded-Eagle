@@ -296,6 +296,41 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ENG/your_country_needs_you.png"			
 	}
 
+	SpriteType = {
+		name = "GFX_ENG_ally_the_rothschilds"
+		texturefile = "gfx/interface/goals/ENG/ally_the_rothschilds.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_imperial_women_workers"
+		texturefile = "gfx/interface/goals/ENG/imperial_women_workers.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_issue_mass_conscription"
+		texturefile = "gfx/interface/goals/ENG/issue_mass_conscription.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_fund_the_royal_society"
+		texturefile = "gfx/interface/goals/ENG/fund_the_royal_society.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_rally_around_thy_king"
+		texturefile = "gfx/interface/goals/ENG/rally_around_thy_king.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_concerning_domestic_issues"
+		texturefile = "gfx/interface/goals/ENG/concerning_domestic_issues.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_harden_papist_restrictions"
+		texturefile = "gfx/interface/goals/ENG/harden_papist_restrictions.png"			
+	}
+
 
 
 }

@@ -330,5 +330,56 @@ ideas = {
 		
 		}
 
+		imperial_women_workers = {
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		
+		}
+
+		supporting_technocrats_2 = {
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		
+		}
+
+		for_king_and_country = {
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		
+		}
+
     }
 }        
