@@ -153,6 +153,7 @@ set_popularities = {
 set_stability = 0.50
 add_ideas = {
 	GERMANY_member_of_confederation_idea
-	AUS_political_dead_end
-	AUS_bad_monarchism_memories
+	AUS_political_dead_end_idea
+	AUS_bad_monarchism_memories_idea
+	AUS_economical_collapse_0_idea
 }

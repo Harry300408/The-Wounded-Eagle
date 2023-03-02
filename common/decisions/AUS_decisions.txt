@@ -24,11 +24,9 @@ AUS_agitation_program_category = {
 			NOT = {
 				OR = {
 					has_completed_focus = AUS_est_liebe_die_republik
-					has_completed_focus = AUS_empower_kpo
 					has_completed_focus = AUS_empower_right_wing
 				}
 			}
-			has_completed_focus = AUS_march_of_red_torches
 		}
 		complete_effect = {
 			hidden_effect = {
@@ -97,11 +95,9 @@ AUS_agitation_program_category = {
 			NOT = {
 				OR = {
 					has_completed_focus = AUS_est_liebe_die_republik
-					has_completed_focus = AUS_empower_kpo
 					has_completed_focus = AUS_empower_right_wing
 				}
 			}
-			has_completed_focus = AUS_march_of_red_torches
 		}
 		complete_effect = {
 			hidden_effect = {
@@ -170,11 +166,9 @@ AUS_agitation_program_category = {
 			NOT = {
 				OR = {
 					has_completed_focus = AUS_est_liebe_die_republik
-					has_completed_focus = AUS_empower_kpo
 					has_completed_focus = AUS_empower_right_wing
 				}
 			}
-			has_completed_focus = AUS_march_of_red_torches
 		}
 		complete_effect = {
 			hidden_effect = {
@@ -270,7 +264,6 @@ AUS_agitation_program_category = {
 			NOT = {
 				OR = {
 					has_completed_focus = AUS_est_liebe_die_republik
-					has_completed_focus = AUS_empower_kpo
 					has_completed_focus = AUS_empower_right_wing
 				}
 			}
@@ -343,7 +336,6 @@ AUS_agitation_program_category = {
 			NOT = {
 				OR = {
 					has_completed_focus = AUS_est_liebe_die_republik
-					has_completed_focus = AUS_empower_kpo
 					has_completed_focus = AUS_empower_right_wing
 				}
 			}
@@ -416,7 +408,6 @@ AUS_agitation_program_category = {
 			NOT = {
 				OR = {
 					has_completed_focus = AUS_est_liebe_die_republik
-					has_completed_focus = AUS_empower_kpo
 					has_completed_focus = AUS_empower_right_wing
 				}
 			}
@@ -507,10 +498,7 @@ AUS_agitation_program_category = {
 			always = no
 		}
 		available = {
-			OR = {
-				has_completed_focus = AUS_empower_right_wing
-				has_completed_focus = AUS_empower_kpo
-			}
+			has_completed_focus = AUS_empower_right_wing
 		}
 		cancel_trigger = {
 			OR = {
@@ -519,17 +507,6 @@ AUS_agitation_program_category = {
 			}
 		}
 		cancel_effect = {
-			if = {
-				limit = {
-					has_completed_focus = AUS_march_of_red_torches
-				}
-				uncomplete_national_focus = {
-					focus = AUS_march_of_red_torches
-					uncomplete_children = yes
-					refund_political_power = no
-				}
-				complete_national_focus = AUS_est_liebe_die_republik
-			}
 			if = {
 				limit = {
 					has_completed_focus = AUS_vaterlandische_front
@@ -545,7 +522,6 @@ AUS_agitation_program_category = {
 				limit = {
 					NOT = {
 						has_completed_focus = AUS_vaterlandische_front
-						has_completed_focus = AUS_march_of_red_torches
 					}
 				}
 				effect_tooltip = {
@@ -599,46 +575,6 @@ AUS_agitation_program_category = {
 				}
 				add_timed_idea = {
 					idea = AUS_agitation_fascism_win_idea
-					days = 120
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = AUS_empower_kpo
-				}
-				if = {
-					limit = {
-						has_idea = AUS_agitation_efficiency_communism_0_idea
-					}
-					remove_ideas = AUS_agitation_efficiency_communism_0_idea
-				}
-				if = {
-					limit = {
-						has_idea = AUS_agitation_efficiency_communism_1_idea
-					}
-					remove_ideas = AUS_agitation_efficiency_communism_1_idea
-				}
-				if = {
-					limit = {
-						has_idea = AUS_agitation_efficiency_communism_2_idea
-					}
-					remove_ideas = AUS_agitation_efficiency_communism_2_idea
-				}
-				if = {
-					limit = {
-						has_idea = AUS_agitation_efficiency_communism_3_idea
-					}
-					remove_ideas = AUS_agitation_efficiency_communism_3_idea
-				}
-				if = {
-					limit = {
-						has_idea = AUS_agitation_efficiency_communism_4_idea
-					}
-					remove_ideas = AUS_agitation_efficiency_communism_4_idea
-					set_country_flag = AUS_leninism_revolutionism_available
-				}
-				add_timed_idea = {
-					idea = AUS_agitation_communism_win_idea
 					days = 120
 				}
 			}
@@ -954,6 +890,225 @@ AUS_local_hegemony_category = {
 		remove_effect = {
 		}
 
+	}
+
+}
+AUS_prague_conference_category = {
+
+	AUS_pc_timeout = {
+		icon = GFX_
+		fire_only_once = yes
+		days_mission_timeout = 90
+		selectable_mission = no
+		is_good = no
+		priority = 101
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_prague_conference_ended_tt
+				NOT = {
+					has_global_flag = AUS_prague_conference_flag
+				}
+			}
+		}
+		timeout_effect = {
+			clr_global_flag = AUS_prague_conference_flag
+		}
+	}
+	AUS_pc_article_1 = {
+		icon = GFX_
+		fire_only_once = yes
+		days_remove = 0
+		days_re_enable = 0
+		priority = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_prague_not_already_took_or_voting_tt
+				NOT = {
+					has_country_flag = AUS_prague_conference_article_1_flag
+					has_country_flag = AUS_prague_conference_ongoing_voting_flag
+				}
+			}
+		}
+		complete_effect = {
+			set_country_flag = AUS_prague_conference_ongoing_voting_flag
+			set_country_flag = AUS_prague_conference_article_1_flag
+			set_variable = { AUS.prague_conference_last_article = 1 }
+			every_country = {
+				limit = {
+					has_country_flag = THIS.member_prague_conference_flag
+				}
+				country_event = { id = ausevents.32 hours = 6 }
+			}
+		}
+	}
+	AUS_pc_article_2 = {
+		icon = GFX_
+		fire_only_once = yes
+		days_remove = 0
+		days_re_enable = 0
+		priority = 99
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_prague_not_already_took_or_voting_tt
+				NOT = {
+					has_country_flag = AUS_prague_conference_article_2_flag
+					has_country_flag = AUS_prague_conference_ongoing_voting_flag
+				}
+			}
+		}
+		complete_effect = {
+			set_country_flag = AUS_prague_conference_ongoing_voting_flag
+			set_country_flag = AUS_prague_conference_article_2_flag
+			set_variable = { AUS.prague_conference_last_article = 2 }
+			every_country = {
+				limit = {
+					has_country_flag = THIS.member_prague_conference_flag
+				}
+				country_event = { id = ausevents.32 hours = 6 }
+			}
+		}
+	}
+	AUS_pc_article_3 = {
+		icon = GFX_
+		fire_only_once = yes
+		days_remove = 0
+		days_re_enable = 0
+		priority = 98
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_prague_not_already_took_or_voting_tt
+				NOT = {
+					has_country_flag = AUS_prague_conference_article_3_flag
+					has_country_flag = AUS_prague_conference_ongoing_voting_flag
+				}
+			}
+		}
+		complete_effect = {
+			set_country_flag = AUS_prague_conference_ongoing_voting_flag
+			set_country_flag = AUS_prague_conference_article_3_flag
+			set_variable = { AUS.prague_conference_last_article = 3 }
+			every_country = {
+				limit = {
+					has_country_flag = THIS.member_prague_conference_flag
+				}
+				country_event = { id = ausevents.32 hours = 6 }
+			}
+		}
+	}
+	AUS_pc_article_4 = {
+		icon = GFX_
+		fire_only_once = yes
+		days_remove = 0
+		days_re_enable = 0
+		priority = 97
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_prague_not_already_took_or_voting_tt
+				NOT = {
+					has_country_flag = AUS_prague_conference_article_4_flag
+					has_country_flag = AUS_prague_conference_ongoing_voting_flag
+				}
+			}
+		}
+		complete_effect = {
+			set_country_flag = AUS_prague_conference_ongoing_voting_flag
+			set_country_flag = AUS_prague_conference_article_4_flag
+			set_variable = { AUS.prague_conference_last_article = 4 }
+			every_country = {
+				limit = {
+					has_country_flag = THIS.member_prague_conference_flag
+				}
+				country_event = { id = ausevents.32 hours = 6 }
+			}
+		}
+	}
+	AUS_pc_article_5 = {
+		icon = GFX_
+		fire_only_once = yes
+		days_remove = 0
+		days_re_enable = 0
+		priority = 96
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_prague_not_already_took_or_voting_tt
+				NOT = {
+					has_country_flag = AUS_prague_conference_article_5_flag
+					has_country_flag = AUS_prague_conference_ongoing_voting_flag
+				}
+			}
+		}
+		complete_effect = {
+			set_country_flag = AUS_prague_conference_ongoing_voting_flag
+			set_country_flag = AUS_prague_conference_article_5_flag
+			set_variable = { AUS.prague_conference_last_article = 5 }
+			every_country = {
+				limit = {
+					has_country_flag = THIS.member_prague_conference_flag
+				}
+				country_event = { id = ausevents.32 hours = 6 }
+			}
+		}
+	}
+	AUS_pc_end_conference = {
+		icon = GFX_
+		fire_only_once = yes
+		days_remove = 7
+		days_re_enable = 0
+		priority = 102
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_prague_one_taken_and_not_voting_tt
+				NOT = {
+					has_country_flag = AUS_prague_conference_ongoing_voting_flag
+				}
+				OR = {
+					has_country_flag = AUS_prague_conference_article_1_flag
+					has_country_flag = AUS_prague_conference_article_2_flag
+					has_country_flag = AUS_prague_conference_article_3_flag
+					has_country_flag = AUS_prague_conference_article_4_flag
+					has_country_flag = AUS_prague_conference_article_5_flag
+				}
+			}
+		}
+		complete_effect = {
+			clr_global_flag = AUS_prague_conference_flag
+		}
+	}
+
+}
+AUS_foreign_policy = {
+
+	AUS_delta_ultimatum_policy = {
+		icon = GFX_
+		fire_only_once = yes
+		days_remove = 7
+		days_re_enable = 30
+		cost = 20
+		priority = 100
+		target_trigger = {
+			has_country_flag = FROM.do_foreign_policy_AUS
+		}
+		visible = {
+			FROM = {
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		available = {
+			is_puppet = no
+			NOT = {
+				OR = {
+					is_in_faction_with = FROM
+					has_war_with = FROM
+				}
+			}
+		}
+		remove_effect = {
+			FROM = {
+				country_event = ausevents.28
+			}
+		}
 	}
 
 }

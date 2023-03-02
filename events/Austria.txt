@@ -645,3 +645,192 @@ country_event = {
 		#}
 	}
 }
+# AUS Send Ultimatum
+country_event = {
+	id = ausevents.28
+	title = ausevents.28.t
+	desc = ausevents.28.desc
+	picture = GFX_
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.28.a
+		AUS = {
+			if = {
+				limit = {
+					has_dlc = "Death or Dishonor"
+				}
+				random_list = {
+					70 = {
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = autonomy_reichsprotectorate
+						}
+					}
+					30 = {
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = autonomy_reichskommissariat
+						}
+					}
+				}
+			}
+			else = {
+				set_autonomy = {
+					target = ROOT
+					autonomy_state = autonomy_puppet
+				}
+			}
+		}
+	}
+	option = {
+		name = ausevents.28.b
+		AUS = {
+			create_wargoal = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+	}
+}
+# AUS Review Act of August 15th
+news_event = {
+	id = ausevents.29
+	title = ausevents.29.t
+	desc = ausevents.29.desc
+	picture = GFX_
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.29.a
+		trigger = {
+			tag = AUS
+		}
+	}
+	option = {
+		name = ausevents.29.b
+		trigger = {
+			tag = ENG
+			tag = FRA
+			tag = SWE
+			tag = ITA
+			tag = SOV
+		}
+	}
+	option = {
+		name = ausevents.29.c
+		trigger = {
+			NOT = {
+				tag = AUS
+				tag = ENG
+				tag = FRA
+				tag = SWE
+				tag = ITA
+				tag = SOV
+			}
+		}
+	}
+}
+# Participate in Prague Conference?
+country_event = {
+	id = ausevents.30
+	title = ausevents.30.t
+	desc = ausevents.30.desc
+	picture = GFX_
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.30.a
+		#yep
+		set_country_flag = ROOT.member_prague_conference_flag
+	}
+	option = {
+		name = ausevents.30.b
+		#nope
+	}
+}
+
+######  ####    ######  ######  ##  ##  ######
+##  ##  ##  ##  ##  ##  ##      ##  ##  ##
+######  ####    ######  ##  ##  ##  ##  ######
+##      ##  ##  ##  ##  ##  ##  ##  ##  ##
+##      ##  ##  ##  ##  ######  ######  ######
+
+######  ######  ##  ##  ######  ######  ####    ######  ##  ##  ######  ######
+##      ##  ##  ### ##  ##      ##      ##  ##  ##      ### ##  ##      ##
+##      ##  ##  ### ##  ######  ######  ####    ######  ### ##  ##      ######
+##      ##  ##  ## ###  ##      ##      ##  ##  ##      ## ###  ##      ##
+######  ######  ##  ##  ##      ######  ##  ##  ######  ##  ##  ######  ######
+
+# Article [var]: Yes/no
+country_event = {
+	id = ausevents.31
+	title = ausevents.31.t
+	desc = ausevents.31.desc
+	picture = GFX_
+	is_triggered_only = yes
+	major = yes
+	timeout_days = 7
+	#fire_only_once = yes
+	option = {
+		name = ausevents.31.a
+		#Agree
+		set_variable = { ROOT.prague_conference_last_article_opinion = 1 }
+		add_to_variable = { ROOT.prague_conference_last_article_voted = 1 }
+	}
+	option = {
+		name = ausevents.31.b
+		#Disagree
+		set_variable = { ROOT.prague_conference_last_article_opinion = 0 }
+		add_to_variable = { ROOT.prague_conference_last_article_voted = 1 }
+	}
+}
+# Article Approved/Or not
+country_event = {
+	id = ausevents.32
+	title = ausevents.32.t
+	desc = ausevents.32.desc
+	picture = GFX_
+	is_triggered_only = yes
+	major = yes
+	timeout_days = 7
+	#fire_only_once = yes
+	option = {
+		name = ausevents.32.a
+		if = {
+			limit = {
+				check_variable = { var:AUS.percentage_prague_conference_approved > 59.9 }
+			}
+			if = {
+				limit = {
+					check_variable = { var:AUS.prague_conference_last_article = 1 }
+				}
+				set_country_flag = AUS_prague_conference_article_1_approved_flag
+			}
+			if = {
+				limit = {
+					check_variable = { var:AUS.prague_conference_last_article = 2 }
+				}
+				set_country_flag = AUS_prague_conference_article_2_approved_flag
+			}
+			if = {
+				limit = {
+					check_variable = { var:AUS.prague_conference_last_article = 3 }
+				}
+				set_country_flag = AUS_prague_conference_article_3_approved_flag
+			}
+			if = {
+				limit = {
+					check_variable = { var:AUS.prague_conference_last_article = 4 }
+				}
+				set_country_flag = AUS_prague_conference_article_4_approved_flag
+			}
+			if = {
+				limit = {
+					check_variable = { var:AUS.prague_conference_last_article = 5 }
+				}
+				set_country_flag = AUS_prague_conference_article_5_approved_flag
+			}
+		}
+	}
+}

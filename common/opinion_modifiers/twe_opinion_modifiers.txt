@@ -65,6 +65,12 @@ opinion_modifiers = {
 		decay = 1
 	
 	}
+	threatening_actions = {
+	
+		value = -25
+		decay = 1
+	
+	}
 
 	solidify_anglo_irish_friendship = {
 	

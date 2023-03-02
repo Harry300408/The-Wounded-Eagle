@@ -1111,22 +1111,24 @@ focus_tree = {
 			focus = AUS_grosses_osterreich
 		}
 		completion_reward = { 
-			#This effects will be moved into decision tab so the player
-			#can individually send ultimatums
-			BAY = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			CZE = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			ULM = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			BAD = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			WUR = {
-				country_event = { id = ausevents.1 random_hours = 12 }
+			add_political_power = 75
+			custom_effect_tooltip = AUS_new_countries_to_sent_ultimatums_tt
+			hidden_effect = {
+				BAY = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				CZE = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				ULM = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				BAD = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				WUR = {
+					set_country_flag = do_foreign_policy_AUS
+				}
 			}
 		}
 	}
@@ -1141,15 +1143,15 @@ focus_tree = {
 			focus = AUS_grosses_osterreich
 		}
 		completion_reward = { 
-			#This effects will be moved into decision tab so the player
-			#can individually send ultimatums
-			create_wargoal = {
-				target = SWI
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = FRA
-				type = annex_everything
+			add_political_power = 50
+			custom_effect_tooltip = AUS_new_countries_to_sent_ultimatums_tt
+			hidden_effect = {
+				FRA = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				SWI = {
+					set_country_flag = do_foreign_policy_AUS
+				}
 			}
 		}
 	}
@@ -1164,15 +1166,15 @@ focus_tree = {
 			focus = AUS_grosses_osterreich
 		}
 		completion_reward = { 
-			#This effects will be moved into decision tab so the player
-			#can individually send ultimatums
-			create_wargoal = {
-				target = YUG
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = ITA
-				type = annex_everything
+			add_political_power = 50
+			custom_effect_tooltip = AUS_new_countries_to_sent_ultimatums_tt
+			hidden_effect = {
+				YUG = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				ITA = {
+					set_country_flag = do_foreign_policy_AUS
+				}
 			}
 		}
 	}
@@ -1187,40 +1189,33 @@ focus_tree = {
 			focus = AUS_grosses_osterreich
 		}
 		completion_reward = { 
-			#This effects will be moved into decision tab so the player
-			#can individually send ultimatums
-			create_wargoal = {
-				target = SOV
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = HUN
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = ROM
-				type = annex_everything
-			}
-			if = {
-				limit = {
+			add_political_power = 100
+			custom_effect_tooltip = AUS_new_countries_to_sent_ultimatums_tt
+			hidden_effect = {
+				SOV = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				HUN = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				ROM = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				if = {
+					limit = {
+						POL = { is_puppet = no }
+					}
 					POL = {
-						is_puppet = no
+						set_country_flag = do_foreign_policy_AUS
 					}
 				}
-				create_wargoal = {
-					target = POL
-					type = annex_everything
-				}
-			}
-			if = {
-				limit = {
+				if = {
+					limit = {
+						SLO = { is_puppet = no }
+					}
 					SLO = {
-						is_puppet = no
+						set_country_flag = do_foreign_policy_AUS
 					}
-				}
-				create_wargoal = {
-					target = SLO
-					type = annex_everything
 				}
 			}
 		}
@@ -1236,34 +1231,36 @@ focus_tree = {
 			focus = AUS_grosses_osterreich
 		}
 		completion_reward = { 
-			#This effects will be moved into decision tab so the player
-			#can individually send ultimatums
-			WSF = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			THU = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			SAX = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			DBS = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			HAN = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			OLD = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			PRE = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			MEK = {
-				country_event = { id = ausevents.1 random_hours = 12 }
-			}
-			SHL = {
-				country_event = { id = ausevents.1 random_hours = 12 }
+			add_political_power = 75
+			custom_effect_tooltip = AUS_new_countries_to_sent_ultimatums_tt
+			hidden_effect = {
+				WSF = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				THU = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				SAX = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				DBS = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				HAN = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				OLD = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				PRE = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				MEK = {
+					set_country_flag = do_foreign_policy_AUS
+				}
+				SHL = {
+					set_country_flag = do_foreign_policy_AUS
+				}
 			}
 		}
 	}
@@ -1279,6 +1276,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = AUS_plan_sud_deutschland
+		}
+		prerequisite = {
+			focus = AUS_victorious_revanchism
 		}
 		completion_reward = { 
 			every_state = {
@@ -1319,9 +1319,10 @@ focus_tree = {
 					}
 					is_fully_controlled_by = AUS
 				}
-				add_compliance = 0.1
+				add_compliance = 0.15
 				add_claim_by = AUS
 			}
+			set_cosmetic_tag = AUS_austrian_german_confederation
 		}
 	}
 	focus = {
@@ -1341,7 +1342,7 @@ focus_tree = {
 			focus = AUS_plan_west
 		}
 		completion_reward = { 
-			#DELTA
+			add_ideas = AUS_victorious_revanchism_idea
 		}
 	}
 	focus = {
@@ -1537,118 +1538,35 @@ focus_tree = {
 			focus = AUS_plan_deutschland
 		}
 		completion_reward = { 
-			#DELTA: decisions
-			WSF = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
+			every_country = {
+				limit = {
+					OR = {
+						tag = ENG
+						tag = FRA
+						tag = SWE
+						tag = ITA
+						tag = SOV
+					}
 				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
+				country_event = ausevents.30
 			}
-			THU = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
+			news_event = { id = ausevents.29 days = 1 }
+			every_country = {
+				limit = {
+					OR = {
+						tag = WSF
+						tag = THU
+						tag = SAX
+						tag = DBS
+						tag = HAN
+						tag = OLD
+						tag = MEK
+						tag = SHL
+						tag = ULM
+						tag = BAD
+						tag = WUR
+					}
 				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			SAX = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			DBS = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			HAN = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			OLD = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			MEK = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			SHL = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			ULM = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			BAD = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = focus_diplo
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = AUS
-					value = 50
-				}
-			}
-			WUR = {
 				add_opinion_modifier = {
 					target = AUS
 					modifier = focus_diplo
@@ -1671,9 +1589,12 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_review_act_of_august_fifteenth
 		}
+		bypass = {
+			has_global_flag = AUS_prague_conference_flag
+		}
 		completion_reward = { 
-			#DELTA: move to event (BAY: AUS invite)
 			BAY = {
+				country_event = ausevents.30
 				add_opinion_modifier = {
 					target = AUS
 					modifier = focus_diplo
@@ -1696,6 +1617,14 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_invite_bavaria
 		}
+		available = {
+			BAY = {
+				has_opinion = {
+					target = AUS
+					value > 49
+				}
+			}
+		}
 		completion_reward = { 
 			#DELTA: AUS/BAY add treaty idea
 		}
@@ -1713,9 +1642,12 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_agreement_with_bohemia
 		}
+		bypass = {
+			has_global_flag = AUS_prague_conference_flag
+		}
 		completion_reward = { 
-			#DELTA: move to event (PRE: AUS invite)
 			PRE = {
+				country_event = ausevents.30
 				add_opinion_modifier = {
 					target = AUS
 					modifier = focus_diplo
@@ -1738,6 +1670,14 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_invite_prussia
 		}
+		available = {
+			PRE = {
+				has_opinion = {
+					target = AUS
+					value > 49
+				}
+			}
+		}
 		completion_reward = { 
 			#DELTA: AUS/PRE add treaty idea
 		}
@@ -1745,7 +1685,7 @@ focus_tree = {
 	focus = {
 		id = AUS_prague_conference
 		icon = GFX_focus_AUS_prague_conference
-		cost = 10
+		cost = 1
 		x = 0
 		y = 2
 		relative_position_id = AUS_review_act_of_august_fifteenth
@@ -1753,8 +1693,14 @@ focus_tree = {
 			focus = AUS_invite_bavaria
 			focus = AUS_invite_prussia
 		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_bypass_not_enough_prague_members_tt
+				check_variable = { var:AUS.amount_of_prague_members < 4 }
+			}
+		}
 		completion_reward = { 
-			#DELTA: PRAGUE CONFERENCE event
+			set_global_flag = AUS_prague_conference_flag
 		}
 	}
 	focus = {
