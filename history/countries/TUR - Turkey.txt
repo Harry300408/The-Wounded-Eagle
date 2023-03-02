@@ -63,7 +63,7 @@ if = {
 	}
 
 	set_autonomy = {
-		target = ISR
+		target = PAL
 		autonomous_state = autonomy_OTT_eya
 	}
 	
@@ -72,7 +72,7 @@ if = {
 		puppet = LBA
 		puppet = MED
 		puppet = MEC
-		puppet = ISR
+		puppet = PAL
 	}	
 
 }

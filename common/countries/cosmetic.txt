@@ -65,6 +65,15 @@ RAJ_UK = {
 	color_ui = rgb { 200  10  10 }
 }
 
+OTT_PAL = {
+	color = rgb { 167 0 0 }
+	color_ui = rgb { 167 0 0 }
+}
+
+
+
+# HOI4
+
 RAJ_FREE = {
 	color = rgb { 80  165  10 }
 	color_ui = rgb { 80  165  10 }
