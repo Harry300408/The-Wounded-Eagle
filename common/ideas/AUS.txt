@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		
-		AUS_political_dead_end = {
+		AUS_political_dead_end_idea = {
 			picture = GFX_
 			allowed = {
 				always = yes
@@ -13,9 +13,12 @@ ideas = {
 				political_power_gain = -0.25
 				stability_factor = -0.1
 				political_advisor_cost_factor = 0.3
+				communism_drift = 0.01
+				social_democracy_drift = 0.01
+				authoritarian_democracy_drift = 0.01
 			}
 		}
-		AUS_bad_monarchism_memories = {
+		AUS_bad_monarchism_memories_idea = {
 			picture = GFX_
 			allowed = {
 				always = yes
@@ -24,7 +27,62 @@ ideas = {
 				always = yes
 			}
 			modifier = {
+				neutrality_acceptance = -100
 				neutrality_drift = -0.03
+			}
+		}
+		AUS_economical_collapse_0_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.15
+				stability_factor = -0.05
+			}
+		}
+		AUS_economical_collapse_1_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.2
+				stability_factor = -0.1
+			}
+		}
+		AUS_economical_collapse_2_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.25
+				stability_factor = -0.15
+			}
+		}
+		AUS_victorious_revanchism_idea = {
+			picture = GFX_
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = 0.15
+				army_org_factor = 0.1
+				resistance_growth = -0.1
+				army_speed_factor = 0.1
 			}
 		}
 		AUS_monarchism_abandoned_idea_0 = {
