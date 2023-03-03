@@ -9,6 +9,7 @@ add_ideas = {
 }
 
 add_ideas = {
+	edward_viii
 	bitter_defeat
 	general_strikes
 }
@@ -194,10 +195,10 @@ if = {
 		target = SAF
 		autonomous_state = autonomy_commonwealth_proc
 	}
-	#set_autonomy = {
-	#	target = AST
-	#	autonomous_state = autonomy_commonwealth_proc
-	#}
+	set_autonomy = {
+		target = AST
+		autonomous_state = autonomy_commonwealth_proc
+	}
 	set_autonomy = {
 		target = NZL
 		autonomous_state = autonomy_commonwealth_proc
@@ -263,7 +264,7 @@ if = {
 		puppet = RAJ
 		puppet = CAN
 		puppet = SAF
-		#puppet = AST
+		puppet = AST
 		puppet = NZL
 		puppet = EGY
 		puppet = GLF
@@ -322,6 +323,7 @@ recruit_character = ENG_attlee
 recruit_character = ENG_af
 recruit_character = ENG_churchill
 recruit_character = ENG_stanley_baldwin
+recruit_character = ENG_montgomery
 
 #Advisors (Order Matters)
 recruit_character = ENG_edward_viii

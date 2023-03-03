@@ -36,3 +36,15 @@ ENG_expand_privy_council = {
 	}
 	visible_when_empty = no
 }
+
+ENG_the_welfare_issue = {
+	icon = GFX_
+	priority = 100
+	visible = {
+		has_completed_focus = ENG_the_welfare_issue
+	}
+	allowed = {
+		tag = ENG
+	}
+	visible_when_empty = no
+}

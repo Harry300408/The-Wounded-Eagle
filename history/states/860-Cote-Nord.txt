@@ -9,7 +9,7 @@ state={
 		add_core_of = CAN
 	}
 	resources = {
-		fish = 10
+		#fish = 10
 	}
 	manpower=110000
 	state_category = rural

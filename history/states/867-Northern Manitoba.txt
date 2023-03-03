@@ -9,7 +9,7 @@ state={
 		add_core_of = BOR
 	}
 	resources = {
-		fish = 16
+		#fish = 16
 	}
 	impassable = yes
 	manpower=10000

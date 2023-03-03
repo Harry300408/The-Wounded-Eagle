@@ -130,6 +130,36 @@ characters = {
 		can_be_fired = no
 	}
 
+	ENG_montgomery = {
+		name=ENG_montgomery
+		portraits={
+			civilian={
+				large = GFX_ENG_montgomery
+				small = GFX_ENG_montgomery_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_montgomery_GOV
+			traits  = {
+				
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ENG_montgomery_army
+			traits  = {
+				
+			}
+		}
+		country_leader = {
+            ideology = military_despotism 
+            traits = {  }
+            #desc = 
+        }
+		can_be_fired = no
+	}
+
     ## FOR THE RAJ
 
     RAJ_churchill = {

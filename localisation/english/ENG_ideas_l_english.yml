@@ -1,4 +1,7 @@
 ﻿l_english:
+  edward_viii:0 "Edward VIII"
+  edward_viii_desc:0 "HRM, King of United Kingdom of Great Britian, Lord Protector of Ireland & India, Overseerer of The Colony of New South Wales & Victoria"
+
   bitter_defeat:0 "Bitter Defeat"
   bitter_defeat_desc:0 "After the 1st World War, we got the short end of the stick and the general public are mad. Nationalism & Communism is running rampant, if we don't stamp it out soon who knows where it could lead..."
 
@@ -55,3 +58,15 @@
 
   for_king_and_country:0 "For King and Country!"
   for_king_and_country_desc:0 ""
+
+  royal_trade_unions:0 "Royal Trade Unions"
+  royal_trade_unions_desc:0 ""
+
+  unions_banned:0 "Trade Unions Banned"
+  unions_banned_desc:0 ""
+
+  the_road_we_must_take:0 "The Road We Must Take"
+  the_road_we_must_take_desc:0 ""
+
+  you_rebel_scum:0 "You Rebel Scum"
+  you_rebel_scum_desc:0 ""

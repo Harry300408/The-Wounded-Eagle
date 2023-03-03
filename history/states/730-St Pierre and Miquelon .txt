@@ -15,7 +15,7 @@ state={
 	}
 
 	resources = {
-		fish = 1
+		#fish = 1
 	}
 	
 	provinces={ 373 }

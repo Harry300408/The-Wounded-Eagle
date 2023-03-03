@@ -86,4 +86,14 @@ spriteTypes = {
         name = GFX_ENG_stanley_baldwin_small
         texturefile = gfx/leaders/ENG/Tory/small/stanley_baldwin.dds
     }
+
+    spriteType = {
+        name = GFX_ENG_montgomery
+        texturefile = gfx/leaders/ENG/Army/Montgomery.dds
+    }
+
+    spriteType = {
+        name = GFX_ENG_montgomery_small
+        texturefile = gfx/leaders/ENG/Army/small/Montgomery.dds
+    }
 }

@@ -331,6 +331,76 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ENG/harden_papist_restrictions.png"			
 	}
 
+	SpriteType = {
+		name = "GFX_ENG_lessen_catholic_burdens"
+		texturefile = "gfx/interface/goals/ENG/lessen_catholic_burdens.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_royal_trade_unions"
+		texturefile = "gfx/interface/goals/ENG/royal_trade_unions.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_ban_all_unions"
+		texturefile = "gfx/interface/goals/ENG/ban_all_unions.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_secular_education"
+		texturefile = "gfx/interface/goals/ENG/secular_education.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_religous_schools"
+		texturefile = "gfx/interface/goals/ENG/religous_schools.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_the_welfare_issue"
+		texturefile = "gfx/interface/goals/ENG/the_welfare_issue.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_the_road_we_must_take"
+		texturefile = "gfx/interface/goals/ENG/the_road_we_must_take.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_the_road_we_must_take"
+		texturefile = "gfx/interface/goals/ENG/the_road_we_must_take.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_the_king_is_dead"
+		texturefile = "gfx/interface/goals/ENG/the_king_is_dead.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_militarist_primacy"
+		texturefile = "gfx/interface/goals/ENG/militarist_primacy.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_empower_the_mashal"
+		texturefile = "gfx/interface/goals/ENG/empower_the_mashal.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_the_marshals_agents"
+		texturefile = "gfx/interface/goals/ENG/the_marshals_agents.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_militarization_of_britain"
+		texturefile = "gfx/interface/goals/ENG/militarization_of_britain.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_you_rebel_scum"
+		texturefile = "gfx/interface/goals/ENG/you_rebel_scum.png"			
+	}
+
 
 
 }

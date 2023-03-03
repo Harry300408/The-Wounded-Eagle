@@ -23,7 +23,7 @@ state={
 	}
 
 	resources = {
-		fish = 2
+		#fish = 2
 	}
 
 	local_supplies=0.0 

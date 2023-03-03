@@ -496,7 +496,7 @@ focus_tree = {
 		id = ENG_the_king_is_dead
 		x = 15
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_the_king_is_dead
 		relative_position_id = ENG_monarchy_back_in_business
 
 		prerequisite = {
@@ -1291,7 +1291,7 @@ focus_tree = {
 		id = ENG_lessen_catholic_burdens
 		x = -1
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_lessen_catholic_burdens
 		relative_position_id = ENG_concerning_domestic_issues
 
 		prerequisite = {
@@ -1340,7 +1340,7 @@ focus_tree = {
 		id = ENG_royal_trade_unions
 		x = -1
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_royal_trade_unions
 		relative_position_id = ENG_concerning_domestic_issues
 
 		prerequisite = {
@@ -1357,13 +1357,16 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			add_ideas = {
+				royal_trade_unions
+			}
 		}
 	}
 	focus = {
 		id = ENG_ban_all_unions
 		x = 1
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_ban_all_unions
 		relative_position_id = ENG_concerning_domestic_issues
 
 		prerequisite = {
@@ -1380,6 +1383,9 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			add_ideas = {
+				unions_banned
+			}
 		}
 	}
 
@@ -1387,7 +1393,7 @@ focus_tree = {
 		id = ENG_secular_education
 		x = 1
 		y = 3
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_secular_education
 		relative_position_id = ENG_concerning_domestic_issues
 
 		prerequisite = {
@@ -1410,7 +1416,7 @@ focus_tree = {
 		id = ENG_religous_schools
 		x = -1
 		y = 3
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_religous_schools
 		relative_position_id = ENG_concerning_domestic_issues
 
 		prerequisite = {
@@ -1434,7 +1440,7 @@ focus_tree = {
 		id = ENG_the_welfare_issue
 		x = 0
 		y = 4
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_the_welfare_issue
 		relative_position_id = ENG_concerning_domestic_issues
 
 		prerequisite = {
@@ -1450,6 +1456,7 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			custom_effect_tooltip = ENG_unlock_welfare_issue
 		}
 	}
 
@@ -1457,7 +1464,7 @@ focus_tree = {
 		id = ENG_the_road_we_must_take
 		x = 3
 		y = 5
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_the_road_we_must_take
 		relative_position_id = ENG_concerning_domestic_issues
 
 		prerequisite = {
@@ -1473,18 +1480,21 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			add_ideas = {
+				the_road_we_must_take
+			}
 		}
 	}
 
 	
 	
-	## ALT MONARCHY/AUTOCRATIC PATHS (JAC, Militarisy, Capitalist or Religious/Theocratic)
+	## ALT MONARCHY/AUTOCRATIC PATHS (JAC, Militarist, Capitalist or Religious/Theocratic)
 	
 	focus = {
 		id = ENG_convene_regency_council
 		x = 0
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_convene_regency_council
 		relative_position_id = ENG_the_king_is_dead
 
 		prerequisite = {
@@ -1494,9 +1504,13 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 3
 	
 		completion_reward = {
+			country_event = {
+				id = ENGmon.7
+				days = 1
+			}
 		}
 	}
 
@@ -1504,7 +1518,7 @@ focus_tree = {
 		id = ENG_militarist_primacy
 		x = -6
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_militarist_primacy
 		relative_position_id = ENG_the_king_is_dead
 
 		prerequisite = {
@@ -1580,7 +1594,7 @@ focus_tree = {
 		id = ENG_empower_the_mashal
 		x = 0
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_empower_the_mashal
 		relative_position_id = ENG_militarist_primacy
 
 		prerequisite = {
@@ -1590,9 +1604,18 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 5
 	
 		completion_reward = {
+			retire_character = ENG_af
+			set_politics = {
+				ruling_party = despotism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = despotism
+				popularity = 1
+			}
 		}
 	}
 
@@ -1600,7 +1623,7 @@ focus_tree = {
 		id = ENG_the_marshals_agents
 		x = 0
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_the_marshals_agents
 		relative_position_id = ENG_militarist_primacy
 
 		prerequisite = {
@@ -1610,9 +1633,13 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 6
 	
 		completion_reward = {
+			create_intelligence_agency = {
+				name = "S.A.S"
+				icon = GFX_intelligence_agency_logo_uk
+			}
 		}
 	}
 
@@ -1620,7 +1647,7 @@ focus_tree = {
 		id = ENG_militarization_of_britain
 		x = -2
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_militarization_of_britain
 		relative_position_id = ENG_militarist_primacy
 
 		prerequisite = {
@@ -1633,6 +1660,38 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = disarmed_nation
+				}
+
+				swap_ideas = {
+					remove_idea = disarmed_nation
+					add_idea = extensive_conscription
+				}
+			}
+
+			if = {
+				limit = {
+					has_idea = volunteer_only
+				}
+
+				swap_ideas = {
+					remove_idea = volunteer_only
+					add_idea = extensive_conscription
+				}
+			}
+
+			if = {
+				limit = {
+					has_idea = limited_conscription
+				}
+
+				swap_ideas = {
+					remove_idea = limited_conscription
+					add_idea = extensive_conscription
+				}
+			}
 		}
 	}
 
@@ -1640,7 +1699,7 @@ focus_tree = {
 		id = ENG_you_rebel_scum
 		x = 2
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_you_rebel_scum
 		relative_position_id = ENG_militarist_primacy
 
 		prerequisite = {
@@ -1653,6 +1712,9 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			add_ideas = {
+				you_rebel_scum
+			}
 		}
 	}
 

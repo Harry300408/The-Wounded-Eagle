@@ -1,6 +1,23 @@
 ideas = {
 
 	country = {
+		edward_viii = {
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		
+		}
+
 		bitter_defeat = {
 			
 			allowed = {
@@ -380,6 +397,76 @@ ideas = {
 			}
 		
 		}
+
+		royal_trade_unions = {
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		
+		}
+
+		unions_banned = {
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		
+		}
+
+		the_road_we_must_take = {
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		
+		}
+
+		you_rebel_scum = {
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		
+		}
+
+		
 
     }
 }        

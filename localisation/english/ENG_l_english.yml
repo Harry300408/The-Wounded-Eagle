@@ -73,7 +73,25 @@
       ENG_concerning_domestic_issues:0 "Concerning Domsetic Issues"
       ENG_harden_papist_restrictions:0 "Harden Papist Restrictions"
       ENG_lessen_catholic_burdens:0 "Lessen Catholic Burdens"
-      
+      ENG_royal_trade_unions:0 "Royal Trade Unions"
+      ENG_ban_all_unions:0 "Ban All Unions"
+      ENG_secular_education:0 "Secular Education"
+      ENG_religous_schools:0 "Fund Religous Education"
+      ENG_the_welfare_issue:0 "The Welfare Issue"
+
+      ENG_the_road_we_must_take:0 "The Road We Must Rake"
+
+      ## The King Is Dead 
+      ENG_the_king_is_dead:0 "The King Is Dead!"
+      ENG_convene_regency_council:0 "Convene The Regency Council"
+
+      # Militarist Primacy
+      ENG_militarist_primacy:0 "Militarist Primacy"
+
+      ENG_empower_the_mashal:0 "Empower The Marshal"
+      ENG_the_marshals_agents:0 "The Marshals Agents"
+      ENG_militarization_of_britain:0 "Militarazation of Britian"
+      ENG_you_rebel_scum:0 "You Rebel Scum"
 
   ## PARTIES ##
   ENG_communism_party:0 "§tCP"
@@ -118,6 +136,7 @@
   ENG_unlock_worker_decs:0 "Unlocks Decisions: §YGain Workers Trust"
   ENG_imp_fed_decs:0 "Unlocks Decisions to §YCreate The Imperial Federation"
   ENG_privy_council_decs:0 "Unlocks Decisions: §YExpand The Privy Council"
+  ENG_unlock_welfare_issue:0 "Unlocks Decisions: §YThe Welfare Issue"
 
   ## BOOKMARK LOC ##
 
@@ -136,6 +155,8 @@
   riots_continue:0 "Has Not Cracked Down On Riots"
 
   ## DECISIONS ##
+
+  #ENG_imperial_federation_TWE
   march_towards_winnipeg:0 "Towards Winnipeg [BOR.GetFlag]"
   march_on_ottawa:0 "March on Ottawa [CAN.GetFlag]"
   onto_halifax:0 "Onto Halifax [NBW.GetFlag]"
@@ -148,6 +169,15 @@
   end_the_apartheid:0 "End The Apartheid [SAF.GetFlag]"
   under_new_management:0 "Under New management [MAL.GetFlag]"
   what_is_a_kiwi:0 "What Is A Kiwi? [NZL.GetFlag]"
+
+  ENG_workers_trust_decs:0 "Gain Workers Trust"
+
+
+  ENG_expand_privy_council:0 "Expand The Privy Council"
+
+
+  ENG_the_welfare_issue:0 "The Welfare Issue"
+
 
   ## EVENT STUFF ##
 
