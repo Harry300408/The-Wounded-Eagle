@@ -2,6 +2,19 @@
 
 #oob = "XSM_1936"
 
+declare_war_on = {
+	target = HUI
+	type = annex_everything
+}
+
+set_province_controller = 1630
+set_province_controller = 3745
+set_province_controller = 1985
+set_province_controller = 4313
+set_province_controller = 6638
+
+set_cosmetic_tag = XSM_empire
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

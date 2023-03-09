@@ -16,6 +16,22 @@ characters = {
         }
 		can_be_fired = no
     }
+	
+	ENG_william_morris = {
+        name = ENG_william_morris
+        portraits = {
+            civilian = {
+                large = "GFX_william_Morris"
+				small = "GFX_william_Morris_small"
+            }
+        }
+        country_leader = {
+            ideology = corporatocracy
+            traits = {  }
+            #desc = 
+        }
+		can_be_fired = no
+    }
 
     ENG_af = {
         name = ENG_af

@@ -5,6 +5,19 @@ set_autonomy = {
 	autonomous_state = autonomy_HUN_proc
 }
 
+declare_war_on = {
+	target = HSR
+	type = annex_everything
+}
+
+set_province_controller = 3696
+set_province_controller = 713
+set_province_controller = 746
+set_province_controller = 9687
+set_province_controller = 3709
+set_province_controller = 11676
+set_province_controller = 9704
+
 
 #oob = "HUN_1936"
 if = {

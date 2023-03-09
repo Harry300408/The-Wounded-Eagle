@@ -324,6 +324,7 @@ recruit_character = ENG_af
 recruit_character = ENG_churchill
 recruit_character = ENG_stanley_baldwin
 recruit_character = ENG_montgomery
+recruit_character = ENG_william_morris
 
 #Advisors (Order Matters)
 recruit_character = ENG_edward_viii

@@ -10,6 +10,8 @@ set_technology = {
 	mass_assault = 1
 }
 
+set_cosmetic_tag = GXC_SCP
+
 #recruit_character = GXC_li_zongren
 #recruit_character = GXC_chen_jitang
 #recruit_character = GXC_liu_peng

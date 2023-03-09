@@ -13,3 +13,20 @@ AIN = "countries/Japan.txt"
 TSA = "countries/Japan.txt"
 #Satsuma
 SAT = "countries/Japan.txt"
+
+#Fengteng Clique
+FEN = "countries/Manchukou.txt"
+#Liaotung Clique 
+LIA = "countries/Manchukou.txt"
+#Qing Remnants
+QIN = "countries/China.txt"
+#Hebei Remnants
+HEB = "countries/China.txt"
+#Taiping Heavenly Kingdom
+THK = "countries/China.txt"
+#Sichuan Clique
+SIC = "countries/China.txt"
+#Guizhou Clique
+GUI = "countries/China.txt"
+#Islamic Clique of Hui
+HUI = "countries/China.txt"

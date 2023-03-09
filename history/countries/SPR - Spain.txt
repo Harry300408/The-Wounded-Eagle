@@ -1,5 +1,21 @@
 ﻿capital = 41
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+
+	set_autonomy = {
+		target = MOR
+		autonomous_state = autonomy_colony
+	}
+
+	else = {
+		puppet = MOR
+
+	}
+}
+
 #oob = "SPR_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

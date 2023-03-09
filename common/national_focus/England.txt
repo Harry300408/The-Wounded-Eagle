@@ -1543,7 +1543,7 @@ focus_tree = {
 		id = ENG_capitalist_primacy
 		x = 0
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_capitalist_primacy
 		relative_position_id = ENG_the_king_is_dead
 
 		prerequisite = {
@@ -1562,6 +1562,22 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			set_party_name = {
+				ideology = authoritarian_democracy
+				long_name = MP_long
+				name = MP
+			}
+			hidden_effect = {
+				retire_country_leader = authoritarian_democracy
+			}
+			set_politics = {
+				ruling_party = despotism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = despotism
+				popularity = 1
+			}
 		}
 	}
 	focus = {
@@ -1637,7 +1653,7 @@ focus_tree = {
 	
 		completion_reward = {
 			create_intelligence_agency = {
-				name = "S.A.S"
+				name = "SAS"
 				icon = GFX_intelligence_agency_logo_uk
 			}
 		}
@@ -1722,7 +1738,7 @@ focus_tree = {
 		id = ENG_a_mere_accident
 		x = -1
 		y = 3
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_a_mere_accident
 		relative_position_id = ENG_militarist_primacy
 
 		prerequisite = {
@@ -1741,13 +1757,17 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			custom_effect_tooltip = churchill_killed
+			hidden_effect = {
+				kill_ideology_leader = authoritarian_democracy
+			}	
 		}
 	}
 	focus = {
 		id = ENG_ending_orwell
 		x = 1
 		y = 3
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_ending_orwell
 		relative_position_id = ENG_militarist_primacy
 
 		prerequisite = {
@@ -1766,13 +1786,14 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			custom_effect_tooltip = orwell_killed
 		}
 	}
 	focus = {
 		id = ENG_restrained_no_more
 		x = 0
 		y = 7
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_restrained_no_more
 		relative_position_id = ENG_militarist_primacy
 
 		prerequisite = {
@@ -1788,6 +1809,9 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			add_ideas = { 
+				constitution_abolished 
+			}
 		}
 	}
 
@@ -1796,7 +1820,7 @@ focus_tree = {
 		id = ENG_child_labour
 		x = -2
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_child_labour
 		relative_position_id = ENG_capitalist_primacy
 
 		prerequisite = {
@@ -1816,7 +1840,7 @@ focus_tree = {
 		id = ENG_privitise_the_military
 		x = 0
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_privitise_the_military
 		relative_position_id = ENG_capitalist_primacy
 
 		prerequisite = {
@@ -1829,6 +1853,9 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			add_ideas = {
+				privitised_military
+			}
 		}
 	}
 
@@ -1836,7 +1863,7 @@ focus_tree = {
 		id = ENG_corpratised_youth
 		x = 2
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_corpratised_youth
 		relative_position_id = ENG_capitalist_primacy
 
 		prerequisite = {
@@ -1849,6 +1876,9 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			add_ideas = {
+				corprate_youth
+			}
 		}
 	}
 
@@ -1856,7 +1886,7 @@ focus_tree = {
 		id = ENG_exploit_colonial_labour
 		x = -2
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_exploit_colonial_labour
 		relative_position_id = ENG_capitalist_primacy
 
 		prerequisite = {
@@ -1875,6 +1905,7 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			custom_effect_tooltip = exploit_colonial_labour_decs
 		}
 	}
 
@@ -1882,7 +1913,7 @@ focus_tree = {
 		id = ENG_making_extra_money
 		x = 0
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_making_extra_money
 		relative_position_id = ENG_capitalist_primacy
 
 		prerequisite = {
@@ -1901,6 +1932,10 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			country_event = {
+				days = 1
+				id = ENGmon.8
+			}
 		}
 	}
 
@@ -1908,7 +1943,7 @@ focus_tree = {
 		id = ENG_revitalize_our_great_country
 		x = 2
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_revitalize_our_great_country
 		relative_position_id = ENG_capitalist_primacy
 
 		prerequisite = {
@@ -1927,6 +1962,10 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			add_timed_idea = {
+				idea = rebuilding_our_industry
+				days = 547.5
+			}
 		}
 	}
 
@@ -1934,7 +1973,7 @@ focus_tree = {
 		id = ENG_here_comes_the_money
 		x = 0
 		y = 7
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_here_comes_the_money
 		relative_position_id = ENG_capitalist_primacy
 
 		prerequisite = {

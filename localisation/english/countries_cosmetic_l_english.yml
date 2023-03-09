@@ -1,7 +1,24 @@
 ﻿l_english:
- 
+ XSM_empire:0 "Ma Clique"
+ XSM_empire_DEF:0 "the Ma Clique"
+
+ SHX_clique:0 "Grand Clique of Shaanxi"
+ SHX_clique_DEF:0 "the Grand Clique of Shaanxi"  
+
+ CHI_national_government:0 "Chinese National Government"
+ CHI_national_government_DEF:0 "the Chinese National Government"
+
+ GXC_SCP:0 "United Cliques of South China"
+ GXC_SCP_DEF:0 "the United Cliques of South China"
+
+ PRC_shangdong:0 "Soviet Clique of Shangdong"
+ PRC_shangdong_DEF:0 "the Soviet Clique of Shangdong"
+
  OTT_PAL:0 "Ottoman Palestine"
  OTT_PAL_DEF:0 "Ottoman Palestine"
+
+ MOR_SPR:0 "Spanish Morocco"
+ MOR_SPR_DEF:0 "Spanish Morocco"
 
  CMR_mittleafrika:0 "Mittleafrika"
  CMR_mittleafrika_DEF:0 "Mittleafrika"

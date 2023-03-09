@@ -349,6 +349,8 @@ ideologies = {
 			corporatocracy = {}
 
 			st_democracy = {}
+
+			corporatocracy = {}
 		}
 
 		dynamic_faction_names = {

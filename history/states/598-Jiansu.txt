@@ -6,9 +6,9 @@ state={
 	state_category = town
 
 	history={
-		owner = CHI
+		owner = THK
 		add_core_of = CHI
-		add_core_of = PRC
+		add_core_of = THK
 		buildings = {
 			infrastructure = 2
 

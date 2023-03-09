@@ -58,3 +58,8 @@ GBN = "countries/United Kingdom.txt"
 IBR = "countries/United Kingdom.txt"
 #English Republican Army
 ERA = "countries/United Kingdom.txt"
+
+#Hungarian Socialist Revolt
+HSR = "countries/Hungary.txt"
+#Carlist Spain
+CSP = "countries/Spain.txt"

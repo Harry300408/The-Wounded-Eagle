@@ -48,3 +48,15 @@ ENG_the_welfare_issue = {
 	}
 	visible_when_empty = no
 }
+
+ENG_exploit_colonial_labour = {
+	icon = GFX_
+	priority = 100
+	visible = {
+		has_completed_focus = ENG_exploit_colonial_labour
+	}
+	allowed = {
+		tag = ENG
+	}
+	visible_when_empty = no
+}

@@ -1,5 +1,65 @@
 #reload countrycolors
 #TWE Nations
+HUI = {
+	color = rgb { 78 196 74 }
+	color_ui = rgb { 78 196 74 }
+}
+
+GUI = {
+	color = rgb { 86 124 74 }
+	color_ui = rgb { 86 124 74 }
+}
+
+SIC = {
+	color = rgb { 0 74 127 }
+	color_ui = rgb { 0 74 127 }
+}
+
+THK = {
+	color = rgb { 211 192 105 }
+	color_ui = rgb { 211 192 105 }
+}
+
+HEB = {
+	color = rgb { 0 217 217 }
+	color_ui = rgb { 0 217 217 }
+}
+
+QIN = {
+	color = rgb { 93 99 122 }
+	color_ui = rgb { 93 99 122 }
+}
+
+LIA = {
+	color = rgb { 0 127 127 }
+	color_ui = rgb { 0 127 127 }
+}
+
+FEN = {
+	color = rgb { 189 113 33 }
+	color_ui = rgb { 189 113 33 }
+}
+
+MOR = {
+	color = rgb { 173 159 91 }
+	color_ui = rgb { 173 159 91 }
+}
+
+CSP = {
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 200 100 31 }
+}
+
+NAV = {
+	color = rgb { 0 127 14 }
+	color_ui = rgb { 0 127 14 }
+}
+
+HSR = {
+	color = rgb { 173 0 0 }
+	color_ui = rgb { 173 0 0 }
+}
+
 ERA = {
 	color = rgb { 237 237 237 }
 	color_ui = rgb { 237 237 237 }
@@ -596,8 +656,8 @@ SIK = {
 	color_ui = rgb { 222 247 198 }
 }
 TIB = {
-	color = rgb { 80 115 45}
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 239 239 239 }
+	color_ui = rgb { 239 239 239 }
 }
 URG = {
 	color = rgb { 171 190 152 }

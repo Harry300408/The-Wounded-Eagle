@@ -1,4 +1,6 @@
-﻿capital = 613 # Nanjing
+﻿capital = 620 # Nanjing
+
+set_cosmetic_tag = CHI_national_government
 
 #oob = "CHI_1936"
 if = {

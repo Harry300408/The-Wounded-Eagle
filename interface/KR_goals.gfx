@@ -375,6 +375,11 @@ spriteTypes = {
 		name = "GFX_ENG_the_king_is_dead"
 		texturefile = "gfx/interface/goals/ENG/the_king_is_dead.png"			
 	}
+	
+	SpriteType = {
+		name = "GFX_ENG_convene_regency_council"
+		texturefile = "gfx/interface/goals/ENG/convene_regency_council.png"			
+	}
 
 	SpriteType = {
 		name = "GFX_ENG_militarist_primacy"
@@ -401,6 +406,60 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ENG/you_rebel_scum.png"			
 	}
 
+	SpriteType = {
+		name = "GFX_ENG_a_mere_accident"
+		texturefile = "gfx/interface/goals/ENG/a_mere_accident.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_ending_orwell"
+		texturefile = "gfx/interface/goals/ENG/ending_orwell.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_restrained_no_more"
+		texturefile = "gfx/interface/goals/ENG/restrained_no_more.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_capitalist_primacy"
+		texturefile = "gfx/interface/goals/ENG/capitalist_primacy.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_privitise_the_military"
+		texturefile = "gfx/interface/goals/ENG/privitise_the_military.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_child_labour"
+		texturefile = "gfx/interface/goals/ENG/child_labour.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_corpratised_youth"
+		texturefile = "gfx/interface/goals/ENG/corpratised_youth.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_exploit_colonial_labour"
+		texturefile = "gfx/interface/goals/ENG/exploit_colonial_labour.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_making_extra_money"
+		texturefile = "gfx/interface/goals/ENG/making_extra_money.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_revitalize_our_great_country"
+		texturefile = "gfx/interface/goals/ENG/revitalize_our_great_country.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_here_comes_the_money"
+		texturefile = "gfx/interface/goals/ENG/here_comes_the_money.png"			
+	}
 
 
 }

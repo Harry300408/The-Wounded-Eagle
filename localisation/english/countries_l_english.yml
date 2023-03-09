@@ -1,5 +1,45 @@
 ﻿l_english:
  # TWE Base Nations
+ HUI:0 "Islamic Clique of Hui"
+ HUI_DEF:0 "the Islamic Clique of Hui"
+ HUI_ADJ:0 "Chinese"
+ 
+ GUI:0 "Guizhou Clique"
+ GUI_DEF:0 "the Guizhou Clique"
+ GUI_ADJ:0 "Chinese"
+
+ SIC:0 "Sichuan Clique"
+ SIC_DEF:0 "the Sichuan Clique"
+ SIC_ADJ:0 "Chinese"
+
+ THK:0 "Taiping Heavenly Kingdom"
+ THK_DEF:0 "the Taiping Heavenly Kingdom"
+ THK_ADJ:0 "Chinese"
+
+ HEB:0 "Hebei Clique"
+ HEB_DEF:0 "the Hebei Clique"
+ HEB_ADJ:0 "Chinese"
+
+ QIN:0 "Qing Remnants"
+ QIN_DEF:0 "the Qing Remnants"
+ QIN_ADJ:0 "Chinese"
+
+ LIA:0 "Liaotung Clique"
+ LIA_DEF:0 "the Liaotung Clique"
+ LIA_ADJ:0 "Manchu"
+
+ FEN:0 "Fengteng Clique"
+ FEN_DEF:0 "the Fengteng Clique"
+ FEN_ADJ:0 "Manchu"
+
+ CSP:0 "Carlist Spain"
+ CSP_DEF:0 "Carlist Spain"
+ CSP_ADJ:0 "Spanish"
+
+ HSR:0 "Hungarian Socialist Movement"
+ HSR_DEF:0 "the Hungarian Socialist Movement"
+ HSR_ADJ:0 "Hungarian"
+
  ERA:0 "English Republican Army"
  ERA_DEF:0 "the English Republican Army"
  ERA_ADJ:0 "English"
@@ -672,8 +712,8 @@
  LAT_subject_DEF:0 "$OVERLORDADJ$ $LAT$"
  SPR_fascism:0 "Nationalist Spain"
  SPR_fascism_DEF:0 "Nationalist Spain"
- SPR_democratic:0 "Spain"
- SPR_democratic_DEF:0 "Spain"
+ SPR_democratic:0 "Spanish Republic"
+ SPR_democratic_DEF:0 "the Spanish Republic"
  SPR_neutrality:0 "Spanish Empire"
  SPR_neutrality_DEF:0 "the Spanish Empire"
  SPR_communism:0 "Republican Spain"

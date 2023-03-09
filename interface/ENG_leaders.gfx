@@ -96,4 +96,14 @@ spriteTypes = {
         name = GFX_ENG_montgomery_small
         texturefile = gfx/leaders/ENG/Army/small/Montgomery.dds
     }
+
+    spriteType = {
+        name = GFX_william_Morris
+        texturefile = gfx/leaders/ENG/AuthDem/Morris.dds
+    }
+
+    spriteType = {
+        name = GFX_william_Morris_small
+        texturefile = gfx/leaders/ENG/AuthDem/small/Morris.dds
+    }
 }
