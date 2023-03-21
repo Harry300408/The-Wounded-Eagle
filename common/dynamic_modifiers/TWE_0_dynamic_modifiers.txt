@@ -5,3 +5,19 @@
 #	
 #	add_stability = 5
 #}
+prague_conference_agreement_STATE_TAG = {
+
+	icon = GFX_idea_unknown
+
+	AUS = {
+		
+	}
+
+}
+prague_conference_agreement_STATE_AUS = {
+
+	icon = GFX_idea_unknown
+
+
+
+}

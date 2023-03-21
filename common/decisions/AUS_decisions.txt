@@ -898,11 +898,17 @@ AUS_prague_conference_category = {
 	AUS_pc_timeout = {
 		icon = GFX_
 		fire_only_once = yes
-		days_mission_timeout = 90
+		days_mission_timeout = 60
 		selectable_mission = no
 		is_good = no
 		priority = 101
 		available = {
+			if = {
+				limit = {
+					is_debug = yes
+				}
+				always = no
+			}
 			custom_trigger_tooltip = {
 				tooltip = AUS_prague_conference_ended_tt
 				NOT = {
@@ -912,6 +918,20 @@ AUS_prague_conference_category = {
 		}
 		timeout_effect = {
 			clr_global_flag = AUS_prague_conference_flag
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = AUS_prague_conference_article_1_flag
+						has_country_flag = AUS_prague_conference_article_2_flag
+						has_country_flag = AUS_prague_conference_article_3_flag
+						has_country_flag = AUS_prague_conference_article_4_flag
+						has_country_flag = AUS_prague_conference_article_5_flag
+						has_country_flag = AUS_prague_conference_article_6_flag
+					}
+				}
+				set_global_flag = AUS_prague_conference_success_flag
+			}
+			news_event = { id = ausevents.33 days = 1 }
 		}
 	}
 	AUS_pc_article_1 = {
@@ -928,17 +948,30 @@ AUS_prague_conference_category = {
 					has_country_flag = AUS_prague_conference_ongoing_voting_flag
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = AUS_prague_conference_amount_articles_tt
+				check_variable = { var:AUS.amount_of_approved_pc < 3 }
+			}
+			has_global_flag = AUS_prague_conference_flag
 		}
 		complete_effect = {
-			set_country_flag = AUS_prague_conference_ongoing_voting_flag
-			set_country_flag = AUS_prague_conference_article_1_flag
-			set_variable = { AUS.prague_conference_last_article = 1 }
 			every_country = {
 				limit = {
 					has_country_flag = THIS.member_prague_conference_flag
+					NOT = { tag = AUS }
 				}
-				country_event = { id = ausevents.32 hours = 6 }
+				custom_effect_tooltip = AUS_scripted_loc_event_pc1
+				hidden_effect = {
+					country_event = { id = ausevents.31 hours = 1 random_hours = 11 }
+				}
 			}
+			hidden_effect = {
+				set_country_flag = AUS_prague_conference_ongoing_voting_flag
+				set_country_flag = AUS_prague_conference_article_1_flag
+				set_country_flag = AUS.last_voting_results
+				set_variable = { AUS.prague_conference_last_article = 1 }
+			}
+			
 		}
 	}
 	AUS_pc_article_2 = {
@@ -955,16 +988,28 @@ AUS_prague_conference_category = {
 					has_country_flag = AUS_prague_conference_ongoing_voting_flag
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = AUS_prague_conference_amount_articles_tt
+				check_variable = { var:AUS.amount_of_approved_pc < 3 }
+			}
+			has_global_flag = AUS_prague_conference_flag
 		}
 		complete_effect = {
-			set_country_flag = AUS_prague_conference_ongoing_voting_flag
-			set_country_flag = AUS_prague_conference_article_2_flag
-			set_variable = { AUS.prague_conference_last_article = 2 }
 			every_country = {
 				limit = {
 					has_country_flag = THIS.member_prague_conference_flag
+					NOT = { tag = AUS }
 				}
-				country_event = { id = ausevents.32 hours = 6 }
+				custom_effect_tooltip = AUS_scripted_loc_event_pc2
+				hidden_effect = {
+					country_event = { id = ausevents.31 hours = 1 random_hours = 11 }
+				}
+			}
+			hidden_effect = {
+				set_country_flag = AUS_prague_conference_ongoing_voting_flag
+				set_country_flag = AUS_prague_conference_article_2_flag
+				set_country_flag = AUS.last_voting_results
+				set_variable = { AUS.prague_conference_last_article = 2 }
 			}
 		}
 	}
@@ -982,16 +1027,28 @@ AUS_prague_conference_category = {
 					has_country_flag = AUS_prague_conference_ongoing_voting_flag
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = AUS_prague_conference_amount_articles_tt
+				check_variable = { var:AUS.amount_of_approved_pc < 3 }
+			}
+			has_global_flag = AUS_prague_conference_flag
 		}
 		complete_effect = {
-			set_country_flag = AUS_prague_conference_ongoing_voting_flag
-			set_country_flag = AUS_prague_conference_article_3_flag
-			set_variable = { AUS.prague_conference_last_article = 3 }
 			every_country = {
 				limit = {
 					has_country_flag = THIS.member_prague_conference_flag
+					NOT = { tag = AUS }
 				}
-				country_event = { id = ausevents.32 hours = 6 }
+				custom_effect_tooltip = AUS_scripted_loc_event_pc3
+				hidden_effect = {
+					country_event = { id = ausevents.31 hours = 1 random_hours = 11 }
+				}
+			}
+			hidden_effect = {
+				set_country_flag = AUS_prague_conference_ongoing_voting_flag
+				set_country_flag = AUS_prague_conference_article_3_flag
+				set_country_flag = AUS.last_voting_results
+				set_variable = { AUS.prague_conference_last_article = 3 }
 			}
 		}
 	}
@@ -1009,16 +1066,28 @@ AUS_prague_conference_category = {
 					has_country_flag = AUS_prague_conference_ongoing_voting_flag
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = AUS_prague_conference_amount_articles_tt
+				check_variable = { var:AUS.amount_of_approved_pc < 3 }
+			}
+			has_global_flag = AUS_prague_conference_flag
 		}
 		complete_effect = {
-			set_country_flag = AUS_prague_conference_ongoing_voting_flag
-			set_country_flag = AUS_prague_conference_article_4_flag
-			set_variable = { AUS.prague_conference_last_article = 4 }
 			every_country = {
 				limit = {
 					has_country_flag = THIS.member_prague_conference_flag
+					NOT = { tag = AUS }
 				}
-				country_event = { id = ausevents.32 hours = 6 }
+				custom_effect_tooltip = AUS_scripted_loc_event_pc4
+				hidden_effect = {
+					country_event = { id = ausevents.31 hours = 1 random_hours = 11 }
+				}
+			}
+			hidden_effect = {
+				set_country_flag = AUS_prague_conference_ongoing_voting_flag
+				set_country_flag = AUS_prague_conference_article_4_flag
+				set_country_flag = AUS.last_voting_results
+				set_variable = { AUS.prague_conference_last_article = 4 }
 			}
 		}
 	}
@@ -1036,16 +1105,67 @@ AUS_prague_conference_category = {
 					has_country_flag = AUS_prague_conference_ongoing_voting_flag
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = AUS_prague_conference_amount_articles_tt
+				check_variable = { var:AUS.amount_of_approved_pc < 3 }
+			}
+			has_global_flag = AUS_prague_conference_flag
 		}
 		complete_effect = {
-			set_country_flag = AUS_prague_conference_ongoing_voting_flag
-			set_country_flag = AUS_prague_conference_article_5_flag
-			set_variable = { AUS.prague_conference_last_article = 5 }
 			every_country = {
 				limit = {
 					has_country_flag = THIS.member_prague_conference_flag
+					NOT = { tag = AUS }
 				}
-				country_event = { id = ausevents.32 hours = 6 }
+				custom_effect_tooltip = AUS_scripted_loc_event_pc5
+				hidden_effect = {
+					country_event = { id = ausevents.31 hours = 1 random_hours = 11 }
+				}
+			}
+			hidden_effect = {
+				set_country_flag = AUS_prague_conference_ongoing_voting_flag
+				set_country_flag = AUS_prague_conference_article_5_flag
+				set_country_flag = AUS.last_voting_results
+				set_variable = { AUS.prague_conference_last_article = 5 }
+			}
+		}
+	}
+	AUS_pc_article_6 = {
+		icon = GFX_
+		fire_only_once = yes
+		days_remove = 0
+		days_re_enable = 0
+		priority = 95
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_prague_not_already_took_or_voting_tt
+				NOT = {
+					has_country_flag = AUS_prague_conference_article_5_flag
+					has_country_flag = AUS_prague_conference_ongoing_voting_flag
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = AUS_prague_conference_amount_articles_tt
+				check_variable = { var:AUS.amount_of_approved_pc < 3 }
+			}
+			has_global_flag = AUS_prague_conference_flag
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = THIS.member_prague_conference_flag
+					NOT = { tag = AUS }
+				}
+				custom_effect_tooltip = AUS_scripted_loc_event_pc6
+				hidden_effect = {
+					country_event = { id = ausevents.31 hours = 1 random_hours = 11 }
+				}
+			}
+			hidden_effect = {
+				set_country_flag = AUS_prague_conference_ongoing_voting_flag
+				set_country_flag = AUS_prague_conference_article_6_flag
+				set_country_flag = AUS.last_voting_results
+				set_variable = { AUS.prague_conference_last_article = 6 }
 			}
 		}
 	}
@@ -1067,11 +1187,16 @@ AUS_prague_conference_category = {
 					has_country_flag = AUS_prague_conference_article_3_flag
 					has_country_flag = AUS_prague_conference_article_4_flag
 					has_country_flag = AUS_prague_conference_article_5_flag
+					has_country_flag = AUS_prague_conference_article_6_flag
 				}
 			}
 		}
 		complete_effect = {
 			clr_global_flag = AUS_prague_conference_flag
+			set_global_flag = AUS_prague_conference_success_flag
+		}
+		remove_effect = {
+			news_event = { id = ausevents.33 days = 1 }
 		}
 	}
 

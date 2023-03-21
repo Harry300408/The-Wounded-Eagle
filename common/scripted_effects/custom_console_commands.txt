@@ -1,0 +1,22 @@
+d_prague_conference_all = {
+
+	if = {
+		limit = { is_debug = yes }
+		set_global_flag = AUS_prague_conference_flag
+		every_country = {
+			limit = {
+				OR = {
+					tag = SWE
+					tag = FRA
+					tag = ENG
+					tag = SOV
+					tag = PRE
+					tag = BAY
+					tag = ITA
+				}
+			}
+			set_country_flag = THIS.member_prague_conference_flag
+		}
+	}
+
+}

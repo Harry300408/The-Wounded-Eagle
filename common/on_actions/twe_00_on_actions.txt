@@ -1,0 +1,46 @@
+on_actions = {
+
+	on_daily_AUS = {
+	
+		effect = {
+			
+			set_variable = { AUS.amount_of_prague_members = 0 }
+			#set_variable = { AUS.auspc_amount = 0 }
+			every_country = {
+				if = {
+					limit = {
+						has_country_flag = THIS.member_prague_conference_flag
+					}
+					add_to_variable = { AUS.amount_of_prague_members = 1 }
+				}
+				
+				#if = {
+				#	limit = {
+				#		check_variable = { THIS.prague_conference_last_article_opinion = 0 }
+				#	}
+				#	add_to_variable = { AUS.auspc_no_amount = 1 }
+				#}
+				#if = {
+				#	limit = {
+				#		check_variable = { THIS.prague_conference_last_article_opinion = 1 }
+				#	}
+				#	add_to_variable = { AUS.auspc_yes_amount = 1 }
+				#}
+			}
+			set_temp_variable = { AUS.temp_pc_yes = AUS.auspc_yes_amount }
+			divide_temp_variable = { AUS.temp_pc_yes = AUS.amount_of_prague_members }
+			multiply_temp_variable = { AUS.temp_pc_yes = 100 }
+			
+			set_temp_variable = { AUS.temp_pc_no = AUS.auspc_no_amount }
+			divide_temp_variable = { AUS.temp_pc_no = AUS.amount_of_prague_members }
+			multiply_temp_variable = { AUS.temp_pc_no = 100 }
+			
+			set_variable = { AUS.percentage_prague_conference_approved = AUS.temp_pc_yes }
+			set_variable = { AUS.percentage_prague_conference_disapproved = AUS.temp_pc_no }
+			
+			clear_variable = AUS.temp_pc_yes
+			clear_variable = AUS.temp_pc_no
+		}
+	}
+
+}

@@ -731,6 +731,19 @@ news_event = {
 		}
 	}
 }
+
+######  ####    ######  ######  ##  ##  ######
+##  ##  ##  ##  ##  ##  ##      ##  ##  ##
+######  ####    ######  ##  ##  ##  ##  ######
+##      ##  ##  ##  ##  ##  ##  ##  ##  ##
+##      ##  ##  ##  ##  ######  ######  ######
+
+######  ######  ##  ##  ######  ######  ####    ######  ##  ##  ######  ######
+##      ##  ##  ### ##  ##      ##      ##  ##  ##      ### ##  ##      ##
+##      ##  ##  ### ##  ######  ######  ####    ######  ### ##  ##      ######
+##      ##  ##  ## ###  ##      ##      ##  ##  ##      ## ###  ##      ##
+######  ######  ##  ##  ##      ######  ##  ##  ######  ##  ##  ######  ######
+
 # Participate in Prague Conference?
 country_event = {
 	id = ausevents.30
@@ -749,19 +762,6 @@ country_event = {
 		#nope
 	}
 }
-
-######  ####    ######  ######  ##  ##  ######
-##  ##  ##  ##  ##  ##  ##      ##  ##  ##
-######  ####    ######  ##  ##  ##  ##  ######
-##      ##  ##  ##  ##  ##  ##  ##  ##  ##
-##      ##  ##  ##  ##  ######  ######  ######
-
-######  ######  ##  ##  ######  ######  ####    ######  ##  ##  ######  ######
-##      ##  ##  ### ##  ##      ##      ##  ##  ##      ### ##  ##      ##
-##      ##  ##  ### ##  ######  ######  ####    ######  ### ##  ##      ######
-##      ##  ##  ## ###  ##      ##      ##  ##  ##      ## ###  ##      ##
-######  ######  ##  ##  ##      ######  ##  ##  ######  ##  ##  ######  ######
-
 # Article [var]: Yes/no
 country_event = {
 	id = ausevents.31
@@ -769,20 +769,51 @@ country_event = {
 	desc = ausevents.31.desc
 	picture = GFX_
 	is_triggered_only = yes
-	major = yes
 	timeout_days = 7
 	#fire_only_once = yes
 	option = {
 		name = ausevents.31.a
 		#Agree
-		set_variable = { ROOT.prague_conference_last_article_opinion = 1 }
-		add_to_variable = { ROOT.prague_conference_last_article_voted = 1 }
+		set_variable = { var:ROOT.prague_conference_last_article_opinion = 1 }
+		add_to_variable = { var:ROOT.prague_conference_last_article_voted = 1 }
+		AUS = { 
+			add_to_variable = { var:AUS.auspc_amount = 1 } 
+			add_to_variable = { var:AUS.auspc_yes_amount = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = { var = var:AUS.auspc_amount value = var:AUS.amount_of_prague_members compare = greater_than_or_equals }
+			}
+			AUS = {
+				country_event = { id = ausevents.32 days = 1 }
+			}
+		}
+		#debug
+		ai_chance = {
+			base = 60
+		}
 	}
 	option = {
 		name = ausevents.31.b
 		#Disagree
-		set_variable = { ROOT.prague_conference_last_article_opinion = 0 }
-		add_to_variable = { ROOT.prague_conference_last_article_voted = 1 }
+		set_variable = { var:ROOT.prague_conference_last_article_opinion = 0 }
+		add_to_variable = { var:ROOT.prague_conference_last_article_voted = 1 }
+		AUS = { 
+			add_to_variable = { var:AUS.auspc_amount = 1 } 
+			add_to_variable = { var:AUS.auspc_no_amount = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = { var = var:AUS.auspc_amount value = var:AUS.amount_of_prague_members compare = greater_than_or_equals }
+			}
+			AUS = {
+				country_event = { id = ausevents.32 days = 1 }
+			}
+		}
+		#debug
+		ai_chance = {
+			base = 40
+		}
 	}
 }
 # Article Approved/Or not
@@ -792,15 +823,131 @@ country_event = {
 	desc = ausevents.32.desc
 	picture = GFX_
 	is_triggered_only = yes
-	major = yes
 	timeout_days = 7
 	#fire_only_once = yes
 	option = {
 		name = ausevents.32.a
+		clr_country_flag = AUS_prague_conference_ongoing_voting_flag
+		set_variable = { var:AUS.auspc_amount = 0 } 
+		set_variable = { var:AUS.auspc_yes_amount = 0 }
+		set_variable = { var:AUS.auspc_no_amount = 0 }
+		ENG = {
+			if = {
+				limit = {
+					has_country_flag = THIS.member_prague_conference_flag
+				}
+				if = {
+					limit = {
+						check_variable = { var:THIS.prague_conference_last_article_opinion = 1 }
+					}
+					custom_effect_tooltip = AUS_scripted_loc_event_gains_yes
+				}
+				else = {
+					custom_effect_tooltip = AUS_scripted_loc_event_gains_no
+				}
+			}
+		}
+		FRA = {
+			if = {
+				limit = {
+					has_country_flag = THIS.member_prague_conference_flag
+				}
+				if = {
+					limit = {
+						check_variable = { var:THIS.prague_conference_last_article_opinion = 1 }
+					}
+					custom_effect_tooltip = AUS_scripted_loc_event_gains_yes
+				}
+				else = {
+					custom_effect_tooltip = AUS_scripted_loc_event_gains_no
+				}
+			}
+		}
+		SWE = {
+			if = {
+				limit = {
+					has_country_flag = THIS.member_prague_conference_flag
+				}
+				if = {
+					limit = {
+						check_variable = { var:THIS.prague_conference_last_article_opinion = 1 }
+					}
+					custom_effect_tooltip = AUS_scripted_loc_event_gains_yes
+				}
+				else = {
+					custom_effect_tooltip = AUS_scripted_loc_event_gains_no
+				}
+			}
+		}
+		BAY = {
+			if = {
+				limit = {
+					has_country_flag = THIS.member_prague_conference_flag
+				}
+				if = {
+					limit = {
+						check_variable = { var:THIS.prague_conference_last_article_opinion = 1 }
+					}
+					custom_effect_tooltip = AUS_scripted_loc_event_gains_yes
+				}
+				else = {
+					custom_effect_tooltip = AUS_scripted_loc_event_gains_no
+				}
+			}
+		}
+		PRE = {
+			if = {
+				limit = {
+					has_country_flag = THIS.member_prague_conference_flag
+				}
+				if = {
+					limit = {
+						check_variable = { var:THIS.prague_conference_last_article_opinion = 1 }
+					}
+					custom_effect_tooltip = AUS_scripted_loc_event_gains_yes
+				}
+				else = {
+					custom_effect_tooltip = AUS_scripted_loc_event_gains_no
+				}
+			}
+		}
+		ITA = {
+			if = {
+				limit = {
+					has_country_flag = THIS.member_prague_conference_flag
+				}
+				if = {
+					limit = {
+						check_variable = { var:THIS.prague_conference_last_article_opinion = 1 }
+					}
+					custom_effect_tooltip = AUS_scripted_loc_event_gains_yes
+				}
+				else = {
+					custom_effect_tooltip = AUS_scripted_loc_event_gains_no
+				}
+			}
+		}
+		SOV = {
+			if = {
+				limit = {
+					has_country_flag = THIS.member_prague_conference_flag
+				}
+				if = {
+					limit = {
+						check_variable = { var:THIS.prague_conference_last_article_opinion = 1 }
+					}
+					custom_effect_tooltip = AUS_scripted_loc_event_gains_yes
+				}
+				else = {
+					custom_effect_tooltip = AUS_scripted_loc_event_gains_no
+				}
+			}
+		}
 		if = {
 			limit = {
-				check_variable = { var:AUS.percentage_prague_conference_approved > 59.9 }
+				check_variable = { var:AUS.percentage_prague_conference_approved > 49.9 }
 			}
+			add_to_variable = { var:AUS.amount_of_approved_pc = 1 }
 			if = {
 				limit = {
 					check_variable = { var:AUS.prague_conference_last_article = 1 }
@@ -831,6 +978,25 @@ country_event = {
 				}
 				set_country_flag = AUS_prague_conference_article_5_approved_flag
 			}
+			if = {
+				limit = {
+					check_variable = { var:AUS.prague_conference_last_article = 6 }
+				}
+				set_country_flag = AUS_prague_conference_article_6_approved_flag
+			}
 		}
+		custom_effect_tooltip = AUS_prague_conference_last_get_approved_tt
+	}
+}
+# Prague Conference News
+news_event = {
+	id = ausevents.33
+	title = ausevents.33.t
+	desc = ausevents.33.desc
+	picture = GFX_
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = ausevents.32.a
 	}
 }

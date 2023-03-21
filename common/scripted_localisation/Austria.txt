@@ -94,6 +94,12 @@ defined_text = {
     name = AUSGetPragueLastArticle
 
     text = {
+        trigger = {
+            OR = {
+                check_variable = { var:AUS.prague_conference_last_article < 2 }
+                check_variable = { var:AUS.prague_conference_last_article > 6 }
+            }
+        }
         localization_key = AUS_prague_article_1
     }
     text = {
@@ -120,11 +126,23 @@ defined_text = {
         }
         localization_key = AUS_prague_article_5
     }
+    text = {
+        trigger = {
+            check_variable = { var:AUS.prague_conference_last_article = 6 }
+        }
+        localization_key = AUS_prague_article_6
+    }
 }
 defined_text = { 
     name = AUSGetPragueLastArticleDescription
 
     text = {
+        trigger = {
+            OR = {
+                check_variable = { var:AUS.prague_conference_last_article < 2 }
+                check_variable = { var:AUS.prague_conference_last_article > 6 }
+            }
+        }
         localization_key = AUS_prague_article_1_desc
     }
     text = {
@@ -151,17 +169,194 @@ defined_text = {
         }
         localization_key = AUS_prague_article_5_desc
     }
+    text = {
+        trigger = {
+            check_variable = { var:AUS.prague_conference_last_article = 6 }
+        }
+        localization_key = AUS_prague_article_6_desc
+    }
 }
 defined_text = { 
     name = AUSGetPragueMajority
 
     text = {
+        trigger = {
+            check_variable = { var:AUS.percentage_prague_conference_approved > 49.9 }
+        }
         localization_key = AUS_prague_majority_voted_yes
     }
     text = {
         trigger = {
-            check_variable = { var:AUS.percentage_prague_conference_approved < 60 }
+            check_variable = { var:AUS.percentage_prague_conference_approved < 50.0 }
         }
         localization_key = AUS_prague_majority_voted_no
+    }
+}
+defined_text = { 
+    name = AUSGetArticle1News
+
+    text = {
+        trigger = {
+            AUS = { has_country_flag = AUS_prague_conference_article_1_approved_flag }
+        }
+        localization_key = AUS_prague_article_1n
+    }
+    text = {
+        trigger = {
+            AUS = { NOT = { has_country_flag = AUS_prague_conference_article_1_approved_flag } }
+        }
+        localization_key = AUS_prague_article_0n
+    }
+}
+defined_text = { 
+    name = AUSGetArticle2News
+
+    text = {
+        trigger = {
+            AUS = { has_country_flag = AUS_prague_conference_article_2_approved_flag }
+        }
+        localization_key = AUS_prague_article_2n
+    }
+    text = {
+        trigger = {
+            AUS = { NOT = { has_country_flag = AUS_prague_conference_article_2_approved_flag } }
+        }
+        localization_key = AUS_prague_article_0n
+    }
+}
+defined_text = { 
+    name = AUSGetArticle3News
+
+    text = {
+        trigger = {
+            AUS = { has_country_flag = AUS_prague_conference_article_3_approved_flag }
+        }
+        localization_key = AUS_prague_article_3n
+    }
+    text = {
+        trigger = {
+            AUS = { NOT = { has_country_flag = AUS_prague_conference_article_3_approved_flag } }
+        }
+        localization_key = AUS_prague_article_0n
+    }
+}
+defined_text = { 
+    name = AUSGetArticle4News
+
+    text = {
+        trigger = {
+            AUS = { has_country_flag = AUS_prague_conference_article_4_approved_flag }
+        }
+        localization_key = AUS_prague_article_4n
+    }
+    text = {
+        trigger = {
+            AUS = { NOT = { has_country_flag = AUS_prague_conference_article_4_approved_flag } }
+        }
+        localization_key = AUS_prague_article_0n
+    }
+}
+defined_text = { 
+    name = AUSGetArticle5News
+
+    text = {
+        trigger = {
+            AUS = { has_country_flag = AUS_prague_conference_article_5_approved_flag }
+        }
+        localization_key = AUS_prague_article_5n
+    }
+    text = {
+        trigger = {
+            AUS = { NOT = { has_country_flag = AUS_prague_conference_article_5_approved_flag } }
+        }
+        localization_key = AUS_prague_article_0n
+    }
+}
+defined_text = { 
+    name = AUSGetArticle6News
+
+    text = {
+        trigger = {
+            AUS = { has_country_flag = AUS_prague_conference_article_6_approved_flag}
+        }
+        localization_key = AUS_prague_article_6n
+    }
+    text = {
+        trigger = {
+            AUS = { NOT = { has_country_flag = AUS_prague_conference_article_6_approved_flag } }
+        }
+        localization_key = AUS_prague_article_0n
+    }
+}
+defined_text = { 
+    name = AUSGetNewsPragueConference
+
+    text = {
+        trigger = {
+            has_global_flag = AUS_prague_conference_success_flag
+        }
+        localization_key = event_33_desc_success
+    }
+    text = {
+        trigger = {
+            NOT = { has_global_flag = AUS_prague_conference_success_flag }
+        }
+        localization_key = event_33_desc_failure
+    }
+}
+defined_text = { 
+    name = AUSGetArticleApproval
+
+    text = {
+        trigger = {
+            check_variable = { var:AUS.prague_conference_last_article = 1 }
+        }
+        localization_key = AUS_prague_article_1
+    }
+    text = {
+        trigger = {
+            check_variable = { var:AUS.prague_conference_last_article = 2 }
+        }
+        localization_key = AUS_prague_article_2
+    }
+    text = {
+        trigger = {
+            check_variable = { var:AUS.prague_conference_last_article = 3 }
+        }
+        localization_key = AUS_prague_article_3
+    }
+    text = {
+        trigger = {
+            check_variable = { var:AUS.prague_conference_last_article = 4 }
+        }
+        localization_key = AUS_prague_article_4
+    }
+    text = {
+        trigger = {
+            check_variable = { var:AUS.prague_conference_last_article = 5 }
+        }
+        localization_key = AUS_prague_article_5
+    }
+    text = {
+        trigger = {
+            check_variable = { var:AUS.prague_conference_last_article = 6 }
+        }
+        localization_key = AUS_prague_article_6
+    }
+}
+defined_text = { 
+    name = AUSGetArticleApprovalVar
+
+    text = {
+        trigger = {
+            check_variable = { var:AUS.percentage_prague_conference_approved > 49.9 }
+        }
+        localization_key = AUS_prague_article_approved
+    }
+    text = {
+        trigger = {
+            check_variable = { var:AUS.percentage_prague_conference_approved < 50.0 }
+        }
+        localization_key = AUS_prague_article_disapproved
     }
 }
