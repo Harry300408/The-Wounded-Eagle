@@ -1,97 +1,26 @@
 ideas = {
-
-    country = {
-        USA_war_lost = {
-			
-picture = tur_disorganised_armed_forces
+	country = {
+		humiliation_of_1812 = {
+			picture = humiliation_of_1812
 			allowed = {
-				always = no
+				always = yes
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
-			removal_cost = -1
-			
 			modifier = {
-army_morale = -5
-stability_factor = -0.15
-army_defence_factor = -0.05
-army_attack_factor = -0.05
-war_support_factor = -0.1
-			}
-			rule = {
-				
+				democratic_drift = 0.01
+				authoritarian_democracy_drift = 0.01
+				despotism_drift = 0.01
+				fascism_drift = 0.01
+
+				communism = 0.01 
+
+				surrender_limit = 0.05
+				stability_weekly = -0.01
+				war_support_weekly = -0.01
+				subjects_autonomy_gain = 0.01
 			}
 		}
-         Agriculture_failing = {
-			
-picture = generic_agrarian_reform
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-consumer_goods_factor = 0.2
-monthly_population = -0.5
-			}
-			rule = {
-				
-			}
-		}
-
-         Dream_lost = {
-			
-picture = tur_disorganised_armed_forces
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-
-			}
-			rule = {
-				
-			}
-		}
-         american_prides = {
-			
-picture = GFX_americanpride
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-army_morale = 10
-stability_factor = -0.1
-army_defence_factor = -0.05
-army_attack_factor = 0.08
-war_support_factor = 0.05
-			}
-			rule = {
-				
-			}
-		}
+	}	
 }
-    }
-
- 

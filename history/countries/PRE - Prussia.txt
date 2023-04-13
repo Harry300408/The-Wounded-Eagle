@@ -6,7 +6,7 @@ add_ideas = {
 	PRE_nation_divided
 	PRE_terrible_army
 	PRE_lackin_industry
-	PRE_brink_of_colapse
+	PRE_heart_of_the_new_revolution
 	GERMANY_member_of_confederation_idea
 }
 

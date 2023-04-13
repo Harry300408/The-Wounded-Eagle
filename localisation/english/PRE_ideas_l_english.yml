@@ -1,5 +1,12 @@
 ﻿l_english:
   PRE_nation_divided:0 "A Nation Divided in 2"
+  PRE_nation_divided_desc:0 "After the political struggle of 1923 the UPD came out ontop over the 'Resteratonist Movement' lead by Mackensen, the Democrats/SocDemocrats led by Hindenberg and von Papen, and the NatCorpists lead by Röhm. The only reason why the UPD came out on top was due to them foiling the NatCorpist attempt at storming the Reichstag and completed their own storming which members of the Union call the 'Großer Riechstagsturm' which saw them storminto the Reichstag and take over with little violence proclaiming the Preußische Arbeiterrepublik with a reformed Congress and power to the Unions of Prussia!"
+
   PRE_terrible_army:0 "An Inefficient Army"
+  PRE_terrible_army_desc:0 "After the Putsch in 1923 the new Unionist government was not a custom to the Prussian economy that was left by Republic, after several reforms the Military got the short end of the stick with the budget cut by a 1/3 leaving them with little budget to improve and reform the Wermacht which was then changed to the Arbeiter Wermacht. This has caused Prussian Militarism, a sign of Monarchism which the Unions want to destroy an idea of it."
+
   PRE_lackin_industry:0 "An Inefficient Ecconomy"
-  PRE_brink_of_colapse:0 "On The Brink of Colapse"
+  PRE_lackin_industry_desc:0 "Since the reforms made by the Arbeiterkongress the Prussian economy has stagnated slightly and has fallen behind the standard in Europe. The Arbeiterkongress needs to reform and expand the industry sector of Prussia. This will be a task that will be hard to achive but is possible through careful consideration and planning Prussia will be restored to it's former glory!"
+
+  PRE_heart_of_the_new_revolution:0 "Heart of The New Revolution"
+  PRE_heart_of_the_new_revolution_desc:0 "The 'New Revolution' refers to the Syndicalist split, the split between the Ernst Thälmann, Georges Valois & Christian Hilt lead Unionist movement and the Pierre Monatte, Sébastien Faure and Phillip Snowden led original Syndicalist movement. These leader split with eachother over the principles of Syndicalism in the 3rd world congress in 1920 they decided to partways. This was nicknamed 'The Rebirth of The True Workers Ideology' and it's heart was in Berlin, where the 1st Unionist nation was established followed by a Norwegian revoltion in 1925. With the new movement taking hold it is our job to export it to the world."

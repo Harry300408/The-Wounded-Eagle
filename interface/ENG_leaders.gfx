@@ -26,6 +26,11 @@ spriteTypes = {
         texturefile = gfx/leaders/ENG/Monarchy/small/edward_viii_small.dds
     }
 
+    spriteType = {
+        name = GFX_augustus
+        texturefile = gfx/leaders/HAN/ernest_augustus.dds
+    }
+
     #Advisors
     spriteType = {
         name = GFX_ENG_lawson

@@ -16,6 +16,8 @@ ideologies = {
 
 			red_futurism = {}
 			
+			syndical = {} #Less extreme
+			
 		}
 
 		dynamic_faction_names = {
@@ -61,8 +63,6 @@ ideologies = {
 			legacy_unionism = {} #Mostly for Prussia & Subjects
 
 			agrarian = {}
-
-			syndical = {} #Less extreme
 
 			extreme = {} #It means what it says basically Unltranationalism for Unionism (Banat)
 
@@ -400,11 +400,13 @@ ideologies = {
 
 			anocracy = {}
 
-			constitutional_dictatorship = {} # apperently this is a thing, idk ask @TheUndyingSoldier#6191 (the person who came up with these with me)
+			constitutional_dictatorship = {} # apperently this is a thing, idk ask @TheUndyingSoldier#6191 (the person who came up with these with me) - Harry
 
 			military_despotism = {} #Amry Coups XD
 
 			technocracy = {}
+
+			avant_garde = {} #FRA stuff lol (kinda)
 		}
 
 		dynamic_faction_names = {

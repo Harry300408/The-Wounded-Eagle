@@ -534,6 +534,40 @@ ideas = {
 		
 		}
 
+		prussian_militarism = {
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		
+		}
+
+		anti_left_agenda = {
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		
+		}
+
 		
 
     }

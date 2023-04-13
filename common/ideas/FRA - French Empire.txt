@@ -1,24 +1,64 @@
 ideas = {
 
 	country = {
-		not_quite_defeated = {
+		FRA_victors_of_wwi = {
 			
 			allowed = {
 				original_tag = FRA
 			}
 
 			allowed_civil_war = {
-                allowed = yes
+				always = no
 			}
-			
+
 			removal_cost = -1
 			
-            modifier = {
-				surrender_limit = 0.3
-                political_power_gain = 0.25	
-                stability_weekly = 0.05	
-                guarantee_cost = -0.1
-                subjects_autonomy_gain = -0.1	
+			modifier = {
+				conscription = -0.003
+				war_support_factor = -0.05
+				land_doctrine_cost_factor = 0.5
+			}
+		}
+
+		FRA_underground_extremeists = {
+			
+			allowed = {
+				original_tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly_factor = -0.02
+				communism_drift = 0.02
+				rev_unionism_drift = 0.02
+				ultranationalism_drift = 0.01
+				fascism_drift = 0.01
+			}
+		}
+
+		FRA_political_infighting = {
+			
+			allowed = {
+				original_tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly_factor = -0.01
+				airforce_intel_to_others = 0.05
+				army_intel_to_others = 0.05
+				civilian_intel_to_others = 0.05
+				navy_intel_to_others = 0.05
 			}
 		}
     }

@@ -60,3 +60,15 @@ ENG_exploit_colonial_labour = {
 	}
 	visible_when_empty = no
 }
+
+ENG_unification_of_germany = {
+	icon = GFX_
+	priority = 100
+	visible = {
+		has_completed_focus = ENG_english_unification_of_germany
+	}
+	allowed = {
+		tag = ENG
+	}
+	visible_when_empty = no
+}

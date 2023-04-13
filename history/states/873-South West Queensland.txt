@@ -8,8 +8,8 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		owner = UNC
-		add_core_of = UNC
+		owner = QEL
+		add_core_of = QEL
 	}
 	state_category = pastoral
 	manpower=10000

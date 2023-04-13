@@ -90,7 +90,6 @@ if = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
 	}
-	add_ideas = bureau_of_ordnance_spirit
 }
 
 if = {
@@ -136,7 +135,6 @@ if = {
 		improved_airplane_launcher = 1
 		basic_dp_light_battery = 1
 	}
-	add_ideas = MTG_naval_treaty_adherent
 }
 
 
@@ -155,12 +153,18 @@ set_popularities = {
 	communism = 1
 }
 
+recruit_character = USA_t_roosevelt
+
+declare_war_on = {
+	target = ILC
+	type = annex_everything
+}
+
 add_ideas = {
-	undisturbed_isolation
-	great_depression
-	disarmed_nation
-	free_trade
-	home_of_the_free
+	humiliation_of_1812
+	wealth_votes
+	presidential_rep
+	war_economy
 }
 
 if = {

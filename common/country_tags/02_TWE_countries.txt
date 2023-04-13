@@ -63,3 +63,12 @@ ERA = "countries/United Kingdom.txt"
 HSR = "countries/Hungary.txt"
 #Carlist Spain
 CSP = "countries/Spain.txt"
+#CNT-FAI
+FAI = "countries/Spain.txt"
+#Syndicates
+#Syndicate of France
+SFR	= "countries/France.txt"
+#Syndicate of The Rhine
+SRH	= "countries/Germany.txt"
+#Syndicate of Belgium
+SBL	= "countries/Belgium.txt"

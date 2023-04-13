@@ -1,0 +1,15 @@
+state={
+	id=1003
+	name="STATE_1003"
+	provinces={
+		2114 8249 12968 11019 7533 8234 12377 10427
+	}
+	history = {
+		owner = DAR
+		add_core_of = DAR
+	}
+	manpower= 24500
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

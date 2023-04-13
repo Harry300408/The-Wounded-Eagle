@@ -1584,7 +1584,7 @@ focus_tree = {
 		id = ENG_religous_primacy
 		x = 6
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_religous_primacy
 		relative_position_id = ENG_the_king_is_dead
 
 		prerequisite = {
@@ -1592,6 +1592,9 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			hidden_trigger = {
+				always = no
+			}
 		}
 		mutually_exclusive = {
 			focus = ENG_capitalist_primacy
@@ -1602,6 +1605,25 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			set_party_name = {
+				ideology = despotism
+				long_name = anglican_church_long
+				name = anglican_church
+			}
+			hidden_effect = {
+				retire_country_leader = authoritarian_democracy
+			}
+			hidden_effect = {
+				retire_country_leader = authoritarian_democracy
+			}
+			set_politics = {
+				ruling_party = despotism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = despotism
+				popularity = 1
+			}
 		}
 	}
 
@@ -3687,7 +3709,7 @@ focus_tree = {
 		id = ENG_outsource_a_new_king
 		x = 12
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_outsource_a_new_king
 		relative_position_id = ENG_convene_regency_council
 
 		prerequisite = {
@@ -3706,6 +3728,10 @@ focus_tree = {
 		}
 	
 		completion_reward = {
+			country_event = {
+				days = 1
+				id = ENGmon.9 
+			}
 		}
 	}
 
@@ -3714,7 +3740,7 @@ focus_tree = {
 		id = ENG_a_german_king
 		x = 1
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_a_german_king
 		relative_position_id = ENG_outsource_a_new_king
 
 		prerequisite = {
@@ -3727,6 +3753,18 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			custom_effect_tooltip = vno_hanover_king	
+			hidden_effect = {
+				kill_ideology_leader = neutrality
+				kill_ideology_leader = neutrality
+				kill_ideology_leader = neutrality
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = ENG_HoH_long
+				name = ENG_HoH
+			}
+			
 		}
 	}
 
@@ -3734,7 +3772,7 @@ focus_tree = {
 		id = ENG_promote_prussian_militarism
 		x = -3
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_promote_prussian_militarism
 		relative_position_id = ENG_a_german_king
 
 		prerequisite = {
@@ -3744,9 +3782,12 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 4
 	
 		completion_reward = {
+			add_ideas = {
+				prussian_militarism
+			}
 		}
 	}
 
@@ -3754,7 +3795,7 @@ focus_tree = {
 		id = ENG_traditional_gender_roles
 		x = -1
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_traditional_gender_roles
 		relative_position_id = ENG_a_german_king
 
 		prerequisite = {
@@ -3764,7 +3805,7 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 3
 	
 		completion_reward = {
 		}
@@ -3774,7 +3815,7 @@ focus_tree = {
 		id = ENG_anti_left_rhetoric
 		x = 1
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_anti_left_rhetoric
 		relative_position_id = ENG_a_german_king
 
 		prerequisite = {
@@ -3784,9 +3825,12 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 3
 	
 		completion_reward = {
+			add_ideas = {
+				anti_left_agenda
+			}
 		}
 	}
 
@@ -3794,7 +3838,7 @@ focus_tree = {
 		id = ENG_endorse_anglo_german_capitalism
 		x = 3
 		y = 1
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_endorse_anglo_german_capitalism
 		relative_position_id = ENG_a_german_king
 
 		prerequisite = {
@@ -3804,7 +3848,7 @@ focus_tree = {
 		allow_branch = {
 		}
 
-		cost = 2
+		cost = 3
 	
 		completion_reward = {
 		}
@@ -3814,7 +3858,7 @@ focus_tree = {
 		id = ENG_stability_through_hierachy
 		x = -2
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_stability_through_hierachy
 		relative_position_id = ENG_a_german_king
 
 		prerequisite = {
@@ -3836,6 +3880,82 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = tribal_council
+				}
+
+				swap_ideas = {
+					remove_idea = tribal_council
+					add_idea = autocratic
+				}
+			}
+
+			if = {
+				limit = {
+					has_idea = anarchy
+				}
+
+				swap_ideas = {
+					remove_idea = anarchy
+					add_idea = autocratic
+				}
+			}
+
+			if = {
+				limit = {
+					has_idea = any_man_may_vote
+				}
+
+				swap_ideas = {
+					remove_idea = any_man_may_vote
+					add_idea = autocratic
+				}
+			}
+
+			if = {
+				limit = {
+					has_idea = census_voting
+				}
+
+				swap_ideas = {
+					remove_idea = census_voting
+					add_idea = autocratic
+				}
+			}
+
+			if = {
+				limit = {
+					has_idea = wealth_votes
+				}
+
+				swap_ideas = {
+					remove_idea = wealth_votes
+					add_idea = autocratic
+				}
+			}
+
+			if = {
+				limit = {
+					has_idea = landed_votes
+				}
+
+				swap_ideas = {
+					remove_idea = landed_votes
+					add_idea = autocratic
+				}
+			}
+
+			if = {
+				limit = {
+					has_idea = oligarchy_idea
+				}
+
+				swap_ideas = {
+					remove_idea = laoligarchy_ideanded_votes
+					add_idea = autocratic
+				}
+			}
 		}
 	}
 
@@ -3843,7 +3963,7 @@ focus_tree = {
 		id = ENG_aristocratic_support
 		x = 0
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_aristocratic_support
 		relative_position_id = ENG_a_german_king
 
 		prerequisite = {
@@ -3860,6 +3980,10 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			country_event = {
+				days = 0.5
+				id = ENGmon.4
+			}
 		}
 
 		cost = 2
@@ -3872,7 +3996,7 @@ focus_tree = {
 		id = ENG_uniting_the_realms
 		x = 2
 		y = 2
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_uniting_the_realms
 		relative_position_id = ENG_a_german_king
 
 		prerequisite = {
@@ -3894,6 +4018,30 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			hidden_effect = {
+				AUS = {
+					set_autonomy = {
+						target = HAN
+						autonomy_state = autonomy_free
+					}
+				}
+
+				HAN = {
+					set_autonomy = {
+						target = OLD
+						autonomy_state = autonomy_free
+					}
+				}
+			}
+
+			set_autonomy = {
+				target = HAN
+				autonomy_state = autonomy_commonwealth_proc
+			}
+
+			HAN = {
+				transfer_state = 915
+			}
 		}
 	}
 
@@ -3901,7 +4049,7 @@ focus_tree = {
 		id = ENG_english_unification_of_germany
 		x = -2
 		y = 3
-		icon = GFX_ENG_mon_back_in_business
+		icon = GFX_ENG_english_unification_of_germany
 		relative_position_id = ENG_a_german_king
 
 		prerequisite = {
@@ -3920,6 +4068,7 @@ focus_tree = {
 		cost = 2
 	
 		completion_reward = {
+			custom_effect_tooltip = ENG_unify_germany
 		}
 	}
 

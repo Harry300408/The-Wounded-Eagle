@@ -345,6 +345,9 @@ recruit_character = ENG_robert_anthony_eden
 recruit_character = ENG_henry_hugh_tudor
 recruit_character = ENG_thomas_stearns_eliot
 
+
+recruit_character = ENG_augustus
+
 if = {
 	limit = {
 		has_dlc = "La Resistance"

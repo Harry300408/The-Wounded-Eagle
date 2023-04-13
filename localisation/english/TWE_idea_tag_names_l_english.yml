@@ -1,4 +1,7 @@
 ﻿l_english:
+  army_laws:0 "Army Legislation"
+
+
   power_distro:0 "Power Distribution"
     autocratic:0 "Autocratic Society"
     oligarchy_idea:0 "Oligarchy"
@@ -21,5 +24,20 @@
     anarchy_idea:0 "Anarchy"
 
   diplo_status:0 "Diplomatic Status"
+    republic:0 "Republic"
     free_city:0 "Free City"
+    Principality:0 "Principality"
+    Dutchy:0 "Dutchy"
+    Kingdom:0 "Kingdom"
+    Colonial_Power:0 "Colonial Power"
+    Major_Power:0 "Major Power"
+    Hyper_Power:0 "Hyper Power"
+
+  internal_security:0 "Internal Security"
+    no_home_gaurd:0 "No Home Gaurd"
+    national_gaurd:0 "National Gaurd"
+    secret_police:0 "Secret Police"
+    guaranteed_liberties:0 "Guaranteed Liberties"
+
+  army_org:0 "Army Organisation"
     

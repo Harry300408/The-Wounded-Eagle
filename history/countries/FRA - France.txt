@@ -198,7 +198,9 @@ set_popularities = {
 }
 
 add_ideas = {
-	not_quite_defeated
+	FRA_victors_of_wwi
+	FRA_underground_extremeists
+	FRA_political_infighting
 }
 
 #Leaders

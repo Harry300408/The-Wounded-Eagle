@@ -461,5 +461,58 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ENG/here_comes_the_money.png"			
 	}
 
+	SpriteType = {
+		name = "GFX_ENG_religous_primacy"
+		texturefile = "gfx/interface/goals/ENG/religous_primacy.png"			
+	}
 
+	SpriteType = {
+		name = "GFX_ENG_outsource_a_new_king"
+		texturefile = "gfx/interface/goals/ENG/outsource_a_new_king.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_a_german_king"
+		texturefile = "gfx/interface/goals/ENG/a_german_king.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_promote_prussian_militarism"
+		texturefile = "gfx/interface/goals/ENG/promote_prussian_militarism.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_traditional_gender_roles"
+		texturefile = "gfx/interface/goals/ENG/traditional_gender_roles.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_anti_left_rhetoric"
+		texturefile = "gfx/interface/goals/ENG/anti_left_rhetoric.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_endorse_anglo_german_capitalism"
+		texturefile = "gfx/interface/goals/ENG/endorse_anglo_german_capitalism.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_stability_through_hierachy"
+		texturefile = "gfx/interface/goals/ENG/stability_through_hierachy.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_aristocratic_support"
+		texturefile = "gfx/interface/goals/ENG/aristocratic_support.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_uniting_the_realms"
+		texturefile = "gfx/interface/goals/ENG/uniting_the_realms.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_english_unification_of_germany"
+		texturefile = "gfx/interface/goals/ENG/english_unification_of_germany.png"			
+	}
 }

@@ -142,3 +142,17 @@ country_event = {
 		name = ENGmon.8.a
 	}
 }
+
+country_event = {
+	id = ENGmon.9
+	title = ENGmon.9.t
+	desc = ENGmon.9.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENGmon.9.a
+	}
+}

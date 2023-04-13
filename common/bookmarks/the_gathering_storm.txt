@@ -11,6 +11,9 @@ bookmarks = {
 			history = "FRA_TWE"
 			ideology = neutrality
 			ideas = {
+				FRA_victors_of_wwi
+				FRA_underground_extremeists
+				FRA_political_infighting
 			}
 			focuses = {
 			}
@@ -83,7 +86,17 @@ bookmarks = {
 		"ZZZ" = { minor = yes history = "RUS_FIN_TWE" }
 		"ZZZ" = { minor = yes history = "RUS_PER_TWE" }
 		#Austria
-		"PRE" = { minor = yes history = "PRE_TWE" }
+		"PRE" = { 
+			minor = yes 
+			history = "PRE_TWE" 
+			ideas = {
+				PRE_nation_divided
+				PRE_terrible_army
+				PRE_heart_of_the_new_revolution
+			}
+			focuses = {
+			}
+		}
 		"ZZZ" = { minor = yes history = "AUS_BAY_TWE" }
 		"ZZZ" = { minor = yes history = "AUS_HAN_TWE" }
 		#Buffer

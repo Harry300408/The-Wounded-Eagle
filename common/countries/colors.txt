@@ -1,5 +1,60 @@
 #reload countrycolors
 #TWE Nations
+SFR = {
+	color = rgb { 175 13 0 }
+	color_ui = rgb { 175 13 0 }
+}
+
+SRH = {
+	color = rgb { 190 13 0 }
+	color_ui = rgb { 190 13 0 }
+}
+
+SBL = {
+	color = rgb { 160 13 0 }
+	color_ui = rgb { 160 13 0 }
+}
+
+FAI = {
+	color = rgb { 255 39 35 }
+	color_ui = rgb { 255 39 35 }
+}
+
+NWH = {
+	color = rgb { 203 138 74 }
+	color_ui = rgb { 203 138 74 }
+}
+
+QEL = {
+	color = rgb { 57 143 97 }
+	color_ui = rgb { 57 143 97 }
+}
+
+SWG = {
+	color = rgb { 57 143 97 }
+	color_ui = rgb { 57 143 97 }
+}
+
+LCH = {
+	color = rgb { 57 143 97 }
+	color_ui = rgb { 57 143 97 }
+}
+
+DAR = {
+	color = rgb { 57 143 97 }
+	color_ui = rgb { 57 143 97 }
+}
+
+FLI = {
+	color = rgb { 57 143 97 }
+	color_ui = rgb { 57 143 97 }
+}
+
+NAK = {
+	color = rgb { 119 27 27 }
+	color_ui = rgb { 119 27 27 }
+}
+
 HUI = {
 	color = rgb { 78 196 74 }
 	color_ui = rgb { 78 196 74 }
@@ -516,8 +571,8 @@ BUL = {
 	color_ui = rgb { 210 147 217 }
 }
 POR = {
-	color = rgb { 39 116 70 }
-	color_ui = rgb { 51 151 91 }
+	color = rgb { 62 209 255 }
+	color_ui = rgb { 62 209 255 }
 }
 FIN = {
 	color = rgb { 205 212 228 }

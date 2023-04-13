@@ -1,0 +1,15 @@
+state={
+	id=1001
+	name="STATE_1001"
+	provinces={
+		5183
+	}
+	history = {
+		owner = NAK
+		add_core_of = NAK
+	}
+	manpower= 1500
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

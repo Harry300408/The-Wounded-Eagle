@@ -1,0 +1,15 @@
+state={
+	id=1002
+	name="STATE_1002"
+	provinces={
+		5211 5225 10925 12910 7567 8186 2219 8220 13170 13169
+	}
+	history = {
+		owner = FLI
+		add_core_of = FLI
+	}
+	manpower= 1500
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

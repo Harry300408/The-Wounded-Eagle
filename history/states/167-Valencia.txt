@@ -26,6 +26,8 @@ state={
 			}
 		}
 		add_core_of = SPR
+add_core_of = CSP
+add_core_of = FAI
 	}
 
 	provinces={

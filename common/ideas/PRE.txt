@@ -46,9 +46,9 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.02
 			}
 		}
-		
-		PRE_brink_of_colapse = {
-			picture = PRE_brink_of_colapse
+
+		PRE_heart_of_the_new_revolution = {
+			picture = PRE_heart_of_the_new_revolution
 			allowed = {
 				always = yes
 			}
@@ -56,12 +56,12 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				stability_factor = -0.1
-				stability_weekly = -0.01
-				surrender_limit = -0.3	
-				political_power_gain = -0.05
+				offensive_war_stability_factor = 0.1
+				political_power_gain = 0.05
 			}
 		}
+		
+		
 
 	}
 }

@@ -63,6 +63,36 @@ characters = {
 		can_be_fired = no
     }
 
+	HAN_augustus = {
+        name = ENG_augustus
+        portraits = {
+            civilian = {
+                large = "GFX_augustus"
+            }
+        }
+        country_leader = {
+            ideology = classical_absolutism
+            traits = {  }
+            #desc = 
+        }
+		can_be_fired = no
+    }
+
+	ENG_augustus = {
+        name = ENG_augustus
+        portraits = {
+            civilian = {
+                large = "GFX_augustus"
+            }
+        }
+        country_leader = {
+            ideology = classical_absolutism
+            traits = {  }
+            #desc = 
+        }
+		can_be_fired = no
+    }
+
     ENG_edward_viii = {
 		name=ENG_edward_viii
 		portraits={

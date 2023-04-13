@@ -10,3 +10,19 @@ SAC = "countries/Natives.txt"
 ULA = "countries/Natives.txt"
 #Papua - Native
 PAU = "countries/Natives.txt"
+
+#New Ankara
+NAK = "countries/Turkey.txt"
+#Flinders
+FLI = "countries/Australia.txt"
+#Darling
+DAR = "countries/Australia.txt"
+#Lachlan
+LCH = "countries/Australia.txt"
+#New South Wales & New Georgia
+SWG = "countries/Australia.txt"
+#Queensland & Elizabeth
+QEL = "countries/Australia.txt"
+
+#Nieuw Holland
+NWH = "countries/Indonesia.txt"

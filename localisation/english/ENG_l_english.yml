@@ -107,6 +107,23 @@
       ENG_revitalize_our_great_country:0 "Revitalize Our Great Country"
       ENG_here_comes_the_money:0 "Here Comes The Money"
 
+      # Religous Primacy (later patch/0.2)
+      ENG_religous_primacy:0 "Religous Primacy"
+
+      #von Hanover
+      ENG_outsource_a_new_king:0 "Outsource A New King"
+      
+      ENG_a_german_king:0 "A German King?"
+      ENG_promote_prussian_militarism:0 "Promote Prussian Militarism"
+      ENG_traditional_gender_roles:0 "Traditional Gender Roles"
+      ENG_anti_left_rhetoric:0 "Anti-Left Rhetoric"
+      ENG_endorse_anglo_german_capitalism:0 "Endorse Anglo-German Capitalism"
+      ENG_stability_through_hierachy:0 "Stability Through Hierachy"
+      ENG_aristocratic_support:0 "Aristocratic Support"
+      ENG_uniting_the_realms:0 "Uniting The Realms"
+      ENG_english_unification_of_germany:0 "An Enlgish Unification of Germany"
+      ENG_enshrine_jewish_rights:0 "Enshrine Jewish Right"
+
   ## PARTIES ##
   ENG_communism_party:0 "§tCP"
   ENG_communism_party_long:0 "§tthe Communist Party of Great Britian"
@@ -141,6 +158,14 @@
   MP_long:0 "Morris Government"
   MP:0 "MG"
 
+  ## Anglican Church
+  anglican_church_long:0 "§0Anglican Church"
+  anglican_church:0 "§0AC"
+
+  ## House of Hanover
+  ENG_HoH_long:0 "§0House of Hanover"
+  ENG_HoH:0 "§0HoH"
+
   ## COUNTRY FLAGS ##
   ENG_civil_war_start:0 " In the English Civil War"
 
@@ -158,6 +183,8 @@
   exploit_colonial_labour_decs:0 "Unlocks Decisions: §YExploit Colonial Labour"
   churchill_killed:0 "Churchill Is §RKilled§!"
   orwell_killed:0 "Orwell Is §RKilled§!"
+  vno_hanover_king:0 "§YErnest Augustus von Hanover ascends to the throne"
+  ENG_unify_germany:0 "Unlocks Decisions to §YUnify Germany"
 
   ## BOOKMARK LOC ##
 

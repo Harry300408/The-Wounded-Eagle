@@ -1,0 +1,16 @@
+spriteTypes = {
+	
+    ##Leaders
+
+	spriteType = {
+        name = GFX_t_roosevelt
+        texturefile = gfx/leaders/USA/Democrats/t_roosevelt.dds
+    }
+
+    spriteType = {
+        name = GFX_t_roosevelt_small
+        texturefile = gfx/leaders/USA/Democrats/t_roosevelt_small.dds
+    }
+
+
+}
