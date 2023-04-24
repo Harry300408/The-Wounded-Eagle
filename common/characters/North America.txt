@@ -40,7 +40,7 @@ characters = {
             }
         }
         country_leader = {
-            ideology = market_liberalism
+            ideology = democratic_socialism
             traits = {  }
             #desc = 
         }

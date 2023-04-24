@@ -1,0 +1,90 @@
+add_namespace = LBA_war
+
+country_event = {
+	id = LBA_war.1
+	title = LBA_war.1.t
+	desc = LBA_war.1.d
+	picture = GFX_report_event_ITA_democratic_parlament
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = LBA_war.1.a
+
+		news_event = {
+			id = LBA_war.2
+			days = 1
+		}
+
+		AUS = {
+			country_event = {
+				id = LBA_war.4
+				days = 5
+			}
+		}
+		
+	}
+}
+
+#country_event = {
+#	id = LBA_war.3
+#	title = LBA_war.3.t
+#	desc = LBA_war.3.d
+#	picture = GFX_report_event_ITA_democratic_parlament
+#	
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+#	option = {
+#		name = LBA_war.3.a
+#		ITA = {
+#			declare_war_on = {
+#				target = LBA
+#				type = annex_everything
+#			}
+#			add_to_war = TUR
+#		}
+#	}
+#	option = {
+#		name = LBA_war.3.b
+#	}
+#}
+
+country_event = {
+	id = LBA_war.4
+	title = LBA_war.4.t
+	desc = LBA_war.4.d
+	picture = GFX_report_event_ITA_democratic_parlament
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = LBA_war.4.a
+
+		country_event = {
+			id = LAB_war.3
+			days = 5
+		}
+	
+	}
+	option = {
+		name = LBA_war.4.b
+	}
+}
+
+
+news_event = {
+	id = LBA_war.2
+	title = LBA_war.2.t
+	desc = LBA_war.2.d
+	picture = GFX_news_event_008
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = LBA_war.2.a
+	}
+}

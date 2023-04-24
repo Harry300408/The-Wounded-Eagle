@@ -28,12 +28,36 @@ if = {
 		autonomous_state = autonomy_RUS_imp_proc
 	}
 
+	set_autonomy = {
+		target = UKR
+		autonomous_state = autonomy_RUS_imp_proc
+	}
+
+	set_autonomy = {
+		target = MOL
+		autonomous_state = autonomy_RUS_imp_proc
+	}
+
+	set_autonomy = {
+		target = LAT
+		autonomous_state = autonomy_RUS_imp_proc
+	}
+
+	set_autonomy = {
+		target = LIT
+		autonomous_state = autonomy_RUS_imp_proc
+	}
+
 	else = {
 		puppet = POL
 		puppet = ALK
 		puppet = FIN
 		puppet = MON
 		puppet = PER 
+		puppet = UKR 
+		puppet = MOL
+		puppet = LAT
+		puppet = LIT
 	}
 }
 
@@ -224,8 +248,8 @@ set_popularities = {
 	neutrality = 100
 }
 
-create_faction = "The Russian Sphere" 
-add_to_faction = SOV
+#create_faction = "The Russian Sphere" 
+#add_to_faction = SOV
 
 if = {
 	limit = {

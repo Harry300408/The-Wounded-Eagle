@@ -20,6 +20,12 @@ if = {
 	}
 }
 
+add_ideas = {
+	GRE_italian_influence
+	GRE_economic_depression
+	GRE_growing_greek_nationalism
+}
+
 ###################
 #### 3D MODELS ####
 ###################
@@ -320,8 +326,8 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 43
-	fascism = 2
-	communism = 17
+	fascism = 17
+	communism = 2
 	neutrality = 38
 }
 

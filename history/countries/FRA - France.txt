@@ -2,6 +2,9 @@
 
 set_oob = FRA_1936_TWE
 
+create_faction = "FRA_CA" 
+add_to_faction = FRA
+
 starting_train_buffer = 2
 
 if = {

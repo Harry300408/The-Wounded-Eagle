@@ -1,0 +1,16 @@
+spriteTypes = {
+	
+    ##Leaders
+
+	spriteType = {
+        name = GFX_parri
+        texturefile = gfx/leaders/ITA/ferruccio_parri.dds
+    }
+
+    spriteType = {
+        name = GFX_victor
+        texturefile = gfx/leaders/ITA/victor.dds
+    }
+
+
+}

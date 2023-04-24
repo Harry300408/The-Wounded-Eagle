@@ -1,0 +1,87 @@
+ideas = {
+	country = {
+		
+		ITA_V_Emmanuel_TWE = {
+			picture = ITA_V_Emmanuel_TWE
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_weekly = 0.01
+				political_power_gain = 0.0
+				democratic_drift = 0.02
+				liberalism_drift = 0.02
+			}
+		}
+
+		ITA_a_mutilated_victory = {
+			picture = ITA_a_mutilated_victory
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				surrender_limit = 0.15
+				drift_defence_factor = 0.01
+				social_democracy_drift = 0.02
+				fascism_drift = 0.02
+			}
+		}
+
+		ITA_political_divide = {
+			picture = ITA_political_divide
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.10
+			}
+		}
+
+		ITA_economic_depression = {
+			picture = ITA_economic_depression
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.1
+				stability_factor = -0.1
+			}
+		}
+
+		ITA_sicilian_mafia = {
+			picture = ITA_sicilian_mafia
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				consumer_goods_factor = 0.05
+				stability_factor = -0.05
+				
+			}
+
+			
+		}
+
+	
+		
+		
+
+	}
+}

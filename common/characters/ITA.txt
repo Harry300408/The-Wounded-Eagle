@@ -1,0 +1,36 @@
+characters = {
+
+    ## Italian Leaders ## 
+    
+    ITA_parri = {
+        name = ITA_parri
+        portraits = {
+            civilian = {
+                large = "GFX_parri"
+            }
+        }
+        country_leader = {
+            ideology = social_conservatism
+            traits = { anti_communist ww_one_trauma }
+            #desc = 
+        } 
+    }
+
+    ITA_victor = {
+        name = ITA_victor
+        portraits = {
+            civilian = {
+                large = "GFX_victor"
+            }
+        }
+        country_leader = {
+            ideology = classical_absolutism
+            traits = { collaborator_king ww_one_trauma }
+            #desc = 
+        } 
+    }
+
+   
+
+
+}

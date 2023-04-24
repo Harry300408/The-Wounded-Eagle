@@ -1,0 +1,16 @@
+spriteTypes = {
+	
+    ##Ideas
+
+	spriteType = {
+        name = GFX_idea_GRE_italian_influence
+        texturefile = gfx/interface/ideas/GRE/italian_influence.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_GRE_italian_influence
+        texturefile = gfx/interface/ideas/GRE/italian_influence.dds
+    }
+
+
+}

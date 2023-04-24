@@ -9,6 +9,8 @@ if = {
 	}
 }
 
+set_cosmetic_tag = GD_FIN
+
 set_research_slots = 3
 
 recruit_character = FIN_maria

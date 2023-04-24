@@ -1,0 +1,51 @@
+ideas = {
+	country = {
+		GRE_italian_influence = {
+			picture = GRE_italian_influence
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				autonomy_gain = -0.1
+				ITA = {
+					trade_opinion_factor = 0.1
+				}
+				production_speed_buildings_factor = 0.01
+				drift_defence_factor = 0.01
+			}
+		}
+
+		GRE_economic_depression = {
+			picture = ITA_economic_depression
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.1
+				stability_factor = -0.1
+			}
+		}
+
+		GRE_growing_greek_nationalism = {
+			picture = GRE_growing_greek_nationalism
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				fascism_drift = 0.01 
+				ultranationalism_drift = 0.01
+				rev_unionism_drift = 0.01
+			}
+		}
+	}
+}

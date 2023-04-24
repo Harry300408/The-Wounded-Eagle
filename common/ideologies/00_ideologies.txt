@@ -351,6 +351,8 @@ ideologies = {
 			st_democracy = {}
 
 			corporatocracy = {}
+
+			auth_conservitive = {}
 		}
 
 		dynamic_faction_names = {

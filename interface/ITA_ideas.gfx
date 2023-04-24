@@ -1,0 +1,27 @@
+spriteTypes = {	
+    spriteType = {
+        name = GFX_idea_ITA_V_Emmanuel_TWE
+        texturefile = gfx/leaders/ITA/small/victor.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_ITA_a_mutilated_victory
+        texturefile = gfx/interface/ideas/ITA/a_mutilated_victory.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_ITA_political_divide
+        texturefile = gfx/interface/ideas/ITA/ITA_political_divide.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_ITA_economic_depression
+        texturefile = gfx/interface/ideas/ITA/ITA_economic_depression.dds
+    }
+
+    spriteType = {
+        name = GFX_idea_ITA_sicilian_mafia
+        texturefile = gfx/interface/ideas/ITA/ITA_sicilian_mafia.dds
+    }
+
+}

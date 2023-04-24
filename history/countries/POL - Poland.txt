@@ -1,5 +1,5 @@
 ﻿capital = 10
-
+set_cosmetic_tag = RUS_POL
 #oob = "POL_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
