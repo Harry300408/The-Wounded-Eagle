@@ -10,3 +10,6 @@
 
   MON_proc:0 "Mongol Protectorate"
   MON_proc_DEF:0 "the Mongol Protectorate"
+
+  RUS_GOVERNATE_BALTIC:0 "Baltic Governate"
+  RUS_GOVERNATE_BALTIC_DEF:0 "the Baltic Governate"

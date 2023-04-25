@@ -12,5 +12,10 @@ spriteTypes = {
         texturefile = gfx/interface/ideas/GRE/italian_influence.dds
     }
 
+    spriteType = {
+        name = GFX_idea_GRE_growing_greek_nationalism
+        texturefile = gfx/interface/ideas/GRE/greek_nationalism.dds
+    }
+
 
 }

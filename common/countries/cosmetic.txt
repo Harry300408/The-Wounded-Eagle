@@ -1,3 +1,24 @@
+#Russia
+RUS_GOVERNATE = {
+	color = rgb { 0 113 0 }
+	color_ui = rgb { 0 113 0 }
+}
+
+RUS_POL = {
+	color = rgb { 0 113 0 }
+	color_ui = rgb { 0 113 0 }
+}
+
+GD_FIN = {
+	color = rgb { 0 113 0 }
+	color_ui = rgb { 0 113 0 }
+}
+
+RUS_GOVERNATE_BALTIC = {
+	color = rgb { 0 113 0 }
+	color_ui = rgb { 0 113 0 }
+}
+
 #China
 XSM_empire = {
 	color = rgb { 165 142 99 }

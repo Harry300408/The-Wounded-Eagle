@@ -1,5 +1,4 @@
 ﻿capital = 111
-
 #oob = "FIN_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

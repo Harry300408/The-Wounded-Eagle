@@ -19,6 +19,8 @@ if = {
 	}
 }
 
+set_cosmetic_tag = RUS_GOVERNATE_BALTIC
+
 add_ideas = {
 	limited_conscription
 }

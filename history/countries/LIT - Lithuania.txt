@@ -12,6 +12,8 @@ if = {
 	}
 }
 
+set_cosmetic_tag = RUS_GOVERNATE
+
 set_research_slots = 3
 
 if = {
