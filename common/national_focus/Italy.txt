@@ -14,7 +14,7 @@ focus_tree = {
   focus = {
      id = ITA_troubling_times
      icon = GFX_goal_unknown
-     x = 20
+     x = 50 #20
      y = 1
      cost = 10
      available_if_capitulated = yes
@@ -28,7 +28,7 @@ focus_tree = {
     id = ITA_confront_the_disgruntled_veterans
 	icon = GFX_goal_unknown
 	prerequisite = { focus = ITA_troubling_times }
-	x = 18
+	x = 48
 	y = 2
 	cost = 10
 	available_if_capitulated = yes
@@ -44,7 +44,7 @@ focus_tree = {
 	id = ITA_the_sicilian_mafia
 	icon = GFX_goal_unknown
 	prerequisite = { focus = ITA_troubling_times }
-	x = 22
+	x = 52
 	y = 2
 	cost = 10
 	available_if_capitulated = yes
@@ -60,7 +60,7 @@ focus_tree = {
 	id = ITA_never_forget_never_forgive
 	icon = GFX_goal_unknown
 	prerequisite = { focus = ITA_troubling_times }
-	x = 20
+	x = 50
 	y = 2
 	cost = 10
 	available_if_capitulated = yes
@@ -78,7 +78,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_confront_the_disgruntled_veterans }
 		prerequisite = { focus = ITA_never_forget_never_forgive }
 		prerequisite = { focus = ITA_the_sicilian_mafia }
-		x = 19
+		x = 49
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -96,7 +96,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_confront_the_disgruntled_veterans }
 		prerequisite = { focus = ITA_never_forget_never_forgive }
 		prerequisite = { focus = ITA_the_sicilian_mafia }
-		x = 20
+		x = 50
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -114,7 +114,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_confront_the_disgruntled_veterans }
 		prerequisite = { focus = ITA_never_forget_never_forgive }
 		prerequisite = { focus = ITA_the_sicilian_mafia }
-		x = 21
+		x = 51
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -132,7 +132,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_government_incompentence }
 		prerequisite = { focus = ITA_withdraw_from_greece }
 		prerequisite = { focus = ITA_crackdown_on_illegalist_activity }
-		x = 20
+		x = 50
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -148,7 +148,7 @@ focus_tree = {
 		id = ITA_declare_maritial_law
 		icon = GFX_goal_unknown
 		prerequisite = { focus = ITA_violence_in_milan }
-		x = 19
+		x = 49
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
@@ -164,7 +164,7 @@ focus_tree = {
 		id = ITA_libya_in_crisis
 		icon = GFX_goal_unknown
 		prerequisite = { focus = ITA_violence_in_milan }
-		x = 20
+		x = 50
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
@@ -180,7 +180,7 @@ focus_tree = {
 		id = ITA_punish_the_troublemakers
 		icon = GFX_goal_unknown
 		prerequisite = { focus = ITA_violence_in_milan }
-		x = 21
+		x = 51
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
@@ -198,7 +198,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_declare_maritial_law }
 		prerequisite = { focus = ITA_libya_in_crisis }
 		prerequisite = { focus = ITA_punish_the_troublemakers }
-		x = 20
+		x = 50
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
@@ -219,7 +219,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_ii_diluvio_rosso }
 		mutually_exclusive = { focus = ITA_rage_against_the_state }
 		mutually_exclusive = { focus = ITA_evolas_coup }
-		x = 19
+		x = 49
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -240,7 +240,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_ii_diluvio_rosso }
 		mutually_exclusive = { focus = ITA_rage_against_the_state }
 		mutually_exclusive = { focus = ITA_evolas_coup }
-		x = 21
+		x = 51
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -261,7 +261,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_ii_diluvio_rosso }
 		mutually_exclusive = { focus = ITA_rage_against_the_state }
 		mutually_exclusive = { focus = ITA_evolas_coup }
-		x = 17
+		x = 47
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -282,7 +282,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_democracy_saved }
 		mutually_exclusive = { focus = ITA_rage_against_the_state }
 		mutually_exclusive = { focus = ITA_evolas_coup }
-		x = 15
+		x = 45
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -303,7 +303,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_ii_diluvio_rosso }
 		mutually_exclusive = { focus = ITA_democracy_saved }
 		mutually_exclusive = { focus = ITA_evolas_coup }
-		x = 23
+		x = 53
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -324,7 +324,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_ii_diluvio_rosso }
 		mutually_exclusive = { focus = ITA_rage_against_the_state }
 		mutually_exclusive = { focus = ITA_democracy_saved }
-		x = 25
+		x = 55
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -335,5 +335,59 @@ focus_tree = {
 		}
 	 }
 	 
+	#LEFTIST PATH-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+		#The Revolution Prevails
+		focus = {
+			id = ITA_the_revolution_prevails
+			icon = GFX_goal_unknown
+			allow_branch = { had_completed_focus = ITA_ii_diluvio_rosso }
+			x = 45
+			y = 8
+			cost = 10
+			available_if_capitulated = yes
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = { #Unlocked and Bypassed should the Monarchy be successfully overthrown by the Far-Left via event
+			}
+		 }
+
+		#Marxist Primacy
+		focus = {
+			id = ITA_marxist_primacy
+			icon = GFX_goal_unknown
+			prerequisite = { ITA_the_revolution_prevails }
+			allow_branch = { had_completed_focus = ITA_ii_diluvio_rosso }
+			mutually_exclusive = { ITA_sorelian_primacy }
+			x = 40
+			y = 9
+			cost = 10
+			available_if_capitulated = yes
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = { #Unlocked and Bypassed should the Monarchy be successfully overthrown by the Far-Left via event
+			}
+		 }
+
+		#Sorelian Primacy
+		focus = {
+			id = ITA_sorelian_primacy
+			icon = GFX_goal_unknown
+			prerequisite = { ITA_the_revolution_prevails }
+			allow_branch = { had_completed_focus = ITA_ii_diluvio_rosso }
+			mutually_exclusive = { ITA_marxist_primacy }
+			x = 50
+			y = 9
+			cost = 10
+			available_if_capitulated = yes
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = { #Unlocked and Bypassed should the Monarchy be successfully overthrown by the Far-Left via event
+			}
+		 }
+
 	}
 
