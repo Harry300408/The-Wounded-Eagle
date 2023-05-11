@@ -1,0 +1,11 @@
+spriteTypes = {
+
+    #Bayern Ideas
+    spriteType = {
+        name = GFX_Adelheid
+        texturefile = gfx/leaders/BAY/HAB/Adelheid_Portrait.png
+    }
+    
+    
+
+}

@@ -17,10 +17,6 @@ state={
 	provinces={
 		7259 1214 12259 12272 1420 
 	}
-
-	resources = {
-		fish=5
-	}
 	
 
 	local_supplies=0.0 

@@ -76,7 +76,7 @@ bookmarks = {
 		"ZZZ" = { minor = yes history = "UK_EGY_TWE" }
 		#Other
 		"USA" = { minor = yes history = "USA_TWE" }
-		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
+		"ITA" = { minor = yes history = "ITA_TWE" ideas = { ITA_a_mutilated_victory ITA_political_divide ITA_sicilian_mafia } }
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }
 		"ZZZ" = { minor = yes history = "DO NOT DOUBLE CLICK" }

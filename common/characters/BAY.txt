@@ -1,0 +1,22 @@
+characters = {
+
+    ## Italian Leaders ## 
+    
+    BAY_Adelheid = {
+        name = BAY_Adelheid
+        portraits = {
+            civilian = {
+                large = "GFX_Adelheid"
+            }
+        }
+        country_leader = {
+            ideology = classical_absolutism
+            traits = { inexperienced_monarch conservative_grandee }
+            #desc = 
+        } 
+    }
+
+   
+
+
+}

@@ -1575,6 +1575,7 @@ news_event = {
 			set_country_flag = ENG_victory
 		}
 		clr_global_flag = ENG_civil_war_start
+		clr_country_flag = ENG_civil_war
 	}
 }
 
@@ -1593,6 +1594,7 @@ news_event = {
 			set_country_flag = GBN_victory
 		}
 		clr_global_flag = ENG_civil_war_start	
+		clr_country_flag = ENG_civil_war
 	}
 }
 
@@ -1611,6 +1613,7 @@ news_event = {
 			set_country_flag = IBR_victory
 		}
 		clr_global_flag = ENG_civil_war_start
+		clr_country_flag = ENG_civil_war
 	}
 }
 
@@ -1630,6 +1633,7 @@ news_event = {
 			set_country_flag = RBR_victory
 		}
 		clr_global_flag = ENG_civil_war_start
+		clr_country_flag = ENG_civil_war
 	}
 }
 
@@ -1667,6 +1671,7 @@ country_event = {
 			set_country_flag = JAC_victory
 		}
 		clr_global_flag = ENG_civil_war_start
+		clr_country_flag = ENG_civil_war
 	}
 }
 
@@ -1682,14 +1687,13 @@ country_event = {
 	option = {
 		name = ENGstart.41.a
 		ERA = {
-			set_province_controller = 3311
-			set_province_controller = 11332
-			set_province_controller = 9285
-			set_province_controller = 11270
-			set_province_controller = 351
-			set_province_controller = 219
-			set_province_controller = 11299
-			
+			set_state_owner = 131
+		}
+		JAC = {
+			set_province_controller = 6399
+		}
+
+		ERA = {
 			declare_war_on = {
 				target = JAC
 				type = annex_everything

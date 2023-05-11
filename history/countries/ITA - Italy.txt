@@ -40,6 +40,10 @@ if = {
 	limit = {
 		has_dlc = "Together for Victory"
 	}
+	set_autonomy = {
+		target = TIG
+		autonomous_state = autonomy_ITA_colonial_proc
+	}
 
 	set_autonomy = {
 		target = MHD
@@ -67,6 +71,7 @@ if = {
 	}
 
 	else = {
+		puppet = TIG
 		puppet = MHD	
 		puppet = HAG
 		puppet = HEL

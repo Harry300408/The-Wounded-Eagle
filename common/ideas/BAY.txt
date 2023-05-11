@@ -1,0 +1,80 @@
+ideas = {
+	country = {
+		
+		BAY_prussian_exiles = {
+			picture = BAY_prussian_exiles
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				offensive_war_stability_factor = 0.05
+				army_attack_factor = 0.02
+				army_defence_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+
+		BAY_habsburg_decadence = {
+			picture = BAY_habsburg_decadence
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				neutrality_drift = -0.01
+				stability_factor = -0.10
+			}
+		}
+
+		BAY_mein_kampf = {
+			picture = BAY_mein_kampf
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				fascism_drift = 0.02
+				fascism_acceptance = 0.05
+				stability_factor = -0.10
+			}
+		}
+
+		BAY_anti_semitism = {
+			picture = BAY_anti_semitism
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.10
+			}
+		}
+
+		BAY_economic_depression = {
+			picture = ITA_economic_depression
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.1
+				stability_factor = -0.1
+			}
+		}
+
+
+		
+	}
+}

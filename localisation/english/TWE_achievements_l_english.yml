@@ -1,0 +1,17 @@
+﻿l_english:
+  TWE_ADNR_achivements:0 "A Dream Not Realised: Achivements"
+    Commie_German_NAME:0 "A Commie German?"
+    Commie_German_DESC:0 "Form Germany As The Prussian Workers Republic"
+      PRE_commie_formed_germany:0 "§YPrussia AR Has Formed Germany§!"
+
+    Manifested_Destiny_NAME:0 "Manifested Destiny"
+    Manifested_Destiny_DESC:0 "Reach The West Coast As The United States"
+
+    from_rome_to_you_NAME:0 "From Rome To You"
+    from_rome_to_you_DESC:0 "Form Rome As Italy"
+      ITA_is_rome:0 "§YFormed Rome As Italy§!"
+
+    the_bacon_return_NAME:0 "The Bacon Returns"
+    the_bacon_return_DESC:0 "Bring The Jacobins Back To Rule In England"
+      ENG_civil_war:0 "§YHas The English Civil War§!"
+      JAC_victory:0 "§YJacobins Have Won The English Civil War§!"

@@ -1149,8 +1149,8 @@ D50 = {
 	color_ui = rgb { 255 138 61 }
 }
 BAY = {
-	color = rgb { 49 216 216 }
-	color_ui = rgb { 49 216 216 }
+	color = rgb { 49 163 216 }
+	color_ui = rgb { 49 163 216 }
 }
 MEK = {
 	color = rgb { 186 245 86 }
@@ -1161,8 +1161,8 @@ PRE = {
 	color_ui = rgb { 178 0 0 }
 }
 SAX = {
-	color = rgb { 102 102 0 }
-	color_ui = rgb { 102 102 0 }
+	color = rgb { 110 135 102 }
+	color_ui = rgb { 110 135 102 }
 }
 HAN = {
 	color = rgb { 255 0 0 }

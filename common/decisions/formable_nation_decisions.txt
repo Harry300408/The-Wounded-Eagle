@@ -6905,7 +6905,6 @@ form_macedonian_empire_category = {
 	}
 }
 
-
 form_turan_category = {
 
 	form_turan = {
@@ -7521,9 +7520,6 @@ form_turkestan_category = {
 	}
 }
 
-
-
-
 form_mountainous_republic_category = {
 	
 	form_mountainous_republic = { 
@@ -7600,7 +7596,6 @@ form_mountainous_republic_category = {
 		}
 	}
 }
-
 
 form_transcaucasus_category = {
 	
@@ -8187,8 +8182,6 @@ form_transcaucasus_category = {
 	}
 }
 
-
-
 form_siberia_category = {
 	
 	form_siberian_republic = { 
@@ -8620,9 +8613,6 @@ form_siberia_category = {
 	}
 }
 
-
-
-
 form_idel_ural_category = {
 	
 	form_idel_uralic_republic = { 
@@ -8961,7 +8951,6 @@ form_ethiopian_empire_category  = {
 		}
 	}
 }
-
 
 form_east_africa_category = {
 	
@@ -9358,7 +9347,6 @@ form_east_africa_category = {
 		}
 	}
 }
-
 
 form_horn_of_africa_africa_category = {
 	
@@ -9781,7 +9769,6 @@ form_horn_of_africa_africa_category = {
 		}
 	}
 }
-
 
 greater_italy_category = {
 	

@@ -198,7 +198,7 @@ guiTypes = {
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
 		position = { x=400 y =130}
-		size = { width = 1920 height = 1080 }
+		size = { width = 1280 height = 720 }
 		Orientation = CENTER
 		Origo = center		
 
@@ -216,7 +216,7 @@ guiTypes = {
 
 		iconType = {
 			name = "tweaks_bg"
-			position = { x = -390 y = -470 }
+			position = { x = -70 y = -289 }
 			spriteType = "GFX_tweaks"
 			centerposition = yes
 			orientation = center
@@ -251,7 +251,7 @@ guiTypes = {
 		## Update "log"
 		iconType = {
 			name = "update"
-			position = { x = -390 y = -100 }
+			position = { x = -70 y = 80 }
 			spriteType = "GFX_update"
 			centerposition = yes
 			orientation = center
@@ -313,7 +313,7 @@ guiTypes = {
 
 		iconType = {
 			name = "collective_logo"
-			position = { x = -390 y = -650 }
+			position = { x = -70 y = -470 }
 			spriteType = "GFX_collective_letters"
 			centerposition = yes
 			orientation = center
@@ -323,7 +323,7 @@ guiTypes = {
 
 		iconType = {
 			name = "Eagle_Logo"
-			position = { x = -1200 y = -425 }
+			position = { x = -890 y = -250 }
 			spriteType = "GFX_main_eagle"
 			centerposition = yes
 			orientation = center
@@ -397,7 +397,7 @@ guiTypes = {
 
 		iconType = {
 			name = "r_under_b"
-			position = { x = -1880 y = 599 }
+			position = { x = -1240 y = 599 }
 			spriteType = "GFX_r_underbracket"
 			centerposition = yes
 			orientation = upper_right
@@ -407,7 +407,7 @@ guiTypes = {
 
 		iconType = {
 			name = "l_under_b"
-			position = { x = -2453 y = 599 }
+			position = { x = -1812 y = 599 }
 			spriteType = "GFX_l_underbracket"
 			centerposition = yes
 			orientation = upper_right

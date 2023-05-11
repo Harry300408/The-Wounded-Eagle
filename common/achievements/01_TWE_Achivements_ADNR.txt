@@ -1,0 +1,74 @@
+# possible - filters out achivements on game start so we dont have to check everything all the
+#time
+## happened - checks if achivement happened
+
+unique_id = TWE_ADNR_achivements
+
+##### GERMANY #####
+Commie_German = {
+	possible = {
+		tag = PRE
+	}
+
+	happened = {
+		has_country_flag = PRE_commie_formed_germany
+	}
+}
+
+##### USA #####
+Manifested_Destiny = {
+	possible = {
+		tag = USA
+	}
+
+	happened = {
+		owns_state = 378
+		owns_state = 385
+		owns_state = 386
+		owns_state = 484
+		owns_state = 377
+		owns_state = 380
+		owns_state = 379
+		owns_state = 919
+		owns_state = 387
+		owns_state = 921
+		owns_state = 920
+	}
+}
+
+##### ITALY #####
+from_rome_to_you = {
+	possible = {
+		tag = ITA
+	}
+
+	happened = {
+		has_country_flag = ITA_is_rome
+	}
+}
+
+##### UK #####
+the_bacon_return = {
+	possible = {
+		OR = {
+			tag = JAC
+			tag = ENG # so it is avalible further in game and doesn't imidiately lock
+		}	
+	}
+
+	happened = {
+		AND = {	
+			NOT = {
+				AND = {
+					country_exists = RBR
+					country_exists = GBN
+					country_exists = IBR
+					country_exists = ERA
+					country_exists = ENG
+					has_country_flag = ENG_civil_war
+				}
+			}
+			has_country_flag = JAC_victory
+		}
+	}
+}

@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_SGF_map"
+		textureFile = "gfx/interface/decisions/Formables/SGF.png"
+	}
+
+}

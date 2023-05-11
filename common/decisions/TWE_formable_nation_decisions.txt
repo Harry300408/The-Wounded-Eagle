@@ -1,0 +1,41 @@
+
+
+SGU_SGF_formable_cat = {
+	
+	SGU_SGF_formable_dec = { 
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = ULM # Ulm
+				original_tag = BAY # Bayern
+				original_tag = WUR # Wurtemburg
+				original_tag = BAD # Baden
+				original_tag = AUS # Austria
+			}
+		}
+
+		available = {
+			controls_state = 1
+		}
+
+		visible = {
+			
+			NOT = { has_global_flag = SGU_formed }
+			
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = SGU_SGF 
+
+			hidden_effect = {
+				set_global_flag = SGU_formed 
+			}
+		}
+
+		ai_will_do = {
+			factor = 500
+		}
+	}
+}

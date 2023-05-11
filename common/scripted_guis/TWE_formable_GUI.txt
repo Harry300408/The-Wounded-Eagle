@@ -1,0 +1,18 @@
+scripted_gui = {
+	SGU_SGF_formable_GUI = {
+	
+		context_type = decision_category
+		
+		window_name = "SGU_SGF_formable"
+		
+		visible = {
+			TAG = ENG			
+		}
+		
+		effects = {
+		}
+
+	}
+}
+		
+

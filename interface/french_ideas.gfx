@@ -8,4 +8,9 @@ spriteTypes = {
         name = GFX_idea_FRA_underground_extremeists
         texturefile = gfx/interface/ideas/FRA/FRA_underground_extremeists.dds
     }
+
+    spriteType = {
+        name = GFX_idea_FRA_political_infighting
+        texturefile = gfx/interface/ideas/FRA/FRA_political_infighting.dds
+    }
 }

@@ -14,7 +14,7 @@ characters = {
             traits = {  }
             #desc = 
         }
-		can_be_fired = no
+		
     }
 	
 	ENG_william_morris = {
@@ -30,7 +30,7 @@ characters = {
             traits = {  }
             #desc = 
         }
-		can_be_fired = no
+		
     }
 
     ENG_af = {
@@ -45,7 +45,7 @@ characters = {
             traits = {  }
             #desc = 
         }
-		can_be_fired = no
+		
     }
 
     ENG_churchill = {
@@ -60,7 +60,7 @@ characters = {
             traits = {  }
             #desc = 
         }
-		can_be_fired = no
+		
     }
 
 	HAN_augustus = {
@@ -75,7 +75,7 @@ characters = {
             traits = {  }
             #desc = 
         }
-		can_be_fired = no
+		
     }
 
 	ENG_augustus = {
@@ -90,7 +90,7 @@ characters = {
             traits = {  }
             #desc = 
         }
-		can_be_fired = no
+		
     }
 
     ENG_edward_viii = {
@@ -113,7 +113,7 @@ characters = {
 				
 			}
 		}
-		can_be_fired = no
+		
 	}
 
     ENG_albert_windsor = {
@@ -136,7 +136,7 @@ characters = {
 				
 			}
 		}
-		can_be_fired = no
+		
 	}
 
     ENG_empty_throne = {
@@ -173,7 +173,7 @@ characters = {
             traits = {  }
             #desc = 
         }
-		can_be_fired = no
+		
 	}
 
 	ENG_montgomery = {
@@ -203,7 +203,7 @@ characters = {
             traits = {  }
             #desc = 
         }
-		can_be_fired = no
+		
 	}
 
     ## FOR THE RAJ
@@ -220,7 +220,7 @@ characters = {
             traits = {  }
             #desc = 
         }
-		can_be_fired = no
+		
     }
 
     ## CABINET MEMBERS ##
@@ -239,7 +239,7 @@ characters = {
 				
 			}
 		}
-		can_be_fired = no
+		
 	}
 
     ENG_morrison = {
@@ -257,7 +257,7 @@ characters = {
 				
 			}
 		}
-		can_be_fired = no
+		
 	}
 
     ENG_greenwood = {
@@ -275,7 +275,7 @@ characters = {
 				
 			}
 		}
-		can_be_fired = no
+		
 	}
 
 
@@ -295,25 +295,7 @@ characters = {
 				
 			}
 		}
-		can_be_fired = no
-	}
-
-	ENG_robert_anthony_eden = {
-		name=ENG_robert_anthony_eden
-		portraits={
-			civilian={
-				large = GFX_ENG_robert_anthony_eden
-				small = GFX_ENG_robert_anthony_eden_small
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_robert_anthony_eden
-			traits  = {
-				
-			}
-		}
-		can_be_fired = no
+		
 	}
 
 	ENG_henry_hugh_tudor = {
@@ -331,7 +313,7 @@ characters = {
 				
 			}
 		}
-		can_be_fired = no
+		
 	}
 
 	ENG_thomas_stearns_eliot = {
@@ -349,7 +331,7 @@ characters = {
 				
 			}
 		}
-		can_be_fired = no
+		
 	}
 
     ## Unit & Field Marshals ##
