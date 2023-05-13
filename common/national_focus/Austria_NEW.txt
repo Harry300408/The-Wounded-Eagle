@@ -9,8 +9,8 @@ focus_tree = {
 		}
 	}
 	continuous_focus_position = {
-		x = 2350
-		y = 1200
+		x = 1550
+		y = 2150
 	}
 
 	### ----------- FOCUS TREE ------------ ###
@@ -66,7 +66,7 @@ focus_tree = {
 		id = AUS_new_osterreich
 		icon = GFX_focus_AUS_new_osterreich
 		cost = 5
-		x = -12
+		x = -8
 		y = 1
 		relative_position_id = AUS_revive_political_plan
 		mutually_exclusive = {
@@ -524,9 +524,6 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = AUS_vaterlandische_front
-		prerequisite = {
-			focus = AUS_vaterlandische_front
-		}
 		prerequisite = {
 			focus = AUS_agitation_program
 		}
@@ -2930,7 +2927,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_rebuild_our_country
-		icon = GFX_
+		icon = GFX_focus_AUS_rebuild_homeland
 		cost = 10
 		x = -1
 		y = 3
@@ -3052,6 +3049,11 @@ focus_tree = {
 		relative_position_id = AUS_restoration_plan
 		prerequisite = {
 			focus = AUS_restore_fallen_empire
+		}
+		available = {
+			NOT = {
+				has_completed_focus = AUS_tragedy_for_austria
+			}
 		}
 		completion_reward = { 
 			
@@ -3285,12 +3287,33 @@ focus_tree = {
 		id = AUS_hoch_saone
 		icon = GFX_focus_AUS_hoch_saone
 		cost = 10
-		x = 0
+		x = -1
 		y = 2
 		relative_position_id = AUS_expand_our_lands
 		prerequisite = {
 			focus = AUS_silesia_is_ours
 			focus = AUS_integrate_bayern
+		}
+		mutually_exclusive = {
+			focus = AUS_ally_with_france
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_ally_with_france
+		icon = GFX_focus_AUS_ally_with_france
+		cost = 10
+		x = 1
+		y = 2
+		relative_position_id = AUS_expand_our_lands
+		prerequisite = {
+			focus = AUS_silesia_is_ours
+			focus = AUS_integrate_bayern
+		}
+		mutually_exclusive = {
+			focus = AUS_hoch_saone
 		}
 		completion_reward = { 
 			
@@ -3305,6 +3328,7 @@ focus_tree = {
 		relative_position_id = AUS_expand_our_lands
 		prerequisite = {
 			focus = AUS_hoch_saone
+			focus = AUS_ally_with_france
 		}
 		prerequisite = {
 			focus = AUS_disunite_italy
@@ -3681,5 +3705,254 @@ focus_tree = {
 		}
 	}
 
+	### ----------------------------------- ###
+	### ---------- NAVAL FOCUSES ---------- ###
+	focus = {
+		id = AUS_start_naval_reforms
+		icon = GFX_
+		cost = 5
+		x = 13
+		y = 0
+		completion_reward = { 
+			if = {
+				limit = { navy_command_has_navy_spirit = no }
+				navy_experience = 20
+			}
+			else = {
+				navy_experience = 55
+			}
+			add_ideas = naval_reform_spirit
+		}
+	}
+	focus = {
+		id = AUS_osterreichisch_mittelmeer
+		icon = GFX_
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = AUS_start_naval_reforms
+		prerequisite = {
+			focus = AUS_start_naval_reforms
+		}
+		completion_reward = { 
+		}
+	}
+	focus = {
+		id = AUS_unsere_unterwasser
+		icon = GFX_
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = AUS_osterreichisch_mittelmeer
+		prerequisite = {
+			focus = AUS_osterreichisch_mittelmeer
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_uboot_improvement
+		icon = GFX_
+		cost = 8
+		x = 0
+		y = 1
+		relative_position_id = AUS_unsere_unterwasser
+		prerequisite = {
+			focus = AUS_unsere_unterwasser
+		}
+		completion_reward = { 
+			navy_experience = 5
+			custom_effect_tooltip = TT_next_research_submarine_tt
+			hidden_effect = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+					if = {
+						limit = { NOT = { has_tech = early_ship_hull_submarine } }
+						set_technology = {
+							early_ship_hull_submarine = 1
+							popup = no
+						}
+					}
+					else_if = {
+						limit = { has_tech = early_ship_hull_submarine }
+						set_technology = {
+							basic_ship_hull_submarine = 1
+							popup = no
+						}
+					}
+					else_if = {
+						limit = { has_tech = basic_ship_hull_submarine }
+						set_technology = {
+							improved_ship_hull_submarine = 1
+							popup = no
+						}
+					}
+					else_if = {
+						limit = { has_tech = improved_ship_hull_submarine }
+						set_technology = {
+							advanced_ship_hull_submarine = 1
+							popup = no
+						}
+					}
+				}
+				else = {
+					if = {
+						limit = { NOT = { has_tech = early_submarine } }
+						set_technology = {
+							early_submarine = 1
+							popup = no
+						}
+					}
+					else_if = {
+						limit = { has_tech = early_submarine }
+						set_technology = {
+							basic_submarine = 1
+							popup = no
+						}
+					}
+					else_if = {
+						limit = { has_tech = basic_submarine }
+						set_technology = {
+							improved_submarine = 1
+							popup = no
+						}
+					}
+					else_if = {
+						limit = { has_tech = improved_submarine }
+						set_technology = {
+							advanced_submarine = 1
+							popup = no
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = AUS_kaiserlisch_unterwasser
+		icon = GFX_
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = AUS_uboot_improvement
+		prerequisite = {
+			focus = AUS_uboot_improvement
+		}
+		prerequisite = {
+			focus = AUS_naval_trainings
+		}
+		completion_reward = { 
+			navy_experience = 15
+			#Add Idea (delta)
+			add_tech_bonus = {
+				name = AUS_kaiserlisch_unterwasser
+				uses = 2
+				bonus = 1
+				category = ss_tech
+				category = cat_torpedoes
+			}
+		}
+	}
+	focus = {
+		id = AUS_naval_trainings
+		icon = GFX_
+		cost = 8
+		x = 2
+		y = 1
+		relative_position_id = AUS_unsere_unterwasser
+		prerequisite = {
+			focus = AUS_unsere_unterwasser
+			focus = AUS_unsere_meere
+		}
+		completion_reward = { 
+			navy_experience = 10
+			add_tech_bonus = {
+				name = AUS_naval_trainings
+				uses = 2
+				bonus = 50
+				category = naval_doctrine
+			}
+		}
+	}
+	focus = {
+		id = AUS_doctrine_expansion
+		icon = GFX_
+		cost = 8
+		x = 0
+		y = 2
+		relative_position_id = AUS_naval_trainings
+		prerequisite = {
+			focus = AUS_naval_trainings
+		}
+		completion_reward = { 
+			navy_experience = 10
+			add_tech_bonus = {
+				name = AUS_doctrine_expansion
+				uses = 1
+				bonus = 100
+				category = naval_doctrine
+			}
+		}
+	}
+	focus = {
+		id = AUS_unsere_meere
+		icon = GFX_
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = AUS_osterreichisch_mittelmeer
+		prerequisite = {
+			focus = AUS_osterreichisch_mittelmeer
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_screen_improvement
+		icon = GFX_
+		cost = 5
+		x = -1
+		y = 2
+		relative_position_id = AUS_unsere_meere
+		prerequisite = {
+			focus = AUS_unsere_meere
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_pride_of_osterreichisch_flotte
+		icon = GFX_
+		cost = 5
+		x = 1
+		y = 2
+		relative_position_id = AUS_unsere_meere
+		prerequisite = {
+			focus = AUS_unsere_meere
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = AUS_kaiserlisch_wasser
+		icon = GFX_
+		cost = 5
+		x = 0
+		y = 3
+		relative_position_id = AUS_unsere_meere
+		prerequisite = {
+			focus = AUS_screen_improvement
+		}
+		prerequisite = {
+			focus = AUS_pride_of_osterreichisch_flotte
+		}
+		completion_reward = { 
+			
+		}
+	}
 	### ----------------------------------- ###
 }

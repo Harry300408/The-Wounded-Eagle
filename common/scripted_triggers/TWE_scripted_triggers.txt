@@ -1,0 +1,42 @@
+navy_command_has_academy_spirit = {
+
+	OR = {
+		has_idea = instilled_aggression_spirit
+		has_idea = calculated_restraint_spirit
+		has_idea = signals_training_spirit
+		has_idea = fleet_in_being_academy_spirit
+		has_idea = trade_interdiction_academy_spirit
+		has_idea = base_strike_academy_spirit
+		has_idea = best_of_the_best_naval_academy_spirit
+		has_idea = naval_academy_scholarships_spirit
+	}
+
+}
+navy_command_has_navy_spirit = {
+
+	OR = {
+		has_idea = jeune_ecole_spirit
+		has_idea = flexible_contracts_spirit
+		has_idea = integrated_designers_spirit
+		has_idea = naval_reform_spirit
+		has_idea = naval_refit_yards_spirit
+		has_idea = fleet_in_being_navy_spirit
+		has_idea = trade_interdiction_navy_spirit
+		has_idea = base_strike_navy_spirit
+	}
+
+}
+navy_command_has_command_spirit = {
+
+	OR = {
+		has_idea = close_combat_navy_spirit
+		has_idea = night_fighting_spirit
+		has_idea = surprise_attacks_spirit
+		has_idea = efficient_communications_spirit
+		has_idea = surface_raiders_spirit
+		has_idea = inclimate_weather_experience_spirit
+		has_idea = decisive_battle_spirit
+		has_idea = brave_commanders_spirit
+	}
+
+}

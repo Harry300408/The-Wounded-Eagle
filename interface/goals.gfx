@@ -4655,4 +4655,8 @@ spriteTypes = {
 		name = "GFX_focus_AUS_coronation_of_victoria"
 		texturefile = "gfx/interface/goals/AUS/AUS_coronation_of_victoria_icon.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_AUS_ally_with_france"
+		texturefile = "gfx/interface/goals/AUS/AUS_ally_with_france_icon.dds"
+	}
 }

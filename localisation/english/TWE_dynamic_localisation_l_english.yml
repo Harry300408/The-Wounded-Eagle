@@ -1,0 +1,16 @@
+﻿l_english:
+
+tech_none_battleship:0 "[GetCurrentHeavyShipTech]"
+tech_none_heavy_battleship:0 "[GetCurrentSuperHeavyShipTech]"
+tech_none_carrier:0 "[GetCurrentCarrierTech]"
+tech_none_submarine:0 "[GetCurrentSubTech]"
+tech_none_delta:0 "None"
+
+TT_next_research_submarine_tt:0 "§Y[GetNextSubTech]§! will be researched."
+TT_next_research_battleship_tt:0 "§Y[GetNextHeavyShipTech]§! will be researched."
+TT_next_research_heavy_battleship_tt:0 "§Y[GetNextSuperHeavyShipTech]§! will be researched."
+TT_next_research_carrier_tt:0 "§Y[GetNextCarrierTech]§! will be researched."
+
+navy_command_has_academy_spirit:0 "Has Spirit of the Navy Academy"
+navy_command_has_navy_spirit:0 "Has Spirit of the Navy"
+navy_command_has_command_spirit:0 "Has Spirit of the Navy Command"

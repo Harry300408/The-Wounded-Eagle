@@ -1,0 +1,874 @@
+
+##  ##  ######  ##  ##  ######  ##
+### ##  ##  ##  ##  ##  ##  ##  ##
+### ##  ######  ##  ##  ######  ##
+## ###  ##  ##  ##  ##  ##  ##  ##
+##  ##  ##  ##    ##    ##  ##  ######
+
+######  ##  ##      ####    ######  ######  ######  ##      ######  ######  ##  ##  ######  ######
+##		##  ##      ##  ##  ##  ##    ##      ##    ##      ##      ##      ##  ##    ##    ##  ##
+######  ######      ####    ######    ##      ##    ##      ######  ######  ######    ##    ######
+    ##  ##  ##      ##  ##  ##  ##    ##      ##    ##      ##          ##  ##  ##    ##    ##
+######  ##  ##      ####    ##  ##    ##      ##    ######  ######  ######  ##  ##  ######  ##
+
+defined_text = {
+
+	name = GetCurrentSuperHeavyShipTech
+
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				NOT = {
+					has_tech = ship_hull_super_heavy
+				}
+			}
+		}
+		localization_key = tech_none_delta
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = ship_hull_super_heavy
+			}
+		}
+		localization_key = SH_battleship_1
+	}
+
+
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				NOT = {
+					has_tech = heavy_battleship
+				}
+			}
+		}
+		localization_key = tech_none_delta
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = heavy_battleship
+				NOT = {
+					has_tech = heavy_battleship2
+				}
+			}
+		}
+		localization_key = SH_battleship_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = heavy_battleship2
+			}
+		}
+		localization_key = SH_battleship_2
+	}
+
+}
+defined_text = {
+
+	name = GetNextSuperHeavyShipTech
+
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				NOT = {
+					has_tech = ship_hull_super_heavy
+				}
+			}
+		}
+		localization_key = SH_battleship_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = ship_hull_super_heavy
+			}
+		}
+		localization_key = tech_none_heavy_battleship
+	}
+
+	
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				NOT = {
+					has_tech = heavy_battleship
+				}
+			}
+		}
+		localization_key = SH_battleship_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = heavy_battleship
+				NOT = {
+					has_tech = heavy_battleship2
+				}
+			}
+		}
+		localization_key = SH_battleship_2
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = heavy_battleship2
+			}
+		}
+		localization_key = tech_none_heavy_battleship
+	}
+
+}
+
+####    ######  ######  ######  ##      ######  ######  ##  ##  ######  ######
+##  ##  ##  ##    ##      ##    ##      ##      ##      ##  ##    ##    ##  ##
+####    ######    ##      ##    ##      ######  ######  ######    ##    ######
+##  ##  ##  ##    ##      ##    ##      ##          ##  ##  ##    ##    ##
+####    ##  ##    ##      ##    ######  ######  ######  ##  ##  ######  ##
+
+defined_text = {
+
+	name = GetCurrentHeavyShipTech
+
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				NOT = {
+					has_tech = early_ship_hull_heavy
+				}
+			}
+		}
+		localization_key = tech_none_delta
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = early_ship_hull_heavy
+				NOT = {
+					has_tech = basic_ship_hull_heavy
+				}
+			}
+		}
+		localization_key = ship_hull_heavy_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = basic_ship_hull_heavy
+				NOT = {
+					has_tech = improved_ship_hull_heavy
+				}
+			}
+		}
+		localization_key = ship_hull_heavy_2
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = improved_ship_hull_heavy
+				NOT = {
+					has_tech = advanced_ship_hull_heavy
+				}
+			}
+		}
+		localization_key = ship_hull_heavy_3
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = advanced_ship_hull_heavy
+			}
+		}
+		localization_key = ship_hull_heavy_4
+	}
+
+
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				NOT = {
+					has_tech = early_battleship
+				}
+			}
+		}
+		localization_key = tech_none_delta
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = early_battleship
+				NOT = {
+					has_tech = basic_battleship
+				}
+			}
+		}
+		localization_key = battleship_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = basic_battleship
+				NOT = {
+					has_tech = improved_battleship
+				}
+			}
+		}
+		localization_key = battleship_2
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = improved_battleship
+				NOT = {
+					has_tech = advanced_battleship
+				}
+			}
+		}
+		localization_key = battleship_3
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = advanced_battleship
+			}
+		}
+		localization_key = battleship_4
+	}
+
+}
+defined_text = {
+
+	name = GetNextHeavyShipTech
+
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				NOT = {
+					has_tech = early_ship_hull_heavy
+				}
+			}
+		}
+		localization_key = ship_hull_heavy_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = early_ship_hull_heavy
+				NOT = {
+					has_tech = basic_ship_hull_heavy
+				}
+			}
+		}
+		localization_key = ship_hull_heavy_2
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = basic_ship_hull_heavy
+				NOT = {
+					has_tech = improved_ship_hull_heavy
+				}
+			}
+		}
+		localization_key = ship_hull_heavy_3
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = improved_ship_hull_heavy
+				NOT = {
+					has_tech = advanced_ship_hull_heavy
+				}
+			}
+		}
+		localization_key = ship_hull_heavy_4
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = advanced_ship_hull_heavy
+			}
+		}
+		localization_key = tech_none_battleship
+	}
+
+	
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				NOT = {
+					has_tech = early_battleship
+				}
+			}
+		}
+		localization_key = battleship_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = early_battleship
+				NOT = {
+					has_tech = basic_battleship
+				}
+			}
+		}
+		localization_key = battleship_2
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = basic_battleship
+				NOT = {
+					has_tech = improved_battleship
+				}
+			}
+		}
+		localization_key = battleship_3
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = improved_battleship
+				NOT = {
+					has_tech = advanced_battleship
+				}
+			}
+		}
+		localization_key = battleship_4
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = advanced_battleship
+			}
+		}
+		localization_key = tech_none_battleship
+	}
+
+}
+
+######  ######  ####    ####    ######  ######  ####
+##      ##  ##  ##  ##  ##  ##    ##    ##      ##  ##
+##      ######  ####    ####      ##    ######  ####
+##      ##  ##  ##  ##  ##  ##    ##    ##      ##  ##
+######  ##  ##  ##  ##  ##  ##  ######  ######  ##  ##
+
+defined_text = {
+
+	name = GetCurrentCarrierTech
+
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				NOT = {
+					has_tech = early_ship_hull_carrier
+				}
+			}
+		}
+		localization_key = tech_none_delta
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = early_ship_hull_carrier
+				NOT = {
+					has_tech = basic_ship_hull_carrier
+				}
+			}
+		}
+		localization_key = ship_hull_carrier_0
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = basic_ship_hull_submarine
+				NOT = {
+					has_tech = improved_ship_hull_submarine
+				}
+			}
+		}
+		localization_key = ship_hull_carrier_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = improved_ship_hull_carrier
+				NOT = {
+					has_tech = advanced_ship_hull_carrier
+				}
+			}
+		}
+		localization_key = ship_hull_carrier_2
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = advanced_ship_hull_carrier
+			}
+		}
+		localization_key = ship_hull_carrier_3
+	}
+
+
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				NOT = {
+					has_tech = early_carrier
+				}
+			}
+		}
+		localization_key = tech_none_delta
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = early_carrier
+				NOT = {
+					has_tech = basic_carrier
+				}
+			}
+		}
+		localization_key = carrier_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = basic_carrier
+				NOT = {
+					has_tech = improved_carrier
+				}
+			}
+		}
+		localization_key = carrier_2
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = improved_carrier
+				NOT = {
+					has_tech = advanced_carrier
+				}
+			}
+		}
+		localization_key = carrier_3
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = advanced_carrier
+			}
+		}
+		localization_key = carrier_4
+	}
+
+}
+defined_text = {
+
+	name = GetNextCarrierTech
+
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				NOT = {
+					has_tech = early_ship_hull_carrier
+				}
+			}
+		}
+		localization_key = ship_hull_carrier_0
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = early_ship_hull_carrier
+				NOT = {
+					has_tech = basic_ship_hull_carrier
+				}
+			}
+		}
+		localization_key = ship_hull_carrier_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = basic_ship_hull_carrier
+				NOT = {
+					has_tech = improved_ship_hull_carrier
+				}
+			}
+		}
+		localization_key = ship_hull_carrier_2
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = improved_ship_hull_carrier
+				NOT = {
+					has_tech = advanced_ship_hull_carrier
+				}
+			}
+		}
+		localization_key = ship_hull_carrier_3
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = advanced_ship_hull_carrier
+			}
+		}
+		localization_key = tech_none_carrier
+	}
+
+	
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				NOT = {
+					has_tech = early_carrier
+				}
+			}
+		}
+		localization_key = carrier_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = early_carrier
+				NOT = {
+					has_tech = basic_carrier
+				}
+			}
+		}
+		localization_key = carrier_2
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = basic_carrier
+				NOT = {
+					has_tech = improved_carrier
+				}
+			}
+		}
+		localization_key = carrier_3
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = improved_carrier
+				NOT = {
+					has_tech = advanced_carrier
+				}
+			}
+		}
+		localization_key = carrier_4
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = advanced_carrier
+			}
+		}
+		localization_key = tech_none_carrier
+	}
+
+}
+
+######  ##  ##  ####
+##      ##  ##  ##  ##
+######  ##  ##  ####
+    ##  ##  ##  ##  ##
+######  ######  ####
+
+defined_text = {
+
+	name = GetCurrentSubTech
+
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				NOT = {
+					has_tech = early_ship_hull_submarine
+				}
+			}
+		}
+		localization_key = tech_none_delta
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = early_ship_hull_submarine
+				NOT = {
+					has_tech = basic_ship_hull_submarine
+				}
+			}
+		}
+		localization_key = ship_hull_submarine_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = basic_ship_hull_submarine
+				NOT = {
+					has_tech = improved_ship_hull_submarine
+				}
+			}
+		}
+		localization_key = ship_hull_submarine_2
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = improved_ship_hull_submarine
+				NOT = {
+					has_tech = advanced_ship_hull_submarine
+				}
+			}
+		}
+		localization_key = ship_hull_submarine_3
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = advanced_ship_hull_submarine
+			}
+		}
+		localization_key = ship_hull_submarine_4
+	}
+
+
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				NOT = {
+					has_tech = early_submarine
+				}
+			}
+		}
+		localization_key = tech_none_delta
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = early_submarine
+				NOT = {
+					has_tech = basic_submarine
+				}
+			}
+		}
+		localization_key = submarine_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = basic_submarine
+				NOT = {
+					has_tech = improved_submarine
+				}
+			}
+		}
+		localization_key = submarine_2
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = improved_submarine
+				NOT = {
+					has_tech = advanced_submarine
+				}
+			}
+		}
+		localization_key = submarine_3
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = advanced_submarine
+			}
+		}
+		localization_key = submarine_4
+	}
+
+}
+defined_text = {
+
+	name = GetNextSubTech
+
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				NOT = {
+					has_tech = early_ship_hull_submarine
+				}
+			}
+		}
+		localization_key = ship_hull_submarine_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = early_ship_hull_submarine
+				NOT = {
+					has_tech = basic_ship_hull_submarine
+				}
+			}
+		}
+		localization_key = ship_hull_submarine_2
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = basic_ship_hull_submarine
+				NOT = {
+					has_tech = improved_ship_hull_submarine
+				}
+			}
+		}
+		localization_key = ship_hull_submarine_3
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = improved_ship_hull_submarine
+				NOT = {
+					has_tech = advanced_ship_hull_submarine
+				}
+			}
+		}
+		localization_key = ship_hull_submarine_4
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = advanced_ship_hull_submarine
+			}
+		}
+		localization_key = tech_none_submarine
+	}
+
+	
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				NOT = {
+					has_tech = early_submarine
+				}
+			}
+		}
+		localization_key = submarine_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = early_submarine
+				NOT = {
+					has_tech = basic_submarine
+				}
+			}
+		}
+		localization_key = submarine_2
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = basic_submarine
+				NOT = {
+					has_tech = improved_submarine
+				}
+			}
+		}
+		localization_key = submarine_3
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = improved_submarine
+				NOT = {
+					has_tech = advanced_submarine
+				}
+			}
+		}
+		localization_key = submarine_4
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { NOT = { has_dlc = "Man the Guns" } }
+				has_tech = advanced_submarine
+			}
+		}
+		localization_key = tech_none_submarine
+	}
+
+}
