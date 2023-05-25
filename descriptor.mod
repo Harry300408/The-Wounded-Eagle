@@ -1,3 +1,4 @@
+name="The Wounded Eagle 0.1"
 version="0.1"
 tags={
 	"Alternative History"
@@ -25,7 +26,7 @@ replace_path="common/decisions"
 replace_path="common/decisions/categories"
 replace_path="gfx/loadingscreens"
 replace_path="music"
-name="The Wounded Eagle 0.1"
+path="mod/The-Wounded-Eagle"
 picture="thumbnail.png"
 supported_version="1.12.*"
 remote_file_id="2911337275"
