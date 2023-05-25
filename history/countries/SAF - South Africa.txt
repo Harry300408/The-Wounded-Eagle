@@ -1,5 +1,15 @@
 ﻿capital = 275
 
+create_faction = SAF_south_accords
+add_to_faction = SAF
+add_to_faction = BOT
+add_to_faction = ORJ
+add_to_faction = TNS
+add_to_faction = SWZ
+add_to_faction = ZUU
+add_to_faction = LES
+add_to_faction = XHO
+
 #oob = "SAF_1936"
 if = {
 	limit = { has_dlc = "By Blood Alone" }

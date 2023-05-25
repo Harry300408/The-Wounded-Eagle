@@ -39,6 +39,18 @@ SID = "countries/Sidamo.txt"
 #Oromia
 ORO = "countries/Oromo.txt"
 #Kongo
-KON = "countries/Oromo.txt"
+KON = "countries/Congo.txt"
+#Swaziland
+SWZ = "countries/South Africa.txt"
+#Lesotho
+LES = "countries/South Africa.txt"
+#Zulu
+ZUU = "countries/South Africa.txt"
+#Xhosa
+XHO = "countries/South Africa.txt"
+#Oranje
+ORJ = "countries/South Africa.txt"
+#Transaval
+TNS = "countries/South Africa.txt"
 
 

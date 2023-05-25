@@ -1,0 +1,15 @@
+state={
+	id=1011
+	name="STATE_1011"
+	provinces={
+		5231 12648 12064
+	}
+	history = {
+		owner = ORJ
+		add_core_of = ORJ
+	}
+	manpower= 24500
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

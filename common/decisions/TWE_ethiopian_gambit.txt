@@ -1,0 +1,33 @@
+
+
+ETH_gambit = {	
+    ETH_gambit_placeholder = { 
+	
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				tag = ITA
+				tag = ETH
+			}
+	 	}
+
+		available = {
+			controls_state = 1
+		}
+
+		visible = {
+			
+			NOT = { has_global_flag = ETH_gambit_over }
+			
+		}
+
+		complete_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 500
+		}
+	}
+}

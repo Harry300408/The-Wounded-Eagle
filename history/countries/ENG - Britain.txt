@@ -192,10 +192,6 @@ if = {
 		autonomous_state = autonomy_commonwealth_proc
 	}
 	set_autonomy = {
-		target = SAF
-		autonomous_state = autonomy_commonwealth_proc
-	}
-	set_autonomy = {
 		target = AST
 		autonomous_state = autonomy_commonwealth_proc
 	}
@@ -268,7 +264,6 @@ if = {
 		puppet = MAL
 		puppet = RAJ
 		puppet = CAN
-		puppet = SAF
 		puppet = AST
 		puppet = NZL
 		puppet = EGY

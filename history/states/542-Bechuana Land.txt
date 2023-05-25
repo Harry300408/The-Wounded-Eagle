@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = SAF
+		owner = BOT
 		buildings = {
 			infrastructure = 1
 		}

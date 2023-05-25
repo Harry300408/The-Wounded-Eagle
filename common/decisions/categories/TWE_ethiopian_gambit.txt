@@ -1,0 +1,21 @@
+ETH_gambit = {
+	icon = GFX_
+	priority = 10000
+	
+	visible = {
+		NOT = {
+			has_country_flag = ETH_gambit_over
+		}	
+	}
+	
+	allowed = {
+		OR = {
+			tag = ITA
+			tag = ETH
+		}	
+
+	}
+	
+	visible_when_empty = yes
+	scripted_gui = ETH_gambit_dec_gui 
+}

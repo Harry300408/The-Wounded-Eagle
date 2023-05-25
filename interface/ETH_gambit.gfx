@@ -1,0 +1,76 @@
+spriteTypes = {
+	
+    ##Ethiopian Gambit
+
+	spriteType = {
+        name = GFX_ITA_flag
+        texturefile = gfx/interface/ETH_gambit/flags/ITA.tga
+    }
+
+    spriteType = {
+        name = GFX_ETH_flag
+        texturefile = gfx/interface/ETH_gambit/flags/ETH.tga
+    }
+
+    ##Map Borders
+    spriteType = {
+        name = GFX_eritra_map
+        texturefile = gfx/interface/ETH_gambit/map/Eritrea_ITA/eritrea.png
+    }
+
+    spriteType = {
+        name = GFX_tigray_map
+        texturefile = gfx/interface/ETH_gambit/map/Tigray_TIG_ITA/tigray.png
+    }
+
+    spriteType = {
+        name = GFX_afar_map
+        texturefile = gfx/interface/ETH_gambit/map/Aussa_Afar_AFA/afar.png
+    }
+
+    spriteType = {
+        name = GFX_FRA_som_map
+        texturefile = gfx/interface/ETH_gambit/map/French_Somaliland_FRA/french_som.png
+    }
+
+    spriteType = {
+        name = GFX_Harar_map
+        texturefile = gfx/interface/ETH_gambit/map/Hararghe_HAR_ETH/hararghe.png
+    }
+
+    spriteType = {
+        name = GFX_ENG_som_map
+        texturefile = gfx/interface/ETH_gambit/map/British_Somaliland_ENG/british_som.png
+    }
+
+    spriteType = {
+        name = GFX_begmender_map
+        texturefile = gfx/interface/ETH_gambit/map/Begmender_ETH/begmender.png
+    }
+
+    spriteType = {
+        name = GFX_wello_map
+        texturefile = gfx/interface/ETH_gambit/map/Wello_ETH/wello.png
+    }
+
+    spriteType = {
+        name = GFX_shewa_map
+        texturefile = gfx/interface/ETH_gambit/map/Shewa_ETH/shewa.png
+    }
+
+    spriteType = {
+        name = GFX_welega_map
+        texturefile = gfx/interface/ETH_gambit/map/Welega_BEG_ETH/Welega.png
+    }
+    
+    spriteType = {
+        name = GFX_bah_nugal_map
+        texturefile = gfx/interface/ETH_gambit/map/Bah_Nugal_DER/bah_nugal.png
+    }
+
+    spriteType = {
+        name = GFX_gambella_map
+        texturefile = gfx/interface/ETH_gambit/map/Gambella_GBA_ETH/gambella.png
+    }
+
+}

@@ -1,0 +1,15 @@
+state={
+	id=1010
+	name="STATE_1010"
+	provinces={
+		1468 7576
+	}
+	history = {
+		owner = XHO
+		add_core_of = XHO
+	}
+	manpower= 24500
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

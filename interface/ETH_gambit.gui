@@ -1,0 +1,174 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "ETH_gambit_dec_gui"
+		position = { x=0 y=0 }	
+		size = { width=100%% height=700 }
+
+		
+		## ITA Flag
+		iconType = {
+			name ="ITA_flag"
+			spriteType = "GFX_ITA_flag"
+			position = { x= 20 y = -9 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType = {
+			name ="ITA_flag_overlay"
+			spriteType = "GFX_shield_medium"
+			position = { x= 20 y = -10 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		##ETH Flag
+
+		iconType = {
+			name ="ETH_flag"
+			spriteType = "GFX_ETH_flag"
+			position = { x= 410 y = -9 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType = {
+			name ="ETH_flag_overlay"
+			spriteType = "GFX_shield_medium"
+			position = { x= 410 y = -10 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		#Title
+		instantTextBoxType = {
+		    name ="ETH_gambit_title"
+		    position = { x=5  y=0 }
+			font = "hoi_30header"
+			text = "ETH_gambit_title"
+		 	format = centre
+			maxWidth = 500
+			maxHeight = 900
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+		    name ="ETH_gambit_sub_title"
+		    position = { x=5  y=22 }
+			font = "hoi_30header"
+			text = "ETH_gambit_subtitle"
+		 	format = centre
+			maxWidth = 500
+			maxHeight = 900
+			fixedsize = yes
+		}
+		
+		## Map
+		
+		#Eritra
+		ButtonType = {
+			name ="eritrea_map"
+			spriteType = "GFX_eritra_map"
+			position = { x= 60 y = 50 }
+			Orientation = "UPPER_LEFT"
+			tooltip = "Eritrea"
+		}
+
+		#Tigray
+		ButtonType = {
+			name ="tigray_map"
+			spriteType = "GFX_tigray_map"
+			position = { x= 77 y = 104 }
+			Orientation = "UPPER_LEFT"
+			tooltip = "Tigray"
+		}
+
+		#Afar
+		ButtonType = {
+			name ="afar_map"
+			spriteType = "GFX_afar_map"
+			position = { x= 114 y = 118 }
+			Orientation = "UPPER_LEFT"
+			tooltip = "Afar"
+		}
+
+		#French Somalia
+		ButtonType = {
+			name ="FRA_som_map"
+			spriteType = "GFX_FRA_som_map"
+			position = { x= 140 y = 135 }
+			Orientation = "UPPER_LEFT"
+			tooltip = "FRA_som"
+		}
+
+		#Harar
+		ButtonType = {
+			name ="Harar_map"
+			spriteType = "GFX_Harar_map"
+			position = { x= 121 y = 162 }
+			Orientation = "UPPER_LEFT"
+			tooltip = "Harar"
+		}
+
+		#British Somalia
+		ButtonType = {
+			name ="British_som_map"
+			spriteType = "GFX_ENG_som_map"
+			position = { x= 154 y = 155 }
+			Orientation = "UPPER_LEFT"
+			tooltip = "ENG_som"
+		}
+
+		#Begmender
+		ButtonType = {
+			name ="begmender_map"
+			spriteType = "GFX_begmender_map"
+			position = { x= 40 y = 111 }
+			Orientation = "UPPER_LEFT"
+			tooltip = "begmender"
+		}
+
+		#Wello
+		ButtonType = {
+			name ="wello_map"
+			spriteType = "GFX_wello_map"
+			position = { x= 90 y = 132 }
+			Orientation = "UPPER_LEFT"
+			tooltip = "wello"
+		}
+
+		#Shewa
+		ButtonType = {
+			name ="shewa_map"
+			spriteType = "GFX_shewa_map"
+			position = { x= 69 y = 168 }
+			Orientation = "UPPER_LEFT"
+			tooltip = "shewa"
+		}
+
+		#Welega
+		ButtonType = {
+			name ="Welega_map"
+			spriteType = "GFX_welega_map"
+			position = { x= 21 y = 150 }
+			Orientation = "UPPER_LEFT"
+			tooltip = "Welega"
+		}
+
+		#Bah Nugal
+		ButtonType = {
+			name ="bah_nugal_map"
+			spriteType = "GFX_bah_nugal_map"
+			position = { x= 203 y = 185 }
+			Orientation = "UPPER_LEFT"
+			tooltip = "bah_nugal"
+		}
+
+		#Gambella
+		ButtonType = {
+			name ="Gambella_map"
+			spriteType = "GFX_gambella_map"
+			position = { x= 6 y = 204 }
+			Orientation = "UPPER_LEFT"
+			tooltip = "Gambella"
+		}
+
+	}	
+		
+}

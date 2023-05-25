@@ -1,5 +1,29 @@
 ﻿l_english:
  # TWE Base Nations
+ TNS:0 "Transaval"
+ TNS_DEF:0 "Transaval"
+ TNS_ADJ:0 "Boer"
+
+ ORJ:0 "Oranje"
+ ORJ_DEF:0 "Ornaje"
+ ORJ_ADJ:0 "Boer"
+
+ XHO:0 "Xhosa"
+ XHO_DEF:0 "Xhosa"
+ XHO_ADJ:0 "Xhosa people"
+
+ ZUU:0 "Zululand"
+ ZUU_DEF:0 "Zululand"
+ ZUU_ADJ:0 "Zulu"
+
+ LES:0 "Basutoland"
+ LES_DEF:0 "Basutoland"
+ LES_ADJ:0 "Basotho"
+
+ SWZ:0 "Swaziland"
+ SWZ_DEF:0 "Swaziland"
+ SWZ_ADJ:0 "Swazi"
+
  SFR:0 "Syndicate of France"
  SRH:0 "Syndicate du Rhin"
  SBL:0 "Syndicate du Belgique"
@@ -1379,8 +1403,8 @@
  PRU_ADJ:0 "Peruvian"
  SAF_fascism:0 "Nationalist South Africa"
  SAF_fascism_DEF:0 "Nationalist South Africa"
- SAF_democratic:0 "South Africa"
- SAF_democratic_DEF:0 "South Africa"
+ SAF_democratic:0 "The Cape"
+ SAF_democratic_DEF:0 "The Cape"
  SAF_neutrality:0 "Unitary South Africa"
  SAF_neutrality_DEF:0 "Unitary South Africa"
  SAF_communism:0 "Cape Commune"
@@ -1389,8 +1413,8 @@
  SAF_democratic_ADJ:0 "South African"
  SAF_neutrality_ADJ:0 "South African"
  SAF_communism_ADJ:0 "South African"
- SAF:0 "South Africa"
- SAF_DEF:0 "South Africa"
+ SAF:0 "The Cape"
+ SAF_DEF:0 "the Cape"
  SAF_ADJ:0 "South African"
  SAU_fascism:0 "Arabic Empire"
  SAU_fascism_DEF:0 "the Arabic Empire"

@@ -6,7 +6,7 @@ scripted_gui = {
 		window_name = "SGU_SGF_formable"
 		
 		visible = {
-			TAG = ENG			
+						
 		}
 		
 		effects = {

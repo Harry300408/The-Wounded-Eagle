@@ -1,0 +1,18 @@
+scripted_gui = {
+	ETH_gambit_dec_gui = {
+	
+		context_type = decision_category
+		
+		window_name = "ETH_gambit_dec_gui"
+		
+		visible = {
+			TAG = ENG			
+		}
+		
+		effects = {
+		}
+
+	}
+}
+		
+

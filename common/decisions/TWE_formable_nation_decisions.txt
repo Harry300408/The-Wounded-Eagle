@@ -17,7 +17,23 @@ SGU_SGF_formable_cat = {
 		}
 
 		available = {
-			controls_state = 1
+			controls_state = 160
+			controls_state = 736
+			controls_state = 853
+			controls_state = 102
+			controls_state = 850
+			controls_state = 39
+			controls_state = 153
+			controls_state = 848
+			controls_state = 980
+			controls_state = 152
+			controls_state = 4
+			controls_state = 52
+			controls_state = 53
+			controls_state = 54
+			controls_state = 916
+			controls_state = 50
+			controls_state = 917
 		}
 
 		visible = {

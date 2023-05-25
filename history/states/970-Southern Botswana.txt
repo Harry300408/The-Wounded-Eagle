@@ -2,16 +2,16 @@ state={
 	id=970
 	name="STATE_970"
 	provinces={
-		707 3688 
+		10668 1509 5203
 	}
 	history = {
-		owner = AUS
+		owner = BOT
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		add_core_of = AUS
-		add_core_of = BAY
+		add_core_of = BOT
+		add_claim_by = BOT
 
 	}
 	state_category = rural
