@@ -1,14 +1,3 @@
-AUS_agitation_program_category = {
-	icon = GFX_
-	priority = 100
-	visible = {
-		has_country_flag = AUS_agitation_started_flag
-	}
-	allowed = {
-		tag = AUS
-	}
-	visible_when_empty = yes
-}
 AUS_monarchist_propaganda_category = {
 	icon = GFX_
 	priority = 99
@@ -57,25 +46,6 @@ AUS_local_hegemony_category = {
 		}
 		else = {
 			has_completed_focus = AUS_establish_influence_department
-		}
-	}
-	allowed = {
-		tag = AUS
-	}
-	visible_when_empty = yes
-}
-AUS_prague_conference_category = {
-	icon = GFX_
-	priority = 96
-	visible = {
-		if = {
-			limit = {
-				is_debug = yes
-			}
-			always = yes
-		}
-		else = {
-			has_global_flag = AUS_prague_conference_flag
 		}
 	}
 	allowed = {

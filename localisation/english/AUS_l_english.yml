@@ -2,7 +2,7 @@
 ### FOCUS TREE ###
 AUS_revive_political_plan:0 "Revive Political Plan"
 AUS_new_osterreich:0 "Neu Osterreich"
-AUS_prepare_sabotage:0 "Prepare Resistance"
+AUS_prepare_sabotage:0 "Organise Riots"
 AUS_peaceful_development:0 "Peaceful Development"
 AUS_agitation_program:0 "Agitation Program"
 
@@ -21,8 +21,6 @@ AUS_federal_republic:0 "Federal Republic"
 AUS_federation:0 "Federation"
 
 # Communist focuses #
-AUS_march_of_red_torches:0 "March of Red Torches"
-AUS_empower_kpo:0 "Empower KPO"
 
 # Fascist focuses #
 AUS_vaterlandische_front:0 "Vaterlandische Front"
@@ -90,6 +88,9 @@ AUS_ideological_unity:0 "Ideological Unity"
 AUS_invite_prussia:0 "Invite Prussia"
 AUS_prusso_austrian_treaty:0 "Austro-Prussian Treaty"
 AUS_prague_conference:0 "Prague Conference"
+AUS_west_deutschland_plan:0 "West Deutschland Plan"
+AUS_ost_deutschland_plan:0 "Ost Deutschland Plan"
+AUS_invite_denmark:0 "Invite Denmark"
 
 # Monarchist focuses #
 
@@ -230,8 +231,8 @@ ausevents.29.c:0 "Austria is trying to secure their interests."
 
 ausevents.30.t:0 "[AUS.GetNameDefCap] invite us to the new Confederation"
 ausevents.30.desc:0 "stuff"
-ausevents.30.a:0 ""
-ausevents.30.b:0 ""
+ausevents.30.a:0 "yes"
+ausevents.30.b:0 "nah"
 
 ausevents.32.t:0 "[AUS.GetNameDefCap] Propose Loosen Border Law"
 ausevents.32.desc:0 "stuff"
@@ -266,26 +267,24 @@ AUS_kaiserin_army_idea:0 "Kaiserin's Army"
 AUS_holy_imperial_order_idea:0 "Holy Imperial Order"
 AUS_democratic_influence_idea:0 "Democratic Influence"
 AUS_unionist_influence_idea:0 "Unionist Influence"
-AUS_agitation_fascism_win_idea:0 "Fascism Successful"
-AUS_agitation_efficiency_fascism_4_idea:0 "Fascism Agitation Efficiency"
-AUS_agitation_efficiency_fascism_3_idea:0 "$AUS_agitation_efficiency_fascism_4_idea$"
-AUS_agitation_efficiency_fascism_2_idea:0 "$AUS_agitation_efficiency_fascism_4_idea$"
-AUS_agitation_efficiency_fascism_1_idea:0 "$AUS_agitation_efficiency_fascism_4_idea$"
-AUS_agitation_efficiency_fascism_0_idea:0 "$AUS_agitation_efficiency_fascism_4_idea$"
-AUS_agitation_communism_win_idea:0 "Communism Successful"
-AUS_agitation_efficiency_leninism_revolutionism:0 "Leninism-Revolutionism"
-AUS_agitation_efficiency_leninism:0 "Leninism"
-AUS_agitation_efficiency_communism_4_idea:0 "[AUSAgitationEfficiencyCommunism] Agitation Efficiency"
-AUS_agitation_efficiency_communism_3_idea:0 "Communism Agitation Efficiency"
-AUS_agitation_efficiency_communism_2_idea:0 "$AUS_agitation_efficiency_communism_3_idea$"
-AUS_agitation_efficiency_communism_1_idea:0 "$AUS_agitation_efficiency_communism_3_idea$"
-AUS_agitation_efficiency_communism_0_idea:0 "$AUS_agitation_efficiency_communism_3_idea$"
 AUS_all_fascist_party_idea:0 "All Fascist Party"
 GERMANY_confederation_1_idea:0 "$GERMANY_member_of_confederation_idea$"
 GERMANY_confederation_2_idea:0 "$GERMANY_member_of_confederation_idea$"
 GERMANY_member_of_confederation_idea:0 "Member of the Confederation"
 AUS_aus_bay_treaty_idea:0 "Austro-Bavarian Loosen Border Law"
 AUS_aus_pre_treaty_idea:0 "Austro-Prussian Mutual Military Law"
+AUS_dominance_in_europe_idea:0 "Dominance in Europe"
+AUS_dominance_in_europe_1_idea:0 "Dominance in Europe"
+AUS_nationalist_sentiments_idea:0 "Nationalist Sentiments"
+AUS_national_movements_idea:0 "Pro-Fascist Demonstrations"
+AUS_mind_militarisation_idea:0 "Militarisation of the Minds"
+AUS_victorious_revanchism_idea:0 "Victorious Revanchism"
+AUS_austrian_development_plan_subject_idea:0 "Austrian Development Plan"
+AUS_austrian_development_plan_overlord_0_idea:0 "Subject Development Plan"
+AUS_austrian_development_plan_overlord_1_idea:0 "Subject Intense Development Plan"
+AUS_balkan_black_sea_military_operation_idea:0 "Balkan Military Operation (Black Sea)"
+AUS_balkan_adriatic_sea_military_operation_idea:0 "Balkan Military Operation (Adriatic Sea)"
+AUS_ost_europe_military_operation_idea:0 "Ost Europe Military Operation"
 
 ### COSMETIC TAGS ###
 hre_unified_neutrality:0 "Holy Roman Empire"
@@ -314,7 +313,7 @@ AUS_austrian_german_confederation:0 "Osterreichisch Deutscher Bund"
 AUS_federation_faction:0 "Federation"
 AUS_confederation_of_united_european_nations_faction:0 "K.V.E.N"
 AUS_confederation_of_united_european_nations_faction_long:0 "Konföderation der Vereinten Europäischen Nationen (K.V.E.N)"
-AUS_pakt_deutschland_faction:0 "Pakt Deutschland"
+AUS_pakt_deutschland_faction:0 "Wiener Vertrag"
 
 ### MODIFIERS ###
 focus_diplo:0 "Diplomacy Focus"
@@ -345,63 +344,24 @@ TT_icon_available_not:0 "£GFX_accept_decline_icon|1"
 TT_icon_available_yes:0 "£GFX_accept_decline_icon|2"
 AUS_enable_conf_influence_tt:0 "Will allow to §YInfluence the Confederation memebers§!."
 AUS_new_countries_to_sent_ultimatums_tt:0 "There will be more decisions available in §YForeign Policy§!."
-AUS_bypass_not_enough_prague_members_tt:0 "Not enough members for the Conference. (minimum: §Y4§! current: §Y[?AUS.amount_of_prague_members]§!)"
-AUS_prague_not_already_took_or_voting_tt:0 "Not already took this decision or Voting in Progress."
-AUS_prague_one_taken_and_not_voting_tt:0 "Took one of the decisions and no Voting in Progress."
-AUS_prague_conference_ended_tt:0 "Prague Conference Ended."
-AUS_prague_conference_amount_articles_tt:0 "Amount of §GApproved§! article is less than 3. (current: $AUS_pc_amount_approved_articles$)"
-AUS_prague_conference_last_get_approved_tt:0 "§Y[AUSGetArticleApproval]§! will be [AUSGetArticleApprovalVar]"
-
-# Agitation Program TT
-AUS_agitation_base_time_gain_tt:0 "§YAgitation Mission§! base time will be increased by §G30§!."
-AUS_agitation_not_performing_actions_tt:0 "Not performing actions."
-AUS_agitation_program_ended_leninism_tt:0 "§YAgitation Program§! ended up with §YLeninism-Revolutionism Spirit§!."
-AUS_agitation_effective_2_tt:0 "§YAgitation Efficiency§! is at least §Y2§!."
+AUS_prague_members_development_tt:0 "After completing §Y$AUS_prague_conference$§! focus, countries that agreed to join the new confederation will be shown here and will get following national spirit:"
+AUS_already_have_development_plan_tt:0 "If your country already has §Y$AUS_austrian_development_plan_overlord_0_idea$§! it will be replaced with following national spirit:"
+AUS_divider_tt:0 "--------------"
+AUS_jump_line_tt:0 " \n"
+AUS_balkan_operation_removed_black_sea_tt:0 "§RThis national spirit will be removed once [ROM.GetName] and [BUL.GetName] are either puppeted by us or our ally or does not exist.§!"
+AUS_balkan_operation_removed_adriatic_sea_tt:0 "§RThis national spirit will be removed once [ITA.GetName] and [YUG.GetName] are either puppeted by us or our ally or does not exist.§!"
+AUS_ost_europe_operation_removed_tt:0 "§RThis national spirit will be removed once [SOV.GetName], [UKR.GetName], [LIT.GetName], [LAT.GetName], [MOL.GetName], [FIN.GetName] and [POL.GetName] are either puppeted by us or our ally or does not exist.§!"
 
 # FLAGS
 AUS_performing_actions_flag:0 "Performing Actions"
 AUS_can_be_influenced_flag:0 "Can be Influenced"
 
 ### DECISIONS ###
-AUS_agitation_mission:0 "Agitation Mission"
 
-AUS_better_ideals_decision:0 "Better Ideals of ours"
-AUS_better_ideals_desc:0 "Our ideals are the best we can offer, better than our opponents."
-AUS_only_best_way_decision:0 "Only Best Way"
-AUS_only_best_way_desc:0 "Our way is the only best way!"
-AUS_it_has_be_that_way_decision:0 "It Has To Be This Way"
-AUS_it_has_be_that_way_desc:0 "We are going our own way, we have own future and own path."
-
-AUS_better_ideals_fascism_decision:0 "[AUSDecisionBetterIdeals]"
-AUS_better_ideals_fascism_decision_desc:0 "[AUSDecisionBetterIdealsDesc]"
-
-AUS_only_best_way_fascism_decision:0 "[AUSDecisionOnlyBestWay]"
-AUS_only_best_way_fascism_decision_desc:0 "[AUSDecisionOnlyBestWayDesc]"
-
-AUS_it_has_be_that_way_fascism_decision:0 "[AUSDecisionHasBeThisWay]"
-AUS_it_has_be_that_way_fascism_decision_desc:0 "[AUSDecisionHasBeThisWayDesc]"
-
-AUS_delta_influence_decision_1:0 "Open [FROM.GetName] Influence"
-AUS_delta_influence_administration_decision:0 "Influence Administration"
-AUS_delta_influence_administration_2_decision:0 "Establish pro-[ROOT.GetAdjective] administration"
-AUS_delta_influence_return_tab_decision:0 "Return to Country Selection"
-
-AUS_pc_timeout:0 "§RPrague Conference Timeout§!"
-AUS_pc_article_1:0 "$AUS_prague_article_1$"
-AUS_pc_article_2:0 "$AUS_prague_article_2$"
-AUS_pc_article_3:0 "$AUS_prague_article_3$"
-AUS_pc_article_4:0 "$AUS_prague_article_4$"
-AUS_pc_article_5:0 "$AUS_prague_article_5$"
-AUS_pc_article_6:0 "$AUS_prague_article_6$"
-AUS_pc_end_conference:0 "§GFinish the Conference§!"
 
 # Categories
-AUS_agitation_program_category:0 "Agitation Programm"
-AUS_agitation_program_category_desc:0 "Such dramatic changes in our political plan require our people to be agitated to make sure they wish to follow our plan. \n§YAgitation Efficiency§! is §Y[?AUS_agitation_level]§!"
 AUS_local_hegemony_category:0 "Local Influence"
 AUS_local_hegemony_category_desc:0 "To keep ourselves in power over the confederation, we have to keep influencing members of the confederation. \nCountry Influence: §G[?ROOT.delta_influence]§!"
 
 AUS_foreign_policy:0 "Foreign Policy"
 AUS_delta_ultimatum_policy:0 "Send [FROM.GetName] Ultimatum"
-
-AUS_prague_conference_category:0 "Prague Conference"
