@@ -10,384 +10,64 @@ focus_tree = {
 
  #STARTING PATH---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- #Troubling Times
-  focus = {
-     id = ITA_troubling_times
-     icon = GFX_goal_unknown
-     x = 50 #20
-     y = 1
-     cost = 10
-     available_if_capitulated = yes
-     ai_will_do = {
-	 factor = 1
-	 }
+
+ focus = {
+	id = ITA_troubling_times
+	x = 0
+	y = 0
+	icon = GFX_ITA_troubling_times
+	#prerequisite = {
+	#	focus = 
+	#}
+
+	cost = 2
+
+	completion_reward = {
+		country_event = {
+			id = ita.1
+			days = 1
+		}
+	}
   }
 
- #Confront the Disgruntled Veterans
- focus = {
-    id = ITA_confront_the_disgruntled_veterans
-	icon = GFX_goal_unknown
-	prerequisite = { focus = ITA_troubling_times }
-	x = 48
-	y = 2
-	cost = 10
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = { #Event where the Italian government chooses what to do with veteran protesters 
-    }
- }
-
-  #The Sicilian Mafia
   focus = {
-	id = ITA_the_sicilian_mafia
-	icon = GFX_goal_unknown
-	prerequisite = { focus = ITA_troubling_times }
-	x = 52
-	y = 2
-	cost = 10
-	available_if_capitulated = yes
-	ai_will_do = {
-	    factor = 1
-    }
-	completion_reward = { #Event where the Italian government has to choose which strategy to counter the Sicilian Mafia
-	}
- }
-
-   #Never Forget, Never Forgive
-   focus = {
-	id = ITA_never_forget_never_forgive
-	icon = GFX_goal_unknown
-	prerequisite = { focus = ITA_troubling_times }
-	x = 50
-	y = 2
-	cost = 10
-	available_if_capitulated = yes
-	ai_will_do = {
-	    factor = 1
-    }
-	completion_reward = { #Event where the Italian government has to choose which strategy to counter the Sicilian Mafia
-	}
- }
-
-    #Government Incompentence
-	focus = {
-		id = ITA_government_incompentence
-		icon = GFX_goal_unknown
-		prerequisite = { focus = ITA_confront_the_disgruntled_veterans }
-		prerequisite = { focus = ITA_never_forget_never_forgive }
-		prerequisite = { focus = ITA_the_sicilian_mafia }
-		x = 49
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = { #Event where the democratic government would have to deal with incompetence in ranks
-		}
+	id = ITA_never_forgive
+	x = 0
+	y = 1
+	icon = GFX_ITA_never_forgive
+	prerequisite = {
+		focus = ITA_troubling_times
 	}
 
-    #Withdraw from Greece
-	focus = {
-		id = ITA_withdraw_from_greece
-		icon = GFX_goal_unknown
-		prerequisite = { focus = ITA_confront_the_disgruntled_veterans }
-		prerequisite = { focus = ITA_never_forget_never_forgive }
-		prerequisite = { focus = ITA_the_sicilian_mafia }
-		x = 50
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = { #None
-		}
-	 }
+	cost = 2
 
-	#Crackdown on Illegalist Activity
-	focus = {
-		id = ITA_crackdown_on_illegalist_activity
-		icon = GFX_goal_unknown
-		prerequisite = { focus = ITA_confront_the_disgruntled_veterans }
-		prerequisite = { focus = ITA_never_forget_never_forgive }
-		prerequisite = { focus = ITA_the_sicilian_mafia }
-		x = 51
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
+	completion_reward = {
+		country_event = {
+			id = ita.2
+			days = 1
 		}
-		completion_reward = { #Event about Renzo Novatore
-		}
-	 }
-
-	#Violence in Milan
-	focus = {
-		id = ITA_violence_in_milan
-		icon = GFX_goal_unknown
-		prerequisite = { focus = ITA_government_incompentence }
-		prerequisite = { focus = ITA_withdraw_from_greece }
-		prerequisite = { focus = ITA_crackdown_on_illegalist_activity }
-		x = 50
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = { #Event about factories being destroyed by radicals and pro-agarian against industrialization, they're arrested and the player chooses what to do with them 
-		}
-	 }
-
-	#Declare Maritial Law
-	focus = {
-		id = ITA_declare_maritial_law
-		icon = GFX_goal_unknown
-		prerequisite = { focus = ITA_violence_in_milan }
-		x = 49
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = { #None
-		}
-	 }
-
-	#Libya in Crisis
-	focus = {
-		id = ITA_libya_in_crisis
-		icon = GFX_goal_unknown
-		prerequisite = { focus = ITA_violence_in_milan }
-		x = 50
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = { #None
-		}
-	 }
-
-	#Punish the Troublemakers
-	focus = {
-		id = ITA_punish_the_troublemakers
-		icon = GFX_goal_unknown
-		prerequisite = { focus = ITA_violence_in_milan }
-		x = 51
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = { #None
-		}
-	 }
-
-	#Fate of a Nation
-	focus = {
-		id = ITA_fate_of_a_nation
-		icon = GFX_goal_unknown
-		prerequisite = { focus = ITA_declare_maritial_law }
-		prerequisite = { focus = ITA_libya_in_crisis }
-		prerequisite = { focus = ITA_punish_the_troublemakers }
-		x = 50
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = { #None
-		}
-	 }
-
-	#Democracy Saved (Unlocks the Democratic Path)
-	focus = {
-		id = ITA_democracy_saved
-		icon = GFX_goal_unknown
-		prerequisite = { focus = ITA_fate_of_a_nation }
-		mutually_exclusive = { focus = ITA_march_on_rome }
-		mutually_exclusive = { focus = ITA_the_king_steps_in }
-		mutually_exclusive = { focus = ITA_ii_diluvio_rosso }
-		mutually_exclusive = { focus = ITA_rage_against_the_state }
-		mutually_exclusive = { focus = ITA_evolas_coup }
-		x = 49
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = { #Event about democracy in Italy have being saved, unlocks democratic Italy path
-		}
-	 }
-
-	#March on Rome (Unlocks the Fascist Path)
-	focus = {
-		id = ITA_march_on_rome
-		icon = GFX_goal_unknown
-		prerequisite = { focus = ITA_fate_of_a_nation }
-		mutually_exclusive = { focus = ITA_democracy_saved }
-		mutually_exclusive = { focus = ITA_the_king_steps_in }
-		mutually_exclusive = { focus = ITA_ii_diluvio_rosso }
-		mutually_exclusive = { focus = ITA_rage_against_the_state }
-		mutually_exclusive = { focus = ITA_evolas_coup }
-		x = 51
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = { #Event about Mussolini ralling his Blackshirts in Rome to pressure the King into making him Prime Minister, which leads to II Duce as the dictator of Italy (Unlocks the Italian Fascist Path)
-		}
-	 }
-
-	#The King Steps in (Unlocks the Monarchist Path)
-	focus = {
-		id = ITA_the_king_steps_in
-		icon = GFX_goal_unknown
-		prerequisite = { focus = ITA_fate_of_a_nation }
-		mutually_exclusive = { focus = ITA_march_on_rome }
-		mutually_exclusive = { focus = ITA_democracy_saved }
-		mutually_exclusive = { focus = ITA_ii_diluvio_rosso }
-		mutually_exclusive = { focus = ITA_rage_against_the_state }
-		mutually_exclusive = { focus = ITA_evolas_coup }
-		x = 47
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = { #Event about the King attempting to intervene in Italy (Unlocks the Italian Monarchist path)
-		}
-	 }
-
-	#II Diluvio Rosso (Unlocks the Leftist Path)
-	focus = {
-		id = ITA_ii_diluvio_rosso
-		icon = GFX_goal_unknown
-		prerequisite = { focus = ITA_fate_of_a_nation }
-		mutually_exclusive = { focus = ITA_march_on_rome }
-		mutually_exclusive = { focus = ITA_the_king_steps_in }
-		mutually_exclusive = { focus = ITA_democracy_saved }
-		mutually_exclusive = { focus = ITA_rage_against_the_state }
-		mutually_exclusive = { focus = ITA_evolas_coup }
-		x = 45
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = { #Event about Unionists & Marxists forming an alliance against the right-wing ideologists (Unlocks the Italian Leftist Path)
-		}
-	 }
-
-	#Rage Against the State (Unlocks the Anarchist Path)
-	focus = {
-		id = ITA_rage_against_the_state
-		icon = GFX_goal_unknown
-		prerequisite = { focus = ITA_fate_of_a_nation }
-		mutually_exclusive = { focus = ITA_march_on_rome }
-		mutually_exclusive = { focus = ITA_the_king_steps_in }
-		mutually_exclusive = { focus = ITA_ii_diluvio_rosso }
-		mutually_exclusive = { focus = ITA_democracy_saved }
-		mutually_exclusive = { focus = ITA_evolas_coup }
-		x = 53
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = { #Event about in which Anarchists launch a succesful coup against the government, causing it to collapse (Unlocks the Italian Anarchist Path)
-		}
-	 }
-
-	#Evola's Coup (Unlocks the Evola Path)
-	focus = {
-		id = ITA_evolas_coup
-		icon = GFX_goal_unknown
-		prerequisite = { focus = ITA_fate_of_a_nation }
-		mutually_exclusive = { focus = ITA_march_on_rome }
-		mutually_exclusive = { focus = ITA_the_king_steps_in }
-		mutually_exclusive = { focus = ITA_ii_diluvio_rosso }
-		mutually_exclusive = { focus = ITA_rage_against_the_state }
-		mutually_exclusive = { focus = ITA_democracy_saved }
-		x = 55
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = { #Event in which Julius Evola and his Figli di Romolo (Sons of Romulus) launch a successful coup against the government with the aid of sympathizers from the aristocracy and the military, setting the stage for the gradual return of the Roman Empire (Unlocks the Italian Evola Path)
-		}
-	 }
-	 
-	#LEFTIST PATH-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-		#The Revolution Prevails
-		focus = {
-			id = ITA_the_revolution_prevails
-			icon = GFX_goal_unknown
-			allow_branch = { had_completed_focus = ITA_ii_diluvio_rosso }
-			x = 45
-			y = 8
-			cost = 10
-			available_if_capitulated = yes
-			ai_will_do = {
-				factor = 1
-			}
-			completion_reward = { #Unlocked and Bypassed should the Monarchy be successfully overthrown by the Far-Left via event
-			}
-		 }
-
-		#Marxist Primacy
-		focus = {
-			id = ITA_marxist_primacy
-			icon = GFX_goal_unknown
-			prerequisite = { ITA_the_revolution_prevails }
-			allow_branch = { had_completed_focus = ITA_ii_diluvio_rosso }
-			mutually_exclusive = { ITA_sorelian_primacy }
-			x = 40
-			y = 9
-			cost = 10
-			available_if_capitulated = yes
-			ai_will_do = {
-				factor = 1
-			}
-			completion_reward = { #Unlocked and Bypassed should the Monarchy be successfully overthrown by the Far-Left via event
-			}
-		 }
-
-		#Sorelian Primacy
-		focus = {
-			id = ITA_sorelian_primacy
-			icon = GFX_goal_unknown
-			prerequisite = { ITA_the_revolution_prevails }
-			allow_branch = { had_completed_focus = ITA_ii_diluvio_rosso }
-			mutually_exclusive = { ITA_marxist_primacy }
-			x = 50
-			y = 9
-			cost = 10
-			available_if_capitulated = yes
-			ai_will_do = {
-				factor = 1
-			}
-			completion_reward = { #Unlocked and Bypassed should the Monarchy be successfully overthrown by the Far-Left via event
-			}
-		 }
-
 	}
+  }
+
+  focus = {
+	id = ITA_the_sicilain_mafia
+	x = 2
+	y = 1
+	icon = GFX_ITA_the_sicilain_mafia
+	prerequisite = {
+		focus = ITA_troubling_times
+	}
+
+	cost = 2
+
+	completion_reward = {
+		country_event = {
+			id = ita.3
+			days = 1
+		}
+	}
+  }
+
+} 
+
 

@@ -515,4 +515,14 @@ spriteTypes = {
 		name = "GFX_ENG_english_unification_of_germany"
 		texturefile = "gfx/interface/goals/ENG/english_unification_of_germany.png"			
 	}
+
+	SpriteType = {
+		name = "GFX_ITA_troubling_times"
+		texturefile = "gfx/interface/goals/ITA/Troubling_Times.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_never_forgive"
+		texturefile = "gfx/interface/goals/ITA/never_forgive.png"			
+	}
 }

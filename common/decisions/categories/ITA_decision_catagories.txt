@@ -1,0 +1,14 @@
+ITA_Sicilian_Mafia = {
+	icon = GFX_
+	priority = 9000
+	
+	visible = {
+		has_completed_focus = ITA_the_sicilain_mafia
+	}
+	
+	allowed = {
+		tag = ITA	
+	}
+	
+	visible_when_empty = yes
+}

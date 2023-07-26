@@ -64,15 +64,9 @@ if = {
 		autonomous_state = autonomy_FRA_proc
 	}
 
-	set_autonomy = {
-		target = TUN
-		autonomous_state = autonomy_integrated_puppet
-	}
-
 	else = {
 		puppet = VIN
 		puppet = NGR
-		puppet = TUN
 	}
 
 }	

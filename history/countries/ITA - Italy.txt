@@ -70,6 +70,12 @@ if = {
 		autonomous_state = autonomy_personal_union
 	}
 
+	
+	set_autonomy = {
+		target = TUN
+		autonomous_state = autonomy_ITA_colonial_proc
+	}
+
 	else = {
 		puppet = TIG
 		puppet = MHD	
@@ -77,6 +83,7 @@ if = {
 		puppet = HEL
 		puppet = GRE
 		puppet = ALB
+		puppet = TUN
 	}
 }
 
