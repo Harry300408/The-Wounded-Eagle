@@ -39,11 +39,9 @@ d_debug_austrian_civil_war_monarchy = {
 		set_capital = {
 			state = 160
 		}
-		CMR = {
-			set_autonomy = {
-				target = THIS
-				autonomy_state = autonomy_puppet
-			}
+		set_autonomy = {
+			target = CMR
+			autonomy_state = autonomy_puppet
 		}
 		division_template = {
 			name = "Royalistische-Division"
