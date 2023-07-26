@@ -4659,4 +4659,12 @@ spriteTypes = {
 		name = "GFX_focus_AUS_ally_with_france"
 		texturefile = "gfx/interface/goals/AUS/AUS_ally_with_france_icon.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_AUS_ally_fascist_france"
+		texturefile = "gfx/interface/goals/AUS/AUS_ally_fascist_france_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_ally_fascist_russia"
+		texturefile = "gfx/interface/goals/AUS/AUS_ally_fascist_russia_icon.dds"
+	}
 }

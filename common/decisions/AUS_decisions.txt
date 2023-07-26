@@ -1,199 +1,44 @@
-AUS_local_hegemony_category = {
-
-	# ENTER COUNTRY INFLUENCE DECISIONS
-	AUS_delta_influence_decision_1 = {
-
-		icon = GFX_
-		fire_only_once = no
-		priority = 10
-		days_remove = 0
-		days_re_enable = 0
-		cost = 0
-		target_trigger = {
-			FROM = {
-				OR = {
-					has_idea = GERMANY_member_of_confederation_idea
-					has_autonomy_state = autonomy_AUS_fed
-				}
-			}
-		}
-		allowed = {
-			tag = AUS
-			exists = yes
-		}
-		available = {
-		}
-		visible = {
-			NOT = {
-				has_country_flag = AUS_new_tab_lh_flag
-			}
-		}
-		complete_effect = {
-			set_country_flag = AUS_new_tab_lh_flag
-			set_country_flag = AUS_tab_@FROM
-			FROM = {
-				set_country_flag = AUS_tabbed_flag
-			}
-			set_variable = {
-				var = ROOT.delta_influence
-				value = FROM.influence_by_@ROOT
-			}
-		}
-		remove_effect = {
-		}
-
-	}
-	# COUNTRY INFLUENCE DECISIONS
-	AUS_delta_influence_administration_decision = {
-
-		icon = GFX_
-		fire_only_once = no
-		priority = 100
-		days_remove = 14
-		days_re_enable = 3
-		cost = 20
-		target_trigger = {
-			FROM = {
-				has_country_flag = AUS_tabbed_flag
-			}
-		}
-		allowed = {
-			tag = AUS
-			exists = yes
-		}
-		available = {
-			NOT = {
-				has_country_flag = AUS_performing_actions_flag
-			}
-			FROM = {
-				has_country_flag = AUS_can_be_influenced_flag
-			}
-		}
-		visible = {
-			has_country_flag = AUS_new_tab_lh_flag
-		}
-		complete_effect = {
-			FROM = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = influenced
-				}
-				add_to_variable = {
-					var = FROM.influence_by_@ROOT
-					value = 0.3
-				}
-			}
-			set_country_flag = AUS_performing_actions_flag
-		}
-		modifier = {
-			political_power_gain = -0.1
-		}
-		remove_effect = {
-			clr_country_flag = AUS_performing_actions_flag
-		}
-
-	}
-	# COUNTRY INFLUENCE DECISIONS
-	AUS_delta_influence_administration_2_decision = {
-
-		icon = GFX_
-		fire_only_once = no
-		priority = 99
-		days_remove = 21
-		days_re_enable = 6
-		cost = 50
-		target_trigger = {
-			FROM = {
-				has_country_flag = AUS_tabbed_flag
-			}
-		}
-		allowed = {
-			tag = AUS
-			exists = yes
-		}
-		available = {
-			NOT = {
-				has_country_flag = AUS_performing_actions_flag
-			}
-			FROM = {
-				has_country_flag = AUS_can_be_influenced_flag
-			}
-		}
-		visible = {
-			has_country_flag = AUS_new_tab_lh_flag
-		}
-		complete_effect = {
-			FROM = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = influenced
-				}
-				add_to_variable = {
-					var = FROM.influence_by_@ROOT
-					value = 0.6
-				}
-			}
-			set_country_flag = AUS_performing_actions_flag
-		}
-		modifier = {
-			political_power_gain = -0.2
-		}
-		remove_effect = {
-			clr_country_flag = AUS_performing_actions_flag
-		}
-
-	}
-	# LEAVE COUNTRY INFLUENCE DECISIONS
-	AUS_delta_influence_return_tab_decision = {
-
-		icon = GFX_
-		fire_only_once = no
-		priority = 0
-		days_remove = 0
-		days_re_enable = 0
-		cost = 0
-		target_trigger = {
-			FROM = {
-				has_country_flag = AUS_tabbed_flag
-			}
-		}
-		allowed = {
-			tag = AUS
-			exists = yes
-		}
-		available = {
-			NOT = {
-				has_country_flag = AUS_performing_actions_flag
-			}
-		}
-		visible = {
-			has_country_flag = AUS_new_tab_lh_flag
-		}
-		complete_effect = {
-			clr_country_flag = AUS_new_tab_lh_flag
-			clr_country_flag = AUS_tab_@FROM
-			FROM = {
-				clr_country_flag = AUS_tabbed_flag
-			}
-			set_variable = {
-				var = ROOT.delta_influence
-				value = 0
-			}
-		}
-		remove_effect = {
-		}
-
-	}
-
-}
 AUS_foreign_policy = {
 
-	AUS_delta_ultimatum_policy = {
+	#AUS_delta_ultimatum_policy = {
+	#	icon = GFX_
+	#	fire_only_once = yes
+	#	days_remove = 7
+	#	days_re_enable = 30
+	#	cost = 20
+	#	priority = 100
+	#	target_trigger = {
+	#		has_country_flag = FROM.do_foreign_policy_AUS
+	#	}
+	#	visible = {
+	#		FROM = {
+	#			NOT = {
+	#				is_in_faction_with = ROOT
+	#			}
+	#		}
+	#	}
+	#	available = {
+	#		is_puppet = no
+	#		NOT = {
+	#			OR = {
+	#				is_in_faction_with = FROM
+	#				has_war_with = FROM
+	#			}
+	#		}
+	#	}
+	#	remove_effect = {
+	#		FROM = {
+	#			country_event = ausevents.28
+	#		}
+	#	}
+	#}
+	
+	AUS_delta_military_operation = {
 		icon = GFX_
 		fire_only_once = yes
-		days_remove = 7
+		days_remove = 60
 		days_re_enable = 30
-		cost = 20
+		cost = 25
 		priority = 100
 		target_trigger = {
 			has_country_flag = FROM.do_foreign_policy_AUS
@@ -214,11 +59,48 @@ AUS_foreign_policy = {
 				}
 			}
 		}
-		remove_effect = {
+		complete_effect = {
+			declare_war_on = {
+				target = FROM
+			}
+		}
+		modifier = {
+			experience_gain_army_factor = 0.05
+		}
+		targeted_modifier = {
+			tag = FROM
+			attack_bonus_against = 0.15
+			defense_bonus_against = -0.1
+		}
+		remove_trigger = {
 			FROM = {
-				country_event = ausevents.28
+				OR = {
+					has_capitulated = yes
+					exists = no
+					NOT = { has_war_with = ROOT }
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			army_experience = 5
+			air_experience = 5
+			if = {
+				limit = {
+					FROM = {
+						any_core_state = {
+							is_coastal = yes
+						}
+					}
+				}
+				navy_experience = 10
 			}
 		}
 	}
+
+}
+AUS_local_influence_cat = {
+
+
 
 }

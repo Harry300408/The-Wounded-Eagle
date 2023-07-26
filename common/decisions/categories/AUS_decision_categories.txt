@@ -1,14 +1,3 @@
-AUS_monarchist_propaganda_category = {
-	icon = GFX_
-	priority = 99
-	visible = {
-		has_country_flag = AUS_monarchist_propaganda_started_flag
-	}
-	allowed = {
-		tag = AUS
-	}
-	visible_when_empty = yes
-}
 AUS_foreign_policy = {
 	icon = GFX_
 	priority = 98
@@ -21,7 +10,7 @@ AUS_foreign_policy = {
 		}
 		else = {
 			OR = {
-				has_completed_focus = AUS_dominance_in_europe
+				#has_completed_focus = AUS_dominance_in_europe
 				has_completed_focus = AUS_grosses_osterreich
 				has_completed_focus = AUS_a_new_begining
 				has_completed_focus = AUS_foreign_policy_plan
@@ -32,17 +21,36 @@ AUS_foreign_policy = {
 	allowed = {
 		tag = AUS
 	}
-	visible_when_empty = yes
+	#visible_when_empty = yes
 }
-AUS_local_hegemony_category = {
+AUS_local_influence_cat = {
 	icon = GFX_
-	priority = 97
+	priority = 98
 	visible = {
 		if = {
 			limit = {
 				is_debug = yes
 			}
 			always = yes
+		}
+		else_if = {
+			limit = {
+				BAY = { OR = { exists = no NOT = { is_in_faction_with = AUS } } }
+				CZE = { OR = { exists = no NOT = { is_in_faction_with = AUS } } }
+				ULM = { OR = { exists = no NOT = { is_in_faction_with = AUS } } }
+				WUR = { OR = { exists = no NOT = { is_in_faction_with = AUS } } }
+				BAD = { OR = { exists = no NOT = { is_in_faction_with = AUS } } }
+				WSF = { OR = { exists = no NOT = { is_in_faction_with = AUS } } }
+				HAN = { OR = { exists = no NOT = { is_in_faction_with = AUS } } }
+				OLD = { OR = { exists = no NOT = { is_in_faction_with = AUS } } }
+				THU = { OR = { exists = no NOT = { is_in_faction_with = AUS } } }
+				PRE = { OR = { exists = no NOT = { is_in_faction_with = AUS } } }
+				SAX = { OR = { exists = no NOT = { is_in_faction_with = AUS } } }
+				MEK = { OR = { exists = no NOT = { is_in_faction_with = AUS } } }
+				SHL = { OR = { exists = no NOT = { is_in_faction_with = AUS } } }
+				DBS = { OR = { exists = no NOT = { is_in_faction_with = AUS } } }
+			}
+			always = no
 		}
 		else = {
 			has_completed_focus = AUS_establish_influence_department

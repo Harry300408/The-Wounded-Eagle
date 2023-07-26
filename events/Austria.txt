@@ -689,6 +689,7 @@ country_event = {
 			create_wargoal = {
 				target = ROOT
 				type = annex_everything
+				expire = 360
 			}
 		}
 	}
@@ -857,36 +858,6 @@ country_event = {
 	}
 	option = { #hell nah
 		name = ausevents.33.b
-		ai_chance = {
-			base = 10
-		}
-	}
-}
-#ENG: AUS propose peace and alliance
-country_event = {
-	id = ausevents.34
-	title = ausevents.34.t
-	desc = ausevents.34.desc
-	picture = GFX_
-	is_triggered_only = yes
-	#fire_only_once = yes
-
-	option = { #yessir
-		name = ausevents.34.a
-		ai_chance = {
-			base = 5
-			modifier = {
-				add = 10
-				has_opinion = {
-					target = AUS
-					value > 49
-				}
-				
-			}
-		}
-	}
-	option = { #hell nah
-		name = ausevents.34.b
 		ai_chance = {
 			base = 10
 		}

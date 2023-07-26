@@ -40,3 +40,23 @@ navy_command_has_command_spirit = {
 	}
 
 }
+AUS_or_confederation_tags = {
+
+	OR = {
+		tag = CZE
+		tag = BAY
+		tag = ULM
+		tag = WUR
+		tag = BAD
+		tag = THU
+		tag = WSF
+		tag = HAN
+		tag = OLD
+		tag = DBS
+		tag = PRE
+		tag = SAX
+		tag = SHL
+		tag = MEK
+	}
+
+}

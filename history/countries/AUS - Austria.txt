@@ -97,7 +97,8 @@ set_autonomy = {
 create_faction = "ger_conf"
 add_to_faction = AUS
 
-oob = "AUS_1936"
+oob = "AUS_TWE_nsb"
+
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "AUS_1936_air_bba"
@@ -125,6 +126,23 @@ set_technology = {
 	tech_support = 1
 	tech_mountaineers = 1
 	basic_train = 1
+	gw_artillery = 1
+	armored_car1 = 1
+	motorised_infantry = 1
+	fuel_silos = 1
+}
+if = {
+	limit = { has_dlc = "No Step Back" }
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		armor_tech_1 = 1
+		engine_tech_1 = 1
+	}
+
+	else = {
+		set_technology = { gwtank_chassis = 1 basic_light_tank = 1 }
+	}
 }
 
 recruit_character = AUS_otto_von_h
@@ -141,8 +159,8 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 27
-	authoritarian_democracy = 45
+	neutrality = 26
+	authoritarian_democracy = 46
 	democratic = 4
 	liberalism = 3
 	communism = 6
@@ -150,10 +168,48 @@ set_popularities = {
 	ultranationalism = 3
 }
 
-set_stability = 0.50
+set_stability = 0.65
+set_war_support = 0.5
 add_ideas = {
 	GERMANY_member_of_confederation_idea
 	AUS_political_dead_end_idea
 	AUS_bad_monarchism_memories_idea
 	AUS_economical_collapse_0_idea
+}
+
+#Osterreichisch Panzers
+if = {
+	limit = { has_dlc = "No Step Back" }
+	create_equipment_variant = {
+		type = heavy_tank_chassis_0
+		name = "G6V(S)"
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_heavy_two_man_tank_turret
+			special_type_slot_1 = secondary_turret_hmg
+			special_type_slot_2 = secondary_turret_hmg
+
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+	}
+	create_equipment_variant = {
+		type = light_tank_chassis_1
+		name = "G7V(L)"
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
+			special_type_slot_1 = sloped_armor
+
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_engine_upgrade = 4
+		}
+	}
 }

@@ -347,6 +347,11 @@ focus_tree = {
 		}
 		completion_reward = { 
 			HUN = {
+				add_ai_strategy = {
+					type = alliance
+					id = AUS
+					value = 30
+				}
 				add_timed_idea = {
 					idea = AUS_democratic_influence_idea
 					days = 180
@@ -370,6 +375,11 @@ focus_tree = {
 		}
 		completion_reward = { 
 			ITA = {
+				add_ai_strategy = {
+					type = alliance
+					id = AUS
+					value = 30
+				}
 				add_timed_idea = {
 					idea = AUS_democratic_influence_idea
 					days = 180
@@ -1189,7 +1199,39 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_political_power = 25
-			custom_effect_tooltip = AUS_enable_conf_influence_tt
+			#custom_effect_tooltip = AUS_enable_conf_influence_tt
+			every_country = { #Remove once decisions are ready (DELTA)
+				limit = {
+					is_subject_of = ROOT
+					OR = {
+						tag = BAY
+						tag = CZE
+						tag = ULM
+						tag = WUR
+						tag = BAD
+						tag = WSF
+						tag = HAN
+						tag = OLD
+						tag = THU
+						tag = PRE
+						tag = SAX
+						tag = MEK
+						tag = SHL
+						tag = DBS
+					}
+				}
+				custom_effect_tooltip = AUS_allied_towards_us_tt
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 30
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = ROOT
+					value = 30
+				}
+			}
 		}
 	}
 	focus = {
@@ -1947,11 +1989,25 @@ focus_tree = {
 		id = AUS_proove_french_weakness
 		icon = GFX_focus_AUS_prove_french_weakness
 		cost = 10
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = AUS_march_to_the_atlantic
 		prerequisite = {
 			focus = AUS_march_to_the_atlantic
+		}
+		mutually_exclusive = {
+			focus = AUS_alliance_with_france
+		}
+		bypass = {
+			FRA = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
 		}
 		completion_reward = { 
 			create_wargoal = {
@@ -1961,14 +2017,58 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = AUS_alliance_with_france
+		icon = GFX_focus_AUS_ally_fascist_france
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_march_to_the_atlantic
+		prerequisite = {
+			focus = AUS_march_to_the_atlantic
+		}
+		mutually_exclusive = {
+			focus = AUS_proove_french_weakness
+		}
+		available = {
+			FRA = {
+				has_government = fascism
+			}
+		}
+		bypass = {
+			FRA = {
+				OR = {
+					exists = no
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		completion_reward = { 
+			FRA = {
+				country_event = { id = ausevents.27 hours = 6 }
+			}
+		}
+	}
+	focus = {
 		id = AUS_osterreichisch_niederlande
 		icon = GFX_focus_AUS_osterreichisch_niederlande
 		cost = 10
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = AUS_proove_french_weakness
 		prerequisite = {
 			focus = AUS_proove_french_weakness
+			focus = AUS_alliance_with_france
+		}
+		bypass = {
+			HOL = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
 		}
 		completion_reward = { 
 			create_wargoal = {
@@ -1989,6 +2089,17 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = AUS_osterreichisch_niederlande
+		}
+		bypass = {
+			DEN = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
 		}
 		completion_reward = { 
 			create_wargoal = {
@@ -2041,6 +2152,35 @@ focus_tree = {
 			focus = AUS_denmark_obedience
 			focus = AUS_ally_denmark
 		}
+		bypass = {
+			SWE = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
+			NOR = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
+			FIN = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
+		}
 		completion_reward = { 
 			create_wargoal = {
 				target = SWE
@@ -2072,7 +2212,7 @@ focus_tree = {
 		id = AUS_continent_secured
 		icon = GFX_focus_AUS_europe_secured
 		cost = 5
-		x = 0
+		x = 1
 		y = 4
 		relative_position_id = AUS_proove_french_weakness
 		prerequisite = {
@@ -2100,19 +2240,12 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_continent_secured
 		}
+		available = {
+			NOT = { has_war_with = ENG }
+		}
 		completion_reward = { 
-			if = {
-				limit = {
-					NOT = { has_war_with = ENG }
-				}
-				ENG = {
-					country_event = { id = ausevents.27 hours = 6 }
-				}
-			}
-			else = {
-				ENG = {
-					country_event = { id = ausevents.34 hours = 6 }
-				}
+			ENG = {
+				country_event = { id = ausevents.27 hours = 6 }
 			}
 		}
 	}
@@ -2128,6 +2261,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = AUS_continent_secured
+		}
+		bypass = {
+			has_war_with = ENG
 		}
 		completion_reward = { 
 			create_wargoal = {
@@ -2152,6 +2288,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = AUS_march_to_urals
+			focus = AUS_austro_russian_alliance
 		}
 		completion_reward = { 
 			every_state = {
@@ -2174,11 +2311,23 @@ focus_tree = {
 		id = AUS_end_swiss_neutrality
 		icon = GFX_focus_AUS_end_swiss_neutrality
 		cost = 10
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = AUS_proove_french_weakness
 		prerequisite = {
 			focus = AUS_proove_french_weakness
+			focus = AUS_alliance_with_france
+		}
+		bypass = {
+			SWI = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
 		}
 		completion_reward = { 
 			create_wargoal = {
@@ -2191,11 +2340,23 @@ focus_tree = {
 		id = AUS_from_madrid_to_vienna
 		icon = GFX_focus_AUS_from_madrid_to_vienna
 		cost = 10
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = AUS_proove_french_weakness
 		prerequisite = {
 			focus = AUS_proove_french_weakness
+			focus = AUS_alliance_with_france
+		}
+		bypass = {
+			SPR = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
 		}
 		completion_reward = { 
 			create_wargoal = {
@@ -2213,6 +2374,17 @@ focus_tree = {
 		relative_position_id = AUS_from_madrid_to_vienna
 		prerequisite = {
 			focus = AUS_from_madrid_to_vienna
+		}
+		bypass = {
+			POR = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
 		}
 		completion_reward = { 
 			create_wargoal = {
@@ -2276,15 +2448,107 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AUS_march_to_urals
-		icon = GFX_focus_AUS_march_to_urals
-		cost = 15
-		x = 0
+		id = AUS_austro_russian_alliance
+		icon = GFX_focus_AUS_ally_fascist_russia
+		cost = 10
+		x = 1
 		y = 2
 		relative_position_id = AUS_dominance_in_europe
 		prerequisite = {
 			focus = AUS_move_to_annex_bohemia
 			focus = AUS_bohemia_limited_autonomy
+		}
+		mutually_exclusive = {
+			focus = AUS_march_to_urals
+		}
+		available = {
+			SOV = {
+				has_government = fascism
+			}
+		}
+		bypass = {
+			SOV = {
+				OR = {
+					exists = no
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		completion_reward = { 
+			SOV = {
+				country_event = { id = ausevents.27 hours = 6 }
+			}
+		}
+	}
+	focus = {
+		id = AUS_march_to_urals
+		icon = GFX_focus_AUS_march_to_urals
+		cost = 15
+		x = -1
+		y = 2
+		relative_position_id = AUS_dominance_in_europe
+		prerequisite = {
+			focus = AUS_move_to_annex_bohemia
+			focus = AUS_bohemia_limited_autonomy
+		}
+		mutually_exclusive = {
+			focus = AUS_austro_russian_alliance
+		}
+		bypass = {
+			SOV = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
+			LIT = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
+			LAT = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
+			POL = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
+			UKR = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
+			MOL = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
 		}
 		completion_reward = { 
 			add_timed_idea = {
@@ -2375,22 +2639,6 @@ focus_tree = {
 					type = expand_influence_focus
 				}
 			}
-			if = {
-				limit = {
-					FIN = {
-						OR = {
-							is_puppet = no
-							NOT = {
-								is_puppet_of = SOV
-							}
-						}
-					}
-				}
-				create_wargoal = {
-					target = FIN
-					type = expand_influence_focus
-				}
-			}
 			custom_effect_tooltip = AUS_ost_europe_operation_removed_tt
 		}
 	}
@@ -2422,6 +2670,17 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = AUS_look_on_balkans
+		}
+		bypass = {
+			HUN = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
 		}
 		completion_reward = { 
 			create_wargoal = {
@@ -2507,10 +2766,14 @@ focus_tree = {
 			focus = AUS_to_the_black_sea
 		}
 		bypass = {
-			ROM = { 
+			ROM = {
 				OR = {
-					exists = no 
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
 					is_puppet_of = TUR
+					all_owned_state = { NOT = { is_on_continent = europe } }
 				}
 			}
 		}
@@ -2533,7 +2796,14 @@ focus_tree = {
 		}
 		bypass = {
 			BUL = {
-				is_puppet_of = TUR
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					is_puppet_of = TUR
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
 			}
 		}
 		completion_reward = { 
@@ -2573,7 +2843,15 @@ focus_tree = {
 			focus = AUS_expand_into_adriatic
 		}
 		bypass = {
-			ITA = { exists = no }
+			ITA = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
 		}
 		completion_reward = { 
 			create_wargoal = {
@@ -2593,7 +2871,15 @@ focus_tree = {
 			focus = AUS_expand_into_adriatic
 		}
 		bypass = {
-			YUG = { exists = no }
+			YUG = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
 		}
 		completion_reward = { 
 			create_wargoal = {
@@ -2616,6 +2902,17 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_move_to_bulgaria
 			focus = AUS_move_to_romania
+		}
+		bypass = {
+			TUR = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_puppet_of = ROOT
+					all_owned_state = { NOT = { is_on_continent = europe } }
+				}
+			}
 		}
 		completion_reward = { 
 			create_wargoal = {
@@ -3066,34 +3363,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AUS_rebuild_our_homeland
-		icon = GFX_focus_AUS_rebuild_homeland
-		cost = 10
-		x = -3
-		y = 3
-		relative_position_id = AUS_strengthen_monarchist_support
-		prerequisite = {
-			focus = AUS_not_a_single_bomb_on_vienna
-		}
-		mutually_exclusive = {
-			focus = AUS_rebuild_our_country
-		}
-		completion_reward = { 
-
-		}
-	}
-	focus = {
 		id = AUS_rebuild_our_country
 		icon = GFX_focus_AUS_rebuild_homeland
 		cost = 10
-		x = -1
+		x = -2
 		y = 3
 		relative_position_id = AUS_strengthen_monarchist_support
 		prerequisite = {
 			focus = AUS_victorious_spirit
-		}
-		mutually_exclusive = {
-			focus = AUS_rebuild_our_homeland
+			focus = AUS_not_a_single_bomb_on_vienna
 		}
 		completion_reward = { 
 
@@ -3108,7 +3386,6 @@ focus_tree = {
 		relative_position_id = AUS_strengthen_monarchist_support
 		prerequisite = {
 			focus = AUS_rebuild_our_country
-			focus = AUS_rebuild_our_homeland
 		}
 		completion_reward = { 
 			#Monarchists take power

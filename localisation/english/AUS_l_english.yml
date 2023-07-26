@@ -53,7 +53,8 @@ AUS_military_trainings:0 "Military Trainings"
 AUS_pact_deutschland:0 "Pakt Deutschland"
 AUS_dominance_in_europe:0 "Dominance in Europe"
 AUS_march_to_the_atlantic:0 "March to the Atlantic"
-AUS_proove_french_weakness:0 "Proove French Weakness"
+AUS_proove_french_weakness:0 "Prove French Weakness"
+AUS_alliance_with_france:0 "Franco-Austrian Alliance"
 AUS_osterreichisch_niederlande:0 "Osterreichisch Niederlande"
 AUS_denmark_obedience:0 "Denmark Obedience"
 AUS_ally_denmark:0 "Ally Denmark"
@@ -68,6 +69,7 @@ AUS_from_lisabon_to_vienna:0 "From Lisabon to Vienna"
 AUS_move_to_annex_bohemia:0 "Move to Annex Bohemia"
 AUS_bohemia_limited_autonomy:0 "Bohemia Limited Autonomy"
 AUS_march_to_urals:0 "March to the Urals"
+AUS_austro_russian_alliance:0 "Austro-Russian Alliance"
 AUS_look_on_balkans:0 "Look on the Balkans"
 AUS_hungarian_obedience_2:0 "Hungarian Obedience"
 AUS_befriend_hungary:0 "Befriend Hungary"
@@ -351,17 +353,19 @@ AUS_jump_line_tt:0 " \n"
 AUS_balkan_operation_removed_black_sea_tt:0 "§RThis national spirit will be removed once [ROM.GetName] and [BUL.GetName] are either puppeted by us or our ally or does not exist.§!"
 AUS_balkan_operation_removed_adriatic_sea_tt:0 "§RThis national spirit will be removed once [ITA.GetName] and [YUG.GetName] are either puppeted by us or our ally or does not exist.§!"
 AUS_ost_europe_operation_removed_tt:0 "§RThis national spirit will be removed once [SOV.GetName], [UKR.GetName], [LIT.GetName], [LAT.GetName], [MOL.GetName], [FIN.GetName] and [POL.GetName] are either puppeted by us or our ally or does not exist.§!"
+AUS_allied_towards_us_tt:0 "Become allied towards us."
 
 # FLAGS
 AUS_performing_actions_flag:0 "Performing Actions"
 AUS_can_be_influenced_flag:0 "Can be Influenced"
 
 ### DECISIONS ###
-
+AUS_delta_influence_decision_1:0 "Show §Y[FROM.GetName]§! Decisions"
 
 # Categories
-AUS_local_hegemony_category:0 "Local Influence"
-AUS_local_hegemony_category_desc:0 "To keep ourselves in power over the confederation, we have to keep influencing members of the confederation. \nCountry Influence: §G[?ROOT.delta_influence]§!"
+AUS_local_influence_cat:0 "Local Influence"
+AUS_local_influence_cat_desc:0 "To keep ourselves in power over the confederation, we have to keep influencing members of the confederation. \nCountry Influence: §G[?ROOT.delta_influence]§!"
 
 AUS_foreign_policy:0 "Foreign Policy"
 AUS_delta_ultimatum_policy:0 "Send [FROM.GetName] Ultimatum"
+AUS_delta_military_operation:0 "Military Operation in [FROM.GetName]"
