@@ -49,7 +49,7 @@ focus_tree = {
 		id = AUS_look_in_the_past
 		icon = GFX_focus_AUS_look_in_the_past
 		cost = 5
-		x = -12
+		x = -15
 		y = 1
 		allow_branch = {
 			is_debug = yes #DELTA
@@ -71,7 +71,7 @@ focus_tree = {
 		id = AUS_new_osterreich
 		icon = GFX_focus_AUS_new_osterreich
 		cost = 5
-		x = 12
+		x = 22
 		y = 1
 		relative_position_id = AUS_revive_political_plan
 		mutually_exclusive = {
@@ -105,7 +105,7 @@ focus_tree = {
 		id = AUS_peaceful_development
 		icon = GFX_focus_AUS_peaceful_development
 		cost = 5
-		x = 5
+		x = 10
 		y = 1
 		relative_position_id = AUS_new_osterreich
 		mutually_exclusive = {
@@ -137,14 +137,14 @@ focus_tree = {
 		id = AUS_austrian_liberalism
 		icon = GFX_focus_AUS_
 		cost = 5
-		x = 4
+		x = -4
 		y = 1
 		relative_position_id = AUS_peaceful_development
-		mutually_exclusive = {
-			focus = AUS_est_liebe_die_republik
-		}
 		prerequisite = {
 			focus = AUS_peaceful_development
+		}
+		mutually_exclusive = {
+			focus = AUS_est_liebe_die_republik
 		}
 		completion_reward = { 
 			
@@ -189,6 +189,8 @@ focus_tree = {
 		prerequisite = { focus = AUS_defense_arms_ownership }
 		prerequisite = { focus = AUS_loosen_economic_relations }
 		prerequisite = { focus = AUS_endorse_secular_education }
+		prerequisite = { focus = AUS_austrofuturism }
+		prerequisite = { focus = AUS_embrace_free_market }
 
 		completion_reward = { 
 			
@@ -198,11 +200,13 @@ focus_tree = {
 		id = AUS_support_czech_independence
 		icon = GFX_focus_AUS_
 		cost = 5
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = AUS_form_private_militias
 
+		prerequisite = { focus = AUS_arest_monopolists }
 		prerequisite = { focus = AUS_form_private_militias }
+		prerequisite = { focus = AUS_freedom_of_thought }
 
 		completion_reward = { 
 			
@@ -275,7 +279,9 @@ focus_tree = {
 
 		prerequisite = { focus = AUS_defense_arms_ownership }
 		prerequisite = { focus = AUS_loosen_economic_relations }
+		prerequisite = { focus = AUS_endorse_secular_education }
 		prerequisite = { focus = AUS_austrofuturism }
+		prerequisite = { focus = AUS_embrace_free_market }
 
 		completion_reward = { 
 			
@@ -291,6 +297,7 @@ focus_tree = {
 
 		prerequisite = { focus = AUS_arest_monopolists }
 		prerequisite = { focus = AUS_form_private_militias }
+		prerequisite = { focus = AUS_freedom_of_thought }
 
 		completion_reward = { 
 			
@@ -335,6 +342,7 @@ focus_tree = {
 		relative_position_id = AUS_arest_monopolists
 
 		prerequisite = { focus = AUS_arest_monopolists }
+		prerequisite = { focus = AUS_form_private_militias }
 		prerequisite = { focus = AUS_freedom_of_thought }
 
 		completion_reward = { 
@@ -363,9 +371,11 @@ focus_tree = {
 		y = 2
 		relative_position_id = AUS_austrian_liberalism
 
-		prerequisite = { focus = AUS_embrace_free_market }
+		prerequisite = { focus = AUS_defense_arms_ownership }
 		prerequisite = { focus = AUS_loosen_economic_relations }
+		prerequisite = { focus = AUS_endorse_secular_education }
 		prerequisite = { focus = AUS_austrofuturism }
+		prerequisite = { focus = AUS_embrace_free_market }
 
 		completion_reward = { 
 			
@@ -375,10 +385,12 @@ focus_tree = {
 		id = AUS_munichs_meeting
 		icon = GFX_focus_AUS_
 		cost = 5
-		x = 4
+		x = 3
 		y = 3
 		relative_position_id = AUS_austrian_liberalism
 
+		prerequisite = { focus = AUS_arest_monopolists }
+		prerequisite = { focus = AUS_form_private_militias }
 		prerequisite = { focus = AUS_freedom_of_thought }
 
 		completion_reward = { 
@@ -463,7 +475,7 @@ focus_tree = {
 		id = AUS_est_liebe_die_republik
 		icon = GFX_focus_AUS_est_liebe_die_republik
 		cost = 10
-		x = -5
+		x = 4
 		y = 1
 		relative_position_id = AUS_peaceful_development
 		prerequisite = {
@@ -471,6 +483,9 @@ focus_tree = {
 		}
 		available = {
 			democratic > 0.45
+		}
+		mutually_exclusive = {
+			focus = AUS_austrian_liberalism
 		}
 		completion_reward = { 
 			swap_ideas = {
@@ -755,7 +770,7 @@ focus_tree = {
 		id = AUS_prepare_sabotage
 		icon = GFX_focus_AUS_prepare_sabotage
 		cost = 5
-		x = -5
+		x = -10
 		y = 1
 		relative_position_id = AUS_new_osterreich
 		mutually_exclusive = {
@@ -789,14 +804,480 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AUS_vaterlandische_front
-		icon = GFX_focus_AUS_vaterlandische_front
+		id = AUS_red_fire
+		icon = GFX_focus_AUS_
 		cost = 5
-		x = 0
+		x = -5
 		y = 1
 		relative_position_id = AUS_prepare_sabotage
 		prerequisite = {
 			focus = AUS_prepare_sabotage
+		}
+		mutually_exclusive = {
+			focus = AUS_vaterlandische_front
+		}
+		completion_reward = { 
+
+		}
+	}
+	### ----------------------------------- ###
+	### ----------- EMPOWER KPO ----------- ###
+	focus = {
+		id = AUS_red_fire
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 6
+		y = 1
+		relative_position_id = AUS_prepare_sabotage
+		prerequisite = {
+			focus = AUS_prepare_sabotage
+		}
+		mutually_exclusive = {
+			focus = AUS_vaterlandische_front
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_march_of_red_torches
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = AUS_red_fire
+		prerequisite = {
+			focus = AUS_red_fire
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_deal_with_redical_democrats
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = AUS_march_of_red_torches
+		
+		prerequisite = { 
+			focus = AUS_empower_kpo
+			focus = AUS_imperial_communism
+		}
+
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_four_year_plan
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = AUS_deal_with_redical_democrats
+		
+		prerequisite = { 
+			focus = AUS_deal_with_redical_democrats
+		}
+
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_industrial_growth
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = AUS_four_year_plan
+		prerequisite = { 
+			focus = AUS_four_year_plan
+		}
+		mutually_exclusive = {
+			focus = AUS_organise_czech_agriculture
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_organise_czech_agriculture
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = AUS_four_year_plan
+
+		prerequisite = { focus = AUS_four_year_plan }
+		prerequisite = { focus = AUS_ultimatum_to_czechia }
+
+		mutually_exclusive = {
+			focus = AUS_industrial_growth
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_focus_on_export
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = AUS_organise_czech_agriculture
+		prerequisite = { 
+			focus = AUS_organise_czech_agriculture
+			focus = AUS_industrial_growth
+		}
+		mutually_exclusive = {
+			focus = AUS_all_for_ourselves
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_all_for_ourselves
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = AUS_organise_czech_agriculture
+		prerequisite = { 
+			focus = AUS_organise_czech_agriculture
+			focus = AUS_industrial_growth
+		}
+		mutually_exclusive = {
+			focus = AUS_focus_on_export
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_communist_science
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 0
+		y = 3
+		relative_position_id = AUS_four_year_plan
+
+		prerequisite = { 
+			focus = AUS_focus_on_export 
+			focus = AUS_all_for_ourselves
+		}
+
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_finish_the_plan
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 0
+		y = 4
+		relative_position_id = AUS_four_year_plan
+
+		prerequisite = { 
+			focus = AUS_communist_science
+		}
+
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_imperial_communism
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = AUS_march_of_red_torches
+		prerequisite = {
+			focus = AUS_march_of_red_torches
+		}
+		mutually_exclusive = {
+			focus = AUS_empower_kpo
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_fate_of_bavaria
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = AUS_imperial_communism
+		prerequisite = {
+			focus = AUS_imperial_communism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_ultimatum_to_czechia
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = AUS_fate_of_bavaria
+
+		prerequisite = { focus = AUS_fate_of_bavaria }
+		prerequisite = { focus = AUS_support_hungarian_communists }
+
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_support_hungarian_communists
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = AUS_imperial_communism
+		prerequisite = {
+			focus = AUS_imperial_communism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_communist_states_of_ah
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = AUS_support_hungarian_communists
+		prerequisite = {
+			focus = AUS_support_hungarian_communists
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_liberate_galician_workers
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = AUS_communist_states_of_ah
+		prerequisite = {
+			focus = AUS_communist_states_of_ah
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_march_into_silesia
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = AUS_communist_states_of_ah
+		prerequisite = {
+			focus = AUS_communist_states_of_ah
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_transilvania_question
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = AUS_communist_states_of_ah
+		
+		prerequisite = { focus = AUS_liberate_galician_workers }
+		prerequisite = { focus = AUS_march_into_silesia }
+
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_serbian_workers_unite
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = AUS_transilvania_question
+		
+		prerequisite = { focus = AUS_transilvania_question }
+
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_italian_croatia_uprising
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = AUS_transilvania_question
+		
+		prerequisite = { focus = AUS_transilvania_question }
+
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_revolutionary_state
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = AUS_transilvania_question
+		
+		prerequisite = { focus = AUS_italian_croatia_uprising }
+		prerequisite = { focus = AUS_serbian_workers_unite }
+
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_empower_kpo
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = AUS_march_of_red_torches
+		prerequisite = {
+			focus = AUS_march_of_red_torches
+		}
+		mutually_exclusive = {
+			focus = AUS_imperial_communism
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_promote_commune_life_standards
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = AUS_empower_kpo
+		prerequisite = {
+			focus = AUS_empower_kpo
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_austrian_peasant_union
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = AUS_promote_commune_life_standards
+		prerequisite = {
+			focus = AUS_promote_commune_life_standards
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_reorganise_the_republic
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = AUS_promote_commune_life_standards
+		prerequisite = {
+			focus = AUS_promote_commune_life_standards
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_all_for_people
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = -1
+		y = 2
+		relative_position_id = AUS_promote_commune_life_standards
+
+		prerequisite = { focus = AUS_reorganise_the_republic }
+		prerequisite = { focus = AUS_austrian_peasant_union }
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_anti_capitalism
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = -3
+		y = 2
+		relative_position_id = AUS_promote_commune_life_standards
+
+		prerequisite = { focus = AUS_reorganise_the_republic }
+		prerequisite = { focus = AUS_austrian_peasant_union }
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_revolution_is_impossible
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = -2
+		y = 3
+		relative_position_id = AUS_promote_commune_life_standards
+
+		prerequisite = { focus = AUS_anti_capitalism }
+		prerequisite = { focus = AUS_all_for_people }
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = AUS_without_revolutionary_situation
+		icon = GFX_focus_AUS_
+		cost = 5
+		x = -2
+		y = 4
+		relative_position_id = AUS_promote_commune_life_standards
+
+		prerequisite = { focus = AUS_revolution_is_impossible }
+		completion_reward = { 
+
+		}
+	}
+	### ----------------------------------- ###
+	### ------- EMPOWER RIGHT WING -------- ###
+	focus = {
+		id = AUS_vaterlandische_front
+		icon = GFX_focus_AUS_vaterlandische_front
+		cost = 5
+		x = -7
+		y = 1
+		relative_position_id = AUS_prepare_sabotage
+		prerequisite = {
+			focus = AUS_prepare_sabotage
+		}
+		mutually_exclusive = {
+			focus = AUS_red_fire
 		}
 		completion_reward = { 
 			swap_ideas = {
@@ -826,10 +1307,6 @@ focus_tree = {
 			add_stability = 0.05
 		}
 	}
-
-	### ----------------------------------- ###
-	### ------- EMPOWER RIGHT WING -------- ###
-
 	focus = {
 		id = AUS_nationalist_sentiments
 		icon = GFX_focus_AUS_nationalist_sentiments
@@ -2131,7 +2608,7 @@ focus_tree = {
 		id = AUS_continent_dominance
 		icon = GFX_focus_AUS_continental_dominance
 		cost = 10
-		x = -6
+		x = -5
 		y = 4
 		relative_position_id = AUS_empower_right_wing
 		mutually_exclusive = {
@@ -4462,7 +4939,7 @@ focus_tree = {
 		id = AUS_start_naval_reforms
 		icon = GFX_
 		cost = 5
-		x = 28
+		x = 42
 		y = 0
 		allow_branch = {
 			is_debug = yes #DELTA
