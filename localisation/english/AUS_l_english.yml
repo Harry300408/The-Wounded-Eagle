@@ -95,7 +95,10 @@ AUS_ost_deutschland_plan:0 "Ost Deutschland Plan"
 AUS_invite_denmark:0 "Invite Denmark"
 
 # Monarchist focuses #
-
+AUS_look_in_the_past:0 "Look in the Past"
+AUS_die_habsburger:0 "Die Habsburger"
+AUS_propaganda_coordination:0 "Propaganda Coordination"
+AUS_prepare_for_inevitable:0 "Prepare for Inevitable"
 
 ### EVENTS ###
 ausevents.1.t:0 "[AUS.GetName] Demand Integration"
@@ -246,6 +249,11 @@ ausevents.33.desc:0 "stuff"
 ausevents.33.a:0 "Cheers to our Ally!"
 ausevents.33.b:0 "Nein."
 
+ausevents.34.t:0 "Leaders of the Democratic Opposition Captured"
+ausevents.34.desc:0 "Our Civil-War has ended with a glorious victory, and while most who fought us either surrendered or ended their lives fearing for their future by either continuing fighting or by own hands, we managed to capture their leaders, leaders of the Democratic Forces. Some of them tried to flee into Czechia but were caught by our border guards some of them tried to hide within the country. What should we do with them?"
+ausevents.34.a:0 "Pardon them."
+ausevents.34.b:0 "Organise a Trial."
+
 ### IDEAS ###
 AUS_monarchism_abandoned_idea_0:0 "Monarchism Abandoned"
 AUS_monarchism_abandoned_idea_1:0 "$AUS_monarchism_abandoned_idea_0$"
@@ -287,6 +295,8 @@ AUS_austrian_development_plan_overlord_1_idea:0 "Subject Intense Development Pla
 AUS_balkan_black_sea_military_operation_idea:0 "Balkan Military Operation (Black Sea)"
 AUS_balkan_adriatic_sea_military_operation_idea:0 "Balkan Military Operation (Adriatic Sea)"
 AUS_ost_europe_military_operation_idea:0 "Ost Europe Military Operation"
+
+AUS_die_habsburger_idea:0 "Die Habsburger"
 
 ### COSMETIC TAGS ###
 hre_unified_neutrality:0 "Holy Roman Empire"
@@ -354,6 +364,9 @@ AUS_balkan_operation_removed_black_sea_tt:0 "§RThis national spirit will be rem
 AUS_balkan_operation_removed_adriatic_sea_tt:0 "§RThis national spirit will be removed once [ITA.GetName] and [YUG.GetName] are either puppeted by us or our ally or does not exist.§!"
 AUS_ost_europe_operation_removed_tt:0 "§RThis national spirit will be removed once [SOV.GetName], [UKR.GetName], [LIT.GetName], [LAT.GetName], [MOL.GetName], [FIN.GetName] and [POL.GetName] are either puppeted by us or our ally or does not exist.§!"
 AUS_allied_towards_us_tt:0 "Become allied towards us."
+AUS_democratic_leaders_emprisoned_for_life_tt:0 "§RDemocratic Leaders will be emprisoned for life.§!"
+AUS_democratic_leaders_executed_tt:0 "§RDemocratic Leaders will be executed.§!"
+AUS_civil_war_onmap_tt:0 "§RIf the civil-war breaks out, we will be able to attack more efficiently and will be able to organise regional offensive operations.§! \nBefore the civil-war allows us to organise regional pro-monarchism demonstrations and meetings."
 
 # FLAGS
 AUS_performing_actions_flag:0 "Performing Actions"

@@ -102,6 +102,7 @@ d_debug_austrian_civil_war_monarchy = {
 	every_country = {
 		limit = { original_tag = AUS NOT = { tag = AUS } has_government = authoritarian_democracy }
 
+		set_country_flag = AUS_democratic_forces_flag
 		promote_character = AUS_parliament
 		division_template = {
 			name = "Militärpolizei-Division"
