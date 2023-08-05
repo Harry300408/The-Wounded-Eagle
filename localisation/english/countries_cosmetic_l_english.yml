@@ -1,4 +1,19 @@
 ﻿l_english:
+##### TWE COSMETICS #####
+ 
+  #--- GERMAN CONFEDERATION ---#
+   # Second German Empire
+   SGE:0 "Second German Empire"
+   SGE_authoritarian_democracy:0 "German Federative Republic"
+   SGE_despotism:0 "Leiningen Monarchy"
+   SGE_ultranationalism:0 "Zweites Reich"
+   SGE_fascism:0 "Zweites Reich"
+   SGE_rad_trad:0 "Zweites Reich"
+   SGE_tribalism:0 "Imperium Germanicum"
+   #---------------#
+
+#-----------------------#
+
  ITA_King:0 "Kingdom of Italy"
  ITA_King_DEF:0 "the Kingdom of Italy"
 

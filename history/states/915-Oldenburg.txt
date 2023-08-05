@@ -5,7 +5,14 @@ state = {
 	history = {
 		owner = OLD
 		add_core_of = OLD
-
+		victory_points = {
+			241 5 
+		}
+		buildings = {
+			241 = {
+				dockyard = 3
+			}
+		}
 	}
 
 	provinces = {

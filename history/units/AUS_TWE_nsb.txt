@@ -194,7 +194,7 @@ units = {
 		location = 9648
 		division_template = "Panzer Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.3
 	}
 	division= {	
 		division_name = {

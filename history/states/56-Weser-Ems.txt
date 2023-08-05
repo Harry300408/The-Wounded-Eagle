@@ -6,9 +6,6 @@ state={
 	history={
 		owner = HAN
 		victory_points = {
-			241 5 
-		}
-		victory_points = {
 			11360 1 
 		}
 		buildings = {
@@ -20,14 +17,6 @@ state={
 
 		}
 		add_core_of = HAN
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-				dockyard = 3
-
-			}
-
-		}
 
 	}
 

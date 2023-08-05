@@ -1,3 +1,9 @@
+##### GERMAN NATIONS #####
+SGE = {
+	color = rgb { 192 192 192 }
+	color_ui = rgb { 192 192 192 }
+}
+
 #Russia
 RUS_GOVERNATE = {
 	color = rgb { 0 113 0 }
