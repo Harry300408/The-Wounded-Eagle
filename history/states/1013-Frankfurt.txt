@@ -1,0 +1,23 @@
+state = {
+	id = 1013
+	name = STATE_1013
+	state_category = large_town
+	history={
+		owner = WSF
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = {
+			6488 20.0 
+		}
+		add_core_of = WSF
+	}
+	provinces = {
+		589 3397 3574 6488 
+	}
+	manpower = 1899118
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}
