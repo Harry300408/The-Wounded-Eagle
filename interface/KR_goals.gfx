@@ -525,4 +525,11 @@ spriteTypes = {
 		name = "GFX_ITA_never_forgive"
 		texturefile = "gfx/interface/goals/ITA/never_forgive.png"			
 	}
+	
+	SpriteType = {
+		name = "GFX_SOV_The_Red_Storm_Awakens"
+		texturefile = "gfx/interface/goals/SOV_RUS/The_Red_Storm_Awakens.png"	
+		noOfFrames = 5
+		animation_rate_fps = 1		
+	}
 }

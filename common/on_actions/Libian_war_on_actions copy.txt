@@ -1,0 +1,15 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			ITA = {
+				country_event = {
+					id = LBA_war.1
+					days = 120
+				}
+					
+			}
+		}
+	}
+
+}
