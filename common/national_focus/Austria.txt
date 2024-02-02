@@ -3867,6 +3867,18 @@ focus_tree = {
 
 	### -------- REVIVE MONARCHISM -------- ###
 
+	######  ######  ##  ##  ######  ##  ##  ######
+	##  ##  ##      ##  ##    ##    ##  ##  ##
+	######  ######  ##  ##    ##    ##  ##  ######
+	####    ##      ##  ##    ##    ##  ##  ##
+	##  ##  ######    ##    ######    ##    ######
+
+	#     #  ######  ##  ##  ######  ######  ######  ##  ##  ##  ##
+	##   ##  ##  ##  ### ##  ##  ##  ##  ##  ##      ##  ##  ##  ##
+	# # # #  ##  ##  ### ##  ######  ######  ##      ######  ##  ##
+	#  #  #  ##  ##  ## ###  ##  ##  ####    ##      ##  ##    ##
+	#     #  ######  ##  ##  ##  ##  ##  ##  ######  ##  ##    ##
+
 	focus = {
 		id = AUS_die_habsburger
 		icon = GFX_focus_AUS_die_habsburger
@@ -3932,7 +3944,7 @@ focus_tree = {
 			focus = AUS_prepare_for_inevitable
 		}
 		completion_reward = { 
-
+			BAY = { country_event = ausevents.35 }
 		}
 	}
 	focus = {
@@ -3977,7 +3989,7 @@ focus_tree = {
 			focus = AUS_prepare_for_inevitable
 		}
 		completion_reward = { 
-
+			PRE = { country_event = ausevents.35 }
 		}
 	}
 	focus = {
@@ -4024,7 +4036,19 @@ focus_tree = {
 		}
 		continue_if_invalid = yes
 		completion_reward = { 
-
+			army_experience = 15
+			add_tech_bonus = {
+				name = AUS_analise_mountain_warfare
+				bonus = 1
+				uses = 2
+				category = mountaineers_tech
+			}
+			add_tech_bonus = {
+				name = AUS_analise_mountain_warfare
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -4042,7 +4066,7 @@ focus_tree = {
 		}
 		continue_if_invalid = yes
 		completion_reward = { 
-
+			add_ideas = AUS_alpenjager_supported_idea
 		}
 	}
 	focus = {
@@ -4060,13 +4084,13 @@ focus_tree = {
 		}
 		continue_if_invalid = yes
 		completion_reward = { 
-
+			add_ideas = AUS_civilwar_based_knowledge_idea
 		}
 	}
 	focus = {
 		id = AUS_not_a_single_bomb_on_vienna
 		icon = GFX_focus_AUS_no_bombs_on_vienna
-		cost = 10
+		cost = 5
 		x = 0
 		y = 2
 		relative_position_id = AUS_analise_mountain_warfare
@@ -4082,9 +4106,7 @@ focus_tree = {
 			}
 			has_civil_war = yes
 		}
-		bypass = {
-			has_full_control_of_state = 4
-		}
+		continue_if_invalid = yes
 		completion_reward = { 
 
 		}

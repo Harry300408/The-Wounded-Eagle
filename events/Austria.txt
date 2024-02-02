@@ -903,3 +903,78 @@ country_event = {
 		}
 	}
 }
+#Austrian Monarchists Request Support
+country_event = {
+	id = ausevents.35
+	title = ausevents.35.t
+	desc = ausevents.35.desc
+	picture = GFX_
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = { #Support Them
+		name = ausevents.35.a
+		ai_chance = {
+			base = 30
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		send_equipment = {
+			amount = 1000
+			target = AUS
+			type = infantry_equipment
+			old_prioritised = yes
+		}
+		send_equipment = {
+			amount = 250
+			target = AUS
+			type = support_equipment
+			old_prioritised = yes
+		}
+		send_equipment = {
+			amount = 50
+			target = AUS
+			type = artillery_equipment
+			old_prioritised = yes
+		}
+		AUS = { country_event = { id = ausevents.36 days = 1 } }
+	}
+	option = { #additional production
+		name = ausevents.35.b
+		ai_chance = {
+			base = 50
+		}
+		AUS = {
+			add_timed_idea = {
+				idea = AUS_foreign_supported_production_idea
+				days = 90
+			}
+		}
+	}
+	option = { #Lets stay away from that
+		name = ausevents.35.c
+		ai_chance = {
+			base = 5
+		}
+	}
+}
+#TAG Supports Us.
+country_event = {
+	id = ausevents.36
+	title = ausevents.36.t
+	desc = ausevents.36.desc
+	picture = GFX_
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = { #good.
+		name = ausevents.36.a
+		ai_chance = {
+			base = 50
+		}
+		
+	}
+}
+

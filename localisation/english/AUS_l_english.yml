@@ -254,6 +254,16 @@ ausevents.34.desc:0 "Our Civil-War has ended with a glorious victory, and while 
 ausevents.34.a:0 "Pardon them."
 ausevents.34.b:0 "Organise a Trial."
 
+ausevents.35.t:0 "[AUS.GetAdjectiveCap] Monarchists are Requesting Support"
+ausevents.35.desc:0 "[AUS.GetAdjectiveCap] Monarchists are requesting our support in their coming civil-war. Mainly asking for arms and equipment. Accepting to support might give us some political benefits and, most importantly, an ally."
+ausevents.35.a:0 "Support them."
+ausevents.35.b:0 "Support them with additional production."
+ausevents.35.c:0 "Let's not get involved."
+
+ausevents.36.t:0 "[FROM.GetNameDefCap] is Supporting Us"
+ausevents.36.desc:0 "[FROM.GetNameDefCap] decided to support us with equipment and arms in our civil-war."
+ausevents.36.a:0 "Good."
+
 ### IDEAS ###
 AUS_monarchism_abandoned_idea_0:0 "Monarchism Abandoned"
 AUS_monarchism_abandoned_idea_1:0 "$AUS_monarchism_abandoned_idea_0$"
@@ -297,6 +307,7 @@ AUS_balkan_adriatic_sea_military_operation_idea:0 "Balkan Military Operation (Ad
 AUS_ost_europe_military_operation_idea:0 "Ost Europe Military Operation"
 
 AUS_die_habsburger_idea:0 "Die Habsburger"
+AUS_foreign_supported_production_idea:0 "Foreign Production Support"
 
 ### COSMETIC TAGS ###
 hre_unified_neutrality:0 "Holy Roman Empire"

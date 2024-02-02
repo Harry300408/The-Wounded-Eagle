@@ -89,4 +89,5 @@ defined_text = {
     text = {
         localization_key = TT_icon_available_not
     }
+
 }
